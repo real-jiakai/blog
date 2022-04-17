@@ -52,6 +52,11 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   weight = 50
   identifier = "categories"
   url = "/categories/"
+[[menu.main]]
+  name = "关于我"
+  weight = 60
+  identifier = "about"
+  url = "/about/"
 
 [params]
   version = "4.x"           # Used to give a friendly message when you have an incompatible update
