@@ -114,7 +114,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
-  customCSS = []
+  customCSS = ['custom.css']
   customJS = []
 
   uglyURLs = false       # please keep same with uglyurls setting
