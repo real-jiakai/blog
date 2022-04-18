@@ -29,31 +29,31 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   filename = "sitemap.xml"
 
 [[menu.main]]             # config your menu              # 配置目录
-  name = "首页"
+  name = "🏡首页"
   weight = 10
   identifier = "home"
   url = "/"
 [[menu.main]]
-  name = "Newsletter"
+  name = "📬Newsletter"
   weight = 20
   url = "https://gujiakai.zhubai.love"
 [[menu.main]]
-  name = "归档"
+  name = "📝归档"
   weight = 30
   identifier = "archives"
   url = "/post/"
 [[menu.main]]
-  name = "标签"
+  name = "📌标签"
   weight = 40
   identifier = "tags"
   url = "/tags/"
 [[menu.main]]
-  name = "分类"
+  name = "📦分类"
   weight = 50
   identifier = "categories"
   url = "/categories/"
 [[menu.main]]
-  name = "关于我"
+  name = "👁️关于我"
   weight = 60
   identifier = "about"
   url = "/about/"
