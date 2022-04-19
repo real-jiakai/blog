@@ -155,13 +155,13 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   # You can get your appid and appkey from https://leancloud.cn
   # more info please open https://valine.js.org
   [params.valine]
-    enable = false
-    appId = '你的appId'
-    appKey = '你的appKey'
-    notify = false  # mail notifier , https://github.com/xCss/Valine/wiki
+    enable = true
+    appId = 'eFpgVSwtKxlfhclMawDV9gce-9Nh9j0Va'
+    appKey = 'NxwjGnSY1JG8dBVGn8Gd5S7u'
+    notify = true  # mail notifier , https://github.com/xCss/Valine/wiki
     verify = false # Verification code
-    avatar = 'mm'
-    placeholder = '说点什么吧...'
+    avatar = 'wavatar'
+    placeholder = 'ヾﾉ≧∀≦)o来啊，快活啊!'
     visitor = false
 
   [params.flowchartDiagrams]# see https://blog.olowolo.com/example-site/post/js-flowchart-diagrams/
