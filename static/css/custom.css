@@ -3,6 +3,7 @@
 	position: relative;
     font-size: 18px;
     line-height: 68px;
+    font-weight: bold;
 }
 
 /* 去除顶部border */
