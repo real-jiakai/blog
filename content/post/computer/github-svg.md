@@ -1,7 +1,6 @@
 ---
 title: GitHub主页实现svg图片动态效果
 tags: ["GitHub"]
-categories: ["计算机"]
 date: 2022-03-03T10:26:09+08:00
 summary: 本文介绍如何实现GitHub个人主页svg图片动态效果。
 ---

@@ -28,33 +28,27 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   priority = 0.5
   filename = "sitemap.xml"
 
-[[menu.main]]             # config your menu              # 配置目录
-  name = "🏡首页"
+[[menu.main]]
+  name = "📦归档"
   weight = 10
-  identifier = "home"
-  url = "/"
-[[menu.main]]
-  name = "📬Newsletter"
-  weight = 20
-  url = "https://gujiakai.zhubai.love"
-[[menu.main]]
-  name = "📝归档"
-  weight = 30
   identifier = "archives"
   url = "/post/"
 [[menu.main]]
   name = "📌标签"
-  weight = 40
+  weight = 20
   identifier = "tags"
   url = "/tags/"
 [[menu.main]]
-  name = "📦分类"
-  weight = 50
-  identifier = "categories"
-  url = "/categories/"
+  name = "📬Newsletter"
+  weight = 30
+  url = "https://gujiakai.zhubai.love"
+[[menu.main]]
+  name = "💡Notion"
+  weight = 40
+  url = "https://gujiakai.notion.site"
 [[menu.main]]
   name = "👁️关于我"
-  weight = 60
+  weight = 50
   identifier = "about"
   url = "/about/"
 
@@ -190,7 +184,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
     alipay = "/path/to/your/alipay-qr-code.png"           # 支付宝二维码
 
   [params.social]                                         # 社交链接
-    a-email = "mailto:2260016947@qq.com"
+    a-email = "mailto:hi@jiakai.page"
     c-twitter = "https://twitter.com/jaya0455"
     g-github = "https://github.com/Jaya0455"
     o-bilibili = "https://space.bilibili.com/488592525"
