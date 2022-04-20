@@ -16,5 +16,7 @@ draft: false
 
 ## 我的偶像
 
++ 张杰
 + 阮一峰
 + Elon Musk
++ Stephen Curry
