@@ -33,7 +33,7 @@ summary: 记录博客搭建的各种方案。
 
 国内的博客平台，自定义程度高。
 
-5. [Notion](https://www.notion.so/product)
+5. [Notion](https://www.notion.so/product)【√】
 
 Notion自带分享功能，可以很好地将文章分享。
 
