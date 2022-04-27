@@ -5,26 +5,26 @@ date: 2022-04-11T10:26:09+08:00
 summary: 记录网上冲浪迷茫时的去处。
 ---
 
-1. [medium 热点故事](https://topmediumstories.com/)
+1.[medium 热点故事](https://topmediumstories.com/)
 
 一个罗列 medium 平台上热门文章的站点。
 
-2. [Buzzing.cc ](https://www.buzzing.cc/)
+2.[Buzzing.cc ](https://www.buzzing.cc/)
 
 用中文浏览国外社交媒体里的热门讨论。
 
-3. [今日热榜](https://tophub.today/)
+3.[今日热榜](https://tophub.today/)
 
 收集国内平台的热点。
 
-4. [daily.dev](https://app.daily.dev/)
+4.[daily.dev](https://app.daily.dev/)
 
 获取最热门的开发者新闻。
 
-5. [奇客](https://www.solidot.org/)
+5.[奇客](https://www.solidot.org/)
 
 一个科技咨询站点。
 
-6. [hellogithub](https://hellogithub.com/)
+6.[hellogithub](https://hellogithub.com/)
 
 分享GitHub上有趣、入门级的开源项目。
