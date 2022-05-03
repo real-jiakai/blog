@@ -133,7 +133,7 @@ $post-meta-margin-top: 5px !default;
 $post-meta-font-color: $dark-gray !default;
 
 // Border bottom of the read more link when hover it.
-$post-readMore-border-bottom: 1px solid darkred !default;
+$post-readMore-border-bottom: 1px solid $theme-color !default;
 
 // Margin top of the post footer.
 $post-footer-margin-top: 20px !default;
