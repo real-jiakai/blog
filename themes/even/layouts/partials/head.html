@@ -105,7 +105,7 @@ href="{{ "manifest.json" | relURL }}"> <link rel="mask-icon" href="{{
 {{ if .Site.Params.publicCDN.enable -}} {{ if .Site.Params.fancybox }}{{
 .Site.Params.publicCDN.fancyboxCSS | safeHTML }}{{ end }} {{- else -}} {{ if
 .Site.Params.fancybox }}<link href="{{
-"lib/fancybox/jquery.fancybox-3.1.20.min.css" | relURL }}" rel="stylesheet">{{
+"lib/fancybox/jquery.fancybox.min.css" | relURL }}" rel="stylesheet">{{
 end }} {{- end -}}
 
 <!-- custom css -->
