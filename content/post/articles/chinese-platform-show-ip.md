@@ -16,7 +16,7 @@ summary: 目前，国内的各大平台都开始显示ip归属地了，如微博
 
 今天下午，我在少数派的会员飞书群内发布了关于此话题的讨论，其中一位群友贴的配图给我整笑了。显示ip归属地真的能让牛鬼蛇神显形。😄
 
-![image-20220501182039016](https://vip1.loli.io/2022/05/01/LknPRo73KxHNe5i.png)
+![LknPRo73KxHNe5i_compress](https://vip1.loli.io/2022/05/03/6JvLjnUPd3ySmrs.jpg)
 
 
 ## 1.为什么要出台显示ip归属地这一措施？【显示ip属地的好处】
@@ -97,4 +97,4 @@ summary: 目前，国内的各大平台都开始显示ip归属地了，如微博
 
 你们的皇帝回来了。MAGA。😅😅😅
 
-![image-20220501191525350](https://vip1.loli.io/2022/05/01/UZMSkgEI7LPKJHv.png)
+![UZMSkgEI7LPKJHv_compress](https://vip2.loli.io/2022/05/03/MN6UxXkKeuSvawV.jpg)
