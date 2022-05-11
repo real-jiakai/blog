@@ -39,16 +39,12 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   identifier = "tags"
   url = "/tags/"
 [[menu.main]]
-  name = "📸相册"
-  weight = 30
-  url = "https://photo.jiakai.page/"
-[[menu.main]]
   name = "📬Newsletter"
-  weight = 40
+  weight = 30
   url = "https://gujiakai.zhubai.love"
 [[menu.main]]
   name = "👁️关于我"
-  weight = 50
+  weight = 40
   identifier = "about"
   url = "/about/"
 
