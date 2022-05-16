@@ -3,7 +3,14 @@ title: 为什么会有防火长城？
 tags: ["时评"]
 date: 2022-02-23T10:26:09+08:00
 summary: 探究中国为什么要部署防火长城。
+lastmod: 2022-05-16T22:54:09+08:00
 ---
+
+## 更新日志
+
+{{%admonition note "note"%}}
+2022.05.16，花了一整天的时间，再次温习了电丸科技 AK 的科学上网科普视频，并做了相应的<a href="https://docs.jiakai.page" target="_blank" style="text-decoration:none">笔记</a>。
+{{%/admonition%}}
 
 今天，一条国际新闻引起了我的关注，俄罗斯总统普京签署命令宣布承认乌克兰东部两个"共和国"。
 
