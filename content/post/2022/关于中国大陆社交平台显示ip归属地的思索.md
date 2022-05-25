@@ -3,6 +3,7 @@ title: 关于中国大陆社交平台显示ip归属地的思索
 date: 2022-05-01T17:58:32+08:00
 draft: false
 tags: ['时评']
+slug: chinese-platform-show-ip
 summary: 目前，国内的各大平台都开始显示ip归属地了，如微博、知乎、抖音等。本文给出给出我个人对于此事的看法。
 ---
 

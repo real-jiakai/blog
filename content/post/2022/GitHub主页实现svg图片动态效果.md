@@ -2,6 +2,7 @@
 title: GitHub主页实现svg图片动态效果
 tags: ["GitHub"]
 date: 2022-03-03T10:26:09+08:00
+slug: github-svg
 summary: 本文介绍如何实现GitHub个人主页svg图片动态效果。
 ---
 
@@ -13,11 +14,11 @@ summary: 本文介绍如何实现GitHub个人主页svg图片动态效果。
 
 具体请见以下动态 gif 图片。👇
 
-![2022031201.gif](https://jaya-cdn-storage.oss-cn-shanghai.aliyuncs.com/image/blog/202204041324626.gif)
+![2022031201.gif](https://cdn.gujiakai.top/image/blog/202204041324626.gif)
 
 非常炫酷，点击动态打招呼特效，会跳转到一个专门生成手写字的[网站](https://www.calligrapher.ai/)
 
-![2022031202.gif](https://jaya-cdn-storage.oss-cn-shanghai.aliyuncs.com/image/blog/202204041324842.gif)
+![2022031202.gif](https://cdn.gujiakai.top/image/blog/202204041324842.gif)
 
 可以点击左上角的下载图标，将刚才手写字下载下来。
 
@@ -29,7 +30,7 @@ summary: 本文介绍如何实现GitHub个人主页svg图片动态效果。
 
 双击下载下来的以 svg 为后缀名的文件，在浏览器打开，发现其并没有一开始网站上的动态效果。
 
-![image.png](https://jaya-cdn-storage.oss-cn-shanghai.aliyuncs.com/image/blog/202204041324404.png)
+![image.png](https://cdn.gujiakai.top/image/blog/202204041324404.png)
 
 > How to make svg file dynamic?
 
