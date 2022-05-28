@@ -31,10 +31,11 @@ draft: false
 
 <a href="https://muselink.cc/jiakai" target="_blank" style="text-decoration:none">我的数字名片</a>
 
-## 站点更新日志
+## 更新日志
 
-- 2022.5.25 由于 jsdeliver 被 GFW 干扰的缘故，将站点的静态资源文件全部托管至七牛云云存储。
+|   更新日期    |                           更新原因                           |
+| :-----------: | :----------------------------------------------------------: |
+|   2022.5.25   | 由于 jsdeliver 被 GFW 干扰的缘故，将站点的静态资源文件全部托管至七牛云云存储。 |
+|   2022.4.13   | 最终拥抱了 Hugo 博客，选择的理由是 Hugo 博客框架是世界上最快的博客框架，基于 Go 语言，性能优良。 |
+| 2021.7~2022.4 | 折腾过 Wordpress、Typecho、Hexo、Vuepress、GitBook、Docsify 等博客，但是都放弃了。 |
 
-- 2022.4.13 最终拥抱了 Hugo 博客，选择的理由是 Hugo 博客框架是世界上最快的博客框架，基于 Go 语言，性能优良。
-
-- 2021.7~2022.4 折腾过 Wordpress、Typecho、Hexo、Vuepress、GitBook、Docsify 等博客，但是都放弃了。
