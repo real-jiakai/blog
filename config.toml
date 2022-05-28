@@ -182,7 +182,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   [params.social]                                         # 社交链接
     a-email = "mailto:hi@jiakai.page"
     c-twitter = "https://typefully.com/real_jiakai"
-    g-github = "https://github.com/Jaya0455"
+    g-github = "https://github.com/real-jiakai"
     o-bilibili = "https://space.bilibili.com/488592525"
 
 # See https://gohugo.io/about/hugo-and-gdpr/
