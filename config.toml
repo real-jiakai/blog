@@ -29,7 +29,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   filename = "sitemap.xml"
 
 [[menu.main]]
-  name = "📦归档"
+  name = "📦档案"
   weight = 10
   identifier = "archives"
   url = "/post/"
