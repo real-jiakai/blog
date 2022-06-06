@@ -43,10 +43,16 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   weight = 30
   url = "https://gujiakai.zhubai.love"
 [[menu.main]]
-  name = "👁️关于我"
+  name = "🌠回忆录"
   weight = 40
+  identifier = "memory"
+  url = "/memory/"
+[[menu.main]]
+  name = "👁️关于我"
+  weight = 50
   identifier = "about"
   url = "/about/"
+
 
 [params]
   version = "4.x"           # Used to give a friendly message when you have an incompatible update

@@ -71,4 +71,24 @@
     >
   </span>
 </div>
-
+<script src="https://static.gujiakai.top/static/aplayer/APlayer.min.js"></script>
+<script src="https://static.gujiakai.top/static/aplayer/Meting.min.js"></script>
+<script>
+  const ap = new APlayer({
+    container: document.querySelector("#aplayer-20220606"),
+    theme: "#FADFA3",
+    preload: "auto",
+    volume: 0.7,
+    mutex: true,
+    audio: [
+      {
+        name: "那些年",
+        artist: "胡夏",
+        url: "https://static.gujiakai.top/static/blog/music/mp3/thoso-years.mp3",
+        cover:
+          "https://static.gujiakai.top/static/blog/music/cover/thoso-years.webp",
+        theme: "#ebd0c2",
+      },
+    ],
+  });
+</script>
