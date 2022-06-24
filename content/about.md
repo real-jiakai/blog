@@ -29,7 +29,7 @@ Newsletter 以及博客会随缘更新，等考研结束，会周周更新。写
 
 ## 近期在忙
 
-备战 2023 考研，目标院校—北京邮电大学【081200 计算机科学与技术】。
+备战 2023 考研。
 
 ## 我的偶像
 
@@ -37,10 +37,6 @@ Newsletter 以及博客会随缘更新，等考研结束，会周周更新。写
 - 阮一峰【科技爱好者周刊每周都看】
 - Elon Musk【高瞻远瞩的资本家】
 - Stephen Curry【Let's go warriors】
-
-## 联系
-
-<a href="https://muselink.cc/jiakai" target="_blank" style="text-decoration:none">我的数字名片</a>
 
 ## 更新日志
 
