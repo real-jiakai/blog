@@ -51,7 +51,7 @@ summary: 被GitHub自检程序秒拒49次后，第50次我成功了。
 + 去b站搜GitHub学生包，看视频完成准备工作
 + 去知乎搜GitHub学生包申请的相关文章
 + 通过搜索引擎去到个人独立博客，看看别人的成功经验
-+ 实在没办法，可以发起Github Education工单，耐心等待回复(发起后，GitHub自检程序可能会自动关闭工单，需reopen一下)
++ 实在没办法，可以发起Github Education工单，耐心等待回复(发起后，GitHub自检程序可能会自动关闭工单，需reopen一下)；或者直接去[GitHub Community](https://github.com/orgs/github-community/discussions)发起Dicussion。建议发起Dicussion，类别选择GitHub Education，这样子回复效率最高。选择发起工单的话需要等很久。
 
 
 
@@ -77,7 +77,9 @@ summary: 被GitHub自检程序秒拒49次后，第50次我成功了。
 
 <center><b>图3.第50次申请正在处理中</b></center>
 
-未待完续......
+![image-20220626080255406](https://vip2.loli.io/2022/06/26/kiyChRj6ldLcXwe.png)
+
+<center><b>图4.成功拿到GitHub学生包</b></center>
 
 ## 参考资料
 
