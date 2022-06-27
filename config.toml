@@ -39,9 +39,10 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   identifier = "tags"
   url = "/tags/"
 [[menu.main]]
-  name = "📬Newsletter"
+  name = "✨演讲"
   weight = 30
-  url = "https://gujiakai.zhubai.love"
+  identifier = "presentation"
+  url = "/presentation/"
 [[menu.main]]
   name = "🌠回忆录"
   weight = 40
@@ -49,7 +50,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   url = "/memory/"
 [[menu.main]]
   name = "👁️关于我"
-  weight = 50
+  weight = 40
   identifier = "about"
   url = "/about/"
 
@@ -113,7 +114,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   customCSS = ['custom.css']
   customJS = []
 
-  uglyURLs = false      # please keep same with uglyurls setting
+  uglyURLs = false     # please keep same with uglyurls setting
 
   # Show language selector for multilingual site.
   showLanguageSelector = false
@@ -187,9 +188,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 
   [params.social]                                         # 社交链接
     a-email = "mailto:hi@jiakai.page"
-    c-twitter = "https://typefully.com/real_jiakai"
     g-github = "https://github.com/real-jiakai"
-    o-bilibili = "https://space.bilibili.com/488592525"
 
 # See https://gohugo.io/about/hugo-and-gdpr/
 [privacy]
@@ -225,4 +224,4 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 
 
 [permalinks]
-  post = "/:year/:month/:slug/"
+  post = "/:year/:month/:slug"
