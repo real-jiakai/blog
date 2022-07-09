@@ -44,11 +44,6 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   identifier = "presentation"
   url = "/presentation/"
 [[menu.main]]
-  name = "🌠回忆录"
-  weight = 40
-  identifier = "memory"
-  url = "/memory/"
-[[menu.main]]
   name = "👁️关于我"
   weight = 40
   identifier = "about"
