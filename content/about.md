@@ -9,7 +9,7 @@ date: '2022-12-26'
 
 ## 站点介绍
 
-本站点专注于记录自己的学习、生活故事。欢迎通过[rss订阅](https://web.archive.org/web/20221128023113/https://blog.gujiakai.top/feed/atom/)本站点。
+本站点专注于记录自己的学习、生活故事。欢迎通过[rss订阅](https://blog.gujiakai.top/index.xml)本站点。
 
 ## 座右铭
 
@@ -39,9 +39,9 @@ date: '2022-12-26'
 
 | 项目名称                                                     | 贡献项                                                       | 贡献日期   |
 | :------------------------------------------------------------: | :------------------------------------------------------------: | :----------: |
-| [nutshell](https://web.archive.org/web/20221128023113/https://github.com/ncase/nutshell) | [中文翻译](https://web.archive.org/web/20221128023113/https://github.com/ncase/nutshell/pull/14) | 2022.08.20 |
-| [RSSHub](https://web.archive.org/web/20221128023113/https://github.com/DIYgod/RSSHub) | [添加南晓官网通知公告RSS支持](https://web.archive.org/web/20221128023113/https://github.com/DIYgod/RSSHub/pull/11125) | 2022.10.20 |
+| [nutshell](https://github.com/ncase/nutshell) | [中文翻译](https://github.com/ncase/nutshell/pull/14) | 2022.08.20 |
+| [RSSHub](https://github.com/DIYgod/RSSHub) | [添加南晓官网通知公告RSS支持](https://github.com/DIYgod/RSSHub/pull/11125) | 2022.10.20 |
 
 ## 联系方式
 
-- Email: [jiakai@duck.com](https://web.archive.org/web/20221128023113/mailto:jiakai@duck.com)
+- Email: [jiakai@duck.com](mailto:jiakai@duck.com)
