@@ -1,0 +1,25 @@
+  <footer>
+  {{ partial "foot_custom.html" . }}
+  {{ partial "footer_highlightjs" . }}
+  {{ with .Site.Params.footer }}
+  <hr>
+  <div class="copyright">{{ replace . "{Year}" now.Year | markdownify }}</div>
+  {{ end }}
+  </footer>
+  </article>
+  {{ template "_internal/google_analytics.html" . }}
+  </body>
+  <!--百度统计-->
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?1583976593d22d85a3cc5ea72c32293b";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <script src="https://static.gujiakai.top/static/jquery/jquery-3.6.0.min.js"></script>
+    <script src="https://static.gujiakai.top/static/fancybox/fancybox.umd.js"></script>
+    <script src="/js/custom.js"></script>
+</html>

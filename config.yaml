@@ -1,0 +1,43 @@
+baseurl: /
+languageCode: en-us
+title: 顾佳凯的网络日志
+theme: hugo-ivy
+googleAnalytics: "G-2N2G7YVYD1"
+disqusShortname: ""
+ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
+preserveTaxonomyNames: true
+footnotereturnlinkcontents: ↩
+
+permalinks:
+  post: /:year/:month/:slug/
+
+menu:
+  main:
+    - name: "主页"
+      url: "/"
+      weight: 1
+    - name: "关于"
+      url: "/about/"
+      weight: 2
+    - name: "标签"
+      url: "/tags/"
+      weight: 3
+    - name: "周见"
+      url: "https://jiakai.page"
+      weight: 4
+    - name: "RSS订阅"
+      url: "/index.xml"
+
+params:
+  description: "Stay hungry. Stay foolish."
+  footer: "&copy; 2022-{Year} Made with ❤️ By 顾佳凯 <br/> 备案信息: [苏ICP备2021031473号](https://beian.miit.gov.cn)"
+  highlightjsLang: ["latex"]
+  highlightjsTheme: "github"
+  highlightjsVersion: "11.7.0"
+
+markup:
+  highlight:
+    codeFences: false
+  goldmark:
+    renderer:
+      unsafe: true

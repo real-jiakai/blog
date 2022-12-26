@@ -1,0 +1,3 @@
+[submodule "themes/hugo-ivy"]
+	path = themes/hugo-ivy
+	url = git@github.com:yihui/hugo-ivy.git
