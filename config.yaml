@@ -25,6 +25,9 @@ menu:
     - name: "周见"
       url: "https://jiakai.page"
       weight: 4
+    - name: "阅读分享"
+      url: "https://reading.gujiakai.top"
+      weight: 5
     - name: "RSS订阅"
       url: "/index.xml"
 
