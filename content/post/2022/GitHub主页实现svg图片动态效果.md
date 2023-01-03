@@ -1,6 +1,6 @@
 ---
 title: GitHub主页实现svg图片动态效果
-tags: ["GitHub"]
+tags: ["github"]
 date: 2022-03-03T10:26:09+08:00
 slug: github-svg
 summary: 本文介绍如何实现GitHub个人主页svg图片动态效果。
@@ -47,4 +47,4 @@ summary: 本文介绍如何实现GitHub个人主页svg图片动态效果。
 
 > 用代码编辑器编辑前的 svg 文件和编辑后的 svg 文件的区别，见以下超链接。
 
-[click me](https://github.com/real-jiakai/real-jiakai/commit/bc3ff7305807b7e4e064e9207e3775ace5ad80d8?diff=split)
+[click me](https://github.com/real-jiakai/real-jiakai/commit/bc3ff7305807b7e4e064e9207e3775ace5ad80d8?diff=split#diff-baeb116eb5809d84b276b8dd622be650874cd7800065415625e2ef2e0eb0fca9)
