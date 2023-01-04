@@ -25,7 +25,7 @@ menu:
     - name: "周见"
       url: "https://jiakai.page"
       weight: 4
-    - name: "近期动态"
+    - name: "动态"
       url: "https://typefully.com/real_jiakai"
       weight: 5
     - name: "RSS订阅"
