@@ -5,7 +5,7 @@ function replacer(match,p1,p2){
 }
 
 $(document).ready(function() {
-    $("img").each(function() {
+    $("article img").each(function() {
         var currentImage = $(this);
         var uniq_name = currentImage.attr("src").replace(re,replacer)
         currentImage.wrap("<a href='" + currentImage.attr("src") + "' data-lightbox='" + uniq_name + "' data-title='" + currentImage.attr("alt") + "'></a>");
