@@ -63,9 +63,9 @@ summary: 被GitHub自检程序秒拒49次后，第50次我成功了。
 
 <center><b>图1.邮箱次次被秒拒图</b></center>
 
-![49次失败历程](https://vip2.loli.io/2022/06/25/FNki81p4Hc7youX.png)
+![49次失败历程图一](https://vip2.loli.io/2022/06/25/FNki81p4Hc7youX.png)
 
-![screencapture-education-github-discount-requests-student-application-2022-06-25-14_15_35-2](https://vip2.loli.io/2022/06/25/vJVk8Zo6SFMmcBa.png)
+![49次失败历程图二](https://vip2.loli.io/2022/06/25/vJVk8Zo6SFMmcBa.png)
 
 <center><b>图2.49次失败历程</b></center>
 
