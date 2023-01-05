@@ -5,7 +5,7 @@
 // }
 
 $(document).ready(function() {
-    $("article img").each(function() {
+    $("p img").each(function() {
         var currentImage = $(this);
         // var uniq_name = currentImage.attr("src").replace(re,replacer)
         currentImage.wrap("<a href='" + currentImage.attr("src") + "' data-lightbox='lightbox' data-title='" + currentImage.attr("alt") + "'></a>");
