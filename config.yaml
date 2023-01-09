@@ -22,12 +22,9 @@ menu:
     - name: "标签"
       url: "/tags/"
       weight: 3
-    - name: "周见"
-      url: "https://jiakai.page"
-      weight: 4
     - name: "动态"
       url: "https://typefully.com/real_jiakai"
-      weight: 5
+      weight: 4
     - name: "RSS订阅"
       url: "/index.xml"
 
