@@ -25,6 +25,9 @@ menu:
     - name: "动态"
       url: "https://typefully.com/real_jiakai"
       weight: 4
+    - name: "运动"
+      url: "https://running.gujiakai.top"
+      weight: 5
     - name: "RSS订阅"
       url: "/index.xml"
 
