@@ -222,6 +222,6 @@ sudo apt purge code-server
 rm -rf /etc/systemd/system/default.target.wants/code-server@root.service
 rm -rf /lib/systemd/system/code-server@.service
 # 强制删除code-server目录
-rm -rf cd ~/cache/code-server
+rm -rf ~/cache/code-server
 ```
 
