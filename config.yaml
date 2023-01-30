@@ -28,9 +28,7 @@ menu:
     - name: "周刊"
       url: "https://gujiakai.top"
       weight: 5
-    - name: "RSS订阅"
-      url: "/index.xml"
-
+      
 params:
   description: "Stay hungry. Stay foolish."
   footer: "&copy; 2022-{Year} Made with ❤️ By 顾佳凯 <br/> 备案信息: [苏ICP备2021031473号](https://beian.miit.gov.cn)"
