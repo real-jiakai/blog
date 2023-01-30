@@ -28,9 +28,6 @@ menu:
     - name: "周刊"
       url: "https://gujiakai.top"
       weight: 5
-    - name: "运动"
-      url: "https://running.gujiakai.top"
-      weight: 6
     - name: "RSS订阅"
       url: "/index.xml"
 

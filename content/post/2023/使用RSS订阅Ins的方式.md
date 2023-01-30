@@ -20,7 +20,7 @@ Ins的主页并不会公开，如果采用RSSHub+配置自己账号密码的方�
 
 ![Picuki](https://vip2.loli.io/2023/01/18/k4TREtNXU6QmvpB.webp)
 
-这个法子（RSSHuB+Picuki），在我使用RSSHub+Ins，自己的Ins账号异常，被要求验证身份、强制改密后，使用过一段时间，
+这个法子（RSSHub+Picuki），在我使用RSSHub+Ins，自己的Ins账号异常，被要求验证身份、强制改密后，使用过一段时间，
 
 但是好景不长，不久就Error了。
 
@@ -32,7 +32,7 @@ Ins的主页并不会公开，如果采用RSSHub+配置自己账号密码的方�
 
 ## 1、RSS Bridge Picuki订阅（推荐指数：☆☆☆☆☆）
 
-粗略扫一眼[RSS Bridge](https://github.com/RSS-Bridge/rss-bridge) GitHub仓库的README，并没有看到Ins的字眼，但里面的bridge含有Picuki，因此可以拿其来订阅Ins，值得注意的是，官方的公共实例订阅Picuki，会报403的错误，不难推测出由于使用的人太多，该实例已经被Picuki屏蔽了。
+粗略扫一眼[RSS Bridge](https://github.com/RSS-Bridge/rss-bridge) GitHub仓库的README，并没有看到Ins的字眼，但里面的Bridge含有Picuki，因此可以拿其来订阅Ins，值得注意的是，官方的公共实例订阅Picuki，会报403的错误，不难推测出由于使用的人太多，该实例已经被Picuki屏蔽了。
 
 所以必须自建RSS Bridge，自建完后使用里面的Picuki Bridge就能成功订阅Ins了。
 
@@ -67,7 +67,7 @@ Ins的主页并不会公开，如果采用RSSHub+配置自己账号密码的方�
 
 答：
 
-如果你经常扫描多个配置文件而没有登录，Instagram 可以暂时禁止你的 IP。在大多数情况下，登录 Instagram 应该可以防止屏蔽。
+如果你经常浏览多个Ins账户而没有登录，Instagram 可以暂时禁止你的 IP。在大多数情况下，登录 Instagram 应该可以防止屏蔽。
 
 个人猜测，Feedbro中Ins的集成是基于你已经登录了自己的Ins账号，在此基础上，这个程序定时去访问你订阅名人的Ins界面（借助了你的账号）。
 
