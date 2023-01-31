@@ -6,5 +6,6 @@
 {{ (index (split .Content "<!--# ON_HOLD -->") 0) | safeHTML }}
 {{ else }}
 {{ .Content }}
+{{ template "_internal/disqus.html" . }}
 {{ end }}
 {{ partial "footer.html" . }}
