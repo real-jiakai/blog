@@ -6,8 +6,8 @@
     document.getElementsByClassName('dsq-brlink')[0].style.display = 'none'
     var scb = document.getElementById('show_comments_button')
     scb.addEventListener('click', function() {
-        // if (window.location.hostname == "localhost")
-        //     return;
+        if (window.location.hostname == "localhost")
+            return;
         document.getElementById('show_comments_button').style.display = 'none';
         document.getElementById('disqus_thread').style.display = 'block';
         document.getElementsByClassName('dsq-brlink')[0].style.display = 'block'
