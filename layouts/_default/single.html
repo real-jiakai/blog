@@ -6,6 +6,5 @@
 {{ (index (split .Content "<!--# ON_HOLD -->") 0) | safeHTML }}
 {{ else }}
 {{ .Content }}
-<div id="waline"></div>
 {{ end }}
 {{ partial "footer.html" . }}
