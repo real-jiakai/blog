@@ -3,7 +3,6 @@ languageCode: en-us
 title: 顾佳凯的网络日志
 theme: hugo-ivy
 googleAnalytics: "G-2N2G7YVYD1"
-disqusShortname: "ge-ren-bo-ke-7"
 ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
 preserveTaxonomyNames: true
 footnotereturnlinkcontents: ↩
