@@ -1,22 +1,8 @@
-<button id="show_comments_button" onclick="utterances();return false;">Show Comments</button>
-<div id='utterances'></div>
-        
-<script crossorigin="anonymous"
+<script src="https://utteranc.es/client.js"
+        repo="real-jiakai/blog"
+        issue-term="pathname"
+        label="comment"
+        theme="github-light"
+        crossorigin="anonymous"
         async>
-    var src='https://utteranc.es/client.js'
-    var repo="real-jiakai/blog"
-    var issue_term="pathname"
-    var label="comment"
-    var theme="github-light"
-    function utterances() {
-        var script = document.createElement('script');
-        script.setAttribute('src', src);
-        script.setAttribute('repo', repo);
-        script.setAttribute('issue-term', issue_term);
-        script.setAttribute('label', label);
-        script.setAttribute('theme', theme);
-        document.getElementById('utterances').appendChild(script)
-        document.getElementById('show_comments_button').remove();
-    }
-
 </script>
