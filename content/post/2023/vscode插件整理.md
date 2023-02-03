@@ -6,7 +6,6 @@ slug: "vscode-plugins-tidy"
 summary: 整理vscode插件。
 ---
 
-![HackNews网友评论](https://vip2.loli.io/2023/02/03/ieZyxYLgCKmhsG3.webp)
 
 VS Code里面，我一共装了接近100个插件，但是仔细想想有哪些是真的需要的呢？很少。这和社交媒体上follow别人是一样的道理，看到别人很牛逼就follow，但是之后就再也没空关注过，那这样的follow有何价值？完全没有价值。
 
