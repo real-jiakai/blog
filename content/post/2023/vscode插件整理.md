@@ -1,5 +1,5 @@
 ---
-title: "Vscode插件整理"
+title: "VS Code插件整理"
 date: 2023-02-03T10:37:24+08:00
 tags: ["vscode"]
 slug: "vscode-plugins-tidy"
