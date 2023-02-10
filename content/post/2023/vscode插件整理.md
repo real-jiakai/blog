@@ -12,16 +12,18 @@ VS Code里面，我一共装了接近100个插件，但是仔细想想有哪些�
 故写此篇博文记录自己目前的插件状态，时刻更新，以避免VS Code陷入臃肿的漩涡。
 
 
-|                  插件名                   |           功能           |  标签   |
-| :---------------------------------------: | :----------------------: | :-----: |
-|              GitHub Copilot               |       人工智能编程       |   #ai   |
-|                Live Server                |     实时展示html页面     |  #html  |
-|            Material Icon Theme            |   提供文件/文件夹图标    |  #图标  |
-|                 Night Owl                 |        vscode主题        | #theme  |
-|         Prettier - Code formatter         |      代码格式化工具      | #格式化 |
-|               Remote - SSH                | 远程连接服务器云开发工具 |  #ssh   |
-| Remote - SSH: Editing Configuration Files | 远程连接服务器云开发工具 |  #ssh   |
-|              Remote Explorer              | 远程连接服务器云开发工具 |  #ssh   |
+|                  插件名                   |               功能               |  标签   |
+| :---------------------------------------: | :------------------------------: | :-----: |
+|              GitHub Copilot               |           人工智能编程           |   #ai   |
+|                Live Server                |         实时展示html页面         |  #html  |
+|            Material Icon Theme            |       提供文件/文件夹图标        |  #图标  |
+|                 Night Owl                 |            vscode主题            | #theme  |
+|         Prettier - Code formatter         |          代码格式化工具          | #格式化 |
+|               Remote - SSH                |     远程连接服务器云开发工具     |  #ssh   |
+| Remote - SSH: Editing Configuration Files |     远程连接服务器云开发工具     |  #ssh   |
+|              Remote Explorer              |     远程连接服务器云开发工具     |  #ssh   |
+|                   json                    |           分析json格式           |  #json  |
+|           Conventional Commits            | 给git commit添加约定式的提交信息 |  #git   |
 
 
 
