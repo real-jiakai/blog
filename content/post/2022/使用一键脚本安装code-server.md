@@ -225,3 +225,6 @@ rm -rf /lib/systemd/system/code-server@.service
 rm -rf ~/cache/code-server
 ```
 
+
+
+> 尾记：在我看来code-server最多是一个玩物，要想真正实现服务器端开发，可以使用vscode的remote ssh相关的插件，连接服务器，在自己的笔记本上的vscode中访问远程服务器的相关资源。
