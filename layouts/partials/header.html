@@ -52,6 +52,8 @@
     <link rel="shortcut icon" href="/images/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="/css/lightbox.css">
     {{ partial "head_custom.html" . }}
+    <!-- umami -->
+    <script async defer data-website-id="d7f3de25-017d-4f73-8bd0-81e9484ef61f" src="https://umami.gujiakai.top/umami.js"></script>
   </head>
 
   {{ $.Scratch.Set "section" (replaceRE "^/([^/]+)/.*" "$1" .RelPermalink) }}
