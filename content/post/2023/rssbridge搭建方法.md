@@ -246,3 +246,19 @@ rssbridge是一个非常棒的项目，可以说在rss界，rsshub之下便是rs
 最后分享一则rssbridge项目主页的咆哮。
 
 ![rssbridge-rant](https://vip2.loli.io/2023/02/20/4FdheiOKMJC9luf.webp)
+
+
+
+## 8、更新
+
+### 2023.3.7
+
+目前我已经弃用自建的解决方案，采用tg机器人[thefeedreaderbot](https://thefeedreaderbot.com/index.html)创始人搭建的rssbridge，经济实力允许的话，可以花100€买断这个机器人的premium版。
+
+![rssbridge 403](https://vip2.loli.io/2023/03/07/c5Txu3q8nj1leMz.webp)
+
+我也尝试询问过作者，他购买了哪家代理才使得其搭建的rssbridge能躲过picuki的block。作者也向我表明，其使用的是[webshare](https://www.webshare.io/)这家网站的动态代理ip，域名授权，将获取到的地址，填入rssbridge的config.ini.php文件中，形如`url = "http://p.webshare.io:xxxx"`。
+
+![tg对话截图](https://vip2.loli.io/2023/03/07/nFUR8Cj5P4L2WtB.webp)
+
+我粗略估算了一下，webshare最便宜的方案，包年也得接近30刀，于是我最终决定放弃rssbridge。使用[thefeedreaderbot](https://thefeedreaderbot.com/index.html)作者搭建的rssbridge。具体的rssbridge地址可参看thefeedreaderbot网站的[help rssbridge](https://thefeedreaderbot.com/helpRssBridge.html)页面。
