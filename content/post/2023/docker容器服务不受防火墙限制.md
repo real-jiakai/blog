@@ -1,7 +1,7 @@
 ---
 title: "Docker容器服务不受防火墙限制？"
 date: 2023-03-07T11:15:46+08:00
-slug: "is-docker-container-limited-by-firewall"
+slug: "will-docker-container-be-limited-by-firewall"
 tags: ["docker","linux"]
 ---
 
@@ -91,7 +91,7 @@ stackoverflow上网友们对于此问题也进行了讨论。[Uncomplicated Fire
 
 ![caddy反向代理的流程](https://vip2.loli.io/2023/03/07/v7lJoRbcjnN8fM6.webp)
 
-之所以ufw无法管控相应的docke与主机之间的映射端口，是因为docker会直接操作iptables来放行相应的端口。附new bing给出的树形图。
+之所以ufw无法管控相应的docker与主机之间的映射端口，是因为docker会直接操作iptables来放行相应的端口。附new bing给出的树形图。
 
 ![iptables和ufw](https://vip2.loli.io/2023/03/07/zhb2eKlZfHFxWpd.webp)
 
