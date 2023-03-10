@@ -27,10 +27,13 @@ menu:
     - name: "周刊"
       url: "https://gujiakai.top"
       weight: 5
+    - name: "til"
+      url: "/til/"
+      weight: 6
       
 params:
   description: "Stay hungry. Stay foolish."
-  footer: "&copy; 2022-{Year} Made with ❤️ By 顾佳凯 <br/> 备案信息: [苏ICP备2021031473号](https://beian.miit.gov.cn)"
+  footer: "&copy; 2022-{Year} Made with ❤️ By Jiakai"
   highlightjsLang: ["latex"]
   highlightjsTheme: "github"
   highlightjsVersion: "11.7.0"

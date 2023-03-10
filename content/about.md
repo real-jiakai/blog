@@ -38,9 +38,3 @@ date: '2022-12-26'
 ## 联系方式
 
 - Email: [jiakai@duck.com](mailto:jiakai@duck.com)
-
-## 其余站点
-
-+ [跑步页面](https://running.gujiakai.top)用于记录自己的跑步。
-+ [Awesome RSS](https://awesomerss.com)分享一些有关RSS的有趣内容，不定时更新。
-+ [Internet is beautiful](https://internetisbeautiful.org)分享一些个人书签。
