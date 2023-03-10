@@ -6,4 +6,6 @@ Today I Learned页面记录我自己今天学了什么。学了什么不能仅�
 
 本栏目受[Josh Branchaud](https://github.com/jbranchaud/til)、[Simon Willison](https://til.simonwillison.net/)、[Kevin Schaul](https://www.kschaul.com/til/)这些国外大牛启发。
 
+- [Node.js学习笔记](https://node.gujiakai.top)
+
 - [VPS学习笔记](https://vps.gujiakai.top)
