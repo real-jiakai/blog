@@ -6,6 +6,10 @@ slug: "hugo-remove-trailing-slash"
 summary: 介绍Hugo博客去除url尾部斜杠的方法。
 ---
 
+> 注：以下方法仅限于在hugo的config.toml配置文件中添加了`uglyURLs = true`选项，仍不生效的情况。
+> 
+> 如果添加了`uglyURLs = true`选项，url尾部的`/`换成了`.html`，就没必要在环境变量中做文章了。
+
 ## 1.背景
 
 从今年上半年第一次接触Hugo博客开始，就一直对Hugo博客的url不爽。如`http://localhost:1313/2022/11/hugo-bear-theme-add-fancybox/`，
