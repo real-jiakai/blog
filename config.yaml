@@ -14,9 +14,6 @@ baidutongji: "1583976593d22d85a3cc5ea72c32293b"
 permalinks:
   blog: /:year/:month/:slug
 
-taxonomies:
-  tag: tags
-
 # 网站的菜单栏配置
 menu:
   main:
@@ -41,7 +38,9 @@ menu:
 
 # 参数
 params:
-  description: "Stay hungry. Stay foolish."
+  description: "A blog focusing on sharing tech and personal experiences"
+  keywords: "blog,tech,personal,life"
+  author: "jiakai"
   footer: "&copy; 2022-{Year} Made with ❤️ By Jiakai"
 
 # markup设置
