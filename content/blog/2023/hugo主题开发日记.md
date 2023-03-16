@@ -6,6 +6,8 @@ slug: "hugo-theme-development-diary"
 summary: 记录Hugo主题的开发经过。
 ---
 
+> 注：本博文采用的便是本人开发的hugo主题。
+
 月初，提交毕设中期报告的时候，我提到放弃Hugo，转而采用Next.js来完成毕设。为了更好地显示Next.js相较于Hugo的优势，于是我准备开发一个Hugo博客主题，已备之后答辩时阐述。
 
 ![中期报告片段](https://vip2.loli.io/2023/03/16/JNsfyt9mpVULYuo.webp)
