@@ -4,10 +4,8 @@ date: 2022-08-17T15:40:02+08:00
 draft: false
 tags: ['github']
 slug: use-script-to-install-code-server
-summary: 使用一键脚本安装code-server，更改b站视频粗糙的安装部署操作
+summary: 使用一键脚本安装code-server，更改b站视频粗糙的安装部署操作。
 ---
-
-
 
 ## 1.文章背景
 

@@ -3,10 +3,8 @@ title: "Google voice正在连接的解决方案"
 date: 2023-03-14T09:08:15+08:00
 tags: ["google"]
 slug: "the-solution-of-google-voice-is-connecting"
-summary: 介绍Google voice正在连接的解决方案
+summary: 介绍Google voice正在连接的解决方案。
 ---
-
-
 
 近期Google voice IFTTT的保号方法开始收费。[via](https://www.zaihua.net/512.html)
 

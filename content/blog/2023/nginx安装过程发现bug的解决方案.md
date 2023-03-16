@@ -6,8 +6,6 @@ slug: "a-solution-about-nginx-problem"
 summary: 介绍nginx安装过程中遇到bug的解决方案。
 ---
 
-
-
 ## 问题描述
 
 从源代码安装nginx后，使用如下代码将nginx注册为系统服务。

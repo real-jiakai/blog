@@ -3,7 +3,7 @@ title: "ls > list命令的执行流程"
 date: 2023-01-13T20:01:31+08:00
 tags: ["linux"]
 slug: "the-execution-process-ls->-list"
-summary: 介绍ls > list命令的执行流程
+summary: 介绍ls > list命令的执行流程。
 ---
 
 ## 提问

@@ -1,15 +1,23 @@
-baseurl: https://blog.gujiakai.top
-languageCode: en-us
-title: 顾佳凯的网络日志
-theme: hugo-ivy
+# 网站的基本url地址
+baseURL: https://blog.gujiakai.top
+# 网站使用的语言代码
+languageCode: 'en-us'
+# 网站标题
+title: '顾佳凯的网络日志'
+# 网站使用的主题
+theme: 'hugo-simple-theme'
+# google分析
 googleAnalytics: "G-2N2G7YVYD1"
-ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
-preserveTaxonomyNames: true
-footnotereturnlinkcontents: ↩
-
+# 百度统计
+baidutongji: "1583976593d22d85a3cc5ea72c32293b"  
+# 永久链接
 permalinks:
-  post: /:year/:month/:slug
+  blog: /:year/:month/:slug
 
+taxonomies:
+  tag: tags
+
+# 网站的菜单栏配置
 menu:
   main:
     - name: "主页"
@@ -30,18 +38,36 @@ menu:
     - name: "til"
       url: "/til/"
       weight: 6
-      
+
+# 参数
 params:
   description: "Stay hungry. Stay foolish."
   footer: "&copy; 2022-{Year} Made with ❤️ By Jiakai"
-  highlightjsLang: ["latex"]
-  highlightjsTheme: "github"
-  highlightjsVersion: "11.7.0"
 
+# markup设置
 markup:
-  highlight:
-    style: monokai
-    codeFences: true
   goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      linkifyProtocol: 'https'
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer: true
+    parser:
+      autoHeadingID: true
+      autoHeadingIDType: 'github'
+      attribute:
+        block: false
+        title: true
     renderer:
+      hardWraps: false
       unsafe: true
+      xhtml: false
+    tableOfContents:
+        startLevel: 1
+        endLevel: 2
+        ordered: false
+     

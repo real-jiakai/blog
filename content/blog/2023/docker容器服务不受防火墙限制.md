@@ -3,6 +3,7 @@ title: "Docker容器服务不受防火墙限制？"
 date: 2023-03-07T11:15:46+08:00
 slug: "will-docker-container-be-limited-by-firewall"
 tags: ["docker","linux"]
+summary: 介绍Docker容器服务不受防火墙限制的解决方案。
 ---
 
 最近在绿云vps上跑docker服务的时候，发现了一个奇怪的现象。如我运行memos容器时，ufw并没有放行相应端口，

@@ -1,9 +1,7 @@
 ---
-title: til
+title: Today I Learned
 date: '2023-2-28'
 ---
-
-# Today I Learned
 
 ## 介绍
 
