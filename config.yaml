@@ -20,8 +20,8 @@ menu:
     - name: "主页"
       url: "/"
       weight: 1
-    - name: "关于"
-      url: "/about/"
+    - name: "归档"
+      url: "/archive/"
       weight: 2
     - name: "标签"
       url: "/tags/"
@@ -35,6 +35,9 @@ menu:
     - name: "til"
       url: "/til/"
       weight: 6
+    - name: "关于"
+      url: "/about/"
+      weight: 7
 
 # 参数
 params:
