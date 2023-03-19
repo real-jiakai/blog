@@ -41,4 +41,4 @@ Today I Learned页面记录我自己今天学了什么。学了什么不能仅�
 
 - [跑步页面](https://running.gujiakai.top)
 
-还有一些站点就一一罗列了。
+还有一些站点就不一一罗列了。
