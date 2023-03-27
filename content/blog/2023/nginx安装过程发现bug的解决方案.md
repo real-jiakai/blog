@@ -4,6 +4,7 @@ date: 2023-01-14T19:29:39+08:00
 tags: ['nginx']
 slug: "a-solution-about-nginx-problem"
 summary: 介绍nginx安装过程中遇到bug的解决方案。
+showtoc: true
 ---
 
 ## 问题描述

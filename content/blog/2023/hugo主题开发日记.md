@@ -4,6 +4,7 @@ date: 2023-03-16T13:31:46+08:00
 tags: ["hugo"]
 slug: "hugo-theme-development-diary"
 summary: 记录Hugo主题的开发经过。
+showtoc: true
 ---
 
 > 注：本博文采用的便是本人开发的hugo主题。

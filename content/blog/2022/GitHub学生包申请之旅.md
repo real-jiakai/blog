@@ -4,6 +4,7 @@ date: 2022-06-25T14:01:11+08:00
 tags: ['github']
 slug: github-education-developer-kit-application-journey
 summary: 被GitHub自检程序秒拒49次后，第50次我成功了。
+showtoc: true
 ---
 
 第一次我听说GitHub学生包，是在大三上(2021.9)，当时抱着满腔热情，兴致勃勃地去申请GitHub学生包。

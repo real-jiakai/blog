@@ -79,7 +79,7 @@ curl --interface WARP ip.gs
 
 ![x-ui后台界面](https://vip2.loli.io/2023/03/26/9v5jfux1DiPXgJZ.webp)
 
-将默认的配置换为以下内容，让www.bing.com和chat.openai.com的流量走warp虚拟网络接口。
+将默认的配置换为以下内容，保存配置，重启面板。让www.bing.com和chat.openai.com的流量走warp虚拟网络接口。
 
 其余流量走主网络接口（如eth0）。
 

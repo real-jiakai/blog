@@ -4,6 +4,7 @@ date: "2022-11-07T15:05:47+08:00"
 tags: ['hugo']
 slug: "hugo-remove-trailing-slash"
 summary: 介绍Hugo博客去除url尾部斜杠的方法。
+showtoc: true
 ---
 
 > 注：以下方法仅限于在hugo的config.toml配置文件中添加了`uglyURLs = true`选项，仍不生效的情况。

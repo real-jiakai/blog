@@ -1,4 +1,4 @@
 ---
-title: "blog"
+title: "Archive"
 url: "/archive/"
 ---

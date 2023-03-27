@@ -37,6 +37,8 @@ Today I Learned页面记录我自己今天学了什么。学了什么不能仅�
 
 ## 其余
 
+- [动态](https://typefully.com/real_jiakai)
+
 - [个人简历](https://cv.gujiakai.top)
 
 - [跑步页面](https://running.gujiakai.top)

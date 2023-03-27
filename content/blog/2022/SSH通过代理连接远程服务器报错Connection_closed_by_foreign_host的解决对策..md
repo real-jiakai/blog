@@ -4,6 +4,7 @@ date: 2022-10-06T19:27:33+08:00
 tags: ['linux']
 slug: ssh-connect-by-proxy-error-connection-closed-by-foreign-host-solution
 summary: ssh设置代理连接远程服务器报错，经过两小时的摸索，我找到了解决对策。
+showtoc: true
 ---
 
 

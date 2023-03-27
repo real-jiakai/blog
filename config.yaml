@@ -13,6 +13,8 @@ baidutongji: "1583976593d22d85a3cc5ea72c32293b"
 # 永久链接
 permalinks:
   blog: /:year/:month/:slug
+# 分页器
+paginate: 5
 
 # 网站的菜单栏配置
 menu:
@@ -26,18 +28,12 @@ menu:
     - name: "标签"
       url: "/tags/"
       weight: 3
-    - name: "动态"
-      url: "https://typefully.com/real_jiakai"
-      weight: 4
-    - name: "周刊"
-      url: "https://gujiakai.top"
-      weight: 5
     - name: "til"
       url: "/til/"
-      weight: 6
+      weight: 4
     - name: "关于"
       url: "/about/"
-      weight: 7
+      weight: 5
 
 # 参数
 params:
@@ -69,7 +65,7 @@ markup:
       unsafe: true
       xhtml: false
     tableOfContents:
-        startLevel: 1
-        endLevel: 2
+        startLevel: 2
+        endLevel: 3
         ordered: false
      

@@ -4,6 +4,7 @@ date: 2023-01-19T16:40:18+08:00
 tags: ["rss"]
 slug: "use-rss-to-subscribe-instagram"
 summary: 介绍使用RSS订阅Ins的方式。
+showtoc: true
 ---
 
 在交流RSS的TG群组中，时常可以看到群友询问如何订阅Instagram，故今天写一篇文章介绍目前我了解的订阅Ins的方法。

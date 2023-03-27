@@ -4,6 +4,7 @@ date: 2022-09-28T19:27:33+08:00
 tags: ['js']
 slug: you-should-add-a-semicolon-when-a-statement-end-in-js
 summary: 深究newsletter里面js代码的细节，让我知道了js中添加`;`的重要性。
+showtoc: true
 ---
 
 
