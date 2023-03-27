@@ -5,7 +5,7 @@ languageCode: 'en-us'
 # 网站标题
 title: '顾佳凯的网络日志'
 # 网站使用的主题
-theme: 'hugo-simple-theme'
+theme: 'hugo-theme-simple'
 # google分析
 googleAnalytics: "G-2N2G7YVYD1"
 # 百度统计
