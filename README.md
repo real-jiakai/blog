@@ -5,4 +5,4 @@
 
 This repo stores my personal blog.
 
-The theme is based on [hugo-simple-theme](https://github.com/simple-is-awesome/hugo-simple-theme).
+The theme is based on [Hugo-Theme-Simple](https://github.com/simple-is-awesome/Hugo-Theme-Simple).
