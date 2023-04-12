@@ -8,8 +8,6 @@ title: '顾佳凯的网络日志'
 theme: 'hugo-theme-simple'
 # google分析
 googleAnalytics: "G-2N2G7YVYD1"
-# 百度统计
-baidutongji: "1583976593d22d85a3cc5ea72c32293b"  
 # 永久链接
 permalinks:
   blog: /:year/:month/:slug
