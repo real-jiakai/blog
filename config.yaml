@@ -13,6 +13,8 @@ permalinks:
   blog: /:year/:month/:slug
 # 分页器
 paginate: 5
+# 博文中使用了中文
+hasCJKLanguage: true
 
 # 网站的菜单栏配置
 menu:
