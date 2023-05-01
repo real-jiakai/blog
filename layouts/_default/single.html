@@ -19,29 +19,29 @@
 
    {{/* copyright */}}
    {{ if eq .Type "blog" }}
-   {{- partial "copyright.html" . -}}
+    {{- partial "copyright.html" . -}}
+    
+    <br/>
+
+    <script res-subscription-form data-feed-id="jiakai" src="https://feedsubscription.com/web-ui-scripts/web-ui/subscription-form.js"></script>
+
+    <div class="d-flex justify-content-between mt-4">
+      {{ with .Prev }}
+      <div class="d-flex align-items-center" style="max-width: 50%;">
+        <div class="text-truncate ml-2">
+          <a href="{{ .RelPermalink }}" class="text-decoration-none">&larr;上一篇：{{ .Title }}</a>
+        </div>
+      </div>
+      {{ end }}
+      {{ with .Next }}
+      <div class="d-flex align-items-center justify-content-end" style="max-width: 50%;">
+        <div class="text-truncate mr-2">
+          <a href="{{ .RelPermalink }}" class="text-decoration-none">下一篇：{{ .Title }}&rarr;</a>
+        </div>
+      </div>
+      {{ end }}
+    </div>
    {{ end }}
-
-   <br/>
- 
-   <script res-subscription-form data-feed-id="jiakai" src="https://feedsubscription.com/web-ui-scripts/web-ui/subscription-form.js"></script>
-
-  <div class="d-flex justify-content-between mt-4">
-    {{ with .Prev }}
-    <div class="d-flex align-items-center" style="max-width: 50%;">
-      <div class="text-truncate ml-2">
-        <a href="{{ .RelPermalink }}" class="text-decoration-none">&larr;上一篇：{{ .Title }}</a>
-      </div>
-    </div>
-    {{ end }}
-    {{ with .Next }}
-    <div class="d-flex align-items-center justify-content-end" style="max-width: 50%;">
-      <div class="text-truncate mr-2">
-        <a href="{{ .RelPermalink }}" class="text-decoration-none">下一篇：{{ .Title }}&rarr;</a>
-      </div>
-    </div>
-    {{ end }}
-  </div>
 
   {{/* utterances */}}
   {{- partial "utterances.html" . -}}
