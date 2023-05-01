@@ -1,0 +1,49 @@
+{{ define "main" }}
+<div class="container-md align-items-center">
+  <h2 class="text-center p-3">{{ .Title }}</h2>
+  {{ if eq .Type "blog" }}
+  <div class="d-flex gap-3 mb-3 justify-content-center">
+    <span class="iconfont icon-date card-subtitle">{{ .Date.Format "2006-01-02" }}</span>
+    <span class="iconfont icon-tag card-subtitle">
+      {{ $tagCount := len .Params.tags }}
+      {{ range $index, $tag := .Params.tags }}
+      #{{ $tag }}{{ if lt (add $index 1) $tagCount }},{{ end }}
+      {{ end }}
+    </span>
+    <span class="iconfont icon-wenjianxinxi card-subtitle">{{ .WordCount }} words</span>
+    <span class="iconfont icon-time card-subtitle">{{ .ReadingTime }} min read</span>
+  </div>
+  {{ end }}
+
+  {{ .Content }}
+
+   {{/* copyright */}}
+   {{ if eq .Type "blog" }}
+   {{- partial "copyright.html" . -}}
+   {{ end }}
+
+   <br/>
+ 
+   <script res-subscription-form data-feed-id="jiakai" src="https://feedsubscription.com/web-ui-scripts/web-ui/subscription-form.js"></script>
+
+  <div class="d-flex justify-content-between mt-4">
+    {{ with .Prev }}
+    <div class="d-flex align-items-center" style="max-width: 50%;">
+      <div class="text-truncate ml-2">
+        <a href="{{ .RelPermalink }}" class="text-decoration-none">&larr;上一篇：{{ .Title }}</a>
+      </div>
+    </div>
+    {{ end }}
+    {{ with .Next }}
+    <div class="d-flex align-items-center justify-content-end" style="max-width: 50%;">
+      <div class="text-truncate mr-2">
+        <a href="{{ .RelPermalink }}" class="text-decoration-none">下一篇：{{ .Title }}&rarr;</a>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+
+  {{/* utterances */}}
+  {{- partial "utterances.html" . -}}
+</div>
+{{ end }}
