@@ -2,7 +2,7 @@
 title: "关于openai清退plus用户事件的思考"
 date: 2023-05-28T12:47:41+08:00
 tags: ["openai","chatgpt"]
-slug: "thinking-of-openai-ban-plus-customer-in-527"
+slug: "thinking-of-openai-ban-plus-customers-in-527"
 summary: 分享个人关于openai清退plus用户事件的思考。
 showtoc: true
 ---
