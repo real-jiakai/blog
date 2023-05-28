@@ -36,6 +36,7 @@ date: '2022-12-26'
 - 张杰
 - 阮一峰
 - Stephen Curry
+- Sam Altman
 
 ## 联系方式
 
