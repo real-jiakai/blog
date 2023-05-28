@@ -110,7 +110,7 @@ DOMAIN,o33249.ingest.sentry.io,REJECT
 
 开一台美国的windows server(最好是2022版本），在上面下载Google One Vpn并开启，在这台windows sever上体验chatgpt。
 
-关于windows server的选购，我推荐vps hosting service这个vps厂商，因为这家提供的vps配置还行且便宜。[购买链接](https://vpshostingservice.co/cart.php?a=confproduct&i=0)（无任何aff，放心点击），五折优惠码：`50LEB`，地区可以选择洛杉矶，距离中国大陆较近，延迟低，卡顿情况少。
+关于windows server的选购，我推荐CheapWindowsVPS这个vps厂商，因为这家提供的vps配置还行且便宜。[购买链接](https://vpshostingservice.co/cart.php?a=confproduct&i=0)（无任何aff，放心点击），五折优惠码：`50LEB`，地区可以选择洛杉矶，距离中国大陆较近，延迟低，卡顿情况少。
 
 每月需要花费5.5美刀，即可拥有2核CPU、4GB内存、60GB硬盘的windows vps，相较于其他同行便宜不少。
 
