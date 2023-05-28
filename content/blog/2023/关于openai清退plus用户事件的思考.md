@@ -41,27 +41,27 @@ depay卡无法充值，消费也可能中断。当时我看到此消息时，就
 
 调查结果显示，有接近1/4的用户被封号，
 
-![](https://vip2.loli.io/2023/05/28/EkHuIAShgt159bO.webp)
+![封号调查](https://vip2.loli.io/2023/05/28/EkHuIAShgt159bO.webp)
 
 有一半的群友有过plus的付款行为。
 
-![](https://vip2.loli.io/2023/05/28/JQp6hgTYSlV7Hif.webp)
+![付费行为调查](https://vip2.loli.io/2023/05/28/JQp6hgTYSlV7Hif.webp)
 
 对于sentry.io这款追踪器，大部分群友都是没关注过的。
 
-![](https://vip2.loli.io/2023/05/28/cwW9Kdk2yPeJxuU.webp)
+![sentry.io 了解程度调查](https://vip2.loli.io/2023/05/28/cwW9Kdk2yPeJxuU.webp)
 
 绝大部分群友开通chatgpt plus均是通过虚拟信用卡，很少一部分使用美国银行发行的实体卡进行购买。
 
-![](https://vip2.loli.io/2023/05/28/IvyFPsgDZQh72bp.webp)
+![付费方式调查](https://vip2.loli.io/2023/05/28/IvyFPsgDZQh72bp.webp)
 
 大部分群友都是使用机场的解锁或依托自建vps提供的解锁来获取chatgpt服务，不到1/10的群友使用的是原生的住宅ip代理。
 
-![](https://vip2.loli.io/2023/05/28/s5j8GbWrw49Hht3.webp)
+![梯子类型调查](https://vip2.loli.io/2023/05/28/s5j8GbWrw49Hht3.webp)
 
 绝大部分群友都是自己注册的账号，很少一部分群友使用的账号是从商家处购买的。
 
-![](https://vip2.loli.io/2023/05/28/iWNIYMAyP1DQvH3.webp)
+![注册调查](https://vip2.loli.io/2023/05/28/iWNIYMAyP1DQvH3.webp)
 
 首先关于封号这一项数据，其实没有多大的可比性。
 
