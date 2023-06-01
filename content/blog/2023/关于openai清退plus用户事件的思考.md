@@ -110,6 +110,9 @@ DOMAIN,o33249.ingest.sentry.io,REJECT
 
 开一台美国的windows server(最好是2022版本），在上面下载Google One Vpn并开启，在这台windows sever上体验chatgpt。
 
+> 更新（2023.6.1）：没必要这么整，直接在windows server上自建节点即可。经过近些天的网友反馈，可以肯定本轮封禁是depay的锅，代理节点被封的场景很少（不要作死，用ChatGPT非服务地区的节点访问，就算要访问，也要保证访问
+> ChatGPT的出口ip为服务地区的ip！
+
 关于windows server的选购，我推荐CheapWindowsVPS这个vps厂商，因为这家提供的vps配置还行且便宜。[购买链接](https://vpshostingservice.co/cart.php?a=confproduct&i=0)（无任何aff，放心点击），五折优惠码：`50LEB`，地区可以选择洛杉矶，距离中国大陆较近，延迟低，卡顿情况少。
 
 每月需要花费5.5美刀，即可拥有2核CPU、4GB内存、60GB硬盘的windows vps，相较于其他同行便宜不少。
@@ -131,6 +134,10 @@ DOMAIN,o33249.ingest.sentry.io,REJECT
 我的毕设论文，2~3天就解决了，里面很大一部分均是我给出prompt，GPT4生成，我再修改润色完成的。
 
 我的实习报告、实习周志、形式与政策作业，也全部都是由GPT4完成的，它帮我解决了这么多讨人厌、没有创新点、专门浪费我宝贵时间的课程，我觉得20刀花的非常值。
+
+虽然我在封号后便早早地提交了自己的账号恢复申诉申请，但是我能预感到恢复的可能性不大。openai的退款确实是全额退的，这一点让我感受到了openai这家公司的伟大。
+
+为了理想，不为钱。openai的创始人Sam Altman在open ai的股权为0，这种品质令我折服。[via](https://twitter.com/pitdesi/status/1658553286184808449)
 
 ## 尾语
 

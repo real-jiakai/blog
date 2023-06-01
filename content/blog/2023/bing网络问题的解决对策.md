@@ -22,6 +22,8 @@ summary: 介绍解决new bing网络问题的解决对策。
 
 - [warp-go脚本网址](https://github.com/fscarmen/warp/blob/main/README.md#warp-go-%E8%BF%90%E8%A1%8C%E8%84%9A%E6%9C%AC)
 
+> 更新（2023.6.1），可以一开始就安装非全局的WARP网卡，没必要像我一样先安装全局的WARP网卡再转为非全局，这显得有些多此一举。
+
 1、运行warp-go脚本
 
 ```bash
@@ -78,6 +80,8 @@ curl --interface WARP ip.gs
 登录x-ui的后台管理界面，更改默认的xray配置模板。
 
 ![x-ui后台界面](https://vip2.loli.io/2023/03/26/9v5jfux1DiPXgJZ.webp)
+
+> 更新（2023.6.1），可以直接更新geo数据，紧接着，出站规则可以直接指定geosite:openai和geosite:bing即可。以下操作规则不全。直接看本篇最后一部分的操作即可。
 
 将默认的配置换为以下内容，保存配置，重启面板。让www.bing.com和chat.openai.com的流量走warp虚拟网络接口。
 
@@ -177,3 +181,101 @@ curl --interface WARP ip.gs
 参考资料
 
 - [v2ray + warp-go 非全局使用Cloudflare WARP解锁New Bing等服务](https://blog.skyju.cc/post/v2ray-warp-go-unlock-new-bing/)
+
+## 更新版本
+
+```bash
+# 更新预定义域名规则
+wget https://github.com/v2fly/domain-list-community/releases/latest/download/dlc.dat -O /usr/local/x-ui/bin/geosite.dat
+```
+
+紧接着替换xray的默认配置模板。
+
+```json
+{
+  "api": {
+    "services": [
+      "HandlerService",
+      "LoggerService",
+      "StatsService"
+    ],
+    "tag": "api"
+  },
+  "inbounds": [
+    {
+      "listen": "127.0.0.1",
+      "port": 62789,
+      "protocol": "dokodemo-door",
+      "settings": {
+        "address": "127.0.0.1"
+      },
+      "tag": "api"
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "settings": {},
+      "tag": "direct"
+    },
+    {
+      "protocol": "freedom",
+      "settings": {},
+      "streamSettings": {
+        "sockopt": {
+          "tcpFastOpen": true,
+          "interface": "WARP"
+        }
+      },
+      "tag": "warp"
+    },
+    {
+      "protocol": "blackhole",
+      "settings": {},
+      "tag": "blocked"
+    }
+  ],
+  "policy": {
+    "system": {
+      "statsInboundDownlink": true,
+      "statsInboundUplink": true
+    }
+  },
+  "routing": {
+    "rules": [
+      {
+        "inboundTag": [
+          "api"
+        ],
+        "outboundTag": "api",
+        "type": "field"
+      },
+      {
+        "domain": [
+          "geosite:openai",
+          "geosite:bing"
+        ],
+        "outboundTag": "warp",
+        "type": "field"
+      },
+      {
+        "ip": [
+          "geoip:private"
+        ],
+        "outboundTag": "blocked",
+        "type": "field"
+      },
+      {
+        "outboundTag": "blocked",
+        "protocol": [
+          "bittorrent"
+        ],
+        "type": "field"
+      }
+    ]
+  },
+  "stats": {}
+}
+```
+
+保存配置，重启xui面板，即可实现openai和bing走warp虚拟网络接口。
