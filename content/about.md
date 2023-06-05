@@ -41,3 +41,5 @@ date: '2022-12-26'
 ## 联系方式
 
 - Email: [jiakai@duck.com](mailto:jiakai@duck.com)
+- TG: [real_jiakai](https://t.me/real_jiakai)
+- Twitter: [real_jiakai](https://twitter.com/real_jiakai)
