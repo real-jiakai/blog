@@ -37,6 +37,7 @@ date: '2022-12-26'
 - 阮一峰
 - Stephen Curry
 - Sam Altman
+- Aaron Swartz
 
 ## 联系方式
 
