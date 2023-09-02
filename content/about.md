@@ -38,6 +38,7 @@ date: '2022-12-26'
 - Stephen Curry
 - Sam Altman
 - Aaron Swartz
+- Pavel Durov
 
 ## 联系方式
 
