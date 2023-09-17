@@ -6,14 +6,22 @@ slug: "solutions-for-network-error-of-new-bing"
 summary: 介绍解决new bing网络问题的解决对策。
 ---
 
+## 更新
+warp go脚本的GitHub仓库被GitHub官方ban掉了，warp go脚本迁移到了gitlab仓库。
+
+- [via](https://t.me/ProjectWARP/89)
+
+- [warp go脚本gitlab仓库地址](https://gitlab.com/fscarmen/warp)
+
+***
+
 最近在访问new bing的时候，得到这样的报错信息`Sorry, looks like your network settings are preventing access to this feature`
 
 ![new bing报错](https://vip2.loli.io/2023/03/26/yLqhMwZKmBOtoi6.webp)
 
 4天前，我遇到这个问题后，在reddit上的bing社区找到了这样一条帖子。[via](https://www.reddit.com/r/bing/comments/11xzumu/comment/jd6xxhb/)
 
-当时我发现侧边栏的new bing能正常访问，而访问new bing chat网页全屏版却报错：存在网络问题。
-
+当时我发现侧边栏的new bing能正常访问，而访问new bing chat网页全屏版却报错：存在网络问题。 
 于是我给这个小伙伴回复，可以使用侧边栏解决。
 
 后来在tg群中看到有小伙伴也遇到了类似的问题，解决方案是清除浏览器缓存，重新使用账号登录bing界面，就能解决该问题。4天前，我就是这样解决new bing的网络问题的。
