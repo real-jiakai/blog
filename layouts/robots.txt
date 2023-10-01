@@ -1,3 +1,7 @@
 # 禁止openai爬取
 User-agent: GPTBot
 Disallow: /
+
+# 禁止google拿站点数据去训练ai
+User-agent: Google-Extended
+Disallow: /
