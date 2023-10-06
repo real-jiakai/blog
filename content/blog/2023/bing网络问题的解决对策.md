@@ -7,6 +7,7 @@ summary: 介绍解决new bing网络问题的解决对策。
 ---
 
 ## 更新
+
 warp go脚本的GitHub仓库被GitHub官方ban掉了，warp go脚本迁移到了gitlab仓库。
 
 - [via](https://t.me/ProjectWARP/89)

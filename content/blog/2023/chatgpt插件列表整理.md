@@ -7,6 +7,12 @@ summary: 分享自己整理的chatgpt插件列表。
 showtoc: false
 ---
 
+## 更新
+
+暂停更新插件。
+
+***
+
 ChatGPT的插件功能灰度测试测试到我是在上上个月的28号（2023.4.28）。
 
 ![拿到插件内测资格推文](https://vip2.loli.io/2023/06/03/yrsFpMZdj56qhEv.webp)
