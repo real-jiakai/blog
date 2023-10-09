@@ -9,7 +9,7 @@ showtoc: true
 
 ## 更新
 
-自建部分又发现一家新的买北朝鲜和南极洲ipv6 nat的商家。
+自建部分又发现一家新的卖北朝鲜和南极洲ipv6 nat的商家。
 
 - [misakaf](https://www.misakaf.net/index.php?rp=/store/north-korea)
 
