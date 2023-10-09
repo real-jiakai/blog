@@ -71,4 +71,5 @@ bash InstallNET.sh -dd "https://dl.lamp.sh/vhd/en-us_win2022.xz"
 
 我主要拿google one vpn所在的windows server作为落地机，用来分流chatgpt和new bing这类流量。一般情况下不使用直连google one vpn的节点。
 
+> 注：dd完windows，建议立马修改windows server rdp的默认端口3389，以及windows镜像的默认密码：Teddysun.com。我10月8号晚上远程连接登录上我dd的windows server，发现桌面多了一堆文件，名字为sql，tcp之类，并且还有一个窗口在下载东西。我当时意识到情况不对，这台系统应该是被黑了，我立马重置了系统，重新dd。并且检查了原本在hxserver windows上登陆过的谷歌账号，登出所有设备。
 
