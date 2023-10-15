@@ -29,7 +29,7 @@ date: '2022-12-26'
 
 ## 近期状况（月更）
 
-研究生刚开学，平时会像大学一样，去图书馆学一些自己感兴趣的知识。2023年10月份开始选导师。
+研一上数学课有些头大，逐步学习李沐老师的《动手学深度学习》课程中。
 
 ## 我的idol
 
@@ -45,3 +45,22 @@ date: '2022-12-26'
 - Email: [jiakai@duck.com](mailto:jiakai@duck.com)
 - TG: [real_jiakai](https://t.me/real_jiakai)
 - Twitter: [real_jiakai](https://twitter.com/real_jiakai)
+
+如果你想给我发送加密信息，欢迎使用我的 [PGP公钥(Key ID: B6D9A72FB24C26D6)](/jiakai_0x824C26D6_public.asc) 对信息进行加密，然后通过电子邮件发送给我。
+
+## 其他评论方式
+
+除了通过 GitHub Issue 进行评论外，现在你还可以通过 Sourcehut 的邮件列表与我互动和讨论。这为更深层次的对话提供了一个平台。
+
+- 邮件列表地址：[~jiakai/talk-about-my-blogs@lists.sr.ht](mailto:~jiakai/talk-about-my-blogs@lists.sr.ht)
+- 所有邮件的历史地址：[查看历史邮件](https://lists.sr.ht/~jiakai/talk-about-my-blogs)
+
+如何参与讨论：
+
+- 发送邮件：你可以直接向上述邮件列表地址发送邮件来参与讨论。
+
+- 纯文本格式：请确保你的邮件是以纯文本的形式发送的，而非 HTML，否则你的邮件会被 Sourcehut 拒收。
+
+- 推荐使用gmail的[纯文本模式](https://useplaintext.email/#gmail-web)发送邮件给上述的邮件列表地址，邮件列表地址的开头~不要忘记加上。
+
+欢迎大家通过这个新的方式与我互动和讨论！
