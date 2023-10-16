@@ -7,6 +7,12 @@ summary: 介绍hxservers网络问题的解决方案。
 showtoc: false
 ---
 
+## 更新
+
+使用dd windows脚本后，需要vnc到windows机器，设置网络的ip地址、子网掩码、默认网关，等到windows能联网了，才能使用本地的rdp工具连接。
+
+ip地址和子网掩码可以在执行dd windows脚本之前在linux上通过`ifconfig`命令查看，默认网关可以通过`ip route`命令查看。具体哪一项是ip地址，哪一项是子网掩码，哪一项是默认网关可以去网上自行搜索或者将图片上传给GPT4-V，让GPT识图给你解答。
+
 ## 故事背景
 
 hxservers商家在2023年的10月11日进行了维护，这次维护后，原本linux dd windows的windows server服务器的网络直接没了。
