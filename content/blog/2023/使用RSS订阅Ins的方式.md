@@ -11,6 +11,10 @@ showtoc: true
 
 2023年10月13日，发现了proxigram这一项目，能实现instagram to rss的效果。详情见我的博文—[使用docker自建proxigram](https://blog.gujiakai.top/2023/10/use-docker-compose-to-build-proxigram)
 
+2023年10月22日，发现rssbridge中除了picuki bridge可以提供ins的rss订阅外，还有一个imgsed bridge也能提供ins的rss订阅。
+
+![imgsed bridge提供ins的rss订阅](https://vip2.loli.io/2023/10/23/s7MJc2dyGCPbiat.webp)
+
 ---
 
 在交流RSS的TG群组中，时常可以看到群友询问如何订阅Instagram，故今天写一篇文章介绍目前我了解的订阅Ins的方法。
