@@ -11,7 +11,7 @@ date: '2022-12-26'
 
 博客是web2.0的产物，在当下貌似已经不再时髦。但我认为在21世纪20年代，仍然有其存在的价值与意义。
 
-本站点用于记录自己的学习、生活心得，内容涉及编程、生活、效率等方面。欢迎通过[RSS](https://blog.gujiakai.top/index.xml)订阅本站点。
+本站点用于记录自己的学习、生活心得，内容涉及编程、生活、效率等方面。欢迎通过[本站的RSS](https://blog.gujiakai.top/index.xml)/[Feedburner永久的RSS订阅地址](https://feeds.feedburner.com/gujiakai/blog)订阅本站点。
 
 ## 座右铭
 
