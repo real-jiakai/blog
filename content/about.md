@@ -43,8 +43,8 @@ date: '2022-12-26'
 ## 联系方式
 
 - Email: [jiakai@duck.com](mailto:jiakai@duck.com)
-- TG: [real_jiakai](https://t.me/real_jiakai)
-- Twitter: [real_jiakai](https://twitter.com/real_jiakai)
+- TG DM Bot: [Jiakai's DM Bot](https://t.me/real_jk_bot)
+- Typefully: [real_jiakai](https://typefully.com/real_jiakai)
 
 如果你想给我发送加密信息，欢迎使用我的 [PGP公钥(Key ID: B6D9A72FB24C26D6)](/jiakai_0x824C26D6_public.asc) 对信息进行加密，然后通过电子邮件发送给我。
 
