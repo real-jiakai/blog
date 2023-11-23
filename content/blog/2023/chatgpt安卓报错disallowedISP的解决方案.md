@@ -1,11 +1,19 @@
 ---
-title: "chatgpt安卓报错disallowed ISP的解决方案"
+title: "chatgpt安卓报错disallowed ISP/There is a problem with your request的解决方案"
 date: 2023-10-16T18:06:02+08:00
 tags: ['chatgpt']
 slug: "chatgpt-android-error-disallowed-isp-solution"
 summary: 介绍chatgpt安卓报错disallowed ISP的解决方案。
 showtoc: false
 ---
+
+## 更新(2023.11.23)
+
+使用不解锁GPT移动端的代理节点，GPT移动端的报错信息已经变为`There is a problem with your request`了。
+
+不解锁GPT移动端的代理节点所处服务端的报错信息还是disallowed ISP。
+
+![](https://vip2.loli.io/2023/11/23/lNgswq7S6OFYdPU.webp)
 
 ## 更新(2023.11.21)
 
