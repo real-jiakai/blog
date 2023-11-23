@@ -4,7 +4,7 @@ date: 2023-10-13T12:20:19+08:00
 tags: ['vps','google one vpn']
 slug: "solving-hxservers-network-issues"
 summary: 介绍hxservers网络问题的解决方案。
-showtoc: false
+showtoc: true
 ---
 
 ## 更新

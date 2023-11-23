@@ -7,8 +7,6 @@ summary: 分享chatgpt安卓报错date and time的解决方案。
 showtoc: true
 ---
 
-
-
 ## 更新
 
 2023年9月2日，当我在play store更新完chatgpt应用后，打开报错，根据官方教程授予google play services手机的phone权限后，成功用上chatgpt的安卓app。再也没有之前的date and time错误。[官方教程链接](https://help.openai.com/en/articles/8261897-chatgpt-android-app-sign-in-error-something-went-wrong-with-code-17-error)

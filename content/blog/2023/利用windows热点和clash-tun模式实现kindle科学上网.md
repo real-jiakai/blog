@@ -4,7 +4,7 @@ date: 2023-09-22T12:18:22+08:00
 tags: ['kindle','科学上网']
 slug: "using-windows-hotspot-and-clash-tun-for-kindle-internet-access"
 summary: 介绍利用windows热点和clash-tun模式实现kindle科学上网的方法。
-showtoc: false
+showtoc: true
 ---
 
 ## 成果展示
