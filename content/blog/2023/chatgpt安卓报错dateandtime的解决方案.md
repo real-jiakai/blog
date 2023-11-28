@@ -7,13 +7,29 @@ summary: 分享chatgpt安卓报错date and time的解决方案。
 showtoc: true
 ---
 
-## 更新
+## 更新（2023.11）
+
+2023年11月27号，有网友在这个[issue](https://github.com/real-jiakai/blog/issues/3#issuecomment-1826815359)提到，给自己的vps套上warp专门处理openai相关的流量解决了date and time的错误。给vps套warp解决date and time错误，那就表明date and time错误也有可能与ip有关。
+
+暑假那时候我的openai落地全部采用google one vpn落地，但是并没有解决date and time错误。9月初那一波GPT  app更新后，登录app，直接date and time错误不见了，报错信息指向一个链接，具体详情见`更新（2023.09）`部分的描述。
+
+之后一直采用google one vpn作为落地专门用来处理与openai相关的请求，移动端的GPT再也没有出现任何差错，能正常使用。本月开始，我的openai相关请求交由google one vpn和家宽vps来进行负载均衡处理，进一步保证了GPT移动端的解锁。
+
+反正date and time这个问题的具体原因可能有以下几种可能：
+
+- 代理节点仅仅解锁GPT web端，不解锁GPT移动端【具体可见-[chatgpt安卓报错disallowed ISP/There is a problem with your request的解决方案](https://blog.gujiakai.top/2023/10/chatgpt-android-error-disallowed-isp-solution)】
+
+- 谷歌三件套问题（google services framework根据你手机的安卓版本安装适配的最新版本，其余两者无脑更新至最新版）
+
+- 如`更新（2023.09）`部分所示，没给`google play services`应用授予phone权限
+
+- 国产魔改安卓系统的问题
+
+## 更新（2023.09）
 
 2023年9月2日，当我在play store更新完chatgpt应用后，打开报错，根据官方教程授予google play services手机的phone权限后，成功用上chatgpt的安卓app。再也没有之前的date and time错误。[官方教程链接](https://help.openai.com/en/articles/8261897-chatgpt-android-app-sign-in-error-something-went-wrong-with-code-17-error)
 
 ![成功用上chatgpt安卓应用](https://vip2.loli.io/2023/09/02/dTtYr12uHGWvlzy.webp)
-
-
 
 ## 背景介绍
 

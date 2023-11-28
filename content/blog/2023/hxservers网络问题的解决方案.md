@@ -7,11 +7,19 @@ summary: 介绍hxservers网络问题的解决方案。
 showtoc: true
 ---
 
-## 更新
+## 更新(2023.11.27)
+
+hxservers商家已经跑路。paypal争议，成功拿到所有钱款。
+
+![paypal击碎hxservers](https://vip2.loli.io/2023/11/28/uQaqb8pPtS67weU.webp)
+
+## 更新(2023.10)
 
 使用dd windows脚本后，需要vnc到windows机器，设置网络的ip地址、子网掩码、默认网关，等到windows能联网了，才能使用本地的rdp工具连接。
 
 ip地址和子网掩码可以在执行dd windows脚本之前在linux上通过`ifconfig`命令查看，默认网关可以通过`ip route`命令查看。具体哪一项是ip地址，哪一项是子网掩码，哪一项是默认网关可以去网上自行搜索或者将图片上传给GPT4-V，让GPT识图给你解答。
+
+virtfusion面板的windows安装模版，google one vpn一般都存在问题，因此可以先安装debian12，接着用dd脚本对windows机器进行dd操作，dd后的windows配置一下网络即可正常使用windows。配置网络所需的ip地址、子网掩码、默认网关在面板网络选项中可以直接查看。(2023.11.27)
 
 ## 故事背景
 

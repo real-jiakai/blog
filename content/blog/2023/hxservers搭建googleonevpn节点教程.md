@@ -7,6 +7,12 @@ summary: 介绍hxservers服务器搭建google one vpn节点的方法。
 showtoc: true
 ---
 
+## 更新(2023.11.27)
+
+hxservers商家已经跑路。paypal争议，成功拿到所有钱款。
+
+![paypal击碎hxservers](https://vip2.loli.io/2023/11/28/uQaqb8pPtS67weU.webp)
+
 ## 故事背景
 
 昨天晚上看药水哥直播看困了，想直接睡觉了，但是转念又想已经好久没有关注vps的相关讯息了。于是我打开我的inoreader里面的vps板块，以及tg群组中的vps群组。
