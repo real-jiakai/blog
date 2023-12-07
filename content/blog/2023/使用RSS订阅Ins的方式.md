@@ -7,7 +7,13 @@ summary: 介绍使用RSS订阅Ins的方式。
 showtoc: true
 ---
 
-更新：
+## 更新(2023.12)
+
+2023年12月7号，发现openrss.org网站也提供ins的rss订阅。
+
+![openrss.org网站也提供ins的rss订阅](https://vip2.loli.io/2023/12/07/FJt4L6NXl78BoT9.webp)
+
+## 更新(2023.10)
 
 2023年10月13日，发现了proxigram这一项目，能实现instagram to rss的效果。详情见我的博文—[使用docker自建proxigram](https://blog.gujiakai.top/2023/10/use-docker-compose-to-build-proxigram)
 
