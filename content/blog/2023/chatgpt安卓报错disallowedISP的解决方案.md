@@ -27,7 +27,7 @@ shadowrocket tg频道给出的判断节点能否访问GPT的方法。
 
 ## 更新(2023.11.21)
 
-最近看到nodeseek论坛上一篇好帖。里面提及了移动端chatgpt解锁的判定。
+最近看到nodeseek论坛上一篇好帖—[chatgpt安卓苹果解锁方法](https://www.nodeseek.com/post-31717-1)。里面提及了移动端chatgpt解锁的判定。
 
 ![nodeseek帖子-chatgpt安卓苹果解锁方法](https://vip2.loli.io/2023/11/21/pXqiZfDxhkmQSab.webp)
 
@@ -73,7 +73,7 @@ bash <(curl -L -s https://netflix.dad/detect-script)
 
 ## 故事背景
 
-最近带舍友玩vps，正好趁着cloudcone黑五预热套餐推出和搬瓦工的限量款套餐回归，于是我将上述信息，推给了他，他最近正好在学鸟哥的私房菜linux教程，再加上他也舍得花钱于是他买了cloudcone的黑五预热29刀的套餐，以及搬瓦工的包含dc6机房的46刀传家宝套餐。
+最近带舍友玩vps，正好趁着cloudcone黑五预热套餐推出和搬瓦工的限量款套餐回归，于是我将上述信息，推给了他，他最近正好在学鸟哥的私房菜linux教程，再加上他也舍得花钱，他毫不犹豫地买了cloudcone的黑五预热29刀的套餐，以及搬瓦工的包含dc6机房的46刀传家宝套餐。
 
 我给他推荐了不良林大哥的零基础教程，他照做后，也搭建出了属于他的节点。
 
