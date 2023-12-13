@@ -7,6 +7,16 @@ summary: 介绍chatgpt安卓报错disallowed ISP/There is a problem with your re
 showtoc: true
 ---
 
+## 更新(2023.12.13)
+
+shadowrocket tg频道给出的判断节点能否访问GPT的方法。
+
+访问网址：[https://ios.chat.openai.com/public-api/mobile/server_status/v1](https://ios.chat.openai.com/public-api/mobile/server_status/v1)
+
+![shadowrocket tg频道给出的判断节点能否访问GPT的方法](https://cdn.sa.net/2023/12/13/biMkcv4CgDs3Nzd.webp)
+
+- [via](https://t.me/ShadowrocketNews/523)
+
 ## 更新(2023.11.23)
 
 使用不解锁GPT移动端的代理节点，GPT移动端的报错信息已经变为`There is a problem with your request`了。
