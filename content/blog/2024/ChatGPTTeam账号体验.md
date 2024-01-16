@@ -21,7 +21,9 @@ OpenAI在昨天正式推出GPT Store。
 
 具体的原理如下图所示。牺牲小我，使用月抛号升级Team计划，套娃邀请，造福大伙。
 
-![OpenAI Team计划套娃邀请的原理](https://cdn.sa.net/2024/01/12/zatyQmSJ9Au5dhx.webp)
+![OpenAI Team计划套娃邀请的原理解释1](https://cdn.sa.net/2024/01/12/zatyQmSJ9Au5dhx.webp)
+
+![OpenAI Team计划套娃邀请的原理解释2](https://cdn.sa.net/2024/01/16/4r5OyY7v8DFRE2N.webp)
 
 本篇博文记录接受知了大神邀请，升级ChatGPT小号为ChatGPT Team账号的体验记录。
 
