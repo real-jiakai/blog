@@ -7,7 +7,17 @@ summary: 分享修改ip归属地为朝鲜、南极洲的方法。
 showtoc: true
 ---
 
-## 更新
+## 更新（2024.1.22）
+
+前一阵子，又出了一家便宜的卖warp出口为北朝鲜的vps商家。综合来看，如果采用自建节点的方式，选择wapac家的朝鲜vps是目前最便宜的方案；采用机场的方式，则选择FacMata机场是最便宜的解决方案。
+
+- [wapac](https://wap.ac/aff.php?aff=339&pid=83)
+
+![卖warp出口为北朝鲜的vps商家—wapac](https://cdn.sa.net/2024/01/22/a4KDMiBHx5APmEl.webp)
+
+***
+
+## 更新（2023下半年）
 
 自建部分又发现一家新的卖北朝鲜和南极洲ipv6 nat的商家。
 
