@@ -7,6 +7,16 @@ summary: 分享chatgpt安卓报错date and time的解决方案。
 showtoc: true
 ---
 
+## 更新（2024.1）
+
+前几天邻居大学放假来我家玩耍，他的小米手机12手机（原本使用华谷套件安装了谷歌三件套）也报了这个错误。
+
+确定使用了支持GPT移动端的节点后，报错date and time，我让他去apkpure/apk mirror上下载最新的play store后，再次打开ChatGPT app不再报错date and time。这个错误大概率的解决思路：
+
+- 节点支持GPT移动端与否
+
+- play store（谷歌商店）确保更新至最新版本，谷歌三件套的其他两件套没硬性更新要求。
+
 ## 更新（2023.11）
 
 2023年11月27号，有网友在这个[issue](https://github.com/real-jiakai/blog/issues/3#issuecomment-1826815359)提到，给自己的vps套上warp专门处理openai相关的流量解决了date and time的错误。给vps套warp解决date and time错误，那就表明date and time错误也有可能与ip有关。
@@ -73,9 +83,12 @@ Something went wrong. Please make sure your device's date and time are set prope
 
 如果你也和我一样，使用国产安卓手机登录chatgpt安卓app报date and time的错误，不妨就舍弃掉这个app吧，专注于使用网页版即可。
 
-经此一次折腾，可以看到有一台美版的原生安卓手机或者苹果手机的重要性。我的下一部手机不是iphone就是google的pixel了。不会再用国产了。
+经此一次折腾，可以看到有一台美版的原生安卓手机或者苹果手机的重要性。
 
-注：为了验证这个app是不是和tiktok一样验证sim卡，我还特意将sim卡拔出，结果依旧报错。有网友说是ip的问题，我是非常不赞同的。不赞同的原因如下：
+注：为了验证这个app是不是和tiktok一样验证sim卡，我还特意将sim卡拔出，结果依旧报错。
 
-- 网页版能登录不报错，安卓app登录报错，两相对比就知道不是ip问题，如果是ip问题，那么两者应该同时登录报错才对。
-- 我使用软路由作为前置代理，手机上开启google one vpn，使用谷歌家的纯净ip，并且将时区设置为该ip所在地时区，结果依旧连接不上，google one vpn都解决不了的安卓app困境就说明不是ip问题，因为google one vpn的ip纯净度比机房的ip好太多了。
+~~有网友说是ip的问题，我是非常不赞同的。不赞同的原因如下：~~
+
+~~- 网页版能登录不报错，安卓app登录报错，两相对比就知道不是ip问题，如果是ip问题，那么两者应该同时登录报错才对。~~
+
+~~- 我使用软路由作为前置代理，手机上开启google one vpn，使用谷歌家的纯净ip，并且将时区设置为该ip所在地时区，结果依旧连接不上，google one vpn都解决不了的安卓app困境就说明不是ip问题，因为google one vpn的ip纯净度比机房的ip好太多了。~~
