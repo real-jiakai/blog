@@ -3,7 +3,7 @@ title: "Gemini安卓 App不支持此设备的解决方案"
 date: 2024-02-11T08:43:21+08:00
 tags: ["gemini"]
 slug: "solving-gemini-device-compatibility-issues"
-summary: 介绍Gemini安卓app不支持此设备的解决方案。
+summary: 介绍Gemini安卓App不支持此设备的解决方案。
 showtoc: true
 ---
 
@@ -43,7 +43,7 @@ showtoc: true
 
 ## 个人经历
 
-在昨天大年初一（2月10号），我在我的pixel 7手机上更新了Gemini app后，发现只要将pixel 7手机上的Google Assistant的语言切换为English（美国）后，该app就能在我的pixel 7手机上正常运行了。
+在昨天大年初一（2月10号），我在我的pixel 7手机上更新了Gemini App后，发现只要将pixel 7手机上的Google Assistant的语言切换为English（美国）后，该App就能在我的pixel 7手机上正常运行了。
 
 ![Google Assistant的语言切换为English（美国）](https://cdn.sa.net/2024/02/11/q65Yda2ItsUk4fi.webp)
 
@@ -75,12 +75,12 @@ GPT4:
 
 今天我有3辆车，但是去年我卖掉了两辆车，今天我有几辆车？这个逻辑问题，Gemini Advanced真的会被绕进去，被去年卖的车所干扰，而GPT4的逻辑让你感觉仿佛在跟一个真人对话。
 
-Gemini Advanced最吸引我的亮点：Double-check response，使用Google搜索来检查输出。
+Gemini最吸引我的亮点：Double-check response，使用Google搜索来检查输出。
 
-![Gemini Advanced最吸引我的亮点：Double-check response](https://cdn.sa.net/2024/02/11/JsV2ygOejRTBDpG.webp)
+![Gemini最吸引我的亮点：Double-check response](https://cdn.sa.net/2024/02/11/JsV2ygOejRTBDpG.webp)
 
 除了这个亮点，其他的真没啥吸引我的地方。继续安安心心地使用GPT4，白嫖完两个月免费的Gemini Advanced订阅即可。
 
-Gemini Advanced背靠Google搜索，相较于GPT4貌似有一些优势，但实则还是大部分方面被GPT4秒杀，虚假的宣传抵不过用户的真实体验。等到今年OpenAI推出GPT5，势必是对Google的再一次降维打击。
+Gemini背靠Google搜索，相较于GPT4貌似有一些优势，但实则还是大部分方面被GPT4秒杀，虚假的宣传抵不过用户的真实体验。等到今年OpenAI推出GPT5，势必是对Google的再一次降维打击。
 
 谷歌和OpenAI之间的竞争总归是好的，有了竞争，对于AGI的早日实现有利。
