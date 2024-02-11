@@ -73,7 +73,7 @@ GPT4:
 
 ![GPT4的回复](https://cdn.sa.net/2024/02/11/wuRyEzHe4DJrTUG.webp)
 
-今天我有3辆车，但是去年我卖掉了两辆车，今天我有几辆车？这个逻辑问题，Gemini Advanced真的会被绕进去，被去年卖的车所干扰，而GPT4的逻辑让你感觉仿佛在跟一个真人对话。
+今天我有3辆车，但是去年我卖掉了2辆车，今天我有几辆车？这个逻辑问题，Gemini Advanced真的会被绕进去，被去年卖的车所干扰，而GPT4的逻辑让你感觉仿佛在跟一个真人对话。
 
 Gemini最吸引我的亮点：Double-check response，使用Google搜索来检查输出。
 
