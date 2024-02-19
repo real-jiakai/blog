@@ -7,6 +7,14 @@ summary: 分享修改ip归属地为朝鲜、南极洲的方法。
 showtoc: true
 ---
 
+## 更新（2024.2.14）
+
+商家Bytevirt在其一周年（2024年情人节）这天推出了朝鲜和南极洲冷门地区的Nat Warp小鸡，年付2.14刀。
+
+![](https://cdn.sa.net/2024/02/19/rUQi8O9p1PfCtH3.webp)
+
+![](https://cdn.sa.net/2024/02/19/EM35o6IjuGstvSr.webp)
+
 ## 更新（2024.1.22）
 
 前一阵子，又出了一家便宜的卖warp出口为北朝鲜的vps商家。综合来看，如果采用自建节点的方式，选择wapac家的朝鲜vps是目前最便宜的方案；如果采用机场的方式，则选择FacMata机场是目前最便宜的解决方案。
