@@ -9,11 +9,13 @@ showtoc: true
 
 ## 更新（2024.2.14）
 
-商家Bytevirt在其一周年（2024年情人节）这天推出了朝鲜和南极洲冷门地区的Nat Warp小鸡，年付2.14刀。
+商家Bytevirt在其一周年（2024年情人节）这天推出了朝鲜和南极洲冷门地区的Nat Warp小鸡，年付2.14刀。可能后续会补货吧。自建的玩家可以关注一下这家商家。
 
-![](https://cdn.sa.net/2024/02/19/rUQi8O9p1PfCtH3.webp)
+- [bytevirt](https://bytevirt.com/product/378)
 
-![](https://cdn.sa.net/2024/02/19/EM35o6IjuGstvSr.webp)
+![bytevirt一周年套餐包含朝鲜和南极洲小鸡](https://cdn.sa.net/2024/02/19/rUQi8O9p1PfCtH3.webp)
+
+![bytevirt周年庆我的购物](https://cdn.sa.net/2024/02/19/EM35o6IjuGstvSr.webp)
 
 ## 更新（2024.1.22）
 
