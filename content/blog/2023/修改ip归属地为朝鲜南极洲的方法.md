@@ -43,7 +43,7 @@ showtoc: true
 
 ## 1、机场
 
-- [一线机场TAG](https://tagss01.pro#/register?invite=B8Ttp9UP)
+- [一线机场TAG](https://tagss04.pro/#/auth/j6c8uF3k)
 
 ![TAG机场南极节点](https://vip2.loli.io/2023/08/17/8b1DX7fiN2CKsJP.webp)
 
