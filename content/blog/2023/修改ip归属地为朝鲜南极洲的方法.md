@@ -17,7 +17,17 @@ showtoc: true
 
 ![bytevirt周年庆我的购物](https://cdn.sa.net/2024/02/19/EM35o6IjuGstvSr.webp)
 
-## 更新（2024.1.22）
+## 更新（2024.1.22 && 2024.2.21）
+
+**2024.2.21**
+
+wap.ac在2024年2月21日上线了warp vps进行销售，可选择南极洲、朝鲜。
+
+- [wapac](https://wap.ac/aff.php?aff=339&pid=83)
+
+![](https://cdn.sa.net/2024/02/23/JD4kNo1HBSX8mKL.webp)
+
+**2024.1.22**
 
 前一阵子，又出了一家便宜的卖warp出口为北朝鲜的vps商家。综合来看，如果采用自建节点的方式，选择wapac家的朝鲜vps是目前最便宜的方案；如果采用机场的方式，则选择FacMata机场是目前最便宜的解决方案。
 
