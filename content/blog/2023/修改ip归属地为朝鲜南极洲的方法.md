@@ -25,7 +25,7 @@ wap.ac在2024年2月21日上线了warp vps进行销售，可选择南极洲、�
 
 - [wapac](https://wap.ac/aff.php?aff=339&pid=83)
 
-![](https://cdn.sa.net/2024/02/23/JD4kNo1HBSX8mKL.webp)
+![wap.ac上线warp vps套餐销售](https://cdn.sa.net/2024/02/23/JD4kNo1HBSX8mKL.webp)
 
 **2024.1.22**
 
