@@ -7,6 +7,14 @@ summary: 介绍使用RSS订阅Ins的方式。
 showtoc: true
 ---
 
+## 更新(2024.02)
+
+RSSHub中提供的Picnob路由也提供对于instagram的支持。
+
+![RSSHub中提供的Picnob路由也提供对于instagram的支持](https://cdn.sa.net/2024/02/27/7hruIfNO3n8RUka.webp)
+
+![feedbro中通过Picnob路由查看三上老师的instagram](https://cdn.sa.net/2024/02/27/kYCmIMrsbUK4u3D.webp)
+
 ## 更新(2023.12)
 
 2023年12月7号，发现openrss.org网站也提供ins的rss订阅。
