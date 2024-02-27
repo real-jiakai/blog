@@ -9,7 +9,7 @@ showtoc: true
 
 ## 更新(2024.02)
 
-RSSHub中提供的Picnob路由也提供对于instagram的支持。
+RSSHub中提供的Picnob路由也提供对于instagram的支持。[via](https://docs.rsshub.app/routes/social-media#instagram-user-profile-picnob)
 
 ![RSSHub中提供的Picnob路由也提供对于instagram的支持](https://cdn.sa.net/2024/02/27/7hruIfNO3n8RUka.webp)
 
