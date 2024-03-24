@@ -42,7 +42,6 @@ date: '2022-12-26'
 
 ## 联系方式
 
-- 网站右下角留言框
 - Email: [jiakai@duck.com](mailto:jiakai@duck.com)
 - TG DM Bot: [Jiakai's DM Bot](https://t.me/real_jk_bot)
 - Typefully: [real_jiakai](https://typefully.com/real_jiakai)
