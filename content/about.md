@@ -5,7 +5,7 @@ date: '2022-12-26'
 
 ## 自我介绍
 
-你好，我叫顾佳凯，是一名中国的研究生，目前就读于广西民族大学。未来想成为一名全栈程序员。
+你好，我叫顾佳凯，是一名中国的研究生。未来想成为一名全栈程序员。
 
 ## 站点介绍
 
@@ -25,11 +25,13 @@ date: '2022-12-26'
 - 阅读
 - 游戏
 - 编程
-- 折腾VPS
+- 折腾VPS【做一名光荣的MJJ】
+    - [主探针](https://status.gujiakai.top)
+    - [副探针](https://tz.gujiakai.top)
 
 ## 近期状况（月更）
 
-刚开学，折腾+机器学习+深度学习。
+开学一个月了，折腾+机器学习+深度学习+自然语言处理，四驾马车齐头并进。
 
 ## 我的idol
 
@@ -44,9 +46,14 @@ date: '2022-12-26'
 
 - Email: [jiakai@duck.com](mailto:jiakai@duck.com)
 - TG DM Bot: [Jiakai's DM Bot](https://t.me/real_jk_bot)
-- Typefully: [real_jiakai](https://typefully.com/real_jiakai)
 
 如果你想给我发送加密信息，欢迎使用我的 [PGP公钥(Key ID: B6D9A72FB24C26D6)](/jiakai_0x824C26D6_public.asc) 对信息进行加密，然后通过电子邮件发送给我。
+
+## 动态
+
+- Typefully: [real_jiakai](https://typefully.com/real_jiakai)
+- Twitter: [real_jiakai](https://twitter.com/real_jiakai)
+- Moments: [jiakai的Moments](https://moments.gujiakai.top)
 
 ## 其他评论方式
 
