@@ -17,7 +17,11 @@ showtoc: true
 
 ## 替代方案
 
-> 注：以下涉及的均为vps服务推荐，如果你是机场用户并且也想使用ip类型为isp类型的节点，建议直接上高端机场[TAG](https://tagss04.pro/#/auth/j6c8uF3k)，他家的高端套餐里面的节点包含家宽节点+马斯克的星链延伸出来的节点。不想折腾的富哥，可以直接上。
+> 注：以下涉及的均为vps服务推荐，如果你是机场用户并且也想使用ip类型为isp类型的节点，有条件的可以直接上高端机场—[TAG](https://tagss04.pro/#/auth/j6c8uF3k)，他家的高端套餐里面的节点包含家宽节点+马斯克的星链延伸出来的节点。
+
+> 以下推荐的vps服务如果不包含优化线路，不建议直连，建议当作落地鸡使用【分流操作】。
+
+> 如果cloudflare的免费warp就已经满足你的需求了，那就给vps套warp，紧接着将特定站点的流量分流至Warp，作为出站即可，面对以下方案无需冲动。
 
 1、双isp的VPS
 
@@ -43,7 +47,7 @@ showtoc: true
 
 我用过他家弗吉尼亚州的双isp机器，解锁啥的都是ok的，机器的流畅性不如lisa主机。他家的双isp机器地区挺丰富的。
 
-机器还算流畅，推荐指数：⭐⭐⭐⭐【唯一的缺点可能是我体验的弗吉尼亚州机器很卡，性能不佳】
+推荐指数：⭐⭐⭐【缺点可能是我体验的弗吉尼亚州机器很卡，性能不佳，仅个人观点】
 
 ![丽萨主机的ping0.cc结果](https://cdn.sa.net/2024/04/19/TWLFOvbmdEDP6Ng.webp)
 
@@ -51,27 +55,39 @@ showtoc: true
 
 - [wepc.au](https://wepc.au/aff.php?aff=305)
 
-推荐指数：⭐⭐⭐⭐【我没体验过，但看上去还是ok的，再加上mjj群体也没有过多吐槽过这家，所以推荐指数为4星】
-
 这家没用过，但是知道他家的美西机器宣称的是isp，即ipinfo.io站点显示的ip类型为isp。美西的4837双isp机器最低配年付貌似只要100多人民币。
 
 ![wepc.au订购机器页面](https://cdn.sa.net/2024/04/19/AvkO3KlnjUV74XG.webp)
 
+推荐指数：⭐⭐⭐【我没体验过，但看上去还是ok的，再加上mjj群体也没有过多吐槽过这家，所以推荐指数为3星】
+
 - [灵车viie](https://idc.viie.io/)
 
-推荐指数：⭐⭐【工单基本不回，黑历史较多，互联网一搜便知，nodeseek上有很多mjj吐槽他家的服务质量】
+如果你抱着能用一天是一天以及贪小便宜的心理追求ip类型为isp的机器的话，可以冲一下，但建议还是慎重。
 
-如果你抱着能用一天是一天以及贪小便宜的心理追求ip类型为isp的机器的话，你可以冲一下。他家的区域也是挺丰富的，有香港、澳门、台湾、欧洲、新加坡、美国等地区的家宽套餐。
+他家vps的区域挺丰富的，有香港、澳门、台湾、欧洲、新加坡、美国等地区的家宽套餐。
 
 ![灵车viie套餐页面](https://cdn.sa.net/2024/04/19/xArsDpf5V2KZCn7.webp)
 
-- 其他的idc，诸如megalayer、六六云等，就不提了，价格摆在那，不值得个人用户冲。
+推荐指数：⭐⭐【工单基本不回，黑历史较多，互联网一搜便知，nodeseek上有很多mjj吐槽他家的服务质量】
 
-2、IP类型为Hosting，但解锁优秀的VPS
+- 一些小众商家的vps，ip类型被ipinfo.io识别为isp。
+
+如我手持的一台[littlecreekhosting](https://www.littlecreekhosting.com/)的机器，位置在美东，解锁优秀，并且ip类型被ipinfo.io识别为isp。
+
+你可以去商家的这个报价帖子购买去年黑五期间的套餐。via: [Can't Wait for BF | Double RAM Starting at $3.50 | KVM | NVME Storage | Linux and Windows](https://lowendtalk.com/discussion/189963/cant-wait-for-bf-double-ram-starting-at-3-50-kvm-nvme-storage-linux-and-windows/p1)，在报价帖子留言可以翻倍内存RAM。
+
+推荐指数：⭐⭐⭐⭐【个人手持一台，体验下来效果还行，唯一的缺点在于其位置，美东实在太远了，美西分流到美东至少有30ms的延迟，再加上美西回大陆的延迟至少150ms，速度还是有些力不从心的】
+
+- 其他的idc
+
+诸如megalayer、六六云等，就不提了，价格摆在那，不值得个人用户冲。
+
+推荐指数：⭐
+
+2、IP类型为hosting，但解锁优秀的VPS
 
 - [zgovps]( https://clients.zgovps.com/?cmd=cart&action=add&affid=354&id=100)
-
-推荐指数：⭐⭐⭐⭐⭐
 
 其实以上罗列的ipinfo.io站点识别的ip类型为isp，都是伪家宽。真正的家宽，一个月的费用不是普通用户所能承受的。
 
@@ -80,6 +96,8 @@ showtoc: true
 推荐的zgovps的洛杉矶国际线路机器，流媒体解锁优秀，适合作为落地。最低配年付12.9刀，价格也很合理。我手上也有一台zgo的国际线路机器，专门用作落地用。
 
 ![zgovps订购机器页面](https://cdn.sa.net/2024/04/19/8WQ9w6YLPqltvok.webp)
+
+推荐指数：⭐⭐⭐⭐【如果ip类型是isp，简直完美】
 
 ## 影响
 
