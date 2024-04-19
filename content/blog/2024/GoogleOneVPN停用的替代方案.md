@@ -1,5 +1,5 @@
 ---
-title: "GoogleOneVPN停用的替代方案"
+title: "Google One VPN停用的替代方案"
 date: 2024-04-19T18:08:18+08:00
 tags: ["GoogleOneVPN"]
 slug: "alternatives-to-google-one-vpn-shutdown"
