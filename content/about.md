@@ -52,9 +52,8 @@ date: '2022-12-26'
 
 ## 动态
 
-- Typefully: [real_jiakai](https://typefully.com/real_jiakai)
-- Twitter: [real_jiakai](https://twitter.com/real_jiakai)
 - Moments: [jiakai的Moments](https://moments.gujiakai.top)
+- Twitter: [real_jiakai](https://twitter.com/real_jiakai)
 
 ## 其他评论方式
 

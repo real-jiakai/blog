@@ -75,7 +75,7 @@ showtoc: true
 
 如我手持的一台[littlecreekhosting](https://www.littlecreekhosting.com/)的机器，位置在美东，解锁优秀，并且ip类型被ipinfo.io识别为isp。
 
-你可以去商家的这个报价帖子购买去年黑五期间的套餐。via: [Can't Wait for BF | Double RAM Starting at $3.50 | KVM | NVME Storage | Linux and Windows](https://lowendtalk.com/discussion/189963/cant-wait-for-bf-double-ram-starting-at-3-50-kvm-nvme-storage-linux-and-windows/p1)，在报价帖子留言可以翻倍内存RAM。
+你可以去商家的这个报价帖子购买去年黑五期间的套餐。via: [Can't Wait for BF | Double RAM Starting at $3.50 | KVM | NVME Storage | Linux and Windows](https://lowendtalk.com/discussion/189963/cant-wait-for-bf-double-ram-starting-at-3-50-kvm-nvme-storage-linux-and-windows/p1)，在报价帖子留言订单号可以翻倍内存RAM。
 
 推荐指数：⭐⭐⭐⭐【个人手持一台，体验下来效果还行，唯一的缺点在于其位置，美东实在太远了，美西分流到美东至少有30ms的延迟，再加上美西回大陆的延迟至少150ms，速度还是有些力不从心的】
 
