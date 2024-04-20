@@ -7,6 +7,12 @@ summary: 介绍Google One VPN停用的替代方案。
 showtoc: true
 ---
 
+## 更新(2023.04.21)
+
+![Google One VPN年中下线官方公告](https://cdn.sa.net/2024/04/21/XNykMrRDVqjZ1gx.webp)
+
+Google One VPN年中就下线了，今年晚些时候竟然表示的是年中。via: [What’s happening to VPN by Google One?](https://support.google.com/googleone/answer/14806901)
+
 ## 背景
 
 2024年4月12日【GMT+8】，当我看到Google One VPN即将年底停用的新闻时，内心是五味杂陈的。以后再也无法享受这么纯净的IP了。
@@ -121,4 +127,4 @@ via: [The Google One VPN service is heading to the Google graveyard](https://www
 
 在这个AIGC盛行的时代，Google为Google One添加了AI Premium套餐，而Google One VPN则因为所谓的用户稀少为由，即将被终止。
 
-在Google One VPN存活的四年时间里面，我享受了1年半左右的时间(2023.5~2024.12)的服务，最后对Google One VPN道一声感谢，感谢Google One VPN，帮助我流畅地访问各大AI服务。
+在Google One VPN存活的四年时间里面，我享受了1年左右的时间(2023.5~2024.6)的服务，最后对Google One VPN道一声感谢，感谢Google One VPN，帮助我流畅地访问各大AI服务。
