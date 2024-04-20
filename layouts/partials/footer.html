@@ -1,10 +1,5 @@
 <div class="container mx-auto text-center mb-4">
     {{ with .Site.Params.footer }}
     <span class="fw-semibold me-4">{{ replace . "{Year}" now.Year | markdownify }}</span>
-    <a href="https://notbyai.fyi/" target="_blank" class="d-none d-md-inline-block" style="width:100px;height:45px"><img src="/images/Written-By-Human-Not-By-AI-Badge-black.svg" alt="not by ai" /></a>
-    <a href="https://nonbot.org/pledged/view/99080276-7467-457c-b3d3-45eab2847ab4" target="_blank" class="d-none d-md-inline-block">
-        <img style="width:100px;height:45px" src="/images/nonbot_pledged_logo.svg" alt="Human-made Content">
-    </a>
-    <a href="https://nohello.club/" target="_blank" class="d-none d-md-inline-block" style="width:65px;height:30px"><img src="/images/nohello_320_filled.png" alt="nohello" /></a>
     {{ end }}
 </div>
