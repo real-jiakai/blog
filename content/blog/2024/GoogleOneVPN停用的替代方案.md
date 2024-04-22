@@ -77,6 +77,14 @@ Google One VPN年中就下线了，今年晚些时候竟然表示的是年中。
 
 推荐指数：⭐⭐【工单基本不回，黑历史较多，互联网一搜便知，nodeseek上有很多mjj吐槽他家的服务质量】
 
+- [艾云](https://iaclouds.com/aff.php?aff=1805)
+
+艾云的24新年特价isp CN2 GIA也不错。
+
+![](https://cdn.sa.net/2024/04/22/Chby58vH3YcgUzR.webp)
+
+推荐指数：⭐⭐⭐⭐
+
 - 一些小众商家的vps，ip类型被ipinfo.io识别为isp。
 
 如我手持的一台[littlecreekhosting](https://www.littlecreekhosting.com/)的机器，位置在美东，解锁优秀，并且ip类型被ipinfo.io识别为isp。
