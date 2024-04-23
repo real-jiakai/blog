@@ -13,7 +13,7 @@ showtoc: false
 
 这款the plan v2的套餐，使用优惠码购买的价格是每年110多刀，如果你踩着aff的链接购买并定期续费，那affman每年可以躺着赚到20多刀。
 
-![搬瓦工the plan v2 affman获利情况](https://vip2.loli.io/2023/06/29/qvpacO8WZPENVxb.webp)
+![搬瓦工the plan v2 affman获利情况](https://vip2.loli.net/2023/06/29/qvpacO8WZPENVxb.webp)
 
 原本我已经持有两台搬瓦工的vps了，一台是cn2 gt每年40多刀的机子，另一台是搬瓦工的cn2 gia 70多刀的限量套餐，但是我估计这两台机器都是踩着别人的aff链接购买的，我会愿意让affman每年躺着赚钱？当然不会，当我意识到aff链接这个问题的那一刻起，我就已经不再有想续费那些踩着别人的aff链接购买的vps的念头了。
 
@@ -27,7 +27,7 @@ the plan v2线路和配置还行（硬盘配置可以再高些，40GB不耐看�
 
 报错截图：
 
-![caddy报错截图](https://vip2.loli.io/2023/06/29/udIGg3K7FDsLjCw.webp)
+![caddy报错截图](https://vip2.loli.net/2023/06/29/udIGg3K7FDsLjCw.webp)
 
 这边的69.171.67.22并不是我的vps ip，在new bing+chatgpt4+google的帮助下，我找到了导致这个错误的原因。
 
@@ -40,17 +40,17 @@ vim /etc/hosts
 # 69.171.67.22 localhost.localdomain localhost
 ```
 
-![/etc/hosts文件原本文件内容](https://vip2.loli.io/2023/06/29/W8ZspTfSmxVwOzv.webp)
+![/etc/hosts文件原本文件内容](https://vip2.loli.net/2023/06/29/W8ZspTfSmxVwOzv.webp)
 
 这应该是瓦工机器的问题，这个错误的ip地址对应主机名的条目，不是我添加的。
 
 最终成功启动caddy。
 
-![成功启动caddy](https://vip2.loli.io/2023/06/29/v2zj4OBoUxgepJF.webp)
+![成功启动caddy](https://vip2.loli.net/2023/06/29/v2zj4OBoUxgepJF.webp)
 
 最后附上chatgpt4的解释
 
-![chatgpt4的解释](https://vip2.loli.io/2023/06/29/4PBFk1iVz2lLDIs.webp)
+![chatgpt4的解释](https://vip2.loli.net/2023/06/29/4PBFk1iVz2lLDIs.webp)
 
 
 

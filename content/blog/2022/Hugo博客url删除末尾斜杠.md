@@ -23,19 +23,19 @@ showtoc: true
 
 ### 图一：
 
-![Ugly URLS](https://vip2.loli.io/2022/11/07/GFB9zYwN8pMOZxh.png)
+![Ugly URLS](https://vip2.loli.net/2022/11/07/GFB9zYwN8pMOZxh.png)
 
 >  除了在根目录下新增`uglyurls = true`选项外，你还可以在运行hugo命令的时候，设置环境变量。
 
 ### 图二：
 
-![配置环境变量](https://vip2.loli.io/2022/11/07/wYqv3gPuHtXpA6e.png)
+![配置环境变量](https://vip2.loli.net/2022/11/07/wYqv3gPuHtXpA6e.png)
 
 > 在类Unix系统，可以通过env命令来设置环境变量，设置环境变量对于你使用Netlify这类服务来部署站点非常有用。
 
 当然，Windows系统并不是类Unix系统。所以，如果你想要在本地看到ugly urls的效果，你可以在Windows电脑的环境变量中添加一条记录【Key=`HUGO_UGLYURLS`，Value=`true`】。
 
-![Windows添加环境变量后，url效果图](https://vip2.loli.io/2022/11/07/Yukdhl3s8pGxjTP.png)
+![Windows添加环境变量后，url效果图](https://vip2.loli.net/2022/11/07/Yukdhl3s8pGxjTP.png)
 
 
 
@@ -45,11 +45,11 @@ showtoc: true
 
 1. 将站点部署到netlify，在部署的时候，设置环境变量【Key=`HUGO_UGLYURLS`，Value=`true`】。
 
-![Netlify配置环境变量](https://vip2.loli.io/2022/11/07/BdWo3wJFXmUik5Z.png)
+![Netlify配置环境变量](https://vip2.loli.net/2022/11/07/BdWo3wJFXmUik5Z.png)
 
 2. 最终效果
 
-![最终效果图](https://vip2.loli.io/2022/11/07/Rr4m6ukvbcWaU9i.png)
+![最终效果图](https://vip2.loli.net/2022/11/07/Rr4m6ukvbcWaU9i.png)
 
 
 

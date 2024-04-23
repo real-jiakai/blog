@@ -11,13 +11,13 @@ showtoc: true
 
 - kindle成功实现科学上网
 
-![kindle成功实现科学上网](https://vip2.loli.io/2023/09/22/AaFxTH2cnsWhlpy.webp)
+![kindle成功实现科学上网](https://vip2.loli.net/2023/09/22/AaFxTH2cnsWhlpy.webp)
 
 - andriod、ipad均无需进行任何设置连上google one vpn
 
-![andriod无需进行任何设置连上google one vpn](https://vip2.loli.io/2023/09/22/NM1QCIXHkKUj2Su.webp)
+![andriod无需进行任何设置连上google one vpn](https://vip2.loli.net/2023/09/22/NM1QCIXHkKUj2Su.webp)
 
-![ipad无需进行任何设置连上google one vpn](https://vip2.loli.io/2023/09/22/36bDAWM8hLP2olk.webp)
+![ipad无需进行任何设置连上google one vpn](https://vip2.loli.net/2023/09/22/36bDAWM8hLP2olk.webp)
 
 ## 故事介绍
 
@@ -35,12 +35,12 @@ showtoc: true
 
 但是在搜索过程中，我发现了如下这条评论。[via](https://zhuanlan.zhihu.com/p/337430556)
 
-![网友评论](https://vip2.loli.io/2023/09/22/nk7v24OZwzGfeFi.webp)
+![网友评论](https://vip2.loli.net/2023/09/22/nk7v24OZwzGfeFi.webp)
 
 
 按照他的说明，一步一步操作完后，再次打开windows热点，当我安卓手机连上该热点后，我发现直接能科学上网；kindle连接上该热点后（在我的例子中，我需要将分享的热点频段设置为2.4GHz，因为我的kindle设备无法搜索到5GHz的wifi信号），也能直接科学上网。
 
-![windows分享的热点设置kindle能检索到的wifi频段](https://vip2.loli.io/2023/09/22/fJ9nNXCSyQ2iODT.webp)
+![windows分享的热点设置kindle能检索到的wifi频段](https://vip2.loli.net/2023/09/22/fJ9nNXCSyQ2iODT.webp)
 
 当然，如果你开通了google one的话，按照上述操作后，也能轻松连接上google one vpn。
 

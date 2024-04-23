@@ -11,15 +11,15 @@ showtoc: true
 
 今天下午清理邮箱时，发现了all about rss github项目issue有了新的动态。all about rss项目作者指出有人发现了一个instagram to rss的解决方案—proxigram。
 
-![all about rss项目issue邮件提醒](https://vip2.loli.io/2023/10/13/9CYO6NZjUg4nm8k.webp)
+![all about rss项目issue邮件提醒](https://vip2.loli.net/2023/10/13/9CYO6NZjUg4nm8k.webp)
 
 于是，我去到all about rss的tg群组中查看信息，发现有位大哥在10月9日分享了自己的新发现—instagram to rss新的解决方案proxigram。[via](https://t.me/allaboutrss/13588)
 
-![网友分享自己的新发现—proxigram](https://vip2.loli.io/2023/10/13/EsABNULSTGZnrMx.webp)
+![网友分享自己的新发现—proxigram](https://vip2.loli.net/2023/10/13/EsABNULSTGZnrMx.webp)
 
 all about rss的频道主在今天(2023年10月13日)正式在其tg频道分享instagram to rss新的解决方案proxigram。[via](https://t.me/aboutrss/1376)
 
-![all about rss频道主分享proxigram](https://vip2.loli.io/2023/10/13/71S4BUs5a2m9eAM.webp)
+![all about rss频道主分享proxigram](https://vip2.loli.net/2023/10/13/71S4BUs5a2m9eAM.webp)
 
 从proxigram的项目介绍中，可以看出这个项目的初衷是为了保护用户的隐私。其充当用户和instagram之间的中介，获取instagram的数据，并将数据返回给用户查看。rss功能并不是其主要目的。
 
@@ -169,19 +169,19 @@ systemctl reload caddy
 
 这样子，访问proxigram.example.com就能看到应用的界面了，
 
-![成功访问自建的proxigram应用](https://vip2.loli.io/2023/10/13/dZehzmPGj7MF81a.webp)
+![成功访问自建的proxigram应用](https://vip2.loli.net/2023/10/13/dZehzmPGj7MF81a.webp)
 
 输入ins用户的handle(用户名)，就能获取到该用户名的相关数据。
 
 比如我输入yua_mikami(三上老师的ins handle)，选中搜索结果中的第一位的用户，就能获取到她最新的动态了，右上角有rss图标，点击该图标，就能获取到atom格式的rss url了。
 
-![三上老师的动态在proxigram上呈现的样例](https://vip2.loli.io/2023/10/13/yOETb9JUKVwQnvR.webp)
+![三上老师的动态在proxigram上呈现的样例](https://vip2.loli.net/2023/10/13/yOETb9JUKVwQnvR.webp)
 
 将该url导入rss阅读器中，就能在自己空闲时，查看她的近况了。
 
 下图展示proxigram生成的有关布莱泽奥特曼女主角—捣宫姬奈(ins handle：himenachaaaaan)动态的rss导入feedbro rss阅读器中的效果。
 
-![捣宫姬奈动态的rss导入feedbro的效果](https://vip2.loli.io/2023/10/13/LSjWgfyHv1rzMIo.webp)
+![捣宫姬奈动态的rss导入feedbro的效果](https://vip2.loli.net/2023/10/13/LSjWgfyHv1rzMIo.webp)
 
 最后提几点注意事项：
 
@@ -189,7 +189,7 @@ systemctl reload caddy
 
 - Proxigram的docker环境变量文件中有这样一些选项，可以大概猜测这个项目的工作原理应该还是类似rssbridge中的picuki bridge一样，通过自己的vps，去访问provider list中标明的instagram第三方应用内容。获取内容频繁的话可能会被instagram的第三方应用屏蔽掉ip。【还需等待时间来检验我的猜想】
 
-![.env中的一些配置项](https://vip2.loli.io/2023/10/13/mhAzNZ8dCMu52JO.webp)
+![.env中的一些配置项](https://vip2.loli.net/2023/10/13/mhAzNZ8dCMu52JO.webp)
 
 - 建议使用类似aws lightsail这类能免费换ip的vps来部署Proxigram。
 当然你也可以购买一些代理，添加到环境变量的Proxy Providers选项中，但购买代理的价格开销还是挺大的。

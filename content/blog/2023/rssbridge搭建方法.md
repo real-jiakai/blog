@@ -10,7 +10,7 @@ showtoc: true
 
 > 注：自建rssbridge纯粹是为了使用其里面picuki bridge，以追踪名人ins。公开实例中的picuki bridge，会因为使用人数太多，被picuki屏蔽。
 
-![picuki 403 forbidden](https://vip2.loli.io/2023/02/20/XvYH4i3h7SN5tWr.webp)
+![picuki 403 forbidden](https://vip2.loli.net/2023/02/20/XvYH4i3h7SN5tWr.webp)
 
 准备工作
 
@@ -92,7 +92,7 @@ docker compose up -d
 
 访问服务器的ip地址:3001，就可以看到rssbridge了。
 
-![rssbridge](https://vip2.loli.io/2023/02/20/FB1OATP2I6p8ujf.webp)
+![rssbridge](https://vip2.loli.net/2023/02/20/FB1OATP2I6p8ujf.webp)
 
 
 
@@ -115,7 +115,7 @@ docker compose down
 docker compose up -d
 ```
 
-![rssbridge启用picuki](https://vip2.loli.io/2023/02/20/sSIjzWH9cFQ3Dgr.webp)
+![rssbridge启用picuki](https://vip2.loli.net/2023/02/20/sSIjzWH9cFQ3Dgr.webp)
 
 
 
@@ -152,11 +152,11 @@ docker compose up -d
 
 目前的问题是rssbridge建起来了，但是picuki bridge不可用。暂时先放一放，先给rssbridge服务绑定一个域名。
 
-![Picuki bridge报错](https://vip2.loli.io/2023/02/20/MeGbR7FN4cLXk8l.webp)
+![Picuki bridge报错](https://vip2.loli.net/2023/02/20/MeGbR7FN4cLXk8l.webp)
 
 在域名托管商处，添加一条A记录，指向自己vps的ipv4地址。
 
-![添加A记录](https://vip2.loli.io/2023/02/20/QeTXysPr8tYUF2W.webp)
+![添加A记录](https://vip2.loli.net/2023/02/20/QeTXysPr8tYUF2W.webp)
 
 这边我选择的域名托管商是cloudflare。
 
@@ -191,15 +191,15 @@ systemctl restart caddy
 
 稍等片刻在浏览器的地址栏输入`rssbridge.example.com`，就能看到加锁(https)的rssbridge网站了。
 
-![rssbridge https](https://vip2.loli.io/2023/02/20/evPFklhIiqrXCH4.webp)
+![rssbridge https](https://vip2.loli.net/2023/02/20/evPFklhIiqrXCH4.webp)
 
 但是，我发现rssbridge中的picuki bridge依然报错。这令我陷入沉思。
 
-![image-20230220133633621](https://vip2.loli.io/2023/02/20/nKBy48VuXMozj7s.webp)
+![image-20230220133633621](https://vip2.loli.net/2023/02/20/nKBy48VuXMozj7s.webp)
 
 幸亏我个人有好几台国外的vps，在aws的lightsail上面同样搭建了rssbridge，里面的picuki bridge能正常工作。
 
-![aws rssbridge的picuki工作正常](https://vip2.loli.io/2023/02/20/5SUWr6EtvcYaXAd.webp)
+![aws rssbridge的picuki工作正常](https://vip2.loli.net/2023/02/20/5SUWr6EtvcYaXAd.webp)
 
 个人猜想在digital ocean上搭建rssbridge，使用picuki bridge报错的原因在于digital ocean的ip，可能绑定该ip的vps以前也搭建过rssbridge的服务，并且这台vps搭建的rssbridge被多人使用，访问picuki次数太多，导致该ip被rssbridge封掉了。当然这也是我的个人猜想。
 
@@ -228,7 +228,7 @@ cache_timeout = "216600"
 
 获取session_id和ds_user_id的方法，上面文档链接里面讲得很详细。总结就是登录instagram，f12打开开发者工具，Application—>Cookies—>获取相关数据。添加进config.init.php文件中即可。
 
-![获取session_id和ds_user_id](https://vip2.loli.io/2023/02/20/IhUdSbDH45gFQjs.webp)
+![获取session_id和ds_user_id](https://vip2.loli.net/2023/02/20/IhUdSbDH45gFQjs.webp)
 
 
 
@@ -246,7 +246,7 @@ rssbridge是一个非常棒的项目，可以说在rss界，rsshub之下便是rs
 
 最后分享一则rssbridge项目主页的咆哮。
 
-![rssbridge-rant](https://vip2.loli.io/2023/02/20/4FdheiOKMJC9luf.webp)
+![rssbridge-rant](https://vip2.loli.net/2023/02/20/4FdheiOKMJC9luf.webp)
 
 
 
@@ -256,10 +256,10 @@ rssbridge是一个非常棒的项目，可以说在rss界，rsshub之下便是rs
 
 目前我已经弃用自建的解决方案，采用tg机器人[thefeedreaderbot](https://thefeedreaderbot.com/index.html)创始人搭建的rssbridge，经济实力允许的话，可以花100€买断这个机器人的premium版。
 
-![rssbridge 403](https://vip2.loli.io/2023/03/07/c5Txu3q8nj1leMz.webp)
+![rssbridge 403](https://vip2.loli.net/2023/03/07/c5Txu3q8nj1leMz.webp)
 
 我也尝试询问过作者，他购买了哪家代理才使得其搭建的rssbridge能躲过picuki的block。作者也向我表明，其使用的是[webshare](https://www.webshare.io/)这家网站的动态代理ip，域名授权，将获取到的地址，填入rssbridge的config.ini.php文件中，形如`url = "http://p.webshare.io:xxxx"`。
 
-![tg对话截图](https://vip2.loli.io/2023/03/07/nFUR8Cj5P4L2WtB.webp)
+![tg对话截图](https://vip2.loli.net/2023/03/07/nFUR8Cj5P4L2WtB.webp)
 
 我粗略估算了一下，webshare最便宜的方案，包年也得接近30刀，于是我最终决定放弃rssbridge。使用[thefeedreaderbot](https://thefeedreaderbot.com/index.html)作者搭建的rssbridge。具体的rssbridge地址可参看thefeedreaderbot网站的[help rssbridge](https://thefeedreaderbot.com/helpRssBridge.html)页面。

@@ -55,9 +55,9 @@ wap.ac在2024年2月21日上线了warp vps进行销售，可选择南极洲、�
 
 - [一线机场TAG](https://tagss04.pro/#/auth/j6c8uF3k)
 
-![TAG机场南极节点](https://vip2.loli.io/2023/08/17/8b1DX7fiN2CKsJP.webp)
+![TAG机场南极节点](https://vip2.loli.net/2023/08/17/8b1DX7fiN2CKsJP.webp)
 
-![TAG机场朝鲜节点](https://vip2.loli.io/2023/08/17/fkIun2Q7SetJ4Cw.webp)
+![TAG机场朝鲜节点](https://vip2.loli.net/2023/08/17/fkIun2Q7SetJ4Cw.webp)
 
 TAG机场的tg频道的公告显示该家机场存在朝鲜和南极洲的节点。
 
@@ -65,7 +65,7 @@ TAG机场的tg频道的公告显示该家机场存在朝鲜和南极洲的节点
 
 相较于TAG，这家机场价格更便宜。
 
-![FacMata机场套餐](https://vip2.loli.io/2023/08/17/LV5lNoi8FxqHdJT.webp)
+![FacMata机场套餐](https://vip2.loli.net/2023/08/17/LV5lNoi8FxqHdJT.webp)
 
 其他机场自行探索。
 
@@ -77,7 +77,7 @@ TAG机场的tg频道的公告显示该家机场存在朝鲜和南极洲的节点
 
 搭建教程及其要点可见youtube不良林和这篇博文—[GlobalVM 朝鲜IP NAT VPS 简单测评及使用教程](https://ccckfg.top/archives/768)
 
-![globalvm产品](https://vip2.loli.io/2023/08/17/5JArdO47L1glyTu.webp)
+![globalvm产品](https://vip2.loli.net/2023/08/17/5JArdO47L1glyTu.webp)
 
 搭建完后，选择朝鲜或南极节点开启全局模式科学上网，即可在b站或知乎平台评论区装x了。
 

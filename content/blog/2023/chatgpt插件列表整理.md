@@ -15,7 +15,7 @@ showtoc: false
 
 ChatGPT的插件功能灰度测试测试到我是在上上个月的28号（2023.4.28）。
 
-![拿到插件内测资格推文](https://vip2.loli.io/2023/06/03/yrsFpMZdj56qhEv.webp)
+![拿到插件内测资格推文](https://vip2.loli.net/2023/06/03/yrsFpMZdj56qhEv.webp)
 
 当时插件商店里面的插件就短短的两页，10个左右的样子。
 
@@ -31,7 +31,7 @@ ChatGPT众多的插件就像应用商店里面的app一样，让人眼花缭乱�
 
 就拿我前一阵子体验到的一个令我震撼的插件为例。这个插件名为Bohita。这款插件会根据你的prompt生成相应的服饰，如果服饰合你胃口，你可以直接在对应页面下单，商家制作完服饰后会快递到你家。
 
-![Bohita推文](https://vip2.loli.io/2023/06/03/WsVORlPYf9HxSn4.webp)
+![Bohita推文](https://vip2.loli.net/2023/06/03/WsVORlPYf9HxSn4.webp)
 
 我被震撼到了，这款插件的创新点十足。它让用户成为自己服饰真正的主人，设计出自己理想中的服饰，并且和商家进行对接，这样子的商业化值得借鉴。
 

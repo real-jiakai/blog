@@ -13,25 +13,25 @@ showtoc: true
 
 当我吮吸着舍友请的奶茶，吹着空调，刷科技新闻时，我的教育邮箱收到了open ai的邮件。账号被终止了，并且我也收到了退款20刀（5.7~6.7）的通知。
 
-![教育邮箱账号被openai封禁](https://vip2.loli.io/2023/05/28/NkM9BayjOTghe1d.webp)
+![教育邮箱账号被openai封禁](https://vip2.loli.net/2023/05/28/NkM9BayjOTghe1d.webp)
 
 一开始，我以为是因为这个账号共享给舍友和同学使用过（因为临近毕设答辩，而我这个plus账号又空闲，于是我慷慨地共享给了舍友和同学），他们访问openai的节点不纯，导致此账号被封禁。
 
 但是很快，我想起晚上6点多刷新闻时看到的一则新闻，如下图所示。[via](https://t.me/xhqcankao/4861)
 
-![sentry.io日志收集新闻](https://vip2.loli.io/2023/05/28/7pXn3vUNrOJuC8e.webp)
+![sentry.io日志收集新闻](https://vip2.loli.net/2023/05/28/7pXn3vUNrOJuC8e.webp)
 
 我又去查看了自己使用的ACL4SSR精简版规则，里面定义sentry.io这个域名走的是节点选择。难道是这个原因导致账号被封禁？
 
 正当我焦灼之际，Gmail也收到了openai官方的邮件，账号也被终止了，并退了40刀（4.17~5.17，5.17~6.17）
 
-![gmail账号被openai封禁](https://vip2.loli.io/2023/05/28/Ug2JLX3Qvbrzkpx.webp)
+![gmail账号被openai封禁](https://vip2.loli.net/2023/05/28/Ug2JLX3Qvbrzkpx.webp)
 
 心态小崩。思索了许久，我认为曾经使用过的的虚拟信用卡depay在此次事件中难逃其咎。
 
 因为depay官方群在2023年5月12日发布公告，表明其正在接受美国银行系统的风险管理。
 
-![depay官方公告](https://vip2.loli.io/2023/05/28/84gaQjPXIO3eKCY.webp)
+![depay官方公告](https://vip2.loli.net/2023/05/28/84gaQjPXIO3eKCY.webp)
 
 depay卡无法充值，消费也可能中断。当时我看到此消息时，就准备考虑下家了。
 
@@ -41,27 +41,27 @@ depay卡无法充值，消费也可能中断。当时我看到此消息时，就
 
 调查结果显示，有接近1/4的用户被封号，
 
-![封号调查](https://vip2.loli.io/2023/05/28/EkHuIAShgt159bO.webp)
+![封号调查](https://vip2.loli.net/2023/05/28/EkHuIAShgt159bO.webp)
 
 有一半的群友有过plus的付款行为。
 
-![付费行为调查](https://vip2.loli.io/2023/05/28/JQp6hgTYSlV7Hif.webp)
+![付费行为调查](https://vip2.loli.net/2023/05/28/JQp6hgTYSlV7Hif.webp)
 
 对于sentry.io这款追踪器，大部分群友都是没关注过的。
 
-![sentry.io 了解程度调查](https://vip2.loli.io/2023/05/28/cwW9Kdk2yPeJxuU.webp)
+![sentry.io 了解程度调查](https://vip2.loli.net/2023/05/28/cwW9Kdk2yPeJxuU.webp)
 
 绝大部分群友开通chatgpt plus均是通过虚拟信用卡，很少一部分使用美国银行发行的实体卡进行购买。
 
-![付费方式调查](https://vip2.loli.io/2023/05/28/IvyFPsgDZQh72bp.webp)
+![付费方式调查](https://vip2.loli.net/2023/05/28/IvyFPsgDZQh72bp.webp)
 
 大部分群友都是使用机场的解锁或依托自建vps提供的解锁来获取chatgpt服务，不到1/10的群友使用的是原生的住宅ip代理。
 
-![梯子类型调查](https://vip2.loli.io/2023/05/28/s5j8GbWrw49Hht3.webp)
+![梯子类型调查](https://vip2.loli.net/2023/05/28/s5j8GbWrw49Hht3.webp)
 
 绝大部分群友都是自己注册的账号，很少一部分群友使用的账号是从商家处购买的。
 
-![注册调查](https://vip2.loli.io/2023/05/28/iWNIYMAyP1DQvH3.webp)
+![注册调查](https://vip2.loli.net/2023/05/28/iWNIYMAyP1DQvH3.webp)
 
 首先关于封号这一项数据，其实没有多大的可比性。
 
@@ -119,7 +119,7 @@ DOMAIN,o33249.ingest.sentry.io,REJECT
 
 下图便是我每天使用chatgpt的场景。每隔半天导出一下聊天记录。这种方法再被封禁，也只能是虚拟卡又出现问题了。因为ip使用的是Google One VPN的ip，纯度有保证。
 
-![windows server使用chatgpt](https://vip2.loli.io/2023/05/28/4j9NV8BtozxHhIC.webp)
+![windows server使用chatgpt](https://vip2.loli.net/2023/05/28/4j9NV8BtozxHhIC.webp)
 
 ## 总结
 

@@ -13,7 +13,7 @@ showtoc: true
 
 第一次接触国外vps的时候，就想过我该如何操作，才能加速国外vps的访问。当时看到ssh软件中存在代理这一选项，如xshell会话属性中就存在代理这一选项。当时设置并添加了代理服务器后，双击会话，ssh连接国外的vps并没有成功，反而会得到如下图所示的报错信息。
 
-![xshell一开始使用代理连接搬瓦工vps未成功](https://vip2.loli.io/2022/10/06/5AjmBMCSaDZpJGf.png)
+![xshell一开始使用代理连接搬瓦工vps未成功](https://vip2.loli.net/2022/10/06/5AjmBMCSaDZpJGf.png)
 
 在网上看了很多别人的解决方案，其中有一个方法奏效，就是通过国内的云服务产商，如阿里云，去连接国外的vps，速度会比本地直接使用ssh工具(不使用代理)连接快很多。
 
@@ -56,14 +56,14 @@ PermitRootLogin yes
 
 > 为什么大多jc会屏蔽掉ssh协议？
 
-![jc会屏蔽掉ssh协议原因一](https://vip2.loli.io/2022/10/06/QHnjU9pqyEfXko7.png)
+![jc会屏蔽掉ssh协议原因一](https://vip2.loli.net/2022/10/06/QHnjU9pqyEfXko7.png)
 
-![jc会屏蔽掉ssh协议原因二](https://vip2.loli.io/2022/10/06/gySPfXzAYVFdn9u.png)
+![jc会屏蔽掉ssh协议原因二](https://vip2.loli.net/2022/10/06/gySPfXzAYVFdn9u.png)
 
 简单来说，就是这个端口可能会被滥用，一旦滥用会给产商造成麻烦。如大多数云服务器产商都屏蔽掉了SMTP的`25`端口，以防有人利用该端口发送垃圾邮件。
 
 > 为什么使用阿里云这类国内的云服务厂商的机子连接国外的vps，速度会比你通过ssh软件(不使用代理)来得快？
 
-![使用国内vps连接国外vps比自己直连国外vps快的原因](https://vip2.loli.io/2022/10/06/DScJHjIoWXhZ5Mq.png)
+![使用国内vps连接国外vps比自己直连国外vps快的原因](https://vip2.loli.net/2022/10/06/DScJHjIoWXhZ5Mq.png)
 
 阿里云连接到你国外vps的线路比你直连到国外vps的线路更优。

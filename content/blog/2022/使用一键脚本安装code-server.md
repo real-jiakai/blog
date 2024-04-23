@@ -147,7 +147,7 @@ dpkg是Debian家族的包管理工具，-i参数意为安装。
 
 ## 3.配置操作
 
-![执行完一键脚本的终端提示](https://vip2.loli.io/2022/08/17/PYDEU9yBGRArMav.png)
+![执行完一键脚本的终端提示](https://vip2.loli.net/2022/08/17/PYDEU9yBGRArMav.png)
 
 执行完一键脚本后，可以看到如上图所示的终端提示。
 

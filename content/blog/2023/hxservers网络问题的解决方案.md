@@ -11,7 +11,7 @@ showtoc: true
 
 hxservers商家已经跑路。paypal争议，成功拿到所有钱款。
 
-![paypal击碎hxservers](https://vip2.loli.io/2023/11/28/uQaqb8pPtS67weU.webp)
+![paypal击碎hxservers](https://vip2.loli.net/2023/11/28/uQaqb8pPtS67weU.webp)
 
 ## 更新(2023.10)
 
@@ -46,13 +46,13 @@ dd完，还是没有网络的。因此无法使用本机windows自带的远程�
 
 dns可以设置为1.1.1.1(主dns)和8.8.8.8(副dns)，类似下图所示：
 
-![设置网络](https://vip2.loli.io/2023/10/13/lcMe9sSjzNipH3B.webp)
+![设置网络](https://vip2.loli.net/2023/10/13/lcMe9sSjzNipH3B.webp)
 
 保存后，应该会弹出一个网络识别的页面，点击确定即可。确保网络连接正常后，就可以使用本地windows的rdp连接该远程windows server了。
 
 接着便是连接google one vpn的常规操作。
 
-![连接google one vpn](https://vip2.loli.io/2023/10/13/lNHvMD8pnJa2iKP.webp)
+![连接google one vpn](https://vip2.loli.net/2023/10/13/lNHvMD8pnJa2iKP.webp)
 
 注意点：
 
@@ -91,11 +91,11 @@ bash InstallNET.sh -dd "https://dl.lamp.sh/vhd/en-us_win2022.xz"
 
 设置完网络，接着点击Yes，允许该windows server被发现，以连接上网络。
 
-![允许windows server被发现](https://vip2.loli.io/2023/10/13/6YBu8jlSKEXFxrN.webp)
+![允许windows server被发现](https://vip2.loli.net/2023/10/13/6YBu8jlSKEXFxrN.webp)
 
 接下来就可以使用本地的rdp连接远程的windows server进行操作了。果然设置完网络后，google one vpn就能成功连接。
 
-![成功连接google one vpn](https://vip2.loli.io/2023/10/13/bqhNDlLjpBS8JPI.webp)
+![成功连接google one vpn](https://vip2.loli.net/2023/10/13/bqhNDlLjpBS8JPI.webp)
 
 接着便是常规的搭建节点和对windows server进行改密、该端口等操作了。
 

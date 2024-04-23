@@ -11,7 +11,7 @@ showtoc: true
 
 hxservers商家已经跑路。paypal争议，成功拿到所有钱款。
 
-![paypal击碎hxservers](https://vip2.loli.io/2023/11/28/uQaqb8pPtS67weU.webp)
+![paypal击碎hxservers](https://vip2.loli.net/2023/11/28/uQaqb8pPtS67weU.webp)
 
 ## 故事背景
 
@@ -19,17 +19,17 @@ hxservers商家已经跑路。paypal争议，成功拿到所有钱款。
 
 看到了最近新开张的商家hxservers正在搞万圣节活动。优惠力度为半价（结账时使用优惠码：SPOOKY，直接半价，活动一直持续到2023年的10月31号，这是循环优惠）。其中的一款vps配置得到了我的青睐。
 
-![hxservers套餐列表](https://vip2.loli.io/2023/10/04/HGtswIrAfimBlOW.webp)
+![hxservers套餐列表](https://vip2.loli.net/2023/10/04/HGtswIrAfimBlOW.webp)
 
 我之前用的一款window vps由商家cheapwindowsvps提供，使用lowendtalk的优惠码半价后，是5.5刀/月。配置如下：
 
-![我原本的cheapwindowsvps的windows配置](https://vip2.loli.io/2023/10/04/ydGUwoKfrMt2aP5.webp)
+![我原本的cheapwindowsvps的windows配置](https://vip2.loli.net/2023/10/04/ydGUwoKfrMt2aP5.webp)
 
 两款都是无限流量。配置相差无几，主要区别是hxservers的处理器是AMD EPYC-Milan Processor 3,39GHz(2 processors)，而cheapwindowsvps的处理器是Intel Xeon E3-12xx v2(Lvy BRIDGE,ibrs) 2.80GHz。
 
 经过chatgpt4的点播，我意识到hxservers的处理器更强。再加上上个月我听nodeseek和hostloc上的水友讲hxservers的机器性能无敌，线路拉跨。我对hxservers心动了。更低的价格，更高的配置是每个mjj的梦想。
 
-![chatgpt4的解释](https://vip2.loli.io/2023/10/04/yA2q8QHlMnwLVvh.webp)
+![chatgpt4的解释](https://vip2.loli.net/2023/10/04/yA2q8QHlMnwLVvh.webp)
 
 cheapwindowsvps的机器虽然能用，但是rdp远程连接时卡顿严重。废话不多说，直接paypal付款。付完款，拿到机器已经是将近晚上11点了。我准备第二天在上面开启google one vpn。接着用xray搭建一个代理节点，代理节点享用google one vpn的流量。
 
@@ -37,7 +37,7 @@ cheapwindowsvps的机器虽然能用，但是rdp远程连接时卡顿严重。�
 
 到了第二天（也就是今天，2023年10月4号），我早上早早地用rdp远程连接了该windows server。下载并安装好google one vpn，当我满怀期待地打开connect按钮，结果等来的却是一直disconnect并重连。
 
-![windows server上google one vpn连接失败](https://vip2.loli.io/2023/10/04/CT5S1qNzAJ6rW8U.webp)
+![windows server上google one vpn连接失败](https://vip2.loli.net/2023/10/04/CT5S1qNzAJ6rW8U.webp)
 
 在此期间，我尝试关闭防火墙，问gpt4和new bing，问google one tg群群友......都没有得到令我满意的答案。我为此重装了好多次系统，结果发现商家提供的仅有的windows server 2019镜像和windows server 2022镜像均无法成功连接google one vpn。
 
@@ -65,7 +65,7 @@ bash InstallNET.sh -dd "https://dl.lamp.sh/vhd/en-us_win2022.xz"
 
 不出所料，在秋水逸冰大佬的windows镜像的加持下，成功连接上google one vpn。
 
-![成功连接上google one vpn](https://vip2.loli.io/2023/10/04/CDQ2sSr4pMJxHGo.webp)
+![成功连接上google one vpn](https://vip2.loli.net/2023/10/04/CDQ2sSr4pMJxHGo.webp)
 
 这一刻我觉得非常幸福，折腾路上攻克拦路虎真开心。
 
@@ -73,7 +73,7 @@ bash InstallNET.sh -dd "https://dl.lamp.sh/vhd/en-us_win2022.xz"
 
 最后还需要修改以太网的网络适配器为最低优先级，以使得google one vpn的优先级大于以太网，这样子xray提供的代理，使用的就是google one vpn的流量了。具体教程可见google one tg群网友的解答—[via](https://t.me/googleonevpn/15907)。
 
-![成功使用上google one vpn的节点](https://vip2.loli.io/2023/10/04/cah5tHiUX84nGls.webp)
+![成功使用上google one vpn的节点](https://vip2.loli.net/2023/10/04/cah5tHiUX84nGls.webp)
 
 我主要拿google one vpn所在的windows server作为落地机，用来分流chatgpt和new bing这类流量。一般情况下不使用直连google one vpn的节点。
 

@@ -9,7 +9,7 @@ showtoc: true
 
 ## 提问
 
-![提问](https://vip2.loli.io/2023/01/13/lUe7vE2SH8GOdLy.webp)
+![提问](https://vip2.loli.net/2023/01/13/lUe7vE2SH8GOdLy.webp)
 
 译文：
 
@@ -38,7 +38,7 @@ list
 
 ## 回答
 
-![回答](https://vip2.loli.io/2023/01/13/SDzKNMrwpI2bvCh.webp)
+![回答](https://vip2.loli.net/2023/01/13/SDzKNMrwpI2bvCh.webp)
 
 译文：
 

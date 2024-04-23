@@ -42,7 +42,7 @@ systemctl status nginx
 
 下图是我从源代码来安装nginx，并将nginx添加为系统服务后，查看nginx服务状态的效果图。
 
-![systemctl status nginx](https://vip2.loli.io/2023/01/14/waiVO5Il7BftTKm.webp)
+![systemctl status nginx](https://vip2.loli.net/2023/01/14/waiVO5Il7BftTKm.webp)
 
 重点关注倒数第2行，报错信息为`nginx.service: Failed to parse PID from file /usr/local/nginx/logs/nginx.pid: Invalid argument`。意思是从文件`/usr/local/nginx/logs/nginx.pid`中解析PID失败。
 
@@ -141,9 +141,9 @@ WantedBy=multi-user.target
 
 ## 总结
 
-![网友解释的原因图一](https://vip2.loli.io/2023/01/14/JFTQc74fLC6luxo.webp)
+![网友解释的原因图一](https://vip2.loli.net/2023/01/14/JFTQc74fLC6luxo.webp)
 
-![网友解释的原因图二](https://vip2.loli.io/2023/01/14/S1p3kh5MqzujQFZ.webp)
+![网友解释的原因图二](https://vip2.loli.net/2023/01/14/S1p3kh5MqzujQFZ.webp)
 
 [图一出处](https://zhidao.baidu.com/question/720160621097785285.html)
 

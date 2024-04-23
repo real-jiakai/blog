@@ -15,7 +15,7 @@ showtoc: true
 
 于是我拉取我github仓库中的sm.ms python脚本，用conda新建一个python环境，当我激活该python环境的时候，终端报错：“UnicodeDecodeError: 'gbk' codec can't decode byte 0xaf in position 271: illegal multibyte sequence”。
 
-![conda激活环境报错](https://vip2.loli.io/2023/09/30/9FSwu4Kif5zJpk3.webp)
+![conda激活环境报错](https://vip2.loli.net/2023/09/30/9FSwu4Kif5zJpk3.webp)
 
 一看就是编码问题。
 
@@ -30,21 +30,21 @@ export PYTHONUTF8=1
 
 关于这行GPT4的解释
 
-![GPT4解释](https://vip2.loli.io/2023/09/30/2t4InxYCfBNTdm7.webp)
+![GPT4解释](https://vip2.loli.net/2023/09/30/2t4InxYCfBNTdm7.webp)
 
 成功激活python环境。(下图展示的为在git bash终端export，是临时生效的，要想永久生效，建议操作配置文件.condarc)
 
-![成功激活python环境](https://vip2.loli.io/2023/09/30/UXJEGRHSg8xacQv.webp)
+![成功激活python环境](https://vip2.loli.net/2023/09/30/UXJEGRHSg8xacQv.webp)
 
 可以愉快地备份图床图片了。
 
-![](https://vip2.loli.io/2023/09/30/tMDPoIFbZY2lQrg.webp)
+![](https://vip2.loli.net/2023/09/30/tMDPoIFbZY2lQrg.webp)
 
 ## 补充
 
 一开始我更改Windows上的"Language for non-Unicode programs"（非Unicode程序的语言）设置，将其改为English（United States），也能解决该编码问题，但是我发现picgo软件直接黑屏了，当我再次将其更改回Chinese（Simplified,Singapore）后，picgo软件就不再黑屏。
 
-![更改Windows上的"Language for non-Unicode programs"（非Unicode程序的语言）设置](https://vip2.loli.io/2023/09/30/etKHScM4YgVQIC5.webp)
+![更改Windows上的"Language for non-Unicode programs"（非Unicode程序的语言）设置](https://vip2.loli.net/2023/09/30/etKHScM4YgVQIC5.webp)
 
 ## 参考链接
 

@@ -17,7 +17,7 @@ showtoc: false
 
 Thunderbird添加了我使用频繁的邮箱，如gmail、qq邮箱等。方便我在一个地方，查看邮件收件情况。
 
-![Thunderbird收取各大邮箱邮件](https://vip2.loli.io/2023/11/21/OlMvt7syJcmeYrj.webp)
+![Thunderbird收取各大邮箱邮件](https://vip2.loli.net/2023/11/21/OlMvt7syJcmeYrj.webp)
 
 📝 笔记软件: mdBook+VSCode、语雀 and etc.
 
@@ -27,7 +27,7 @@ Thunderbird添加了我使用频繁的邮箱，如gmail、qq邮箱等。方便�
 
 今年我用这套流程记录笔记最多的，当属折腾vps的相关笔记站点—[via](https://vps.gujiakai.top)。
 
-![mdBook+VSCode写笔记](https://vip2.loli.io/2023/11/21/yoZPlrAsOi3m5gG.webp)
+![mdBook+VSCode写笔记](https://vip2.loli.net/2023/11/21/yoZPlrAsOi3m5gG.webp)
 
 ✅ 代办: Microsoft To do
 
@@ -37,7 +37,7 @@ Thunderbird添加了我使用频繁的邮箱，如gmail、qq邮箱等。方便�
 
 近期挤时间争取将折腾代办项缩减至50个以内。
 
-![Microsoft To do记录折腾代办](https://vip2.loli.io/2023/11/21/sLxFmyeliOoa7Pf.webp)
+![Microsoft To do记录折腾代办](https://vip2.loli.net/2023/11/21/sLxFmyeliOoa7Pf.webp)
 
 📁 云存储: Google Drive、OneDrive、Pikpak and etc.
 
@@ -51,13 +51,13 @@ Pikpak网盘，主要用于磁力下载，搭配上TG的Pikpak机器人，使用
 
 照片的话，和云存储类似，Google Photos存一份，接着OneDrive上也存一份，一些回忆照片，我也会在TG私人频道再存储一份。
 
-![Google Photos存储照片](https://vip2.loli.io/2023/11/21/5NgbhHGPUVdcy2z.webp)
+![Google Photos存储照片](https://vip2.loli.net/2023/11/21/5NgbhHGPUVdcy2z.webp)
 
 📖 RSS: Inoreader and etc.
 
 RSS使用的是功能强大的Inoreader。它的创建RSS Feed、邮件提醒等功能，非常好用。平时用它来查看各路新闻。
 
-![Inoreader接收信息](https://vip2.loli.io/2023/11/21/9kCvLaluhGDefyn.webp)
+![Inoreader接收信息](https://vip2.loli.net/2023/11/21/9kCvLaluhGDefyn.webp)
 
 虽然我也自建了诸如Fresh RSS、Miniflux等应用，但使用的较少。
 
@@ -67,7 +67,7 @@ RSS使用的是功能强大的Inoreader。它的创建RSS Feed、邮件提醒等
 
 我的一些windows vps上使用的是诸如thorium等小众的浏览器。
 
-![Serveral Browsers](https://vip2.loli.io/2023/11/21/EkwOKs3v6PQZx1U.webp)
+![Serveral Browsers](https://vip2.loli.net/2023/11/21/EkwOKs3v6PQZx1U.webp)
 
 💬 Chat: QQ、Wechat and etc.
 
@@ -81,13 +81,13 @@ RSS使用的是功能强大的Inoreader。它的创建RSS Feed、邮件提醒等
 
 书签肯定首推Raindrop，不要怕书签杂，只要看到好的网站，就保存下来，以备之后的不时之需。
 
-![Raindrop书签保存有趣的网站](https://vip2.loli.io/2023/11/21/iM59A7zc3LGoOa4.webp)
+![Raindrop书签保存有趣的网站](https://vip2.loli.net/2023/11/21/iM59A7zc3LGoOa4.webp)
 
 📊 Presentations: Microsoft Powerpoiot、Slidev
 
 幻灯片一般我使用的是antfu大神开源的Slidev项目，专为开发者设计的幻灯片工具，简单编写markdown文件即可生成SPA网页，将幻灯片以网页的形式呈现，非常Nice。附上最近我用slidev制作的一个关于监督学习方法应用的幻灯片—[via](https://aosl.gxmzuai.top/)
 
-![用slidev制作的一个关于监督学习方法应用的幻灯片](https://vip2.loli.io/2023/11/21/dCGRNSXW6O5jhTH.webp)
+![用slidev制作的一个关于监督学习方法应用的幻灯片](https://vip2.loli.net/2023/11/21/dCGRNSXW6O5jhTH.webp)
 
 如果一个幻灯片仅仅是用来凑数的，那肯定直接Microsoft Powerpoint搞定。闲麻烦，可以搭配chatppt或者国内wps的ai，一键生成ppt。
 
@@ -95,19 +95,19 @@ RSS使用的是功能强大的Inoreader。它的创建RSS Feed、邮件提醒等
 
 Spotify主要用于学习时，放送轻音乐。Youtube music用于听流行歌曲。
 
-![Spotify播放轻音乐](https://vip2.loli.io/2023/11/21/8kXQI7tpOFR4y9W.webp)
+![Spotify播放轻音乐](https://vip2.loli.net/2023/11/21/8kXQI7tpOFR4y9W.webp)
 
 🔐 Password Management: Bitwarden
 
 自建Bitwarden服务，浏览器密码填充、移动端密码填充的小能手。
 
-![Bitwarden保存密码](https://vip2.loli.io/2023/11/21/Tj1v8nshympiSB6.webp)
+![Bitwarden保存密码](https://vip2.loli.net/2023/11/21/Tj1v8nshympiSB6.webp)
 
 🧑‍💻 Code Editor: VSCode
 
 VSCode实在是太方便了，目前我写博客都是通过其进行的。唯一的缺点是装一堆插件，占硬盘空间。
 
-![VSCode写博客](https://vip2.loli.io/2023/11/21/7zVXkhs2SfAKnOD.webp)
+![VSCode写博客](https://vip2.loli.net/2023/11/21/7zVXkhs2SfAKnOD.webp)
 
 😘 Blog Platform: Hugo+Netlify
 
@@ -119,7 +119,7 @@ VSCode实在是太方便了，目前我写博客都是通过其进行的。唯�
 
 其中Immersive Translate令我印象深刻，免费开源的作品能成功替换掉彩云小译的付费双语翻译服务。
 
-![Immersive Translate双语翻译顶呱呱](https://vip2.loli.io/2023/11/21/dHw6o2u8eiIKv5b.webp)
+![Immersive Translate双语翻译顶呱呱](https://vip2.loli.net/2023/11/21/dHw6o2u8eiIKv5b.webp)
 
 📎 Personal assistant: ChatGPT Plus
 
@@ -129,6 +129,6 @@ VSCode实在是太方便了，目前我写博客都是通过其进行的。唯�
 
 正如最近闹得沸沸扬扬的OpenAI炒了Sam Altman鱿鱼事件中，OpenAI的员工们在X上表达不满一样(OpenAI is nothing without its people)，I'm nothig without GPT Plus（没有GPT Plus，我什么也不是）。没有GPT，我会不知所措，会变得比拥有GPT Plus时更笨。
 
-![人类之光—GPT Plus](https://vip2.loli.io/2023/11/21/ArI7z3mptBXLcH8.webp)
+![人类之光—GPT Plus](https://vip2.loli.net/2023/11/21/ArI7z3mptBXLcH8.webp)
 
 当然还有很多值得分享的工具，全部罗列出来，我估计一整天的时间就没了，就先写这么多吧。

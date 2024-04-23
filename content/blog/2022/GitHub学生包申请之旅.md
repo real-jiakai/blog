@@ -60,21 +60,21 @@ showtoc: true
 
 微软云Azure、Temius、JetBrains、域名...... 知名企业对于学生的优惠力度真的很顶！！！！！
 
-![邮箱次次被秒拒图](https://vip2.loli.io/2022/06/25/TS5DtquVOsyxMmg.png)
+![邮箱次次被秒拒图](https://vip2.loli.net/2022/06/25/TS5DtquVOsyxMmg.png)
 
 <center><b>图1.邮箱次次被秒拒图</b></center>
 
-![49次失败历程图一](https://vip2.loli.io/2022/06/25/FNki81p4Hc7youX.png)
+![49次失败历程图一](https://vip2.loli.net/2022/06/25/FNki81p4Hc7youX.png)
 
-![49次失败历程图二](https://vip2.loli.io/2022/06/25/vJVk8Zo6SFMmcBa.png)
+![49次失败历程图二](https://vip2.loli.net/2022/06/25/vJVk8Zo6SFMmcBa.png)
 
 <center><b>图2.49次失败历程</b></center>
 
-![第50次申请正在处理中](https://vip2.loli.io/2022/06/25/BLfsXkj3g46FREV.png)
+![第50次申请正在处理中](https://vip2.loli.net/2022/06/25/BLfsXkj3g46FREV.png)
 
 <center><b>图3.第50次申请正在处理中</b></center>
 
-![成功拿到GitHub学生包](https://vip2.loli.io/2022/06/26/kiyChRj6ldLcXwe.png)
+![成功拿到GitHub学生包](https://vip2.loli.net/2022/06/26/kiyChRj6ldLcXwe.png)
 
 <center><b>图4.成功拿到GitHub学生包</b></center>
 

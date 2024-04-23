@@ -13,7 +13,7 @@ showtoc: true
 
 月初，提交毕设中期报告的时候，我提到放弃Hugo，转而采用Next.js来完成毕设。为了更好地显示Next.js相较于Hugo的优势，于是我准备开发一个Hugo博客主题，已备之后答辩时阐述。
 
-![中期报告片段](https://vip2.loli.io/2023/03/16/JNsfyt9mpVULYuo.webp)
+![中期报告片段](https://vip2.loli.net/2023/03/16/JNsfyt9mpVULYuo.webp)
 
 3月14日~3月16日，差不多两天的时间，参照多方教程以及chatgpt、new bing，最终开发出了自己的Hugo博客主题。特此记录一下Hugo博客主题开发的历程。
 
@@ -128,7 +128,7 @@ body标签上的css类名解释：
 注：这边的min-vh + flex-fill设置得很关键，如果不添加这个组合，则会出现首页内容过少时，尾部元素上浮的情况。
 去年我用vue搭建的一个个人站点，就出现了尾部元素上浮的情况。
 
-![vue个人站点尾部元素上浮](https://vip2.loli.io/2023/03/16/G7u1RKSI8FbVmYL.webp)
+![vue个人站点尾部元素上浮](https://vip2.loli.net/2023/03/16/G7u1RKSI8FbVmYL.webp)
 
 接着在页面的主体部分，我将页面分为了main块和侧边栏。采用了Bootstrap的网格布局。
 

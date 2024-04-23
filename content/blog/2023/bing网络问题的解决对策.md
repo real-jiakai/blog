@@ -18,7 +18,7 @@ warp go脚本的GitHub仓库被GitHub官方ban掉了，warp go脚本迁移到了
 
 最近在访问new bing的时候，得到这样的报错信息`Sorry, looks like your network settings are preventing access to this feature`
 
-![new bing报错](https://vip2.loli.io/2023/03/26/yLqhMwZKmBOtoi6.webp)
+![new bing报错](https://vip2.loli.net/2023/03/26/yLqhMwZKmBOtoi6.webp)
 
 4天前，我遇到这个问题后，在reddit上的bing社区找到了这样一条帖子。[via](https://www.reddit.com/r/bing/comments/11xzumu/comment/jd6xxhb/)
 
@@ -40,21 +40,21 @@ warp go脚本的GitHub仓库被GitHub官方ban掉了，warp go脚本迁移到了
 wget -N https://raw.githubusercontent.com/fscarmen/warp/main/warp-go.sh && bash warp-go.sh d
 ```
 
-![图一](https://vip2.loli.io/2023/03/26/schJ6VPHYf4SWzN.webp)
+![图一](https://vip2.loli.net/2023/03/26/schJ6VPHYf4SWzN.webp)
 
 选择语言。
 
-![图二](https://vip2.loli.io/2023/03/26/7hPlX6NOfKH8d2G.webp)
+![图二](https://vip2.loli.net/2023/03/26/7hPlX6NOfKH8d2G.webp)
 
 选择账户类型，推荐Teams账户。
 
-![图三](https://vip2.loli.io/2023/03/26/nEz1sP2YRocdOiF.webp)
+![图三](https://vip2.loli.net/2023/03/26/nEz1sP2YRocdOiF.webp)
 
 这时候，要输入Teams Token，要获取这个值，必须注册Cloudflare的Zero Trust账号。具体可见油管博主—甬哥侃侃侃的[这期视频](https://www.youtube.com/watch?v=Se5kI07k9eA)中的注册Teams账户部分。
 
 输入Teams Token，优先级别选择3-默认即可
 
-![图四](https://vip2.loli.io/2023/03/26/YwsOWNL8dBgfV9z.webp)
+![图四](https://vip2.loli.net/2023/03/26/YwsOWNL8dBgfV9z.webp)
 
 ```bash
 # 进去warp-go脚本配置界面
@@ -65,7 +65,7 @@ warp-go
 
 紧接着再此运行`warp-go`，可以得到如下界面。选择0退出脚本。
 
-![图五](https://vip2.loli.io/2023/03/26/aSsKd6mxIuzkfnA.webp)
+![图五](https://vip2.loli.net/2023/03/26/aSsKd6mxIuzkfnA.webp)
 
 ```bash
 # 显示系统上所有网络接口的信息
@@ -74,7 +74,7 @@ ip a
 curl --interface WARP ip.gs
 ```
 
-![图六](https://vip2.loli.io/2023/03/26/WcyTPiZfV8Nlnhp.webp)
+![图六](https://vip2.loli.net/2023/03/26/WcyTPiZfV8Nlnhp.webp)
 
 可以看到多出了一个WARP虚拟网卡，指定WARP虚拟网卡访问ip站点，得到和本VPS截然不同的ip地址。
 
@@ -82,13 +82,13 @@ curl --interface WARP ip.gs
 
 可见chatgpt4的回答：
 
-![chatgpt4的回答](https://vip2.loli.io/2023/03/26/MDkSofwOW2g4Lch.webp)
+![chatgpt4的回答](https://vip2.loli.net/2023/03/26/MDkSofwOW2g4Lch.webp)
 
 由于我这台vps上原本就已经安装了x-ui面板。x-ui面板的安装教程可以参考油管博主——不良林的[这个视频](https://www.youtube.com/watch?v=s90feRmdr9A)。
 
 登录x-ui的后台管理界面，更改默认的xray配置模板。
 
-![x-ui后台界面](https://vip2.loli.io/2023/03/26/9v5jfux1DiPXgJZ.webp)
+![x-ui后台界面](https://vip2.loli.net/2023/03/26/9v5jfux1DiPXgJZ.webp)
 
 > 更新（2023.6.1），可以直接更新geo数据，紧接着，出站规则可以直接指定geosite:openai和geosite:bing即可。以下操作规则不全。直接看本篇最后一部分的操作即可。
 
