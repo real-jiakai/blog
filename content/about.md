@@ -52,7 +52,7 @@ date: '2022-12-26'
 
 ## 动态
 
-- Moments: [jiakai的Moments](https://moments.gujiakai.top)
+- Moments: 详情见til链接中的社交部分
 - Twitter: [real_jiakai](https://twitter.com/real_jiakai)
 
 ## 其他评论方式
