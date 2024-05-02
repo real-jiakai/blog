@@ -7,7 +7,11 @@ summary: 介绍Google One VPN停用的替代方案。
 showtoc: true
 ---
 
-## 更新(2023.04.21)
+## 更新(2024.05.02)
+
+不良林大哥的最新视频提及了一些寻找双isp商家的方法—[【跨境电商】搭建任意地区TikTok专线节点，免拔卡观看TikTok，双isp节点搭建，节点中转提速，寻找纯净IP，解决ip与DNS位置不一致问题](https://youtu.be/du1G5dG1qPQ)，可以参考教程，寻找适合自己的双isp落地商家。
+
+## 更新(2024.04.21)
 
 ![Google One VPN年中下线官方公告](https://cdn.sa.net/2024/04/21/XNykMrRDVqjZ1gx.webp)
 
