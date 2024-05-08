@@ -11,11 +11,11 @@ showtoc: true
 
 不良林大哥的最新视频提及了一些寻找双isp商家的方法—[【跨境电商】搭建任意地区TikTok专线节点，免拔卡观看TikTok，双isp节点搭建，节点中转提速，寻找纯净IP，解决ip与DNS位置不一致问题](https://youtu.be/du1G5dG1qPQ)，可以参考教程，寻找适合自己的双isp落地商家。
 
-## 更新(2024.04.21)
+## 更新(2024.04.21，2024.05.08)
 
-![Google One VPN年中下线官方公告](https://cdn.sa.net/2024/04/21/XNykMrRDVqjZ1gx.webp)
+![](https://cdn.sa.net/2024/05/08/gqeSCvQWZRcLV64.webp)
 
-Google One VPN年中就下线了，今年晚些时候竟然表示的是年中。via: [What’s happening to VPN by Google One?](https://support.google.com/googleone/answer/14806901)
+Google One VPN年中就下线了【ps：下线时间说改就改，原本是6月10号，现在变成了6月20号】，今年晚些时候竟然表示的是年中。via: [What’s happening to VPN by Google One?](https://support.google.com/googleone/answer/14806901)
 
 ## 背景
 
