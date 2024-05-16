@@ -7,6 +7,38 @@ summary: 介绍Google One VPN停用的替代方案。
 showtoc: true
 ---
 
+## 更新(2024.05.16)
+
+据说[soladrive](https://www.soladrive.com/support/aff.php?aff=192)和[aait](https://www.aait.io/?aff=QDAQDPFV)这两家是真家宽。
+
+其中soladrive的家宽机器的最低价格为25刀/月，aait的家宽机器的最低价格为299人民币/月，如果没有特殊业务，这个价格一个人还是很难扛住的。如果开个5～10人合租车【专注于流媒体、AI等解锁业务】，还是可以的，前提是10个人不乱搞，拿真家宽仅仅用于解锁，或者诸如paypal养号等对ip质量较高的环境使用。
+
+![soladrive的家宽机器](https://cdn.sa.net/2024/05/16/Wkqwy1jOgVEQYLh.webp)
+
+![aait的家宽机器](https://cdn.sa.net/2024/05/16/s9Rlq1fb6W5egNH.webp)
+
+对于家宽感兴趣的朋友可以看看这个youtuber的介绍视频—[TikTok网络 的顶配选择，AaIT提供真正美国静态住宅IP，真实美国线下宽带，拥有一台美国远程电脑，Amazon、PayPal、ChatGPT网络都不再是问题，客户还可享0开卡费0手续费信用卡福利](https://www.youtube.com/watch?v=kls2v-oW2ac)。
+
+我目前面对Google One VPN即将于今年6月20号取消的应对措施：
+
+- Azure学生包里面开美国地区的机器，Azure的动态ip，ipinfo.io均显示Bussiness类型的ip
+
+- lisa host的双isp机器
+
+- 艾云的双isp机器
+
+- ipraft的弗吉尼亚州的单ISP ATT机器【如果是双ISP，ATT那就完美了】
+
+- viie的绝版美国家宽机器【稳定性不ok】
+
+- zgovps的国际线路机器
+
+- littlecreekhosting的伪isp
+
+- crunchbits的伪isp
+
+以上机器会作为我的xray balance配置的AI服务分流出口。当然有些时候也会怀疑自己是否真的需要这么多的解锁出口？答案肯定是否定的。一个人用的话，一台解锁机足矣。或者你的信条是套了warp就解锁万事大吉的话，也是没问题的，目前ai的风控我见网上说就claude比较严重，其他的基本上都已经放开了。我这边分享出我的解决方案仅仅是提供一个思路，不必效仿我。
+
 ## 更新(2024.05.02)
 
 不良林大哥的最新视频提及了一些寻找双isp商家的方法—[【跨境电商】搭建任意地区TikTok专线节点，免拔卡观看TikTok，双isp节点搭建，节点中转提速，寻找纯净IP，解决ip与DNS位置不一致问题](https://youtu.be/du1G5dG1qPQ)，可以参考教程，寻找适合自己的双isp落地商家。
