@@ -53,7 +53,7 @@ date: '2022-12-26'
 ## 动态
 
 - Moments: 详情见til链接中的社交部分
-- Twitter: [real_jiakai](https://twitter.com/real_jiakai)
+- X: [real_jiakai](https://x.com/real_jiakai)
 
 ## 其他评论方式
 
