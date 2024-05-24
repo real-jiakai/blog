@@ -7,6 +7,14 @@ summary: 介绍Google One VPN停用的替代方案。
 showtoc: true
 ---
 
+## 更新(2024.05.24)
+
+再补充一家卖美国att家宽的商家—[wirecat家的ResNet VPS](https://billing.wirecat.net/order/main/packages/resnet/?group_id=15)
+
+![](https://cdn.sa.net/2024/05/24/ryUObfsixvgQP9m.webp)
+
+最低50刀/月，还是偏贵的。除非开车，不然个人用，很少人能物尽其用，发挥最大价值。
+
 ## 更新(2024.05.16)
 
 据说[soladrive](https://www.soladrive.com/support/aff.php?aff=192)和[aait](https://www.aait.io/?aff=QDAQDPFV)这两家是真家宽。
