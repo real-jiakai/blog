@@ -7,6 +7,26 @@ summary: 介绍Google One VPN停用的替代方案。
 showtoc: true
 ---
 
+## 更新(2024.06.17)
+
+今天趁下午有空，将本篇博文中提及的解决方案以及一些未提及补充的解决方案整理到了Google Sheet上。欢迎阅读本博文的同时，搭配该表格查看。[link](https://docs.google.com/spreadsheets/d/1G3zJ6BPfYlom30NFIH0wgnpj01JCl56SgAFW9zFdspU/edit?usp=sharing)
+
+## 更新(2024.06.16)
+
+前一段时间看甬哥直播，甬哥买了一个google pixel8手机，直播中他展示了连接Google One VPN。
+
+Google One VPN停用后，Pixel7以上的手机依然可以继续享受Google One VPN服务。
+
+下图展示我去年买的Pixel7备用机通过前置代理成功连接Google One VPN。
+
+![我去年买的Pixel7备用机通过前置代理成功连接Google One VPN](https://cdn.sa.net/2024/06/16/Qph4YqWDaF5xido.webp)
+
+如果你还想继续用Google One VPN的话，建议直接去拼多多等电商平台买一台pixel7及以上的手机作为备用机即可【买之前请三思，毕竟pixel系列的手机用起来还是差点意思的】。
+
+上午看到日本家宽供应商—sososo的合租房空位紧俏，冲了一台他家的9.9刀/月的机器。他家的机器是真家宽，而且如果你本地有ipv6地址的话，搭建的代理到中国大陆的延迟还是很漂亮的。目前这台机器用来分流解锁我的香港机器AI服务。他家的主页链接：[sososo日本家宽](https://sales.sososo.io/)
+
+![](https://cdn.sa.net/2024/06/17/FASRHMi5tzKka6x.webp)
+
 ## 更新(2024.05.24)
 
 再补充一家卖美国att家宽的商家—[wirecat家的ResNet VPS](https://billing.wirecat.net/order/main/packages/resnet/?group_id=15)
@@ -27,7 +47,7 @@ showtoc: true
 
 对于家宽感兴趣的朋友可以看看这个youtuber的介绍视频—[TikTok网络 的顶配选择，AaIT提供真正美国静态住宅IP，真实美国线下宽带，拥有一台美国远程电脑，Amazon、PayPal、ChatGPT网络都不再是问题，客户还可享0开卡费0手续费信用卡福利](https://www.youtube.com/watch?v=kls2v-oW2ac)。
 
-我目前面对Google One VPN即将于今年6月20号取消的应对措施：
+我目前面对Google One VPN即将于今年6月20号取消的可能应对措施：
 
 - Azure学生包里面开美国地区的机器，Azure的动态ip，ipinfo.io均显示Bussiness类型的ip
 
@@ -99,6 +119,8 @@ Google One VPN年中就下线了【ps：下线时间说改就改，原本是6月
 
 推荐指数：⭐⭐⭐【缺点可能是我体验的弗吉尼亚州机器很卡，性能不佳，仅个人观点】
 
+目前个人使用他家的弗吉尼亚州的单ISP，ATT的机器，非常流畅，推荐指数可以加到4星。
+
 ![丽萨主机的ping0.cc结果](https://cdn.sa.net/2024/04/19/TWLFOvbmdEDP6Ng.webp)
 
 ![Ipraft的ping0.cc结果](https://cdn.sa.net/2024/04/19/LRsNSPAK2chrujY.webp)
@@ -120,6 +142,8 @@ Google One VPN年中就下线了【ps：下线时间说改就改，原本是6月
 ![灵车viie套餐页面](https://cdn.sa.net/2024/04/19/xArsDpf5V2KZCn7.webp)
 
 推荐指数：⭐⭐【工单基本不回，黑历史较多，互联网一搜便知，nodeseek上有很多mjj吐槽他家的服务质量】
+
+由于viie维护=删机重开，故他家的推荐指数变更为零星。
 
 - [艾云](https://iaclouds.com/aff.php?aff=1805)
 
