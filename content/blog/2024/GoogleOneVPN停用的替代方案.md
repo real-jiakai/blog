@@ -13,7 +13,7 @@ showtoc: true
 
 ## 更新(2024.06.16)
 
-前一段时间看甬哥直播，甬哥买了一个google pixel8手机，直播中他展示了连接Google One VPN。
+前一段时间看甬哥直播，甬哥买了一个Google Pixel8手机，直播中他展示了连接Google One VPN。
 
 Google One VPN停用后，Pixel7以上的手机依然可以继续享受Google One VPN服务。
 
@@ -21,7 +21,7 @@ Google One VPN停用后，Pixel7以上的手机依然可以继续享受Google On
 
 ![我去年买的Pixel7备用机通过前置代理成功连接Google One VPN](https://cdn.sa.net/2024/06/16/Qph4YqWDaF5xido.webp)
 
-如果你还想继续用Google One VPN的话，建议直接去拼多多等电商平台买一台pixel7及以上的手机作为备用机即可【买之前请三思，毕竟pixel系列的手机用起来还是差点意思的】。
+如果你还想继续用Google One VPN的话，建议直接去拼多多等电商平台买一台Pixel7及以上的手机作为备用机即可【买之前请三思，毕竟pixel系列的手机用起来还是差点意思的】。
 
 上午看到日本家宽供应商—sososo的合租房空位紧俏，冲了一台他家的9.9刀/月的机器。他家的机器是真家宽，而且如果你本地有ipv6地址的话，搭建的代理到中国大陆的延迟还是很漂亮的。目前这台机器用来分流解锁我的香港机器AI服务。他家的主页链接：[sososo日本家宽](https://sales.sososo.io/)
 
