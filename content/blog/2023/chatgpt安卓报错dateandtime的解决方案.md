@@ -14,6 +14,14 @@ showtoc: true
 
 ![hostloc老哥的解决date and time的思路](https://cdn.sa.net/2024/06/21/6u4ERqTBaFzcAGj.webp)
 
+一开始的报错页面如下。
+
+![一开始的报错页面](https://cdn.sa.net/2024/06/21/PFzqsRVS4eaHoJv.webp)
+
+清空缓存后，又可以正常使用GPT移动端。
+
+![清空缓存后，又可以正常使用GPT移动端](https://cdn.sa.net/2024/06/21/qTQgLWybjdKEhsr.webp)
+
 ## 更新（2024.1）
 
 前几天邻居大学放假来我家玩耍，他的小米手机12手机（原本使用华谷套件安装了谷歌三件套）也报了这个错误。
