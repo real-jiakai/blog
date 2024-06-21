@@ -7,6 +7,13 @@ summary: 分享chatgpt安卓报错date and time的解决方案。
 showtoc: true
 ---
 
+## 更新（2024.06.21）
+
+今天上午上课时在我的pixel7上打开chatgpt安卓客户端，又戳戳戳报错了date and time。按照以下思路排查后依旧报错。经过搜索后，发现了hostloc上老哥的这条建议。
+清空了相应的缓存后重新登陆，又可以正常使用了🤪。 [via](https://hostloc.com/thread-1268305-1-1.html)
+
+![hostloc老哥的解决date and time的思路](https://cdn.sa.net/2024/06/21/6u4ERqTBaFzcAGj.webp)
+
 ## 更新（2024.1）
 
 前几天邻居大学放假来我家玩耍，他的小米手机12手机（原本使用华谷套件安装了谷歌三件套）也报了这个错误。
