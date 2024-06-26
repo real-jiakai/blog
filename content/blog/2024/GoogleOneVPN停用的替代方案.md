@@ -7,6 +7,14 @@ summary: 介绍Google One VPN停用的替代方案。
 showtoc: true
 ---
 
+## 更新(2024.06.24)
+
+再见Google One VPN For Windows。
+
+![Google One VPN For Windows停用前的最后一连](https://cdn.sa.net/2024/06/24/l6E3zOchPSbaxrU.webp)
+
+![Google One VPN For Windows彻底停用](https://cdn.sa.net/2024/06/24/9wF361y7MVgvSlJ.webp)
+
 ## 更新(2024.06.17)
 
 今天趁下午有空，将本篇博文中提及的解决方案以及一些未提及补充的解决方案整理到了Google Sheet上。欢迎阅读本博文的同时，搭配该表格查看。[link](https://docs.google.com/spreadsheets/d/1G3zJ6BPfYlom30NFIH0wgnpj01JCl56SgAFW9zFdspU/edit?usp=sharing)
