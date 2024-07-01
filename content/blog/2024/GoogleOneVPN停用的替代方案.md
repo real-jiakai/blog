@@ -7,6 +7,17 @@ summary: 介绍Google One VPN停用的替代方案。
 showtoc: true
 ---
 
+## 更新(2024.07.01)
+
+近期更新了Pixel7手机后，vpn确实已经内置了，但是我发现使用前置代理竟然连不上。
+直到前天晚上看甬哥直播后，才知道root过的设备和bootloader解锁的设备可能无法使用Google VPN。详情见[Connect to VPN by Google on your Pixel device](https://support.google.com/pixelphone/answer/2819573)。
+
+![使用Google VPN的要求](https://cdn.sa.net/2024/07/01/8XicSpQrmu2yfaH.webp)
+
+设备但凡更新系统就会掉root，目前我的pixel7手机的bootloader处于解锁状态，原本还想relock一下，但是看了claude的解释后决定还是放弃了，毕竟这部手机里面有太多东西了，重头再来我是一点都不想再折腾了。
+
+![claude有关relock bootloader的解释](https://cdn.sa.net/2024/07/01/Maw3bWhjf4cI5Bp.webp)
+
 ## 更新(2024.06.24)
 
 再见Google One VPN For Windows。
@@ -55,23 +66,23 @@ Google One VPN停用后，Pixel7以上的手机依然可以继续享受Google On
 
 对于家宽感兴趣的朋友可以看看这个youtuber的介绍视频—[TikTok网络 的顶配选择，AaIT提供真正美国静态住宅IP，真实美国线下宽带，拥有一台美国远程电脑，Amazon、PayPal、ChatGPT网络都不再是问题，客户还可享0开卡费0手续费信用卡福利](https://www.youtube.com/watch?v=kls2v-oW2ac)。
 
-我目前面对Google One VPN即将于今年6月20号取消的可能应对措施：
+我目前面对Google One VPN即将于今年6月20号取消的应对措施【已经实施】 ：
 
-- Azure学生包里面开美国地区的机器，Azure的动态ip，ipinfo.io均显示Bussiness类型的ip
+- ~~Azure学生包里面开美国地区的机器，Azure的动态ip，ipinfo.io均显示Bussiness类型的ip~~
 
 - lisa host的双isp机器
 
 - 艾云的双isp机器
 
-- ipraft的弗吉尼亚州的单ISP ATT机器【如果是双ISP，ATT那就完美了】
+- ipraft的弗吉尼亚州的单ISP ATT机器【isp+business】
 
-- viie的绝版美国家宽机器【稳定性不ok】
+- ~~viie的绝版美国家宽机器【稳定性不ok】~~
 
-- zgovps的国际线路机器
+- ~~zgovps的国际线路机器~~
 
-- littlecreekhosting的伪isp
+- ~~littlecreekhosting的伪isp~~
 
-- crunchbits的伪isp
+- ~~crunchbits的伪isp~~
 
 以上机器会作为我的xray balance配置的AI服务分流出口。当然有些时候也会怀疑自己是否真的需要这么多的解锁出口？答案肯定是否定的。一个人用的话，一台解锁机足矣。或者你的信条是套了warp就解锁万事大吉的话，也是没问题的，目前ai的风控我见网上说就claude比较严重，其他的基本上都已经放开了。我这边分享出我的解决方案仅仅是提供一个思路，不必效仿我。
 
