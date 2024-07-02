@@ -54,6 +54,7 @@ date: '2022-12-26'
 
 - Moments: 详情见til链接中的社交部分
 - X: [real_jiakai](https://x.com/real_jiakai)
+- 小红书: [小红薯](https://www.xiaohongshu.com/user/profile/6667ca54000000000b03090c)
 
 ## 其他评论方式
 
