@@ -7,6 +7,42 @@ summary: 介绍Google One VPN停用的替代方案。
 showtoc: true
 ---
 
+## 更新(2024.07.22)
+
+今天折腾检查了vps的分流以及分流出口机器的ip质量检测。又有想买家宽的冲动，但是到最后想了想还是算了，我不愿意用warp ip，用双isp的机器也够用啦。
+
+有些时候也会思考自己分享这些渠道到底合适否？毕竟人一多，真家宽也会变脏，更别说是双isp了。
+
+目前我的分流机器有三台。
+
+一台是lisa的美西双isp，ip质量检测结果如下：
+
+![lisa host的ip质量检测结果](https://cdn.sa.net/2024/07/22/RjkSqrAMX79K35c.webp)
+
+流媒体解锁情况如下：
+
+![lisa host的流媒体解锁情况](https://cdn.sa.net/2024/07/22/AvBXRnLOoQ5JMcC.webp)
+
+一台是艾云的美西双isp，ip质量检测结果如下：
+
+![艾云的ip质量检测结果](https://cdn.sa.net/2024/07/22/19PsB4TWZ8ElRaA.webp)
+
+流媒体解锁情况如下：
+
+![艾云的流媒体解锁情况](https://cdn.sa.net/2024/07/22/Hf5UW8eDYy7EcGP.webp)
+
+还有一台是ipraft的单att的美东机器，ip质量检测结果如下：
+
+![ipraft的ip质量检测结果](https://cdn.sa.net/2024/07/22/zqJgnyA3l5PDB1I.webp)
+
+流媒体解锁情况如下：
+
+![ipraft的流媒体解锁情况](https://cdn.sa.net/2024/07/22/GE8qlQDM7Kvabrf.webp)
+
+如果仅仅是AI服务分流，双isp，真的绰绰有余，虽然都是伪家宽。其他的比如Instagram的版权音频解锁，一般我也很少用，reddit论坛我也一直处于登陆状态，基本上不需要reddit解锁【解锁的话，不登账号就能查看内容】。
+
+还是把钱用在刀刃上较好。5、6、7月份，GPT和Claude我都是双持的【每个月40刀】，其实GPT我已经有想取消订阅的冲动了，Claude目前才是我的刚需，暂时还是继续双持下去吧，用AI辅助学习可比去培训机构便宜多了。
+
 ## 更新(2024.07.01)
 
 近期更新了Pixel7手机后，vpn确实已经内置了，但是我发现使用前置代理竟然连不上。
