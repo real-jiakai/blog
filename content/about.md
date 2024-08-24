@@ -31,7 +31,7 @@ date: '2022-12-26'
 
 ## 近期状况（月更）
 
-暑假有幸逃回老家【实验室的其他小伙伴都在给实验室打工】，目前备战9月份的高中信息技术教资中。双非读研，研究不出啥，多考一些证来减少自己的迷茫。
+准备返校，复习教资中。
 
 ## 我的idol
 
@@ -47,13 +47,9 @@ date: '2022-12-26'
 - 网站右下角VoiceChat私聊
 - Email: [jiakai@duck.com](mailto:jiakai@duck.com)
 - TG DM Bot: [Jiakai's DM Bot](https://t.me/real_jk_bot)
+- LinkStack: [Jiakai's LinkStack](https://gujiakai.me)
 
 如果你想给我发送加密信息，欢迎使用我的 [PGP公钥(Key ID: B6D9A72FB24C26D6)](/jiakai_0x824C26D6_public.asc) 对信息进行加密，然后通过电子邮件发送给我。
-
-## 动态
-
-- Mastodon: [jiakai](https://19130104.xyz/@jiakai)
-- X: [real_jiakai](https://x.com/real_jiakai)
 
 ## 其他评论方式
 
