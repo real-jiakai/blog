@@ -15,7 +15,7 @@ showtoc: true
 
 ![bytevirt公告](https://cdn.sa.net/2024/08/27/RGbFEp2a5hcU7wz.webp)
 
-想用朝鲜、南极洲ip开启全局代理，去国内网站装x的朋友，可以优先考虑之前我推荐的一家机场—[FacMaTa](https://board.fmta.boo/#/register?code=PYcvODEE)
+想用朝鲜、南极洲ip开启全局代理，去国内网站装x的朋友，可以优先考虑之前我推荐的一家机场—[FacMaTa](https://neo.fmta.boo/#/register?code=PYcvODEE)
 
 ![FacMata机场公告](https://cdn.sa.net/2024/08/27/ScoO6ZpT1gUtsD8.webp)
 
@@ -75,7 +75,7 @@ wap.ac在2024年2月21日上线了warp vps进行销售，可选择南极洲、�
 
 TAG机场的tg频道的公告显示该家机场存在朝鲜和南极洲的节点。
 
-- [FacMata机场](https://board.fmta.boo/#/register?code=PYcvODEE)
+- [FacMata机场](https://neo.fmta.boo/#/register?code=PYcvODEE)
 
 相较于TAG，这家机场价格更便宜。
 
