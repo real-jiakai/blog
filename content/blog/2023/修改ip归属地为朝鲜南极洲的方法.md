@@ -7,6 +7,20 @@ summary: 分享修改ip归属地为朝鲜、南极洲的方法。
 showtoc: true
 ---
 
+## 更新（2024.8.27）
+
+不建议自建，自建的话不要再购买wap.ac和bytevirt的warp产品了【两家的warp系列产品都下架了，也无法再购买了】。官方的最新公告显示warp定位问题无法解决。
+
+![wap.ac公告](https://cdn.sa.net/2024/08/27/e9luV5h1KPnLivE.webp)
+
+![bytevirt公告](https://cdn.sa.net/2024/08/27/RGbFEp2a5hcU7wz.webp)
+
+想用朝鲜、南极洲ip开启全局代理，去国内网站装x的朋友，可以优先考虑之前我推荐的一家机场—[FacMaTa](https://board.fmta.boo/#/register?code=PYcvODEE)
+
+![FacMata机场公告](https://cdn.sa.net/2024/08/27/ScoO6ZpT1gUtsD8.webp)
+
+去年我买了他家的一个套餐，今天测试了一下，订阅链接里面有美国家宽，也有朝鲜、南极洲节点，性价比还是ok的。
+
 ## 更新（2024.2.14）
 
 商家Bytevirt在其一周年（2024年情人节）这天推出了朝鲜和南极洲冷门地区的Nat Warp小鸡，年付2.14刀。可能后续会补货吧。自建的玩家可以关注一下这家商家。
@@ -61,7 +75,7 @@ wap.ac在2024年2月21日上线了warp vps进行销售，可选择南极洲、�
 
 TAG机场的tg频道的公告显示该家机场存在朝鲜和南极洲的节点。
 
-- [FacMata机场](https://neo.fmta.boo/#/register?code=PYcvODEE)
+- [FacMata机场](https://board.fmta.boo/#/register?code=PYcvODEE)
 
 相较于TAG，这家机场价格更便宜。
 
