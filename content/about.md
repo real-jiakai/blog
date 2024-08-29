@@ -40,11 +40,11 @@ date: '2022-12-26'
 - Stephen Curry
 - Sam Altman
 - Aaron Swartz
-- Pavel Durov
+- Pavel Durov【France sucks. #FREEDUROV】
 
 ## 联系方式
 
-- 网站右下角VoiceChat私聊
+- Matrix: @jiakai:conduit.gujiakai.top
 - Email: [jiakai@duck.com](mailto:jiakai@duck.com)
 - TG DM Bot: [Jiakai's DM Bot](https://t.me/real_jk_bot)
 - LinkStack: [Jiakai's LinkStack](https://gujiakai.me)
