@@ -50,7 +50,7 @@ WIP：
 
 ## 联系方式
 
-- Matrix: @jiakai:conduit.gujiakai.top
+- Matrix: [@jiakai:conduit.gujiakai.top](https://matrix.to/#/@jiakai:conduit.gujiakai.top)
 - Email: [jiakai@duck.com](mailto:jiakai@duck.com)
 - TG DM Bot: [Jiakai's DM Bot](https://t.me/real_jk_bot)
 - LinkStack: [Jiakai's LinkStack](https://gujiakai.me)
