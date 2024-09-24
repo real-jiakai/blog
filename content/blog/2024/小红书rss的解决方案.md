@@ -7,6 +7,10 @@ summary: 介绍小红书rss的解决方案。
 showtoc: true
 ---
 
+## 更新（2024.09.24）
+
+如果发现Distill Web Monitor打开的小红书博主主页一直未关闭，肯定是出现了验证码选项，自己手动旋转解决即可。
+
 ## 背景介绍
 
 上半年部署了[RSSWorker](https://github.com/yllhwa/RSSWorker)，看中了其README中介绍支持小红书。这正好填补了RSSHub对于小红书支持的空缺。

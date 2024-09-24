@@ -224,7 +224,7 @@ Google One VPN年中就下线了【ps：下线时间说改就改，原本是6月
 
 2、IP类型为hosting，但解锁优秀的VPS
 
-- [zgovps]( https://clients.zgovps.com/?cmd=cart&action=add&affid=354&id=100)
+- [zgovps]( https://clients.zgovps.com)
 
 其实以上罗列的ipinfo.io站点识别的ip类型为isp，都是伪家宽。真正的家宽，一个月的费用不是普通用户所能承受的。
 
