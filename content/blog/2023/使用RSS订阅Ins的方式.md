@@ -7,6 +7,12 @@ summary: 介绍使用RSS订阅Ins的方式。
 showtoc: true
 ---
 
+## 更新(2024.10)
+
+晚上刷到reddit rss subreddit的这条帖子，感觉评论区的海外老哥讲的很有道理。尝试通过RSS关注Instagram是一场你会输的游戏。目前我基本上已经不再用RSS关注Ins了，而且Ins的有些帖子的背景音乐需要家宽才能解锁。
+
+![reddit rss subreddit帖子评论区金句](https://cdn.sa.net/2024/10/18/cXogxObTwzZQFjG.webp)
+
 ## 更新(2024.02)
 
 RSSHub中提供的Picnob路由也提供对于instagram的支持。[via](https://docs.rsshub.app/routes/social-media#instagram-user-profile-picnob)

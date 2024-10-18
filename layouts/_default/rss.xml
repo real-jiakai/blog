@@ -26,10 +26,6 @@
     {{- with .OutputFormats.Get "RSS" -}}
     {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
     {{- end -}}
-     <follow_challenge>
-        <feedId>56272304866284544</feedId>
-        <userId>41425469964375040</userId>
-    </follow_challenge>
     {{ range $pages }}
     <item>
       <title>{{ .Title }}</title>
