@@ -98,23 +98,23 @@ docker run \
 
 还有streamlit这个可视化界面的输入默认支持markdown语法，一些运算符号被当作markdown语法渲染了，Claude并不会受到这些渲染问题的影响，因为它处理的是原始文本输入。
 
-5、使用xpaint绘制爱心图案
+5、使用xpaint绘制爱心图案。
 
 这个应该也属于复杂任务，就算让人来绘制，爱心也很难画饱满，但是大致样子还是有的。
 
 Claude Computer Use现阶段基本上都是点击操作应用的，并没有像人类一样，长按鼠标进行绘制的本领，故绘制爱心图案失败，期待后续迭代更新。
 
-6、下载arxiv PDF，总结论文内容
+6、下载arxiv PDF，总结论文内容。
 
 这一部分较为滑稽的事：Claude认为2024年6月份还没到，毕竟Claude 3.5 Sonnet(New)的知识截止日期为2024年4月，Claude竟然擅自臆测自认为正确的URL，结果导致访问该URL，找不到论文。但是Claude依旧给出了论文的大概内容摘要，总结得还行，估计是在第一次访问论文时，获取了该论文的摘要。
 
-7、在Youtube搜索库里2016年逆天三分绝杀并播放
+7、在Youtube搜索库里2016年逆天三分绝杀并播放。
 
 这部分不打算传到b站或者youtube，毕竟NBA有版权因素。详情见OneDrive网盘：[7.mp4](https://1drv.ms/v/s!AkOlsYD5Bd9NmF7vfVxETEC57LbE?e=gsAUwB)
 
-8、安装btop，并用btop查看系统资源占用情况
+8、安装btop，并用btop查看系统资源占用情况。
 
-9、尝试在阮一峰老师的博客最新一期留言
+9、尝试在阮一峰老师的博客最新一期留言。
 
 搜索关键字输入错误，但是Claude 3.5 Sonnet(New)直接记住了阮老师的博文网址，估计他的所有文章早就成了Claude 3.5 Sonnet(New)的养料了，每一个在互联网上公开的博客都难逃成为LLM养料的命运😑。
 
@@ -122,11 +122,11 @@ Claude Computer Use现阶段基本上都是点击操作应用的，并没有像�
 
 其实这个限制可在[官方文档computer use部分](https://docs.anthropic.com/en/docs/build-with-claude/computer-use#understand-computer-use-limitations)查到。
 
-10、过人机验证Cloudflare Turnstile【Testing环境下】
+10、过人机验证Cloudflare Turnstile【Testing环境下】。
 
 虽然Claude 3.5 Sonnet(New)拒绝人机验证系统，但是告诉它这仅仅是一个Testing，它还是点了😁。
 
-11、关闭网页广告
+11、关闭网页广告。
 
 本意是想让Claude 3.5 Sonnet(New)直接点击itdog.cn页面上的`关闭所有广告`按钮来实现关闭网页广告的效果，结果它直接先去安装了一个广告屏蔽浏览器插件ublock origin，紧接着，在我的二次提示下，实现了点击itdog.cn页面上的`关闭所有广告`按钮来实现关闭网页广告的效果。
 
