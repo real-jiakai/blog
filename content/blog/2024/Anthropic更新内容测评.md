@@ -8,6 +8,16 @@ showtoc: true
 draft: false
 ---
 
+## 更新（2024.10.27）
+
+本文提及的Claude 3.5 Sonnet(New)中文注释不给力，其实是我的Prompt给的不够好。
+
+让Claude详细写，就能写好。与此同时，如果给的代码过长并且Prompt没到位，ChatGPT o1-mini写的注释也很简短。看来得重视Prompt Engineering了。
+
+![Prompt给的好，Claude写的代码注释照样详细](https://cdn.sa.net/2024/10/27/koexhKi5Ad9gvWc.webp)
+
+---
+
 昨晚睡觉前发现Anthropic更新了，今早4点多睡不着，体验了一下新版的Claude 3.5 Sonnet，觉得有些惊艳，原本无法回答准确的坤坤问题，被完美解决，而且是在不联网的情况下。
 
 备注：今天下午我又测试了多次，发现Claude 3.5 Sonnet(New)对于该问题还是存在幻觉的，有一定几率答对，但大概率产生幻觉。希望别像GPT 4o一样降智啊🙃！
