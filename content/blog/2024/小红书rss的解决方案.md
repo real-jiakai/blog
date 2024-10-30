@@ -7,6 +7,16 @@ summary: 介绍小红书rss的解决方案。
 showtoc: true
 ---
 
+## 更新（2024.10.30）
+
+原来RSSHub支持小红书笔记啊。早上看到有人分享RSSHub作者Diygod的新作品—Follow小红书美女列表，我直接懵了，在我印象里，应该是不支持的啊。
+
+![RSSHub支持小红书](https://cdn.sa.net/2024/10/30/sB4iy3JxIdTZeUc.webp)
+
+看了文档一试，还真可以，自部署的RssHub实例也行，我宣布Distill Web Monitor当场退役。下文作废，除非哪天RSSHub小红书报错了，才考虑下文方法。
+
+![RSSHub文档对于小红书笔记的介绍](https://cdn.sa.net/2024/10/30/vohYKcwItP4pBal.webp)
+
 ## 更新（2024.09.24）
 
 如果发现Distill Web Monitor打开的小红书博主主页一直未关闭，肯定是出现了验证码选项，自己手动旋转解决即可。
