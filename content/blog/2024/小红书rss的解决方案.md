@@ -13,9 +13,17 @@ showtoc: true
 
 ![RSSHub支持小红书](https://cdn.sa.net/2024/10/30/sB4iy3JxIdTZeUc.webp)
 
-看了文档一试，还真可以，自部署的RssHub实例也行，我宣布Distill Web Monitor当场退役。下文作废，除非哪天RSSHub小红书报错了，才考虑下文方法。
+看了文档一试，还真可以，自部署的RSSHub实例也行，我宣布Distill Web Monitor当场退役。下文作废，除非哪天RSSHub小红书报错了，才考虑下文方法。
 
 ![RSSHub文档对于小红书笔记的介绍](https://cdn.sa.net/2024/10/30/vohYKcwItP4pBal.webp)
+
+感谢开发者们的pull request，估计RSSHub的小红书也是近期才复活的。
+
+![感谢开发者们的pull request](https://cdn.sa.net/2024/10/30/WHcSJqawsN7oK5P.webp)
+
+看到一个open的pull request，给小红书添加cookie支持。其实小红书有反爬机制的，爬取频繁了，会跳人机验证。
+
+![有开发者尝试给RSSHub小红书添加cookie支持](https://cdn.sa.net/2024/10/30/vZuzYplSCbWLi28.webp)
 
 ## 更新（2024.09.24）
 
