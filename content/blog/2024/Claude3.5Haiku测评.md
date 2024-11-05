@@ -74,7 +74,7 @@ what happened? 感觉claude 3.5 sonnet haiku确确实实是claude 3.5 sonnet(new
 
 ![推理能力测评图1](https://cdn.sa.net/2024/11/05/KCNbL9l7Dx38apM.webp)
 
-claude 3.5 sonnet(new)的对于推理的幻觉也是存在的。
+claude 3.5 sonnet(new)推理方面的幻觉也是存在的。
 
 ![推理能力测评图2](https://cdn.sa.net/2024/11/05/uPRL6DGyCZ5rmeq.webp)
 
