@@ -80,7 +80,7 @@ claude 3.5 sonnet(new)的对于推理的幻觉也是存在的。
 
 ![推理能力测评图3](https://cdn.sa.net/2024/11/05/v1Q7MJU23SILjlx.webp)
 
-7、再来简单地看看马斯克的xai呢【年底前，每个月25刀的免费额度】？librechat这个开源项目适配xai。
+7、再来简单地看看马斯克的xai呢【年底前，每个月25刀的免费额度】。librechat这个开源项目适配xai。
 
 ![xai测评图1](https://cdn.sa.net/2024/11/05/Ef1vAVkJMsn3Kgt.webp)
 
@@ -104,7 +104,7 @@ LLM这个领域注定是赢家通吃的局面，除了一些为了成本考量�
 
 ![gpt 4o-mini定价](https://cdn.sa.net/2024/11/05/2ioxFyED3LW8kaP.webp)
 
-还是那句话，也有可能是我目前并没有任何使用claude 3.5 haiku的应用场景，如果你有类似场景，可以结合prompt caching来使用使用。
+还是那句话，也有可能是我目前并没有任何使用claude 3.5 haiku的应用场景，如果你有下图描述的类似场景，可以结合prompt caching来使用使用。
 
 ![Alex Albert对于claude 3.5 haiku的推广](https://cdn.sa.net/2024/11/05/6zVnqiG4SNWKp2a.webp)
 
