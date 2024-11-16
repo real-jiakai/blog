@@ -7,6 +7,16 @@ summary: 记录自己使用Gemini Advanced的体验感受。
 showtoc: true
 ---
 
+## 更新【2024/11/16】
+
+已经续费了，因为近期合租的土区Google One+Youtube Premium翻车了【Google打击跨区的铁拳终究还是砸到了我的身上】。我觉得这20刀主要用于付费Google One福利，Gemini App顺带用一用。
+
+![续费Google One AI Premium套餐](https://cdn.sa.net/2024/11/16/Y964c82gdwXeU5L.webp)
+
+虽然Gemini注定在编程方面无法给我带来类似Claude的体验。
+
+--- 
+
 注：本文章发布于2024年11月2日，痛定思痛后决定不能再拖了，不然等到下个月Gemini再来一个大升级，这篇文章就啥也不是了。
 
 ## 更新【2024/11/1、2024/11/2】
