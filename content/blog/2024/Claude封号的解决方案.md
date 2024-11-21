@@ -85,7 +85,7 @@ showtoc: true
 
 ![claude在代码方面遥遥领先，图片出自livebench.ai](https://cdn.sa.net/2024/11/21/rOaHpGB2S49AvEV.webp)
 
-L站的秦始皇(zhile站长)在一周前也转claude会员了。以下是我的评论。
+L站的秦始皇(zhile站长)在一周前也转claude会员了。以下是我的评论【其实我的openai会员并没有断，毕竟快两周年了，而且今天也出了gpt-4o-2024-11-20最新模型，据说提升了写作能力，期待月底的o1-full】。
 
 ![我对于秦始皇分享转claude经历的评论](https://cdn.sa.net/2024/11/21/9bCJ3wy8Vd5kPWt.webp)
 
