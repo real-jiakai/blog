@@ -9,7 +9,7 @@ showtoc: false
 
 今年9月底搬瓦工家的The Plan v2快到期了，我也不准备续费。所以我一直在探索一台高配鸡来全面接管我的一些自建服务，以优化我的vps方案。
 
-我看中了Bero Host家2023年年底的圣诞大鸡。
+我看中了[Bero Host](https://bero-host.de/affiliate/4HwDqKdPz8)家2023年年底的圣诞大鸡。
 
 ![Bero Host的圣诞大鸡套餐](https://cdn.sa.net/2024/08/30/oCUz9fuNDBqQMOR.webp)
 

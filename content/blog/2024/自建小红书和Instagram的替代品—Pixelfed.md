@@ -61,7 +61,7 @@ cloudron面板的自建过程很简单，安装官网的一键安装脚本执行
 
 如果你厌烦了docker部署需修改yaml文件，自己想尝试一下这些去中心化的社交应用，并且手头有一台内存4GB左右的vps，可以试着玩玩。
 
-搭建这两个应用的vps来自德国商家[bero-host](https://bero-host.de/)，使用体验很棒，在线率很高，推荐建站的小伙伴蹲一手他家的活动，到时候买一台用来建站。
+搭建这两个应用的vps来自德国商家[bero-host](https://bero-host.de/affiliate/4z2tbVrYEw)，使用体验很棒，在线率很高，推荐建站的小伙伴蹲一手他家的活动，到时候买一台用来建站。
 
 cloudron面板迁移贼方便，7月初从同学赠予我的digital ocean免费机上迁移到我的德国大鸡上【4核，8GB内存，100GB硬盘】，我在cloudron上设置了远程自建的minio存储桶来备份，在新机器上直接上传了cloudron的配置文件后，其自动从远程的minio存储桶下载相应应用备份并进行恢复，由于原本的配置文件里面包含了cloudflare的token，DNS记录啥的也顺带更新完了。主打一个丝滑。
 
