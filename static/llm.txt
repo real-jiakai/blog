@@ -1,0 +1,103 @@
+# blog.gujiakai.top llms.txt
+
+> The site shares personal experiences and evaluations regarding various AI tools and services, including resolutions for account issues and detailed performance assessments.
+
+- [Tech Experience Blog](https://blog.gujiakai.top/page/2): Sharing personal experiences with various tech projects and applications.
+- [Gemini App Compatibility Tips](https://blog.gujiakai.top/2024/02/solving-gemini-device-compatibility-issues): Guidance on resolving compatibility issues with the Gemini Android app on various devices.
+- [Conda Usage Tips](https://blog.gujiakai.top/tags/conda): Offering solutions and tips for using Conda on Windows.
+- [Apple Topics Blog](https://blog.gujiakai.top/tags/apple): Discusses topics related to Apple products and services.
+- [Caddy Startup Fix](https://blog.gujiakai.top/2023/06/solving-caddy-failure-on-bandwagonhost-theplanv2): Guide to fixing Caddy startup issue on BandwagonHost's theplanv2.
+- [Tag Directory](https://blog.gujiakai.top/tags/): This webpage serves as a tag directory for various topics related to technology and software.
+- [Technical Solutions Blog](https://blog.gujiakai.top/page/8): Sharing solutions and tips for various technical issues and modifications.
+- [ChatGPT Plugins List](https://blog.gujiakai.top/2023/06/chatgpt-plugins-list): This page lists and updates a collection of ChatGPT plugins to enhance user experience and efficiency.
+- [Creating RSS Feeds](https://blog.gujiakai.top/2023/03/create-rss-feed-with-rsseverything-tutorial): This guide explains how to create RSS feeds using the RssEverything service as an alternative to Feed43.
+- [Self-Hosted Social Media Guide](https://blog.gujiakai.top/2024/07/build-your-own-xiaohongshu-instagram-alternative-pixelfed): Guide for building a self-hosted alternative to social media platforms like Xiaohongshu and Instagram using Pixelfed.
+- [Gemini Blog Posts](https://blog.gujiakai.top/tags/gemini): Showcases blog posts related to Gemini topics and solutions.
+- [Claude Account Suspension Solutions](https://blog.gujiakai.top/2024/11/claude-account-suspension-resolution): To share solutions for resolving Claude account suspension issues.
+- [Tech Experiences and Reviews](https://blog.gujiakai.top): Sharing personal experiences and evaluations related to Claude and Gemini technologies.
+- [AI Discussions](https://blog.gujiakai.top/tags/ai): Discussion and exploration of AI topics.
+- [Claude Insights and Updates](https://blog.gujiakai.top/tags/claude): Discusses various aspects and evaluations related to Claude and updates from Anthropic.
+- [ChatGPT 4o Review](https://blog.gujiakai.top/2024/10/chatgpt-4o-canvas-review): Review and discuss the features of ChatGPT 4o with canvas for writing and coding tasks.
+- [PGP Public Key](https://blog.gujiakai.top/my_public_key.asc): Sharing a PGP public key for secure communication.
+- [Tech Experiences Blog](https://blog.gujiakai.top/page/3): Sharing personal experiences and solutions related to VPS, internet services, and alternative platforms.
+- [Technical Solutions Blog](https://blog.gujiakai.top/page/6): Offers solutions and guides for various technical issues related to Linux and other technologies.
+- [ASN Articles](https://blog.gujiakai.top/tags/asn): Sharing articles related to ASN topics.
+- [Git Solutions Blog](https://blog.gujiakai.top/tags/git): Sharing solutions and insights related to Git issues.
+- [iCloud+ Private Relay Experience](https://blog.gujiakai.top/2023/10/experience-icloud-plus-private-relay): Exploring and sharing the experience of using iCloud+ Private Relay functionality for privacy online.
+- [RSS Bridge Setup Guide](https://blog.gujiakai.top/2023/02/use-docker-compose-to-build-rssbridge): Guide for setting up RSS Bridge using Docker on a VPS.
+- [Code Server Installation Guide](https://blog.gujiakai.top/2022/08/use-script-to-install-code-server): Instructions for installing code-server using a one-click script on Linux.
+- [Bookmark Application Guide](https://blog.gujiakai.top/tags/bookmark): This page showcases a bookmark application and its features.
+- [ChatGPT Team Experience](https://blog.gujiakai.top/2024/01/chatgpt-team-experience): Sharing experiences and insights on upgrading to ChatGPT Team accounts and related service features.
+- [Favorite Apps 2023](https://blog.gujiakai.top/2023/11/my-app-defaults-2023): Lists and discusses favorite digital tools and applications for productivity and efficiency in 2023.
+- [Proton Family Plan Review](https://blog.gujiakai.top/2024/08/proton-family-plan-first-taste): Review and share experiences with Proton Family Plan features and services.
+- [Meta.AI IP Access Solutions](https://blog.gujiakai.top/2024/08/meta-ai-us-ip-restriction-solutions): Offers solutions for accessing Meta.AI from unsupported US IP addresses.
+- [APT Installation Error Fix](https://blog.gujiakai.top/2024/01/fix-apt-install-operation-not-permitted-error): Offering solutions to resolve the 'Operation not permitted' error during apt installations on VPS.
+- [Accessing ChatGPT Solutions](https://blog.gujiakai.top/page/9): Sharing methods and solutions related to accessing ChatGPT and network issues.
+- [Remove Trailing Slashes](https://blog.gujiakai.top/2022/11/hugo-remove-trailing-slash): Instructions for removing trailing slashes from Hugo blog URLs.
+- [Technical Solutions and Guides](https://blog.gujiakai.top/page/10): To share solutions and guides for various technical issues and software setups.
+- [OpenAI Plus User Ban Analysis](https://blog.gujiakai.top/2023/05/thinking-of-openai-ban-plus-customers-in-527): Analyzes the implications of OpenAI banning Plus users in the context of using virtual payment cards.
+- [Rethinking Read Later](https://blog.gujiakai.top/2023/01/read-later-equals-to-not-read): Encouraging efficient information management and discouraging excessive content collection from the internet.
+- [SSH Proxy Connection Solutions](https://blog.gujiakai.top/2022/10/ssh-connect-by-proxy-error-connection-closed-by-foreign-host-solution): Instructions for resolving SSH connection issues using a proxy to access overseas VPS.
+- [Docker and Firewall Access](https://blog.gujiakai.top/2023/03/will-docker-container-be-limited-by-firewall): Discusses Docker container access through firewall settings and offers solutions for secure port mapping.
+- [Personal Blog Overview](https://blog.gujiakai.top/about/): Share personal experiences and insights on learning, programming, and self-management.
+- [年轻人ASN申请经验](https://blog.gujiakai.top/2024/06/the-first-asn-of-young-people): 分享年轻人申请ASN的体验和配置步骤。
+- [Chika Launcher Fix](https://blog.gujiakai.top/2023/06/fix-chika-crash-on-windows-server): Offers a solution for running Chika Launcher on Windows Server, addressing compatibility issues.
+- [JavaScript Articles](https://blog.gujiakai.top/tags/js): Offers JS-related articles and resources.
+- [Understanding 'ls > list' Command](https://blog.gujiakai.top/2023/01/the-execution-process-ls--list): Explaining the execution process of the 'ls > list' command in Linux.
+- [App Blog Posts](https://blog.gujiakai.top/tags/app): Showcases tagged blog posts about apps.
+- [VPN Alternatives After Shutdown](https://blog.gujiakai.top/2024/04/alternatives-to-google-one-vpn-shutdown): Provides alternatives to Google One VPN after its shutdown.
+- [Hugo Theme Development](https://blog.gujiakai.top/2023/03/hugo-theme-development-diary): Documenting the development process of a custom Hugo theme for blogging.
+- [Today I Learned](https://blog.gujiakai.top/til/): Sharing personal knowledge gained each day to inspire learning in public.
+- [Blog Archive Overview](https://blog.gujiakai.top/archive/): Showcase a collection of blog posts and articles on various topics.
+- [IP Location Changing Methods](https://blog.gujiakai.top/2023/08/methods-for-setting-ip-to-north-korea-and-antarctica): Guidance on methods to change IP locations to North Korea and Antarctica.
+- [小红书RSS解决方案](https://blog.gujiakai.top/2024/09/xiaohongshu-rss-tips): Discussing methods to monitor and retrieve updates from 小红书 using RSS feeds and browser extensions.
+- [IP Location Methods](https://blog.gujiakai.top/tags/ip): Discussing methods to change IP locations.
+- [GitHub Student Pack Journey](https://blog.gujiakai.top/2022/06/github-education-developer-kit-application-journey): Sharing experiences and tips for applying for the GitHub Student Developer Pack.
+- [Criticism of CSDN](https://blog.gujiakai.top/2024/09/why-is-csdn-a-pile-of-shit): Critique and personal experience related to CSDN's content policies and monetization practices.
+- [Kindle Internet Access Guide](https://blog.gujiakai.top/2023/09/using-windows-hotspot-and-clash-tun-for-kindle-internet-access): Guide for enabling internet access on Kindle through Windows hotspot and Clash TUN mode.
+- [2023 Server Shopping Summary](https://blog.gujiakai.top/2023/11/summary-of-server-shop-of-2023-bf): Overview of 2023 Black Friday server purchases and experiences.
+- [Instagram RSS Subscription Methods](https://blog.gujiakai.top/2023/01/use-rss-to-subscribe-instagram): Explains methods to use RSS for subscribing to Instagram updates effectively.
+- [JavaScript Semicolon Importance](https://blog.gujiakai.top/2022/09/you-should-add-a-semicolon-when-a-statement-end-in-js): Explaining the importance of using semicolons at the end of JavaScript statements.
+- [Claude 3.5 Haiku Review](https://blog.gujiakai.top/2024/11/claude-3-5-haiku-review): Reviews and analyzes the capabilities of Claude 3.5 Haiku compared to its predecessor models.
+- [ChatGPT Android Error Fix](https://blog.gujiakai.top/2023/08/solving-date-and-time-error-in-chatgpt-android-app): Guidance on resolving date and time errors in the ChatGPT Android app.
+- [Unlock ChatGPT on VPS](https://blog.gujiakai.top/2023/06/unlock-chatgpt-when-vps-been-judged-cn-by-cloudflare): Explaining methods to unlock ChatGPT on VPS outside OpenAI service regions.
+- [GitHub Blog Posts](https://blog.gujiakai.top/tags/github): Collects blog posts related to GitHub topics and tutorials.
+- [Conda Activation Error Fix](https://blog.gujiakai.top/2023/09/conda-activation-error-unicode-decode-gbk): Solving conda activation errors related to Unicode decoding on Windows systems.
+- [Google Articles](https://blog.gujiakai.top/tags/google): Share articles related to Google topics.
+- [NGINX PID Error Fix](https://blog.gujiakai.top/2023/01/a-solution-about-nginx-problem): Provides a solution for resolving NGINX service PID parsing errors.
+- [Proxigram Setup Guide](https://blog.gujiakai.top/2023/10/use-docker-compose-to-build-proxigram): Guide to building and deploying Proxigram for converting Instagram feeds to RSS.
+- [Email Protection Info](https://blog.gujiakai.top/cdn-cgi/l/email-protection): Inform users about email protection and Cloudflare's obfuscation services.
+- [Bolt.new Usage Insights](https://blog.gujiakai.top/2024/10/bolt-new-first-experience): Exploring the features and experiences with the bolt.new platform for project deployment and AI integration.
+- [hxservers Network Solutions](https://blog.gujiakai.top/2023/10/solving-hxservers-network-issues): Guide for resolving hxservers network issues and configuring Windows on VPS.
+- [Self-Hosting Hoarder Guide](https://blog.gujiakai.top/2024/10/self-hosted-bookmark-app-hoarder): Guide to self-hosting the Hoarder bookmark application as an alternative to Raindrop.
+- [Tech Guides and Solutions](https://blog.gujiakai.top/page/7): Provides guides and solutions for tech-related challenges and configurations.
+- [Google One VPN Setup Guide](https://blog.gujiakai.top/2023/10/hxservers-google-one-node-setup-guide): Guide to setting up a Google One VPN node on a VPS.
+- [Git Push Error Fix](https://blog.gujiakai.top/2023/09/fix-git-push-fatal-error-did-not-receive-expected-object): Offering solutions for fixing the 'fatal: did not receive expected object' error in git push operations.
+- [Self-Hosting Enthusiast Insights](https://blog.gujiakai.top/2024/04/fake-selfhost-lover): Explores the reality of being a self-hosting enthusiast and the reasons for underutilization of self-hosted projects.
+- [Avoid GreenCloud VPS](https://blog.gujiakai.top/2024/10/stay-away-from-greencloud): Warn against using GreenCloud for VPS due to data loss issues.
+- [Technical Blogging Insights](https://blog.gujiakai.top/page/11): Share technical guides and insights on Linux, Hugo, and JavaScript programming.
+- [Ikihost IP Change Experience](https://blog.gujiakai.top/2024/03/experience-sharing-on-ikihost-ip-change-ordeal): Sharing personal experiences and challenges faced during an IP change with Ikihost VPS provider.
+- [Anthropic Articles](https://blog.gujiakai.top/tags/anthropic): Showcases articles related to Anthropic updates and reviews.
+- [Google One VPN Alternatives](https://blog.gujiakai.top/tags/googleonevpn): Discusses alternatives to Google One VPN following its shutdown.
+- [ChatGPT Android Error Solutions](https://blog.gujiakai.top/2023/10/chatgpt-android-error-disallowed-isp-solution): This webpage offers solutions for resolving ChatGPT Android errors related to disallowed ISPs.
+- [Dynamic SVG Effects](https://blog.gujiakai.top/2022/03/github-svg): Explains how to create dynamic SVG effects for GitHub profiles.
+- [Gemini Advanced Review](https://blog.gujiakai.top/2024/11/gemini-advanced-2024-october-review): Reviewing and discussing the features and experiences of Gemini Advanced in October 2024.
+- [VPS Migration Guide](https://blog.gujiakai.top/2023/09/notes-about-migrating-from-one-bandwagon-host-to-another): Instructions for migrating data between BandwagonHost servers.
+- [Zoraxy Reverse Proxy Setup](https://blog.gujiakai.top/2024/05/selfhost-zoraxy-an-alternative-to-nginx-proxy-manager): Discussing and guiding on how to self-host Zoraxy as an alternative to Nginx Proxy Manager.
+- [Network Error Solutions](https://blog.gujiakai.top/2023/03/solutions-for-network-error-of-new-bing): Provides solutions to resolve network errors encountered while accessing New Bing.
+- [VPS购买体验分享](https://blog.gujiakai.top/2024/08/unexpected-bero-host-vps-bargain): 分享个人在寻找和购买VPS服务的经历和见解。
+- [Claude 3.5 Sonnet Review](https://blog.gujiakai.top/2024/10/anthropic-updates-evaluation): Evaluating and sharing experiences with the updates of Anthropic's Claude 3.5 Sonnet AI model.
+- [Ubuntu UFS Fix Guide](https://blog.gujiakai.top/2023/11/racknerd-ubuntu-ufs-fix): Provides a troubleshooting guide for fixing UFS mounting errors on Ubuntu VPS hosted by Racknerd.
+- [Google One VPN Insights](https://blog.gujiakai.top/tags/google-one-vpn): Discusses Google One VPN and related guides.
+- [Gitee's Image Hosting Issues](https://blog.gujiakai.top/2022/03/324-gitee-affair): Discusses the challenges faced by Gitee in managing image hosting on their platform.
+- [Tech Blog Insights](https://blog.gujiakai.top/page/5): Share personal experiences and solutions related to technology and software usage.
+- [Android Troubleshooting Tips](https://blog.gujiakai.top/tags/andriod): Provides solutions for Android-related issues.
+- [IPv6 Migration Guide](https://blog.gujiakai.top/2024/01/migrating-to-ipv6-only-instance-on-lightsail): Documenting the process of migrating an AWS Lightsail instance to an IPv6-only configuration.
+- [Docker Article Collection](https://blog.gujiakai.top/tags/docker): A collection of articles about Docker technology.
+- [ChatGPT Articles Collection](https://blog.gujiakai.top/tags/chatgpt): This webpage aggregates articles related to ChatGPT, covering reviews, solutions, and experiences.
+- [Self-Hosting Insights](https://blog.gujiakai.top/page/4): Discussing alternatives and solutions for self-hosting and technology issues.
+- [Google Voice Connection Fix](https://blog.gujiakai.top/2023/03/the-solution-of-google-voice-is-connecting): Solution for resolving Google Voice connection issues caused by a browser plugin.
+- [Coding Tutorials and Insights](https://blog.gujiakai.top/page/12): Sharing tutorials and experiences related to coding and GitHub.
+- [Hugo Topics Exploration](https://blog.gujiakai.top/tags/hugo): Explore Hugo-related topics and themes.
+- [Bing Network Issues](https://blog.gujiakai.top/tags/bing): Discusses network issues related to Bing and provides solutions.
+- [Critique of CSDN](https://blog.gujiakai.top/tags/csdn): Critique of CSDN's quality and value.

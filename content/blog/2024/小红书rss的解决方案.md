@@ -7,6 +7,83 @@ summary: 介绍小红书rss的解决方案。
 showtoc: true
 ---
 
+## 更新（2024.12.11）
+
+中午整理邮箱时，发现有网友咨询我有关小红书follow订阅图片显示的相关问题。
+
+看了RSSHub项目的官方文档和RSSHub Github issues后，明白了自部署的RSSHub实例通过添加`XIAOHONGSHU_COOKIE`这个环境变量以实现小红书笔记全文抓取。
+
+具体效果见图：
+
+![小红书全文抓取效果图1](https://cdn.sa.net/2024/12/11/5MRWVP3x6nHub8a.webp)
+
+![小红书全文抓取效果图2](https://cdn.sa.net/2024/12/11/YNRgkCGtVwIv3xW.webp)
+
+官方的RSSHub实例还未添加`XIAOHONGSHU_COOKIE`以实现全文抓取【截至2024年12月11日】。
+
+操作步骤：
+
+打开小红书首页，右击选择Inspect，打开开发者控制台后，刷新页面，选择Network选项卡，选择explore请求，Headers—>Request Headers—>拷贝一长串的Cookie值。
+
+![获取小红书cookie](https://cdn.sa.net/2024/12/11/T2ezdV1W9BqUlnA.webp)
+
+RSSHub的docker-compose.yml：
+
+```yml
+services:
+    rsshub:
+        image: diygod/rsshub
+        restart: always
+        ports:
+            - '127.0.0.1:1200:1200'
+        environment:
+            NODE_ENV: production
+            CACHE_TYPE: redis
+            REDIS_URL: 'redis://redis:6379/'
+            PUPPETEER_WS_ENDPOINT: 'ws://browserless:3000'  # marked
+            YOUTUBE_KEY: 'xxx'
+        env_file: ".env.xiaohongshu"
+        depends_on:
+            - redis
+            - browserless  # marked
+
+    browserless:  # marked
+        image: browserless/chrome  # marked
+        restart: always  # marked
+        ulimits:  # marked
+          core:  # marked
+            hard: 0  # marked
+            soft: 0  # marked
+
+    redis:
+        image: redis:alpine
+        restart: always
+        volumes:
+            - /root/stacks/rsshub/redis-data:/data
+```
+
+新建名为.env.xiaohongshu的文件。
+
+.env.xiaohongshu文件内容【一大串】：
+
+```txt
+XIAOHONGSHU_COOKIE="abRequestId=xxx"
+```
+
+最后`docker compose down && docker compose up -d`命令重建RSSHub容器。
+
+Claude教我这么干的，可能实现的并不优雅【喂给Claude的cookie更改了几个字母，并没有将真实的cookie值投喂】。
+
+![Claude的教导](https://cdn.sa.net/2024/12/11/qGK6IOgvepVo2Ln.webp)
+
+搞类似下方的url就可以实现全文订阅小红书笔记。
+
+example: `https://自部署的rsshub连接/xiaohongshu/user/小红书useid/notes/fulltext`
+
+我的邮件回复：
+
+![邮件回复](https://cdn.sa.net/2024/12/11/arAx12XfhW7L4GU.webp)
+
 ## 更新（2024.10.30）
 
 原来RSSHub支持小红书笔记啊。早上看到有人分享RSSHub作者Diygod的新作品—Follow小红书美女列表，我直接懵了，在我印象里，应该是不支持的啊。
