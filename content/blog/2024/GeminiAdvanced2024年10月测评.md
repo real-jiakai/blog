@@ -7,6 +7,18 @@ summary: 记录自己使用Gemini Advanced的体验感受。
 showtoc: true
 ---
 
+## 更新【2024/12/15】
+
+Google One AI Premium越来越保值了，虽然Google AI Studio可以白嫖。明年NotebookLM会员也会加入Google One AI Premium套餐，这20刀值就完了。
+
+做个预测，Google Gemini 2.0明年年初全量发布，其在AI赛道上的领先优势会初见端倪，未来10年内，最逼近AGI形态的AI会是Gemini。“起了个大早，赶了个晚集”这句讽刺Google为失意者的言论可能会在未来被打脸。
+
+12月份Google Gemini 2.0的发布简直惊艳，比OpenAI 12天每天放一段10～20分钟的小视频演示强多了。最近忙就不写测评笔记了，反正就是很强。
+
+![Gemini Advanced 12月份更新](https://cdn.sa.net/2024/12/15/uTgBdVEZeMPwj7l.webp)
+
+目前代码问题优先考虑Claude和Google AI Studio中的gemini-exp-1206，其余日常问题，我都会用gemini-2.0-flash-exp解决。
+
 ## 更新【2024/11/16】
 
 已经续费了，因为近期合租的土区Google One+Youtube Premium翻车了【Google打击跨区的铁拳终究还是砸到了我的身上】。我觉得这20刀主要用于付费Google One福利，Gemini App顺带用一用。
