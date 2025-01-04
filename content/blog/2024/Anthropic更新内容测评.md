@@ -8,6 +8,10 @@ showtoc: true
 draft: false
 ---
 
+## 更新（2024.12.26）
+
+正确对待国产ai的崛起，DeepSeek v3不容小觑，深度求索公司被我低估了。
+
 ## 更新（2024.10.27）
 
 本文提及的Claude 3.5 Sonnet(New)中文注释不给力，其实是我的Prompt给的不够好。

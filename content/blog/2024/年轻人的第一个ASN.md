@@ -7,9 +7,19 @@ summary: 介绍自己获取ASN并配置该ASN对应的ipv6地址的经历。
 showtoc: true
 ---
 
+## 更新(2024.12.24)
+
+平安夜收到一封有关ASN的邮件，直接让GPT写了一封回信，选择放弃ASN资源。再见AS214948。
+
+![GPT-4o有关ASN邮件的解释](https://cdn.sa.net/2024/12/24/lGXEAzIcpetrkPn.webp)
+
+![有关ASN邮件的回信](https://cdn.sa.net/2024/12/24/eO6j3UXwPqvLmRA.webp)
+
+![再见AS214948](https://cdn.sa.net/2024/12/24/Zuk2owUXnO56NYx.webp)
+
 ## 更新(2024.06.11)
 
-![](https://cdn.sa.net/2024/06/11/xrbHIZYtmNzUEuC.webp)
+![c1vhosting灵车ASN涨价通知](https://cdn.sa.net/2024/06/11/xrbHIZYtmNzUEuC.webp)
 
 哈哈哈，c1vhosting灵车还是发来了ASN和ipv6地址段段涨价通知。可以预计以后博主们写“年轻人的第一个ASN”的成本会越来越大。😂
 

@@ -7,6 +7,16 @@ summary: 记录一次个人claude账号被封的经历及解决方案。
 showtoc: true
 ---
 
+## 更新（2024.12.25）
+
+还得是windows远程桌面。具体可见不良林大哥的最新视频：[【代理检测】盘点解决各种代理检测手段的方法，防止账号被风控，拒绝裸奔，tiktok运营、跨境电商小白用户必看｜IP黑名单检测｜延迟检测｜IP泄漏检测｜TCP/IP指纹检测](https://www.youtube.com/watch?v=_EoccSHSiAU)
+
+![windows远程桌面没被检测出代理](https://cdn.sa.net/2024/12/25/6t3i1VvRMZmO8HG.webp)
+
+代理检测地址：https://proxy.incolumitas.com/proxy_detect.html
+
+自从用了windows远程桌面，搭配nekobox开tun模式，就再也没被封过号。我估计上次封号是虚拟卡问题，个人环境其实是没问题的。
+
 ## 故事背景
 
 早上和往常一样，清理自己的邮箱，清理gmail时，突然看到一封anthropic的api退款邮件。

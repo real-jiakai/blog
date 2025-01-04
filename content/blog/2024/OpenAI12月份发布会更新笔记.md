@@ -8,6 +8,20 @@ showtoc: true
 draft: false
 ---
 
+## 更新(2024.12.24)
+
+近期看到一些有关OpenAI发布会的评论后，觉得OpenAI不放出GPT4.5是正确的选择，如果放出来的GPT4.5拉垮，达不到预期效果，这将是灾难性的。
+
+## 更新(2024.12.21)
+
+更新一些看到的评论。
+
+![v站评论](https://cdn.sa.net/2024/12/21/ETMXiztbW4j7dSR.webp)
+
+via: https://www.v2ex.com/t/1099230
+
+---
+
 > 笔记里面有对于OpenAI发布的不满，也有对于OpenAI发布的敬佩，人格比较分裂。理性阅读。
 
 > 更新条目来源TG频道：@AI_Copilot_Channel
