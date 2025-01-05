@@ -1,0 +1,78 @@
+{{ define "main" }}
+<div class="container">
+    <h1 class="mb-4">📚 归档</h1>
+    
+    {{ $posts := where .Site.RegularPages "Type" "==" "blog" }}
+    {{ $postsByYear := $posts.GroupByDate "2006" }}
+    
+    <div class="row">
+        <!-- 左侧内容区 -->
+        <div class="col-md-9">
+            {{ range $postsByYear }}
+            <div id="{{ .Key }}" class="mb-5">
+                <h2 class="h3 mb-4">{{ .Key }}</h2>
+                
+                <!-- 该年份的标签统计 -->
+                {{ $yearTags := slice }}
+                {{ range .Pages }}
+                    {{ range .Params.tags }}
+                        {{ $yearTags = $yearTags | append . }}
+                    {{ end }}
+                {{ end }}
+
+                <!-- 创建带计数的标签切片 -->
+                {{ $tagCounts := slice }}
+                {{ range $tag := $yearTags | uniq }}
+                    {{ $count := 0 }}
+                    {{ range $yearTags }}
+                        {{ if eq . $tag }}
+                            {{ $count = add $count 1 }}
+                        {{ end }}
+                    {{ end }}
+                    {{ $tagCounts = $tagCounts | append (dict "name" $tag "count" $count) }}
+                {{ end }}
+
+                <!-- 按计数降序排序并显示标签 -->
+                <div class="mb-4">
+                    {{ range sort $tagCounts "count" "desc" }}
+                        <a href="/tags/{{ .name | urlize }}" class="badge bg-secondary text-decoration-none me-2">
+                            #{{ .name }} ({{ .count }})
+                        </a>
+                    {{ end }}
+                </div>
+
+                <!-- 按月份分组文章 -->
+                {{ $postsByMonth := .Pages.GroupByDate "January" }}
+                {{ range $postsByMonth }}
+                <div class="mb-4">
+                    <h3 class="h5 text-muted">{{ .Key }}</h3>
+                    <ul class="list-unstyled ps-3">
+                        {{ range .Pages.ByDate.Reverse }}
+                        <li class="mb-2">
+                            <a href="{{ .Permalink }}" class="text-decoration-none">
+                                {{ .Title }}
+                                <small class="text-muted ms-2">{{ .Date.Format "01-02" }}</small>
+                            </a>
+                        </li>
+                        {{ end }}
+                    </ul>
+                </div>
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+
+        <!-- 右侧年份导航 -->
+        <div class="col-md-3">
+            <div class="list-group sticky-top" style="top: 2rem;">
+                {{ range $postsByYear }}
+                <a href="#{{ .Key }}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                    {{ .Key }}
+                    <span class="badge bg-primary rounded-pill">{{ len .Pages }}</span>
+                </a>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}
