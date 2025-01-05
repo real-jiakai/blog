@@ -1,7 +1,7 @@
 ---
 title: "自建Nginx Proxy Manger的替代品—Zoraxy"
 date: 2024-05-12T19:36:34+08:00
-tags: ["反向代理", "Zoraxy"]
+tags: ["反向代理", "zoraxy"]
 slug: "selfhost-zoraxy-an-alternative-to-nginx-proxy-manager"
 summary: 自建Nginx Proxy Manger的替代品—Zoraxy。
 showtoc: true

@@ -1,7 +1,7 @@
 ---
 title: "年轻人的第一个ASN"
 date: 2024-06-04T15:36:56+08:00
-tags: ["ASN"]
+tags: ["asn"]
 slug: "the-first-asn-of-young-people"
 summary: 介绍自己获取ASN并配置该ASN对应的ipv6地址的经历。
 showtoc: true

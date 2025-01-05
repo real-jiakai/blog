@@ -1,7 +1,7 @@
 ---
 title: "Gemini Advanced 2024年10月测评"
 date: 2024-11-02T10:04:48+08:00
-tags: ["Gemini","Google"]
+tags: ["gemini","google"]
 slug: "Gemini-advanced-2024-october-review"
 summary: 记录自己使用Gemini Advanced的体验感受。
 showtoc: true
