@@ -1,12 +1,12 @@
 {{ define "main" }}
-<div class="container">
+<div class="container m-3">
     <h1 class="mb-4">🏷️ 标签</h1>
     
     <div class="d-flex flex-wrap gap-2">
         {{ range .Data.Terms.ByCount }}
             <a href="{{ .Page.Permalink }}" class="text-decoration-none">
                 <div class="tag-card d-inline-flex align-items-center px-3 py-2 rounded-pill">
-                    <span class="tag-name">#{{ .Page.Title }}</span>
+                    <span class="tag-name">#{{ .Name }}</span>
                     <span class="badge rounded-pill ms-2">{{ .Count }}</span>
                 </div>
             </a>

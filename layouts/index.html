@@ -1,0 +1,115 @@
+{{ define "main" }}
+{{ $paginator := .Paginate (where .Site.RegularPages "Type" "==" "blog") }}
+<div class="card-deck">
+  {{ range $paginator.Pages }}
+  <div class="card mb-3">
+    <div class="card-body">
+      <h4 class="card-title text-break">
+        <a href="{{ .RelPermalink }}" class="card-link text-decoration-none text-wrap">
+          {{ .Title }}
+        </a>
+      </h4>
+      <p class="card-text">{{ .Summary }}</p>
+    </div>
+    <div class="card-footer">
+      <!-- 使用 Bootstrap 的响应式网格系统 -->
+      <div class="row g-2 align-items-center">
+        <div class="col-auto">
+          <span class="iconfont icon-date">{{ .Date.Format "2006-01-02" }}</span>
+        </div>
+        <div class="col-auto">
+          <span class="iconfont icon-tag">
+            {{ $tagCount := len .Params.tags }}
+            {{ range $index, $tag := .Params.tags }}
+              #{{ $tag }}{{ if lt (add $index 1) $tagCount }},{{ end }}
+            {{ end }}
+          </span>
+        </div>
+        <div class="col-auto">
+          <span class="iconfont icon-wenjianxinxi">{{ .WordCount }} words</span>
+        </div>
+        <div class="col-auto">
+          <span class="iconfont icon-time">{{ .ReadingTime }} min read</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{ else }}
+  <div class="alert alert-secondary my-3" role="alert">
+    No posts yet
+  </div>
+  {{ end }}
+</div>
+
+<!-- 分页导航 -->
+{{ if gt $paginator.TotalPages 1 }}
+<nav class="d-flex justify-content-center mb-5">
+  <ul class="pagination">
+    <!-- 首页 -->
+    <li class="page-item{{ if eq $paginator.PageNumber 1 }} disabled{{ end }}">
+      <a class="page-link" href="{{ $paginator.First.URL }}" aria-label="First">
+        <span aria-hidden="true">&laquo;&laquo;</span>
+      </a>
+    </li>
+    
+    <!-- 上一页 -->
+    <li class="page-item{{ if not $paginator.HasPrev }} disabled{{ end }}">
+      <a class="page-link" href="{{ if $paginator.HasPrev }}{{ $paginator.Prev.URL }}{{ end }}" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    
+    <!-- 页码：显示当前页附近的5个页码 -->
+    {{ $pages := where $paginator.Pagers "PageNumber" "ge" (sub $paginator.PageNumber 2) }}
+    {{ $pages = where $pages "PageNumber" "le" (add $paginator.PageNumber 2) }}
+    {{ range $pages }}
+    <li class="page-item{{ if eq . $paginator }} active{{ end }}">
+      <a class="page-link" href="{{ .URL }}">{{ .PageNumber }}</a>
+    </li>
+    {{ end }}
+    
+    <!-- 下一页 -->
+    <li class="page-item{{ if not $paginator.HasNext }} disabled{{ end }}">
+      <a class="page-link" href="{{ if $paginator.HasNext }}{{ $paginator.Next.URL }}{{ end }}" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+    
+    <!-- 末页 -->
+    <li class="page-item{{ if eq $paginator.PageNumber $paginator.TotalPages }} disabled{{ end }}">
+      <a class="page-link" href="{{ $paginator.Last.URL }}" aria-label="Last">
+        <span aria-hidden="true">&raquo;&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+{{ end }}
+
+<style>
+/* 移动端优化 */
+@media (max-width: 768px) {
+  .card-footer .row {
+    margin: -0.25rem;  /* 减小行间距 */
+  }
+  .card-footer .col-auto {
+    padding: 0.25rem;  /* 减小列间距 */
+  }
+  .card-footer span {
+    font-size: 0.875rem;  /* 移动端字体稍微缩小 */
+    white-space: nowrap;  /* 防止文字换行 */
+  }
+}
+
+/* 标题样式优化 */
+.card-title {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+</style>
+{{ end }} 
