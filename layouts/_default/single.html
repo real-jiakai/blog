@@ -1,0 +1,74 @@
+{{ define "main" }}
+<div class="container-md align-items-center">
+  <article>
+    <h2 class="text-center p-3">{{ .Title }}</h2>
+    
+    <!-- 文章元数据部分 -->
+    {{ if eq .Type "blog" }}
+    <div class="d-flex flex-wrap gap-3 mb-4 text-secondary small justify-content-center">
+      <div class="d-flex align-items-center">
+        <span class="iconfont icon-date me-1"></span>
+        {{ .Date.Format "2006-01-02" }}
+      </div>
+      
+      <div class="d-flex align-items-center">
+        <span class="iconfont icon-tag me-1"></span>
+        {{ range $index, $tag := .Params.tags }}
+          {{- if gt $index 0 }}, {{ end -}}
+          #{{ . }}
+        {{- end }}
+      </div>
+      
+      <div class="d-flex align-items-center">
+        <span class="iconfont icon-wenjianxinxi me-1"></span>
+        {{ .WordCount }} words
+      </div>
+      
+      <div class="d-flex align-items-center">
+        <span class="iconfont icon-time me-1"></span>
+        {{ .ReadingTime }} min read
+      </div>
+    </div>
+    {{ end }}
+
+    <!-- 文章内容 -->
+    <div class="content">
+      {{ .Content }}
+    </div>
+
+    <!-- 版权信息 -->
+    {{ if eq .Type "blog" }}
+      {{- partial "copyright.html" . -}}
+
+      <!-- 上下篇导航 -->
+      <div class="d-flex justify-content-between mt-4">
+        {{ with .Prev }}
+        <div class="d-flex align-items-center" style="max-width: 50%;">
+          <div class="text-truncate">
+            <a href="{{ .RelPermalink }}" class="text-decoration-none">&larr; 上一篇：{{ .Title }}</a>
+          </div>
+        </div>
+        {{ end }}
+        {{ with .Next }}
+        <div class="d-flex align-items-center justify-content-end" style="max-width: 50%;">
+          <div class="text-truncate">
+            <a href="{{ .RelPermalink }}" class="text-decoration-none">下一篇：{{ .Title }} &rarr;</a>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    {{ end }}
+
+    <!-- 评论系统 -->
+    {{- partial "utterances.html" . -}}
+  </article>
+</div>
+
+<style>
+@media (max-width: 768px) {
+  .gap-3 {
+    gap: 0.5rem !important;
+  }
+}
+</style>
+{{ end }} 
