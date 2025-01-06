@@ -1,7 +1,7 @@
 ---
 title: "My App Defaults 2023"
 date: 2023-11-21T08:44:59+08:00
-tags: ['App']
+tags: ['app']
 slug: "my-app-defaults-2023"
 summary: 介绍2023年我日常使用的App。
 showtoc: false
@@ -127,7 +127,7 @@ VSCode实在是太方便了，目前我写博客都是通过其进行的。唯�
 
 因为他们创造出了人们真正需要的产品，市场需要，我也需要，从大学毕设，到日常学习，GPT Plus给了我很多帮助。
 
-正如最近闹得沸沸扬扬的OpenAI炒了Sam Altman鱿鱼事件中，OpenAI的员工们在X上表达不满一样(OpenAI is nothing without its people)，I'm nothig without GPT Plus（没有GPT Plus，我什么也不是）。没有GPT，我会不知所措，会变得比拥有GPT Plus时更笨。
+正如最近闹得沸沸扬扬的OpenAI炒了Sam Altman鱿鱼事件中，OpenAI的员工们在X上表达不满一样(OpenAI is nothing without its people)，I'm nothing without GPT Plus（没有GPT Plus，我什么也不是）。没有GPT，我会不知所措，会变得比拥有GPT Plus时更笨。
 
 ![人类之光—GPT Plus](https://vip2.loli.net/2023/11/21/ArI7z3mptBXLcH8.webp)
 
