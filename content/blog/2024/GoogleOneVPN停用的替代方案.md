@@ -7,6 +7,14 @@ summary: 介绍Google One VPN停用的替代方案。
 showtoc: true
 ---
 
+## 更新(2025.01.06)
+
+今天已经锁定了bootloder，esim不受影响。锁定bootloader仅仅是清空了应用数据。
+
+也不知道为啥，总感觉自己对Google One VPN祛魅了。毕竟现在的AI服务都tm需要上真家宽了，双isp机器也没啥卵用了。
+
+![时隔半年，再次连上Google One VPN](https://cdn.sa.net/2025/01/06/vnsx8AyFXGKcUtq.webp)
+
 ## 更新(2024.07.22)
 
 今天折腾检查了vps的分流以及分流出口机器的ip质量检测。又有想买家宽的冲动，但是到最后想了想还是算了，我不愿意用warp ip，用双isp的机器也够用啦。
