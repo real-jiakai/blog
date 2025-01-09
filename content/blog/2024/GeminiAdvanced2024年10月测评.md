@@ -7,6 +7,20 @@ summary: 记录自己使用Gemini Advanced的体验感受。
 showtoc: true
 ---
 
+## 更新【2025/1/9】
+
+Gemini最新的Exp模型建议优先考虑在ai studio中白嫖体验，Gemini Advanced中的实验模型还是有些拉胯的。
+
+我续费Gemini Advanced主要是为了Google One福利，以及顺带用用Gemini Advanced中的1.5 Pro模型快速总结Youtube视频。
+
+Deep Research其实也不常用，毕竟很多精华的知识都困在“围墙花园”应用里面，公开互联网上有挺多垃圾内容，特别是2022年生成式AI爆发以后。
+
+优先考虑gemini-exp-1206模型，毕竟这是Gemini 2.0 Pro版本的前瞻版。
+
+识图能力非常牛逼。上传较大的图片，里面的文字都能近乎准确识别，Gemini未来可期。
+
+期待农历新年前后Gemini 2.0全量发布！
+
 ## 更新【2024/12/15】
 
 Google One AI Premium越来越保值了，虽然Google AI Studio可以白嫖。明年NotebookLM会员也会加入Google One AI Premium套餐，这20刀值就完了。

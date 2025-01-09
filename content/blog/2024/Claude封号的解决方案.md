@@ -7,6 +7,12 @@ summary: 记录一次个人claude账号被封的经历及解决方案。
 showtoc: true
 ---
 
+## 更新（2025.01.07）
+
+可能有网友会想为啥不用fuclaude呢。我个人还是更倾向于官方原版，fuclaude也挺好，暂时不打算用。
+
+怕本地用，被claude官方检测【分流不自信】的小伙伴，可以尝试fuclaude：https://github.com/wozulong/fuclaude
+
 ## 更新（2024.12.25）
 
 还得是windows远程桌面。具体可见不良林大哥的最新视频：[【代理检测】盘点解决各种代理检测手段的方法，防止账号被风控，拒绝裸奔，tiktok运营、跨境电商小白用户必看｜IP黑名单检测｜延迟检测｜IP泄漏检测｜TCP/IP指纹检测](https://www.youtube.com/watch?v=_EoccSHSiAU)
