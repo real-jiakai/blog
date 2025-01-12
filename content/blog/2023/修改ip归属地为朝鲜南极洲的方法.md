@@ -7,6 +7,28 @@ summary: 分享修改ip归属地为朝鲜、南极洲的方法。
 showtoc: true
 ---
 
+## 更新（2025.1.12）
+
+上个月朝鲜IP正式成为历史。目前市面上使用Cloudflare Warp获取朝鲜IP已经绝迹。
+
+![朝鲜IP正式成为历史](https://cdn.sa.net/2025/01/12/sKF7H5zl9waJo1j.webp)
+
+有小伙伴鉴定卖朝鲜机器的毛子商家P Telecom是骗子商家。
+
+![卖朝鲜机器的毛子商家P Telecom是骗子商家](https://cdn.sa.net/2025/01/12/L3tM8v64weQ5Vlj.webp)
+
+使用Cloudflare Warp获取南极洲IP，近期貌似也出现了定位问题，具体细节不清楚。
+
+这两个地区的IP就图一乐，说到底真没啥卵用。
+
+via: 
+
+[朝鲜IP正式成为历史](https://hostloc.com/thread-1375126-1-1.html)
+
+[现在还有什么方法获取v4朝鲜IP](https://www.nodeseek.com/post-220760-1)
+
+[朝鲜家宽](https://www.nodeseek.com/post-180748-1)
+
 ## 更新（2024.8.27）
 
 不建议自建，自建的话不要再购买wap.ac和bytevirt的warp产品了【两家的warp系列产品都下架了，也无法再购买了】。官方的最新公告显示warp定位问题无法解决。
@@ -18,8 +40,6 @@ showtoc: true
 想用朝鲜、南极洲ip开启全局代理，去国内网站装x的朋友，可以优先考虑之前我推荐的一家机场—[FacMaTa](https://amz.fmta.boo/register?code=PYcvODEE)
 
 ![FacMata机场公告](https://cdn.sa.net/2024/08/27/ScoO6ZpT1gUtsD8.webp)
-
-去年我买了他家的一个套餐，今天测试了一下，订阅链接里面有美国家宽，也有朝鲜、南极洲节点，性价比还是ok的。
 
 ## 更新（2024.2.14）
 
@@ -67,7 +87,7 @@ wap.ac在2024年2月21日上线了warp vps进行销售，可选择南极洲、�
 
 ## 1、机场
 
-- [一线机场TAG](https://tagss04.pro/#/auth/j6c8uF3k)
+- [一线机场TAG](https://tagss09.pro/#/auth/j6c8uF3k)
 
 ![TAG机场南极节点](https://vip2.loli.net/2023/08/17/8b1DX7fiN2CKsJP.webp)
 
