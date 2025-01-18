@@ -3,7 +3,7 @@ title: "GLM Realtime API体验"
 date: 2025-01-18T15:05:49+08:00
 tags: ["glm"]
 slug: "glm-realtime-api-experience"
-summary: 分享GLM Realtime API体验感受
+summary: 分享GLM Realtime API体验感受。
 showtoc: true
 ---
 
