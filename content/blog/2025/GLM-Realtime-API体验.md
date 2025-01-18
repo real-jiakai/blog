@@ -5,7 +5,6 @@ tags: ["glm"]
 slug: "glm-realtime-api-experience"
 summary: 分享GLM Realtime API体验感受。
 showtoc: true
-draft: true
 ---
 
 ## 更新(2025.1.18)
