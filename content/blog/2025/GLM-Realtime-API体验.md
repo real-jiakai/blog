@@ -31,7 +31,7 @@ ChatGPT等一众语音模型一开始是可以唱歌的，2024年5月份的OpenA
 
 想尝试Realtime API，但发现目前仅仅只能通过API调用，智谱API平台还没上架实时语音API的交互（没有提供类似Google AI Studio那样实时语音开箱即用的入口】。
 
-于是乎，我便将智谱官方文档有关Realtime API的内容发送给Claude，在和Claude反复拉扯以及结合Perplexity Debug Claude代码后，最终整出了GLM-Realtime API演示: [https://glm-realtime.gujiakai.top](https://glm-realtime.gujiakai.top)。【备注：移动端有bug，电脑端浏览器可以使用】
+于是乎，我便将智谱官方文档有关Realtime API的内容发送给Claude，在和Claude反复拉扯以及结合Perplexity Debug Claude代码后，最终整出了GLM-Realtime API演示: [https://glm-realtime.gujiakai.top](https://glm-realtime.gujiakai.top)。
 
 这次编写代码让我深刻体会到编程高手和Claude结合的强大，我一个小白，无法最大程度发挥Claude的编程实力。编程高手拿到Claude反馈的代码，能很快找出bug，并实现指挥Claude指哪打哪。还是得好好学编程，0基础编写带一些复杂逻辑的应用，在AI辅助下debug很浪费时间。
 
