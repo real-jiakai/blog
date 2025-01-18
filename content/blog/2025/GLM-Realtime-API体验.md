@@ -7,7 +7,7 @@ summary: 分享GLM Realtime API体验感受
 showtoc: true
 ---
 
-## 更新
+## 更新(2025.1.18)
 
 我是🤡，智谱清言App已经上线了Realtime API了，打电话自动就可以让GLM清唱特定的7首歌曲，我属于是后知后觉了😑。
 
