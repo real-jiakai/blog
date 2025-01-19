@@ -1,0 +1,47 @@
+{{ if eq .Layout "archive" }}
+<!-- 归档页显示年份导航 -->
+<div class="sticky-top d-none d-md-block" style="top: 2rem;">
+    <h6 class="m-3 text-secondary">按年份归档</h6>
+    {{ $posts := where .Site.RegularPages "Type" "==" "blog" }}
+    {{ $postsByYear := $posts.GroupByDate "2006" }}
+    <div class="d-flex flex-wrap gap-2">
+        {{ range $postsByYear }}
+        <a href="#{{ .Key }}" class="text-decoration-none">
+            <span class="badge bg-secondary bg-opacity-10 text-secondary">
+                {{ .Key }}
+                <span class="badge bg-primary rounded-pill ms-1">{{ len .Pages }}</span>
+            </span>
+        </a>
+        {{ end }}
+    </div>
+</div>
+{{ else if .Params.showtoc }}
+<!-- 文章页显示目录 -->
+<div class="d-none d-md-block sticky-top py-5">
+    <div class="sidebar-toc" id="sidebarToc">
+        <div class="row">
+            <div class="col-8">
+                <div class="toc-header d-flex align-items-center bg-dark-subtle" id="tocHeader" data-bs-toggle="collapse" data-bs-target="#tocContent" aria-expanded="true" aria-controls="tocContent">
+                    <span class="iconfont icon-arrow_drop_down d-inline" id="arrow-down"></span>
+                    <span class="iconfont icon-arrow_right d-none" id="arrow-right"></span>
+                    <span class="ms-2">Table Of Content</span>
+                </div>        
+                <div id="tocContent" class="collapse show bg-dark-subtle">
+                    {{ .TableOfContents }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById("tocHeader").addEventListener("click", function () {
+        var arrowDown = document.getElementById("arrow-down");
+        var arrowRight = document.getElementById("arrow-right");
+        arrowDown.classList.toggle("d-none");
+        arrowDown.classList.toggle("d-inline");
+        arrowRight.classList.toggle("d-none");
+        arrowRight.classList.toggle("d-inline");
+    });
+</script>
+{{ end }}

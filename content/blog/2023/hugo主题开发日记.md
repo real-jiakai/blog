@@ -9,7 +9,7 @@ showtoc: true
 
 ## 更新(2025-01-05)
 
-现在的ai辅助编程工具这么多，搭配上cursor这类IDE，开发一个博客主题并不难。有啥需求跟cursor中的claude交代清楚，一般都能得到较好的回复。
+现在的ai辅助编程工具这么多，搭配上cursor/windsurf这类IDE，开发一个博客主题并不难。有啥需求跟cursor中的claude交代清楚，一般都能得到较好的回复。
 
 ---
 

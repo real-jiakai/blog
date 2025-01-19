@@ -43,7 +43,7 @@
 
 <!-- 分页导航 -->
 {{ if gt $paginator.TotalPages 1 }}
-<nav class="d-flex justify-content-center mb-5">
+<nav class="d-flex justify-content-center align-items-center">
   <ul class="pagination">
     <!-- 首页 -->
     <li class="page-item{{ if eq $paginator.PageNumber 1 }} disabled{{ end }}">
@@ -110,6 +110,11 @@
   -moz-hyphens: auto;
   -webkit-hyphens: auto;
   hyphens: auto;
+}
+
+.pagination {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 </style>
 {{ end }} 
