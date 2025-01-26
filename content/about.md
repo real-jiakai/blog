@@ -37,14 +37,13 @@ WIP：
 
 ## 近期状况（月更）
 
-水ei会议论文中。
+寒假宅家学习玩乐中。
 
 ## 我的idol
 
 - 张杰
 - 阮一峰
 - Stephen Curry
-- Sam Altman
 - Aaron Swartz
 - Pavel Durov
 - Simon Willison
