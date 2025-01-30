@@ -7,9 +7,15 @@ summary: 记录自己使用Gemini Advanced的体验感受。
 showtoc: true
 ---
 
+## 更新【2025/1/30】
+
+结合过去几个月的使用体验，Gemini Advanced最主要的卖点还是用Gemini 1.5 Pro模型来总结Youtube视频，其余的感觉各方面都差点意思，使用体验不如Google AI Studio。而且这种视频总结也是基于字幕的，并不是模型多模态能力强，理解了视频，下文提及总结了一个无字幕的视频表述欠妥。无字幕、涉及Trump的视频基本上都无法总结摘要。
+
+![Gemini无法总结Youtube视频的原因分析](https://cdn.sa.net/2025/01/30/oFKnxC6tJGBqDQ8.webp)
+
 ## 更新【2025/1/9】
 
-Gemini最新的Exp模型建议优先考虑在ai studio中白嫖体验，Gemini Advanced中的实验模型还是有些拉胯的。
+Gemini最新的Exp模型建议优先考虑在AI Studio中白嫖体验，Gemini Advanced中的实验模型还是有些拉胯的。
 
 我续费Gemini Advanced主要是为了Google One福利，以及顺带用用Gemini Advanced中的1.5 Pro模型快速总结Youtube视频。
 
@@ -31,7 +37,7 @@ Google One AI Premium越来越保值了，虽然Google AI Studio可以白嫖。�
 
 ![Gemini Advanced 12月份更新](https://cdn.sa.net/2024/12/15/uTgBdVEZeMPwj7l.webp)
 
-目前代码问题优先考虑Claude和Google AI Studio中的gemini-exp-1206，其余日常问题，我都会用gemini-2.0-flash-exp解决。
+目前代码问题优先考虑Claude和Google AI Studio中的gemini-exp-1206。
 
 ## 更新【2024/11/16】
 
@@ -105,7 +111,7 @@ via: [https://ai.google.dev/gemini-api/terms](https://ai.google.dev/gemini-api/t
 
 ![如果你不为产品付费，你就是产品。](https://cdn.sa.net/2024/11/02/upLlJ4DG3r6Axks.webp)
 
-有没有可能上午笨笨的Gemini advanced，下午突然开窍就是因为人工审查的缘故，仔细想想有些细思极恐。
+有没有可能上午笨笨的Gemini Advanced，下午突然开窍就是因为人工审查的缘故，仔细想想有些细思极恐。
 
 ![Gemini的聊天记录会被审查](https://cdn.sa.net/2024/11/02/VoD7FNafk5GBnKC.webp)
 
@@ -119,15 +125,15 @@ via: [https://ai.google.dev/gemini-api/terms](https://ai.google.dev/gemini-api/t
 
 隐私和便利是矛盾的，果然没错。我目前还是将活动关闭了，反正有用的回复，我都会第一时间记笔记截图保存。
 
-**更新**
+**更新：**
 
-**还是开了，没准后续会用到。况且现在这波AI浪潮，你的数据都会被用来训练AI，就比如马斯克的X、国内的这些商家也会这么干，字节跳动的pixeldance难道会放过抖音或者tiktok海量的视频。哎****😑****，安心接受被训练的宿命吧，或者觉得不爽的话，开个X小号，污染grok的训练素材等。**
+还是开了，没准后续会用到。况且现在这波AI浪潮，你的数据都会被用来训练AI，就比如马斯克的X、国内的这些商家也会这么干，字节跳动的pixeldance难道会放过抖音或者tiktok海量的视频。哎😑，安心接受被训练的宿命吧，或者觉得不爽的话，开个X小号，污染grok的训练素材。
 
 ![字节的pixeldance可能会用短视频数据训练模型](https://cdn.sa.net/2024/11/02/LrkfqFJd3vglReA.webp)
 
-看看linkedin更新的用户协议，也开始用用户数据训练AI。
+看看LinkedIn更新的用户协议，也开始用用户数据训练AI。
 
-![linkedin也开始用用户数据训练AI](https://cdn.sa.net/2024/11/02/LNlWf8zvTMRSj7q.webp)
+![LinkedIn也开始用用户数据训练AI](https://cdn.sa.net/2024/11/02/LNlWf8zvTMRSj7q.webp)
 
 ## 使用技巧
 
@@ -145,7 +151,7 @@ Gemini Advanced邀请好友可以让好友白嫖4个月。
 
 ![Gemini和Google生态高度绑定](https://cdn.sa.net/2024/11/02/kWslJvbDICaL78g.webp)
 
-和Google生态高度绑定。Youtube想看的视频太多了，没工夫看，就看个摘要得了，让Gemini advanced总结Youtube视频。
+和Google生态高度绑定。Youtube想看的视频太多了，没工夫看，就看个摘要得了，让Gemini总结Youtube视频。
 
 ![Gemini Advanced可以用来总结Youtube视频](https://cdn.sa.net/2024/11/02/lhJY78LQrAT3kE1.webp)
 
@@ -161,7 +167,7 @@ Gemini Advanced邀请好友可以让好友白嫖4个月。
 
 ![不开会员，基础的Gemini也能总结Youtube视频](https://cdn.sa.net/2024/11/02/UpqQYIrKCfM5mTF.webp)
 
-连讲师的美好生活都能总结，不得不佩服Gemini 1.5 pro的视频处理能力。
+连讲师的美好生活都能总结，不得不佩服Gemini 1.5 Pro的视频处理能力。
 
 ![利用Gemini Advanced总结讲师的美好生活](https://cdn.sa.net/2024/11/02/iYNxvdsEXzgWoj3.webp)
 
@@ -169,7 +175,7 @@ Gemini Advanced邀请好友可以让好友白嫖4个月。
 
 ![Gemini总结YouTube视频不借助字幕，而是靠多模态能力](https://cdn.sa.net/2024/11/02/ArNBoI6UPjLnRQG.webp)
 
-一口气拿Gemini把稍后观看的视频基本上全总结完了，留了1～2个实操类型的视频等有空了实操。舒服，爽！
+一口气拿Gemini把Youtube稍后观看的视频基本上全总结完了，留了1～2个实操类型的视频等有空了实操。舒服，爽！
 
 果然当时稍后观看=稍后不看，哪有这么多精力，1天24小时，消化不了的知识你还指望未来能细细品味？
 
@@ -221,9 +227,9 @@ Claude给的也是残次品。
 
 ![Claude也无法给出.ipynb文件完整的代码注释](https://cdn.sa.net/2024/11/02/V76d1PZ2l8cJQxA.webp)
 
-看来llm对于.ipynb文件的解析还是存在改进的空间的。
+看来LLM对于.ipynb文件的解析还是存在改进的空间的。
 
-解决方案肯定是先将.ipynb的文件转为py文件，紧接着再上传给llm写注释喽。
+解决方案肯定是先将.ipynb的文件转为py文件，紧接着再上传给LLM写注释喽。
 
 你以为Gemini Advanced就可以给你写很棒的注释？
 
@@ -231,9 +237,9 @@ Claude给的也是残次品。
 
 ![Gemini Advanced一开始写代码注释，一小段就截断了](https://cdn.sa.net/2024/11/02/wJrHZh4FTcotjkz.webp)
 
-反观api控制台，woc，真的将所有行的注释都呈现了。
+反观API控制台，woc，真的将所有行的注释都呈现了。
 
-![api控制台，Gemini将所有行的代码注释都呈现了](https://cdn.sa.net/2024/11/02/gAd1YhCimrOaLUK.webp)
+![API控制台，Gemini将所有行的代码注释都呈现了](https://cdn.sa.net/2024/11/02/gAd1YhCimrOaLUK.webp)
 
 Claude写注释，超出了上下文窗口。但是能接上去。
 
