@@ -7,6 +7,14 @@ summary: 介绍小红书rss的解决方案。
 showtoc: true
 ---
 
+## 更新（2025.1.31）
+
+小红书反爬严格，用cookie建议控制速率【添加`CACHE_EXPIRE`和`CACHE_CONTENT_EXPIRE`环境变量控制】，不然一开始可以有多图，之后只有封面图，再然后有些路由就只有Error了。via: https://github.com/DIYgod/RSSHub/issues/17912
+
+添加新cookie值，笔记又有多图了。
+
+![添加新cookie值，笔记又有多图了](https://cdn.sa.net/2025/01/31/9mbGwUTAQq6jPuI.webp)
+
 ## 更新（2024.12.11）
 
 中午整理邮箱时，发现有网友咨询我有关小红书follow订阅图片显示的相关问题。
