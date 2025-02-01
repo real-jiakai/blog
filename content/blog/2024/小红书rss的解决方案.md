@@ -50,7 +50,7 @@ services:
             REDIS_URL: 'redis://redis:6379/'
             PUPPETEER_WS_ENDPOINT: 'ws://browserless:3000'  # marked
             YOUTUBE_KEY: 'xxx'
-        env_file: ".env.xiaohongshu"
+        env_file: ".env"
         depends_on:
             - redis
             - browserless  # marked
@@ -70,9 +70,9 @@ services:
             - /root/stacks/rsshub/redis-data:/data
 ```
 
-新建名为.env.xiaohongshu的文件。
+新建名为.env的文件。
 
-.env.xiaohongshu文件内容【一大串】：
+.env文件内容【一大串】：
 
 ```txt
 XIAOHONGSHU_COOKIE="abRequestId=xxx"
