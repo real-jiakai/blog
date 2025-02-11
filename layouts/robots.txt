@@ -1,7 +1,3 @@
-# 参考来源：
-# https://rknight.me/robots.txt 
-# https://github.com/ai-robots-txt/ai.robots.txt
-# 阻止市面上常见的AI爬虫
 User-agent: AI2Bot
 User-agent: Ai2Bot-Dolma
 User-agent: Amazonbot
@@ -15,6 +11,7 @@ User-agent: Claude-Web
 User-agent: ClaudeBot
 User-agent: cohere-ai
 User-agent: cohere-training-data-crawler
+User-agent: Crawlspace
 User-agent: Diffbot
 User-agent: DuckAssistBot
 User-agent: FacebookBot
@@ -39,7 +36,8 @@ User-agent: PanguBot
 User-agent: PerplexityBot
 User-agent: PetalBot
 User-agent: Scrapy
-User-agent: SemrushBot
+User-agent: SemrushBot-OCOB
+User-agent: SemrushBot-SWA
 User-agent: Sidetrade indexer bot
 User-agent: Timpibot
 User-agent: VelenPublicWebCrawler
