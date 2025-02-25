@@ -43,7 +43,7 @@ Claude 3.7 系统卡片[^3]，Claude 3.7 Sonnet Extended总结：
 
 ![Claude 3.7 Sonnet Extended总结其系统卡片](https://cdn.sa.net/2025/02/25/653DqbyzBCNjWe9.webp)
 
-- 集成GitHub
+- 集成GitHub[^4]
 
 ![Claude集成GitHub的功能](https://cdn.sa.net/2025/02/25/9MyusGxcE2AR38X.webp)
 
@@ -55,7 +55,7 @@ Claude 3.7 系统卡片[^3]，Claude 3.7 Sonnet Extended总结：
 
 ![Claude集成GitHub仅仅针对文件内容聊天，无法操作对应代码](https://cdn.sa.net/2025/02/25/WoDbl9jxkeMdf7n.webp)
 
-- Claude Code[^4]
+- Claude Code[^5]
 
 Phind总结：
 
@@ -141,6 +141,10 @@ Claude 3.7 Sonnet Extended思维链默认是收缩状态。
 ![Claude代码能力遥遥领先](https://cdn.sa.net/2025/02/25/vUon1EyAsklW48O.webp)
 
 细看livebench.ai上的排名，这一版的Sonnet的代码能力评估有提升但不多。别看o3-mini-high的代码跑分这么高，但真实用户体验还得是Claude，OpenAI的o3-mini系列产品印证了一句话：“跑分没输过，用户体验没赢过！”
+
+> 备注：livebench.ai考虑全部评估指标，目前Claude 3.7 Sonnet Thinking已经登顶！写完博客再去网站观看发现更新了排名！
+
+![Claude 3.7 Sonnet Thinking登顶livebench.ai](https://cdn.sa.net/2025/02/25/3q9wK5DnEps2Jtc.webp)
 
 自行体会下面这则推文，Claude系列模型绝对的遥遥领先！OpenAI的o系列模型简直就是弟中弟。
 
@@ -250,4 +254,6 @@ via: https://mp.weixin.qq.com/s/MedDDltDvKWp1uJTGF9yPg
 
 [^3]: https://assets.anthropic.com/m/785e231869ea8b3b/original/claude-3-7-sonnet-system-card.pdf
 
-[^4]: https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview
+[^4]: https://support.anthropic.com/en/articles/10167454-using-the-github-integration
+
+[^5]: https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview
