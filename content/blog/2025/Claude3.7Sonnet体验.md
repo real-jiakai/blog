@@ -7,6 +7,22 @@ summary: 分享Claude 3.7 Sonnet使用体验。
 showtoc: true
 ---
 
+## 更新(2025.2.25)
+
+网友言论：如果你懂编码，那么Claude会使你成为编码之神！
+
+![网友言论](https://cdn.sa.net/2025/02/25/e3WUgGXoLO8kzqY.webp)
+
+再更新一个案例：生成五子棋游戏
+
+![五子棋游戏](https://cdn.sa.net/2025/02/25/INeHmg2URJZbvGp.webp)
+
+玩了好几局，每次都无法战胜，Claude 3.7 Sonnet Thinking设计的游戏牛逼!
+
+via: https://claude.site/artifacts/16727408-f553-41da-aaa5-bbb27e47301d
+
+---
+
 2025年2月24日【2025年2月25日北京时间凌晨】Claude 3.7 Sonnet横空出世，真正的遥遥领先降临人间!
 
 ## 更新内容
