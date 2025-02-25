@@ -1,13 +1,13 @@
 ---
-title: "Claude 3.7 体验"
+title: "Claude 3.7 Sonnet体验"
 date: 2025-02-25T07:55:29+08:00
 tags: ['claude','anthropic']
-slug: "claude-3-7-experience"
-summary: 分享Claude 3.7 使用体验。
+slug: "claude-3-7-sonnet-experience"
+summary: 分享Claude 3.7 Sonnet使用体验。
 showtoc: true
 ---
 
-2025年2月24日【2025年2月25日北京时间凌晨】Claude 3.7横空出世，真正的遥遥领先降临人间!
+2025年2月24日【2025年2月25日北京时间凌晨】Claude 3.7 Sonnet横空出世，真正的遥遥领先降临人间!
 
 ## 更新内容
 
