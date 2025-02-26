@@ -7,9 +7,19 @@ summary: 分享Claude 3.7 Sonnet使用体验。
 showtoc: true
 ---
 
+## 更新(2025.2.26)
+
+Claude Code妥妥的玩具。昨天看到有博主用Claude Code给自己的项目增加新的Feature。我目前也没啥好思路，随便让Claude Code整了一个[贪吃熊](https://bear.gujiakai.top)。自然语言编程整了1个多小时，感觉不如Cursor、Windsurf等AI编辑器。还是得好好学编程，自然语言编程的过程艰难无比，自己懂得技术越多，再加上Claude辅助，才能实现指哪打哪！
+
+![用Claude Code自然语言编程](https://cdn.sa.net/2025/02/26/LAVcJFM6xzBhXDH.webp)
+
+Anthropic官方在Twitch上直播Claude玩宝可梦: https://www.twitch.tv/claudeplayspokemon
+
+![Anthropic官方在Twitch上直播Claude玩宝可梦](https://cdn.sa.net/2025/02/26/cI1Lirw4OotgVlT.webp)
+
 ## 更新(2025.2.25)
 
-网友言论：如果你懂编码，那么Claude会使你成为编码之神！
+网友言论：如果你懂编码，那么Claude会使你成为编码之神!”
 
 ![网友言论](https://cdn.sa.net/2025/02/25/e3WUgGXoLO8kzqY.webp)
 
