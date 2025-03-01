@@ -7,6 +7,14 @@ summary: 分享Claude 3.7 Sonnet使用体验。
 showtoc: true
 ---
 
+## 更新(2025.3.1)
+
+建议优先选择Normal模式，Extended思考模式只有在Normal模式无法解决时再采用。推理模型擅长的领域：数学、编码、逻辑，其余的领域，推理模型比不上经典LLM。比如你让Claude写作，Extended模式绝对会大打折扣，写出来的文字没有Normal模式有创意。其余LLM也是一个道理，优先采用经典LLM，只有经典LLM无法解决时，再考虑推理模型。
+
+编程能力是绝对的遥遥领先，让Claude 3.7 Sonnet写一个脚本，调用MinerU的API实现PDF转Markdown，没几个对话回合就搞定了！报错分析、Artifact Making Edits等等，只能说太牛逼了！享受Vibe Coding。
+
+![Claude 3.7 Sonnet编程能力遥遥领先](https://cdn.sa.net/2025/03/01/qyGWDniPKteXpxN.webp)
+
 ## 更新(2025.2.26)
 
 Claude Code妥妥的玩具。昨天看到有博主用Claude Code给自己的项目增加新的Feature。我目前也没啥好思路，随便让Claude Code整了一个[贪吃熊](https://bear.gujiakai.top)。自然语言编程整了1个多小时，感觉不如Cursor、Windsurf等AI编辑器。还是得好好学编程，自然语言编程的过程艰难无比，自己懂得技术越多，再加上Claude辅助，才能实现指哪打哪！

@@ -7,6 +7,12 @@ summary: 分享Gemini 2.0体验的一些感受。
 showtoc: true
 ---
 
+## 更新(2025.3.1)
+
+Gemini总结视频看个大概，2.0 Flash更稳定，推理模型可能有输出俄语、不自动调用Youtube扩展等弊端。
+
+---
+
 北京时间2025年2月6日凌晨，Gemini 2.0发布了新的更新[^1]。
 
 ## Gemini App

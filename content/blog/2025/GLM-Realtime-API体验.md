@@ -7,9 +7,19 @@ summary: 分享GLM Realtime API体验感受。
 showtoc: true
 ---
 
+## 更新(2025.3.1)
+
+现在Claude编程能力这么强，直接把官方文档甩给它，和它一起编码，肯定可以快速实现将GLM Realtime API接入你的使用场景，可以借助Cursor、Windsurf这类接入Claude 3.7 Sconnet的AI编辑器来辅助开发。
+
+不要问我关于这个项目的任何信息，这是自然语言编程的产物，俗称Vibe Coding，我对于这个项目一无所知，这个项目完全由Claude 3.5 Sonnet编写，而且还存在诸多Bug。
+
+![Vide Coding解释](https://cdn.sa.net/2025/03/01/eGAXMrRW6S7dq3g.webp)
+
 ## 更新(2025.1.18)
 
 我是🤡，智谱清言App已经上线了Realtime API了，打电话自动就可以让GLM清唱特定的7首歌曲，我属于是后知后觉了😑。
+
+---
 
 ## 背景故事
 
