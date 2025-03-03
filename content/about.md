@@ -32,8 +32,6 @@ WIP：
 - 游戏
 - 编程
 - 折腾VPS【做一名光荣的MJJ】
-    - [主探针](https://status.gujiakai.top)
-    - [副探针](https://tz.gujiakai.top)
 
 ## 近期状况（月更）
 
