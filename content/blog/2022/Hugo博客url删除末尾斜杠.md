@@ -7,6 +7,26 @@ summary: 介绍Hugo博客去除url尾部斜杠的方法。
 showtoc: true
 ---
 
+## 更新(2025.3.4)
+
+最近发现Google貌似把我的站点从Google Search中k掉了，于是乎，我打开了Google Search Console，发现原来我还没有验证网站，但前些年Google还是给了我很大的曝光，感谢Google。
+
+验证了网站后，发现有很大一部分网页存在问题，导致了Google不索引，和Claude对话了几轮后，定位了问题所在，正是由于2022年的这个环境变量设置，导致了sitemap中出现了重复的链接，有带.html的，还有不带的。Google判定了重复，进而不索引这部分不规范的网页链接。
+
+![Google Search Console遇到的issue](https://cdn.sa.net/2025/03/04/kVH3OCTXdSLE41l.webp)
+
+去除了Netlify中的环境变量，并在Hugo博客的head部分添加了以下这部分规范链接代码，希望过一段日子能再次在Google Search中看到站点的回归。
+
+```html
+<link rel="canonical" href="{{ .Permalink }}" />
+```
+
+Hugo默认采用Pretty URL标准挺好的，当初我想保留`.html`这种UGLY URL是因为受到阮一峰老师博客网站的URL启发。
+
+![Hugo默认采用Pretty URL标准](https://cdn.sa.net/2025/03/04/QtKZSNPaAHlUumV.webp)
+
+---
+
 > 注：以下方法仅限于在hugo的config.toml配置文件中添加了`uglyURLs = true`选项，仍不生效的情况。
 > 
 > 如果添加了`uglyURLs = true`选项，url尾部的`/`换成了`.html`，就没必要在环境变量中做文章了。
