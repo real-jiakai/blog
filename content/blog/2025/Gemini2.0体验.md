@@ -7,6 +7,41 @@ summary: 分享Gemini 2.0体验的一些感受。
 showtoc: true
 ---
 
+## 更新(2025.3.13)
+
+Google AI Studio添加了对于Youtube视频的支持。
+
+![Google AI Studio添加了对于Youtube视频的支持](https://cdn.sa.net/2025/03/13/FcyvozwLQhNk8Ka.webp)
+
+感觉是模型原生的视频理解能力，并不是通过Youtube字幕总结实现的。
+
+![Gemini总结Youtube视频实现方式猜想1](https://cdn.sa.net/2025/03/13/OfXaxz27tvsM4Q1.webp)
+
+没字幕的Youtube视频也能理解个大概。
+
+![Gemini总结Youtube视频实现方式猜想2](https://cdn.sa.net/2025/03/13/ckDxO9GbwemALNX.webp)
+
+有些时候不禁怀疑，Gemini理解Youtube视频到底是通过字幕，还是纯原生的视频理解能力。关键该视频压根没字幕。反正Youtube属于Google生态，总结视频摘要属于信手拈来的事情。
+备注：据负责AI Studio的Logan说是原生的视频理解能力。Native Video Understanding!
+
+![Gemini总结Youtube视频实现方式猜想3](https://cdn.sa.net/2025/03/13/Ft2VLhM7O9PNHUq.webp)
+
+没字幕的视频，Monica也能总结。
+
+![没字幕的视频，Monica也能总结](https://cdn.sa.net/2025/03/13/fC5iQsBnZRNbTY2.webp)
+
+与此同时，Gemini 2.0 Flash Experimental添加了原生的图片输出！真正的多模态！
+
+![Gemini 2.0 Flash Experimental添加了原生的图片输出](https://cdn.sa.net/2025/03/13/fJgX9Kc5CI687oT.webp)
+
+![Gemini 2.0 Flash Experimental的文生图是原生的能力](https://cdn.sa.net/2025/03/13/jHfPtvGKxbreE7F.webp)
+
+![Gemini 2.0 Flash Experimental的文生图展示](https://cdn.sa.net/2025/03/13/fSutCvYmGzrFw54.webp)
+
+Native Image Output!
+
+![Native Image Output](https://cdn.sa.net/2025/03/13/N3GAys8j5WnS9kT.webp)
+
 ## 更新(2025.3.1)
 
 Gemini总结视频看个大概，2.0 Flash更稳定，推理模型可能有输出俄语、不自动调用Youtube扩展等弊端。

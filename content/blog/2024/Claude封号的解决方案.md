@@ -7,6 +7,12 @@ summary: 记录一次个人claude账号被封的经历及解决方案。
 showtoc: true
 ---
 
+## 更新（2025.03.13）
+
+![wildcard TG群置顶消息](https://cdn.sa.net/2025/03/13/MW3E4HR6aqoLefs.webp)
+
+看完wildcard TG群里面的置顶消息感慨万千， 确实是这样，要想用海外的AI最好用远程桌面，最好用英文提问，不然太好识别是中国用户了。
+
 ## 更新（2025.01.07）
 
 可能有网友会想为啥不用fuclaude呢。我个人还是更倾向于官方原版，fuclaude也挺好，暂时不打算用。
