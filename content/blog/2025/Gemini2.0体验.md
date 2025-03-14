@@ -7,6 +7,18 @@ summary: 分享Gemini 2.0体验的一些感受。
 showtoc: true
 ---
 
+## 更新(2025.3.14)
+
+昨天晚上，Gemini App更新了Deep Research，将模型由原本的1.5 Pro替换为了2.0 Flash Thinking Experimental。非Advanced用户也能用。目前Advanced用户比免费用户多的一个选项为2.0 Pro Experimental，更聊胜于无了。
+
+![Gemini App更新](https://cdn.sa.net/2025/03/14/KygerzTEPj1FMG2.webp)
+
+Gemini系列模型确实可以完全白嫖，毕竟现在的AI Studio中的2.0 Pro Experimental也支持总结Youtube视频了，而Gemini App中的2.0 Pro Experimental依旧无法与Youtube联动。
+
+[Gemini users can try Deep Research a few times a month at no cost](https://blog.google/products/gemini/new-gemini-app-features-march-2025/). 完全可以白嫖，和Grok一个逻辑，多注册几个账号肯定够用。
+
+![Gemini Deep Research完全可以白嫖](https://cdn.sa.net/2025/03/14/Or5gqhx7uiMptsH.webp)
+
 ## 更新(2025.3.13)
 
 Google AI Studio添加了对于Youtube视频的支持。
