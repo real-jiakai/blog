@@ -9,11 +9,11 @@ showtoc: true
 
 ## 更新(2025.3.19)
 
-昨晚，Gemini App又戳戳戳更新了。
+昨晚，Gemini App又戳戳戳更新了。via: https://blog.google/products/gemini/gemini-collaboration-features/
 
 - Canvas
 
-类似Claude Artifact、ChatGPT Canvas的玩意，ChatGPT的Canvas在今年1月份也支持代码的渲染了。
+类似Claude Artifacts、ChatGPT Canvas的玩意，ChatGPT的Canvas在今年1月份也支持代码的渲染了。
 
 ![Gemini App加入了Canvas](https://cdn.sa.net/2025/03/19/YUDFNhA5foRyLrI.webp)
 
