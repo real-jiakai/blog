@@ -7,9 +7,27 @@ summary: 分享Gemini 2.0体验的一些感受。
 showtoc: true
 ---
 
+## 更新(2025.3.19)
+
+昨晚，Gemini App又戳戳戳更新了。
+
+- Canvas
+
+类似Claude Artifact、ChatGPT Canvas的玩意，ChatGPT的Canvas在今年1月份也支持代码的渲染了。
+
+![Gemini App加入了Canvas](https://cdn.sa.net/2025/03/19/YUDFNhA5foRyLrI.webp)
+
+- Audio Overview
+
+给Gemini加入了NotebookLM里面的Audio Overview功能，还是一如既往地只支持英文播客。
+
+![Gemini App加入了Audio Overview](https://cdn.sa.net/2025/03/19/9WsDw5tzAvVlgyI.webp)
+
+不得不吐槽，为啥Gemini 2.0 Pro还在Exp。Flash模型再加更多的新功能依旧不耐打！预计2.0 Pro在5月份正式蜕去Exp的外衣。
+
 ## 更新(2025.3.14)
 
-昨天晚上，Gemini App更新了Deep Research，将模型由原本的1.5 Pro替换为了2.0 Flash Thinking Experimental。非Advanced用户也能用。目前Advanced用户比免费用户多的一个选项为2.0 Pro Experimental，更聊胜于无了。
+昨天晚上，Gemini App更新了Deep Research【免费用户额度由原本的5次/月变更为了10次/月】，将模型由原本的1.5 Pro替换为了2.0 Flash Thinking Experimental。非Advanced用户也能用。目前Advanced用户比免费用户多的一个选项为2.0 Pro Experimental，更聊胜于无了。
 
 ![Gemini App更新](https://cdn.sa.net/2025/03/14/KygerzTEPj1FMG2.webp)
 
