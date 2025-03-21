@@ -7,6 +7,16 @@ summary: 分享Claude 3.7 Sonnet使用体验。
 showtoc: true
 ---
 
+## 更新(2025.3.21)
+
+Claude支持Web Search了。via: https://www.anthropic.com/news/web-search。
+
+![Claude支持Web Search](https://cdn.sa.net/2025/03/21/OHsnViJU3ZuFpN8.webp)
+
+估计对于AI套壳搜索市场是一大冲击，我之前用Perplexity等AI搜索，主要看中的就是其支持Claude模型。
+
+可能在有些方面这些AI套壳搜索比Claude原生搜索更有优势，多对比用用，方能更好地把握各自的优劣。
+
 ## 更新(2025.3.1)
 
 建议优先选择Normal模式，Extended思考模式只有在Normal模式无法解决时再采用。推理模型擅长的领域：数学、编码、逻辑，其余的领域，推理模型比不上经典LLM。比如你让Claude写作，Extended模式绝对会大打折扣，写出来的文字没有Normal模式有创意。其余LLM也是一个道理，优先采用经典LLM，只有经典LLM无法解决时，再考虑推理模型。
