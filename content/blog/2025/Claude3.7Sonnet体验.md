@@ -7,6 +7,10 @@ summary: 分享Claude 3.7 Sonnet使用体验。
 showtoc: true
 ---
 
+## 更新(2025.3.25)
+
+生产力还得是ChatGPT和Claude，文中所言OpenAI已死纯属是玩笑话。写代码注释，我还是更倾向于OpenAI的o3-mini-high模型，而且新上的GPT-4.5在一些概念阐述方面也具有更优秀的回复。
+
 ## 更新(2025.3.21)
 
 Claude支持Web Search了。via: https://www.anthropic.com/news/web-search。

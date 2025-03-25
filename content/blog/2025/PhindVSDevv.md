@@ -7,6 +7,10 @@ summary: 分享AI编程搜索Phind和Devv的体验。
 showtoc: true
 ---
 
+## 更新(2025.3.25)
+
+在有Claude Pro的前提下，也不能说Devv冗余吧。其实面对编程中的一些陌生函数，我目前更倾向于向Devv提问，Devv检索互联网，搭配上Claude 3.7 Sonnet Thinking模型给我答疑解惑。
+
 ## 故事背景
 
 在2月底，我订阅了Phind，再此之后，又订阅了Devv。使用快接近1个月了，特分享一下两款软件的个人体验感受。
