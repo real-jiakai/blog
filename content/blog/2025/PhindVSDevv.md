@@ -9,7 +9,9 @@ showtoc: true
 
 ## 更新(2025.3.25)
 
-在有Claude Pro的前提下，也不能说Devv冗余吧。其实面对编程中的一些陌生函数，我目前更倾向于向Devv提问，Devv检索互联网，搭配上Claude 3.7 Sonnet Thinking模型给我答疑解惑。
+在有Claude Pro的前提下，也不能说Devv冗余吧。面对一些需要联网查询的编程问题，我一般会直接向Devv提问，Devv检索互联网，搭配上Claude 3.7 Sonnet Thinking模型给我答疑解惑。
+
+Devv体验真心不错，推荐有经济条件，无法开Claude Pro，但想用Claude模型的小伙伴们开通。下午写文章时，语言可能有些过于偏颇了，下个月Devv的续费可能会继续，但Phind的会员已经取消了。
 
 ## 故事背景
 
