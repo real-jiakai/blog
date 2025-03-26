@@ -1,6 +1,6 @@
 ---
 title: "Phind VS Devv"
-date: 2025-03-22T14:21:17+08:00
+date: 2025-03-25T14:21:17+08:00
 tags: ['ai', '编程', '搜索','phind','devv']
 slug: "phind-vs-devv"
 summary: 分享AI编程搜索Phind和Devv的体验。

@@ -7,6 +7,10 @@ summary: 分享Gemini 2.0体验的一些感受。
 showtoc: true
 ---
 
+## 更新(2025.3.26)
+
+Gemini 2.5 Pro都出来了，2025年模型大乱斗开始了。
+
 ## 更新(2025.3.19)
 
 昨晚，Gemini App又戳戳戳更新了。via: https://blog.google/products/gemini/gemini-collaboration-features/
