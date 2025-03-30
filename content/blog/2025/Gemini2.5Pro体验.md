@@ -25,6 +25,7 @@ Google为了推Gemini 2.5 Pro直接在AI Studio中下架了`gemini-2.0-pro-exp-0
 
 - 缺少Gemini 2.5 Pro的Canvas功能
 - 速率受到限制【比如Deep Research免费用户每月额度为10次】
+- 上下文窗口限制
 
 ![Gemini App免费用户存在速率限制](https://cdn.sa.net/2025/03/30/ov4QK7AGnaXhWpP.webp)
 
