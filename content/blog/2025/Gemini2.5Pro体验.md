@@ -44,13 +44,13 @@ Google的这些举措有助于更快地获取用户，同时也能展示其最�
 
 ![OpenAI的GPT-4o原生文生图抢去了部分Gemini 2.5 Pro的热度](https://cdn.sa.net/2025/03/30/UhOHNokEIBlDKwf.webp)
 
-不由得感慨：OpenAI真是小人，每次发布都跟谷歌踩点，又一次抢去了部分Gemini 2.5 Pro的热度。GPT-4o的原生文生图能力也确实牛逼，用过的都说好。越来越期待看到5月份的GPT-5发布遇上Gemini 2.5 Pro正式发布的场面。
+不由得感慨：OpenAI真是小人，每次发布都跟谷歌踩点，又一次抢去了部分Gemini的热度。GPT-4o的原生文生图能力也确实牛逼，用过的都说好。越来越期待看到5月份的GPT-5发布遇上Gemini 2.5 Pro正式发布的场面。
 
 一开始，我因Gemini 2.5 Pro是推理模型，并没有对其过多关注，日常我的推理模型的使用场景有限：使用OpenAI的o3-mini-high来写代码注释；一些数学相关的问题，询问元宝中的DeepSeek R1来解答【耐想王—DeepSeek R1的数学能力确实挺牛，更适合中国宝宝体质，有些数学问题只有DeepSeek R1能给出较为准确的解答】；偶尔用Claude 3.7 Sonnet Thinking尝试Claude 3.7 Sonnet无法解决的问题。
 
 ![DeepSeek R1的数学能力确实挺牛！](https://cdn.sa.net/2025/03/30/BCK4Ppon2XNaqdr.webp)
 
-不要低估Gemini App中的Gemini 2.5 Pro，毕竟App中的Gemini 2.5 Pro可以使用`Browse`、`Youtube`等工具，AI Studio中的Grounding With Google Search是远远比不了的，尽管Gemini App中的模型可能是经过了对话优化(chat optimized)版本以及App中或多或少存在的用户体验糟糕的地方。
+不要低估Gemini App中的Gemini 2.5 Pro，毕竟App中的Gemini 2.5 Pro可以使用`Browse`、`Youtube`等工具，AI Studio中的Grounding With Google Search是远远比不了的，尽管Gemini App中的模型可能是经过了对话优化(chat optimized)版本以及App中或多或少存在用户体验糟糕的地方。
 
 下图让Gemini 2.5 Pro模型总结我的Gemini 2.0体验博文，Gemini App中的模型通过调用`Browse`工具总结了文章的摘要，而AI Studio中的模型由于缺少该工具，总结失败。
 
