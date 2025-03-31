@@ -7,6 +7,14 @@ summary: 分享Gemini 2.5 Pro体验的一些感受。
 showtoc: true
 ---
 
+## 更新(2025.3.31)
+
+昨晚睡前想起来之前看过的一个证明Gemini 2.5 Pro上下文能力的测评。via: https://fiction.live/stories/Fiction-liveBench-Mar-25-2025/oQdzQvKHw8JyXbN87
+
+![Gemini 2.5 Pro在长上下文中依旧保持非常高的理解准确率。](https://cdn.sa.net/2025/03/31/2qGIdehFfkVoza3.webp)
+
+可以参见Gemini App中Gemini 2.5 Pro对于文章的解析，Gemini 2.5 Pro在长上下文中依旧保持非常高的理解准确率。
+
 ## 前言
 
 北京时间2025年3月26日凌晨，Google发布了Gemini 2.5 Pro模型[^1]。距离我上一次写Gemini的博文才过去了一个多月的时间，不由得感慨LLM模型的迭代速度。
