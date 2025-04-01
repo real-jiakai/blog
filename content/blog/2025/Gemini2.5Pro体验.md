@@ -7,6 +7,14 @@ summary: 分享Gemini 2.5 Pro体验的一些感受。
 showtoc: true
 ---
 
+## 更新(2025.4.1)
+
+![Gemini 2.5 Pro的canvas对于所有用户开放](https://cdn.sa.net/2025/04/01/8XqbknwSZGKozTD.webp)
+
+前脚OpenAI的Sama宣布GPT-4o的原生文生图对所有用户开放，后脚Google的Sundar Pichai宣布 Gemini 2.5 Pro的Canvas功能对所有用户开放。via: https://x.com/sundarpichai/status/1906874604683137285
+
+上半年最激烈的大模型大乱斗已然拉开了帷幕，4、5、6月份会很有趣。总感觉Google的Gemini模型对于RAG研究会产生一定的冲击，上下文窗口大且注意力衰减幅度远远小于其余模型。
+
 ## 更新(2025.3.31)
 
 昨晚睡前想起来之前看过的一个证明Gemini 2.5 Pro上下文能力的测评。via: https://fiction.live/stories/Fiction-liveBench-Mar-25-2025/oQdzQvKHw8JyXbN87
