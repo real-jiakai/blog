@@ -7,6 +7,15 @@ summary: 分享Gemini 2.5 Pro体验的一些感受。
 showtoc: true
 ---
 
+## 更新(2025.4.2)
+
+深度使用了Gemini App，体验确实不错。写的代码注释挺好、日常解答也够用。
+
+但建议尽量用英文提问，特别是涉及到需要Gemini调用搜索工具时，我发现用中文提问涉及到搜索时，Gemini常常会模拟搜索，
+但实际上并没有进行搜索。不精通英文的小伙伴，可以搭配上沉浸式翻译来进行使用：敲击三个空格一键将提问转换为英文+网页英译中。
+
+![Gemini App中文提问，Gemini常常会模拟搜索，但实际上并没有进行搜索。](https://cdn.sa.net/2025/04/02/HzBONDaxnc6dgil.webp)
+
 ## 更新(2025.4.1)
 
 ![Gemini 2.5 Pro的canvas对于所有用户开放](https://cdn.sa.net/2025/04/01/8XqbknwSZGKozTD.webp)
