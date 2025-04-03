@@ -7,6 +7,16 @@ summary: 分享自建Kasm Workspaces的经历。
 showtoc: true
 ---
 
+## 更新(2025.4.3)
+
+其实这种方案的体验是不如远程windows桌面的，就算是机房IP，远程Windows桌面的代理特征基本上就只有IP类型有问题，其余的特征都会被消除。
+而且如果是加州的机器，延迟也低，体验较好。复制图片、上传文件啥的，比Kasm Workspaces方便多了。
+
+Kasm Workspaces比较适合不想将VPS搞成Windows且想以较好伪装形式去使用AI的小伙伴使用，在东八区的电脑上使用海外AI，万一哪一天就被遥测到了。
+分流不是万能的，指纹浏览器感觉也差点意思。
+
+![远程桌面是最好的解决方案](https://cdn.sa.net/2025/04/03/W1HzaxjCUeugF8P.webp)
+
 ## 背景
 
 第一次接触使用Kasm Workspaces是在2023年，当时在HostHatch一台新加坡的机器上搭建了非Docker版本，但并没有细究，仅仅是搭建了，尝试了Kasm Workspaces中的各种各样Workspaces，比如Chrome、Ubuntu桌面等。

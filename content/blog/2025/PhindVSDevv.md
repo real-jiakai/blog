@@ -136,7 +136,7 @@ Phind据说还有VS Code扩展，懒得安装体验，现在的AI编程扩展在
 
 ![2025年3月25日下午Hacker News实时讯息](https://cdn.sa.net/2025/03/25/pPKSEzasgiJxhQL.webp)
 
-我承认Anthropic官方给Claude加了搜索的确提升了Claude的能力，但也必须指出其存在的缺陷。有些时候也感叹，Claude的最强形态应该是Claude Desktop+MCP Google Search/Kagi Search/其余高质量搜索引擎吧。
+我承认Anthropic官方给Claude加了搜索的确提升了Claude的能力，但也必须指出其存在的缺陷。有些时候也感叹，Claude的最强形态应该是Claude Desktop+MCP Google Search/Kagi Search/SearXNG/其余高质量搜索引擎吧。
 
 ![Mistral AI搜索也是集成的Brave Search](https://cdn.sa.net/2025/03/25/R9WLd3Z45OVJGBn.webp)
 
