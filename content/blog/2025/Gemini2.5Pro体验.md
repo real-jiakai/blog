@@ -7,6 +7,20 @@ summary: 分享Gemini 2.5 Pro体验的一些感受。
 showtoc: true
 ---
 
+## 更新(2025.4.3)
+
+AI Studio中的Gemini 2.0 Pro的实验模型已经无了，据L站网友说，目前Vertex AI中还保留，但我个人测试时发现，Vertex AI中的Gemini 2.0 Pro实验版出现了思维链，估计也是被Gemini 2.5 Pro实验版所替换了，名字可能一时半会还保留着。
+
+via: https://ai.google.dev/gemini-api/docs/models#gemini-2.5-pro-exp-03-25
+
+![Gemini 2.5 Pro实验版替换了Gemini 2.0 Pro实验版](https://cdn.sa.net/2025/04/03/NFdEfOgMZ4xKRC9.webp)
+
+![Vertex AI中的Gemini 2.0 Pro实验版出现了思维链](https://cdn.sa.net/2025/04/03/bU1x39ADryLWfuC.webp)
+
+短命的Gemini 2.0 Pro实验版。未来的GPT-5、Gemini 2.5 Pro【估计是在今年5月下旬的Google IO开发者大会这个时间点发布，可能OpenAI会再次与Google竞相发布】可能都将是结合推理和经典LLM的模型，不再需要人为地进行切换。如果遇到不需要推理的提问，就用经典LLM模型进行回复；如果遇到需要推理的场景，则启用思维链。
+
+![Gemini 2.5 Pro也将是一款非推理模型](https://cdn.sa.net/2025/04/03/5b42nmMQJsBLfIV.webp)
+
 ## 更新(2025.4.2)
 
 深度使用了Gemini App，体验确实不错。写的代码注释挺好、日常解答也够用。
