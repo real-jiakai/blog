@@ -7,6 +7,42 @@ summary: 分享Gemini 2.5 Pro体验的一些感受。
 showtoc: true
 ---
 
+## 更新(2025.4.5)
+
+- OpenAI延迟GPT-5发布
+
+OpenAI延迟了GPT-5的发布，大概率的原因就是Gemini 2.5 Pro已经达到了GPT-5级别，目前OpenAI整合的GPT-5无法压倒所有的基准测试，无法力压Gemini 2.5 Pro。
+
+试想一下，如果你是Sam Altman，你会允许发布的GPT-5没有做到各方面的遥遥领先？个人预计GPT-5发布的时间在于OpenAI真的开发出了一款能够压倒所有基准测试的模型，要不然GPT-5就永远是一张饼。
+
+![OpenAI推迟GPT-5发布](https://cdn.sa.net/2025/04/05/B5Ups43N9Ghgkoz.webp)
+
+继续发布推理模型是OpenAI苟延残喘的写照，虽然前一阵子发布的GPT-4o原生文生图确实牛逼，但OpenAI基础的非推理模型方面的迭代，个人认为已经有些差强人意了。
+
+面向基准测试开发模型是一个大忌，个人非常欣赏Anthropic面向实际需求开发模型的做法，这才是开发LLM模型的正确姿势。用户体验好了，不怕没人用，就算目前Claude在各大基准测试上已经不再位居榜首，但它较好的用户体验永远吸引着我，目前为止，Agent底层模型较好的选择也是Claude。
+
+最近看了很多有关Gemini 2.5 Pro的文章，概括起来就是Gemini 2.5 Pro最具性价比，可以说是目前最强的模型（LLM之王），价格也控制在较为合理的区间。
+
+别看我貌似一直在在夸Claude，其实Claude也不是万能的，目前的LLM各有千秋。
+
+- Gemini 2.5 Pro推出付费预览版
+
+ID为`gemini-2.5-pro-exp-03-25`的实验模型继续免费提供，ID为`gemini-2.5-pro-preview-03-25`的预览模型开启付费预览，价格相较于OpenAI和Anthropic更具竞争力。具体可参考Simon Willison大神的博文—[Gemini 2.5 Pro Preview pricing](https://simonwillison.net/2025/Apr/4/gemini-25-pro-pricing/)。
+
+![Gemini 2.5 Pro Preview定价](https://cdn.sa.net/2025/04/05/wbUACoZfSXOxp28.webp)
+
+- Gemini 2.0 Pro不复存在
+
+via: https://x.com/OfficialLoganK/status/1908179750536827183
+
+![Gemini 2.0 Pro不复存在](https://cdn.sa.net/2025/04/05/G2hbx3vUAaXFTmO.webp)
+
+## 更新(2025.4.4)
+
+我的Gemini App也拿到了Gemini Live Camera的功能，还是那句话，中文领域的语音看豆包，Gemini Live Camera用英文互动体验较好，中文体验不咋滴。现阶段Gemini App语音转中文貌似都不支持就别指望搭配上Live Camera能有多好的体验了，流利的英文口语表达是获得Gemini Live Camera较好体验的前提！
+
+![Gemini Live Camera差点意思](https://cdn.sa.net/2025/04/05/ZrYlJLCRDx9Pb1S.webp)
+
 ## 更新(2025.4.3)
 
 - Gemini 2.0 Pro实验模型下线
