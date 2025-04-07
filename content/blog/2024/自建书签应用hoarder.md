@@ -1,11 +1,23 @@
 ---
-title: "自建书签应用Hoarder"
+title: "自建书签应用—Karakeep(原Hoarder)"
 date: 2024-10-05T15:53:21+08:00
 tags: ["bookmark"]
 slug: "self-hosted-bookmark-app-hoarder"
-summary: 分享自建书签应用Hoarder的经验。
+summary: 分享自建书签应用Karakeep(原Hoarder)的经验。
 showtoc: true
 ---
+
+## 更新(2025.4.7)
+
+hoarder应用更名为了karakeep。由于商标纠纷，开发者被迫更名重塑品牌。
+
+相关链接:
+
+- https://www.reddit.com/r/selfhosted/comments/1i29pi1/hoarder_the_name_is_being_stolen_from_me/
+
+- https://lemmy.world/post/27844912
+
+- https://github.com/karakeep-app/karakeep
 
 ## 背景故事
 
