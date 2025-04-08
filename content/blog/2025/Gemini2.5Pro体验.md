@@ -7,6 +7,12 @@ summary: 分享Gemini 2.5 Pro体验的一些感受。
 showtoc: true
 ---
 
+## 更新(2025.4.8)
+
+Gemini Live进一步向安卓用户推出。中文音色方面不咋滴。但Gemini 2.5 Pro模型能力出众。
+
+via: https://blog.google/products/gemini/gemini-live-android-tips/
+
 ## 更新(2025.4.5)
 
 - OpenAI延迟GPT-5发布
