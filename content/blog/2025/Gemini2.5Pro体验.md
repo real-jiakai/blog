@@ -9,7 +9,7 @@ showtoc: true
 
 ## 更新(2025.4.8)
 
-Gemini Live进一步向安卓用户推出。中文音色方面不咋滴。但Gemini 2.5 Pro模型能力出众。
+Gemini Live进一步向安卓用户推出。中文音色方面不咋滴，但Gemini 2.5 Pro模型能力出众。
 
 via: https://blog.google/products/gemini/gemini-live-android-tips/
 
