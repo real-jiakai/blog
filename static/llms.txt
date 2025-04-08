@@ -12,6 +12,9 @@
 
 ## Content
 
+- [自建Kasm Workspaces](https://blog.gujiakai.top/2025/03/self-hosted-kasm-workspaces/): 分享自建Kasm Workspaces的经历。
+- [Gemini 2.5 Pro体验](https://blog.gujiakai.top/2025/03/gemini-2-5-pro-experience/): 分享Gemini 2.5 Pro体验的一些感受。
+- [Phind VS Devv](https://blog.gujiakai.top/2025/03/phind-vs-devv/): 分享AI编程搜索Phind和Devv的体验。
 - [Claude 3.7 Sonnet体验](https://blog.gujiakai.top/2025/02/claude-3-7-sonnet-experience/): 分享Claude 3.7 Sonnet使用体验。
 - [Gemini 2.0 体验](https://blog.gujiakai.top/2025/02/gemini-2-0-experience/): 分享Gemini 2.0体验的一些感受。
 - [豆包实时语音能唱的不跑调歌曲](https://blog.gujiakai.top/2025/01/doubao-real-time-on-pitch-songs/): 分享豆包实时语音能唱的不跑调歌曲。
