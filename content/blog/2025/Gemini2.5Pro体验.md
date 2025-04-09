@@ -7,6 +7,10 @@ summary: 分享Gemini 2.5 Pro体验的一些感受。
 showtoc: true
 ---
 
+## 更新(2025.4.9)
+
+Gemini App Deep Research由最强大的Gemini 2.5 Pro模型所驱动，Gemini Advanced用户可以体验到。
+
 ## 更新(2025.4.8)
 
 - Gemini Live进一步向安卓用户推出
@@ -19,7 +23,7 @@ via: https://blog.google/products/gemini/gemini-live-android-tips/
 
 看了很多网友对于Gemini 2.5 Pro的溢美之词，以及结合自身的感受。感觉Gemini 2.5 Pro在编码方面的造诣确实有超越Claude 3.7 Sonnet的趋势，综合来看，Gemini 2.5 Pro已经遥遥领先，不仅横扫各大基准测试，而且用户体验也是一绝。
 
-Gemini 2.5 Pro和Claude 3.7 Sonnet双持，绝对是当下的最优解【由于Gemini 2.5 Pro目前是一款推理模型，推理模型擅长的领域: 逻辑、代码、数学，故其余的一些方面依旧还是不能轻视Claude 3.7 Sonnet的，此外Anthropic不是面向基准测试开发模型，而是基于实际需求，这一点造成了大众对于Claude的低估！】。未来最逼近AGI形态的AI看起来很有可能真的是Gemini，OpenAI的o3和o4-mini我一点都不期待，很有可能是一坨大的，跑分很牛，但实际体验很糟糕。
+Gemini 2.5 Pro和Claude 3.7 Sonnet双持，绝对是当下的最优解【由于Gemini 2.5 Pro目前是一款推理模型，推理模型擅长的领域: 逻辑、代码、数学，故其余的一些方面依旧还是不能轻视Claude 3.7 Sonnet的，此外Anthropic不是面向基准测试开发模型，而是基于实际需求，这一点造成了大众对于Claude的低估！】。未来最逼近AGI形态的AI看起来很有可能真的是Gemini。
 
 ![未来最逼近AGI形态的AI很有可能是Gemini](https://cdn.sa.net/2025/04/08/d2mbDXvUN4cIGqC.webp)
 
