@@ -7,9 +7,21 @@ summary: 分享Gemini 2.5 Pro体验的一些感受。
 showtoc: true
 ---
 
+## 更新(2025.4.10)
+
+预计未来AI竞争格局，Google的领先优势会越来越大。
+
+![预计未来AI竞争格局，Google的领先优势会越来越大。](https://cdn.sa.net/2025/04/10/Bt3U1QOFSJNMfP8.webp)
+
+当OpenAI推出高昂的Pro套餐、Anthropic步OpenAI的老路推出昂贵的Max套餐，而Google则继续提供免费白嫖最强大的LLM服务，付费的Gemini Advanced会员除了近乎无限制用外，还包含Google One等一系列服务，这性价比显而易见。
+
+![OpenAI和Anthropic破坏AI平权化](https://cdn.sa.net/2025/04/10/riOslXFdo6kB8WC.webp)
+
 ## 更新(2025.4.9)
 
 Gemini App Deep Research由最强大的Gemini 2.5 Pro模型所驱动，Gemini Advanced用户可以体验到。
+
+![](https://cdn.sa.net/2025/04/10/Vkp1jHINXAO38tE.webp)
 
 ## 更新(2025.4.8)
 
@@ -161,6 +173,8 @@ Google的这些举措有助于更快地获取用户，同时也能展示其最�
 ![DeepSeek R1的数学能力确实挺牛！](https://cdn.sa.net/2025/03/30/BCK4Ppon2XNaqdr.webp)
 
 不要低估Gemini App中的Gemini 2.5 Pro，毕竟App中的Gemini 2.5 Pro可以使用`Browse`、`Youtube`等工具，AI Studio中的Grounding With Google Search是远远比不了的，尽管Gemini App中的模型可能是经过了对话优化(chat optimized)版本以及App中或多或少存在用户体验糟糕的地方。
+
+我日常询问Gemini时，会给Advanced和AI Studio都发送一份问题，对比择优采纳。
 
 下图让Gemini 2.5 Pro模型总结我的Gemini 2.0体验博文，Gemini App中的模型通过调用`Browse`工具总结了文章的摘要，而AI Studio中的模型由于缺少该工具，总结失败。
 
