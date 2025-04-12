@@ -7,6 +7,10 @@ summary: 记录自己使用Gemini Advanced的体验感受。
 showtoc: true
 ---
 
+## 更新【2025/4/12】
+
+在目前这个节骨眼上【2025年4月12日】，Gemini Advanced是绝对值得付费的。具体见我的博文[Gemini 2.5 Pro体验](https://blog.gujiakai.top/2025/03/gemini-2-5-pro-experience/)，觉得贵，可以淘宝、咸鱼买月抛号解决，我看到L站一些小伙伴就是这样低成本获取Gemini Advanced的。
+
 ## 更新【2025/1/30】
 
 结合过去几个月的使用体验，Gemini Advanced最主要的卖点还是用Gemini 1.5 Pro模型来总结Youtube视频，其余的感觉各方面都差点意思，使用体验不如Google AI Studio。而且这种视频总结也是基于字幕的，并不是模型多模态能力强，理解了视频，下文提及总结了一个无字幕的视频表述欠妥。无字幕、涉及Trump的视频基本上都无法总结摘要。
