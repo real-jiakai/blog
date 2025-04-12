@@ -11,7 +11,7 @@ showtoc: true
 
 Gemini Advanced中的2.5 Pro应该不是聊天优化版本，非常推荐小伙伴们开通Google One AI Premium套餐，个人体验了这么久，Gemini Advanced体验比之前出色多了。
 
-想低成本持续用Gemini Advanced，可以淘宝、咸鱼买月抛号，我看L站一些小伙伴就是这样子搞的。
+想低成本持续用Gemini Advanced，可以淘宝、咸鱼买月抛号，我看L站一些小伙伴就是这样子搞的。我目前的Google One AI Premium套餐是美国教育邮箱验证后的9.9刀/月。具体见[Google One Student Discount](https://one.google.com/explore-plan/ai-premium-student)。最近挺多美国教育邮箱学生优惠的AI活动，1刀/月的Claude会员、免费2个月的ChatGPT Plus、免费两个月的Super Grok，美国4大前沿AI都可以低成本白嫖。
 
 Gemini Advanced、AI Studio、Vertex AI Studio三个地方的2.5 Pro模型都可以对比用用。就比如下午我让三处地方的2.5 Pro写代码注释【将近千行，是Colab直接下载下来的Python文件中的代码】，Gemini Advanced表现最佳，Vertex AI输出一大串后直接报错了，AI Studio输出一大串后，直接出现了代码块包裹问题，备注：每次最优回复的出处不一定】。目前写代码注释我开始倾向于Gemini 2.5 Pro了，OpenAI的o3-mini-high感觉不得劲。
 
