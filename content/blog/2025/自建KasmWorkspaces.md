@@ -7,9 +7,15 @@ summary: 分享自建Kasm Workspaces的经历。
 showtoc: true
 ---
 
+## 更新(2025.4.15)
+
+无缝剪贴板支持图片直接从本地的剪贴板复制到Kasm Workspaces中的Chrome浏览器中，附加图片这类操作无需像下文所述那般通过上传文件来实现。
+
+![无缝剪贴板支持图片直接从本地的剪贴板复制到Kasm Workspaces中的Chrome浏览器中](https://cdn.sa.net/2025/04/15/XhQre1ZIlTD5up3.webp)
+
 ## 更新(2025.4.3)
 
-其实这种方案的体验是不如远程windows桌面的，就算是机房IP，远程Windows桌面的代理特征基本上就只有IP类型有问题，其余的特征都会被消除。
+其实这种方案的体验是不如远程Windows桌面的，就算是机房IP，远程Windows桌面的代理特征基本上就只有IP类型有问题，其余的特征都会被消除。
 而且如果是加州的机器，延迟也低，体验较好。复制图片、上传文件啥的，比Kasm Workspaces方便多了。
 
 Kasm Workspaces比较适合不想将VPS搞成Windows且想以较好伪装形式去使用AI的小伙伴使用，在东八区的电脑上使用海外AI，万一哪一天就被遥测到了。
