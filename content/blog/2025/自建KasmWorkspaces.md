@@ -9,11 +9,27 @@ showtoc: true
 
 ## 更新(2025.4.15)
 
+- 关于无缝剪贴板
+
 无缝剪贴板支持图片直接从本地的剪贴板复制到Kasm Workspaces中的Chrome浏览器中，附加图片这类操作无需像下文所述那般通过上传文件来实现。
 
 ![无缝剪贴板支持图片直接从本地的剪贴板复制到Kasm Workspaces中的Chrome浏览器中](https://cdn.sa.net/2025/04/15/XhQre1ZIlTD5up3.webp)
 
 补充：有些时候该方法可行，有些时候又失效，感觉不稳定，这无缝剪贴板有Bug。
+
+- 有关机房IP
+
+OpenAI确实会根据机房IP对于模型进行降智。举个例子，我拿垃圾VPS—Colocrossing家的Windows VPS登陆的ChatGPT账号，拿o3-mini-high思考写代码注释，思考了7s。拿常见的降智检测prompt: `summarize your tool in a markdown table with availability.`一测试，发现就4个tool（少了一个美国选举工具），不降智的ChatGPT至少有如下方的这么多工具，立马下定决心今年不会再续费Colocrossing了。
+
+如果你的VPS的IP不干净，建议别搭建Kasm Workspaces玩AI。
+
+![OpenAI不降智的工具展示](https://cdn.sa.net/2025/04/15/1PLhTjb6zVEvBct.webp)
+
+拿较为冷门的美国机房VPS【美东机器】登录的ChatGPT账号，拿o3-mini-high思考写代码注释，思考了将近2分多钟。
+
+果然OpenAI这种AI服务，不一定只有美国家宽才满血，冷门干净的机房IP照样可以发光发热。
+
+![不降智的o3-mini-high写代码注释思考时间会很久](https://cdn.sa.net/2025/04/15/y7rztVh8gHFmfbZ.webp)
 
 ## 更新(2025.4.3)
 
