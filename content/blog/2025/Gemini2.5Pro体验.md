@@ -7,6 +7,10 @@ summary: 分享Gemini 2.5 Pro体验的一些感受。
 showtoc: true
 ---
 
+## 更新(2025.4.15)
+
+Gemini 2.5 Pro也有很多槽点，让推理模型写代码注释，推理模型会改动原本的代码。虽然Gemini 2.5 Pro横扫了几乎所有的基准测试，但推理模型总感觉还是略微差点意思，希望早日见到Gemini系列的最新版强悍的非推理模型。正好今天OpenAI的GPT-4.1出来了，日常学习还是优先考虑非推理模型，如Claude 3.7 Sonnet、GPT-4.1。个人觉得，推理模型是刷榜用的，非推理模型才是日常学习用的。
+
 ## 更新(2025.4.12)
 
 Gemini Advanced中的2.5 Pro应该不是聊天优化版本，非常推荐小伙伴们开通Google One AI Premium套餐，个人体验了这么久，Gemini Advanced体验比之前出色多了。

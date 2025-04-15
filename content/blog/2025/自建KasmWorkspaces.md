@@ -13,6 +13,8 @@ showtoc: true
 
 ![无缝剪贴板支持图片直接从本地的剪贴板复制到Kasm Workspaces中的Chrome浏览器中](https://cdn.sa.net/2025/04/15/XhQre1ZIlTD5up3.webp)
 
+补充：有些时候该方法可行，有些时候又失效，感觉不稳定，这无缝剪贴板有Bug。
+
 ## 更新(2025.4.3)
 
 其实这种方案的体验是不如远程Windows桌面的，就算是机房IP，远程Windows桌面的代理特征基本上就只有IP类型有问题，其余的特征都会被消除。
