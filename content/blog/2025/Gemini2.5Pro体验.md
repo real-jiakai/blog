@@ -7,6 +7,22 @@ summary: 分享Gemini 2.5 Pro体验的一些感受。
 showtoc: true
 ---
 
+## 更新(2025.4.16)
+
+Veo2逐步向Gemini App中的Advanced用户推出，Veo2在AI Studio中全面推出。
+
+via:
+
+- https://developers.googleblog.com/en/veo-2-video-generation-now-generally-available/
+
+- https://blog.google/products/gemini/video-generation/
+
+早上整理邮件，发现Google又送了我三个月的Gemini Advanced会员。之前这个老号已经试用过Gemini Advanced会员了。只能说Google的产品实在是太实惠了。虽然隐私做得差，免费用的聊天数据都会被用于改进Gemini，但确实物美价廉。相较于OpenAI和Anthropic简直太划算了。
+
+Claude今天推出Research功能，看了演示和新功能不再对Pro用户开放后，我摇了摇头，步OpenAI的老路就是在自掘坟墓，希望Gemini早日把这两家全部打死！
+
+![Google又送了我三个月的Gemini Advanced会员](https://cdn.sa.net/2025/04/16/jZXtqgCT3uP6BAh.webp)
+
 ## 更新(2025.4.15)
 
 Gemini 2.5 Pro也有槽点，让推理模型写代码注释，推理模型会改动原本的代码。
