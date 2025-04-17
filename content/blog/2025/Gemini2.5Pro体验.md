@@ -7,6 +7,18 @@ summary: 分享Gemini 2.5 Pro体验的一些感受。
 showtoc: true
 ---
 
+## 更新(2025.4.17)
+
+- Gemini App中的Gemini 2.0 Flash和2.5 Pro支持Latex渲染
+
+via: https://x.com/joshwoodward/status/1912300138074444095
+
+![Gemini App中的Gemini 2.0 Flash和2.5 Pro支持Latex渲染](https://cdn.sa.net/2025/04/17/UjvGpK7ZSMwEhNr.webp)
+
+- Gemini Live开始向所有的安卓用户逐步推送
+
+via: https://x.com/GeminiApp/status/1912591827087315323
+
 ## 更新(2025.4.16)
 
 Veo2逐步向Gemini App中的Advanced用户推出，Veo2在AI Studio中全面推出。
