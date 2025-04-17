@@ -7,6 +7,12 @@ summary: 分享ChatGPT o3、o4 mini体验感受。
 showtoc: true
 ---
 
+## 更新(2025.4.17)
+
+补充一些看到的较好的测评内容。
+
+- [【原创长文】关于GPT-O3，O3-Pro，O4-mini和4.1，你想知道的一切：Livebench，Aider编程，SimpleBench全部登顶，免费试用渠道【长期更新】](https://linux.do/t/topic/566707)
+
 ## 更新简介
 
 - 使用限制
