@@ -7,6 +7,32 @@ summary: 分享Gemini 2.5 Pro体验的一些感受。
 showtoc: true
 ---
 
+## 更新(2025.4.18)
+
+这篇文章就用于记录Gemini 2.5系列模型的更新笔记了。
+
+- Gemini 2.5 Flash早期预览版发布
+
+Google的第一款混合推理模型，开发者可通过`thinking_budget`参数调整模型的思考深度。
+
+AI Studio、Vertex AI、Gemini App均可用。其中在Gemini App中，2.5 Flash替代了原本的2.0 Flash Thinking。
+
+![在Gemini App中，2.5 Flash替代了原本的2.0 Flash Thinking](https://cdn.sa.net/2025/04/18/3YsIZBqWhkTbDFO.webp)
+
+AI Studio中的定价策略，可参考ChatGPT o4-mini-high的解析【不一定准确，一般绑卡用户使用preview模型要注意是否收费】。我一般都是拿没绑卡的AI Studio账号体验的，就怕被收费，自己绑卡的AI Studio账号只有在需要调用API批量处理数据时再使用。
+
+![ChatGPT o4-mini-high有关gemini 2.5 flash ai studio定价策略解析](https://cdn.sa.net/2025/04/18/4j32QwJZMdclSIO.webp)
+
+我肯定不会优先考虑用2.5 Flash，毕竟目前Gemini 2.5 Pro才是Gemini系列最强的模型。
+
+via: 
+
+1. https://developers.googleblog.com/en/start-building-with-gemini-25-flash/
+
+2. https://blog.google/products/gemini/gemini-2-5-flash-preview/
+
+3. https://simonwillison.net/2025/Apr/17/start-building-with-gemini-25-flash/
+
 ## 更新(2025.4.17)
 
 - Gemini App中的Gemini 2.0 Flash和2.5 Pro支持Latex渲染

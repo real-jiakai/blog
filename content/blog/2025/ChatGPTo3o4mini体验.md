@@ -7,6 +7,22 @@ summary: 分享ChatGPT o3、o4 mini体验感受。
 showtoc: true
 ---
 
+## 更新(2025.4.18)
+
+- 上下文抗衰减能力
+
+o3这强悍的上下文抗衰减能力，超越Gemini 2.5 Pro，还得是老大哥OpenAI，遥遥领先。能无限用o3的Pro用户估计o4-mini-high看都不会看一眼。再过几周o3-pro都出了。
+
+![OpenAI o3夸张的上下文抗衰减能力](https://cdn.sa.net/2025/04/17/GPurxLq3o5Nk9Qt.webp)
+
+via: [Fiction.liveBench April 17 2025](https://fiction.live/stories/Fiction-liveBench-Mar-25-2025/oQdzQvKHw8JyXbN87)
+
+- 日常使用选择
+
+其实不是很复杂的问题，可以优先考虑o4-mini-high，毕竟Plus用户o3的额度每周有限。个人体验下来，agent模式的o系列模型用户体验极佳。
+
+![agent模式的o系列模型用户体验极佳](https://cdn.sa.net/2025/04/18/X6pd2G4VK3QwLSg.webp)
+
 ## 更新(2025.4.17)
 
 补充一些看到的较好的测评内容。
