@@ -7,6 +7,18 @@ summary: 分享Gemini 2.5 Pro体验的一些感受。
 showtoc: true
 ---
 
+## 重要事项(2025.4.18)
+
+家大业大的Google就是牛逼。美国Edu邮箱验证后直接免费15个月。直接薅羊毛！via: https://gemini.google/students/
+
+![Google Advanced对美国学生免费15个月-图1](https://cdn.sa.net/2025/04/18/IgOYdxh9bETfFZD.webp)
+
+![Google Advanced对美国学生免费15个月-图2](https://cdn.sa.net/2025/04/18/G5QBuWjv6ZeEKqJ.webp)
+
+![Google Advanced对美国学生免费15个月-图3](https://cdn.sa.net/2025/04/18/cwIg9JBHPEDYLRt.webp)
+
+不多说，Google牛逼，期待Gemini早晚横扫所有的LLM，一家独大！
+
 ## 更新(2025.4.18)
 
 这篇文章就用于记录Gemini 2.5系列模型的更新笔记了。
