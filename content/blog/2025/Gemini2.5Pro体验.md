@@ -7,6 +7,10 @@ summary: 分享Gemini 2.5 Pro体验的一些感受。
 showtoc: true
 ---
 
+## 更新(2025.4.19)
+
+Google大撒币给学生群体的官方博文: https://blog.google/products/gemini/google-one-ai-premium-students-free/
+
 ## 重要事项(2025.4.18)
 
 家大业大的Google就是牛逼。美国Edu邮箱验证后直接免费15个月。直接薅羊毛！via: https://gemini.google/students/
@@ -103,7 +107,9 @@ Gemini Advanced、AI Studio、Vertex AI Studio三个地方的2.5 Pro模型都可
 
 Gemini App Deep Research由最强大的Gemini 2.5 Pro模型所驱动，Gemini Advanced用户可以体验到。
 
-![](https://cdn.sa.net/2025/04/10/Vkp1jHINXAO38tE.webp)
+via: https://blog.google/products/gemini/deep-research-gemini-2-5-pro-experimental/
+
+![Gemini App Deep Research由最强大的Gemini 2.5 Pro模型所驱动，Gemini Advanced用户可以体验到。](https://cdn.sa.net/2025/04/10/Vkp1jHINXAO38tE.webp)
 
 ## 更新(2025.4.8)
 
