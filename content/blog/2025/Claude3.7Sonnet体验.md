@@ -7,6 +7,14 @@ summary: 分享Claude 3.7 Sonnet使用体验。
 showtoc: true
 ---
 
+## 更新(2025.4.19)
+
+近期让o3猜图片位置很火，但除去猜图片外，其余给我的感觉还是低于预期的。比如写代码注释方面，我有些怀念o3-mini-high了。现阶段会用工具的o3亦或是o4-mini-high，思考时间不足，写的代码注释质量不如原本的o3-mini-high。
+
+每当我学习新知识时，我依旧会第一时间考虑Claude，Gemini 2.5 Pro无法做到Claude提供信息既丰富又不过于冗长的交流体验，Claude有些时候的泛化能力还是极佳的（也就是所谓的灵性），针对一个提问，一针见血的回复让人感到惊喜又意外。虽然目前的LLM我都会对比使用，但总体而言，习惯了Claude的回复风格后，目前为止，能入我眼的LLM还没有出现，无论Gemini 2.5 Pro、o3、o4-mini-high如何屠榜，我的心永远属于Claude。
+
+![我的心是Claude的](https://cdn.sa.net/2025/04/19/eM52tVaz1UkKqc4.webp)
+
 ## 更新(2025.3.25)
 
 生产力还得是ChatGPT和Claude，文中所言OpenAI已死纯属是玩笑话。写代码注释，我还是更倾向于OpenAI的o3-mini-high模型，而且新上的GPT-4.5在一些概念阐述方面也具有更优秀的回复。
