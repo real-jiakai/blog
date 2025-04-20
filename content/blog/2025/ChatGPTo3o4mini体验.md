@@ -7,6 +7,16 @@ summary: 分享ChatGPT o3、o4 mini体验感受。
 showtoc: true
 ---
 
+## 更新(2025.4.20)
+
+也不能完全拥抱Claude，目前ChatGPT最新的这种o3、o4-mini系列模型全自动Agent LLM调用各种工具帮你Debug确实很舒服，写代码注释方面可能不如原来的o3-mini-high模型，但其余方面还是遥遥领先的，之前联网Debug我可能还会借助Perplexity等AI搜索工具进行辅助，有了最新的o3、o4-mini-high，直接全自动Debug，中文提问编程相关问题，英文检索各种网页，直至完成任务。
+
+比如我今天上午学习时遇到了一个Bug，提问了各大LLM，只有ChatGPT这种全自动Agent成功帮我解决了问题，其余的LLM我都不想追问下去，一开始给出的答复就是有问题的，再加上解决该Bug需要联网检索最新的知识，比ChatGPT这种全自动Agent费时费力多了。
+
+![ChatGPT Agent LLM全自动Debug](https://cdn.sa.net/2025/04/20/JUanqtRECYm8oeX.webp)
+
+我只能说目前的LLM真得是太眼花缭乱了。有些时候都不知道到底该用啥模型，因为我个人其实有很强的Claude惯性，故昨天写了Claude的相关溢美之词，但近期的Gemini 2.5 Pro、ChatGPT o3、o4-mini系列模型更新也确实很顶，都是SOTA，犯选择困难症了。
+
 ## 更新(2025.4.19)
 
 近期让o3猜图片位置很火，但除去猜图片外，其余给我的感觉还是低于预期的。比如写代码注释方面，我有些怀念o3-mini-high了。现阶段会用工具的o3亦或是o4-mini-high，思考时间不足，写的代码注释质量不如原本的o3-mini-high。
