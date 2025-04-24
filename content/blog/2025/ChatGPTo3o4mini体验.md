@@ -7,6 +7,12 @@ summary: 分享ChatGPT o3、o4 mini体验感受。
 showtoc: true
 ---
 
+## 更新(2025.4.24)
+
+ChatGPT Plus用户的o3、o4-mini-high额度翻倍。o3: 100条/周；o4-mini-high: 100条/天。
+
+via: https://help.openai.com/en/articles/9824962-openai-o3-and-o4-mini-usage-limits-on-chatgpt-and-the-api
+
 ## 更新(2025.4.20)
 
 也不能完全拥抱Claude，目前ChatGPT最新的这种o3、o4-mini系列模型全自动Agent LLM调用各种工具帮你Debug确实很舒服，写代码注释方面可能不如原来的o3-mini-high模型，但其余方面还是遥遥领先的，之前联网Debug我可能还会借助Perplexity等AI搜索工具进行辅助，有了最新的o3、o4-mini-high，直接全自动Debug，中文提问编程相关问题，英文检索各种网页，直至完成任务。
