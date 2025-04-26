@@ -7,6 +7,16 @@ summary: 分享ChatGPT o3、o4 mini体验感受。
 showtoc: true
 ---
 
+## 更新(2025.4.26)
+
+今天官网的ChatGPT 4o又更新了。via: https://x.com/sama/status/1915902652703248679
+
+使用了几次官网的4o模型后发现，目前询问一些技术性的问题，ChatGPT 4o搜索互联网优先考虑搜索的是英文互联网，这是好事。之前中文提问搜索的是中文互联网。
+
+![ChatGPT 4o搜索互联网优先考虑搜索的是英文互联网](https://cdn.sa.net/2025/04/26/ARodUtDXge6bwaq.webp)
+
+最近愈发觉得Perplexity这类产品未来会寄，自从o3、o4-mini系列模型出世后，我使用Perplexity频率骤减。
+
 ## 更新(2025.4.24)
 
 ChatGPT Plus用户的o3、o4-mini-high额度翻倍。o3: 100条/周；o4-mini-high: 100条/天。
