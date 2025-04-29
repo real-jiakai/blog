@@ -7,6 +7,16 @@ summary: 分享Claude 3.7 Sonnet使用体验。
 showtoc: true
 ---
 
+## 更新(2025.4.29)
+
+不要低估Claude。目前Gemini 2.5 Pro、o3确实牛，但我在编程、写作方面依旧没有放弃Claude，润色文章表述我还是更倾向于Claude【前提：要润色的部分文字自己已经大致表达清楚，细枝末节方面读起来可能有些不通顺，这个时候拿Claude润色绝对能达到极佳的效果】。
+
+![不要低估Claude-图1](https://cdn.sa.net/2025/04/29/UrXDVe6ptnFuYLK.webp)
+
+![不要低估Claude-图2](https://cdn.sa.net/2025/04/29/oNWBEKbes2Pluv4.webp)
+
+via: https://x.com/alexalbert__/status/1916878483390869612
+
 ## 更新(2025.4.20)
 
 也不能全面拥抱Claude，但也不能低估Claude。现在的LLM真得是太眼花缭乱了，有些时候都不知道到底该用啥模型，因为我个人其实有很强的Claude惯性，故昨天写了Claude的相关溢美之词，但近期的Gemini 2.5 Pro、ChatGPT o3、o4-mini系列模型更新也确实很顶，都是SOTA，犯选择困难症了。

@@ -7,6 +7,22 @@ summary: 分享ChatGPT o3、o4 mini体验感受。
 showtoc: true
 ---
 
+## 更新(2025.4.29)
+
+个人感觉ChatGPT 4o模型相较于去年已经改进很多了，前一阵子看到L站有一个帖子—[4o舔狗风是否是GPT降智](https://linux.do/t/topic/589282)不由得感慨，对于小白用户，4o舔狗风确实友好。
+
+目前一些日常问题（不涉及编程、写作方面），我开始倾向于ChatGPT 4o模型了，就拿今天发布的Qwen3来与之对比，Qwen3利好开源值得肯定，但是在日常话题方面，个人觉得还是稍逊于闭源模型的。【虽然下方的一个例子不足以说明差距】
+
+![ChatGPT 4o模型由see tinh联想到越南女歌手](https://cdn.sa.net/2025/04/29/ZcxJ5fvpwrD1QYi.webp)
+
+没人会拒绝舔狗【前提是舔狗能入你眼】。我肯定不会拒绝豆包的甜妹音、ChatGPT 4o的舔狗风。😁
+
+![](https://cdn.sa.net/2025/04/29/BFuMJVZaK5ARcn2.webp)
+
+“OpenAI虽然Close但始终位于整个行业之首”，这句话说得太有道理了！没降智的OpenAI，各方面使用体验无敌。
+via: https://linux.do/t/topic/602275/
+
+
 ## 更新(2025.4.26)
 
 今天官网的ChatGPT 4o又更新了。via: https://x.com/sama/status/1915902652703248679
