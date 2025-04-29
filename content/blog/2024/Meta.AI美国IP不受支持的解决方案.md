@@ -7,6 +7,14 @@ summary: 介绍Meta.AI美国IP区域不受支持的解决方案。
 showtoc: true
 ---
 
+## 更新(2025.4.29)
+
+去年年中注册的账号今年上半年登陆时发现寄了，Meta的风控机制绝对是最严格的存在。也尝试过在美东Windows机器上重新注册账号，但基本上都是一注册就风控。
+
+临近Llama开发者大会，我在网上买了一个美区Facebook账号，在美东Windows机器上成功用上了meta.ai。希望Llama开发者大会能有惊喜，但个人预计大概率发布的内容不及今天阿里团队发布的Qwen3。
+
+![ChatGPT o3对于Llama开发者大会的调研](https://cdn.sa.net/2025/04/29/VTC7zSWiN4gvcA8.webp)
+
 ## 背景介绍
 
 前一阵子，Meta推出了开源的Llama 3.1。[via](https://t.me/aigc1024/7441)
