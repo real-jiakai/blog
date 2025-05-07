@@ -7,6 +7,16 @@ summary: 分享Gemini 2.5 Pro体验的一些感受。
 showtoc: true
 ---
 
+## 更新(2025.5.7)
+
+后续有关Gemini 2.5 Pro的更新移步我自建的Flarum论坛[Gemini更新汇总](https://bbs.gujiakai.top/d/6-gemini/5)帖子。
+
+昨天爆出Google One AI Premium学生优惠可以免教育邮箱验证领取。今早刷新闻，看到Gemini又升级了，由0325版本升级至了0506(Google I/O大会版本)，与此同时Cursor也推出了学生免费一年的套餐，目前我刚领取完该羊毛，并在Cursor编辑器中编辑这篇博文，沉浸于白嫖AI羊毛的喜悦中，不由得感慨AI发展的迅速。
+
+![成功白嫖Cursor学生优惠](https://cdn.sa.net/2025/05/07/VUW12s9Kvn5QGpE.webp)
+
+![Cursor检索互联网验证Gemini新版本是否为专为Google I/O大会定制的版本](https://cdn.sa.net/2025/05/07/yDWTnw139pgOsl5.webp)
+
 ## 更新(2025.4.19)
 
 Google大撒币给学生群体的官方博文: https://blog.google/products/gemini/google-one-ai-premium-students-free/
