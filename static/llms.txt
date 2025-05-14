@@ -12,6 +12,7 @@
 
 ## Content
 
+- [ChatGPT o3、o4 mini体验](https://blog.gujiakai.top/2025/04/chatgpt-o3-o4-mini-experience/): 分享ChatGPT o3、o4 mini体验感受。
 - [自建Kasm Workspaces](https://blog.gujiakai.top/2025/03/self-hosted-kasm-workspaces/): 分享自建Kasm Workspaces的经历。
 - [Gemini 2.5 Pro体验](https://blog.gujiakai.top/2025/03/gemini-2-5-pro-experience/): 分享Gemini 2.5 Pro体验的一些感受。
 - [Phind VS Devv](https://blog.gujiakai.top/2025/03/phind-vs-devv/): 分享AI编程搜索Phind和Devv的体验。
