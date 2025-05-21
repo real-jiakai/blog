@@ -7,6 +7,14 @@ summary: 记录Google I/O 2025发布的内容。
 showtoc: true
 ---
 
+## 更新(2025.5.21)
+
+本篇博文后续更新移步至Flarum帖子—[Google I/O 2025博文更新汇总](https://bbs.gujiakai.top/d/12-google-io-2025)。
+
+
+
+---
+
 早上起来，看到Google发布了一大堆新的内容，不由得感慨Google的强大，未来绝对是Gemini的(It's Gemini Season[^1].)。虽然近些天使用ChatGPT解答日常的频率远高于其余的AI。
 
 Google I/O 25 Keynote Youtube视频开头的动画都是Veo生成的。via: https://youtu.be/o8NiE3XMPrM
@@ -133,7 +141,7 @@ via: https://x.com/GeminiApp/status/1924892563695456675
 
 8、基于图像和文件的Deep Research
 
-基于图像的Deep Research，我想到的应用场景: 黄片番号Deep Research【没有实操过，找番号困难的好兄弟可以尝试一下，应该效果会很不错😁】；根据图片猜地址。
+基于图像的Deep Research，我想到的应用场景:~~黄片番号Deep Research~~【实则过了，Gemini App高审查，但凡图片沾点色情元素直接被移除，但如果让其找图片中的演员(前提图片NSFW的含量较低)，则可以进行Deep Research😁】，直接移除了相关的黄色图片；根据图片猜地址。
 
 下图展示让Gemini根据我上次给ChatGPT o3的同款图片，猜测拍摄地址，效果差点意思，ChatGPT的o3根据图片猜测地址更牛逼，其实前一阵子也让豆包根据该图猜测地址，豆包的深度思考感觉有些跳跃，但是一次性就猜对了地点，猜国内拍摄图片的地址还得是国产的AI更胜一筹，毕竟巨头们掌握了一大堆国人的数据。
 
