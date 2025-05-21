@@ -347,6 +347,8 @@ https://blog.google/technology/ai/generative-media-models-io-2025/
 
 https://starline.google/
 
+https://blog.google/outreach-initiatives/education/google-gemini-learnlm-update/
+
 ## 总结
 
 Google I/O 2025第一天的发布差不多就是这些。Day2通常不会再出现重大发布，这一周注定是不平凡的，是否会有o3-Pro、Grok 3.5、Claude 4敬请期待，其中Anthropic会在北京时间2025年5月23日凌晨有一个event活动。

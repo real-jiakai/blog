@@ -12,6 +12,7 @@
 
 ## Content
 
+- [Google I/O 2025记录](https://blog.gujiakai.top/2025/05/google-io-2025-notes/): 记录Google I/O 2025发布的内容。
 - [ChatGPT o3、o4 mini体验](https://blog.gujiakai.top/2025/04/chatgpt-o3-o4-mini-experience/): 分享ChatGPT o3、o4 mini体验感受。
 - [自建Kasm Workspaces](https://blog.gujiakai.top/2025/03/self-hosted-kasm-workspaces/): 分享自建Kasm Workspaces的经历。
 - [Gemini 2.5 Pro体验](https://blog.gujiakai.top/2025/03/gemini-2-5-pro-experience/): 分享Gemini 2.5 Pro体验的一些感受。
