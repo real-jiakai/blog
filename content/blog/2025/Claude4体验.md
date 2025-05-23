@@ -63,11 +63,11 @@ Github Copilot中接入的Claude 4 Opus仅限Pro+用户享受，Cursor中的Clau
 
 ![Claude 4 Opus对于Cursor Max模式的介绍](https://cdn.sa.net/2025/05/23/5UKjYPxGipBohl2.webp)
 
-Sonnet 4向免费用户开放，Opus 4则付费用户独享，有条件想体验Opus的朋友们建议还是开个Pro会员体验Opus，API不值得。后续也会介绍我目前知晓的低成本体验Claude会员的途径。
+Sonnet 4向免费用户开放，Opus 4则付费用户独享，有条件想体验Opus的朋友们，建议还是开个Pro会员体验，API不值得。后续也会介绍我目前知晓的低成本体验Claude会员的途径。
 
 6、基准测试
 
-基准测试真好看，基准测试不好看也不会发布😁。现在每家发布LLM都是自称是目前的SOTA(State Of The Art，最先进水平)。
+基准测试真好看，基准测试不好看也不会发布😁。现在每家发布LLM都自称是目前的SOTA(State Of The Art，最先进水平)。
 
 个人较为认同Anthropic CEO有关基准测试无意义的言论，基准测试肯定存在失真，但大致比较了模型能力的强弱。
 
@@ -228,7 +228,7 @@ i: Claude 4 System Card: https://www-cdn.anthropic.com/6be99a52cb68eb70eb9572b4c
 
 ## 推荐
 
-如果你遇到了Claude账号封号的情况，推荐你阅读之前我写过的两篇博文，最推荐利用美国Windows VPS远程桌面来降低被封号的概率。
+如果你遇到了Claude账号封号的情况，推荐阅读之前我写过的两篇博文，最推荐利用美国Windows VPS远程桌面来降低被封号的概率。
 
 - [Claude封号的解决方案](https://blog.gujiakai.top/2024/11/claude-account-suspension-resolution/)
 
