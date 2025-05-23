@@ -7,6 +7,12 @@ summary: 分享Claude 4的使用体验。
 showtoc: true
 ---
 
+## 更新(2025.5.23)
+
+后续有关本篇Claude 4文章的更新内容移步Flarum帖子—[Claude 4体验博文更新汇总](https://bbs.gujiakai.top/d/13-claude-4)
+
+---
+
 ![如果你关注AI新闻，每天都会感受到时间被压缩了。](https://cdn.sa.net/2025/05/23/fKErWMURgA4kVxG.webp)
 
 via: https://x.com/testingcatalog/status/1925606824662679917
