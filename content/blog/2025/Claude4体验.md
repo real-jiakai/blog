@@ -19,7 +19,7 @@ via: https://x.com/testingcatalog/status/1925606824662679917
 
 如果你关注AI新闻，每天都会感受到时间被压缩了。单调重复的人生在追随AI脚步的节奏中，过的异常得快。
 
-![Claude 4 Opus对于推文的解释](https://cdn.sa.net/2025/05/23/n1Bc2psbXF7u5CH.webp)
+![Claude Opus 4对于推文的解释](https://cdn.sa.net/2025/05/23/n1Bc2psbXF7u5CH.webp)
 
 Claude 4在今天凌晨发布，Anthropic这次选择不再以小数点的版本号递增来挤牙膏式发布模型。
 
@@ -31,7 +31,7 @@ Claude系列模型给我最大的感触就是回复简洁且不冗余，有时�
 
 上一次用Claude 3 Opus模型是在去年下半年，记得当时被分配给大四毕业生看开题报告的任务，我tm直接把开题报告中的所有文字按部分发送给Opus模型，让Opus模型给出对应的改进建议。之后就再也没用过了，因为发现Claude 3 Opus的写作能力有些跟不上Claude 3.5 Sonnet系列模型。
 
-Anthropic但凡在今年2月份推出Claude 4 Opus，2025届毕业生的毕业论文就可以多一个更棒的选择。Opus模型专为写作定制，虽然没实测Claude 4 Opus的写作能力，但预计文字含人味很高。
+Anthropic但凡在今年2月份推出Claude Opus 4，2025届毕业生的毕业论文就可以多一个更棒的选择。Opus模型专为写作定制，虽然没实测Claude Opus 4的写作能力，但预计文字含人味很高。
 
 ## Claude 4
 
@@ -65,9 +65,9 @@ Anthropic开发者关系主管Alex Albert有关该功能的推文展示: https:/
 
 Claude 4系列模型和Claude 3系列模型定价一致，这个价位即使模型再强，也很难被广泛采用。
 
-Github Copilot中接入的Claude 4 Opus仅限Pro+用户享受，Cursor中的Claude 4 Opus需要启用Max模式。性价比之王—Gemini 2.5是Claude难以逾越的坎。
+Github Copilot中接入的Claude Opus 4仅限Pro+用户享受，Cursor中的Claude Opus 4需要启用Max模式。性价比之王—Gemini 2.5是Claude难以逾越的坎。
 
-![Claude 4 Opus对于Cursor Max模式的介绍](https://cdn.sa.net/2025/05/23/5UKjYPxGipBohl2.webp)
+![Claude Opus 4对于Cursor Max模式的介绍](https://cdn.sa.net/2025/05/23/5UKjYPxGipBohl2.webp)
 
 Sonnet 4向免费用户开放，Opus 4则付费用户独享，有条件想体验Opus的朋友们，建议还是开个Pro会员体验，API不值得。后续也会介绍我目前知晓的低成本体验Claude会员的途径。
 
@@ -85,13 +85,13 @@ Sonnet 4向免费用户开放，Opus 4则付费用户独享，有条件想体验
 
 ![Claude 4成为目前的LLM SOTA](https://cdn.sa.net/2025/05/23/bFT6NxuX1PmR8On.webp)
 
-livebench.ai榜单上，Claude 4 Opus是目前经典LLM的第一把交椅。推理模型适合刷榜，经典LLM更适合用户日常提问。
+livebench.ai榜单上，Claude Opus 4是目前经典LLM的第一把交椅。推理模型适合刷榜，经典LLM更适合用户日常提问。
 
-![livebench.ai榜单上，Claude 4 Opus是目前的经典LLM之王](https://cdn.sa.net/2025/05/23/pSfFRHNJbWVdXEn.webp)
+![livebench.ai榜单上，Claude Opus 4是目前的经典LLM之王](https://cdn.sa.net/2025/05/23/pSfFRHNJbWVdXEn.webp)
 
 经典LLM方面，Google已经将推理模型和经典LLM结合；OpenAI最强的经典LLM其实是官网的ChatGPT 4o，有了各大丰富工具的辅助，用户体验也是一流的存在。
 
-目前我的经典LLM第一选择: Claude官网的Claude 4 Opus和ChatGPT官网的ChatGPT 4o模型。
+目前我的经典LLM第一选择: Claude官网的Claude Opus 4和ChatGPT官网的ChatGPT 4o模型。
 
 ## Claude Code
 
@@ -131,9 +131,9 @@ https://docs.anthropic.com/en/docs/claude-code/github-actions#quick-start
 
 ![`/vibe`命令里面是一个vibe coding(氛围编码)的彩蛋。](https://cdn.sa.net/2025/05/23/jiJyxbDo78VluEB.webp)
 
-看到Claude 4 Opus解释中包含道德经，不由得感慨中华文化的博大精深，虽然Anthropic CEO极度反华。
+看到Claude Opus 4解释中包含道德经，不由得感慨中华文化的博大精深，虽然Anthropic CEO极度反华。
 
-![Claude 4 Opus对于/vibe命令彩蛋的解析](https://cdn.sa.net/2025/05/23/vSczFl7ixmK8gd2.webp)
+![Claude Opus 4对于/vibe命令彩蛋的解析](https://cdn.sa.net/2025/05/23/vSczFl7ixmK8gd2.webp)
 
 代码之道(The Way Of Code)网站: https://www.thewayofcode.com/
 
@@ -179,9 +179,9 @@ Claude新推出的拉人头活动。via: https://claude.ai/invite
 
 拉的人头越多，中奖4个月Claude Max套餐的几率越大。
 
-有趣的是Claude拉人头活动对于美国本土的一些地区限制。具体可见Claude 4 Opus的答疑。
+有趣的是Claude拉人头活动对于美国本土的一些地区限制。具体可见Claude Opus 4的答疑。
 
-![Claude 4 Opus对于Claude拉人头活动限制美国部分地区的解答](https://cdn.sa.net/2025/05/23/ZqQUEnchwFrit1G.webp)
+![Claude Opus 4对于Claude拉人头活动限制美国部分地区的解答](https://cdn.sa.net/2025/05/23/ZqQUEnchwFrit1G.webp)
 
 看到这篇文章还没注册Claude账号的小伙伴可以考虑走一走我Aff链接，给我免费拿4个月Max套餐增加一丢丢机会🥹。via: https://claude.ai/referral/_0IX9uZm2w
 
@@ -224,7 +224,7 @@ https://x.com/AnthropicAI/status/1925591505332576377
 
 f. Tibor Blaho有关Anthropic发布会的总结推文: https://x.com/btibor91/status/1925641897369797038
 
-g. Vibe Check: Claude 4 Opus博文: https://every.to/chain-of-thought/vibe-check-claude-4-sonnet
+g. Vibe Check: Claude Opus 4博文: https://every.to/chain-of-thought/vibe-check-claude-4-sonnet
 
 h. Anthropic官方直播: https://www.youtube.com/watch?v=EvtPBaaykdo
 
@@ -258,7 +258,7 @@ i: Claude 4 System Card: https://www-cdn.anthropic.com/6be99a52cb68eb70eb9572b4c
 
 Claude系列模型Web端使用，一般情况下，不推荐开Extended thinking，日常使用经典LLM就够了，除非经典LLM得到的回复不理想才会考虑开启thinking。
 
-虽然Claude 4 Sonnet的SWE基准测试要比Claude 4 Opus要好上一丢丢，以及一些基准测试的代码能力评估显示Claude 4 Sonnet要好于Claude 4 Opus，但在Claude Web端我肯定会优先考虑Claude 4 Opus without thinking。以后遇到写作、代码相关的任务，第一时间选择Claude 4 Opus绝对是一个很棒的选择，除非Claude 4 Opus给出的回复不理想，才会考虑去问Claude 4 Sonnet。
+虽然Claude Sonnet 4的SWE基准测试要比Claude Opus 4要好上一丢丢，以及一些基准测试的代码能力评估显示Claude Sonnet 4要好于Claude Opus 4，但在Claude Web端我肯定会优先考虑Claude Opus 4 without thinking。以后遇到写作、代码相关的任务，第一时间选择Claude Opus 4绝对是一个很棒的选择，除非Claude Opus 4给出的回复不理想，才会考虑去问Claude Sonnet 4。
 
 Claude 4都出了，GPT 5还会远吗？期待在2025年中后期见到GPT 5模型。
 
