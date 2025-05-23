@@ -37,9 +37,9 @@ Anthropic但凡在今年2月份推出Claude 4 Opus，2025届毕业生的毕业�
 
 2、Extended thinking with tool use (beta)
 
-开了思考按钮提问Claude，Claude可以使用工具，拿到工具响应后，继续思考，最后再给出对应的回复。下图用昨天川宝整活的例子来展示该功能。
+开了思考、搜索按钮提问Claude，Claude可以使用搜索工具，拿到搜索工具响应后，继续思考，持续迭代，最后再给出对应的回复。下图的例子展示了该功能。
 
-![川宝整活案例展示Claude 4 Extended thinking with tool use (beta)](https://cdn.sa.net/2025/05/23/lxnJjB2LV8vc75K.webp)
+![Claude 4 Extended thinking with tool use (beta)](https://cdn.sa.net/2025/05/23/cY7wjlsBCEATqJ2.webp)
 
 之前思考、搜索两个按钮齐开，提问Claude，Claude觉得需要检索互联网，使用搜索工具检索互联网，检索完毕后就直接给出回复，不会再根据工具调用的结果再进行思考。
 
