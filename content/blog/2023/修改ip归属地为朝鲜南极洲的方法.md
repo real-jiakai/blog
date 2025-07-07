@@ -7,7 +7,7 @@ summary: 分享修改ip归属地为朝鲜、南极洲的方法。
 showtoc: true
 ---
 
-## 更新（2025.6.1）
+## 更新（2025.6.1、2025.7.7）
 
 昨天在L站刷到一个帖子—[如何获取特殊ip？](https://linux.do/t/topic/689703)
 
@@ -19,6 +19,15 @@ showtoc: true
 
 ![b站出现了朝鲜ip复活的视频](https://cdn.sa.net/2025/06/01/5Zz8mtRBNL9djWn.webp)
 
+7月1号有小伙伴私信，抖音不认该方法获取的朝鲜IP，但是b站认。
+
+![小伙伴的私信](https://cdn.sa.net/2025/07/07/6S3hXFDoqw7bQPN.webp)
+
+今晚我又看了b站讲述获取朝鲜ip博主的视频，发现大致原理是tunnelbroker搭配上fiddler抓包更改国家代码为KP实现的。我没实操过，o3的解答也不一定准确，但大概的意思传达出来了。
+
+![o3对于tunnelbroker搭配上fiddler抓包获取KP原理的大致讲解](https://cdn.sa.net/2025/07/07/P5slITgNzd64oWQ.webp)
+
+讲述获取朝鲜ip博主在今年7月3日又更新了一个与之相关的视频。翻了翻评论区，发现还是有归属地为朝鲜的评论，看来目前为止该方法获取的朝鲜IP依旧能在b站装b。
 
 ## 更新（2025.1.12）
 
