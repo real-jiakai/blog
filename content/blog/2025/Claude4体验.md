@@ -2,7 +2,7 @@
 title: "Claude 4体验"
 date: 2025-05-23T07:56:34+08:00
 tags: ["claude","anthropic"]
-slug: "claude-4-experience/"
+slug: "claude-4-experience"
 summary: 分享Claude 4的使用体验。
 showtoc: true
 ---
