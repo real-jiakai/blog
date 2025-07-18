@@ -9,11 +9,11 @@ Today I Learned页面分享我自己今天学了什么知识。一直坚信Learn
 
 本栏目受[Josh Branchaud](https://github.com/jbranchaud/til)、[Simon Willison](https://til.simonwillison.net/)、[Kevin Schaul](https://www.kschaul.com/til/)、[Now Page](https://nownownow.com/)这些国外大牛及有趣站点启发。
 
-我的til站点公开两个博客+三个去中心化社交应用+三个论坛笔记。til站点：[https://til.gujiakai.top](https://til.gujiakai.top)
+我的til站点公开两个博客+一个去中心化社交应用+三个论坛笔记。til站点：[https://til.gujiakai.top](https://til.gujiakai.top)
 
 两个博客，《周见》随缘更新，《网络日志》争取一个月一篇。
 
-三个去中心化社交应用，主要用于满足我的分享欲。
+一个去中心化社交应用，主要用于满足我的分享欲。
 
 三个论坛为私人性质的论坛，分享有趣新鲜的事物，以及记录自己学到的知识。随机轮流发送。
 
