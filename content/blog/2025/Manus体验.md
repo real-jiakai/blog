@@ -8,6 +8,16 @@ showtoc: true
 draft: false
 ---
 
+## 更新（2025.7.19）
+
+随着ChatGPT Agent的发布，Manus开始活跃起来了，比如开始分享构建Agent的干货文章：[Context Engineering for AI Agents: Lessons from Building Manus](https://manus.im/blog/Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus)，来自新的竞争对手压力促成动力挺好。
+
+Manus撤离中国是无奈之举，产品有弊端，也有优点，Agent类产品肯定有很多瑕疵，毕竟Agent最大的问题就是不稳定。
+
+记得年初，当时用Claude 3.5 Sonnet作为Agent框架的基座模型，同一个工作流（Workflow）中，能稳定调用工具，当2月份Claude 3.7 Sonnet出来后，基座模型升级，结果发现模型反而过度思考，有些时候不再调用工具。近期用Claude Desktop搭配MCP协议调用外部工具，就算是最强的Claude Opus 4，同一个流程也并不是每次都能完美执行。
+
+给Agent类产品一些时间吧。
+
 ## 0 引言
 
 前一阵子在学习智能体（Agent）方面的知识，当时体验不开会员的Manus感觉非常笨，于是乎，在2025年7月4日，用野卡开通了Manus Basic会员。没想到一个礼拜后野卡关停了，后续野卡网站重新上线后，我迅速消费完了虚拟卡中的剩余财产；同样是开通会员之后的一个礼拜，Manus撤离中国大陆，该讯息遭到了诸多非议。
