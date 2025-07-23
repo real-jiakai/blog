@@ -7,6 +7,10 @@ summary: 分享Claude 4的使用体验。
 showtoc: true
 ---
 
+## 更新(2025.7.23)
+
+Claude Code早已不再是玩具，随着Claude 4系列模型上线，Max会员搭配上Opus 4模型简直不要太爽。懂得都懂，最强的AI编程工具！！！！！短短1～2个月的时间成功将Cursor从小甜甜变为牛夫人，也只有Anthropic亲自下场才能做到。
+
 ## 更新(2025.5.23)
 
 后续有关本篇Claude 4文章的更新内容移步Flarum帖子—[Claude 4体验博文更新汇总](https://bbs.gujiakai.top/d/13-claude-4)
