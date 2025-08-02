@@ -12,6 +12,9 @@
 
 ## Content
 
+- [Manus体验](https://blog.gujiakai.top/2025/07/manus-experience/): 吐槽Manus的体验感受。
+- [Grok 4真实体验](https://blog.gujiakai.top/2025/07/grok-4-real-experience/): 分享Grok 4真实体验。
+- [Claude 4体验](https://blog.gujiakai.top/2025/05/claude-4-experience/): 分享Claude 4的使用体验。
 - [Google I/O 2025记录](https://blog.gujiakai.top/2025/05/google-io-2025-notes/): 记录Google I/O 2025发布的内容。
 - [ChatGPT o3、o4 mini体验](https://blog.gujiakai.top/2025/04/chatgpt-o3-o4-mini-experience/): 分享ChatGPT o3、o4 mini体验感受。
 - [自建Kasm Workspaces](https://blog.gujiakai.top/2025/03/self-hosted-kasm-workspaces/): 分享自建Kasm Workspaces的经历。
