@@ -12,6 +12,7 @@
 
 ## Content
 
+- [让Claude再次伟大](https://blog.gujiakai.top/2025/08/make-claude-great-again/): 分享近期有关Claude产品的使用心得。
 - [Manus体验](https://blog.gujiakai.top/2025/07/manus-experience/): 吐槽Manus的体验感受。
 - [Grok 4真实体验](https://blog.gujiakai.top/2025/07/grok-4-real-experience/): 分享Grok 4真实体验。
 - [Claude 4体验](https://blog.gujiakai.top/2025/05/claude-4-experience/): 分享Claude 4的使用体验。
