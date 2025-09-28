@@ -7,6 +7,20 @@ summary: 介绍Claude Max会员体验。
 showtoc: true
 ---
 
+## 补充（2025.9.28）
+
+Claude For Chrome一直在更新中。
+
+比如完成任务会有提示音。自动创建Chrome Tab分组（具体见下方两张图演示，标签页中Claude For Chrome自动创建了分组），自动创建Chrome Tab分组的功能已经解决了下面罗列的无法跨Tab操作的问题。
+
+![Claude For Chrome自动创建Tab分组解决了无法跨Tab操作的问题图1](https://cdn.sa.net/2025/09/28/F1fdQmE4vTIX8P5.webp)
+
+![Claude For Chrome自动创建Tab分组解决了无法跨Tab操作的问题图2](https://cdn.sa.net/2025/09/28/yoSrMvkZEFTH3Dt.webp)
+
+个人觉得未来的一段时间内，Claude For Chrome现存的缺点会一个个被Anthropic给解决掉。这家公司做产品的品味确实牛逼。Anthropic出品必属精品！
+
+因此特此声明，本篇博文仅局限于2025年9月份下旬之前的Claude For Chrome。
+
 ## 说在前头
 
 近期，观中英文技术社区对于Claude Code的态度发生了较大的转变，一方面GPT-5-Codex发布对于Claude Code产生了一定的冲击；另一方面Anthropic的降智风波致使其饱受批评。
