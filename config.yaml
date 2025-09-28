@@ -12,7 +12,8 @@ googleAnalytics: "G-2N2G7YVYD1"
 permalinks:
   blog: /:year/:month/:slug
 # 分页器
-paginate: 5
+pagination:
+  pagerSize: 5
 # 博文中使用了中文
 hasCJKLanguage: true
 # 开启robots.txt

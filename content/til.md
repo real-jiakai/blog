@@ -1,6 +1,6 @@
 ---
 title: Today I Learned
-date: '2023-2-28'
+date: 2023-02-28
 ---
 
 # 介绍
