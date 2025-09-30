@@ -7,19 +7,25 @@ summary: 介绍Claude Max会员体验。
 showtoc: true
 ---
 
+## 补充（2025.9.30）
+
+模型已经切换为了最新的Claude Sonnet 4.5。
+
+![Claude for Chrome模型切换为了最新的Claude Sonnet 4.5模型](https://cdn.sa.net/2025/09/30/Drvlk12FQYnNPo3.webp)
+
 ## 补充（2025.9.28）
 
-Claude For Chrome一直在更新中。
+Claude for Chrome一直在更新中。
 
-比如完成任务会有提示音。自动创建Chrome Tab分组（具体见下方两张图演示，标签页中Claude For Chrome自动创建了分组），自动创建Chrome Tab分组的功能已经解决了下面罗列的无法跨Tab操作的问题。
+比如完成任务会有提示音。自动创建Chrome Tab分组（具体见下方两张图演示，标签页中Claude for Chrome自动创建了分组），自动创建Chrome Tab分组的功能已经解决了下面罗列的无法跨Tab操作的问题。
 
-![Claude For Chrome自动创建Tab分组解决了无法跨Tab操作的问题图1](https://cdn.sa.net/2025/09/28/F1fdQmE4vTIX8P5.webp)
+![Claude for Chrome自动创建Tab分组解决了无法跨Tab操作的问题图1](https://cdn.sa.net/2025/09/28/F1fdQmE4vTIX8P5.webp)
 
-![Claude For Chrome自动创建Tab分组解决了无法跨Tab操作的问题图2](https://cdn.sa.net/2025/09/28/yoSrMvkZEFTH3Dt.webp)
+![Claude for Chrome自动创建Tab分组解决了无法跨Tab操作的问题图2](https://cdn.sa.net/2025/09/28/yoSrMvkZEFTH3Dt.webp)
 
-个人觉得未来的一段时间内，Claude For Chrome现存的缺点会一个个被Anthropic给解决掉。这家公司做产品的品味确实牛逼。Anthropic出品必属精品！
+个人觉得未来的一段时间内，Claude for Chrome现存的缺点会一个个被Anthropic给解决掉。这家公司做产品的品味确实牛逼。Anthropic出品必属精品！
 
-因此特此声明，本篇博文仅局限于2025年9月份下旬之前的Claude For Chrome。
+因此特此声明，本篇博文仅局限于2025年9月份下旬之前的Claude for Chrome。
 
 ## 说在前头
 
@@ -31,7 +37,7 @@ Claude For Chrome一直在更新中。
 
 ## 背景故事
 
-8月底，Anthropic推出了[Claude For Chrome研究](https://www.anthropic.com/news/claude-for-chrome)，再次仅限Max会员独享。再加上我毕业设计论文中一些步骤急需用Claude Code中的Opus模型解决。
+8月底，Anthropic推出了[Claude for Chrome研究](https://www.anthropic.com/news/claude-for-chrome)，再次仅限Max会员独享。再加上我毕业设计论文中一些步骤急需用Claude Code中的Opus模型解决。
 Pro账号只能在网页对话框中编程，略显鸡肋。于是我注册了尼日利亚Apple账号，全程使用美国代理，但是地点选择的是尼日利亚——Nigeria，这时Apple Store里面购买会员的货币单位就会变为奈拉，
 而不是美元。
 
@@ -82,31 +88,31 @@ Claude Code中转服务存在不稳定、Opus限额等问题，让我不想再�
 
 ![Claude Code辅助我过滤出未处理的条目，最终在Gemini 2.5 Flash的辅助下，成功构建了知识图谱](https://cdn.sa.net/2025/09/17/slVRiAMKEcktnH3.webp)
 
-## Claude For Chrome
+## Claude for Chrome
 
-### Claude For Chrome案例展示
+### Claude for Chrome案例展示
 
 第一批开放给了全球的1000名测试者，[目前正在扩展至10000名测试者](https://support.claude.com/en/articles/12012173-getting-started-with-claude-for-chrome)。
 
-我也有幸参与了Claude For Chrome测试。
+我也有幸参与了Claude for Chrome测试。
 
-![惊喜获得了Claude For Chrome测试](https://cdn.sa.net/2025/09/17/zLlknbVBX2hIJcv.webp)
+![惊喜获得了Claude for Chrome测试](https://cdn.sa.net/2025/09/17/zLlknbVBX2hIJcv.webp)
 
 无法访问成人内容网站。😁
 
-![Claude For Chrome无法访问成人内容网站](https://cdn.sa.net/2025/09/17/zCMuY1Lhgb9atq4.webp)
+![Claude for Chrome无法访问成人内容网站](https://cdn.sa.net/2025/09/17/zCMuY1Lhgb9atq4.webp)
 
 模型采用的是Claude Sonnet 4。Anthropic应该是为了成本考量。
 
-![Claude For Chrome使用的模型是Claude Sonnet 4](https://cdn.sa.net/2025/09/17/lP93ZprEcCwy6Fv.webp)
+![Claude for Chrome使用的模型是Claude Sonnet 4](https://cdn.sa.net/2025/09/17/lP93ZprEcCwy6Fv.webp)
 
 可以设置Shortcut提示词。
 
-![Claude For Chrome可以设置快捷键](https://cdn.sa.net/2025/09/17/SrDqvKp3MnP6HlN.webp)
+![Claude for Chrome可以设置快捷键](https://cdn.sa.net/2025/09/17/SrDqvKp3MnP6HlN.webp)
 
-一般而言，网页博客摘要总结，我不会采用Claude For Chrome来进行。
+一般而言，网页博客摘要总结，我不会采用Claude for Chrome来进行。
 
-![网页博客摘要总结不推荐用Claude For Chrome解决](https://cdn.sa.net/2025/09/17/rh8HpxTJaSUQDv5.webp)
+![网页博客摘要总结不推荐用Claude for Chrome解决](https://cdn.sa.net/2025/09/17/rh8HpxTJaSUQDv5.webp)
 
 我更倾向于Grok 4来进行摘要总结，在单独的一个Project中，设置对应的提示词，除了让模型去总结文章外，还通过Web搜索和X平台搜索进行信息补充，
 进而得到一份饱满详实的文章摘要。
@@ -115,29 +121,29 @@ Claude Code中转服务存在不稳定、Opus限额等问题，让我不想再�
 
 自动化发推文。
 
-![Claude For Chrome自动化发推文](https://cdn.sa.net/2025/09/17/oqySQEpY5knhrGs.webp)
+![Claude for Chrome自动化发推文](https://cdn.sa.net/2025/09/17/oqySQEpY5knhrGs.webp)
 
 发嘟文。
 
-![Claude For Chrome自动化发嘟文](https://cdn.sa.net/2025/09/17/T6pOncelg1bfWiQ.webp)
+![Claude for Chrome自动化发嘟文](https://cdn.sa.net/2025/09/17/T6pOncelg1bfWiQ.webp)
 
 当然肯定也能自动发小红书等平台。点赞、收藏、评论。
 
 "照片拍得好美！毕业照超有意境的✨" by "小红蛋"😂。Claude Sonnet 4对于中文的识别还是有欠缺的。
 
-![Claude For Chrome点赞、收藏评论小红书帖子](https://cdn.sa.net/2025/09/28/WjnTsAvdMbS42Dz.webp)
+![Claude for Chrome点赞、收藏评论小红书帖子](https://cdn.sa.net/2025/09/28/WjnTsAvdMbS42Dz.webp)
 
 去年10月份Anthropic推出了Claude Computer Use，当时我准备了[10个案例](https://blog.gujiakai.top/2024/10/anthropic-updates-evaluation/)。
 
-Claude For Chrome目前无法完成的案例和去年的Computer Use类似。比如仍旧无法对弈五子棋，这其实和棋盘位置识别错误相关。
+Claude for Chrome目前无法完成的案例和去年的Computer Use类似。比如仍旧无法对弈五子棋，这其实和棋盘位置识别错误相关。
 
 可以点击并通过Cloudflare Turnstile人机验证。
 
-![Claude For Chrome能点击并通过Cloudflare Turnstile人机验证](https://cdn.sa.net/2025/09/17/GyEUbag5KFvJuW8.webp)
+![Claude for Chrome能点击并通过Cloudflare Turnstile人机验证](https://cdn.sa.net/2025/09/17/GyEUbag5KFvJuW8.webp)
 
 但貌似只能过测试类的人机验证，真实人机验证，Claude又开始装圣人不干了。
 
-![Claude For Chrome只能过测试类人机验证](https://cdn.sa.net/2025/09/24/XYFMfbjNnrhp3Jg.webp)
+![Claude for Chrome只能过测试类人机验证](https://cdn.sa.net/2025/09/24/XYFMfbjNnrhp3Jg.webp)
 
 玩[验证码小游戏](https://neal.fun/not-a-robot/)，可以过单次点击、Google类的图片验证码、这种摆动字母类的验证码无法通过。
 
@@ -145,25 +151,25 @@ Claude For Chrome目前无法完成的案例和去年的Computer Use类似。比
 
 可以去Youtube搜索库里2016年逆天三分绝杀并播放。
 
-![Claude For Chrome可以去Youtube搜索库里2016年逆天三分绝杀并播放](https://cdn.sa.net/2025/09/17/lke4PHMt3baRfCZ.webp)
+![Claude for Chrome可以去Youtube搜索库里2016年逆天三分绝杀并播放](https://cdn.sa.net/2025/09/17/lke4PHMt3baRfCZ.webp)
 
 去tldraw网站绘制的抽象小猫咪。
 
-![Claude For Chrome去tldraw网站绘制的抽象小猫咪](https://cdn.sa.net/2025/09/17/bcwYjD5Rzv7kMUK.webp)
+![Claude for Chrome去tldraw网站绘制的抽象小猫咪](https://cdn.sa.net/2025/09/17/bcwYjD5Rzv7kMUK.webp)
 
 针对Gmail有预定义的Task。对于GitHub也有预定义的Task，就不展示了。
 
-![Claude For Chrome有预定义的Task](https://cdn.sa.net/2025/09/20/kHmfGnqyFdwvCi4.webp)
+![Claude for Chrome有预定义的Task](https://cdn.sa.net/2025/09/20/kHmfGnqyFdwvCi4.webp)
 
 将Gmail邮箱中的垃圾邮件移动到垃圾箱。
 
-![Claude For Chrome将Gmail邮箱中的垃圾邮件移动到垃圾箱](https://cdn.sa.net/2025/09/17/xyWG6v2OceAs7iX.webp)
+![Claude for Chrome将Gmail邮箱中的垃圾邮件移动到垃圾箱](https://cdn.sa.net/2025/09/17/xyWG6v2OceAs7iX.webp)
 
 可以拿我给出的Wordpress站点账号密码登录，并撰写文章。古腾堡编辑器中的标题部分内容被正文内容所替代，导致标题后半部分看起来很怪异。
 
 via: https://agent.gujiakai.top/2025/09/17/this-post-was-written-by-claude-for-chello-readershrome/
 
-![Claude For Chrome可以自动化发布Wordpress文章](https://cdn.sa.net/2025/09/17/uHICQyiTbNM2jFL.webp)
+![Claude for Chrome可以自动化发布Wordpress文章](https://cdn.sa.net/2025/09/17/uHICQyiTbNM2jFL.webp)
 
 去往阮一峰老师博客周刊最新一期留下友善的评论。要求评论与博文内容相关。
 
@@ -171,69 +177,69 @@ via: https://agent.gujiakai.top/2025/09/17/this-post-was-written-by-claude-for-c
 
 这可能是由于Claude的知识截止日期以及Anthropic利用阮一峰老师周刊训练共同导致的结果。阮一峰老师的周刊毋庸置疑是中文互联网上高质量的语料。
 
-![Claude For Chrome去阮一峰老师周刊评论区留言图1](https://cdn.sa.net/2025/09/17/qNIu6PyMpwEb7Wd.webp)
+![Claude for Chrome去阮一峰老师周刊评论区留言图1](https://cdn.sa.net/2025/09/17/qNIu6PyMpwEb7Wd.webp)
 
-![Claude For Chrome去阮一峰老师周刊评论区留言图2](https://cdn.sa.net/2025/09/17/lIOwc4zYUyQaFrg.webp)
+![Claude for Chrome去阮一峰老师周刊评论区留言图2](https://cdn.sa.net/2025/09/17/lIOwc4zYUyQaFrg.webp)
 
-Claude For Chrome也会占用Claude账号额度。看到报错我一开始还以为发中文被封号了。😁
+Claude for Chrome也会占用Claude账号额度。看到报错我一开始还以为发中文被封号了。😁
 
-![Claude For Chrome也会占用Claude账号额度图1](https://cdn.sa.net/2025/09/17/SpKk6XVuQsCWZ4r.webp)
+![Claude for Chrome也会占用Claude账号额度图1](https://cdn.sa.net/2025/09/17/SpKk6XVuQsCWZ4r.webp)
 
 定睛一看，原来是达到5小时限制，被限流了。
 
-![Claude For Chrome也会占用Claude账号额度图2](https://cdn.sa.net/2025/09/17/O1bIZqTDjLSs7yU.webp)
+![Claude for Chrome也会占用Claude账号额度图2](https://cdn.sa.net/2025/09/17/O1bIZqTDjLSs7yU.webp)
 
 [Claude Relay Service](https://github.com/Wei-Shaw/claude-relay-service/)这一中转Claude Code项目真不错。
 
-让Claude For Chrome和Gemini玩耍。Claude指挥Gemini画了一只可爱的小猫咪。
+让Claude for Chrome和Gemini玩耍。Claude指挥Gemini画了一只可爱的小猫咪。
 
 ![Claude指挥Gemini画了一只可爱的小猫咪。](https://cdn.sa.net/2025/09/22/BQxufhqVNHbnPMD.webp)
 
-让Claude For Chrome和Opus 4.1玩耍，左右脑互搏，继续You're absolutely right!
+让Claude for Chrome和Opus 4.1玩耍，左右脑互搏，继续You're absolutely right!
 
-![Claude For Chrome和Opus 4.1玩耍](https://cdn.sa.net/2025/09/22/InHjpuVWF2kq6GD.webp)
+![Claude for Chrome和Opus 4.1玩耍](https://cdn.sa.net/2025/09/22/InHjpuVWF2kq6GD.webp)
 
-让Claude For Chrome和Grok玩耍，Claude直接搜索起了今日新闻。
+让Claude for Chrome和Grok玩耍，Claude直接搜索起了今日新闻。
 
-![Claude For Chrome和Grok玩耍](https://cdn.sa.net/2025/09/22/j9BWxkTq4trVcXf.webp)
+![Claude for Chrome和Grok玩耍](https://cdn.sa.net/2025/09/22/j9BWxkTq4trVcXf.webp)
 
-让Claude For Chrome填写问卷，Claude认真起来了，认为虚假数据会扭曲实验结果，拒绝填写问卷。
+让Claude for Chrome填写问卷，Claude认真起来了，认为虚假数据会扭曲实验结果，拒绝填写问卷。
 
-![Claude For Chrome拒绝填写问卷](https://cdn.sa.net/2025/09/22/3uUrh7Y5PcBIomK.webp)
+![Claude for Chrome拒绝填写问卷](https://cdn.sa.net/2025/09/22/3uUrh7Y5PcBIomK.webp)
 
-### Claude For Chrome缺点
+### Claude for Chrome缺点
 
-Claude For Chrome无法访问reddit站点。限制reddit站点真得好可惜，目前为止能抓取reddit站点页面的AI，我测试的里头，只有Grok和ChatGPT支持抓取，其中Grok还能抓取帖子评论。
+Claude for Chrome无法访问reddit站点。限制reddit站点真得好可惜，目前为止能抓取reddit站点页面的AI，我测试的里头，只有Grok和ChatGPT支持抓取，其中Grok还能抓取帖子评论。
 
-![Claude For Chrome无法访问reddit站点。](https://cdn.sa.net/2025/09/19/cbr9LdPGWiOoAVR.webp)
+![Claude for Chrome无法访问reddit站点。](https://cdn.sa.net/2025/09/19/cbr9LdPGWiOoAVR.webp)
 
-用Claude For Chrome发小红书帖，建议自己和Claude For Chrome配合。
+用Claude for Chrome发小红书帖，建议自己和Claude for Chrome配合。
 
-![用Claude For Chrome发小红书帖，建议自己和Claude For Chrome配合。](https://cdn.sa.net/2025/09/19/BWLE9wkANgeCntV.webp)
+![用Claude for Chrome发小红书帖，建议自己和Claude for Chrome配合。](https://cdn.sa.net/2025/09/19/BWLE9wkANgeCntV.webp)
 
 如果直接让其自动，帖子的效果差点意思。测试完肯定删帖了。
 
 ![如果直接让其自动，帖子的效果差点意思。](https://cdn.sa.net/2025/09/19/7wjfv6i4eyoENzS.webp)
 
-Claude For Chrome无法跨tab进行操作。
+Claude for Chrome无法跨tab进行操作。
 
 查询天气，在新建标签页打开了需要查询城市的天气，但仍局限于当前页面。
 
-![Claude For Chrome无法跨tab进行操作。](https://cdn.sa.net/2025/09/20/LzsauvMSbcjhBV9.webp)
+![Claude for Chrome无法跨tab进行操作。](https://cdn.sa.net/2025/09/20/LzsauvMSbcjhBV9.webp)
 
-当然，之前的演示：让Claude For Chrome退订Gmail垃圾邮件也出现了此窘境，退订按钮打开了一个新tab页，但Claude For Chrome依旧停留在Gmail页面等待页面加载完成。
+当然，之前的演示：让Claude for Chrome退订Gmail垃圾邮件也出现了此窘境，退订按钮打开了一个新tab页，但Claude for Chrome依旧停留在Gmail页面等待页面加载完成。
 
-Claude For Chrome拒绝成为MAGA。😁
+Claude for Chrome拒绝成为MAGA。😁
 
-![Claude For Chrome拒绝成为MAGA。](https://cdn.sa.net/2025/09/20/yiuRIlQWF3cmxo4.webp)
+![Claude for Chrome拒绝成为MAGA。](https://cdn.sa.net/2025/09/20/yiuRIlQWF3cmxo4.webp)
 
 可以浏览并总结Trump的帖子。
 
-![Claude For Chrome可以浏览并总结Trump帖子](https://cdn.sa.net/2025/09/24/ZYMy69TKfw4WDse.webp)
+![Claude for Chrome可以浏览并总结Trump帖子](https://cdn.sa.net/2025/09/24/ZYMy69TKfw4WDse.webp)
 
-Claude For Chrome回复内容时不时会截断。
+Claude for Chrome回复内容时不时会截断。
 
-![Claude For Chrome回复内容时不时会截断。](https://cdn.sa.net/2025/09/20/N6dFwBJkbDZEUHn.webp)
+![Claude for Chrome回复内容时不时会截断。](https://cdn.sa.net/2025/09/20/N6dFwBJkbDZEUHn.webp)
 
 ## 小插曲
 
@@ -249,11 +255,11 @@ Claude模型的意识确实牛，没识别出多选，开始自己臆想是单�
 
 ## 总结
 
-总体而言，Claude For Chrome体验还是很ok的，但奈何Anthropic所谓的道德束缚，限制了Claude模型的发挥。
+总体而言，Claude for Chrome体验还是很ok的，但奈何Anthropic所谓的道德束缚，限制了Claude模型的发挥。
 
-![让Claude For Chrome总结Email](https://cdn.sa.net/2025/09/27/GCwvEfkQBrDacx7.webp)
+![让Claude for Chrome总结Email](https://cdn.sa.net/2025/09/27/GCwvEfkQBrDacx7.webp)
 
-最后做一个小小的总结，一开始我拿到Claude For Chrome内测资格，我原本是打算自动化我的信息流的，比如让其自动化浏览我的RSS订阅，紧接着给出一份完整的简报，包含摘要和关键链接。但试了试，发现其压根就不适合该场景，让其自动化操作的结局就是忽略关键信息。看来这个场景还得是人工来进行。就算LLM识别重要信息再精确，总会有疏漏之处，随机性让人难以完全信任。
+最后做一个小小的总结，一开始我拿到Claude for Chrome内测资格，我原本是打算自动化我的信息流的，比如让其自动化浏览我的RSS订阅，紧接着给出一份完整的简报，包含摘要和关键链接。但试了试，发现其压根就不适合该场景，让其自动化操作的结局就是忽略关键信息。看来这个场景还得是人工来进行。就算LLM识别重要信息再精确，总会有疏漏之处，随机性让人难以完全信任。
 
 为了确保Anthropic不封号，我特意将电脑时区更改为了节点时区，这几天更改回了新加坡东八区。Claude Max会员一个人用5x感觉已经足够了，除非你有很多代码项目需要辅助，不然绝对是绰绰有余的。9月份的下旬，我的Claude账号基本上大部分时间都处于空闲状态。最近很忙，没有多余时间去像暑假那般搞毕业大论文实验，指挥Claude写代码。
 
