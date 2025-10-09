@@ -7,6 +7,28 @@ summary: 介绍Claude Max会员体验。
 showtoc: true
 ---
 
+## 补充（2025.10.09）
+
+在手头忙时，总会怀念让Claude for Chrome去调研小红书等站点相关话题，满足我猎奇的心理。
+
+试了试Comet，Perplexity出的AI浏览器，8月份就下载了但基本上没怎么用过，近期Comet对所有用户都开放了。发现其也能实现类似Claude for Chrome相同的操作。
+
+![Comet自动化小红书](https://cdn.sa.net/2025/10/09/Jgt4XfSVzbuRxlD.webp)
+
+![comet对所有用户开放](https://cdn.sa.net/2025/10/09/FNXOfDtKyjevkw5.webp)
+
+与此同时其也能浏览Reddit评论区。我登陆了Reddit账号，Comet能直接对着评论区进行截图进行识别。
+
+![Comet借助Reddit账号登陆状态，直接对着评论区截图识别](https://cdn.sa.net/2025/10/09/6GwJSYcABaHXVLF.webp)
+
+Claude模型确实很顶，但毋庸置疑近期Anthropic的风评确实已经急转直下。连姚顺宇大神也直接公开反对Anthropic激进的言论（有两个学术大牛，一个叫姚顺宇，另一个叫姚顺雨，有些时候傻傻分不清）。via: https://alfredyao.github.io/posts/2025-10-06.html
+
+![姚顺宇反对Anthropic的激进言论](https://cdn.sa.net/2025/10/09/wsWKZV9odtfhurC.webp)
+
+![Grok对于姚顺宇文章总结](https://cdn.sa.net/2025/10/09/SDgZoYcVbPs48Th.webp)
+
+还是那句话，可以偷偷用Claude模型，但Anthropic的冷战思维认同不了一点。
+
 ## 补充（2025.10.07）
 
 今天早上整理邮件，发现邮箱里面多了一封Anthropic工作人员发送的Claude for Chrome的更新通知邮件。

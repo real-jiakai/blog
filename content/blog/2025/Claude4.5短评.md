@@ -7,6 +7,20 @@ summary: 分享Claude Sonnet 4.5体验。
 showtoc: true
 ---
 
+## 补充（2025.10.09）
+
+近期看到Anthropic针对各种类型的套餐出了严苛的周限，各大中转站都纷纷开始调整套餐。
+
+今天早上也看到了姚顺宇大神对于Anthropic激进言论的公开反对。via: https://alfredyao.github.io/posts/2025-10-06.html
+
+![姚顺宇反对Anthropic的激进言论](https://cdn.sa.net/2025/10/09/wsWKZV9odtfhurC.webp)
+
+偷偷用吧，也希望各大AI公司都能以用户体验为核心开发模型和产品，而不是基准测试。
+
+称赞Anthropic是因为他家的模型确实有些场景下能更契合我的需求，比如Vibe Coding，我也是个代码小白，从去年到现在，唯一能信任的也就只有Claude写的代码。其余的模型真没有想尝试的欲望。我的目标很简单：只要做好提示，力争第一版代码就是最终版代码。
+
+什么是真正的遥遥领先，领先一步就是步步领先，虽然看上去这句话很激进，但其实道出的就是现实。ChatGPT发布早，用户数远远大于其余AI模型，LLM相关的API大多都兼容OpenAI调用格式；反过头来，代码领域Claude模型也是同样的情况，从3.5到4.5，一直是代码领域的最佳选项。
+
 ## 背景
 
 东八区2025年9月30日凌晨，[Claude Sonnet 4.5](https://www.anthropic.com/news/claude-sonnet-4-5)降临！我的观点：领先一步就是步步领先。Anthropic有绝对的自信，直接宣称：
