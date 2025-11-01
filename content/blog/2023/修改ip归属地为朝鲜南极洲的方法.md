@@ -7,6 +7,14 @@ summary: 分享修改ip归属地为朝鲜、南极洲的方法。
 showtoc: true
 ---
 
+## 更新（2025.11.1）
+
+- https://www.nodeseek.com/post-492411-1
+
+- https://debee.io/index.php?rp=/store/hkbgp-warp
+
+最近刷nodeseek帖子，又看到一些卖朝鲜ipv6出口的商家。
+
 ## 更新（2025.6.1、2025.7.7）
 
 昨天在L站刷到一个帖子—[如何获取特殊ip？](https://linux.do/t/topic/689703)
