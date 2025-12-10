@@ -12,6 +12,7 @@
 
 ## Content
 
+- [当大模型开始画答案](https://blog.gujiakai.top/2025/12/when-llms-start-drawing-answers/): 介绍LLM可视化回复的现状。
 - [“体验券”转正实录](https://blog.gujiakai.top/2025/11/from-trial-to-official/): 记录体验券转正实录。
 - [Claude Sonnet 4.5短评](https://blog.gujiakai.top/2025/09/claude-sonnet-4-5-review/): 分享Claude Sonnet 4.5体验。
 - [Claude Max尝鲜](https://blog.gujiakai.top/2025/09/claude-max-preview/): 介绍Claude Max会员体验。
