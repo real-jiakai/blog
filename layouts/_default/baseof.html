@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+{{/* html head */}}
+{{- partial "head.html" . -}}
+
+<body class="d-flex flex-column min-vh-100">
+  {{/* html header */}}
+  {{- partial "header.html" . -}}
+
+  {{/* html main */}}
+  <div class="flex-fill container-fluid m-auto">
+    <div class="row justify-content-center">
+      {{ if .IsHome }}
+      <div class="col-md-6">
+        {{- block "main" . -}} {{ end }}
+      </div>
+      {{ else }}
+      <div class="col-md-6 offset-md-3">
+        {{- block "main" . -}}{{ end }}
+      </div>
+      <div class="col-md-3">
+        {{- partial "sidebar.html" . -}}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+
+  {{/* html footer */}}
+  {{- partial "footer.html" . -}}
+  {{/* html scripts */}}
+  {{- partial "scripts.html" . -}}
+  {{/* html analytics */}}
+  {{- partial "analytics.html" . -}}
+</body>
+
+</html>

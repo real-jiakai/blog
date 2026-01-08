@@ -1,9 +1,5 @@
 # 网站的基本url地址
 baseURL: https://blog.gujiakai.top
-# 网站使用的语言代码
-languageCode: 'en-us'
-# 网站标题
-title: '顾佳凯的网络日志'
 # 网站使用的主题
 theme: 'hugo-theme-simple'
 # google分析
@@ -19,26 +15,81 @@ hasCJKLanguage: true
 # 开启robots.txt
 enableRobotsTXT: true
 
-# 网站的菜单栏配置
-menu:
-  main:
-    - name: "主页"
-      url: "/"
-      weight: 1
-    - name: "归档"
-      url: "/archive/"
-      weight: 2
-    - name: "标签"
-      url: "/tags/"
-      weight: 3
-    - name: "til"
-      url: "/til/"
-      weight: 4
-    - name: "关于"
-      url: "/about/"
-      weight: 5
+# RSS输出配置 - 为每种语言生成RSS
+outputs:
+  home:
+    - HTML
+    - RSS
+  section:
+    - HTML
+    - RSS
 
-# 参数
+# 多语言设置
+# 中文为默认语言，保持根路径不变（不加/zh/前缀）
+# 英文使用/en/前缀
+defaultContentLanguage: zh
+defaultContentLanguageInSubdir: false
+
+# 语言配置
+languages:
+  zh:
+    languageName: "中文"
+    languageCode: "zh-CN"
+    weight: 1
+    title: "顾佳凯的网络日志"
+    contentDir: "content/zh"
+    params:
+      description: "一个专注于分享技术和个人经历的博客"
+      keywords: "博客,技术,个人,生活"
+      author: "顾佳凯"
+      footer: "&copy; 2022-{Year} Made with ❤️ By Jiakai"
+    menu:
+      main:
+        - name: "主页"
+          url: "/"
+          weight: 1
+        - name: "归档"
+          url: "/archive/"
+          weight: 2
+        - name: "标签"
+          url: "/tags/"
+          weight: 3
+        - name: "til"
+          url: "/til/"
+          weight: 4
+        - name: "关于"
+          url: "/about/"
+          weight: 5
+  en:
+    languageName: "English"
+    languageCode: "en-US"
+    weight: 2
+    title: "Jiakai's Blog"
+    contentDir: "content/en"
+    params:
+      description: "A blog focusing on sharing tech and personal experiences"
+      keywords: "blog,tech,personal,life"
+      author: "Jiakai"
+      footer: "&copy; 2022-{Year} Made with ❤️ By Jiakai"
+    menu:
+      main:
+        - name: "Home"
+          url: "/"
+          weight: 1
+        - name: "Archive"
+          url: "/archive/"
+          weight: 2
+        - name: "Tags"
+          url: "/tags/"
+          weight: 3
+        - name: "TIL"
+          url: "/til/"
+          weight: 4
+        - name: "About"
+          url: "/about/"
+          weight: 5
+
+# 全局参数（作为默认值）
 params:
   description: "A blog focusing on sharing tech and personal experiences"
   keywords: "blog,tech,personal,life"

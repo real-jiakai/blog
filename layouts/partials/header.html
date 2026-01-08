@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-lg">
+    <div class="container border-bottom">
+        <a class="navbar-brand" href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                {{ range .Site.Menus.main }}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+                </li>
+                {{ end }}
+                {{/* Language Switcher - add/remove language prefix */}}
+                {{ if gt (len .Site.Sites) 1 }}
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false">
+                        {{ .Site.Language.LanguageName }}
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        {{ $currentPath := .RelPermalink }}
+                        {{/* Chinese (default, no prefix) */}}
+                        <li>
+                            {{ $zhPath := replaceRE "^/en/" "/" $currentPath }}
+                            <a class="dropdown-item{{ if eq .Site.Language.Lang "zh" }} active{{ end }}" href="{{ $zhPath }}">
+                                中文
+                            </a>
+                        </li>
+                        {{/* English (with /en/ prefix) */}}
+                        <li>
+                            {{ $enPath := $currentPath }}
+                            {{ if not (hasPrefix $currentPath "/en/") }}
+                                {{ $enPath = printf "/en%s" $currentPath }}
+                            {{ end }}
+                            <a class="dropdown-item{{ if eq .Site.Language.Lang "en" }} active{{ end }}" href="{{ $enPath }}">
+                                English
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+    </div>
+</nav>

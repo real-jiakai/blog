@@ -1,0 +1,14 @@
+name: Netlify yearly redeploy
+
+on:
+  schedule:
+    - cron: "0 0 1 1 *"
+  workflow_dispatch: {}
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Netlify build hook
+        run: |
+          curl -X POST -d '{}' "${{ secrets.NETLIFY_BUILD_HOOK_URL }}"

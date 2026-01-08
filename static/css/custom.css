@@ -1,5 +1,5 @@
 .highlight div,
-.highlight > pre {
+.highlight>pre {
     overflow-x: auto;
 }
 
@@ -55,8 +55,16 @@
 }
 
 @keyframes copiedAnimation {
-    0%, 100% { opacity: 0.6; }
-    50% { opacity: 1; background-color: #37823b; }
+
+    0%,
+    100% {
+        opacity: 0.6;
+    }
+
+    50% {
+        opacity: 1;
+        background-color: #37823b;
+    }
 }
 
 pre.chroma {

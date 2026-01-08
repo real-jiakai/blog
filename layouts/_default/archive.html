@@ -1,5 +1,5 @@
 {{ define "main" }}
-<h1 class="mb-4">📚 归档</h1>
+<h1 class="mb-4">📚 {{ i18n "archiveTitle" | default "Archive" }}</h1>
 
 {{ $posts := where .Site.RegularPages "Type" "==" "blog" }}
 {{ $postsByYear := $posts.GroupByDate "2006" }}
@@ -31,7 +31,7 @@
     <!-- 按计数降序排序并显示标签 -->
     <div class="mb-4">
         {{ range sort $tagCounts "count" "desc" }}
-            <a href="/tags/{{ .name | urlize }}" class="badge bg-secondary text-decoration-none me-2">
+            <a href="{{ "/tags/" | relLangURL }}{{ .name | urlize }}" class="badge bg-secondary text-decoration-none me-2">
                 #{{ .name }} ({{ .count }})
             </a>
         {{ end }}

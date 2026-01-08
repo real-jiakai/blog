@@ -1,0 +1,46 @@
+- id: home
+  translation: "Home"
+- id: archive
+  translation: "Archive"
+- id: tags
+  translation: "Tags"
+- id: about
+  translation: "About"
+- id: til
+  translation: "TIL"
+- id: readMore
+  translation: "Read More"
+- id: previousPage
+  translation: "Previous"
+- id: nextPage
+  translation: "Next"
+- id: postedOn
+  translation: "Posted on"
+- id: wordCount
+  translation: "Words"
+- id: readingTime
+  translation: "Reading time"
+- id: minutes
+  translation: "min"
+- id: tableOfContents
+  translation: "Table of Contents"
+- id: language
+  translation: "Language"
+- id: tagsTitle
+  translation: "Tags"
+- id: archiveTitle
+  translation: "Archive"
+- id: archiveByYear
+  translation: "Archive by Year"
+- id: documentInfo
+  translation: "Document Info"
+- id: copyrightNotice
+  translation: "License: Free to share - Non-commercial - No derivatives - Attribution required ("
+- id: ccLicense
+  translation: "CC BY-NC-ND 4.0"
+- id: copyrightEnd
+  translation: ")"
+- id: prevPost
+  translation: "Previous"
+- id: nextPost
+  translation: "Next"

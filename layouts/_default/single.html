@@ -21,12 +21,12 @@
       
       <div class="d-flex align-items-center">
         <span class="iconfont icon-wenjianxinxi me-1"></span>
-        {{ .WordCount }} words
+        {{ .WordCount }} {{ i18n "wordCount" }}
       </div>
-      
+
       <div class="d-flex align-items-center">
         <span class="iconfont icon-time me-1"></span>
-        {{ .ReadingTime }} min read
+        {{ .ReadingTime }} {{ i18n "minutes" }}
       </div>
     </div>
     {{ end }}
@@ -42,17 +42,17 @@
 
       <!-- 上下篇导航 -->
       <div class="d-flex justify-content-between mt-4">
-        {{ with .Prev }}
+        {{ with .PrevInSection }}
         <div class="d-flex align-items-center" style="max-width: 50%;">
           <div class="text-truncate">
-            <a href="{{ .RelPermalink }}" class="text-decoration-none">&larr; 上一篇：{{ .Title }}</a>
+            <a href="{{ .RelPermalink }}" class="text-decoration-none">&larr; {{ i18n "prevPost" }}：{{ .Title }}</a>
           </div>
         </div>
         {{ end }}
-        {{ with .Next }}
+        {{ with .NextInSection }}
         <div class="d-flex align-items-center justify-content-end" style="max-width: 50%;">
           <div class="text-truncate">
-            <a href="{{ .RelPermalink }}" class="text-decoration-none">下一篇：{{ .Title }} &rarr;</a>
+            <a href="{{ .RelPermalink }}" class="text-decoration-none">{{ i18n "nextPost" }}：{{ .Title }} &rarr;</a>
           </div>
         </div>
         {{ end }}
