@@ -1,0 +1,92 @@
+# Jiakai Gu's Blog
+
+> `Jiakai Gu's Blog` is a personal technology blog focusing on sharing tech and personal experiences.
+
+## Main Sections
+
+- [Home Page](https://blog.gujiakai.top/en/): Home Page
+- [Archive](https://blog.gujiakai.top/en/archive/): Archive Page
+- [Tags](https://blog.gujiakai.top/en/tags/): Tags Page
+- [Til](https://blog.gujiakai.top/en/til/): Til Page
+- [About](https://blog.gujiakai.top/en/about/): About Page
+
+## Content
+
+- [Reflections on Claude Max](https://blog.gujiakai.top/en/2026/01/claude-max-aftertaste/): Sharing my experience with my second Claude Max subscription.
+- [When LLMs Start Drawing Answers](https://blog.gujiakai.top/en/2025/12/when-llms-start-drawing-answers/): Introducing the current state of LLM visual responses.
+- [From Trial to Official](https://blog.gujiakai.top/en/2025/11/from-trial-to-official/): Recording the journey from trial to official employment.
+- [Claude Sonnet 4.5 Review](https://blog.gujiakai.top/en/2025/09/claude-sonnet-4-5-review/): Sharing Claude Sonnet 4.5 experience.
+- [Claude Max Preview](https://blog.gujiakai.top/en/2025/09/claude-max-preview/): Introducing Claude Max subscription experience.
+- [Make Claude Great Again](https://blog.gujiakai.top/en/2025/08/make-claude-great-again/): Sharing recent experiences with Claude products.
+- [Manus Experience](https://blog.gujiakai.top/en/2025/07/manus-experience/): Sharing thoughts on Manus experience.
+- [Grok 4 Real Experience](https://blog.gujiakai.top/en/2025/07/grok-4-real-experience/): Sharing Grok 4 real experience.
+- [Claude 4 Experience](https://blog.gujiakai.top/en/2025/05/claude-4-experience/): Sharing Claude 4 usage experience.
+- [Google I/O 2025 Notes](https://blog.gujiakai.top/en/2025/05/google-io-2025-notes/): Recording Google I/O 2025 announcements.
+- [ChatGPT o3, o4 mini Experience](https://blog.gujiakai.top/en/2025/04/chatgpt-o3-o4-mini-experience/): Sharing ChatGPT o3, o4 mini experience.
+- [Self-hosted Kasm Workspaces](https://blog.gujiakai.top/en/2025/03/self-hosted-kasm-workspaces/): Sharing self-hosting Kasm Workspaces experience.
+- [Gemini 2.5 Pro Experience](https://blog.gujiakai.top/en/2025/03/gemini-2-5-pro-experience/): Sharing Gemini 2.5 Pro experience.
+- [Phind VS Devv](https://blog.gujiakai.top/en/2025/03/phind-vs-devv/): Comparing AI programming search tools Phind and Devv.
+- [Claude 3.7 Sonnet Experience](https://blog.gujiakai.top/en/2025/02/claude-3-7-sonnet-experience/): Sharing Claude 3.7 Sonnet usage experience.
+- [Gemini 2.0 Experience](https://blog.gujiakai.top/en/2025/02/gemini-2-0-experience/): Sharing Gemini 2.0 experience.
+- [Doubao Real-time On-pitch Songs](https://blog.gujiakai.top/en/2025/01/doubao-real-time-on-pitch-songs/): Sharing songs Doubao real-time voice can sing on pitch.
+- [GLM Realtime API Experience](https://blog.gujiakai.top/en/2025/01/glm-realtime-api-experience/): Sharing GLM Realtime API experience.
+- [OpenAI December Updates Notes](https://blog.gujiakai.top/en/2024/12/notes-about-openai-december-updates/): Recording OpenAI December announcements.
+- [Claude Account Suspension Resolution](https://blog.gujiakai.top/en/2024/11/claude-account-suspension-resolution/): Recording a personal Claude account suspension experience and solutions.
+- [Claude 3.5 Haiku Review](https://blog.gujiakai.top/en/2024/11/claude-3-5-haiku-review/): Recording Claude 3.5 Haiku review.
+- [Gemini Advanced October 2024 Review](https://blog.gujiakai.top/en/2024/11/gemini-advanced-2024-october-review/): Recording Gemini Advanced usage experience.
+- [Anthropic Updates Evaluation](https://blog.gujiakai.top/en/2024/10/anthropic-updates-evaluation/): Recording October 22, 2024 Anthropic updates evaluation.
+- [Stay Away from GreenCloud](https://blog.gujiakai.top/en/2024/10/stay-away-from-greencloud/): Recording a VPS data loss experience.
+- [bolt.new First Experience](https://blog.gujiakai.top/en/2024/10/bolt-new-first-experience/): Introducing first experience completing a simple project with bolt.new.
+- [Self-hosted Bookmark App Hoarder](https://blog.gujiakai.top/en/2024/10/self-hosted-bookmark-app-hoarder/): Sharing self-hosting bookmark app Hoarder experience.
+- [ChatGPT 4o with Canvas Review](https://blog.gujiakai.top/en/2024/10/chatgpt-4o-canvas-review/): Recording ChatGPT 4o with canvas usage experience.
+- [Xiaohongshu RSS Tips](https://blog.gujiakai.top/en/2024/09/xiaohongshu-rss-tips/): Introducing Xiaohongshu RSS solutions.
+- [Why CSDN is a Pile of Shit](https://blog.gujiakai.top/en/2024/09/why-is-csdn-a-pile-of-shit/): Explaining why CSDN is problematic, targeting the platform not creators.
+- [Unexpected Bero Host VPS Bargain](https://blog.gujiakai.top/en/2024/08/unexpected-bero-host-vps-bargain/): Recording how a dream VPS fell from the sky.
+- [Meta.AI US IP Restriction Solutions](https://blog.gujiakai.top/en/2024/08/meta-ai-us-ip-restriction-solutions/): Introducing Meta.AI US IP region restriction solutions.
+- [Proton Family Plan First Taste](https://blog.gujiakai.top/en/2024/08/proton-family-plan-first-taste/): Introducing Proton Family Plan experience.
+- [Build Your Own Xiaohongshu/Instagram Alternative - Pixelfed](https://blog.gujiakai.top/en/2024/07/build-your-own-xiaohongshu-instagram-alternative-pixelfed/): Introducing self-hosting Pixelfed process.
+- [The First ASN of Young People](https://blog.gujiakai.top/en/2024/06/the-first-asn-of-young-people/): Introducing obtaining ASN and configuring IPv6 addresses.
+- [Selfhost Zoraxy - An Alternative to Nginx Proxy Manager](https://blog.gujiakai.top/en/2024/05/selfhost-zoraxy-an-alternative-to-nginx-proxy-manager/): Self-hosting Nginx Proxy Manager alternative - Zoraxy.
+- [Alternatives to Google One VPN Shutdown](https://blog.gujiakai.top/en/2024/04/alternatives-to-google-one-vpn-shutdown/): Introducing alternatives after Google One VPN shutdown.
+- [Fake Self-host Lover](https://blog.gujiakai.top/en/2024/04/fake-selfhost-lover/): Introducing common reasons for abandoned self-hosted projects.
+- [Experience Sharing on Ikihost IP Change Ordeal](https://blog.gujiakai.top/en/2024/03/experience-sharing-on-ikihost-ip-change-ordeal/): Sharing experience from Ikihost IP change incident.
+- [Solving Gemini Device Compatibility Issues](https://blog.gujiakai.top/en/2024/02/solving-gemini-device-compatibility-issues/): Introducing Gemini Android App device compatibility solutions.
+- [Migrating to IPv6 Only Instance on Lightsail](https://blog.gujiakai.top/en/2024/01/migrating-to-ipv6-only-instance-on-lightsail/): Recording Lightsail migration to IPv6 only instance.
+- [Fix apt Install Operation Not Permitted Error](https://blog.gujiakai.top/en/2024/01/fix-apt-install-operation-not-permitted-error/): Introducing apt install Operation not permitted error solution.
+- [ChatGPT Team Experience](https://blog.gujiakai.top/en/2024/01/chatgpt-team-experience/): Recording ChatGPT Team account experience.
+- [Summary of Server Shop of 2023 Black Friday](https://blog.gujiakai.top/en/2023/11/summary-of-server-shop-of-2023-bf/): Summarizing 2023 Black Friday server purchases.
+- [My App Defaults 2023](https://blog.gujiakai.top/en/2023/11/my-app-defaults-2023/): Introducing apps I use daily in 2023.
+- [Racknerd Ubuntu UFS Fix](https://blog.gujiakai.top/en/2023/11/racknerd-ubuntu-ufs-fix/): Introducing solution for Racknerd Ubuntu 'UFS: unable to mount root fs on unknown-block.' error.
+- [ChatGPT Android Error Disallowed ISP Solution](https://blog.gujiakai.top/en/2023/10/chatgpt-android-error-disallowed-isp-solution/): Introducing ChatGPT Android 'disallowed ISP/There is a problem with your request' error solution.
+- [Use Docker Compose to Build Proxigram](https://blog.gujiakai.top/en/2023/10/use-docker-compose-to-build-proxigram/): Introducing self-hosting Proxigram with Docker.
+- [Solving hxservers Network Issues](https://blog.gujiakai.top/en/2023/10/solving-hxservers-network-issues/): Introducing hxservers network issues solutions.
+- [Experience iCloud+ Private Relay](https://blog.gujiakai.top/en/2023/10/experience-icloud-plus-private-relay/): Introducing iCloud+ Private Relay usage experience.
+- [hxservers Google One Node Setup Guide](https://blog.gujiakai.top/en/2023/10/hxservers-google-one-node-setup-guide/): Introducing setting up Google One VPN node on hxservers.
+- [Conda Activation Error Unicode Decode GBK](https://blog.gujiakai.top/en/2023/09/conda-activation-error-unicode-decode-gbk/): Introducing Windows git bash conda environment activation UnicodeDecodeError solution.
+- [Notes About Migrating from One Bandwagon Host to Another](https://blog.gujiakai.top/en/2023/09/notes-about-migrating-from-one-bandwagon-host-to-another/): Recording Bandwagon Host migration process.
+- [Using Windows Hotspot and Clash TUN for Kindle Internet Access](https://blog.gujiakai.top/en/2023/09/using-windows-hotspot-and-clash-tun-for-kindle-internet-access/): Introducing using Windows hotspot and Clash TUN mode for Kindle internet access.
+- [Fix Git Push Fatal Error Did Not Receive Expected Object](https://blog.gujiakai.top/en/2023/09/fix-git-push-fatal-error-did-not-receive-expected-object/): Introducing git push 'remote: fatal: did not receive expected object' error solution.
+- [Methods for Setting IP to North Korea and Antarctica](https://blog.gujiakai.top/en/2023/08/methods-for-setting-ip-to-north-korea-and-antarctica/): Sharing methods to change IP location to North Korea and Antarctica.
+- [Solving Date and Time Error in ChatGPT Android App](https://blog.gujiakai.top/en/2023/08/solving-date-and-time-error-in-chatgpt-android-app/): Sharing ChatGPT Android date and time error solution.
+- [Solving Caddy Failure on BandwagonHost ThePlanV2](https://blog.gujiakai.top/en/2023/06/solving-caddy-failure-on-bandwagonhost-theplanv2/): Introducing Caddy startup failure solution on BandwagonHost The Plan V2.
+- [Fix Chika Crash on Windows Server](https://blog.gujiakai.top/en/2023/06/fix-chika-crash-on-windows-server/): Sharing Chika launcher crash solution on Windows Server.
+- [ChatGPT Plugins List](https://blog.gujiakai.top/en/2023/06/chatgpt-plugins-list/): Sharing compiled ChatGPT plugins list.
+- [Unlock ChatGPT When VPS Been Judged CN by Cloudflare](https://blog.gujiakai.top/en/2023/06/unlock-chatgpt-when-vps-been-judged-cn-by-cloudflare/): Sharing using secondary proxy to unlock ChatGPT on non-OpenAI service region VPS.
+- [Thinking of OpenAI Ban Plus Customers in 527](https://blog.gujiakai.top/en/2023/05/thinking-of-openai-ban-plus-customers-in-527/): Sharing thoughts on OpenAI clearing Plus users.
+- [Create RSS Feed with Rsseverything Tutorial](https://blog.gujiakai.top/en/2023/03/create-rss-feed-with-rsseverything-tutorial/): Introducing Feed43 successor - Rsseverything RSS feed creation tutorial.
+- [Solutions for Network Error of New Bing](https://blog.gujiakai.top/en/2023/03/solutions-for-network-error-of-new-bing/): Introducing New Bing network error solutions.
+- [Hugo Theme Development Diary](https://blog.gujiakai.top/en/2023/03/hugo-theme-development-diary/): Recording Hugo theme development process.
+- [The Solution of Google Voice is Connecting](https://blog.gujiakai.top/en/2023/03/the-solution-of-google-voice-is-connecting/): Introducing Google Voice connecting issue solution.
+- [Will Docker Container Be Limited by Firewall?](https://blog.gujiakai.top/en/2023/03/will-docker-container-be-limited-by-firewall/): Introducing solution for Docker container services bypassing firewall.
+- [Use Docker Compose to Build RSSBridge](https://blog.gujiakai.top/en/2023/02/use-docker-compose-to-build-rssbridge/): Introducing RSSBridge setup method.
+- [Use RSS to Subscribe Instagram](https://blog.gujiakai.top/en/2023/01/use-rss-to-subscribe-instagram/): Introducing using RSS to subscribe to Instagram.
+- [A Solution About Nginx Problem](https://blog.gujiakai.top/en/2023/01/a-solution-about-nginx-problem/): Introducing nginx installation bug solution.
+- [The Execution Process ls > list](https://blog.gujiakai.top/en/2023/01/the-execution-process-ls--list/): Introducing ls > list command execution process.
+- [Read Later Equals to Not Read](https://blog.gujiakai.top/en/2023/01/read-later-equals-to-not-read/): Introducing thoughts on using read-later apps.
+- [Hugo Remove Trailing Slash](https://blog.gujiakai.top/en/2022/11/hugo-remove-trailing-slash/): Introducing method to remove trailing slash from Hugo blog URLs.
+- [SSH Connect by Proxy Error Connection Closed by Foreign Host Solution](https://blog.gujiakai.top/en/2022/10/ssh-connect-by-proxy-error-connection-closed-by-foreign-host-solution/): SSH proxy connection error solution found after two hours of exploration.
+- [You Should Add a Semicolon When a Statement End in JS](https://blog.gujiakai.top/en/2022/09/you-should-add-a-semicolon-when-a-statement-end-in-js/): Examining newsletter JS code details revealed the importance of semicolons in JS.
+- [Use Script to Install Code-server](https://blog.gujiakai.top/en/2022/08/use-script-to-install-code-server/): Using one-click script to install code-server.
+- [GitHub Education Developer Kit Application Journey](https://blog.gujiakai.top/en/2022/06/github-education-developer-kit-application-journey/): After 49 instant rejections by GitHub's automated system, I succeeded on the 50th try.
+- [324 Gitee Affair](https://blog.gujiakai.top/en/2022/03/324-gitee-affair/): On March 24, 2022, Gitee banned all image hosting repositories. Sharing personal views.
+- [GitHub SVG](https://blog.gujiakai.top/en/2022/03/github-svg/): Introducing how to implement dynamic SVG effects on GitHub profile.
