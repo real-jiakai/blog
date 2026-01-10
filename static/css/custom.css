@@ -71,3 +71,22 @@ pre.chroma {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+
+/* ===========================================
+   Language Dropdown z-index fix
+   Ensure dropdown appears above TOC/sidebar
+   =========================================== */
+.navbar {
+    position: relative;
+    z-index: 1030;
+}
+
+.navbar .dropdown-menu {
+    z-index: 1040;
+}
+
+/* Sidebar sticky elements - lower than dropdown */
+.sidebar-toc,
+.col-md-3 .sticky-top {
+    z-index: 1010;
+}

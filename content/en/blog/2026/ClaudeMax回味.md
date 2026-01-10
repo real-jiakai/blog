@@ -95,7 +95,7 @@ I had similar internationalization ideas before, so I guided the Opus 4.5 model 
 
 ## Summary
 
-Claude Code is a rather key milestone in the development of LLMs in 2025. Karpathy called it a [little gremlin living on your computer](https://karpathy.bearblog.dev/year-in-review-2025/), and Simon Willison called it the most impactful event of 2025.
+Claude Code is a rather key milestone in the development of LLMs in 2025. Karpathy called it a [little gremlin living on your computer](https://karpathy.bearblog.dev/year-in-review-2025/), and Simon Willison called it [the most impactful event of 2025](https://simonwillison.net/2025/Dec/31/the-year-in-llms/).
 
 When Claude Code was first released in February, it wasn't taken seriously because it required API access. I also thought it was a toy, but after it later supported Claude account login and shared account quotas, plus with the addition of Opus 4, it gradually gained attention. In June and July, browsing Lobsters was filled with Claude Code posts, and I finally had to try it, gradually becoming attracted by its charm.
 

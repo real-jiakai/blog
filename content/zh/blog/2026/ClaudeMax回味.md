@@ -95,7 +95,7 @@ C. 使用Claude For Chrome调研小红书。但有时会被风控。
 
 ## 总结 
 
-Claude Code是2025年LLM发展史一个较为关键的节点，karpathy将其称为[居住在电脑上的小精灵](https://karpathy.bearblog.dev/year-in-review-2025/)，simonwillison将其称为2025年最具影响力的事件。
+Claude Code是2025年LLM发展史一个较为关键的节点，karpathy将其称为[居住在电脑上的小精灵](https://karpathy.bearblog.dev/year-in-review-2025/)，simonwillison将其称为[2025年最具影响力的事件](https://simonwillison.net/2025/Dec/31/the-year-in-llms/)。
 
 Claude Code在2月份发布之初，由于需要接入API，并没有被重视，我也认为它是玩具，但其后续支持Claude账号登录，共享账号额度后，外加有了Opus 4的加持，开始慢慢被关注。6、7月时刷L站，满屏的Claude Code，最终不得不用一下，逐渐被其魅力所吸引。
 
