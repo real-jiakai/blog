@@ -10,7 +10,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="referrer" content="unsafe-url" />
 		<title><xsl:value-of select="/rss/channel/title"/></title>
-		<link rel="stylesheet" href="https://www.feed.style/css/water.min.css" />
+		<link rel="stylesheet" href="/xslt/water.min.css" />
 	</head>
 	<body>
 		<h1>
