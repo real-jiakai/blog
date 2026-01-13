@@ -12,6 +12,7 @@
 
 ## Content
 
+- [Claude Max回味](https://blog.gujiakai.top/2026/01/claude-max-aftertaste/): 分享第二次购买Claude Max会员的使用心得。
 - [当大模型开始画答案](https://blog.gujiakai.top/2025/12/when-llms-start-drawing-answers/): 介绍LLM可视化回复的现状。
 - [“体验券”转正实录](https://blog.gujiakai.top/2025/11/from-trial-to-official/): 记录体验券转正实录。
 - [Claude Sonnet 4.5短评](https://blog.gujiakai.top/2025/09/claude-sonnet-4-5-review/): 分享Claude Sonnet 4.5体验。
