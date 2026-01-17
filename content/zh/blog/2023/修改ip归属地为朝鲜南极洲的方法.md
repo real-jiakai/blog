@@ -117,7 +117,7 @@ wap.ac在2024年2月21日上线了warp vps进行销售，可选择南极洲、�
 
 ## 1、机场
 
-- [一线机场TAG](https://tagss09.pro/#/auth/j6c8uF3k)
+- [一线机场TAG](https://tagss.pro/#/auth/j6c8uF3k)
 
 ![TAG机场南极节点](https://vip2.loli.net/2023/08/17/8b1DX7fiN2CKsJP.webp)
 
@@ -125,7 +125,7 @@ wap.ac在2024年2月21日上线了warp vps进行销售，可选择南极洲、�
 
 TAG机场的tg频道的公告显示该家机场存在朝鲜和南极洲的节点。
 
-- [FacMata机场](https://amz.fmta.boo/register?code=PYcvODEE)
+- [FacMata机场](https://amz.fmta.boo/#/register?code=5Evel4cj)
 
 相较于TAG，这家机场价格更便宜。
 

@@ -117,7 +117,7 @@ This article lists some methods I personally know for setting IP location to Nor
 
 ## 1. Proxy Services
 
-- [Top-tier proxy service TAG](https://tagss09.pro/#/auth/j6c8uF3k)
+- [Top-tier proxy service TAG](https://tagss.pro/#/auth/j6c8uF3k)
 
 ![TAG Antarctica node](https://vip2.loli.net/2023/08/17/8b1DX7fiN2CKsJP.webp)
 
@@ -125,7 +125,7 @@ This article lists some methods I personally know for setting IP location to Nor
 
 TAG's TG channel announcement shows they have North Korea and Antarctica nodes.
 
-- [FacMata Proxy](https://amz.fmta.boo/register?code=PYcvODEE)
+- [FacMata Proxy](https://amz.fmta.boo/#/register?code=5Evel4cj)
 
 Compared to TAG, this service is cheaper.
 
