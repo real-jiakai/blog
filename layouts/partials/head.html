@@ -5,7 +5,15 @@
     {{ $title := print .Site.Title " | " .Title }}
     {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
     <title>{{ $title }}</title>
-    <meta name="description" content="{{ .Site.Params.description }}">
+    {{- $description := .Site.Params.description -}}
+    {{- if .Params.description -}}
+        {{- $description = .Params.description -}}
+    {{- else if .Params.summary -}}
+        {{- $description = .Params.summary -}}
+    {{- else if and .IsPage .Summary -}}
+        {{- $description = .Summary | plainify | truncate 160 -}}
+    {{- end -}}
+    <meta name="description" content="{{ $description }}">
     <meta name="keywords" content="{{ .Site.Params.keywords }}">
     <meta name="author" content="{{ .Site.Params.author }}">  
     <link rel="canonical" href="{{ .Permalink }}" />
