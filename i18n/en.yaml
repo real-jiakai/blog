@@ -44,3 +44,5 @@
   translation: "Previous"
 - id: nextPost
   translation: "Next"
+- id: backToTop
+  translation: "Back to Top"

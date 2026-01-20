@@ -44,3 +44,5 @@
   translation: "上一篇"
 - id: nextPost
   translation: "下一篇"
+- id: backToTop
+  translation: "回到顶部"
