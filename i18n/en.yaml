@@ -46,3 +46,7 @@
   translation: "Next"
 - id: backToTop
   translation: "Back to Top"
+- id: toggleDarkMode
+  translation: "Toggle Dark Mode"
+- id: toggleLightMode
+  translation: "Toggle Light Mode"

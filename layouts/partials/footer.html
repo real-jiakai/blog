@@ -1,5 +1,7 @@
 <div class="container mx-auto text-center mb-4">
     {{ with .Site.Params.footer }}
-    <span class="fw-semibold me-4">{{ replace . "{Year}" now.Year | markdownify }}</span>
+    {{ $text := replace . "{Year}" (string now.Year) }}
+    {{ $text = replace $text "Made" `<br class="d-md-none">Made` }}
+    <span class="fw-semibold">{{ $text | safeHTML }}</span>
     {{ end }}
 </div>

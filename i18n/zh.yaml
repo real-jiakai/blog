@@ -46,3 +46,7 @@
   translation: "下一篇"
 - id: backToTop
   translation: "回到顶部"
+- id: toggleDarkMode
+  translation: "切换深色模式"
+- id: toggleLightMode
+  translation: "切换浅色模式"

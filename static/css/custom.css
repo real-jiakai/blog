@@ -1,3 +1,111 @@
+/* ===========================================
+   Light / Dark Mode CSS Variables
+   =========================================== */
+:root,
+[data-bs-theme="light"] {
+    --body-bg: #f3f3ec;
+    --body-color: #212529;
+    --link-color: #0d6efd;
+    --link-hover-color: #0a58ca;
+    --table-border-color: #000;
+    --blockquote-bg: rgba(193, 23, 23, 0.201);
+    --card-bg: #fff;
+    --card-border-color: rgba(0, 0, 0, 0.125);
+    --navbar-border-color: rgba(0, 0, 0, 0.1);
+    --back-to-top-shadow: rgba(0, 0, 0, 0.15);
+}
+
+[data-bs-theme="dark"] {
+    --body-bg: #1a1a2e;
+    --body-color: #e0e0e0;
+    --link-color: #6ea8fe;
+    --link-hover-color: #9ec5fe;
+    --table-border-color: #495057;
+    --blockquote-bg: rgba(220, 53, 69, 0.2);
+    --card-bg: #16213e;
+    --card-border-color: rgba(255, 255, 255, 0.1);
+    --navbar-border-color: rgba(255, 255, 255, 0.1);
+    --back-to-top-shadow: rgba(0, 0, 0, 0.4);
+}
+
+/* Body */
+body {
+    background-color: var(--body-bg) !important;
+    color: var(--body-color);
+}
+
+/* Links */
+a {
+    color: var(--link-color);
+}
+
+a:hover {
+    color: var(--link-hover-color);
+}
+
+/* Tables */
+table th,
+table td {
+    border-color: var(--table-border-color);
+}
+
+/* Blockquotes */
+blockquote p {
+    background-color: var(--blockquote-bg);
+}
+
+/* Navbar border */
+.navbar .container {
+    border-color: var(--navbar-border-color) !important;
+}
+
+/* Cards */
+.card {
+    background-color: var(--card-bg);
+    border-color: var(--card-border-color);
+}
+
+/* Back to top button shadow */
+#back-to-top {
+    box-shadow: 0 2px 8px var(--back-to-top-shadow);
+}
+
+/* ===========================================
+   Theme Toggle Button
+   =========================================== */
+#theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.55);
+    transition: color 0.15s ease-in-out;
+    line-height: 1;
+}
+
+[data-bs-theme="dark"] #theme-toggle {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+#theme-toggle:hover {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+[data-bs-theme="dark"] #theme-toggle:hover {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+#theme-toggle:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* ===========================================
+   Code Block Styles
+   =========================================== */
 .highlight div,
 .highlight>pre {
     overflow-x: auto;
@@ -109,7 +217,6 @@ pre.chroma {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 #back-to-top.show {
