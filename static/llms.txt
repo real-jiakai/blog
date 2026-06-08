@@ -12,6 +12,8 @@
 
 ## Content
 
+- [Perplexity Max尝鲜](https://blog.gujiakai.top/2026/06/trying-perplexity-max/): 介绍 Perplexity Max 会员的尝鲜体验。
+- [六月未央，执笔归来](https://blog.gujiakai.top/2026/06/june-back-to-writing/): 停更许久后重新执笔，记录求职大专教师、事业单位面试、国考面试等经历与感悟。
 - [Claude Max回味](https://blog.gujiakai.top/2026/01/claude-max-aftertaste/): 分享第二次购买Claude Max会员的使用心得。
 - [当大模型开始画答案](https://blog.gujiakai.top/2025/12/when-llms-start-drawing-answers/): 介绍LLM可视化回复的现状。
 - [“体验券”转正实录](https://blog.gujiakai.top/2025/11/from-trial-to-official/): 记录体验券转正实录。
