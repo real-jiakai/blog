@@ -238,3 +238,21 @@ pre.chroma {
         height: 40px;
     }
 }
+
+/* 正文图片：固定显示高度上限，避免大图（如竖屏截图）占满整页 */
+/* 点击放大功能不受影响：lightbox 使用外层 <a> 链接打开原图 */
+.container-md p a[data-lightbox] {
+    display: block;
+    margin: 1.2rem 0;
+    text-align: left;
+}
+
+.container-md p img {
+    max-height: 600px;   /* 固定显示高度上限，竖图也不会过大 */
+    width: auto;         /* 宽度自适应，保持原始比例 */
+    max-width: 100%;     /* 宽图不超出正文栏 */
+    object-fit: contain;
+    cursor: zoom-in;     /* 提示可点击放大 */
+    border-radius: 6px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
+}
