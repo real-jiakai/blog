@@ -65,6 +65,13 @@ blockquote p {
     border-color: var(--card-border-color);
 }
 
+/* Copyright / document info box (overrides Bootstrap bg-info utility) */
+[data-bs-theme="dark"] #copyright {
+    background-color: var(--card-bg) !important;
+    border-color: var(--card-border-color) !important;
+    color: var(--body-color);
+}
+
 /* Back to top button shadow */
 #back-to-top {
     box-shadow: 0 2px 8px var(--back-to-top-shadow);
