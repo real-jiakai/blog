@@ -50,3 +50,9 @@
   translation: "切换深色模式"
 - id: toggleLightMode
   translation: "切换浅色模式"
+- id: rssTitleSeparator
+  translation: " - "
+- id: rssFeedDescription
+  translation: "{{ .Site }}的最新内容"
+- id: rssFeedDescriptionSection
+  translation: "{{ .Site }}中「{{ .Section }}」的最新内容"

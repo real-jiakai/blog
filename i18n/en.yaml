@@ -50,3 +50,9 @@
   translation: "Toggle Dark Mode"
 - id: toggleLightMode
   translation: "Toggle Light Mode"
+- id: rssTitleSeparator
+  translation: " on "
+- id: rssFeedDescription
+  translation: "Recent content on {{ .Site }}"
+- id: rssFeedDescriptionSection
+  translation: "Recent content in {{ .Section }} on {{ .Site }}"

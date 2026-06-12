@@ -5,7 +5,7 @@
 	<xsl:output method="html" version="1.0" encoding="UTF-8" indent="yes"/>
 	<xsl:template match="/">
 	<xsl:variable name="owner_url"><xsl:value-of select="/rss/channel/link"/></xsl:variable>
-<html>
+<html lang="en">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="referrer" content="unsafe-url" />
@@ -22,7 +22,7 @@
 			<xsl:value-of select="/rss/channel/description"/>
 		</p>
 
-		<p>This is the RSS&#xa0;<a href="https://www.feed.style/what-is-a-feed.html">news feed</a>&#xa0;for the&#xa0; 
+		<p>This is the RSS&#xa0;<a href="https://www.rss.style/what-is-a-feed.html">news feed</a>&#xa0;for the&#xa0; 
 			<a><xsl:attribute name="href">
 				<xsl:value-of select="/rss/channel/link"/>
 			</xsl:attribute>
@@ -30,7 +30,7 @@
 			website.
 		</p>
 
-		<p>It is meant for&#xa0;<a href="https://www.feed.style/newsreaders.html">news readers</a>, not humans.  Please copy-and-paste the URL into your news reader!</p>
+		<p>It is meant for&#xa0;<a href="https://www.rss.style/newsreaders.html">news readers</a>, not humans.  Please copy-and-paste the URL into your news reader!</p>
 
 		<p>
 			<pre>
@@ -57,7 +57,7 @@
 				</details>
 		</xsl:for-each>
 		<p><xsl:value-of select="count(/rss/channel/item)"/> news items.</p>
-		<p><small>Powered by <a href="https://www.feed.style/"><img referrerpolicy="origin" src="https://www.feed.style/favicon.svg" style="height:1em;padding-right:0.25em;vertical-align:middle;" />Feed.Style</a></small></p>
+		<p><small>Powered by <a href="https://www.rss.style/"><img alt="RSS.Style" referrerpolicy="origin" src="https://www.rss.style/favicon.svg" style="height:1em;padding-right:0.25em;vertical-align:middle;" />RSS.Style</a></small></p>
 		<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script>    
 		<script>
 			new ClipboardJS('.clipboard');
