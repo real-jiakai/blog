@@ -15,6 +15,21 @@ hasCJKLanguage: true
 # 开启robots.txt
 enableRobotsTXT: true
 
+# 输出格式配置
+# - 为每篇文章额外生成 .md 原始文件（如 /2026/06/slug.md）
+# - uglyURLs 全局开启，让 .md 生成为 slug.md 而非 slug/index.md；
+#   HTML / RSS 通过 noUgly 保持原有 pretty URL（/slug/、/index.xml），不影响 SEO
+uglyURLs: true
+outputFormats:
+  HTML:
+    noUgly: true
+  RSS:
+    noUgly: true
+  MarkdownRaw:
+    mediaType: text/markdown
+    isPlainText: true
+    isHTML: false
+
 # RSS输出配置 - 为每种语言生成RSS
 outputs:
   home:
@@ -23,6 +38,10 @@ outputs:
   section:
     - HTML
     - RSS
+  # 仅博客文章生成 .md 原文（通过 content/*/blog/_index.md 的 cascade.outputs 开启）；
+  # about / til 等普通页面保持仅 HTML，避免产生无引用的孤立 .md
+  page:
+    - HTML
 
 # 多语言设置
 # 中文为默认语言，保持根路径不变（不加/zh/前缀）

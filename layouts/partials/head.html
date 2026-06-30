@@ -4,10 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
         (function() {
-            var theme = localStorage.getItem('theme');
-            if (!theme) {
-                theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-            }
+            var stored = localStorage.getItem('theme'); // 'light' | 'dark' | null(跟随系统)
+            var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            var theme = (stored === 'light' || stored === 'dark') ? stored : (prefersDark ? 'dark' : 'light');
             document.documentElement.setAttribute('data-bs-theme', theme);
         })();
     </script>
@@ -30,7 +29,6 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/lightbox.min.css">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/iconfont.css">
     <link rel="stylesheet" href="/css/custom.css">
     <link rel="stylesheet" href="/css/syntax.css">
     <script type="text/javascript">

@@ -24,8 +24,8 @@
                 <div class="toc-header d-flex align-items-center bg-dark-subtle" id="tocHeader"
                     data-bs-toggle="collapse" data-bs-target="#tocContent" aria-expanded="true"
                     aria-controls="tocContent">
-                    <span class="iconfont icon-arrow_drop_down d-inline" id="arrow-down"></span>
-                    <span class="iconfont icon-arrow_right d-none" id="arrow-right"></span>
+                    <span class="toc-chevron d-inline-flex" id="arrow-down">{{ partial "icon.html" "chevron-down" }}</span>
+                    <span class="toc-chevron d-none" id="arrow-right">{{ partial "icon.html" "chevron-right" }}</span>
                     <span class="ms-2">{{ i18n "tableOfContents" | default "Table of Contents" }}</span>
                 </div>
                 <div id="tocContent" class="collapse show bg-dark-subtle">
@@ -37,13 +37,59 @@
 </div>
 
 <script>
+    // 展开/收起目录时切换箭头方向
     document.getElementById("tocHeader").addEventListener("click", function () {
-        var arrowDown = document.getElementById("arrow-down");
-        var arrowRight = document.getElementById("arrow-right");
-        arrowDown.classList.toggle("d-none");
-        arrowDown.classList.toggle("d-inline");
-        arrowRight.classList.toggle("d-none");
-        arrowRight.classList.toggle("d-inline");
+        document.getElementById("arrow-down").classList.toggle("d-none");
+        document.getElementById("arrow-right").classList.toggle("d-none");
     });
+
+    // 滚动时高亮当前所在小节（scrollspy）
+    (function () {
+        var toc = document.getElementById("tocContent");
+        if (!toc) return;
+        var links = Array.prototype.slice.call(toc.querySelectorAll('a[href^="#"]'));
+        if (!links.length) return;
+
+        var items = [];
+        links.forEach(function (link) {
+            var raw = link.getAttribute("href").slice(1);
+            var id;
+            try { id = decodeURIComponent(raw); } catch (e) { id = raw; }
+            var el = document.getElementById(id) || document.getElementById(raw);
+            if (el) items.push({ link: link, el: el });
+        });
+        if (!items.length) return;
+
+        var ticking = false;
+        function update() {
+            ticking = false;
+            // 正文被隐藏时（如切到 Markdown 源码视图）保留当前高亮，不做无意义的更新
+            if (items[0].el.offsetParent === null) return;
+            var offset = 100; // 距视口顶部多少像素视为「当前」
+            var active = items[0];
+            for (var i = 0; i < items.length; i++) {
+                if (items[i].el.getBoundingClientRect().top <= offset) {
+                    active = items[i];
+                } else {
+                    break;
+                }
+            }
+            // 仅当页面确实可滚动且已滚到底部时，才高亮最后一项
+            var doc = document.documentElement;
+            if (doc.scrollHeight > window.innerHeight + 2 &&
+                (window.innerHeight + window.scrollY) >= (doc.scrollHeight - 2)) {
+                active = items[items.length - 1];
+            }
+            items.forEach(function (item) {
+                item.link.classList.toggle("toc-active", item === active);
+            });
+        }
+        function onScroll() {
+            if (!ticking) { window.requestAnimationFrame(update); ticking = true; }
+        }
+        window.addEventListener("scroll", onScroll, { passive: true });
+        window.addEventListener("resize", onScroll, { passive: true });
+        update();
+    })();
 </script>
 {{ end }}

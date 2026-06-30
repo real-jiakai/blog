@@ -22,6 +22,14 @@
   translation: "阅读时长"
 - id: minutes
   translation: "分钟"
+- id: viewAsMarkdown
+  translation: "查看 Markdown"
+- id: themeLight
+  translation: "浅色"
+- id: themeDark
+  translation: "深色"
+- id: themeSystem
+  translation: "跟随系统"
 - id: tableOfContents
   translation: "目录"
 - id: language

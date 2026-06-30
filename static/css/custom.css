@@ -78,35 +78,159 @@ blockquote p {
 }
 
 /* ===========================================
-   Theme Toggle Button
+   Header — inline nav + language + theme controls
    =========================================== */
-#theme-toggle {
+/* Brand */
+.site-navbar .navbar-brand {
+    font-weight: 700;
+}
+
+/* Nav links: comfortable, even spacing beside the brand */
+.site-navbar .navbar-nav {
+    gap: 0.15rem;
+}
+
+.site-navbar .nav-link {
+    padding: 0.35rem 0.6rem;
+    border-radius: 6px;
+    color: var(--body-color);
+    opacity: 0.78;
+    transition: opacity 0.15s ease, background-color 0.15s ease;
+}
+
+.site-navbar .nav-link:hover,
+.site-navbar .nav-link:focus-visible {
+    opacity: 1;
+    background-color: var(--card-border-color);
+}
+
+/* Right-side controls share one muted color treatment */
+.site-controls {
+    --control-color: rgba(0, 0, 0, 0.55);
+    --control-color-hover: rgba(0, 0, 0, 0.85);
+}
+
+[data-bs-theme="dark"] .site-controls {
+    --control-color: rgba(255, 255, 255, 0.55);
+    --control-color-hover: rgba(255, 255, 255, 0.85);
+}
+
+/* Language switcher: minimal text toggle */
+.site-lang {
+    color: var(--control-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.3rem 0.4rem;
+    border-radius: 6px;
+    line-height: 1;
+    transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.site-lang:hover,
+.site-lang:focus-visible {
+    color: var(--control-color-hover);
+    background-color: var(--card-border-color);
+}
+
+/* Theme switcher trigger */
+.btn-theme {
     background: none;
     border: none;
     cursor: pointer;
-    padding: 0.5rem 0.5rem;
+    padding: 0.35rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: rgba(0, 0, 0, 0.55);
-    transition: color 0.15s ease-in-out;
+    color: var(--control-color);
     line-height: 1;
+    border-radius: 6px;
+    transition: color 0.15s ease, background-color 0.15s ease;
 }
 
-[data-bs-theme="dark"] #theme-toggle {
-    color: rgba(255, 255, 255, 0.55);
+.btn-theme:hover,
+.btn-theme:focus-visible {
+    color: var(--control-color-hover);
+    background-color: var(--card-border-color);
 }
 
-#theme-toggle:hover {
-    color: rgba(0, 0, 0, 0.7);
-}
-
-[data-bs-theme="dark"] #theme-toggle:hover {
-    color: rgba(255, 255, 255, 0.75);
-}
-
-#theme-toggle:focus {
+.btn-theme:focus {
     outline: none;
+    box-shadow: none;
+}
+
+.btn-theme .meta-icon {
+    width: 1.05rem;
+    height: 1.05rem;
+    opacity: 1;
+}
+
+/* Trigger shows the icon for the *effective* theme (CSS-driven, no flash) */
+.theme-trigger-icon {
+    display: none;
+    align-items: center;
+}
+
+[data-bs-theme="light"] #theme-icon-sun {
+    display: inline-flex;
+}
+
+[data-bs-theme="dark"] #theme-icon-moon {
+    display: inline-flex;
+}
+
+/* Theme dropdown menu */
+.theme-menu {
+    min-width: 11rem;
+    padding: 0.35rem;
+    border-color: var(--card-border-color);
+    background-color: var(--card-bg);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.theme-menu .dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.5rem 0.6rem;
+    border-radius: 6px;
+    color: var(--body-color);
+    cursor: pointer;
+}
+
+.theme-menu .theme-label {
+    flex: 1 1 auto;
+}
+
+.theme-menu .dropdown-item:hover,
+.theme-menu .dropdown-item:focus {
+    background-color: var(--card-border-color);
+    color: var(--body-color);
+}
+
+.theme-menu .dropdown-item.active {
+    background-color: transparent;
+    color: var(--link-color);
+    font-weight: 600;
+}
+
+/* Check mark only on the active option */
+.theme-menu .theme-check {
+    display: inline-flex;
+    visibility: hidden;
+    color: var(--link-color);
+}
+
+.theme-menu .dropdown-item.active .theme-check {
+    visibility: visible;
+}
+
+/* Mobile hamburger */
+.site-navbar .navbar-toggler {
+    color: var(--control-color);
+}
+
+.site-navbar .navbar-toggler:focus {
     box-shadow: none;
 }
 
@@ -262,4 +386,222 @@ pre.chroma {
     cursor: zoom-in;     /* 提示可点击放大 */
     border-radius: 6px;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
+}
+
+/* ===========================================
+   Post Meta Row (date / tag / reading time / markdown)
+   Used on the article header and the index post cards
+   =========================================== */
+.post-meta-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;            /* 图标与文字之间留白，不再拥挤 */
+    line-height: 1.4;
+}
+
+/* Inline SVG icons inherit text color and stay crisp at any size */
+.meta-icon {
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    opacity: 0.85;
+    vertical-align: -0.125em;
+}
+
+/* Markdown mark uses a wider viewBox (208x128) */
+.meta-icon--md {
+    width: 1.5em;
+    height: 1em;
+}
+
+/* "View as Markdown" link → the page's .md output (desktop only) */
+.markdown-link {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out;
+}
+
+.markdown-link:hover,
+.markdown-link:focus-visible {
+    color: var(--link-color);
+}
+
+/* ===========================================
+   Table of Contents — tree style + active tracking
+   =========================================== */
+html {
+    scroll-behavior: smooth;
+}
+
+.toc-header {
+    padding: 0.45rem 0.7rem;
+    border-radius: 6px 6px 0 0;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.toc-chevron {
+    display: inline-flex;   /* 展开/收起两种状态下箭头都保持居中对齐 */
+    align-items: center;
+}
+
+.toc-chevron .meta-icon {
+    width: 0.85em;
+    height: 0.85em;
+    opacity: 0.7;
+}
+
+#tocContent {
+    padding: 0.5rem 0.75rem 0.65rem;
+    border-radius: 0 0 6px 6px;
+}
+
+#TableOfContents {
+    font-size: 0.85rem;
+}
+
+#TableOfContents ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+/* Nested levels get a vertical guide line — the tree trunk */
+#TableOfContents ul ul {
+    margin-left: 0.5rem;
+    padding-left: 0.85rem;
+    border-left: 1px solid var(--card-border-color);
+}
+
+#TableOfContents li {
+    position: relative;
+    margin: 0.1rem 0;
+}
+
+/* Horizontal connector from the trunk to each nested item */
+#TableOfContents ul ul li::before {
+    content: "";
+    position: absolute;
+    left: -0.85rem;
+    top: 0.75em;
+    width: 0.85rem;       /* 连接线贯穿整个缩进，与条目左缘相接 */
+    height: 1px;
+    background-color: var(--card-border-color);
+}
+
+#TableOfContents a {
+    display: block;
+    padding: 0.2rem 0.45rem;
+    border-left: 2px solid transparent;
+    border-radius: 4px;
+    color: var(--body-color);
+    opacity: 0.7;
+    text-decoration: none;
+    transition: color 0.15s ease, background-color 0.15s ease, opacity 0.15s ease;
+}
+
+#TableOfContents a:hover {
+    opacity: 1;
+    background-color: var(--card-border-color);
+}
+
+/* Current section highlight (set by scrollspy) */
+#TableOfContents a.toc-active {
+    opacity: 1;
+    color: var(--link-color);
+    font-weight: 600;
+    border-left-color: var(--link-color);
+    background-color: rgba(13, 110, 253, 0.08);
+}
+
+[data-bs-theme="dark"] #TableOfContents a.toc-active {
+    background-color: rgba(110, 168, 254, 0.12);
+}
+
+/* ===========================================
+   Pagination — compact, borderless (tw93 style)
+   =========================================== */
+.post-pager {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.35rem;
+    /* 上下外边距相等，使「列表↔分页」与「分页↔页脚」两处间距一致 */
+    margin: 2rem 0;
+}
+
+.post-pager .pager-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2rem;
+    height: 2rem;
+    padding: 0 0.5rem;
+    border-radius: 6px;
+    color: var(--body-color);
+    opacity: 0.7;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.15s ease, background-color 0.15s ease, opacity 0.15s ease;
+}
+
+.post-pager a.pager-link:hover,
+.post-pager a.pager-link:focus-visible {
+    opacity: 1;
+    background-color: var(--card-border-color);
+}
+
+.post-pager .pager-link.active {
+    opacity: 1;
+    color: var(--link-color);
+    font-weight: 700;
+}
+
+.post-pager .pager-arrow .meta-icon {
+    width: 0.95rem;
+    height: 0.95rem;
+}
+
+.post-pager .pager-ellipsis {
+    display: inline-flex;
+    align-items: flex-end;
+    padding: 0 0.15rem;
+    color: var(--body-color);
+    opacity: 0.5;
+    user-select: none;
+}
+
+/* ===========================================
+   Post list — even card spacing
+   =========================================== */
+.card-deck .card {
+    margin-bottom: 1.25rem;
+}
+
+/* ===========================================
+   Responsive — mobile header & spacing (tw93-inspired)
+   =========================================== */
+@media (max-width: 767.98px) {
+    /* Collapsed nav drops below as a tidy stacked menu */
+    .site-navbar .navbar-collapse {
+        padding: 0.5rem 0 0.25rem;
+    }
+
+    .site-navbar .navbar-nav {
+        gap: 0;
+    }
+
+    .site-navbar .nav-link {
+        padding: 0.5rem 0.25rem;
+    }
+
+    /* Keep the right-side controls compact and aligned */
+    .site-controls {
+        gap: 0.25rem !important;
+    }
+
+    .post-pager {
+        margin: 1.5rem 0;
+    }
 }

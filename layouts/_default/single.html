@@ -5,29 +5,36 @@
     
     <!-- 文章元数据部分 -->
     {{ if eq .Type "blog" }}
-    <div class="d-flex flex-wrap gap-3 mb-4 text-secondary small justify-content-center">
-      <div class="d-flex align-items-center">
-        <span class="iconfont icon-date me-1"></span>
+    <div class="post-meta d-flex flex-wrap align-items-center justify-content-center gap-3 mb-4 text-secondary small">
+      <span class="post-meta-item">
+        {{ partial "icon.html" "calendar" }}
         {{ .Date.Format "2006-01-02" }}
-      </div>
-      
-      <div class="d-flex align-items-center">
-        <span class="iconfont icon-tag me-1"></span>
-        {{ range $index, $tag := .Params.tags }}
-          {{- if gt $index 0 }}, {{ end -}}
-          #{{ . }}
-        {{- end }}
-      </div>
-      
-      <div class="d-flex align-items-center">
-        <span class="iconfont icon-wenjianxinxi me-1"></span>
-        {{ .WordCount }} {{ i18n "wordCount" }}
-      </div>
+      </span>
 
-      <div class="d-flex align-items-center">
-        <span class="iconfont icon-time me-1"></span>
+      {{ with .Params.tags }}
+      <span class="post-meta-item">
+        {{ partial "icon.html" "tag" }}
+        <span>
+          {{- range $index, $tag := . -}}
+            {{- if gt $index 0 }}, {{ end -}}
+            #{{ $tag }}
+          {{- end -}}
+        </span>
+      </span>
+      {{ end }}
+
+      <span class="post-meta-item">
+        {{ partial "icon.html" "clock" }}
         {{ .ReadingTime }} {{ i18n "minutes" }}
-      </div>
+      </span>
+
+      {{/* 查看 Markdown 原文：链接到 .md 输出文件，仅桌面端显示 */}}
+      {{ with .OutputFormats.Get "MarkdownRaw" }}
+      <a class="post-meta-item markdown-link d-none d-md-inline-flex" href="{{ .RelPermalink }}">
+        {{ partial "icon.html" "markdown" }}
+        <span>{{ i18n "viewAsMarkdown" }}</span>
+      </a>
+      {{ end }}
     </div>
     {{ end }}
 
@@ -71,4 +78,4 @@
   }
 }
 </style>
-{{ end }} 
+{{ end }}

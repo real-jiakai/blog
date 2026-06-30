@@ -8,7 +8,9 @@
   {{- partial "header.html" . -}}
 
   {{/* html main */}}
-  <div class="flex-fill container-fluid m-auto">
+  {{/* 不用 flex-fill / m-auto：在 flex 纵向布局里它们会吸收剩余空间把页脚顶到底部，
+       导致视口较高时「分页↔页脚」间距过大。去掉后页脚紧贴正文，两处间距一致（与 tw93 一致） */}}
+  <div class="container-fluid">
     <div class="row justify-content-center">
       {{ if .IsHome }}
       <div class="col-md-6">

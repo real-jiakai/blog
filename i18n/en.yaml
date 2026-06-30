@@ -22,6 +22,14 @@
   translation: "Reading time"
 - id: minutes
   translation: "min"
+- id: viewAsMarkdown
+  translation: "View as Markdown"
+- id: themeLight
+  translation: "Light"
+- id: themeDark
+  translation: "Dark"
+- id: themeSystem
+  translation: "System"
 - id: tableOfContents
   translation: "Table of Contents"
 - id: language

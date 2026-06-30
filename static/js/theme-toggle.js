@@ -1,60 +1,64 @@
 (function () {
-    var toggle = document.getElementById('theme-toggle');
-    var iconSun = document.getElementById('theme-icon-sun');
-    var iconMoon = document.getElementById('theme-icon-moon');
+    var KEY = 'theme';
+    var mq = window.matchMedia('(prefers-color-scheme: dark)');
 
-    function getTheme() {
-        var stored = localStorage.getItem('theme');
-        if (stored) return stored;
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    // 用户偏好：'light' | 'dark' | 'system'（'system' 不写入 localStorage，以缺省表示）
+    function getPref() {
+        var v = localStorage.getItem(KEY);
+        return (v === 'light' || v === 'dark') ? v : 'system';
     }
 
-    function updateIcons(theme) {
-        if (theme === 'dark') {
-            iconSun.style.display = 'inline';
-            iconMoon.style.display = 'none';
-        } else {
-            iconSun.style.display = 'none';
-            iconMoon.style.display = 'inline';
-        }
+    // 解析为实际生效的主题
+    function resolve(pref) {
+        if (pref === 'light' || pref === 'dark') return pref;
+        return mq.matches ? 'dark' : 'light';
     }
 
-    function applyTheme(theme) {
-        document.documentElement.setAttribute('data-bs-theme', theme);
-        updateIcons(theme);
-    }
-
-    function switchUtterancesTheme(theme) {
-        var utterancesFrame = document.querySelector('.utterances-frame');
-        if (utterancesFrame) {
-            var utterancesTheme = theme === 'dark' ? 'github-dark' : 'github-light';
-            utterancesFrame.contentWindow.postMessage(
-                { type: 'set-theme', theme: utterancesTheme },
+    function syncUtterances(effective) {
+        var frame = document.querySelector('.utterances-frame');
+        if (frame) {
+            frame.contentWindow.postMessage(
+                { type: 'set-theme', theme: effective === 'dark' ? 'github-dark' : 'github-light' },
                 'https://utteranc.es'
             );
         }
     }
 
-    // Apply on load
-    var currentTheme = getTheme();
-    applyTheme(currentTheme);
+    // 在下拉菜单中标记当前选中的选项（触发器图标由 CSS 依据 data-bs-theme 切换）
+    function markActive(pref) {
+        var opts = document.querySelectorAll('.theme-option');
+        for (var i = 0; i < opts.length; i++) {
+            var on = opts[i].getAttribute('data-theme') === pref;
+            opts[i].classList.toggle('active', on);
+            opts[i].setAttribute('aria-checked', on ? 'true' : 'false');
+        }
+    }
 
-    // Toggle on click
-    if (toggle) {
-        toggle.addEventListener('click', function () {
-            var theme = document.documentElement.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark';
-            localStorage.setItem('theme', theme);
-            applyTheme(theme);
-            switchUtterancesTheme(theme);
+    function apply(pref) {
+        var effective = resolve(pref);
+        document.documentElement.setAttribute('data-bs-theme', effective);
+        markActive(pref);
+        syncUtterances(effective);
+    }
+
+    // 初始应用（head 内联脚本已先行设置 data-bs-theme，避免闪烁）
+    apply(getPref());
+
+    var opts = document.querySelectorAll('.theme-option');
+    for (var i = 0; i < opts.length; i++) {
+        opts[i].addEventListener('click', function () {
+            var pref = this.getAttribute('data-theme');
+            if (pref === 'system') {
+                localStorage.removeItem(KEY);
+            } else {
+                localStorage.setItem(KEY, pref);
+            }
+            apply(pref);
         });
     }
 
-    // Listen for system preference changes
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
-        if (!localStorage.getItem('theme')) {
-            var theme = e.matches ? 'dark' : 'light';
-            applyTheme(theme);
-            switchUtterancesTheme(theme);
-        }
+    // 当用户偏好为「跟随系统」时，响应系统主题变化
+    mq.addEventListener('change', function () {
+        if (getPref() === 'system') apply('system');
     });
 })();
