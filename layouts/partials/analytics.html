@@ -1,0 +1,6 @@
+{{- /* 站点级覆盖：主题的 analytics.html 读取的是 .Site.Params.googleanalytics，
+     而 GA ID 配置在 services.googleAnalytics.ID，导致 GA 从未被输出。
+     这里改用 Hugo 内置模板（自行读取 services.googleAnalytics.ID），并仅在生产环境加载。 */ -}}
+{{- if hugo.IsProduction -}}
+{{ template "_internal/google_analytics.html" . }}
+{{- end -}}

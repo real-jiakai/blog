@@ -2,8 +2,11 @@
 baseURL: https://blog.gujiakai.top
 # 网站使用的主题
 theme: 'hugo-theme-simple'
-# google分析
-googleAnalytics: "G-2N2G7YVYD1"
+# 第三方服务
+services:
+  # google分析
+  googleAnalytics:
+    ID: "G-2N2G7YVYD1"
 # 永久链接
 permalinks:
   blog: /:year/:month/:slug
