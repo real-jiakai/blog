@@ -7,6 +7,9 @@ services:
   # google分析
   googleAnalytics:
     ID: "G-2N2G7YVYD1"
+  # RSS 仅保留最新 20 篇（此前全量 ~80 篇全文，单个 feed 超 1MB）
+  rss:
+    limit: 20
 # 永久链接
 permalinks:
   blog: /:year/:month/:slug
