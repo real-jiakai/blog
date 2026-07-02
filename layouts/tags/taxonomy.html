@@ -2,7 +2,7 @@
 <div class="container m-3">
     <h1 class="mb-4">🏷️ {{ i18n "tagsTitle" | default "Tags" }}</h1>
     
-    <div class="d-flex flex-wrap gap-2">
+    <div class="tag-cloud d-flex flex-wrap gap-2">
         {{ range .Data.Terms.ByCount }}
             <a href="{{ .Page.Permalink }}" class="text-decoration-none">
                 <div class="tag-card d-inline-flex align-items-center px-3 py-2 rounded-pill">
@@ -15,6 +15,11 @@
 </div>
 
 <style>
+/* 与首页分页的 margin: 2rem 0 呼应，让「标签云↔页脚」间距和「分页↔页脚」一致 */
+.tag-cloud {
+    margin-bottom: 2rem;
+}
+
 .tag-card {
     background-color: #f8f9fa;
     border: 1px solid #dee2e6;
