@@ -5,6 +5,24 @@
 [build.environment]
   HUGO_VERSION = "0.154.2"
 
+# 安全响应头。CSP 白名单覆盖站点用到的所有第三方：
+#   script: utterances 评论、MS Clarity、GA(gtag)、umami、emaction(jsdelivr)、asciinema
+#   connect: Clarity / GA 上报端点、umami、emaction API
+#   frame:  utterances 与 asciinema 的 iframe
+#   img/media 放宽（历年文章图片/视频分布在多个图床）
+# 已用无头 Chrome 对评论页/asciinema页/首页/视频页实测零违规（2026-07）。
+# 若以后引入新的第三方脚本或 iframe（如 YouTube 嵌入），需把对应域名加进相应指令，
+# 否则会被浏览器拦截（报错见 DevTools Console）。
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://utteranc.es https://*.clarity.ms https://www.googletagmanager.com https://umami.gujiakai.top https://cdn.jsdelivr.net https://asciinema.org; style-src 'self' 'unsafe-inline'; img-src * data: blob:; media-src https:; font-src 'self' data:; connect-src 'self' https://*.clarity.ms https://*.google-analytics.com https://analytics.google.com https://*.analytics.google.com https://www.google.com https://www.googletagmanager.com https://stats.g.doubleclick.net https://umami.gujiakai.top https://api-emaction.gujiakai.top; frame-src https://utteranc.es https://asciinema.org; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'"
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Strict-Transport-Security = "max-age=31536000"
+
 # 按语言返回对应的 404 页面：/en/ 下的未知路径用英文 404，其余用中文 404。
 # 无 force 标记时规则只在路径没有真实文件时生效，顺序从上到下匹配。
 [[redirects]]
