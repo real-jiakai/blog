@@ -36,6 +36,10 @@ pagination:
 hasCJKLanguage: true
 # 开启robots.txt
 enableRobotsTXT: true
+# 只使用 tags 分类；不声明的话 Hugo 默认还会生成空的 categories
+# 页面（/categories/ 与 /en/categories/）及其 RSS
+taxonomies:
+  tag: tags
 
 # 输出格式配置
 # - 为每篇文章额外生成 .md 原始文件（如 /2026/06/slug.md）
