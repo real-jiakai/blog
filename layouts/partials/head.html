@@ -38,6 +38,10 @@
     {{/* 社交分享卡片（Open Graph / Twitter Card），Hugo 内置模板 */}}
     {{ template "_internal/opengraph.html" . }}
     {{ template "_internal/twitter_cards.html" . }}
+    {{/* RSS 自动发现：指向当前语言站点的主 feed（/index.xml 或 /en/index.xml） */}}
+    {{ with .Site.Home.OutputFormats.Get "RSS" }}
+    <link rel="alternate" type="application/rss+xml" href="{{ .RelPermalink }}" title="{{ $.Site.Title }}" />
+    {{ end }}
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/lightbox.min.css">
