@@ -20,24 +20,26 @@
     margin-bottom: 2rem;
 }
 
+/* 颜色一律用 Bootstrap 主题变量（浅色值与原先的写死色号一致），
+   跟随 data-bs-theme 自动适配深色模式，不要写死色号 */
 .tag-card {
-    background-color: #f8f9fa;
-    border: 1px solid #dee2e6;
+    background-color: var(--bs-tertiary-bg);
+    border: 1px solid var(--bs-border-color);
     transition: all 0.2s ease;
 }
 
 .tag-card:hover {
-    background-color: #e9ecef;
+    background-color: var(--bs-secondary-bg);
     transform: translateY(-2px);
 }
 
 .tag-name {
-    color: #495057;
+    color: var(--bs-secondary-color);
     font-size: 0.95rem;
 }
 
 .badge {
-    background-color: #0d6efd;
+    background-color: var(--bs-primary);
     font-size: 0.8rem;
     font-weight: 500;
 }
