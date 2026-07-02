@@ -1,7 +1,23 @@
 # 网站的基本url地址
 baseURL: https://blog.gujiakai.top
 # 网站使用的主题
-theme: 'hugo-theme-simple'
+# 通过 module.imports（而非 theme: 键）挂载主题，以便用 excludeFiles 排除
+# 主题 static/ 里两个从未被引用、却会被整体复制进 public/ 的文件：
+# - images/hugo_step2_step3.gif（8.5MB，仅主题 README 用图）
+# - js/lightbox-plus-jquery.min.js（98KB，站点已单独引入 jquery + lightbox）
+module:
+  imports:
+    - path: hugo-theme-simple
+      mounts:
+        - source: layouts
+          target: layouts
+        - source: archetypes
+          target: archetypes
+        - source: static
+          target: static
+          excludeFiles:
+            - images/hugo_step2_step3.gif
+            - js/lightbox-plus-jquery.min.js
 # 第三方服务
 services:
   # google分析
