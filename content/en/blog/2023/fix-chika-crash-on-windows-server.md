@@ -3,6 +3,7 @@ title: "Solution for Chika Launcher Crashing on Windows Server"
 date: 2023-06-17T15:24:10+08:00
 tags: ['gaming']
 slug: "fix-chika-crash-on-windows-server"
+translationKey: "fix-chika-crash-on-windows-server"
 summary: Sharing the solution for Chika launcher crashing on Windows Server.
 showtoc: false
 ---

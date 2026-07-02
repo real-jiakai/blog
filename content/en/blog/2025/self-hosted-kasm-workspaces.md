@@ -3,6 +3,7 @@ title: "Self-Hosted Kasm Workspaces"
 date: 2025-03-31T8:40:02+08:00
 tags: ['kasmworkspaces']
 slug: "self-hosted-kasm-workspaces"
+translationKey: "self-hosted-kasm-workspaces"
 summary: Sharing my experience self-hosting Kasm Workspaces.
 showtoc: true
 ---

@@ -25,6 +25,16 @@
     <meta name="keywords" content="{{ .Site.Params.keywords }}">
     <meta name="author" content="{{ .Site.Params.author }}">
     <link rel="canonical" href="{{ .Permalink }}" />
+    {{/* hreflang：博文通过 translationKey 与译文关联，告知搜索引擎双语版本互为翻译。
+         x-default 指向默认语言（中文）版本 */}}
+    {{- if .IsTranslated }}
+    {{- range .AllTranslations }}
+    <link rel="alternate" hreflang="{{ .Language.LanguageCode }}" href="{{ .Permalink }}" />
+    {{- end }}
+    {{- with index (where .AllTranslations "Language.Lang" "zh") 0 }}
+    <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
+    {{- end }}
+    {{- end }}
     {{/* 社交分享卡片（Open Graph / Twitter Card），Hugo 内置模板 */}}
     {{ template "_internal/opengraph.html" . }}
     {{ template "_internal/twitter_cards.html" . }}

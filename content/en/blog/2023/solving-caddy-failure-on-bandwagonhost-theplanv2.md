@@ -3,6 +3,7 @@ title: "Solution for Caddy Startup Failure on BandwagonHost The Plan V2"
 date: 2023-06-29T15:38:29+08:00
 tags: ["vps"]
 slug: "solving-caddy-failure-on-bandwagonhost-theplanv2"
+translationKey: "solving-caddy-failure-on-bandwagonhost-theplanv2"
 summary: Introducing the solution for Caddy startup failure on BandwagonHost's newly released The Plan V2 package.
 showtoc: false
 ---

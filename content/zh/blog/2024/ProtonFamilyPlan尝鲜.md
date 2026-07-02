@@ -3,6 +3,7 @@ title: "Proton Family Plan尝鲜"
 date: 2024-08-06T08:23:41+08:00
 tags: ["proton"]
 slug: "proton-family-plan-first-taste"
+translationKey: "proton-family-plan-first-taste"
 summary: 介绍自己尝鲜的Proton Family Plan套餐。
 showtoc: true
 ---

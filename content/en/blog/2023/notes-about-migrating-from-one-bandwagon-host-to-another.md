@@ -3,6 +3,7 @@ title: "Notes on Migrating from One BandwagonHost Machine to Another"
 date: 2023-09-24T11:06:36+08:00
 tags: ['vps','bandwagonhost']
 slug: "notes-about-migrating-from-one-bandwagon-host-to-another"
+translationKey: "notes-about-migrating-from-one-bandwagon-host-to-another"
 summary: Recording my process of migrating BandwagonHost machines
 showtoc: false
 ---

@@ -3,6 +3,7 @@ title: "ChatGPT插件列表整理"
 date: 2023-06-03T09:48:25+08:00
 tags: ['chatgpt','plugins']
 slug: "chatgpt-plugins-list"
+translationKey: "chatgpt-plugins-list"
 summary: 分享自己整理的chatgpt插件列表。
 showtoc: false
 ---

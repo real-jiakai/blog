@@ -3,6 +3,7 @@ title: "Claude Sonnet 4.5 Review"
 date: 2025-09-30T08:12:17+08:00
 tags: ['claude', 'anthropic']
 slug: "claude-sonnet-4-5-review"
+translationKey: "claude-sonnet-4-5-review"
 summary: Sharing Claude Sonnet 4.5 experience.
 showtoc: true
 ---

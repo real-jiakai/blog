@@ -3,6 +3,7 @@ title: "A Young Person's First ASN"
 date: 2024-06-04T15:36:56+08:00
 tags: ["asn"]
 slug: "the-first-asn-of-young-people"
+translationKey: "the-first-asn-of-young-people"
 summary: Introducing my experience of obtaining an ASN and configuring its corresponding IPv6 address.
 showtoc: true
 ---

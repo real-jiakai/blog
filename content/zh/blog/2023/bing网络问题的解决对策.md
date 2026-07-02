@@ -3,6 +3,7 @@ title: "Sorry, looks like your network settings are preventing access to this fe
 date: 2023-03-26T16:29:47+08:00
 tags: ['bing']
 slug: "solutions-for-network-error-of-new-bing"
+translationKey: "solutions-for-network-error-of-new-bing"
 summary: 介绍解决new bing网络问题的解决对策。
 ---
 

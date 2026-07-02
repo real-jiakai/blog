@@ -3,6 +3,7 @@ title: "Solution for Gemini Android App 'Device Not Supported'"
 date: 2024-02-11T08:43:21+08:00
 tags: ["gemini"]
 slug: "solving-gemini-device-compatibility-issues"
+translationKey: "solving-gemini-device-compatibility-issues"
 summary: Introducing the solution for Gemini Android App "Device Not Supported" error.
 showtoc: true
 ---

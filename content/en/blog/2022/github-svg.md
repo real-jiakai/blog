@@ -3,6 +3,7 @@ title: "Creating Animated SVG Effects on Your GitHub Profile"
 tags: ["github"]
 date: 2022-03-03T10:26:09+08:00
 slug: github-svg
+translationKey: "github-svg"
 summary: This article explains how to create animated SVG effects on your GitHub profile page.
 ---
 

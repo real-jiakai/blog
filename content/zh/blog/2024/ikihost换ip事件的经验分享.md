@@ -3,6 +3,7 @@ title: "关于Ikihost换ip风波的经验分享"
 date: 2024-03-17T15:01:23+08:00
 tags: ["vps"]
 slug: "experience-sharing-on-ikihost-ip-change-ordeal"
+translationKey: "experience-sharing-on-ikihost-ip-change-ordeal"
 summary: 分享自己从Ikihost换ip风波中获取的经验。
 showtoc: true
 ---

@@ -3,6 +3,7 @@ title: "ChatGPT Team Account Experience"
 date: 2024-01-12T10:29:48+08:00
 tags: ["openai","chatgpt"]
 slug: "chatgpt-team-experience"
+translationKey: "chatgpt-team-experience"
 summary: Recording my experience using a ChatGPT Team account.
 showtoc: false
 ---

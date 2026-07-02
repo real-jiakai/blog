@@ -3,6 +3,7 @@ title: "Gemini Advanced October 2024 Review"
 date: 2024-11-02T10:04:48+08:00
 tags: ["gemini","google"]
 slug: "Gemini-advanced-2024-october-review"
+translationKey: "Gemini-advanced-2024-october-review"
 summary: Recording my experience using Gemini Advanced.
 showtoc: true
 ---

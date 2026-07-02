@@ -3,6 +3,7 @@ title: "Claude 3.7 Sonnet体验"
 date: 2025-02-25T07:55:29+08:00
 tags: ['claude','anthropic']
 slug: "claude-3-7-sonnet-experience"
+translationKey: "claude-3-7-sonnet-experience"
 summary: 分享Claude 3.7 Sonnet使用体验。
 showtoc: true
 ---

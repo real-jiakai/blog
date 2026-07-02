@@ -3,6 +3,7 @@ title: "The March 24th Incident - Gitee's Predicament"
 tags: ["open-source"]
 date: 2022-03-24T10:26:09+08:00
 slug: 324-gitee-affair
+translationKey: "324-gitee-affair"
 summary: On the afternoon of March 24, 2022, Gitee banned all image hosting repositories. Here are my thoughts on this matter.
 ---
 

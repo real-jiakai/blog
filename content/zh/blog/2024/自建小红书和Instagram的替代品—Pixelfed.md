@@ -3,6 +3,7 @@ title: "自建小红书和Instagram的替代品—Pixelfed"
 date: 2024-07-20T09:39:08+08:00
 tags: ["pixelfed", "自托管"]
 slug: "build-your-own-xiaohongshu-instagram-alternative-pixelfed"
+translationKey: "build-your-own-xiaohongshu-instagram-alternative-pixelfed"
 summary: 介绍自建Pixelfed的过程。
 showtoc: true
 ---

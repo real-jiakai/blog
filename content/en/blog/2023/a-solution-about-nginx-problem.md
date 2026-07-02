@@ -3,6 +3,7 @@ title: "Solution for 'Failed to parse PID from file /usr/local/nginx/logs/nginx.
 date: 2023-01-14T19:29:39+08:00
 tags: ['nginx']
 slug: "a-solution-about-nginx-problem"
+translationKey: "a-solution-about-nginx-problem"
 summary: Introducing the solution for a bug encountered during nginx installation.
 showtoc: true
 ---

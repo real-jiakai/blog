@@ -3,6 +3,7 @@ title: "非open ai服务地区的VPS解锁ChatGPT的方法"
 date: 2023-06-01T11:15:46+08:00
 tags: ['vps','chatgpt','openai']
 slug: "unlock-chatgpt-when-vps-been-judged-cn-by-cloudflare"
+translationKey: "unlock-chatgpt-when-vps-been-judged-cn-by-cloudflare"
 summary: 分享使用二级代理来实现非open ai服务地区的VPS解锁ChatGPT的方法。
 showtoc: false
 ---

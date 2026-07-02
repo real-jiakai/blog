@@ -3,6 +3,7 @@ title: "Make Claude Great Again!"
 date: 2025-08-06T18:28:21+08:00
 tags: ['claude']
 slug: "make-claude-great-again"
+translationKey: "make-claude-great-again"
 summary: Sharing recent Claude product usage insights.
 showtoc: false
 ---

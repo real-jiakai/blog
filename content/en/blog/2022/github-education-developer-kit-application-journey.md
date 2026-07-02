@@ -3,6 +3,7 @@ title: "My GitHub Student Developer Pack Application Journey"
 date: 2022-06-25T14:01:11+08:00
 tags: ['github']
 slug: github-education-developer-kit-application-journey
+translationKey: "github-education-developer-kit-application-journey"
 summary: After being instantly rejected 49 times by GitHub's automated system, I finally succeeded on the 50th attempt.
 showtoc: true
 ---

@@ -3,6 +3,7 @@ title: "GLM Realtime API Experience"
 date: 2025-01-18T15:05:49+08:00
 tags: ["glm"]
 slug: "glm-realtime-api-experience"
+translationKey: "glm-realtime-api-experience"
 summary: Sharing my GLM Realtime API experience.
 showtoc: true
 ---

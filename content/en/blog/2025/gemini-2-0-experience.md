@@ -3,6 +3,7 @@ title: "Gemini 2.0 Experience"
 date: 2025-02-07T09:01:24+08:00
 tags: ['gemini']
 slug: "gemini-2-0-experience"
+translationKey: "gemini-2-0-experience"
 summary: Sharing my Gemini 2.0 experience.
 showtoc: true
 ---

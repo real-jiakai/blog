@@ -3,6 +3,7 @@ title: "Solution for Google Voice Stuck on 'Connecting'"
 date: 2023-03-14T09:08:15+08:00
 tags: ["google"]
 slug: "the-solution-of-google-voice-is-connecting"
+translationKey: "the-solution-of-google-voice-is-connecting"
 summary: Solution for Google Voice stuck on "Connecting" status.
 ---
 

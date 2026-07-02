@@ -3,6 +3,7 @@ title: "Hugo主题开发日记"
 date: 2023-03-16T13:31:46+08:00
 tags: ["hugo"]
 slug: "hugo-theme-development-diary"
+translationKey: "hugo-theme-development-diary"
 summary: 记录Hugo主题的开发经过。
 showtoc: true
 ---

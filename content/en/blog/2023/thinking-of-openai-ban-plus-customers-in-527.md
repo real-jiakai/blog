@@ -3,6 +3,7 @@ title: "Reflections on OpenAI Banning Plus Users"
 date: 2023-05-28T12:47:41+08:00
 tags: ["openai","chatgpt"]
 slug: "thinking-of-openai-ban-plus-customers-in-527"
+translationKey: "thinking-of-openai-ban-plus-customers-in-527"
 summary: Sharing personal reflections on the OpenAI Plus user ban incident.
 showtoc: true
 ---

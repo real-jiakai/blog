@@ -3,6 +3,7 @@ title: "Claude Account Suspension Resolution"
 date: 2024-11-21T10:19:03+08:00
 tags: ["claude"]
 slug: "claude-account-suspension-resolution"
+translationKey: "claude-account-suspension-resolution"
 summary: Recording my Claude account suspension experience and solution.
 showtoc: true
 ---

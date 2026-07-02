@@ -3,6 +3,7 @@ title: "June Is Still Young, Back to Writing"
 date: 2026-06-06T02:02:11-07:00
 tags: ["life"]
 slug: "june-back-to-writing"
+translationKey: "june-back-to-writing"
 summary: Returning to blogging after a long hiatus, documenting my journey of landing a college teaching position, civil service interviews, and national exam experiences.
 showtoc: false
 ---

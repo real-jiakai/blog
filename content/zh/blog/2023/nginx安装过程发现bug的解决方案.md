@@ -3,6 +3,7 @@ title: "Failed to parse PID from file /usr/local/nginx/logs/nginx.pid: Invalid a
 date: 2023-01-14T19:29:39+08:00
 tags: ['nginx']
 slug: "a-solution-about-nginx-problem"
+translationKey: "a-solution-about-nginx-problem"
 summary: 介绍nginx安装过程中遇到bug的解决方案。
 showtoc: true
 ---

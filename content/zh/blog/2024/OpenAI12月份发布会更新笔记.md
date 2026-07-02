@@ -3,6 +3,7 @@ title: "OpenAI 12月份发布会更新笔记"
 date: 2024-12-21T09:15:03+08:00
 tags: ['openai']
 slug: "notes-about-openai-december-updates"
+translationKey: "notes-about-openai-december-updates"
 summary: 记录OpenAI 12月份发布会更新。
 showtoc: true
 draft: false

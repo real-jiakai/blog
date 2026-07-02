@@ -3,6 +3,7 @@ title: "使用docker自建proxigram"
 date: 2023-10-13T16:36:49+08:00
 tags: ['rss']
 slug: "use-docker-compose-to-build-proxigram"
+translationKey: "use-docker-compose-to-build-proxigram"
 summary: 介绍使用docker自建proxigram的方法。
 showtoc: true
 ---

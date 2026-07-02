@@ -3,6 +3,7 @@ title: "机缘巧合：我与Bero Host优惠VPS的不期而遇"
 date: 2024-08-30T15:36:25+08:00
 tags: ['vps']
 slug: "unexpected-bero-host-vps-bargain"
+translationKey: "unexpected-bero-host-vps-bargain"
 summary: 记录自己朝思暮想的VPS从天而降的经历。
 showtoc: false
 ---

@@ -3,6 +3,7 @@ title: "The Execution Process of 'ls > list' Command"
 date: 2023-01-13T20:01:31+08:00
 tags: ["linux"]
 slug: "the-execution-process-ls->-list"
+translationKey: "the-execution-process-ls->-list"
 summary: Introducing the execution process of the 'ls > list' command.
 showtoc: true
 ---

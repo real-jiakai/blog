@@ -3,6 +3,7 @@ title: "修改ip归属地为朝鲜、南极洲的方法"
 date: 2023-08-17T14:02:16+08:00
 tags: ["ip"]
 slug: "methods-for-setting-ip-to-north-korea-and-antarctica"
+translationKey: "methods-for-setting-ip-to-north-korea-and-antarctica"
 summary: 分享修改ip归属地为朝鲜、南极洲的方法。
 showtoc: true
 ---

@@ -3,6 +3,7 @@ title: "The Fake Self-Hosting Enthusiast"
 date: 2024-04-08T16:18:17+08:00
 tags: ["self-hosting"]
 slug: "fake-selfhost-lover"
+translationKey: "fake-selfhost-lover"
 summary: Introducing common reasons why self-hosted projects end up gathering dust.
 showtoc: true
 ---

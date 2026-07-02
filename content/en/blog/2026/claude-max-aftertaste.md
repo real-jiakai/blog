@@ -3,6 +3,7 @@ title: "Reflections on Claude Max"
 date: 2026-01-08T16:46:40-08:00
 tags: ["claude", "anthropic"]
 slug: "claude-max-aftertaste"
+translationKey: "claude-max-aftertaste"
 summary: Sharing my experience with my second Claude Max subscription.
 showtoc: true
 ---

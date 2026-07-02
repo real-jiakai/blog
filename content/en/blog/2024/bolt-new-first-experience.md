@@ -3,6 +3,7 @@ title: "bolt.new First Experience"
 date: 2024-10-10T16:11:35+08:00
 tags: ["ai", "frontend"]
 slug: "bolt-new-first-experience"
+translationKey: "bolt-new-first-experience"
 summary: Introducing my first experience using bolt.new to complete a simple project.
 showtoc: false
 ---

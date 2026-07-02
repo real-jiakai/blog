@@ -3,6 +3,7 @@ title: "Claude 4 Experience"
 date: 2025-05-23T07:56:34+08:00
 tags: ["claude","anthropic"]
 slug: "claude-4-experience"
+translationKey: "claude-4-experience"
 summary: Sharing my Claude 4 usage experience.
 showtoc: true
 ---

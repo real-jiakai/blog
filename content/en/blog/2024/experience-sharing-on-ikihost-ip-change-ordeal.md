@@ -3,6 +3,7 @@ title: "Experience Sharing on Ikihost IP Change Ordeal"
 date: 2024-03-17T15:01:23+08:00
 tags: ["vps"]
 slug: "experience-sharing-on-ikihost-ip-change-ordeal"
+translationKey: "experience-sharing-on-ikihost-ip-change-ordeal"
 summary: Sharing experiences gained from the Ikihost IP change ordeal.
 showtoc: true
 ---

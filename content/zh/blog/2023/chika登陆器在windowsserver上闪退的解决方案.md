@@ -3,6 +3,7 @@ title: "chika登陆器在windows server上闪退的解决方案"
 date: 2023-06-17T15:24:10+08:00
 tags: ['游戏']
 slug: "fix-chika-crash-on-windows-server"
+translationKey: "fix-chika-crash-on-windows-server"
 summary: 分享chika登陆器在windows server上闪退的解决方案。
 showtoc: false
 ---

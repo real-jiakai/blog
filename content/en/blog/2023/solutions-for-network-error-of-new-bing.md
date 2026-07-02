@@ -3,6 +3,7 @@ title: "Solutions for New Bing Network Error: Sorry, looks like your network set
 date: 2023-03-26T16:29:47+08:00
 tags: ['bing']
 slug: "solutions-for-network-error-of-new-bing"
+translationKey: "solutions-for-network-error-of-new-bing"
 summary: Solutions for resolving New Bing network issues.
 ---
 

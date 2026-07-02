@@ -2,6 +2,7 @@
 title: "Docker容器服务不受防火墙限制？"
 date: 2023-03-07T11:15:46+08:00
 slug: "will-docker-container-be-limited-by-firewall"
+translationKey: "will-docker-container-be-limited-by-firewall"
 tags: ["docker","linux"]
 summary: 介绍Docker容器服务不受防火墙限制的解决方案。
 ---

@@ -3,6 +3,7 @@ title: "Self-Hosted Bookmark App—Karakeep (formerly Hoarder)"
 date: 2024-10-05T15:53:21+08:00
 tags: ["bookmark"]
 slug: "self-hosted-bookmark-app-hoarder"
+translationKey: "self-hosted-bookmark-app-hoarder"
 summary: Sharing my experience self-hosting the bookmark app Karakeep (formerly Hoarder).
 showtoc: true
 ---

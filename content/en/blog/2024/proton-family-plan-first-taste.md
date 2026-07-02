@@ -3,6 +3,7 @@ title: "Proton Family Plan First Taste"
 date: 2024-08-06T08:23:41+08:00
 tags: ["proton"]
 slug: "proton-family-plan-first-taste"
+translationKey: "proton-family-plan-first-taste"
 summary: Introducing my first taste of the Proton Family Plan subscription.
 showtoc: true
 ---

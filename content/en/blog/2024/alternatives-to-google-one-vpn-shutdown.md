@@ -3,6 +3,7 @@ title: "Alternatives to Google One VPN Shutdown"
 date: 2024-04-19T18:08:18+08:00
 tags: ["google one vpn"]
 slug: "alternatives-to-google-one-vpn-shutdown"
+translationKey: "alternatives-to-google-one-vpn-shutdown"
 summary: Introducing alternatives to the Google One VPN shutdown.
 showtoc: true
 ---

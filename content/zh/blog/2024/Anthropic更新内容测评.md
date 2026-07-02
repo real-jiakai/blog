@@ -3,6 +3,7 @@ title: "Anthropic更新内容测评"
 date: 2024-10-23T15:11:43+08:00
 tags: ['claude', 'anthropic']
 slug: "anthropic-updates-evaluation"
+translationKey: "anthropic-updates-evaluation"
 summary: 记录2024年10月22日Anthropic更新内容测评。
 showtoc: true
 draft: false

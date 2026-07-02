@@ -3,6 +3,7 @@ title: "Manus体验"
 date: 2025-07-17T14:33:10+08:00
 tags: ["manus"]
 slug: "manus-experience"
+translationKey: "manus-experience"
 summary: 吐槽Manus的体验感受。
 showtoc: true
 draft: false

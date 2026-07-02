@@ -3,6 +3,7 @@ title: "When LLMs Start Drawing Answers"
 date: 2025-12-10T08:51:08+08:00
 tags: ['llm', 'visualization']
 slug: "when-llms-start-drawing-answers"
+translationKey: "when-llms-start-drawing-answers"
 summary: Introducing the current state of LLM visual responses.
 showtoc: true
 ---

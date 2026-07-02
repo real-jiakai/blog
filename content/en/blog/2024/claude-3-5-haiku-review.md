@@ -3,6 +3,7 @@ title: "Claude 3.5 Haiku Review"
 date: 2024-11-05T10:11:43+08:00
 tags: ['claude', 'anthropic']
 slug: "claude-3-5-haiku-review"
+translationKey: "claude-3-5-haiku-review"
 summary: Recording my Claude 3.5 Haiku review.
 showtoc: false
 draft: false

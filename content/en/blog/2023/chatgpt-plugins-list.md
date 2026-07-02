@@ -3,6 +3,7 @@ title: "ChatGPT Plugins List"
 date: 2023-06-03T09:48:25+08:00
 tags: ['chatgpt','plugins']
 slug: "chatgpt-plugins-list"
+translationKey: "chatgpt-plugins-list"
 summary: Sharing my curated list of ChatGPT plugins.
 showtoc: false
 ---

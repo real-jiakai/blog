@@ -3,6 +3,7 @@ title: "Feed43's Successor—RSSEverything RSS Feed Creation Tutorial"
 date: 2023-03-31T20:45:17+08:00
 tags: ["rss"]
 slug: "create-rss-feed-with-rsseverything-tutorial"
+translationKey: "create-rss-feed-with-rsseverything-tutorial"
 summary: Introducing how to create RSS feeds with RSSEverything.
 showtoc: true
 ---

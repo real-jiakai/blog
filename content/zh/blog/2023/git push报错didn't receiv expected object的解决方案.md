@@ -3,6 +3,7 @@ title: "git push报错'remote: fatal: did not receive expected object'的解决�
 date: 2023-09-16T09:56:21+08:00
 tags: ['git','github']
 slug: "fix-git-push-fatal-error-did-not-receive-expected-object"
+translationKey: "fix-git-push-fatal-error-did-not-receive-expected-object"
 summary: "介绍git push报错'remote: fatal: did not receive expected object'的解决方案"
 showtoc: true
 ---

@@ -3,6 +3,7 @@ title: "Claude Max Preview"
 date: 2025-09-28T10:41:55+08:00
 tags: ['claude', 'anthropic']
 slug: "claude-max-preview"
+translationKey: "claude-max-preview"
 summary: Introducing Claude Max membership experience.
 showtoc: true
 ---

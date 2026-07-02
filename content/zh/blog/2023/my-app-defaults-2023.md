@@ -3,6 +3,7 @@ title: "My App Defaults 2023"
 date: 2023-11-21T08:44:59+08:00
 tags: ['app']
 slug: "my-app-defaults-2023"
+translationKey: "my-app-defaults-2023"
 summary: 介绍2023年我日常使用的App。
 showtoc: false
 ---

@@ -3,6 +3,7 @@ title: "OpenAI December Release Notes"
 date: 2024-12-21T09:15:03+08:00
 tags: ['openai']
 slug: "notes-about-openai-december-updates"
+translationKey: "notes-about-openai-december-updates"
 summary: Recording OpenAI December release updates.
 showtoc: true
 draft: false

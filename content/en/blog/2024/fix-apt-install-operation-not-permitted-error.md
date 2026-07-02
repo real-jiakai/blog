@@ -3,6 +3,7 @@ title: "Solution for apt Install Error 'Operation not permitted'"
 date: 2024-01-17T17:06:29+08:00
 tags: ["linux"]
 slug: "fix-apt-install-operation-not-permitted-error"
+translationKey: "fix-apt-install-operation-not-permitted-error"
 summary: Introducing the solution for apt install error 'Operation not permitted'.
 showtoc: false
 ---

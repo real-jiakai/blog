@@ -3,6 +3,7 @@ title: "Self-hosting Proxigram with Docker"
 date: 2023-10-13T16:36:49+08:00
 tags: ['rss']
 slug: "use-docker-compose-to-build-proxigram"
+translationKey: "use-docker-compose-to-build-proxigram"
 summary: Introducing how to self-host Proxigram using Docker.
 showtoc: true
 ---

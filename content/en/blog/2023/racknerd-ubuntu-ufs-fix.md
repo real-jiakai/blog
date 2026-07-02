@@ -3,6 +3,7 @@ title: "Solution for RackNerd Ubuntu Error 'UFS: unable to mount root fs on unkn
 date: 2023-11-14T14:48:57+08:00
 tags: ['vps','linux']
 slug: "racknerd-ubuntu-ufs-fix"
+translationKey: "racknerd-ubuntu-ufs-fix"
 summary: "Introducing the solution for RackNerd Ubuntu machine error 'UFS: unable to mount root fs on unknown-block.'"
 showtoc: false
 ---

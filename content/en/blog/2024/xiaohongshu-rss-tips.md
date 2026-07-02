@@ -3,6 +3,7 @@ title: "Xiaohongshu RSS Solutions"
 date: 2024-09-21T19:23:52+08:00
 tags: ["xiaohongshu","rss"]
 slug: "xiaohongshu-rss-tips"
+translationKey: "xiaohongshu-rss-tips"
 summary: Introducing Xiaohongshu RSS solutions.
 showtoc: true
 ---

@@ -3,6 +3,7 @@ title: "ChatGPT 4o with canvas测评"
 date: 2024-10-04T10:04:48+08:00
 tags: ["openai","chatgpt"]
 slug: "chatgpt-4o-canvas-review"
+translationKey: "chatgpt-4o-canvas-review"
 summary: 记录自己使用ChatGPT 4o with canvas的体验感受。
 showtoc: true
 ---

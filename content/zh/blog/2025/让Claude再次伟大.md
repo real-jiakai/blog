@@ -3,6 +3,7 @@ title: "让Claude再次伟大!"
 date: 2025-08-06T18:28:21+08:00
 tags: ['claude']
 slug: "make-claude-great-again"
+translationKey: "make-claude-great-again"
 summary: 分享近期有关Claude产品的使用心得。
 showtoc: false
 ---

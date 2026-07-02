@@ -3,6 +3,7 @@ title: "2023 Black Friday Server Shopping Summary"
 date: 2023-11-30T19:26:07+08:00
 tags: ['black-friday']
 slug: "summary-of-server-shop-of-2023-bf"
+translationKey: "summary-of-server-shop-of-2023-bf"
 summary: Summary of my 2023 Black Friday server shopping details.
 showtoc: false
 ---

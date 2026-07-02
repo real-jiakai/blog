@@ -3,6 +3,7 @@ title: "Build Your Own Xiaohongshu and Instagram Alternative—Pixelfed"
 date: 2024-07-20T09:39:08+08:00
 tags: ["pixelfed", "self-hosting"]
 slug: "build-your-own-xiaohongshu-instagram-alternative-pixelfed"
+translationKey: "build-your-own-xiaohongshu-instagram-alternative-pixelfed"
 summary: Introducing the process of self-hosting Pixelfed.
 showtoc: true
 ---

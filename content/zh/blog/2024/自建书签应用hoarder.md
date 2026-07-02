@@ -3,6 +3,7 @@ title: "自建书签应用—Karakeep(原Hoarder)"
 date: 2024-10-05T15:53:21+08:00
 tags: ["bookmark"]
 slug: "self-hosted-bookmark-app-hoarder"
+translationKey: "self-hosted-bookmark-app-hoarder"
 summary: 分享自建书签应用Karakeep(原Hoarder)的经验。
 showtoc: true
 ---

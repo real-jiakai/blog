@@ -3,6 +3,7 @@ title: "Read Later = Never Read"
 date: 2023-01-11T12:08:02+08:00
 tags: ['productivity']
 slug: "read-later-equals-to-not-read"
+translationKey: "read-later-equals-to-not-read"
 summary: Sharing my insights on using read-later apps.
 ---
 

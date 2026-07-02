@@ -3,6 +3,7 @@ title: "Perplexity Max尝鲜"
 date: 2026-06-08T18:05:58+08:00
 tags: ['perplexity']
 slug: "trying-perplexity-max"
+translationKey: "trying-perplexity-max"
 summary: 介绍 Perplexity Max 会员的尝鲜体验。
 showtoc: true
 ---

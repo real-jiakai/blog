@@ -3,6 +3,7 @@ title: "Claude封号的解决方案"
 date: 2024-11-21T10:19:03+08:00
 tags: ["claude"]
 slug: "claude-account-suspension-resolution"
+translationKey: "claude-account-suspension-resolution"
 summary: 记录一次个人claude账号被封的经历及解决方案。
 showtoc: true
 ---

@@ -3,6 +3,7 @@ title: "From Trial to Official: My Relationship Journey"
 date: 2025-11-18T08:31:41+08:00
 tags: ["love"]
 slug: "from-trial-to-official"
+translationKey: "from-trial-to-official"
 summary: Recording my journey from trial to official relationship.
 showtoc: true
 ---

@@ -3,6 +3,7 @@ title: "自建Kasm Workspaces"
 date: 2025-03-31T8:40:02+08:00
 tags: ['kasmworkspaces']
 slug: "self-hosted-kasm-workspaces"
+translationKey: "self-hosted-kasm-workspaces"
 summary: 分享自建Kasm Workspaces的经历。
 showtoc: true
 ---

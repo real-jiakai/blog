@@ -3,6 +3,7 @@ title: "Gemini 2.0 体验"
 date: 2025-02-07T09:01:24+08:00
 tags: ['gemini']
 slug: "gemini-2-0-experience"
+translationKey: "gemini-2-0-experience"
 summary: 分享Gemini 2.0体验的一些感受。
 showtoc: true
 ---

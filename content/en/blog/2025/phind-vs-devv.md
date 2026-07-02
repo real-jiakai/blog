@@ -3,6 +3,7 @@ title: "Phind VS Devv"
 date: 2025-03-25T14:21:17+08:00
 tags: ['ai', 'programming', 'search','phind','devv']
 slug: "phind-vs-devv"
+translationKey: "phind-vs-devv"
 summary: Sharing my experience with AI programming search tools Phind and Devv.
 showtoc: true
 ---

@@ -3,6 +3,7 @@ title: "Racknerd的ubuntu机器报错'UFS: unable to mount root fs on unknown-bl
 date: 2023-11-14T14:48:57+08:00
 tags: ['vps','linux']
 slug: "racknerd-ubuntu-ufs-fix"
+translationKey: "racknerd-ubuntu-ufs-fix"
 summary: "介绍Racknerd的ubuntu机器报错'UFS: unable to mount root fs on unknown-block.'的解决方案。"
 showtoc: false
 ---

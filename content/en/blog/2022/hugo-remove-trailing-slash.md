@@ -3,6 +3,7 @@ title: "Removing Trailing Slashes from Hugo Blog URLs"
 date: "2022-11-07T15:05:47+08:00"
 tags: ['hugo']
 slug: "hugo-remove-trailing-slash"
+translationKey: "hugo-remove-trailing-slash"
 summary: How to remove trailing slashes from Hugo blog URLs.
 showtoc: true
 ---

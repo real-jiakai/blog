@@ -3,6 +3,7 @@ title: "RSS-Bridge Setup Guide"
 date: 2023-02-20T10:27:14+08:00
 tags: ['rss','rssbridge']
 slug: "use-docker-compose-to-build-rssbridge"
+translationKey: "use-docker-compose-to-build-rssbridge"
 summary: Introducing how to set up RSS-Bridge.
 showtoc: true
 ---

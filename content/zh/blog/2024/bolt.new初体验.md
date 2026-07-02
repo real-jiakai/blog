@@ -3,6 +3,7 @@ title: "bolt.new初体验"
 date: 2024-10-10T16:11:35+08:00
 tags: ["ai", "前端"]
 slug: "bolt-new-first-experience"
+translationKey: "bolt-new-first-experience"
 summary: 介绍自己初次体验bolt.new完成一个简单项目的经历。
 showtoc: false
 ---

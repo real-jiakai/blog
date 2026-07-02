@@ -3,6 +3,7 @@ title: "Hugo Theme Development Diary"
 date: 2023-03-16T13:31:46+08:00
 tags: ["hugo"]
 slug: "hugo-theme-development-diary"
+translationKey: "hugo-theme-development-diary"
 summary: Recording the process of Hugo theme development.
 showtoc: true
 ---

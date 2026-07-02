@@ -3,6 +3,7 @@ title: "chatgpt安卓报错disallowed ISP/There is a problem with your request�
 date: 2023-10-16T18:06:02+08:00
 tags: ['chatgpt']
 slug: "chatgpt-android-error-disallowed-isp-solution"
+translationKey: "chatgpt-android-error-disallowed-isp-solution"
 summary: 介绍chatgpt安卓报错disallowed ISP/There is a problem with your request的解决方案。
 showtoc: true
 ---

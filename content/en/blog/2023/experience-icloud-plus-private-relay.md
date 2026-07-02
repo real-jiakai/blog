@@ -3,6 +3,7 @@ title: "Experiencing iCloud+ Private Relay"
 date: 2023-10-05T11:02:55+08:00
 tags: ['apple']
 slug: "experience-icloud-plus-private-relay"
+translationKey: "experience-icloud-plus-private-relay"
 summary: Introducing my experience using iCloud+ Private Relay.
 showtoc: true
 ---

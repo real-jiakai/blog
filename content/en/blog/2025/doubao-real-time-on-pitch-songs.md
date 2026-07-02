@@ -3,6 +3,7 @@ title: "Songs Doubao Real-Time Voice Can Sing On-Pitch"
 date: 2025-01-21T09:48:37+08:00
 tags: ["doubao"]
 slug: "doubao-real-time-on-pitch-songs"
+translationKey: "doubao-real-time-on-pitch-songs"
 summary: Sharing songs that Doubao real-time voice can sing on-pitch.
 showtoc: true
 ---

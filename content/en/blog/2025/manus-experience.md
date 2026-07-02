@@ -3,6 +3,7 @@ title: "Manus Experience"
 date: 2025-07-17T14:33:10+08:00
 tags: ["manus"]
 slug: "manus-experience"
+translationKey: "manus-experience"
 summary: Complaining about Manus experience.
 showtoc: true
 draft: false

@@ -3,6 +3,7 @@ title: "搬瓦工theplanv2安装caddy启动失败的解决方案"
 date: 2023-06-29T15:38:29+08:00
 tags: ["vps"]
 slug: "solving-caddy-failure-on-bandwagonhost-theplanv2"
+translationKey: "solving-caddy-failure-on-bandwagonhost-theplanv2"
 summary: 介绍搬瓦工新推出套餐the plan v2上安装caddy启动失败的解决方案。
 showtoc: false
 ---

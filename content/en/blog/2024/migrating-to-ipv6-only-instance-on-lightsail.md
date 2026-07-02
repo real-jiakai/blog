@@ -3,6 +3,7 @@ title: "Lightsail Migration to IPv6-only Instance Process Record"
 date: 2024-01-28T18:29:40+08:00
 tags: ["vps","lightsail"]
 slug: "migrating-to-ipv6-only-instance-on-lightsail"
+translationKey: "migrating-to-ipv6-only-instance-on-lightsail"
 summary: Recording the process of migrating Lightsail to IPv6-only instance.
 showtoc: true
 ---

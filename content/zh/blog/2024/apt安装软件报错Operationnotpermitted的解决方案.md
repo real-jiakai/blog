@@ -3,6 +3,7 @@ title: "apt安装软件报错Operation not permitted的解决方案"
 date: 2024-01-17T17:06:29+08:00
 tags: ["linux"]
 slug: "fix-apt-install-operation-not-permitted-error"
+translationKey: "fix-apt-install-operation-not-permitted-error"
 summary: 介绍apt安装软件报错Operation not permitted的解决方案。
 showtoc: false
 ---

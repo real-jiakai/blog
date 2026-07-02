@@ -3,6 +3,7 @@ title: "Google voice正在连接的解决方案"
 date: 2023-03-14T09:08:15+08:00
 tags: ["google"]
 slug: "the-solution-of-google-voice-is-connecting"
+translationKey: "the-solution-of-google-voice-is-connecting"
 summary: 介绍Google voice正在连接的解决方案。
 ---
 

@@ -3,6 +3,7 @@ title: "Unlocking ChatGPT for VPS in Non-OpenAI Service Regions"
 date: 2023-06-01T11:15:46+08:00
 tags: ['vps','chatgpt','openai']
 slug: "unlock-chatgpt-when-vps-been-judged-cn-by-cloudflare"
+translationKey: "unlock-chatgpt-when-vps-been-judged-cn-by-cloudflare"
 summary: Sharing how to use secondary proxy to unlock ChatGPT for VPS in non-OpenAI service regions.
 showtoc: false
 ---

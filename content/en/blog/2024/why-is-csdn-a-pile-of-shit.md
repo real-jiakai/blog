@@ -3,6 +3,7 @@ title: "Why CSDN Is a Pile of Shit"
 date: 2024-09-11T15:17:46+08:00
 tags: ['csdn']
 slug: "why-is-csdn-a-pile-of-shit"
+translationKey: "why-is-csdn-a-pile-of-shit"
 summary: Explaining why CSDN is a pile of shit, targeting the platform, not creators using it.
 showtoc: true
 ---

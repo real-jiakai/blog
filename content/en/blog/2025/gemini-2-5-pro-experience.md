@@ -3,6 +3,7 @@ title: "Gemini 2.5 Pro Experience"
 date: 2025-03-30T14:29:10+08:00
 tags: ['gemini']
 slug: "gemini-2-5-pro-experience"
+translationKey: "gemini-2-5-pro-experience"
 summary: Sharing my Gemini 2.5 Pro experience.
 showtoc: true
 ---

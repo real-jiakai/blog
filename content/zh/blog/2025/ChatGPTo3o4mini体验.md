@@ -3,6 +3,7 @@ title: "ChatGPT o3、o4 mini体验"
 date: 2025-04-17T09:06:26+08:00
 tags: ['chatgpt']
 slug: "chatgpt-o3-o4-mini-experience"
+translationKey: "chatgpt-o3-o4-mini-experience"
 summary: 分享ChatGPT o3、o4 mini体验感受。
 showtoc: true
 ---

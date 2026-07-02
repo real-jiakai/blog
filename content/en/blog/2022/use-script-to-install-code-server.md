@@ -4,6 +4,7 @@ date: 2022-08-17T15:40:02+08:00
 draft: false
 tags: ['github']
 slug: use-script-to-install-code-server
+translationKey: "use-script-to-install-code-server"
 summary: Install code-server using a one-click script, improving upon the rough installation process shown in my Bilibili video.
 showtoc: true
 ---

@@ -3,6 +3,7 @@ title: "Google I/O 2025 Notes"
 date: 2025-05-21T08:01:38+08:00
 tags: ["google", "gemini"]
 slug: "google-io-2025-notes"
+translationKey: "google-io-2025-notes"
 summary: Recording Google I/O 2025 announcements.
 showtoc: true
 ---

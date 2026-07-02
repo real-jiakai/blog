@@ -3,6 +3,7 @@ title: "Solution for ChatGPT Android Error: Disallowed ISP / There is a problem 
 date: 2023-10-16T18:06:02+08:00
 tags: ['chatgpt']
 slug: "chatgpt-android-error-disallowed-isp-solution"
+translationKey: "chatgpt-android-error-disallowed-isp-solution"
 summary: Solutions for ChatGPT Android error "disallowed ISP" or "There is a problem with your request".
 showtoc: true
 ---

@@ -3,6 +3,7 @@ title: "Methods for Setting IP Location to North Korea and Antarctica"
 date: 2023-08-17T14:02:16+08:00
 tags: ["ip"]
 slug: "methods-for-setting-ip-to-north-korea-and-antarctica"
+translationKey: "methods-for-setting-ip-to-north-korea-and-antarctica"
 summary: Sharing methods for setting IP location to North Korea and Antarctica.
 showtoc: true
 ---

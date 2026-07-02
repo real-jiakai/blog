@@ -3,6 +3,7 @@ title: "Hugo博客url删除末尾斜杠"
 date: "2022-11-07T15:05:47+08:00"
 tags: ['hugo']
 slug: "hugo-remove-trailing-slash"
+translationKey: "hugo-remove-trailing-slash"
 summary: 介绍Hugo博客去除url尾部斜杠的方法。
 showtoc: true
 ---
