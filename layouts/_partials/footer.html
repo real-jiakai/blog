@@ -1,4 +1,6 @@
-<div class="container mx-auto text-center mb-4">
+{{/* mt-auto：body 是 min-vh-100 的纵向 flex 布局，剩余空间会被这里的 auto 外边距吸收，
+     内容不足一屏时把页脚钉在视口底部；内容超过一屏时与原来完全一致（紧贴正文） */}}
+<div class="container mx-auto text-center mb-4 mt-auto">
     {{ with .Site.Params.footer }}
     {{ $text := replace . "{Year}" (string now.Year) }}
     {{ $text = replace $text "Made" `<br class="d-md-none">Made` }}
