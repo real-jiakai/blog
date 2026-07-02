@@ -23,8 +23,11 @@
     {{- end -}}
     <meta name="description" content="{{ $description }}">
     <meta name="keywords" content="{{ .Site.Params.keywords }}">
-    <meta name="author" content="{{ .Site.Params.author }}">  
+    <meta name="author" content="{{ .Site.Params.author }}">
     <link rel="canonical" href="{{ .Permalink }}" />
+    {{/* 社交分享卡片（Open Graph / Twitter Card），Hugo 内置模板 */}}
+    {{ template "_internal/opengraph.html" . }}
+    {{ template "_internal/twitter_cards.html" . }}
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/lightbox.min.css">
