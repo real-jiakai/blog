@@ -1,7 +1,8 @@
 {{ define "main" }}
 <div class="container-md align-items-center">
   <article>
-    <h2 class="text-center p-3">{{ .Title }}</h2>
+    {{/* h1 保证每页有唯一主标题（可访问性/SEO）；.h2 类保持原有视觉大小 */}}
+    <h1 class="h2 text-center p-3">{{ .Title }}</h1>
     
     <!-- 文章元数据部分 -->
     {{ if eq .Type "blog" }}
