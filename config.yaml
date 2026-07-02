@@ -32,8 +32,6 @@ permalinks:
 # 分页器
 pagination:
   pagerSize: 5
-# 博文中使用了中文
-hasCJKLanguage: true
 # 开启robots.txt
 enableRobotsTXT: true
 # 只使用 tags 分类；不声明的话 Hugo 默认还会生成空的 categories
@@ -83,6 +81,8 @@ languages:
     weight: 1
     title: "顾佳凯的网络日志"
     contentDir: "content/zh"
+    # 中文内容按 CJK 规则统计字数/阅读时长（英文站点不需要）
+    hasCJKLanguage: true
     params:
       description: "一个专注于分享技术和个人经历的博客"
       keywords: "博客,技术,个人,生活"
