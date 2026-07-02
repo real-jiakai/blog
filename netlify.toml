@@ -4,3 +4,15 @@
 
 [build.environment]
   HUGO_VERSION = "0.154.2"
+
+# 按语言返回对应的 404 页面：/en/ 下的未知路径用英文 404，其余用中文 404。
+# 无 force 标记时规则只在路径没有真实文件时生效，顺序从上到下匹配。
+[[redirects]]
+  from = "/en/*"
+  to = "/en/404.html"
+  status = 404
+
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404

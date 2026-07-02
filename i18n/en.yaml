@@ -64,3 +64,9 @@
   translation: "Recent content on {{ .Site }}"
 - id: rssFeedDescriptionSection
   translation: "Recent content in {{ .Section }} on {{ .Site }}"
+- id: notFoundHeading
+  translation: "Oops! The page is gone."
+- id: notFoundText
+  translation: "Sorry, the page you requested does not exist or has been moved."
+- id: backHome
+  translation: "Go Back Home"
