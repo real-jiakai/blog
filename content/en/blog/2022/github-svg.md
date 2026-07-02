@@ -37,7 +37,7 @@ When you double-click the downloaded SVG file and open it in a browser, you'll f
 
 Regarding this question, I specifically reached out to [MayanDev](https://github.com/Mayandev).
 
-Here's my email exchange with him. [click here](/document/github-email.pdf)
+Here's my email exchange with him. [click here](https://storage.gujiakai.top/documents/github-email.pdf)
 
 > Summary:
 

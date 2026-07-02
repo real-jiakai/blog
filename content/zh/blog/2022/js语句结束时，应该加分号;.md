@@ -70,4 +70,4 @@ const tagline = "Your weekly dose of JavaScript"[newsletter, tagline].forEach((e
 
 ## 4.邮件材料
 
-[2022-09-27-newsletter](/document/2022-09-27-newsletter.html)
+[2022-09-27-newsletter](https://storage.gujiakai.top/documents/2022-09-27-newsletter.html)

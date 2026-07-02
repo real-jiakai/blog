@@ -37,7 +37,7 @@ summary: 本文介绍如何实现GitHub个人主页svg图片动态效果。
 
 关于这个问题，我特意询问了[MayanDev](https://github.com/Mayandev)。
 
-这是我和他的邮件交流记录。👉[click me](/document/github-email.pdf)
+这是我和他的邮件交流记录。👉[click me](https://storage.gujiakai.top/documents/github-email.pdf)
 
 > Summary：
 

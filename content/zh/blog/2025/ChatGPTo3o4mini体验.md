@@ -104,7 +104,7 @@ https://openai.com/chatgpt/pricing/
 
 ![ChatGPT o3模型恐怖的迭代能力](https://cdn.sa.net/2025/04/17/8Qlq9ZjUntdbWgm.webp)
 
-该识图任务的流程如下，具体可参见该识图任务的<a href="/document/2025-04-17-chatgpt-o3-image-thinking-demo.html" target="_blank">网页截图</a>:
+该识图任务的流程如下，具体可参见该识图任务的<a href="https://storage.gujiakai.top/documents/2025-04-17-chatgpt-o3-image-thinking-demo.html" target="_blank">网页截图</a>:
 
 1、1m21s推理时间
 

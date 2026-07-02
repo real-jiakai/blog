@@ -103,7 +103,7 @@ Image below shows part of image recognition task—feel ChatGPT o3 model's terri
 
 ![ChatGPT o3 model's terrifying iteration capability](https://cdn.sa.net/2025/04/17/8Qlq9ZjUntdbWgm.webp)
 
-This image recognition task flow—see this task's <a href="/document/2025-04-17-chatgpt-o3-image-thinking-demo.html" target="_blank">webpage screenshot</a>:
+This image recognition task flow—see this task's <a href="https://storage.gujiakai.top/documents/2025-04-17-chatgpt-o3-image-thinking-demo.html" target="_blank">webpage screenshot</a>:
 
 1. 1m21s reasoning time
 

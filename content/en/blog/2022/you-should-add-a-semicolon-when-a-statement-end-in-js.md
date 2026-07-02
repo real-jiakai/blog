@@ -67,4 +67,4 @@ The first solution provided by the newsletter author didn't initially work in VS
 
 ## 4. Email Materials
 
-[2022-09-27-newsletter](/document/2022-09-27-newsletter.html)
+[2022-09-27-newsletter](https://storage.gujiakai.top/documents/2022-09-27-newsletter.html)
