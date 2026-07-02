@@ -3,7 +3,9 @@
 <div class="container mx-auto text-center mb-4 mt-auto">
     {{ with .Site.Params.footer }}
     {{ $text := replace . "{Year}" (string now.Year) }}
-    {{ $text = replace $text "Made" `<br class="d-md-none">Made` }}
+    {{/* 用 &nbsp; 而非普通空格：hugo --minify 会剥掉 <br> 两侧的普通空格，
+         桌面端（br 被 d-md-none 隐藏）会导致 "2026Made" 连在一起 */}}
+    {{ $text = replace $text " Made" `&nbsp;<br class="d-md-none">Made` }}
     <span class="fw-semibold">{{ $text | safeHTML }}</span>
     {{ end }}
 </div>
