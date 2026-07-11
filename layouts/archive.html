@@ -46,7 +46,7 @@
             {{ range .Pages.ByDate.Reverse }}
             <li class="mb-2 d-flex justify-content-between align-items-baseline">
                 <a href="{{ .Permalink }}" class="text-decoration-none">{{ .Title }}</a>
-                <span class="text-muted" style="font-family: monospace; min-width: 4em;">{{ .Date.Format "01-02" }}</span>
+                <span class="text-muted archive-date">{{ .Date.Format "01-02" }}</span>
             </li>
             {{ end }}
         </ul>

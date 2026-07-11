@@ -50,7 +50,7 @@ With time passing and AI rising, these exercise summaries' view counts have plat
 
 I haven't received like notifications on Yuque for a long time. After all, once you have the most powerful AI tools, just ask AI for thoughtful explanations—no longer need human explanations.
 
-![Yuque notes haven't had new likes for a long time](https://cdn.sa.net/2024/09/11/HxumkGdCSTpFVR.webp)
+![Yuque notes haven't had new likes for a long time](https://cdn.sa.net/2024/09/11/HxumkGdCSTpDFVR.webp)
 
 After moving Hexo blog content to Yuque, I deactivated that CSDN account. To my surprise, the original articles were still there—the so-called deactivation just set the account as "deactivated."
 

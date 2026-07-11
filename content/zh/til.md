@@ -3,7 +3,7 @@ title: Today I Learned
 date: 2023-02-28
 ---
 
-# 介绍
+## 介绍
 
 Today I Learned页面分享我自己今天学了什么知识。一直坚信Learn In Public是学习最快的方式。[via](https://www.swyx.io/learn-in-public)
 

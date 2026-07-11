@@ -1,22 +1,33 @@
 {{ define "main" }}
 {{ $paginator := .Paginate (where .Site.RegularPages "Type" "==" "blog") }}
-<div class="card-deck">
+<header class="home-intro">
+  <h1 class="home-title">{{ .Site.Title }}</h1>
+  {{ with .Site.Params.description }}
+  <p class="home-description">{{ . }}</p>
+  {{ end }}
+  {{ if gt $paginator.PageNumber 1 }}
+  <p class="home-page-number">{{ i18n "pageNumber" (dict "Number" $paginator.PageNumber) }}</p>
+  {{ end }}
+</header>
+
+<section class="card-deck post-list" aria-label="{{ i18n "recentPosts" }}">
   {{ range $paginator.Pages }}
-  <div class="card mb-3">
+  <article class="card mb-3">
     <div class="card-body">
-      <h4 class="card-title text-break">
+      <h2 class="card-title text-break">
         <a href="{{ .RelPermalink }}" class="card-link text-decoration-none text-wrap">
           {{ .Title }}
         </a>
-      </h4>
-      <p class="card-text">{{ .Summary }}</p>
+      </h2>
+      <div class="card-text">{{ .Summary }}</div>
     </div>
     <div class="card-footer">
       <div class="post-meta d-flex flex-wrap align-items-center gap-3 text-secondary small">
-        <span class="post-meta-item">
+        <time class="post-meta-item" datetime="{{ .Date.Format "2006-01-02" }}">
           {{ partial "icon.html" "calendar" }}
+          <span class="visually-hidden">{{ i18n "postedOn" }}: </span>
           {{ .Date.Format "2006-01-02" }}
-        </span>
+        </time>
 
         {{ with .Params.tags }}
         <span class="post-meta-item">
@@ -32,23 +43,24 @@
 
         <span class="post-meta-item">
           {{ partial "icon.html" "clock" }}
+          <span class="visually-hidden">{{ i18n "readingTime" }}: </span>
           {{ .ReadingTime }} {{ i18n "minutes" }}
         </span>
       </div>
     </div>
-  </div>
+  </article>
   {{ else }}
   <div class="alert alert-secondary my-3" role="alert">
-    No posts yet
+    {{ i18n "noPosts" }}
   </div>
   {{ end }}
-</div>
+</section>
 
 <!-- 分页导航（tw93 风格：紧凑、无边框，带省略号） -->
 {{ if gt $paginator.TotalPages 1 }}
 {{ $cur := $paginator.PageNumber }}
 {{ $total := $paginator.TotalPages }}
-<nav class="post-pager" aria-label="Pagination">
+<nav class="post-pager" aria-label="{{ i18n "pagination" }}">
   {{ if $paginator.HasPrev }}
   <a class="pager-link pager-arrow" href="{{ $paginator.Prev.URL }}" aria-label="{{ i18n "previousPage" }}">{{ partial "icon.html" "chevron-left" }}</a>
   {{ end }}
@@ -62,11 +74,11 @@
   {{ end }}
   {{ $prev := 0 }}
   {{ range $n := $show }}
-    {{ if and (gt $prev 0) (gt (sub $n $prev) 1) }}<span class="pager-ellipsis">…</span>{{ end }}
+    {{ if and (gt $prev 0) (gt (sub $n $prev) 1) }}<span class="pager-ellipsis" aria-hidden="true">…</span>{{ end }}
     {{ if eq $n $cur }}
-    <span class="pager-link active" aria-current="page">{{ $n }}</span>
+    <span class="pager-link active" aria-current="page" aria-label="{{ i18n "currentPageNumber" (dict "Number" $n) }}">{{ $n }}</span>
     {{ else }}
-    <a class="pager-link" href="{{ (index $paginator.Pagers (sub $n 1)).URL }}">{{ $n }}</a>
+    <a class="pager-link" href="{{ (index $paginator.Pagers (sub $n 1)).URL }}" aria-label="{{ i18n "pageNumber" (dict "Number" $n) }}">{{ $n }}</a>
     {{ end }}
     {{ $prev = $n }}
   {{ end }}
@@ -76,28 +88,4 @@
   {{ end }}
 </nav>
 {{ end }}
-
-<style>
-/* 移动端优化 */
-@media (max-width: 768px) {
-  .card-footer .post-meta {
-    gap: 0.75rem !important;  /* 减小项间距 */
-  }
-  .card-footer .post-meta-item {
-    font-size: 0.875rem;  /* 移动端字体稍微缩小 */
-  }
-}
-
-/* 标题样式优化 */
-.card-title {
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  -ms-word-break: break-all;
-  word-break: break-word;
-  -ms-hyphens: auto;
-  -moz-hyphens: auto;
-  -webkit-hyphens: auto;
-  hyphens: auto;
-}
-</style>
 {{ end }}

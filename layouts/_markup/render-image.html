@@ -1,0 +1,17 @@
+{{- $destination := .Destination -}}
+{{- $title := .Title | default .Text -}}
+{{- $resource := false -}}
+{{- if not (urls.Parse $destination).IsAbs -}}
+  {{- $resource = .Page.Resources.GetMatch (strings.TrimPrefix "./" $destination) -}}
+{{- end -}}
+<a href="{{ $destination | safeURL }}" data-lightbox="article" data-title="{{ $title }}" data-alt="{{ .Text }}">
+  <img src="{{ $destination | safeURL }}"
+       alt="{{ .Text }}"
+       loading="lazy"
+       decoding="async"
+       referrerpolicy="strict-origin-when-cross-origin"
+       {{- with .Title }} title="{{ . }}"{{ end }}
+       {{- with $resource }} width="{{ .Width }}" height="{{ .Height }}"{{ else }}
+         {{- with index $.Page.Site.Data.image_dimensions $destination }} width="{{ .width }}" height="{{ .height }}"{{ end }}
+       {{- end }}>
+</a>

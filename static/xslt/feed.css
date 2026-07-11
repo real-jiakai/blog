@@ -1,0 +1,44 @@
+.feed-badge {
+  display: inline-block;
+  margin-bottom: 0;
+  border-radius: 0.35rem;
+  padding: 0.2rem 0.45rem;
+  background: #f26522;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+#feedurl {
+  box-sizing: border-box;
+  width: 100%;
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+}
+
+.feed-item {
+  margin: 1.5rem 0;
+  border-top: 1px solid currentcolor;
+  padding-top: 1rem;
+}
+
+.feed-item h2 {
+  margin-bottom: 0.25rem;
+  font-size: 1.25rem;
+}
+
+.feed-date {
+  margin-top: 0;
+  opacity: 0.72;
+  font-size: 0.9rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}

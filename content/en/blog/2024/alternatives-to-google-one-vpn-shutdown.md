@@ -89,13 +89,13 @@ If you still want to use Google One VPN, suggest buying a Pixel 7 or above phone
 
 This morning saw Japan residential ISP provider sososo's shared rooms were in short supply—got one of their $9.9/month machines. Their machines are true residential, and if you have local IPv6 address, the proxy to mainland China has nice latency. Currently using this machine to route unlock AI services for my Hong Kong machine. Their homepage: [sososo Japan residential](https://sales.sososo.io/)
 
-![](https://cdn.sa.net/2024/06/17/FASRHMi5tzKka6x.webp)
+![Sososo Japanese residential ISP VPS plan](https://cdn.sa.net/2024/06/17/FASRHMi5tzKka6x.webp)
 
 ## Update (2024.05.24)
 
 Adding another provider selling US AT&T residential—[wirecat's ResNet VPS](https://billing.wirecat.net/order/main/packages/resnet/?group_id=15)
 
-![](https://cdn.sa.net/2024/05/24/ryUObfsixvgQP9m.webp)
+![Wirecat US AT&T residential network VPS plan](https://cdn.sa.net/2024/05/24/ryUObfsixvgQP9m.webp)
 
 Minimum $50/month, still pricey. Unless shared, individual use rarely maximizes value.
 
@@ -137,7 +137,7 @@ Bulianglin's latest video mentioned methods to find dual ISP providers—[Cross-
 
 ## Update (2024.04.21, 2024.05.08)
 
-![](https://cdn.sa.net/2024/05/08/gqeSCvQWZRcLV64.webp)
+![Google One notice announcing the VPN shutdown date](https://cdn.sa.net/2024/05/08/gqeSCvQWZRcLV64.webp)
 
 Google One VPN shutting down mid-year [ps: shutdown date changes whenever—originally June 10, now June 20]. "Later this year" apparently means mid-year. via: [What's happening to VPN by Google One?](https://support.google.com/googleone/answer/14806901)
 
@@ -213,7 +213,7 @@ Since viie maintenance = delete and recreate machine, rating changed to zero sta
 
 Aiyun's 2024 New Year special ISP CN2 GIA is also good.
 
-![](https://cdn.sa.net/2024/04/22/Chby58vH3YcgUzR.webp)
+![Aiyun ISP CN2 GIA VPS plan](https://cdn.sa.net/2024/04/22/Chby58vH3YcgUzR.webp)
 
 Rating: ⭐⭐⭐⭐
 

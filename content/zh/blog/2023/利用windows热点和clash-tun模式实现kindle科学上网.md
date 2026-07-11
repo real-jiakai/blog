@@ -14,9 +14,9 @@ showtoc: true
 
 ![kindle成功实现科学上网](https://vip2.loli.net/2023/09/22/AaFxTH2cnsWhlpy.webp)
 
-- andriod、ipad均无需进行任何设置连上google one vpn
+- Android、iPad均无需进行任何设置连上Google One VPN
 
-![andriod无需进行任何设置连上google one vpn](https://vip2.loli.net/2023/09/22/NM1QCIXHkKUj2Su.webp)
+![Android无需进行任何设置连上Google One VPN](https://vip2.loli.net/2023/09/22/NM1QCIXHkKUj2Su.webp)
 
 ![ipad无需进行任何设置连上google one vpn](https://vip2.loli.net/2023/09/22/36bDAWM8hLP2olk.webp)
 
@@ -32,7 +32,7 @@ showtoc: true
 
 昨天晚上，我想实现windows作为前置代理，安卓手机连接windows，连上google one vpn。于是按照上半年的那一套路：开启windows的热点，安卓手机连接windows分享的热点，并且在安卓手机上设置热点的代理选项。但是我发现安卓手机连设置了windows局域网ip和clash的7890端口，但并不能科学上网。
 
-经过一番搜索，我按照clash for windows仓库下的这个issue-[WIN 10 配置好了CLASH 打开ALLOW LAN 为什么不能局域上网 求大神远程协助！！我要连电视盒子 #831](https://github.com/Fndroid/clash_for_windows_pkg/issues/831)中提及的方法重新安装了tun mode，接着成功实现了安卓手机利用windows热点共享出来的clash流量，连上google one vpn。
+经过一番搜索，我按照clash for windows仓库下的这个存档issue-[WIN 10 配置好了CLASH 打开ALLOW LAN 为什么不能局域上网 求大神远程协助！！我要连电视盒子 #831](https://web.archive.org/web/20221217141147/https://github.com/Fndroid/clash_for_windows_pkg/issues/831)中提及的方法重新安装了tun mode（原issue已被删除），接着成功实现了安卓手机利用windows热点共享出来的clash流量，连上google one vpn。
 
 但是在搜索过程中，我发现了如下这条评论。[via](https://zhuanlan.zhihu.com/p/337430556)
 

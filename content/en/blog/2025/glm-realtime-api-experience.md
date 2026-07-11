@@ -42,7 +42,7 @@ But later OpenAI became more reserved. Some treasures weren't shared with the wo
 
 Wanted to try Realtime API but found it currently only callable via API. Zhipu's API platform hasn't listed the real-time voice API interaction yet (no out-of-box real-time voice entry like Google AI Studio).
 
-So I sent Zhipu's official Realtime API documentation to Claude. After back-and-forth with Claude and using Perplexity to debug Claude's code, I finally created the GLM-Realtime API demo: [https://glm-realtime.gujiakai.top](https://glm-realtime.gujiakai.top).
+So I sent Zhipu's official Realtime API documentation to Claude. After back-and-forth with Claude and using Perplexity to debug Claude's code, I finally created the GLM-Realtime API demo. The original demo is offline, but an [archived copy](https://web.archive.org/web/20250322110623/https://glm-realtime.gujiakai.top/) is available.
 
 This coding experience deeply taught me the power of programming experts combined with Claude. As a newbie, I can't fully leverage Claude's programming ability. Programming experts can quickly find bugs in Claude's code and direct Claude precisely. Still need to learn programming properly. Zero-foundation coding apps with complex logic—debugging with AI help wastes lots of time.
 

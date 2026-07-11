@@ -1,23 +1,9 @@
-- id: home
-  translation: "Home"
-- id: archive
-  translation: "Archive"
-- id: tags
-  translation: "Tags"
-- id: about
-  translation: "About"
-- id: til
-  translation: "TIL"
-- id: readMore
-  translation: "Read More"
 - id: previousPage
   translation: "Previous"
 - id: nextPage
   translation: "Next"
 - id: postedOn
   translation: "Posted on"
-- id: wordCount
-  translation: "Words"
 - id: readingTime
   translation: "Reading time"
 - id: minutes
@@ -32,8 +18,6 @@
   translation: "System"
 - id: tableOfContents
   translation: "Table of Contents"
-- id: language
-  translation: "Language"
 - id: tagsTitle
   translation: "Tags"
 - id: archiveTitle
@@ -54,10 +38,6 @@
   translation: "Next"
 - id: backToTop
   translation: "Back to Top"
-- id: toggleDarkMode
-  translation: "Toggle Dark Mode"
-- id: toggleLightMode
-  translation: "Toggle Light Mode"
 - id: rssTitleSeparator
   translation: " on "
 - id: rssFeedDescription
@@ -70,3 +50,47 @@
   translation: "Sorry, the page you requested does not exist or has been moved."
 - id: backHome
   translation: "Go Back Home"
+- id: skipToContent
+  translation: "Skip to main content"
+- id: primaryNavigation
+  translation: "Primary navigation"
+- id: switchToEnglish
+  translation: "Switch to English"
+- id: switchToChinese
+  translation: "Switch to Chinese"
+- id: themeMenu
+  translation: "Choose color theme"
+- id: toggleNavigation
+  translation: "Toggle navigation"
+- id: recentPosts
+  translation: "Recent posts"
+- id: noPosts
+  translation: "No posts yet"
+- id: pagination
+  translation: "Pagination"
+- id: pageNumber
+  translation: "Page {{ .Number }}"
+- id: currentPageNumber
+  translation: "Current page, {{ .Number }}"
+- id: labelSeparator
+  translation: ": "
+- id: postNavigation
+  translation: "Previous and next posts"
+- id: emojiReaction
+  translation: "Emoji Reaction"
+- id: comments
+  translation: "Comments"
+- id: copyCode
+  translation: "Copy"
+- id: copiedCode
+  translation: "Copied!"
+- id: copyCodeError
+  translation: "Copy failed"
+- id: previousImage
+  translation: "Previous image"
+- id: nextImage
+  translation: "Next image"
+- id: closeImageViewer
+  translation: "Close image viewer"
+- id: addReaction
+  translation: "Add reaction"

@@ -196,7 +196,7 @@ Meanwhile, while organizing some bookmarked pages today, found a Hacker News pos
 
 ![Gemini 2.5 Pro VS Claude 3.7 Sonnet TL;DR](https://cdn.sa.net/2025/04/03/OolQmjhd1Ckew9R.webp)
 
-Too many post comments, so I had ChatGPT Deep Research it. Results at [Halo Blog](https://blog.gujiakai.me/2025/04/gemini-2-5-pro-vs-claude-3-7-sonnet-hacker-news-user-reactions).
+There were too many comments to review manually, so I asked ChatGPT Deep Research to analyze them. The report was published on my Halo Blog, but that copy is now offline; refer to the original Hacker News discussion linked above.
 
 - Gemini Code
 

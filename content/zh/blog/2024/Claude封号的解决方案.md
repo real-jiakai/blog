@@ -26,7 +26,7 @@ showtoc: true
 
 ![windows远程桌面没被检测出代理](https://cdn.sa.net/2024/12/25/6t3i1VvRMZmO8HG.webp)
 
-代理检测地址：https://proxy.incolumitas.com/proxy_detect.html
+原代理检测站已下线，可查看[存档页面](https://web.archive.org/web/20250614132648/https://proxy.incolumitas.com/proxy_detect.html)。
 
 自从用了windows远程桌面，搭配nekobox开tun模式，就再也没被封过号。我估计上次封号是虚拟卡问题，个人环境其实是没问题的。
 
@@ -94,7 +94,7 @@ showtoc: true
 
 此外，如果要用claude官方的api，建议和claude会员号切割，不然小心连坐，我觉得这次封号主要还是虚拟卡的锅。以后wildcard就付款一些其余的服务吧，openai、claude等AI服务，我是绝对不会再用虚拟卡支付了，老老实实用美区苹果内购即可。
 
-其实你觉得账号封禁无所谓，封号了直接退款白嫖重新注册新号的话，直接无脑wildcard，毕竟支付宝直充，走我邀请码，互相得2美元，我目前的google one ai premium就是通过这个渠道购买的。via: https://yeka.ai/i/QAUNNLY4
+其实你觉得账号封禁无所谓，封号了直接退款白嫖重新注册新号的话，当时可以直接用wildcard支付宝直充，走我邀请码互得2美元，我的google one ai premium也是通过这个渠道购买的。该邀请现已过期，页面也已下线。
 
 最近gemini出了类似chatgpt memory类似的玩意。
 
@@ -102,7 +102,7 @@ showtoc: true
 
 折腾了一上午，啥也没干，就为了解决claude会员问题，哎😑。没办法，谁让人家是目前的LLM之王呢。只能卑微地去给人家送钱了。
 
-我记得上一次类似的经历还是2023年5月份，openai因为depay虚拟卡的缘故封我的openai账号。via: https://blog.gujiakai.top/2023/05/thinking-of-openai-ban-plus-customers-in-527
+我记得上一次类似的经历还是2023年5月份，openai因为depay虚拟卡的缘故封我的openai账号。via: https://blog.gujiakai.top/2023/05/thinking-of-openai-ban-plus-customers-in-527/
 
 不知不觉已经过去了1年多了，这一年多，claude异军突起，特别是在2024年6月后，就已经成了板上钉钉的LLM之王【我日常使用场景就是代码，所以claude就是我心目中的The King Of LLM】，虽然claude反馈的代码也有bug，但我检查后指出存在的问题，claude基本上都能修正，不能解决的问题，有些时候也能提供比openai更有效的思路。
 

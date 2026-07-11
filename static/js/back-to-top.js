@@ -1,32 +1,35 @@
-// Back to Top Button - Show/hide based on scroll position
-$(document).ready(function() {
-    var backToTopBtn = $('#back-to-top');
-    var scrollThreshold = 300;
+(function () {
+    'use strict';
 
-    // Check scroll position and toggle button visibility
-    function toggleBackToTop() {
-        if ($(window).scrollTop() > scrollThreshold) {
-            backToTopBtn.addClass('show');
-        } else {
-            backToTopBtn.removeClass('show');
+    function initializeBackToTop() {
+        var button = document.getElementById('back-to-top');
+        if (!button) return;
+
+        var ticking = false;
+        function updateVisibility() {
+            ticking = false;
+            button.classList.toggle('show', window.scrollY > 300);
         }
+
+        function scheduleUpdate() {
+            if (ticking) return;
+            ticking = true;
+            window.requestAnimationFrame(updateVisibility);
+        }
+
+        window.addEventListener('scroll', scheduleUpdate, { passive: true });
+        button.addEventListener('click', function () {
+            var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
+            var main = document.getElementById('main-content');
+            if (main) main.focus({ preventScroll: true });
+        });
+        updateVisibility();
     }
 
-    // Initial check
-    toggleBackToTop();
-
-    // Listen for scroll events (throttled for performance)
-    var scrollTimer;
-    $(window).on('scroll', function() {
-        if (scrollTimer) {
-            clearTimeout(scrollTimer);
-        }
-        scrollTimer = setTimeout(toggleBackToTop, 10);
-    });
-
-    // Smooth scroll to top on click
-    backToTopBtn.on('click', function() {
-        $('html, body').animate({ scrollTop: 0 }, 400);
-        return false;
-    });
-});
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initializeBackToTop, { once: true });
+    } else {
+        initializeBackToTop();
+    }
+}());

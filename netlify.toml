@@ -1,12 +1,29 @@
 [build]
-  command = "hugo --gc --minify"
+  command = "hugo --gc --minify --panicOnWarning"
   publish = "public"
 
 [build.environment]
   HUGO_VERSION = "0.154.2"
 
+# 只有正式域名计入分析；本地开发、分支部署和 Deploy Preview 不污染统计。
+[context.production.environment]
+  HUGO_ENV = "production"
+  HUGO_PARAMS_ENABLEANALYTICS = "true"
+
+[context.deploy-preview.environment]
+  HUGO_ENV = "preview"
+  HUGO_PARAMS_ENABLEANALYTICS = "false"
+
+[context.branch-deploy.environment]
+  HUGO_ENV = "preview"
+  HUGO_PARAMS_ENABLEANALYTICS = "false"
+
+[context.dev.environment]
+  HUGO_ENV = "development"
+  HUGO_PARAMS_ENABLEANALYTICS = "false"
+
 # 安全响应头。CSP 白名单覆盖站点用到的所有第三方：
-#   script: utterances 评论、MS Clarity、GA(gtag)、umami、emaction(jsdelivr)、asciinema
+#   script: utterances 评论、MS Clarity、GA(gtag)、umami、asciinema（emaction 已自托管）
 #   connect: Clarity / GA 上报端点、umami、emaction API
 #   frame:  utterances 与 asciinema 的 iframe
 #   img/media 放宽（历年文章图片/视频分布在多个图床）
@@ -16,15 +33,104 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://utteranc.es https://*.clarity.ms https://www.googletagmanager.com https://umami.gujiakai.top https://cdn.jsdelivr.net https://asciinema.org; style-src 'self' 'unsafe-inline'; img-src * data: blob:; media-src https:; font-src 'self' data:; connect-src 'self' https://*.clarity.ms https://*.google-analytics.com https://analytics.google.com https://*.analytics.google.com https://www.google.com https://www.googletagmanager.com https://stats.g.doubleclick.net https://umami.gujiakai.top https://api-emaction.gujiakai.top; frame-src https://utteranc.es https://asciinema.org; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'"
+    # Executable inline markup is forbidden. Third-party code is limited to the exact services used at runtime;
+    # the emaction bundle is patched and self-hosted so neither jsDelivr nor inline component styles are trusted.
+    Content-Security-Policy = "default-src 'self'; script-src 'self' https://utteranc.es https://*.clarity.ms https://www.googletagmanager.com https://umami.gujiakai.top https://asciinema.org https://static.cloudflareinsights.com; script-src-attr 'none'; style-src 'self'; style-src-elem 'self'; style-src-attr 'none'; img-src * data: blob:; media-src https:; font-src 'self' data:; connect-src 'self' https://*.clarity.ms https://*.google-analytics.com https://analytics.google.com https://*.analytics.google.com https://www.google.com https://www.googletagmanager.com https://stats.g.doubleclick.net https://umami.gujiakai.top https://api-emaction.gujiakai.top https://cloudflareinsights.com; frame-src https://utteranc.es https://asciinema.org; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'"
     X-Frame-Options = "SAMEORIGIN"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
     Strict-Transport-Security = "max-age=31536000"
 
+# 文章的 Markdown 替代版本继续公开给 AI/文本客户端，但绝不进入搜索索引。
+# 两条规则分别覆盖默认语言 /YYYY/MM/slug.md 与英文 /en/YYYY/MM/slug.md。
+[[headers]]
+  for = "/*/*/*.md"
+  [headers.values]
+    X-Robots-Tag = "noindex, follow, noarchive"
+    Content-Type = "text/markdown; charset=UTF-8"
+    Cache-Control = "public, max-age=300, must-revalidate"
+
+[[headers]]
+  for = "/en/*/*/*.md"
+  [headers.values]
+    X-Robots-Tag = "noindex, follow, noarchive"
+    Content-Type = "text/markdown; charset=UTF-8"
+    Cache-Control = "public, max-age=300, must-revalidate"
+
+# 404 文件本身可能被直接请求并以 200 返回；HTTP 与 HTML 两层都明确禁止索引。
+[[headers]]
+  for = "/404.html"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow, noarchive"
+
+[[headers]]
+  for = "/en/404.html"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow, noarchive"
+
+# 静态资源使用有实际效果、但不会无限期冻结旧文件的缓存策略。
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+    Netlify-CDN-Cache-Control = "public, s-maxage=31536000, must-revalidate"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+    Netlify-CDN-Cache-Control = "public, s-maxage=31536000, must-revalidate"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+    Netlify-CDN-Cache-Control = "public, s-maxage=31536000, must-revalidate"
+
+[[headers]]
+  for = "/xslt/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+    Netlify-CDN-Cache-Control = "public, s-maxage=31536000, must-revalidate"
+
 # 按语言返回对应的 404 页面：/en/ 下的未知路径用英文 404，其余用中文 404。
 # 无 force 标记时规则只在路径没有真实文件时生效，顺序从上到下匹配。
+[[redirects]]
+  from = "/tags/andriod/"
+  to = "/tags/android/"
+  status = 301
+
+[[redirects]]
+  from = "/tags/andriod/index.xml"
+  to = "/tags/android/index.xml"
+  status = 301
+
+[[redirects]]
+  from = "/en/tags/andriod/"
+  to = "/en/tags/android/"
+  status = 301
+
+[[redirects]]
+  from = "/2023/01/the-execution-process-ls--list/"
+  to = "/2023/01/the-execution-process-ls-list/"
+  status = 301
+
+[[redirects]]
+  from = "/en/2023/01/the-execution-process-ls--list/"
+  to = "/en/2023/01/the-execution-process-ls-list/"
+  status = 301
+
+[[redirects]]
+  from = "/2023/01/the-execution-process-ls--list.md"
+  to = "/2023/01/the-execution-process-ls-list.md"
+  status = 301
+
+[[redirects]]
+  from = "/en/2023/01/the-execution-process-ls--list.md"
+  to = "/en/2023/01/the-execution-process-ls-list.md"
+  status = 301
+
 [[redirects]]
   from = "/en/*"
   to = "/en/404.html"

@@ -24,7 +24,7 @@ Below is the journey from Xiaohongshu buddy to boyfriend-girlfriend with Linglin
 
 Yes, 1 year ago I harshly criticized finding buddies on Xiaohongshu. See the end of this article. But there are indeed many real people there. Other dating apps all fall short somewhat.
 
-via: https://blog.gujiakai.top/2024/09/xiaohongshu-rss-tips/
+via: https://blog.gujiakai.top/en/2024/09/xiaohongshu-rss-tips/
 
 Story began late September 2025. Maybe I was horny or sexually repressed. Near National Day, I had Gemini 2.5 Pro write a Xiaohongshu post looking for opposite-sex buddy to hang out. Bold title with authentic text feel.
 

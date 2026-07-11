@@ -7,7 +7,7 @@ translationKey: "the-solution-of-google-voice-is-connecting"
 summary: Solution for Google Voice stuck on "Connecting" status.
 ---
 
-Recently, the Google Voice IFTTT number retention method started charging. [via](https://www.zaihua.net/512.html)
+Recently, the Google Voice IFTTT number retention method started charging. [via (archived)](https://web.archive.org/web/20230330041934/https://www.zaihua.net/512.html); the original page is offline.
 
 ![IFTTT keep Google Voice active pro](https://vip2.loli.net/2023/03/14/pajIDBne3y6bkcC.webp)
 

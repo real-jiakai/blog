@@ -16,7 +16,7 @@ Along with the GPT Store, they also launched a new paid plan, ChatGPT Team.
 
 ![OpenAI launches ChatGPT Team plan](https://cdn.sa.net/2024/01/12/sPhv5TUzwjob4ur.webp)
 
-Last night, Zhiliao, author of the ChatGPT-related project Pandora, launched a service that can help upgrade ChatGPT accounts to Plus for free. [via](https://ai-20240110.fakeopen.com/team)
+Last night, Zhiliao, author of the ChatGPT-related project Pandora, launched a service that can help upgrade ChatGPT accounts to Plus for free. [via (archived service page)](https://web.archive.org/web/20240117235925/https://ai-20240110.fakeopen.com/team); the original service is now offline.
 
 Enter your ChatGPT account email, then click the invitation link to accept joining the workspace in your email, and your account automatically becomes a ChatGPT Team account. [Recommend using an alt account to try this; exploiting loopholes has risks. Using your main account could result in regrettable bans.]
 
@@ -34,21 +34,21 @@ So far, the Team plan highlights compared to Plus:
 
 ![ChatGPT Team plan, personal account conversation limit is 40 per 3 hours.](https://cdn.sa.net/2024/01/12/2SqcB16bRxfvidO.webp)
 
-<center class="my-4">ChatGPT Team plan, personal account conversation limit is 40 per 3 hours.</center>
+<p class="my-4 text-center">ChatGPT Team plan, personal account conversation limit is 40 per 3 hours.</p>
 
 ![ChatGPT Team plan, workspace conversation limit is 100 per 3 hours.](https://cdn.sa.net/2024/01/12/b9TEe5VNjMhl41Q.webp)
 
-<center class="my-4">ChatGPT Team plan, workspace conversation limit is 100 per 3 hours.</center>
+<p class="my-4 text-center">ChatGPT Team plan, workspace conversation limit is 100 per 3 hours.</p>
 
 - Content won't be used by OpenAI for model training, while Plus accounts can opt out of having their conversations used for OpenAI model training.
 
 ![ChatGPT Team plan, workspace conversations won't be used for model training.](https://cdn.sa.net/2024/01/12/E6yFmsixQIfKUJj.webp)
 
-<center class="my-4">ChatGPT Team plan, workspace conversations won't be used for model training.</center>
+<p class="my-4 text-center">ChatGPT Team plan, workspace conversations won't be used for model training.</p>
 
 ![ChatGPT Team plan, switching to personal account reduces conversation limit to 40 per 3 hours, and if you don't want your chat data used for OpenAI model training, you need to manually opt out.](https://cdn.sa.net/2024/01/12/Qz25xfl8pVWYhES.webp)
 
-<center class="my-4">ChatGPT Team plan, switching to personal account reduces conversation limit to 40 per 3 hours, and if you don't want your chat data used for OpenAI model training, you need to manually opt out.</center>
+<p class="my-4 text-center">ChatGPT Team plan, switching to personal account reduces conversation limit to 40 per 3 hours, and if you don't want your chat data used for OpenAI model training, you need to manually opt out.</p>
 
 Notes:
 
@@ -60,17 +60,17 @@ Notes:
 
 ![ChatGPT Team plan, personal account used up 40 per 3 hours quota](https://cdn.sa.net/2024/01/12/IUZN14XpriK9SDA.webp)
 
-<center class="my-4">ChatGPT Team plan, personal account used up 40 per 3 hours quota</center>
+<p class="my-4 text-center">ChatGPT Team plan, personal account used up 40 per 3 hours quota</p>
 
 ![Workspace's 100 per 3 hours can continue being used](https://cdn.sa.net/2024/01/12/GKMtkpdIe1hPWsB.webp)
 
-<center class="my-4">Workspace's 100 per 3 hours can continue being used</center>
+<p class="my-4 text-center">Workspace's 100 per 3 hours can continue being used</p>
 
 ChatGPT Team user interface:
 
 ![ChatGPT Team plan UI has additional workspace settings compared to Plus plan](https://cdn.sa.net/2024/01/12/OV6X2B7yYxAG3jD.webp)
 
-<center class="my-4">ChatGPT Team plan UI has additional workspace settings compared to Plus plan</center>
+<p class="my-4 text-center">ChatGPT Team plan UI has additional workspace settings compared to Plus plan</p>
 
 After invitees join the workspace, they can continue inviting members to join.
 

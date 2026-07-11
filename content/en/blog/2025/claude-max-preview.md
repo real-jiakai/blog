@@ -215,7 +215,7 @@ Of course can also auto-post to Xiaohongshu and other platforms. Liking, saving,
 
 ![Claude for Chrome liking, saving, commenting on Xiaohongshu post](https://cdn.sa.net/2025/09/28/WjnTsAvdMbS42Dz.webp)
 
-Last October Anthropic launched Claude Computer Use—I prepared [10 cases](https://blog.gujiakai.top/2024/10/anthropic-updates-evaluation/).
+Last October Anthropic launched Claude Computer Use—I prepared [10 cases](https://blog.gujiakai.top/en/2024/10/anthropic-updates-evaluation/).
 
 Cases Claude for Chrome currently can't complete are similar to last year's Computer Use. Like still can't play Gomoku—related to board position recognition errors.
 

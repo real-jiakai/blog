@@ -2,17 +2,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>
-        (function() {
-            var stored = localStorage.getItem('theme'); // 'light' | 'dark' | null(跟随系统)
-            var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            var theme = (stored === 'light' || stored === 'dark') ? stored : (prefersDark ? 'dark' : 'light');
-            document.documentElement.setAttribute('data-bs-theme', theme);
-        })();
-    </script>
+    {{/* 外部同步脚本在 CSS 前设置主题，既避免闪烁，也无需 CSP unsafe-inline。 */}}
+    <script src="{{ partial "asset-url.html" "/js/theme-init.js" }}"></script>
+    {{- $pageNumber := 1 -}}
+    {{- $canonical := .Permalink -}}
+    {{- if .IsHome -}}
+        {{/* 必须与 home.html 使用完全相同的集合，避免 Hugo 创建冲突的 paginator。 */}}
+        {{- $homePaginator := .Paginate (where .Site.RegularPages "Type" "==" "blog") -}}
+        {{- $pageNumber = $homePaginator.PageNumber -}}
+        {{- $canonical = $homePaginator.URL | absURL -}}
+    {{- end -}}
+    {{- $is404 := eq .Kind "404" -}}
     {{/* 页面名在前、站点名在后（Page | Site），搜索结果里页面主题更醒目 */}}
     {{ $title := print .Title " | " .Site.Title }}
     {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+    {{- if and .IsHome (gt $pageNumber 1) -}}
+        {{- if eq .Site.Language.Lang "zh" -}}
+            {{- $title = printf "%s | 第 %d 页" .Site.Title $pageNumber -}}
+        {{- else -}}
+            {{- $title = printf "%s | Page %d" .Site.Title $pageNumber -}}
+        {{- end -}}
+    {{- end -}}
     <title>{{ $title }}</title>
     {{- $description := .Site.Params.description -}}
     {{- if .Params.description -}}
@@ -25,35 +35,56 @@
     <meta name="description" content="{{ $description }}">
     <meta name="keywords" content="{{ with .Params.tags }}{{ delimit . "," }}{{ else }}{{ .Site.Params.keywords }}{{ end }}">
     <meta name="author" content="{{ .Site.Params.author }}">
-    <link rel="canonical" href="{{ .Permalink }}" />
+    {{- if $is404 }}
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    {{- else }}
+    <link rel="canonical" href="{{ $canonical }}" />
     {{/* hreflang：博文通过 translationKey 与译文关联，告知搜索引擎双语版本互为翻译。
          x-default 指向默认语言（中文）版本 */}}
     {{- if .IsTranslated }}
     {{- range .AllTranslations }}
-    <link rel="alternate" hreflang="{{ .Language.LanguageCode }}" href="{{ .Permalink }}" />
+    {{- $alternateURL := .Permalink -}}
+    {{- if and $.IsHome (gt $pageNumber 1) -}}
+        {{- $alternateURL = printf "%spage/%d/" .Permalink $pageNumber -}}
+    {{- end }}
+    <link rel="alternate" hreflang="{{ .Language.LanguageCode }}" href="{{ $alternateURL }}" />
     {{- end }}
     {{- with index (where .AllTranslations "Language.Lang" "zh") 0 }}
-    <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
+    {{- $defaultURL := .Permalink -}}
+    {{- if and $.IsHome (gt $pageNumber 1) -}}
+        {{- $defaultURL = printf "%spage/%d/" .Permalink $pageNumber -}}
     {{- end }}
+    <link rel="alternate" hreflang="x-default" href="{{ $defaultURL }}" />
+    {{- end }}
+    {{- end }}
+    {{- end }}
+    {{/* 公开的 Markdown 是面向 AI/文本客户端的替代表示；HTTP 响应另带 noindex。 */}}
+    {{- with .OutputFormats.Get "MarkdownRaw" }}
+    <link rel="alternate" type="text/markdown" href="{{ .Permalink }}" title="{{ $.Title }} (Markdown)" />
     {{- end }}
     {{/* 社交分享卡片（Open Graph / Twitter Card），Hugo 内置模板 */}}
+    {{- if not $is404 }}
+        {{- if and .IsHome (gt $pageNumber 1) }}
+    <meta property="og:title" content="{{ $title }}">
+    <meta property="og:description" content="{{ $description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ $canonical }}">
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ $title }}">
+    <meta name="twitter:description" content="{{ $description }}">
+        {{- else }}
     {{ template "_internal/opengraph.html" . }}
     {{ template "_internal/twitter_cards.html" . }}
+        {{- end }}
+    {{- end }}
     {{/* RSS 自动发现：指向当前语言站点的主 feed（/index.xml 或 /en/index.xml） */}}
     {{ with .Site.Home.OutputFormats.Get "RSS" }}
     <link rel="alternate" type="application/rss+xml" href="{{ .RelPermalink }}" title="{{ $.Site.Title }}" />
     {{ end }}
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/lightbox.min.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/custom.css">
-    <link rel="stylesheet" href="/css/syntax.css">
-    <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "juat43yeul");
-    </script>
+    <link rel="shortcut icon" href="{{ partial "asset-url.html" "/images/favicon.ico" }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ partial "asset-url.html" "/css/bootstrap.min.css" }}">
+    <link rel="stylesheet" href="{{ partial "asset-url.html" "/css/style.css" }}">
+    <link rel="stylesheet" href="{{ partial "asset-url.html" "/css/custom.css" }}">
+    <link rel="stylesheet" href="{{ partial "asset-url.html" "/css/syntax.css" }}">
 </head>

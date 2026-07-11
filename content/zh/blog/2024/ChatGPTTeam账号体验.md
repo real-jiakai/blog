@@ -16,7 +16,7 @@ OpenAI在昨天正式推出GPT Store。
 
 ![OpenAI推出ChatGPT Team套餐](https://cdn.sa.net/2024/01/12/sPhv5TUzwjob4ur.webp)
 
-昨天晚上，ChatGPT相关项目—潘多拉作者知了大神，推出了一项服务，可免费帮助 ChatGPT 升级成为 Plus 账户。[via](https://ai-20240110.fakeopen.com/team)
+昨天晚上，ChatGPT相关项目—潘多拉作者知了大神，推出了一项服务，可免费帮助 ChatGPT 升级成为 Plus 账户。[via（服务页存档）](https://web.archive.org/web/20240117235925/https://ai-20240110.fakeopen.com/team)，原服务现已下线。
 
 输入ChatGPT账号邮箱，接着去对应邮箱里面点击接受加入工作空间的邀请链接后，账号就自动变为ChatGPT Team账号了。【建议使用小号尝试，薅资本主义的羊毛有风险，使用大号，到时候封号了就得不偿失了】
 
@@ -34,21 +34,21 @@ OpenAI在昨天正式推出GPT Store。
 
 ![ChatGPT Team计划，在个人账户中的对话限制为3小时40次。](https://cdn.sa.net/2024/01/12/2SqcB16bRxfvidO.webp)
 
-<center class="my-4">ChatGPT Team计划，在个人账户中的对话限制为3小时40次。</center>
+<p class="my-4 text-center">ChatGPT Team计划，在个人账户中的对话限制为3小时40次。</p>
 
 ![ChatGPT Team计划，在工作空间中的对话限制为3小时100次。](https://cdn.sa.net/2024/01/12/b9TEe5VNjMhl41Q.webp)
 
-<center class="my-4">ChatGPT Team计划，在工作空间中的对话限制为3小时100次。</center>
+<p class="my-4 text-center">ChatGPT Team计划，在工作空间中的对话限制为3小时100次。</p>
 
 - 内容不会被OpenAI用于训练模型，而Plus账号则是可以选择自己的对话不被OpenAI用于训练模型。
 
 ![ChatGPT Team计划，在工作空间中的对话不会被用来训练模型。](https://cdn.sa.net/2024/01/12/E6yFmsixQIfKUJj.webp)
 
-<center class="my-4">ChatGPT Team计划，在工作空间中的对话不会被用来训练模型。</center>
+<p class="my-4 text-center">ChatGPT Team计划，在工作空间中的对话不会被用来训练模型。</p>
 
 ![ChatGPT Team计划，切换到个人账号，对话限制减少为3小时40次，并且如果不想自己的聊天数据被用于OpenAI的模型训练，则需要手动选择退出。](https://cdn.sa.net/2024/01/12/Qz25xfl8pVWYhES.webp )
 
-<center class="my-4">ChatGPT Team计划，切换到个人账号，对话限制减少为3小时40次，并且如果不想自己的聊天数据被用于OpenAI的模型训练，则需要手动选择退出。</center>
+<p class="my-4 text-center">ChatGPT Team计划，切换到个人账号，对话限制减少为3小时40次，并且如果不想自己的聊天数据被用于OpenAI的模型训练，则需要手动选择退出。</p>
 
 
 注意点：
@@ -62,18 +62,17 @@ OpenAI在昨天正式推出GPT Store。
 ![ChatGPT Team计划，个人账户用光3小时40
 条额度](https://cdn.sa.net/2024/01/12/IUZN14XpriK9SDA.webp)
 
-<center class="my-4">ChatGPT Team计划，个人账户用光3小时40
-条额度</center>
+<p class="my-4 text-center">ChatGPT Team计划，个人账户用光3小时40条额度</p>
 
 ![工作空间的3小时100条可以继续使用](https://cdn.sa.net/2024/01/12/GKMtkpdIe1hPWsB.webp)
 
-<center class="my-4">工作空间的3小时100条可以继续使用</center>
+<p class="my-4 text-center">工作空间的3小时100条可以继续使用</p>
 
 ChatGPT Team的用户界面：
 
 ![ChatGPT Team计划的用户界面比Plus计划多了工作空间的相关设置](https://cdn.sa.net/2024/01/12/OV6X2B7yYxAG3jD.webp)
 
-<center class="my-4">ChatGPT Team计划的用户界面比Plus计划多了工作空间的相关设置</center>
+<p class="my-4 text-center">ChatGPT Team计划的用户界面比Plus计划多了工作空间的相关设置</p>
 
 被邀请者加入工作空间后，可以继续邀请成员加入。
 

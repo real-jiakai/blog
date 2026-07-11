@@ -1,0 +1,10 @@
+{{- $url := . -}}
+{{- $relative := strings.TrimPrefix "/" $url -}}
+{{- $projectFile := path.Join "static" $relative -}}
+{{- $themeFile := path.Join "themes/hugo-theme-simple/static" $relative -}}
+{{- $source := cond (os.FileExists $projectFile) $projectFile $themeFile -}}
+{{- if not (os.FileExists $source) -}}
+  {{- errorf "asset-url: cannot find %q" $url -}}
+{{- end -}}
+{{- $digest := sha256 (os.ReadFile $source) -}}
+{{- return (printf "%s?v=%s" $url (substr $digest 0 12)) -}}

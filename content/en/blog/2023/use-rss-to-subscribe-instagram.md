@@ -16,7 +16,7 @@ Tonight I saw this post in the Reddit RSS subreddit, and the comments from overs
 
 ## Update (2024.02)
 
-RSSHub provides Picnob route that also supports Instagram. [via](https://docs.rsshub.app/routes/social-media#instagram-user-profile-picnob)
+RSSHub used to provide a Picnob route that supported Instagram. [Archived documentation](https://web.archive.org/web/20251219090645/https://docs.rsshub.app/routes/social-media#user-profile-pixnoy); the route has since been removed.
 
 ![RSSHub Picnob route also supports Instagram](https://cdn.sa.net/2024/02/27/7hruIfNO3n8RUka.webp)
 
@@ -30,7 +30,7 @@ On December 7, 2023, I found openrss.org also provides Instagram RSS subscriptio
 
 ## Update (2023.10)
 
-On October 13, 2023, I discovered the Proxigram project, which can achieve Instagram to RSS. See my blog post—[Self-hosting Proxigram with Docker](https://blog.gujiakai.top/2023/10/use-docker-compose-to-build-proxigram)
+On October 13, 2023, I discovered the Proxigram project, which can achieve Instagram to RSS. See my blog post—[Self-hosting Proxigram with Docker](https://blog.gujiakai.top/en/2023/10/use-docker-compose-to-build-proxigram/)
 
 On October 22, 2023, I found that besides Picuki bridge in RSS-Bridge for Instagram RSS, there's also an Imgsed bridge that can provide Instagram RSS subscription.
 

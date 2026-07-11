@@ -8,7 +8,7 @@ summary: Introducing the solution for Caddy startup failure on BandwagonHost's n
 showtoc: false
 ---
 
-BandwagonHost launched The Plan V2 package on June 27, 2023, with expensive pricing. The Plan V2 package purchase link without any affiliate: https://bandwagonhost.com/the-plan-v2
+BandwagonHost launched The Plan V2 package on June 27, 2023, with expensive pricing. The non-affiliate purchase page is [available in the Internet Archive](https://web.archive.org/web/20230628053759/https://bandwagonhost.com/the-plan-v2); the original page is offline.
 
 Whether on HostLoc, NodeSeek, or V2EX, you can see a bunch of affiliate marketers promoting how great BandwagonHost's new package is. Clicking their affiliate links to purchase BandwagonHost's new package earns them high affiliate commissions (22% commission for each successful referral order).
 

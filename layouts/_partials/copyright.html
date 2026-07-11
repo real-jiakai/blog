@@ -1,6 +1,5 @@
-<div id="copyright" class="bg-info border border-secondary p-4 mt-4">
-    <h3>{{ i18n "documentInfo" }}</h3>
-    <ul>
-      <li>{{ i18n "copyrightNotice" }}<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.{{ .Site.Language.Lang }}" target="_blank" rel="noopener noreferrer">{{ i18n "ccLicense" }}</a>{{ i18n "copyrightEnd" }}</li>
-    </ul>
-  </div>
+{{ $deedLocale := cond (eq .Site.Language.Lang "zh") "zh-hans" "en" }}
+<section id="copyright" class="document-info mt-4" aria-labelledby="document-info-title">
+  <h2 id="document-info-title" class="h4">{{ i18n "documentInfo" }}</h2>
+  <p class="mb-0">{{ i18n "copyrightNotice" }}<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.{{ $deedLocale }}" target="_blank" rel="noopener noreferrer">{{ i18n "ccLicense" }}</a>{{ i18n "copyrightEnd" }}</p>
+</section>

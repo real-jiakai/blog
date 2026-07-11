@@ -2,8 +2,10 @@
 title: "ls > list命令的执行流程"
 date: 2023-01-13T20:01:31+08:00
 tags: ["linux"]
-slug: "the-execution-process-ls->-list"
-translationKey: "the-execution-process-ls->-list"
+slug: "the-execution-process-ls-list"
+translationKey: "the-execution-process-ls-list"
+aliases:
+  - "/2023/01/the-execution-process-ls--list/index.html"
 summary: 介绍ls > list命令的执行流程。
 showtoc: true
 ---

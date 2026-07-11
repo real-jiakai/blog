@@ -240,9 +240,9 @@ i. Claude 4 System Card: https://www-cdn.anthropic.com/6be99a52cb68eb70eb9572b4c
 
 If you encountered Claude account suspension, recommend reading two previous blog posts. Most recommended is using US Windows VPS remote desktop to reduce suspension probability.
 
-- [Claude Account Suspension Resolution](https://blog.gujiakai.top/2024/11/claude-account-suspension-resolution/)
+- [Claude Account Suspension Resolution](https://blog.gujiakai.top/en/2024/11/claude-account-suspension-resolution/)
 
-- [Self-Hosted Kasm Workspaces](https://blog.gujiakai.top/2025/03/self-hosted-kasm-workspaces/)
+- [Self-Hosted Kasm Workspaces](https://blog.gujiakai.top/en/2025/03/self-hosted-kasm-workspaces/)
 
 If you don't want to deal with Claude environment hassles, personally recommend searching `Claude` on Taobao for corresponding plans. There's a shop called `claude克劳德小屋`—experience is good, new customers can try 24 hours for 1 RMB.
 

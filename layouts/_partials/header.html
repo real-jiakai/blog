@@ -1,7 +1,7 @@
 <header class="site-header container-fluid">
   <div class="row justify-content-center">
     <div class="col-md-6">
-<nav class="navbar navbar-expand-md site-navbar">
+<nav class="navbar navbar-expand-md site-navbar" aria-label="{{ i18n "primaryNavigation" }}">
     <div class="container-fluid px-0 border-bottom">
         <a class="navbar-brand me-2 me-md-4" href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a>
 
@@ -18,39 +18,55 @@
 
         {{/* 右侧控件：语言切换 + 主题切换（始终可见）+ 移动端汉堡按钮 */}}
         <div class="d-flex align-items-center gap-2 ms-auto site-controls">
-            {{/* 语言切换：文章/首页/列表页的 URL 段为语言无关的 slug，可直接前缀映射；
-                 分类/标签术语页的 URL 段是本地化术语（如 开源 vs open-source），无法映射，退回到对应语言首页以避免 404 */}}
+            {{/* 优先使用 Hugo 解析出的实际译文。分页首页保留页码；没有译文的标签术语回退到
+                 目标语言的标签索引，而不是丢失上下文地回到首页。 */}}
             {{ if gt (len .Site.Sites) 1 }}
                 {{ $otherLang := cond (eq .Site.Language.Lang "zh") "en" "zh" }}
+                {{ $targetHome := cond (eq $otherLang "en") "/en/" "/" }}
                 {{ $href := "" }}
-                {{ if or (eq .Kind "term") (eq .Kind "taxonomy") }}
-                    {{ $href = cond (eq $otherLang "en") "/en/" "/" }}
-                {{ else if eq $otherLang "en" }}
-                    {{ $href = printf "/en%s" .RelPermalink }}
-                {{ else }}
-                    {{ $href = replaceRE "^/en/" "/" .RelPermalink }}
+                {{ range .AllTranslations }}
+                    {{ if eq .Language.Lang $otherLang }}
+                        {{ $href = .RelPermalink }}
+                    {{ end }}
                 {{ end }}
-                <a class="site-lang" href="{{ $href }}" hreflang="{{ $otherLang }}" aria-label="{{ cond (eq $otherLang "en") "Switch to English" "切换到中文" }}">{{ cond (eq $otherLang "en") "EN" "中" }}</a>
+
+                {{ if .IsHome }}
+                    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "==" "blog") }}
+                    {{ $href = $targetHome }}
+                    {{ if gt $paginator.PageNumber 1 }}
+                        {{ $href = printf "%spage/%d/" $targetHome $paginator.PageNumber }}
+                    {{ end }}
+                {{ else if and (not $href) (or (eq .Kind "term") (eq .Kind "taxonomy")) }}
+                    {{ $href = printf "%stags/" $targetHome }}
+                {{ else if not $href }}
+                    {{ if eq $otherLang "en" }}
+                        {{ $href = printf "/en%s" .RelPermalink }}
+                    {{ else }}
+                        {{ $href = replaceRE "^/en/" "/" .RelPermalink }}
+                    {{ end }}
+                {{ end }}
+
+                <a class="site-lang" href="{{ $href }}" hreflang="{{ $otherLang }}" lang="{{ $otherLang }}" aria-label="{{ if eq $otherLang "en" }}{{ i18n "switchToEnglish" }}{{ else }}{{ i18n "switchToChinese" }}{{ end }}">{{ cond (eq $otherLang "en") "EN" "中" }}</a>
             {{ end }}
 
             {{/* 主题切换：浅色 / 深色 / 跟随系统 */}}
             <div class="dropdown site-theme">
-                <button class="btn-theme" id="theme-menu-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="{{ i18n "toggleDarkMode" }}">
+                <button class="btn-theme" id="theme-menu-btn" type="button" aria-expanded="false" aria-haspopup="menu" aria-controls="theme-menu" aria-label="{{ i18n "themeMenu" }}">
                     <span id="theme-icon-sun" class="theme-trigger-icon">{{ partial "icon.html" "sun" }}</span>
                     <span id="theme-icon-moon" class="theme-trigger-icon">{{ partial "icon.html" "moon" }}</span>
                 </button>
-                <ul class="dropdown-menu dropdown-menu-end theme-menu" aria-labelledby="theme-menu-btn">
-                    <li>
+                <ul class="dropdown-menu dropdown-menu-end theme-menu" id="theme-menu" role="menu" aria-labelledby="theme-menu-btn">
+                    <li role="none">
                         <button type="button" class="dropdown-item theme-option" data-theme="light" role="menuitemradio" aria-checked="false">
                             {{ partial "icon.html" "sun" }}<span class="theme-label">{{ i18n "themeLight" }}</span><span class="theme-check">{{ partial "icon.html" "check" }}</span>
                         </button>
                     </li>
-                    <li>
+                    <li role="none">
                         <button type="button" class="dropdown-item theme-option" data-theme="dark" role="menuitemradio" aria-checked="false">
                             {{ partial "icon.html" "moon" }}<span class="theme-label">{{ i18n "themeDark" }}</span><span class="theme-check">{{ partial "icon.html" "check" }}</span>
                         </button>
                     </li>
-                    <li>
+                    <li role="none">
                         <button type="button" class="dropdown-item theme-option" data-theme="system" role="menuitemradio" aria-checked="false">
                             {{ partial "icon.html" "laptop" }}<span class="theme-label">{{ i18n "themeSystem" }}</span><span class="theme-check">{{ partial "icon.html" "check" }}</span>
                         </button>
@@ -59,7 +75,7 @@
             </div>
 
             {{/* 移动端汉堡按钮 */}}
-            <button class="navbar-toggler border-0 shadow-none p-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler border-0 shadow-none p-1" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="{{ i18n "toggleNavigation" }}">
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>

@@ -42,7 +42,7 @@ Couldn't get ColoCrossing's limited $99 dedicated server, so I'll settle for One
 
 Yesterday I successfully spawned a VM on the dedicated server - this 4-core 4GB RAM 120GB disk VM is for my roommate to play with.
 
-![](https://vip2.loli.net/2023/11/30/CSUBRqax2iQ5mDA.webp)
+![Four-core, 4 GB RAM, 120 GB virtual machine created on the dedicated server](https://vip2.loli.net/2023/11/30/CSUBRqax2iQ5mDA.webp)
 
 5. DMIT GIA Proxy Server ($36.9/year)
 

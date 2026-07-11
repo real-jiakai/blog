@@ -1,0 +1,46 @@
+name: Hugo validation
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: hugo-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      HUGO_VERSION: "0.154.2"
+      HUGO_ARCHIVE_SHA256: "a064c1da02dc20d7d7758c966f4f2afe9384924b70d8a1d4925acba528cbfe14"
+      HUGO_ENV: production
+      HUGO_PARAMS_ENABLEANALYTICS: "true"
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Install pinned Hugo Extended
+        shell: bash
+        run: |
+          archive="hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz"
+          url="https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/${archive}"
+          curl --fail --location --show-error --silent \
+            --retry 5 --retry-all-errors --connect-timeout 10 --max-time 120 \
+            --output "/tmp/${archive}" "${url}"
+          echo "${HUGO_ARCHIVE_SHA256}  /tmp/${archive}" | sha256sum --check --strict
+          tar --extract --gzip --file "/tmp/${archive}" --directory /tmp hugo
+          sudo install --mode 0755 /tmp/hugo /usr/local/bin/hugo
+          hugo version
+
+      - name: Validate remote image dimensions
+        run: node scripts/check-image-dimensions.mjs
+
+      - name: Build production site with zero warnings
+        run: hugo --gc --minify --panicOnWarning

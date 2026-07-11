@@ -89,13 +89,13 @@ Google One VPN停用后，Pixel7以上的手机依然可以继续享受Google On
 
 上午看到日本家宽供应商—sososo的合租房空位紧俏，冲了一台他家的9.9刀/月的机器。他家的机器是真家宽，而且如果你本地有ipv6地址的话，搭建的代理到中国大陆的延迟还是很漂亮的。目前这台机器用来分流解锁我的香港机器AI服务。他家的主页链接：[sososo日本家宽](https://sales.sososo.io/)
 
-![](https://cdn.sa.net/2024/06/17/FASRHMi5tzKka6x.webp)
+![sososo日本家宽VPS套餐](https://cdn.sa.net/2024/06/17/FASRHMi5tzKka6x.webp)
 
 ## 更新(2024.05.24)
 
 再补充一家卖美国att家宽的商家—[wirecat家的ResNet VPS](https://billing.wirecat.net/order/main/packages/resnet/?group_id=15)
 
-![](https://cdn.sa.net/2024/05/24/ryUObfsixvgQP9m.webp)
+![wirecat美国AT&T家宽VPS套餐](https://cdn.sa.net/2024/05/24/ryUObfsixvgQP9m.webp)
 
 最低50刀/月，还是偏贵的。除非开车，不然个人用，很少人能物尽其用，发挥最大价值。
 
@@ -137,7 +137,7 @@ Google One VPN停用后，Pixel7以上的手机依然可以继续享受Google On
 
 ## 更新(2024.04.21，2024.05.08)
 
-![](https://cdn.sa.net/2024/05/08/gqeSCvQWZRcLV64.webp)
+![Google One通知VPN服务的停用日期](https://cdn.sa.net/2024/05/08/gqeSCvQWZRcLV64.webp)
 
 Google One VPN年中就下线了【ps：下线时间说改就改，原本是6月10号，现在变成了6月20号】，今年晚些时候竟然表示的是年中。via: [What’s happening to VPN by Google One?](https://support.google.com/googleone/answer/14806901)
 
@@ -213,7 +213,7 @@ Google One VPN年中就下线了【ps：下线时间说改就改，原本是6月
 
 艾云的24新年特价isp CN2 GIA也不错。
 
-![](https://cdn.sa.net/2024/04/22/Chby58vH3YcgUzR.webp)
+![艾云ISP CN2 GIA VPS套餐](https://cdn.sa.net/2024/04/22/Chby58vH3YcgUzR.webp)
 
 推荐指数：⭐⭐⭐⭐
 

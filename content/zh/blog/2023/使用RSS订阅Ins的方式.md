@@ -16,7 +16,7 @@ showtoc: true
 
 ## 更新(2024.02)
 
-RSSHub中提供的Picnob路由也提供对于instagram的支持。[via](https://docs.rsshub.app/routes/social-media#instagram-user-profile-picnob)
+RSSHub曾提供支持instagram的Picnob路由。[存档文档](https://web.archive.org/web/20251219090645/https://docs.rsshub.app/routes/social-media#user-profile-pixnoy)；该路由现已移除。
 
 ![RSSHub中提供的Picnob路由也提供对于instagram的支持](https://cdn.sa.net/2024/02/27/7hruIfNO3n8RUka.webp)
 
@@ -30,7 +30,7 @@ RSSHub中提供的Picnob路由也提供对于instagram的支持。[via](https://
 
 ## 更新(2023.10)
 
-2023年10月13日，发现了proxigram这一项目，能实现instagram to rss的效果。详情见我的博文—[使用docker自建proxigram](https://blog.gujiakai.top/2023/10/use-docker-compose-to-build-proxigram)
+2023年10月13日，发现了proxigram这一项目，能实现instagram to rss的效果。详情见我的博文—[使用docker自建proxigram](https://blog.gujiakai.top/2023/10/use-docker-compose-to-build-proxigram/)
 
 2023年10月22日，发现rssbridge中除了picuki bridge可以提供ins的rss订阅外，还有一个imgsed bridge也能提供ins的rss订阅。
 

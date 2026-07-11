@@ -24,7 +24,7 @@ When using a proxy node that doesn't unlock GPT mobile, the error message on GPT
 
 The error message on the server side of proxy nodes that don't unlock GPT mobile is still "disallowed ISP".
 
-![](https://vip2.loli.net/2023/11/23/lNgswq7S6OFYdPU.webp)
+![ChatGPT mobile showing the disallowed ISP error](https://vip2.loli.net/2023/11/23/lNgswq7S6OFYdPU.webp)
 
 ## Update (2023.11.21)
 

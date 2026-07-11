@@ -1,23 +1,9 @@
-- id: home
-  translation: "主页"
-- id: archive
-  translation: "归档"
-- id: tags
-  translation: "标签"
-- id: about
-  translation: "关于"
-- id: til
-  translation: "til"
-- id: readMore
-  translation: "阅读更多"
 - id: previousPage
   translation: "上一页"
 - id: nextPage
   translation: "下一页"
 - id: postedOn
   translation: "发布于"
-- id: wordCount
-  translation: "字数"
 - id: readingTime
   translation: "阅读时长"
 - id: minutes
@@ -32,8 +18,6 @@
   translation: "跟随系统"
 - id: tableOfContents
   translation: "目录"
-- id: language
-  translation: "语言"
 - id: tagsTitle
   translation: "标签"
 - id: archiveTitle
@@ -54,10 +38,6 @@
   translation: "下一篇"
 - id: backToTop
   translation: "回到顶部"
-- id: toggleDarkMode
-  translation: "切换深色模式"
-- id: toggleLightMode
-  translation: "切换浅色模式"
 - id: rssTitleSeparator
   translation: " - "
 - id: rssFeedDescription
@@ -70,3 +50,47 @@
   translation: "抱歉，你访问的页面不存在或已被移动。"
 - id: backHome
   translation: "返回首页"
+- id: skipToContent
+  translation: "跳到主要内容"
+- id: primaryNavigation
+  translation: "主导航"
+- id: switchToEnglish
+  translation: "切换到英文"
+- id: switchToChinese
+  translation: "切换到中文"
+- id: themeMenu
+  translation: "选择颜色主题"
+- id: toggleNavigation
+  translation: "展开或收起导航"
+- id: recentPosts
+  translation: "最新文章"
+- id: noPosts
+  translation: "暂时没有文章"
+- id: pagination
+  translation: "分页导航"
+- id: pageNumber
+  translation: "第 {{ .Number }} 页"
+- id: currentPageNumber
+  translation: "当前第 {{ .Number }} 页"
+- id: labelSeparator
+  translation: "："
+- id: postNavigation
+  translation: "上一篇和下一篇文章"
+- id: emojiReaction
+  translation: "表情回应"
+- id: comments
+  translation: "评论"
+- id: copyCode
+  translation: "复制"
+- id: copiedCode
+  translation: "已复制！"
+- id: copyCodeError
+  translation: "复制失败"
+- id: previousImage
+  translation: "上一张图片"
+- id: nextImage
+  translation: "下一张图片"
+- id: closeImageViewer
+  translation: "关闭图片查看器"
+- id: addReaction
+  translation: "添加表情回应"

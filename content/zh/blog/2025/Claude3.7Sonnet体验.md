@@ -40,7 +40,7 @@ via: https://x.com/alexalbert__/status/1916878483390869612
 
 ## 更新(2025.3.21)
 
-Claude支持Web Search了。via: https://www.anthropic.com/news/web-search。
+Claude支持Web Search了。via: [Anthropic官方公告](https://www.anthropic.com/news/web-search)。
 
 ![Claude支持Web Search](https://cdn.sa.net/2025/03/21/OHsnViJU3ZuFpN8.webp)
 
@@ -281,7 +281,7 @@ Extended:
 
 via: https://claude.ai/share/c5d2f51a-6907-43e7-838e-553b04818de1
 
-pygame在线测试地址: https://trinket.io/features/pygame
+pygame在线测试页面：[存档副本](https://web.archive.org/web/20260329185045/https://trinket.io/features/pygame)（在线页面已无法访问）
 
 - 字母数量测试
 

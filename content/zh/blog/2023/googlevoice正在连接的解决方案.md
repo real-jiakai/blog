@@ -7,7 +7,7 @@ translationKey: "the-solution-of-google-voice-is-connecting"
 summary: 介绍Google voice正在连接的解决方案。
 ---
 
-近期Google voice IFTTT的保号方法开始收费。[via](https://www.zaihua.net/512.html)
+近期Google voice IFTTT的保号方法开始收费。[via（存档）](https://web.archive.org/web/20230330041934/https://www.zaihua.net/512.html)，原页面已下线。
 
 ![ifttt keep google voice active pro](https://vip2.loli.net/2023/03/14/pajIDBne3y6bkcC.webp)
 

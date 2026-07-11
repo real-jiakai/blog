@@ -33,7 +33,7 @@ Click on Clash virtual NIC properties, and in the sharing tab, allow the hotspot
 
 ![Allow hotspot to connect through Clash NIC](https://vip2.loli.net/2023/10/05/hW8tvRolrnXdEJK.webp)
 
-The above operation is actually the method mentioned in my blog post from last month—[Using Windows Hotspot and Clash TUN Mode to Enable Kindle Internet Access](https://blog.gujiakai.top/2023/09/using-windows-hotspot-and-clash-tun-for-kindle-internet-access). This method came from a user's Zhihu comment.
+The above operation is actually the method mentioned in my blog post from last month—[Using Windows Hotspot and Clash TUN Mode to Enable Kindle Internet Access](https://blog.gujiakai.top/en/2023/09/using-windows-hotspot-and-clash-tun-for-kindle-internet-access/). This method came from a user's Zhihu comment.
 
 ![User comment](https://vip2.loli.net/2023/09/22/nk7v24OZwzGfeFi.webp)
 

@@ -43,7 +43,7 @@ After that, I've been using Google One VPN as the dedicated exit for OpenAI-rela
 
 The specific causes of the date and time issue might include:
 
-- Proxy node only unlocks GPT web, not GPT mobile [see - [ChatGPT Android Error: Disallowed ISP Solution](https://blog.gujiakai.top/2023/10/chatgpt-android-error-disallowed-isp-solution)]
+- Proxy node only unlocks GPT web, not GPT mobile; see [ChatGPT Android Error: Disallowed ISP Solution](https://blog.gujiakai.top/en/2023/10/chatgpt-android-error-disallowed-isp-solution/).
 
 - Google services issues (install the latest version of Google Services Framework compatible with your Android version, update the other two to latest)
 

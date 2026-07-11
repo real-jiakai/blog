@@ -12,7 +12,9 @@
 {{- end -}}
 {{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
 {{ printf "<?xml-stylesheet type=\"text/xsl\" href=\"/xslt/simple-rss.%s.xslt\" ?>" .Site.Language.Lang | safeHTML }}
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:blog="https://blog.gujiakai.top/ns/rss">
   <channel>
     <title>{{ if and .Title (ne .Title .Site.Title) }}{{ .Title }}{{ i18n "rssTitleSeparator" }}{{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}</title>
     <link>{{ .Permalink }}</link>
@@ -30,6 +32,9 @@
       <link>{{ .Permalink }}</link>
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
       <guid>{{ .Permalink }}</guid>
+      {{/* 浏览器 XSLT 只渲染纯文本摘要，避免折叠条目仍实例化全文中的数百张图片。 */}}
+      <blog:summary>{{ .Summary | plainify | truncate 320 }}</blog:summary>
+      {{/* RSS 阅读器仍可获得完整正文。 */}}
       <description>{{- .Content | html -}}</description>
     </item>
     {{ end }}

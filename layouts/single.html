@@ -1,16 +1,17 @@
 {{ define "main" }}
 <div class="container-md align-items-center">
-  <article>
+  <article class="post-article" aria-labelledby="post-title">
     {{/* h1 保证每页有唯一主标题（可访问性/SEO）；.h2 类保持原有视觉大小 */}}
-    <h1 class="h2 text-center p-3">{{ .Title }}</h1>
+    <h1 id="post-title" class="post-title text-center">{{ .Title }}</h1>
     
     <!-- 文章元数据部分 -->
     {{ if eq .Type "blog" }}
     <div class="post-meta d-flex flex-wrap align-items-center justify-content-center gap-3 mb-4 text-secondary small">
-      <span class="post-meta-item">
+      <time class="post-meta-item" datetime="{{ .Date.Format "2006-01-02" }}">
         {{ partial "icon.html" "calendar" }}
+        <span class="visually-hidden">{{ i18n "postedOn" }}: </span>
         {{ .Date.Format "2006-01-02" }}
-      </span>
+      </time>
 
       {{ with .Params.tags }}
       <span class="post-meta-item">
@@ -26,6 +27,7 @@
 
       <span class="post-meta-item">
         {{ partial "icon.html" "clock" }}
+        <span class="visually-hidden">{{ i18n "readingTime" }}: </span>
         {{ .ReadingTime }} {{ i18n "minutes" }}
       </span>
 
@@ -49,34 +51,26 @@
       {{- partial "copyright.html" . -}}
 
       <!-- 上下篇导航 -->
-      <div class="d-flex justify-content-between mt-4">
+      <nav class="post-navigation" aria-label="{{ i18n "postNavigation" }}">
         {{ with .PrevInSection }}
-        <div class="d-flex align-items-center" style="max-width: 50%;">
+        <div class="post-navigation-item post-navigation-previous">
           <div class="text-truncate">
-            <a href="{{ .RelPermalink }}" class="text-decoration-none">&larr; {{ i18n "prevPost" }}：{{ .Title }}</a>
+            <a href="{{ .RelPermalink }}" class="text-decoration-none">&larr; {{ i18n "prevPost" }}{{ i18n "labelSeparator" }}{{ .Title }}</a>
           </div>
         </div>
         {{ end }}
         {{ with .NextInSection }}
-        <div class="d-flex align-items-center justify-content-end" style="max-width: 50%;">
+        <div class="post-navigation-item post-navigation-next">
           <div class="text-truncate">
-            <a href="{{ .RelPermalink }}" class="text-decoration-none">{{ i18n "nextPost" }}：{{ .Title }} &rarr;</a>
+            <a href="{{ .RelPermalink }}" class="text-decoration-none">{{ i18n "nextPost" }}{{ i18n "labelSeparator" }}{{ .Title }} &rarr;</a>
           </div>
         </div>
         {{ end }}
-      </div>
+      </nav>
     {{ end }}
 
     <!-- 评论系统 -->
     {{- partial "utterances.html" . -}}
   </article>
 </div>
-
-<style>
-@media (max-width: 768px) {
-  .gap-3 {
-    gap: 0.5rem !important;
-  }
-}
-</style>
 {{ end }}

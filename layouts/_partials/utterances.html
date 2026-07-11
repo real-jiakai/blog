@@ -1,21 +1,14 @@
-<hr/>
-<h3>Emoji Reaction</h3>
-<emoji-reaction endpoint="https://api-emaction.gujiakai.top"></emoji-reaction>
-{{/* emaction 组件脚本只在有 <emoji-reaction> 的页面加载（原先全站加载） */}}
-<script type="module" src="https://cdn.jsdelivr.net/gh/emaction/frontend.dist@1.0.11/bundle.js"></script>
-<hr />
-<script>
-(function() {
-    var theme = document.documentElement.getAttribute('data-bs-theme');
-    var utterancesTheme = theme === 'dark' ? 'github-dark' : 'github-light';
-    var script = document.createElement('script');
-    script.src = 'https://utteranc.es/client.js';
-    script.setAttribute('repo', 'real-jiakai/blog');
-    script.setAttribute('issue-term', 'pathname');
-    script.setAttribute('label', 'comment');
-    script.setAttribute('theme', utterancesTheme);
-    script.setAttribute('crossorigin', 'anonymous');
-    script.async = true;
-    document.currentScript.parentNode.insertBefore(script, document.currentScript);
-})();
-</script>
+<hr>
+<section class="post-interaction" aria-labelledby="emoji-reaction-title">
+  <h2 id="emoji-reaction-title" class="h4">{{ i18n "emojiReaction" }}</h2>
+  <emoji-reaction endpoint="https://api-emaction.gujiakai.top" data-add-label="{{ i18n "addReaction" }}"></emoji-reaction>
+  {{/* emaction 组件仅在文章页加载；固定、自托管的补丁版移除了运行时内联样式。 */}}
+  <script type="module" src="{{ partial "asset-url.html" "/js/emaction-1.0.11.js" }}"></script>
+</section>
+
+<hr>
+<section class="post-interaction" aria-labelledby="comments-title">
+  <h2 id="comments-title" class="h4">{{ i18n "comments" }}</h2>
+  <div id="utterances-comments"></div>
+</section>
+<script src="{{ partial "asset-url.html" "/js/utterances-init.js" }}" defer data-target="utterances-comments" data-repo="real-jiakai/blog" data-issue-term="pathname" data-label="comment"></script>

@@ -24,7 +24,7 @@ shadowrocket tg频道给出的判断节点能否访问GPT的方法。
 
 不解锁GPT移动端的代理节点所处服务端的报错信息还是disallowed ISP。
 
-![](https://vip2.loli.net/2023/11/23/lNgswq7S6OFYdPU.webp)
+![ChatGPT移动端显示disallowed ISP报错](https://vip2.loli.net/2023/11/23/lNgswq7S6OFYdPU.webp)
 
 ## 更新(2023.11.21)
 
@@ -32,7 +32,7 @@ shadowrocket tg频道给出的判断节点能否访问GPT的方法。
 
 ![nodeseek帖子-chatgpt安卓苹果解锁方法](https://vip2.loli.net/2023/11/21/pXqiZfDxhkmQSab.webp)
 
-其中的`curl andriod.chat.openai.com`和`curl ios.chat.openai.com`命令，是给节点所在的服务器准备的。
+其中的`curl android.chat.openai.com`和`curl ios.chat.openai.com`命令，是给节点所在的服务器准备的。
 
 如果你是自建科学上网节点，采用的是cloudcone、racknerd商家的vps。那节点应该是不解锁移动端的GPT的。 如我买的racknerd黑五dc02的套餐，默认是不解锁移动端的GPT的。
 

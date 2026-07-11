@@ -59,7 +59,7 @@ Finally, I solved the problem by combining the following 3 web pages:
 
 [nginx.service: Failed to read PID from file /run/nginx.pid: Invalid argument](https://bugs.launchpad.net/ubuntu/+source/nginx/+bug/1581864)
 
-[Nginx.service: failed to parse pid from file /run/nginx.pid: invalid argument](https://kodlogs.net/725/nginx-service-failed-to-parse-pid-from-file-run-nginx-pid-invalid-argument)
+[Nginx.service: failed to parse pid from file /run/nginx.pid: invalid argument](https://web.archive.org/web/20230127115535/https://kodlogs.net/725/nginx-service-failed-to-parse-pid-from-file-run-nginx-pid-invalid-argument) (archived; the original page is offline)
 
 [nginx.service: Failed to parse PID from file /run/nginx.pid: Invalid argument](https://zhidao.baidu.com/question/720160621097785285.html)
 

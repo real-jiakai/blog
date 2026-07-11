@@ -39,7 +39,7 @@ Successfully activated Python environment. (The image below shows exporting in g
 
 Now I can happily back up my image hosting pictures.
 
-![](https://vip2.loli.net/2023/09/30/tMDPoIFbZY2lQrg.webp)
+![Image-hosting backup running successfully after the Conda fix](https://vip2.loli.net/2023/09/30/tMDPoIFbZY2lQrg.webp)
 
 ## Supplement
 

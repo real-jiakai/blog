@@ -241,7 +241,7 @@ Devv的作者在V站、X上分享构建Devv的经验帖挺值得阅读的。
 
 ![无法开通Claude Pro的用户而言，付费Devv确实是一个不错的选择。](https://cdn.sa.net/2025/03/25/AzlvZDYc1P8n5BG.webp)
 
-想体验Devv的小伙伴可以考虑走我的Aff，互得10刀。via: https://devv.ai/referral?code=d47llwog7gn4
+本文介绍的Devv互得10刀Aff已经过期；[互联网档案馆存档](https://web.archive.org/web/20250522115612/https://devv.ai/referral?code=d47llwog7gn4)保留了当时的活动页面。
 
 ![想体验Devv的小伙伴可以考虑走我的Aff，互得10刀。](https://cdn.sa.net/2025/03/25/vmUC9EGwYf7KPr2.webp)
 

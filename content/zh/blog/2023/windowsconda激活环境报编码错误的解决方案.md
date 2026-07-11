@@ -39,7 +39,7 @@ export PYTHONUTF8=1
 
 可以愉快地备份图床图片了。
 
-![](https://vip2.loli.net/2023/09/30/tMDPoIFbZY2lQrg.webp)
+![修复Conda后成功运行图床备份](https://vip2.loli.net/2023/09/30/tMDPoIFbZY2lQrg.webp)
 
 ## 补充
 

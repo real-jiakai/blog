@@ -26,7 +26,7 @@ Windows remote desktop is the way. See Bulianglin's latest video: [Proxy Detecti
 
 ![Windows remote desktop not detected as proxy](https://cdn.sa.net/2024/12/25/6t3i1VvRMZmO8HG.webp)
 
-Proxy detection site: https://proxy.incolumitas.com/proxy_detect.html
+Original proxy detection site (now offline): [archived page](https://web.archive.org/web/20250614132648/https://proxy.incolumitas.com/proxy_detect.html)
 
 Since using Windows remote desktop with nekobox TUN mode selecting US residential, never been banned again. I suspect last ban was virtual card issue—my environment was actually fine.
 
@@ -94,7 +94,7 @@ Now this new Claude membership account won't be used on any domestic machines [c
 
 Additionally, if using Claude official API, suggest separating from Claude membership account—otherwise beware of collateral damage. I think this ban was mainly virtual card's fault. From now on, wildcard for other services—OpenAI, Claude and other AI services, I'll definitely never use virtual cards again. Just use US Apple in-app purchase.
 
-If you think account bans don't matter—banned means refund and re-register new account—just use wildcard mindlessly. After all, direct Alipay top-up, use my invite code for mutual $2. My Google One AI Premium is purchased this way. via: https://yeka.ai/i/QAUNNLY4
+If you think account bans don't matter—banned means refund and re-register new account—just use wildcard mindlessly. At the time, direct Alipay top-up through my invite code gave both sides $2, and I purchased my Google One AI Premium this way. That referral page is no longer available.
 
 Recently Gemini released something similar to ChatGPT memory.
 
@@ -102,7 +102,7 @@ Recently Gemini released something similar to ChatGPT memory.
 
 Tinkered all morning, did nothing, just solving Claude membership issue. Sigh 😑. No choice—who made them the current LLM king. Can only humbly pay them.
 
-I remember last similar experience was May 2023 when OpenAI banned my account due to depay virtual card. via: https://blog.gujiakai.top/2023/05/thinking-of-openai-ban-plus-customers-in-527
+I remember last similar experience was May 2023 when OpenAI banned my account due to depay virtual card. via: https://blog.gujiakai.top/en/2023/05/thinking-of-openai-ban-plus-customers-in-527/
 
 Unknowingly over 1 year has passed. This year, Claude rose rapidly—especially after June 2024, became the undisputed LLM king [my daily use is coding, so Claude is my The King Of LLM]. Although Claude's code also has bugs, when I check and point out issues, Claude can basically fix them. For problems it can't solve, sometimes provides more effective ideas than OpenAI.
 

@@ -64,7 +64,7 @@ Overall, if you encounter similar issues, best use native US IP [after enabling 
 
 Finally attaching what I think is Meta AI's most surprising feature—real-time image generation [released in April first half of year]. Here's an example of me using Meta AI real-time image generation in WhatsApp app [fishes means multiple fish species 😁].
 
-<div class="ratio ratio-16x9" style="max-height: 80vh;">
+<div class="ratio ratio-16x9 article-video-frame">
   <video controls>
     <source src="https://cdn.jiakai.page/videos/2024/meta_ai_imagine_demo.mp4" type="video/mp4">
     Your browser does not support the video tag.

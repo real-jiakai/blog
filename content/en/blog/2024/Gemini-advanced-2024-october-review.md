@@ -22,7 +22,7 @@ Enough said—Google rocks! Looking forward to Gemini eventually sweeping all LL
 
 ## Update [2025/4/12]
 
-At this point [April 12, 2025], Gemini Advanced is absolutely worth paying for. See my blog post [Gemini 2.5 Pro Experience](https://blog.gujiakai.top/2025/03/gemini-2-5-pro-experience/). If too expensive, can buy monthly throwaway accounts from Taobao or Xianyu—saw some L Site folks getting Gemini Advanced this way cheaply.
+At this point [April 12, 2025], Gemini Advanced is absolutely worth paying for. See my blog post [Gemini 2.5 Pro Experience](https://blog.gujiakai.top/en/2025/03/gemini-2-5-pro-experience/). If too expensive, can buy monthly throwaway accounts from Taobao or Xianyu—saw some L Site folks getting Gemini Advanced this way cheaply.
 
 ## Update [2025/1/30]
 
@@ -304,7 +304,7 @@ Console is way better than Gemini App. Garbage Gemini. Google doesn't put effort
 
 Gemini comprehension needs improvement.
 
-![Gemini comprehension is concerning](https://cdn.sa.net/2024/11/02/8XZnvIGuMloVjFX.webp)
+![Gemini comprehension is concerning](https://cdn.sa.net/2024/11/02/8XZnvIGuMloVq4x.webp)
 
 Changed question phrasing—responded normally again.
 

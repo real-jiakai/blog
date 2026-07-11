@@ -1,6 +1,11 @@
-{{- /* 站点级覆盖：主题的 analytics.html 读取的是 .Site.Params.googleanalytics，
-     而 GA ID 配置在 services.googleAnalytics.ID，导致 GA 从未被输出。
-     这里改用 Hugo 内置模板（自行读取 services.googleAnalytics.ID），并仅在生产环境加载。 */ -}}
-{{- if hugo.IsProduction -}}
-{{ template "_internal/google_analytics.html" . }}
-{{- end -}}
+{{- /*
+    Netlify 只在 production context 注入 params.enableAnalytics=true。
+    因此真实站点的每次访问都会加载三套分析，而本地、分支部署和 Deploy Preview 不污染数据。
+    GA 与 Clarity 的初始化放在本地外部脚本中，使 script-src 不需要 unsafe-inline。
+*/ -}}
+{{- if .Site.Params.enableanalytics }}
+<script async src="https://umami.gujiakai.top/script.js" data-website-id="d7f3de25-017d-4f73-8bd0-81e9484ef61f"></script>
+<script id="site-analytics" defer src="{{ partial "asset-url.html" "/js/analytics.js" }}"
+        data-google-id="{{ .Site.Config.Services.GoogleAnalytics.ID }}"
+        data-clarity-id="juat43yeul"></script>
+{{- end }}

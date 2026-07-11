@@ -61,7 +61,7 @@ stackoverflow上有关于类似问题的讨论：[centos 7: nginx Failed to read
 
 [nginx.service: Failed to read PID from file /run/nginx.pid: Invalid argument](https://bugs.launchpad.net/ubuntu/+source/nginx/+bug/1581864)
 
-[Nginx.service: failed to parse pid from file /run/nginx.pid: invalid argument](https://kodlogs.net/725/nginx-service-failed-to-parse-pid-from-file-run-nginx-pid-invalid-argument)
+[Nginx.service: failed to parse pid from file /run/nginx.pid: invalid argument](https://web.archive.org/web/20230127115535/https://kodlogs.net/725/nginx-service-failed-to-parse-pid-from-file-run-nginx-pid-invalid-argument)（存档页面，原站链接已失效）
 
 [nginx.service: Failed to parse PID from file /run/nginx.pid: Invalid argument](https://zhidao.baidu.com/question/720160621097785285.html)
 

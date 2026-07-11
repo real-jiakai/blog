@@ -68,7 +68,7 @@ Cloudron panel migration is super convenient. Early July I migrated from a free 
 
 I've used similar products—YunoHost, Sandbox. Comparing the three, experience ranking: Cloudron > YunoHost > Sandbox [if not considering cost, YunoHost beats Sandbox; free Cloudron only allows two apps]. Of course domestic panels are also improving, like 1Panel with its rich app store.
 
-Self-hosting Pixelfed is also straightforward—click install, wait for completion, register an account, then click the app's web terminal to set the new user as admin. For specific process see official docs—[cloudron pixelfed docs](https://docs.cloudron.io/apps/pixelfed/).
+Self-hosting Pixelfed is also straightforward—click install, wait for completion, register an account, then click the app's web terminal to set the new user as admin. For the specific process, see the current official [Cloudron Pixelfed documentation](https://docs.cloudron.io/packages/pixelfed/).
 
 Only after setting user as admin can you access the admin page. Below is an admin page sample.
 

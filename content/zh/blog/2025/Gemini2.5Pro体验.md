@@ -196,7 +196,7 @@ via: https://ai.google.dev/gemini-api/docs/models#gemini-2.5-pro-exp-03-25
 
 ![Gemini 2.5 Pro VS Claude 3.7 Sonnet TL;DR](https://cdn.sa.net/2025/04/03/OolQmjhd1Ckew9R.webp)
 
-帖子网友评论太多了，我直接让ChatGPT Deep Research了一下，相关结果见[Halo博客](https://blog.gujiakai.me/2025/04/gemini-2-5-pro-vs-claude-3-7-sonnet-hacker-news-user-reactions)。
+帖子网友评论太多了，我直接让ChatGPT Deep Research了一下。相关报告曾发布在我的Halo博客，但该页面现已下线；可参考上文已链接的原Hacker News讨论。
 
 - Gemini Code
 

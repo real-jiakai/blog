@@ -123,4 +123,4 @@ Manus给人的感觉真是一炒作的玩意，每隔一段时间在世界各地
 
 与此同时，Agent类产品极其容易被互联网上参差不齐的信息所干扰，中文互联网本质上已经由各大私域组成（微信公众号、小红书等），公开互联网上高质量信息偏少。如果Agent类产品的模型辨别能力不强，被低质信息所干扰，进而会导致回复中一本正经地引用错误信息。
 
-近期博文[写在 Kimi K2 发布之后：再也不仅仅是 ChatBot](https://bigeagle.me/2025/07/kimi-k2/)中的一句话引起了我的共鸣：`绝大多数 Agent 产品，离了 Claude 以后，什么都不是`，现实确实是这样的，Claude在Agent方面遥遥领先，期待Anthropic继Claude Code编程Agent后下半年将Web端的Extended Thinking升级为Agent，与此同时保留经典LLM。
+近期的存档博文[写在 Kimi K2 发布之后：再也不仅仅是 ChatBot](https://web.archive.org/web/20260404150133/https://bigeagle.me/2025/07/kimi-k2/)中的一句话引起了我的共鸣：`绝大多数 Agent 产品，离了 Claude 以后，什么都不是`，原博文页面现已下线。现实确实是这样的，Claude在Agent方面遥遥领先，期待Anthropic继Claude Code编程Agent后下半年将Web端的Extended Thinking升级为Agent，与此同时保留经典LLM。

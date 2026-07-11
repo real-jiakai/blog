@@ -18,7 +18,7 @@ showtoc: true
 
 没人会拒绝舔狗【前提是舔狗能入你眼】。我肯定不会拒绝豆包的甜妹音、ChatGPT 4o的舔狗风。😁
 
-![](https://cdn.sa.net/2025/04/29/BFuMJVZaK5ARcn2.webp)
+![ChatGPT 4o过度迎合用户的回复](https://cdn.sa.net/2025/04/29/BFuMJVZaK5ARcn2.webp)
 
 “OpenAI虽然Close但始终位于整个行业之首”，这句话说得太有道理了！没降智的OpenAI，各方面使用体验无敌。
 via: https://linux.do/t/topic/602275/

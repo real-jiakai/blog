@@ -1,7 +1,7 @@
 ---
 title: "chatgpt安卓报错date and time的解决方案"
 date: 2023-08-17T13:30:01+08:00
-tags: ['chatgpt','andriod']
+tags: ['chatgpt','android']
 slug: "solving-date-and-time-error-in-chatgpt-android-app"
 translationKey: "solving-date-and-time-error-in-chatgpt-android-app"
 summary: 分享chatgpt安卓报错date and time的解决方案。
@@ -43,7 +43,7 @@ showtoc: true
 
 反正date and time这个问题的具体原因可能有以下几种可能：
 
-- 代理节点仅仅解锁GPT web端，不解锁GPT移动端【具体可见-[chatgpt安卓报错disallowed ISP/There is a problem with your request的解决方案](https://blog.gujiakai.top/2023/10/chatgpt-android-error-disallowed-isp-solution)】
+- 代理节点仅仅解锁GPT web端，不解锁GPT移动端【具体可见-[chatgpt安卓报错disallowed ISP/There is a problem with your request的解决方案](https://blog.gujiakai.top/2023/10/chatgpt-android-error-disallowed-isp-solution/)】
 
 - 谷歌三件套问题（google services framework根据你手机的安卓版本安装适配的最新版本，其余两者无脑更新至最新版）
 
@@ -61,7 +61,7 @@ showtoc: true
 
 7月25日，chatgpt的安卓版本可以抢先在google play store的美区下载体验，我也是第一时间下载了该应用，但是登录时，出现了如下图所示的报错。
 
-![chatgpt andriod报错](https://vip2.loli.net/2023/08/17/CMjuqNh8cOWoATn.webp)
+![ChatGPT Android报错](https://vip2.loli.net/2023/08/17/CMjuqNh8cOWoATn.webp)
 
 Something went wrong. Please make sure your device's date and time are set properly. Check that your internet connection is stable, then restart the app and try again. 
 

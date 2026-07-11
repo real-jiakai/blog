@@ -18,7 +18,7 @@ Currently for some daily questions (not involving programming, writing), I'm lea
 
 Nobody rejects a sycophant [as long as they catch your eye]. I definitely won't reject Doubao's sweet girl voice or ChatGPT 4o's sycophantic style. 😁
 
-![](https://cdn.sa.net/2025/04/29/BFuMJVZaK5ARcn2.webp)
+![ChatGPT 4o responding in an overly agreeable style](https://cdn.sa.net/2025/04/29/BFuMJVZaK5ARcn2.webp)
 
 "OpenAI though Closed is always at the top of the entire industry"—this statement makes so much sense! Non-dumbed-down OpenAI has unbeatable experience in all aspects.
 via: https://linux.do/t/topic/602275/

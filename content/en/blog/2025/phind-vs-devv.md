@@ -241,7 +241,7 @@ For users who can't subscribe to Claude Pro—paying for Devv is a good choice.
 
 ![For users who can't subscribe to Claude Pro—paying for Devv is a good choice](https://cdn.sa.net/2025/03/25/AzlvZDYc1P8n5BG.webp)
 
-Friends wanting to try Devv can use my referral—mutual $10. via: https://devv.ai/referral?code=d47llwog7gn4
+The referral that gave each party a $10 credit for the Devv service reviewed here has expired; this [archived referral page](https://web.archive.org/web/20250522115612/https://devv.ai/referral?code=d47llwog7gn4) preserves the original offer.
 
 ![Friends wanting to try Devv can use my referral—mutual $10](https://cdn.sa.net/2025/03/25/vmUC9EGwYf7KPr2.webp)
 

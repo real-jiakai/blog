@@ -64,7 +64,7 @@ showtoc: true
 
 最后附上我认为Meta AI最令人惊喜的功能，实时生成图像【上半年4月份就推出了】。附一个我在WhatsApp应用中使用Meta AI实时生成图像的示例【fishes表示多种类的鱼😁】。
 
-<div class="ratio ratio-16x9" style="max-height: 80vh;">
+<div class="ratio ratio-16x9 article-video-frame">
   <video controls>
     <source src="https://cdn.jiakai.page/videos/2024/meta_ai_imagine_demo.mp4" type="video/mp4">
     您的浏览器不支持视频标签。

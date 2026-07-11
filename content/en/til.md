@@ -3,7 +3,7 @@ title: Today I Learned
 date: 2023-02-28
 ---
 
-# Introduction
+## Introduction
 
 The Today I Learned page shares what I learned today. I firmly believe that Learning In Public is the fastest way to learn. [via](https://www.swyx.io/learn-in-public)
 

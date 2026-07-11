@@ -12,7 +12,7 @@ showtoc: true
 但一次次的秒拒，让我灰心，最终我放弃了GitHub学生包的申请。
 
 | 阶段    | 失败次数 |
-| :-------: | :--------: |
+| --------- | ---------- |
 | 2022.06| 40|
 | 2021.10 | 7| 
 | 2021.09 |   2       |
@@ -63,21 +63,21 @@ showtoc: true
 
 ![邮箱次次被秒拒图](https://vip2.loli.net/2022/06/25/TS5DtquVOsyxMmg.png)
 
-<center><b>图1.邮箱次次被秒拒图</b></center>
+<p class="text-center"><strong>图1.邮箱次次被秒拒图</strong></p>
 
 ![49次失败历程图一](https://vip2.loli.net/2022/06/25/FNki81p4Hc7youX.png)
 
 ![49次失败历程图二](https://vip2.loli.net/2022/06/25/vJVk8Zo6SFMmcBa.png)
 
-<center><b>图2.49次失败历程</b></center>
+<p class="text-center"><strong>图2.49次失败历程</strong></p>
 
 ![第50次申请正在处理中](https://vip2.loli.net/2022/06/25/BLfsXkj3g46FREV.png)
 
-<center><b>图3.第50次申请正在处理中</b></center>
+<p class="text-center"><strong>图3.第50次申请正在处理中</strong></p>
 
 ![成功拿到GitHub学生包](https://vip2.loli.net/2022/06/26/kiyChRj6ldLcXwe.png)
 
-<center><b>图4.成功拿到GitHub学生包</b></center>
+<p class="text-center"><strong>图4.成功拿到GitHub学生包</strong></p>
 
 ## 参考资料
 

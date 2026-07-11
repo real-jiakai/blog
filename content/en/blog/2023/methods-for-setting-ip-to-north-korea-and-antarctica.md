@@ -106,7 +106,7 @@ A while ago, another cheap vendor selling VPS with WARP exit to North Korea appe
 
 Found another new vendor selling North Korea and Antarctica IPv6 NAT in the self-build section.
 
-- [MisakaF](https://www.misakaf.net/index.php?rp=/store/north-korea)
+- MisakaF ([archived North Korea plan page](https://web.archive.org/web/20240206071247/https://www.misakaf.net/index.php?rp=%2Fstore%2Fnorth-korea); the original page is no longer online)
 
 ***
 
@@ -140,7 +140,7 @@ Select North Korea or Antarctica nodes, enable global mode, and you can show off
 
 Purchase [GlobalVM](https://globalvm.top) products - Asia WARP NAT selecting North Korea region, Antarctica WARP NAT, use X-UI panel to build nodes.
 
-For setup tutorials and key points, see YouTube Buliang Lin and this blog post—[GlobalVM North Korea IP NAT VPS Simple Review and Usage Tutorial](https://ccckfg.top/archives/768)
+For setup tutorials and key points, see YouTube Buliang Lin and this archived blog post—[GlobalVM North Korea IP NAT VPS Simple Review and Usage Tutorial](https://web.archive.org/web/20250116130758/https://ccckfg.top/archives/768) (the original page is offline)
 
 ![GlobalVM products](https://vip2.loli.net/2023/08/17/5JArdO47L1glyTu.webp)
 

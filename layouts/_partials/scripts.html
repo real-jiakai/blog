@@ -1,8 +1,17 @@
-<script src="/js/jquery-4.0.0.min.js"></script>
-<script src="/js/lightbox.min.js"></script>
-<script src="/js/custom.js"></script>
-<script src="/js/bootstrap.bundle.min.js"></script>
-<script src="/js/copy-code.js"></script>
-<script src="/js/back-to-top.js"></script>
-<script src="/js/theme-toggle.js"></script>
-<script async src="https://umami.gujiakai.top/script.js" data-website-id="d7f3de25-017d-4f73-8bd0-81e9484ef61f"></script>
+{{- $hasImages := false -}}
+{{- $hasCode := false -}}
+{{- if .IsPage -}}
+    {{- $renderedContent := printf "%s" .Content -}}
+    {{- $hasImages = strings.Contains $renderedContent "data-lightbox=" -}}
+    {{- $hasCode = strings.Contains $renderedContent "<pre" -}}
+{{- end }}
+{{- if $hasImages }}
+<script defer src="{{ partial "asset-url.html" "/js/image-viewer.js" }}"></script>
+{{- end }}
+{{- if $hasCode }}
+<script defer src="{{ partial "asset-url.html" "/js/copy-code.js" }}"></script>
+{{- end }}
+<script defer src="{{ partial "asset-url.html" "/js/site-controls.js" }}"></script>
+<script defer src="{{ partial "asset-url.html" "/js/back-to-top.js" }}"></script>
+<script defer src="{{ partial "asset-url.html" "/js/theme-toggle.js" }}"></script>
+<script defer src="{{ partial "asset-url.html" "/js/footer-year.js" }}"></script>

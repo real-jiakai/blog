@@ -32,7 +32,7 @@ This Windows computer I bought at the beginning of the year, and I hardly used i
 
 Last night, I wanted to set up Windows as a frontend proxy, with my Android phone connecting to Windows to access Google One VPN. So I followed the old routine from the first half of the year: enable Windows hotspot, Android phone connects to the hotspot shared by Windows, and set the proxy options for the hotspot on the Android phone. But I found even after setting the Windows LAN IP and Clash's port 7890 on the Android phone, I couldn't access the proxy.
 
-After some searching, I reinstalled TUN mode following the method mentioned in this issue from the Clash for Windows repository—[WIN 10 configured CLASH, opened ALLOW LAN, why can't access LAN, need help!! I want to connect TV box #831](https://github.com/Fndroid/clash_for_windows_pkg/issues/831). Then I successfully enabled my Android phone to use the Clash traffic shared through Windows hotspot to connect to Google One VPN.
+After some searching, I reinstalled TUN mode following the method mentioned in this archived issue from the Clash for Windows repository—[WIN 10 configured CLASH, opened ALLOW LAN, why can't access LAN, need help!! I want to connect TV box #831](https://web.archive.org/web/20221217141147/https://github.com/Fndroid/clash_for_windows_pkg/issues/831). The original issue has been removed. Then I successfully enabled my Android phone to use the Clash traffic shared through Windows hotspot to connect to Google One VPN.
 
 But during the search, I found this comment. [via](https://zhuanlan.zhihu.com/p/337430556)
 

@@ -12,7 +12,7 @@ The first time I heard about the GitHub Student Developer Pack was in my junior 
 But rejection after rejection left me disheartened, and eventually I gave up on the application.
 
 | Period    | Failed Attempts |
-| :-------: | :-------------: |
+| --------- | --------------- |
 | 2022.06   | 40              |
 | 2021.10   | 7               |
 | 2021.09   | 2               |
@@ -53,21 +53,21 @@ Microsoft Azure, Terminus, JetBrains, domains... The discounts these well-known 
 
 ![Email rejection after rejection](https://vip2.loli.net/2022/06/25/TS5DtquVOsyxMmg.png)
 
-<center><b>Figure 1. Email showing repeated rejections</b></center>
+<p class="text-center"><strong>Figure 1. Email showing repeated rejections</strong></p>
 
 ![49 failed attempts part 1](https://vip2.loli.net/2022/06/25/FNki81p4Hc7youX.png)
 
 ![49 failed attempts part 2](https://vip2.loli.net/2022/06/25/vJVk8Zo6SFMmcBa.png)
 
-<center><b>Figure 2. The 49 failed attempts</b></center>
+<p class="text-center"><strong>Figure 2. The 49 failed attempts</strong></p>
 
 ![50th application being processed](https://vip2.loli.net/2022/06/25/BLfsXkj3g46FREV.png)
 
-<center><b>Figure 3. 50th application being processed</b></center>
+<p class="text-center"><strong>Figure 3. 50th application being processed</strong></p>
 
 ![Successfully obtained GitHub Student Pack](https://vip2.loli.net/2022/06/26/kiyChRj6ldLcXwe.png)
 
-<center><b>Figure 4. Successfully obtained GitHub Student Developer Pack</b></center>
+<p class="text-center"><strong>Figure 4. Successfully obtained GitHub Student Developer Pack</strong></p>
 
 ## References
 

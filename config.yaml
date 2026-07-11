@@ -4,7 +4,7 @@ baseURL: https://blog.gujiakai.top
 # 通过 module.imports（而非 theme: 键）挂载主题，以便用 excludeFiles 排除
 # 主题 static/ 里两个从未被引用、却会被整体复制进 public/ 的文件：
 # - images/hugo_step2_step3.gif（8.5MB，仅主题 README 用图）
-# - js/lightbox-plus-jquery.min.js（98KB，站点已单独引入 jquery + lightbox）
+# - js/lightbox-plus-jquery.min.js（98KB，站点使用轻量的原生 dialog 图片查看器）
 module:
   imports:
     - path: hugo-theme-simple
@@ -18,6 +18,10 @@ module:
           excludeFiles:
             - images/hugo_step2_step3.gif
             - js/lightbox-plus-jquery.min.js
+            - js/bootstrap.bundle.min.js
+            - js/copy-code.js
+            - js/custom.js
+            - css/lightbox.min.css
 # 第三方服务
 services:
   # google分析
@@ -105,6 +109,9 @@ languages:
         - name: "关于"
           url: "/about/"
           weight: 5
+        - name: "隐私"
+          url: "/privacy/"
+          weight: 6
   en:
     languageName: "English"
     languageCode: "en-US"
@@ -133,6 +140,9 @@ languages:
         - name: "About"
           url: "/about/"
           weight: 5
+        - name: "Privacy"
+          url: "/privacy/"
+          weight: 6
 
 # 全局参数（作为默认值）
 params:
@@ -140,6 +150,8 @@ params:
   keywords: "blog,tech,personal,life"
   author: "jiakai"
   footer: "&copy; 2022-{Year} Made with ❤️ By Jiakai"
+  # 本地、分支部署和 Deploy Preview 默认为 false；Netlify 仅在 production context 覆盖为 true。
+  enableAnalytics: false
 
 # markup设置
 markup:
@@ -179,4 +191,3 @@ markup:
         startLevel: 2
         endLevel: 3
         ordered: false
-     
