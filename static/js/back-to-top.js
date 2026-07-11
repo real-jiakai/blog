@@ -8,7 +8,12 @@
         var ticking = false;
         function updateVisibility() {
             ticking = false;
-            button.classList.toggle('show', window.scrollY > 300);
+            var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+            var documentHeight = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
+            var mobile = window.matchMedia('(max-width: 767.98px)').matches;
+            var longEnough = documentHeight > viewportHeight * (mobile ? 2.5 : 1.5);
+            var threshold = mobile ? Math.max(800, viewportHeight * 1.5) : 300;
+            button.classList.toggle('show', longEnough && window.scrollY > threshold);
         }
 
         function scheduleUpdate() {
@@ -18,6 +23,7 @@
         }
 
         window.addEventListener('scroll', scheduleUpdate, { passive: true });
+        window.addEventListener('resize', scheduleUpdate);
         button.addEventListener('click', function () {
             var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
             window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });

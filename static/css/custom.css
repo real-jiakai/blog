@@ -228,7 +228,12 @@ blockquote p {
 
 /* Theme dropdown menu */
 .theme-menu {
-    min-width: 11rem;
+    inset-block-start: calc(100% + 0.35rem);
+    inset-inline-start: auto;
+    inset-inline-end: 0;
+    min-width: min(11rem, calc(100vw - 1.5rem));
+    max-width: calc(100vw - 1.5rem);
+    margin-block-start: 0;
     padding: 0.35rem;
     border-color: var(--card-border-color);
     background-color: var(--card-bg);
@@ -461,13 +466,17 @@ pre.chroma {
     transform: translateY(-3px);
 }
 
-/* Responsive: smaller button on mobile */
-@media (max-width: 768px) {
+/* Mobile: thumb-friendly button with safe-area spacing. */
+@media (max-width: 767.98px) {
     #back-to-top {
-        bottom: 20px;
-        right: 20px;
-        width: 40px;
-        height: 40px;
+        right: max(0.75rem, env(safe-area-inset-right, 0px));
+        bottom: calc(0.75rem + env(safe-area-inset-bottom, 0px));
+        width: 44px;
+        height: 44px;
+    }
+
+    #back-to-top.show {
+        opacity: 0.88;
     }
 }
 
@@ -1127,6 +1136,45 @@ emoji-reaction button:focus-visible {
 
     .article-lightbox-image {
         max-height: 76vh;
+    }
+
+    /* Keep all always-visible header controls comfortable without crowding
+       the brand on 320px-wide screens. */
+    .site-navbar .navbar-brand {
+        min-width: 0;
+        max-width: calc(100% - 8.5rem);
+        overflow: hidden;
+        font-size: 1.05rem;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .site-controls {
+        flex: 0 0 auto;
+    }
+
+    .site-lang,
+    .btn-theme,
+    .site-navbar .navbar-toggler {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 2.5rem;
+        min-height: 2.5rem;
+    }
+
+    .site-navbar .navbar-toggler {
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: 0 !important;
+    }
+
+    .site-theme .theme-menu {
+        border-radius: 0.75rem;
+    }
+
+    .theme-menu .dropdown-item {
+        min-height: 2.75rem;
     }
 
     /* Collapsed nav drops below as a tidy stacked menu */

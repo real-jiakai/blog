@@ -37,8 +37,11 @@
 
   {{/* html footer */}}
   {{- partial "footer.html" . -}}
-  {{/* back to top button */}}
-  {{- partial "back-to-top.html" . -}}
+  {{/* Long-form blog articles benefit from a back-to-top shortcut; keep it
+       off index, taxonomy, and short utility pages. */}}
+  {{- if and .IsPage (eq .Type "blog") -}}
+    {{- partial "back-to-top.html" . -}}
+  {{- end -}}
   {{/* html scripts */}}
   {{- partial "scripts.html" . -}}
   {{/* html analytics */}}

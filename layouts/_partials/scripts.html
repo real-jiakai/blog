@@ -12,6 +12,8 @@
 <script defer src="{{ partial "asset-url.html" "/js/copy-code.js" }}"></script>
 {{- end }}
 <script defer src="{{ partial "asset-url.html" "/js/site-controls.js" }}"></script>
+{{- if and .IsPage (eq .Type "blog") }}
 <script defer src="{{ partial "asset-url.html" "/js/back-to-top.js" }}"></script>
+{{- end }}
 <script defer src="{{ partial "asset-url.html" "/js/theme-toggle.js" }}"></script>
 <script defer src="{{ partial "asset-url.html" "/js/footer-year.js" }}"></script>
