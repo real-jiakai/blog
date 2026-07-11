@@ -308,38 +308,6 @@ blockquote p {
     max-height: 80vh;
 }
 
-/* ===========================================
-   Home introduction and post list
-   =========================================== */
-.home-intro {
-    margin: 0.25rem 0 1.75rem;
-    padding: 1.2rem 0 1.1rem;
-    border-bottom: 1px solid var(--card-border-color);
-}
-
-.home-title {
-    margin: 0;
-    font-size: clamp(1.8rem, 4vw, 2.45rem);
-    font-weight: 750;
-    line-height: 1.16;
-    letter-spacing: -0.025em;
-}
-
-.home-description {
-    max-width: 42rem;
-    margin: 0.65rem 0 0;
-    color: var(--muted-text-color);
-    font-size: clamp(0.98rem, 2vw, 1.08rem);
-    line-height: 1.65;
-}
-
-.home-page-number {
-    margin: 0.55rem 0 0;
-    color: var(--muted-text-color);
-    font-size: 0.9rem;
-    font-weight: 600;
-}
-
 .card-title {
     margin-bottom: 0.7rem;
     overflow-wrap: anywhere;
@@ -811,8 +779,9 @@ html {
     color: var(--muted-text-color) !important;
 }
 
-/* Utterances normally injects this block as an inline <style>. Keeping it in
-   the versioned site stylesheet lets the CSP reject inline styles. */
+/* The local Utterances loader owns the iframe shell so its transparent canvas
+   follows the active site background in both color themes. */
+#utterances-comments,
 .utterances {
     position: relative;
     box-sizing: border-box;
@@ -820,6 +789,7 @@ html {
     max-width: 760px;
     margin-right: auto;
     margin-left: auto;
+    background-color: var(--body-bg);
 }
 
 .utterances-frame {
@@ -831,11 +801,10 @@ html {
     max-width: 100%;
     height: 100%;
     border: 0;
-    color-scheme: light;
-}
-
-[data-bs-theme="dark"] .utterances-frame {
-    color-scheme: dark;
+    background-color: var(--body-bg);
+    /* Avoid an opaque browser canvas; Utterances supplies its own
+       github-light/github-dark control theme inside the frame. */
+    color-scheme: normal;
 }
 
 /* Accessible, CSP-safe article image viewer. */
@@ -850,9 +819,9 @@ body.lightbox-open {
     padding: 2.75rem 3.5rem 1.25rem;
     border: 0;
     border-radius: 0.75rem;
-    color: #f8f9fa;
-    background: #101114;
-    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.55);
+    color: #212529;
+    background: rgba(248, 249, 250, 0.98);
+    box-shadow: 0 1rem 4rem rgba(15, 23, 42, 0.22);
 }
 
 .article-lightbox[open] {
@@ -861,7 +830,8 @@ body.lightbox-open {
 }
 
 .article-lightbox::backdrop {
-    background: rgba(0, 0, 0, 0.82);
+    background: rgba(100, 116, 139, 0.2);
+    backdrop-filter: blur(3px);
 }
 
 .article-lightbox-stage {
@@ -881,7 +851,7 @@ body.lightbox-open {
 
 .article-lightbox-caption {
     max-width: 62rem;
-    color: #e9ecef;
+    color: #495057;
     font-size: 0.95rem;
     line-height: 1.55;
     text-align: center;
@@ -894,10 +864,10 @@ body.lightbox-open {
     z-index: 1;
     display: grid;
     place-items: center;
-    border: 0;
+    border: 1px solid #ced4da;
     border-radius: 999px;
-    color: #fff;
-    background: rgba(255, 255, 255, 0.12);
+    color: #212529;
+    background: rgba(255, 255, 255, 0.94);
     font-family: inherit;
     line-height: 1;
     cursor: pointer;
@@ -906,7 +876,7 @@ body.lightbox-open {
 .article-lightbox-close:hover,
 .article-lightbox-previous:hover,
 .article-lightbox-next:hover {
-    background: rgba(255, 255, 255, 0.24);
+    background: #e9ecef;
 }
 
 .article-lightbox-close {
@@ -938,7 +908,7 @@ body.lightbox-open {
    external rules remain compatible with a strict CSP. */
 emoji-reaction {
     display: block;
-    min-height: 1.5rem;
+    min-height: 2rem;
 }
 
 emoji-reaction .reaction-container {
@@ -962,10 +932,11 @@ emoji-reaction .reaction-container {
     --reaction-available-emoji-z-index-default: 100;
     --reaction-available-mask-z-index-default: 80;
     display: flex;
+    align-items: center;
     flex-wrap: nowrap;
     gap: 0.375rem;
     max-width: 100%;
-    height: 1.5rem;
+    min-height: 2rem;
 }
 
 [data-bs-theme="dark"] emoji-reaction .reaction-container {
@@ -995,11 +966,14 @@ emoji-reaction .reaction-picker-wrap {
 }
 
 emoji-reaction #start-smile {
-    display: flex;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     align-self: center;
-    width: 1rem;
-    height: 1rem;
-    padding: 0.25rem;
+    flex: 0 0 2rem;
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
     border: 1px solid var(--start-smile-border-color, var(--start-smile-border-color-default));
     border-radius: 800px;
     background-color: var(--start-smile-bg-color, var(--start-smile-bg-color-default));
@@ -1014,6 +988,10 @@ emoji-reaction #start-smile:hover {
 }
 
 emoji-reaction #start-smile-svg {
+    display: block;
+    flex: 0 0 1rem;
+    width: 1rem;
+    height: 1rem;
     cursor: pointer;
     fill: var(--start-smile-svg-fill-color, var(--start-smile-svg-fill-color-default));
 }
@@ -1171,11 +1149,6 @@ emoji-reaction button:focus-visible {
 
     .post-pager {
         margin: 1.5rem 0;
-    }
-
-    .home-intro {
-        margin-bottom: 1.25rem;
-        padding-top: 0.7rem;
     }
 
     .card-footer .post-meta {

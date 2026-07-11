@@ -212,7 +212,6 @@ class EmojiReaction extends s {
   }
 
   _closePopup(e) {
-    console.log(e.target);
     this.showAvailable = false;
   }
 

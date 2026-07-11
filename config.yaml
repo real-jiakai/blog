@@ -109,9 +109,6 @@ languages:
         - name: "关于"
           url: "/about/"
           weight: 5
-        - name: "隐私"
-          url: "/privacy/"
-          weight: 6
   en:
     languageName: "English"
     languageCode: "en-US"
@@ -140,9 +137,6 @@ languages:
         - name: "About"
           url: "/about/"
           weight: 5
-        - name: "Privacy"
-          url: "/privacy/"
-          weight: 6
 
 # 全局参数（作为默认值）
 params:

@@ -23,7 +23,7 @@
   HUGO_PARAMS_ENABLEANALYTICS = "false"
 
 # 安全响应头。CSP 白名单覆盖站点用到的所有第三方：
-#   script: utterances 评论、MS Clarity、GA(gtag)、umami、asciinema（emaction 已自托管）
+#   script: MS Clarity、GA(gtag)、umami、asciinema（Utterances loader 与 emaction 已自托管）
 #   connect: Clarity / GA 上报端点、umami、emaction API
 #   frame:  utterances 与 asciinema 的 iframe
 #   img/media 放宽（历年文章图片/视频分布在多个图床）
@@ -33,9 +33,9 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    # Executable inline markup is forbidden. Third-party code is limited to the exact services used at runtime;
-    # the emaction bundle is patched and self-hosted so neither jsDelivr nor inline component styles are trusted.
-    Content-Security-Policy = "default-src 'self'; script-src 'self' https://utteranc.es https://*.clarity.ms https://www.googletagmanager.com https://umami.gujiakai.top https://asciinema.org https://static.cloudflareinsights.com; script-src-attr 'none'; style-src 'self'; style-src-elem 'self'; style-src-attr 'none'; img-src * data: blob:; media-src https:; font-src 'self' data:; connect-src 'self' https://*.clarity.ms https://*.google-analytics.com https://analytics.google.com https://*.analytics.google.com https://www.google.com https://www.googletagmanager.com https://stats.g.doubleclick.net https://umami.gujiakai.top https://api-emaction.gujiakai.top https://cloudflareinsights.com; frame-src https://utteranc.es https://asciinema.org; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'"
+    # Executable inline markup is forbidden. Utterances is embedded by the local loader, and the emaction bundle
+    # remains patched and self-hosted; only their runtime frame/API origins are trusted.
+    Content-Security-Policy = "default-src 'self'; script-src 'self' https://*.clarity.ms https://www.googletagmanager.com https://umami.gujiakai.top https://asciinema.org https://static.cloudflareinsights.com; script-src-attr 'none'; style-src 'self'; style-src-elem 'self'; style-src-attr 'none'; img-src * data: blob:; media-src https:; font-src 'self' data:; connect-src 'self' https://*.clarity.ms https://*.google-analytics.com https://analytics.google.com https://*.analytics.google.com https://www.google.com https://www.googletagmanager.com https://stats.g.doubleclick.net https://umami.gujiakai.top https://api-emaction.gujiakai.top https://cloudflareinsights.com; frame-src https://utteranc.es https://asciinema.org; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'"
     X-Frame-Options = "SAMEORIGIN"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"

@@ -1,14 +1,9 @@
 {{ define "main" }}
 {{ $paginator := .Paginate (where .Site.RegularPages "Type" "==" "blog") }}
-<header class="home-intro">
-  <h1 class="home-title">{{ .Site.Title }}</h1>
-  {{ with .Site.Params.description }}
-  <p class="home-description">{{ . }}</p>
-  {{ end }}
-  {{ if gt $paginator.PageNumber 1 }}
-  <p class="home-page-number">{{ i18n "pageNumber" (dict "Number" $paginator.PageNumber) }}</p>
-  {{ end }}
-</header>
+<h1 class="visually-hidden">
+  {{- .Site.Title -}}
+  {{- if gt $paginator.PageNumber 1 }} — {{ i18n "pageNumber" (dict "Number" $paginator.PageNumber) }}{{ end -}}
+</h1>
 
 <section class="card-deck post-list" aria-label="{{ i18n "recentPosts" }}">
   {{ range $paginator.Pages }}
