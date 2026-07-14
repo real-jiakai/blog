@@ -1,10 +1,11 @@
 ---
 title: "Phind VS Devv"
 date: 2025-03-25T14:21:17+08:00
+lastmod: 2025-03-25
 tags: ['ai', '编程', '搜索','phind','devv']
 slug: "phind-vs-devv"
 translationKey: "phind-vs-devv"
-summary: 分享AI编程搜索Phind和Devv的体验。
+summary: "围绕AI编程搜索Phind和Devv的体验，整理个人实践、结果与体会。"
 showtoc: true
 ---
 

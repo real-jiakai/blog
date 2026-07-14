@@ -1,13 +1,16 @@
 ---
 title: "Claude 3.5 Haiku Review"
 date: 2024-11-05T10:11:43+08:00
+lastmod: 2024-11-05
 tags: ['claude', 'anthropic']
 slug: "claude-3-5-haiku-review"
 translationKey: "claude-3-5-haiku-review"
-summary: Recording my Claude 3.5 Haiku review.
+summary: "Benchmarks Claude 3.5 Haiku's speed, pricing, July 2024 knowledge cutoff, coding ability, and lack of image input against Sonnet."
 showtoc: false
 draft: false
 ---
+
+## Testing Claude 3.5 Haiku
 
 1. Ranks 4th on the aider code leaderboard.
 

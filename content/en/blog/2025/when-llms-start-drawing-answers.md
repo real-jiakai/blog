@@ -1,10 +1,11 @@
 ---
 title: "When LLMs Start Drawing Answers"
 date: 2025-12-10T08:51:08+08:00
+lastmod: 2025-12-10
 tags: ['llm', 'visualization']
 slug: "when-llms-start-drawing-answers"
 translationKey: "when-llms-start-drawing-answers"
-summary: Introducing the current state of LLM visual responses.
+summary: "Compares how ChatGPT, Grok, Yuanbao, Google AI Mode, Phind, Metaso, and GLM turn text answers into useful visual or interactive explanations."
 showtoc: true
 ---
 
@@ -44,7 +45,7 @@ I was curious what level Phind's visualization could reach powered by Claude Opu
 
 ![Subscribed to Phind Ultra membership](https://cdn.sa.net/2025/12/07/IBDkLXc3ze7C1jp.webp)
 
-Its visualization effect is similar to Visual Layout in Gemini App. Demo shown below—see this [link](https://interactive.phind.com/streaming-preview/session_1765159622734/index.html).
+Its visualization effect is similar to Visual Layout in Gemini App. See the [Phind 3 visualization demo](https://interactive.phind.com/streaming-preview/session_1765159622734/index.html) shown below.
 
 ![Phind 3 paired with Claude Opus 4.5 visualization demo](https://cdn.sa.net/2025/12/10/1cFAoweQXGqEBHy.webp)
 
@@ -52,7 +53,7 @@ Recently found domestic GLM-4.6V powered by Image Search can also generate respo
 
 ![GLM-4.6V powered by Image Search can also generate responses with web image references](https://cdn.sa.net/2025/12/10/VCbksGTQaHYlhSd.webp)
 
-Domestic Metaso search is also working on visualization. Based on domestic text-to-image model created [Meta-banana](https://mp.weixin.qq.com/s/CijVsVvj_MhyF6iezbO0Jg) to enhance visual response effects. Demo shown below—see this [link](https://metaso.cn/s/OS7xmqg).
+Domestic Metaso search is also working on visualization. Based on domestic text-to-image model created [Meta-banana](https://mp.weixin.qq.com/s/CijVsVvj_MhyF6iezbO0Jg) to enhance visual response effects. See the [Metaso visualization demo](https://metaso.cn/s/OS7xmqg) shown below.
 
 ![Domestic Metaso search is also working on visualization](https://cdn.sa.net/2025/12/10/wxlFiVem4PMrnC2.webp)
 
@@ -103,7 +104,7 @@ Google AI Mode's response intersperses referenced web images—its layout deeply
 
 ![Google AI Mode visualization demo](https://cdn.sa.net/2025/12/10/npertf9IQz2LElk.webp)
 
-Grok's response style is similar to Google AI Mode. [Link](https://grok.com/share/bGVnYWN5LWNvcHk_ffa7d6a6-4e5d-4984-aea1-fc06191b62ac).
+Grok's response style is similar to Google AI Mode. See this [Grok visualization example](https://grok.com/share/bGVnYWN5LWNvcHk_ffa7d6a6-4e5d-4984-aea1-fc06191b62ac).
 
 ![Grok visualization demo](https://cdn.sa.net/2025/12/10/CduBaM4g5Tx9QYW.webp)
 
@@ -111,7 +112,7 @@ Claude uses its coding ability to generate a webpage. Can see Claude sometimes i
 
 ![Claude visualization demo](https://cdn.sa.net/2025/12/10/5D1gRFWvQeTpzlH.webp)
 
-Phind 3 effect shown below—needs long wait since it generates an interactive mini-program. [Link](https://interactive.phind.com/streaming-preview/session_1765332699266/index.html).
+The [Phind 3 interactive visualization](https://interactive.phind.com/streaming-preview/session_1765332699266/index.html) shown below needs a long wait because it generates an interactive mini-program.
 
 ![Phind 3 visualization demo](https://cdn.sa.net/2025/12/10/nagAsq24eyOcDYL.webp)
 
@@ -119,7 +120,7 @@ Doubao uses Seedream text-to-image ability—generated corresponding storyboard.
 
 ![Doubao visualization demo](https://cdn.sa.net/2025/12/10/zt2felXJAicG5pM.webp)
 
-GLM-4.6V's response is similar to Grok—text and image interspersed layout, easier to attract audience attention. [Link](https://chat.z.ai/s/60ce90ff-062f-4ec7-912a-85c7782b7cf6).
+GLM-4.6V's response is similar to Grok—text and image interspersed layout, easier to attract audience attention. See this [GLM-4.6V visualization example](https://chat.z.ai/s/60ce90ff-062f-4ec7-912a-85c7782b7cf6).
 
 ![GLM-4.6V visualization demo](https://cdn.sa.net/2025/12/10/Nt5kvPFeYHpfGmZ.webp)
 
@@ -132,3 +133,4 @@ Yuanbao's visual referenced web images also placed at beginning like ChatGPT.
 LLMs drawing answers mainly relies on model capability. Poor coding ability means drawn answer interfaces are unattractive—users won't even want to look. Drawing answers also requires accuracy, but web content varies in quality. Poor model discernment might lead to referencing low-quality content. Poor text-to-image ability means visualization has limitations when web lacks appropriate images.
 
 Overall, current visualization effects most satisfying to me are Google AI Mode, Grok, and GLM-4.6V responses. Text and image interspersed visualization gives a narrative feeling.
+For more context on Grok's broader strengths and weaknesses beyond visual answers, see the [Grok 4 hands-on review](/en/2025/07/grok-4-real-experience/).

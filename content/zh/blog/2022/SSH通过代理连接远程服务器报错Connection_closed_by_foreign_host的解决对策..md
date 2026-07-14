@@ -1,10 +1,11 @@
 ---
-title: "SSH通过代理连接远程服务器报错Connection_closed_by_foreign_host的解决对策."
+title: "解决 SSH 代理连接被远程主机关闭"
 date: 2022-10-06T19:27:33+08:00
+lastmod: 2022-10-06
 tags: ['linux']
 slug: ssh-connect-by-proxy-error-connection-closed-by-foreign-host-solution
 translationKey: "ssh-connect-by-proxy-error-connection-closed-by-foreign-host-solution"
-summary: ssh设置代理连接远程服务器报错，经过两小时的摸索，我找到了解决对策。
+summary: "经过两小时排查，定位 SSH 代理连接时 'Connection closed by foreign host' 报错的原因与修复方法。"
 showtoc: true
 ---
 

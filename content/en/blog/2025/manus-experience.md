@@ -1,10 +1,11 @@
 ---
 title: "Manus Experience"
 date: 2025-07-17T14:33:10+08:00
+lastmod: 2025-07-19
 tags: ["manus"]
 slug: "manus-experience"
 translationKey: "manus-experience"
-summary: Complaining about Manus experience.
+summary: "Tests free and Basic Manus agents: paid mode improves effort and PPTs, but weak source judgment, opaque models, and bot checks undermine reliability."
 showtoc: true
 draft: false
 ---

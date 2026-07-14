@@ -1,10 +1,11 @@
 ---
 title: "Removing Trailing Slashes from Hugo Blog URLs"
 date: "2022-11-07T15:05:47+08:00"
+lastmod: 2025-03-04
 tags: ['hugo']
 slug: "hugo-remove-trailing-slash"
 translationKey: "hugo-remove-trailing-slash"
-summary: How to remove trailing slashes from Hugo blog URLs.
+summary: "Uses HUGO_UGLYURLS on Windows and Netlify when uglyURLs alone fails, then revisits canonical duplication that hurt Google indexing."
 showtoc: true
 ---
 

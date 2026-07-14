@@ -5,6 +5,10 @@
 [build.environment]
   HUGO_VERSION = "0.154.2"
 
+# Netlify Image CDN 仅允许代理本站文章实际使用的远程图床。
+[images]
+  remote_images = ["https://cdn\\.sa\\.net/.*", "https://vip2\\.loli\\.net/.*", "https://i\\.see\\.you/.*", "https://cdn\\.jiakai\\.page/.*", "https://image\\.gujiakai\\.top/.*"]
+
 # 只有正式域名计入分析；本地开发、分支部署和 Deploy Preview 不污染统计。
 [context.production.environment]
   HUGO_ENV = "production"
@@ -97,6 +101,24 @@
 # 按语言返回对应的 404 页面：/en/ 下的未知路径用英文 404，其余用中文 404。
 # 无 force 标记时规则只在路径没有真实文件时生效，顺序从上到下匹配。
 [[redirects]]
+  from = "/zh/"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/page/1/"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/page/1/"
+  to = "/en/"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/tags/andriod/"
   to = "/tags/android/"
   status = 301
@@ -115,21 +137,37 @@
   from = "/2023/01/the-execution-process-ls--list/"
   to = "/2023/01/the-execution-process-ls-list/"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/en/2023/01/the-execution-process-ls--list/"
   to = "/en/2023/01/the-execution-process-ls-list/"
   status = 301
+  force = true
+
+[[redirects]]
+  from = "/2023/01/the-execution-process-ls--list/index.html"
+  to = "/2023/01/the-execution-process-ls-list/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/2023/01/the-execution-process-ls--list/index.html"
+  to = "/en/2023/01/the-execution-process-ls-list/"
+  status = 301
+  force = true
 
 [[redirects]]
   from = "/2023/01/the-execution-process-ls--list.md"
   to = "/2023/01/the-execution-process-ls-list.md"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/en/2023/01/the-execution-process-ls--list.md"
   to = "/en/2023/01/the-execution-process-ls-list.md"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/en/*"

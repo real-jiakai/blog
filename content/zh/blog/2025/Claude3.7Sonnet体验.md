@@ -1,16 +1,17 @@
 ---
 title: "Claude 3.7 Sonnet体验"
 date: 2025-02-25T07:55:29+08:00
+lastmod: 2025-07-23
 tags: ['claude','anthropic']
 slug: "claude-3-7-sonnet-experience"
 translationKey: "claude-3-7-sonnet-experience"
-summary: 分享Claude 3.7 Sonnet使用体验。
+summary: "围绕Claude 3.7 Sonnet使用体验，整理个人实践、结果与体会。"
 showtoc: true
 ---
 
 ## 更新(2025.7.23)
 
-Claude Code早已不再是玩具，随着Claude 4系列模型上线，Max会员搭配上Opus 4模型简直不要太爽。懂得都懂，最强的AI编程工具！！！！！短短1～2个月的时间成功将Cursor从小甜甜变为牛夫人，也只有Anthropic亲自下场才能做到。
+Claude Code 早已不再是玩具，随着 [Claude 4 系列模型上线](/2025/05/claude-4-experience/)，Max 会员搭配上 Opus 4 模型简直不要太爽。懂得都懂，最强的 AI 编程工具！！！！！短短 1～2 个月的时间成功将 Cursor 从小甜甜变为牛夫人，也只有 Anthropic 亲自下场才能做到。
 
 ## 更新(2025.4.29)
 
@@ -225,7 +226,7 @@ Claude 3.7 Sonnet Extended思维链默认是收缩状态。
 
 ![Claude在SWE-Bench中断档式领先](https://cdn.sa.net/2025/02/25/HeFjnhGbIzKwogQ.webp)
 
-via: https://x.com/cline/status/1894108194693419450
+来源：X 用户 @cline（原帖已失效，截图保留在上文）。
 
 再来看看Phind中的Claude 3.7 Sonnet对于[aider排行榜](https://aider.chat/docs/leaderboards/)的分析。简直细思极恐，太强了！
 

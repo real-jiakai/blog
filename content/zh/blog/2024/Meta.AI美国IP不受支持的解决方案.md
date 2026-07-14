@@ -1,10 +1,11 @@
 ---
 title: "Meta.AI美国IP区域不受支持的解决方案"
 date: 2024-08-06T10:18:01+08:00
+lastmod: 2025-04-29
 tags: ["meta"]
 slug: "meta-ai-us-ip-restriction-solutions"
 translationKey: "meta-ai-us-ip-restriction-solutions"
-summary: 介绍Meta.AI美国IP区域不受支持的解决方案。
+summary: "梳理Meta.AI美国IP区域不受支持的解决方案，重点说明操作步骤、注意事项与结果。"
 showtoc: true
 ---
 

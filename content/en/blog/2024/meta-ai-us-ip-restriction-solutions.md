@@ -1,10 +1,11 @@
 ---
 title: "Meta.AI US IP Region Not Supported Solutions"
 date: 2024-08-06T10:18:01+08:00
+lastmod: 2025-04-29
 tags: ["meta"]
 slug: "meta-ai-us-ip-restriction-solutions"
 translationKey: "meta-ai-us-ip-restriction-solutions"
-summary: Introducing solutions for Meta.AI US IP region not supported error.
+summary: "Shows why a US IP alone did not bypass Meta.AI's region check and how a newly registered Facebook account on a native US connection restored access."
 showtoc: true
 ---
 

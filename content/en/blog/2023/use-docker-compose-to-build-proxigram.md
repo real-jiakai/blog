@@ -1,16 +1,17 @@
 ---
 title: "Self-hosting Proxigram with Docker"
 date: 2023-10-13T16:36:49+08:00
+lastmod: 2023-10-13
 tags: ['rss']
 slug: "use-docker-compose-to-build-proxigram"
 translationKey: "use-docker-compose-to-build-proxigram"
-summary: Introducing how to self-host Proxigram using Docker.
+summary: "Deploy Proxigram and Redis with Docker Compose, enable RSS, configure media proxying, and expose the privacy-friendly Instagram frontend."
 showtoc: true
 ---
 
 ## Background
 
-This afternoon while cleaning up my inbox, I noticed new activity in the all about rss GitHub project issues. The project author pointed out that someone discovered an Instagram to RSS solution—Proxigram.
+This afternoon while cleaning up my inbox, I noticed new activity in the all about rss GitHub project issues. The project author pointed out a new entry in my ongoing [Instagram-to-RSS options](/en/2023/01/use-rss-to-subscribe-instagram/)—Proxigram.
 
 ![all about rss project issue email notification](https://vip2.loli.net/2023/10/13/9CYO6NZjUg4nm8k.webp)
 

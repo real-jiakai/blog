@@ -1,10 +1,11 @@
 ---
 title: "chatgpt安卓报错date and time的解决方案"
 date: 2023-08-17T13:30:01+08:00
+lastmod: 2024-06-21
 tags: ['chatgpt','android']
 slug: "solving-date-and-time-error-in-chatgpt-android-app"
 translationKey: "solving-date-and-time-error-in-chatgpt-android-app"
-summary: 分享chatgpt安卓报错date and time的解决方案。
+summary: "围绕chatgpt安卓报错date and time的解决方案，整理个人实践、结果与体会。"
 showtoc: true
 ---
 

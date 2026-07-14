@@ -1,10 +1,11 @@
 ---
 title: "Feed43的继承者—Rsseverything制作RSS源教学"
 date: 2023-03-31T20:45:17+08:00
+lastmod: 2023-03-31
 tags: ["rss"]
 slug: "create-rss-feed-with-rsseverything-tutorial"
 translationKey: "create-rss-feed-with-rsseverything-tutorial"
-summary: 介绍Rsseverything制作RSS源教学。
+summary: "聚焦Rsseverything制作RSS源教学，结合实际使用说明关键体验与结论。"
 showtoc: true
 ---
 

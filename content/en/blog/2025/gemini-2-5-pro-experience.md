@@ -1,10 +1,11 @@
 ---
 title: "Gemini 2.5 Pro Experience"
 date: 2025-03-30T14:29:10+08:00
+lastmod: 2025-05-07
 tags: ['gemini']
 slug: "gemini-2-5-pro-experience"
 translationKey: "gemini-2-5-pro-experience"
-summary: Sharing my Gemini 2.5 Pro experience.
+summary: "A frequently updated evaluation of Gemini 2.5 Pro's reasoning, coding, OCR, long context, API behavior, and student access as the model evolved."
 showtoc: true
 ---
 

@@ -1,10 +1,11 @@
 ---
 title: "Ways to Subscribe to Instagram via RSS"
 date: 2023-01-19T16:40:18+08:00
+lastmod: 2023-01-19
 tags: ["rss"]
 slug: "use-rss-to-subscribe-instagram"
 translationKey: "use-rss-to-subscribe-instagram"
-summary: Introducing ways to subscribe to Instagram via RSS.
+summary: "Compares RSS-Bridge, Feedbro, Telegram bots, Proxigram, and other ways to follow Instagram, with updates on routes that later stopped working."
 showtoc: true
 ---
 

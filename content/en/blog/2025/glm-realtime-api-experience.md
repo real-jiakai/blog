@@ -1,10 +1,11 @@
 ---
 title: "GLM Realtime API Experience"
 date: 2025-01-18T15:05:49+08:00
+lastmod: 2025-03-01
 tags: ["glm"]
 slug: "glm-realtime-api-experience"
 translationKey: "glm-realtime-api-experience"
-summary: Sharing my GLM Realtime API experience.
+summary: "Builds a Claude-generated GLM Realtime API demo, tests conversation and its seven-song limit, and compares it with competing voice models."
 showtoc: true
 ---
 
@@ -60,8 +61,9 @@ Whether these 7 songs are still copyright-protected wasn't deeply researched. Se
 
 7 songs demo video:
 
-BiliBili: [https://www.bilibili.com/video/BV1DywAe4EfC/](https://www.bilibili.com/video/BV1DywAe4EfC/)
+[Watch the seven-song demo on Bilibili](https://www.bilibili.com/video/BV1DywAe4EfC/)
 
-Youtube: [https://www.youtube.com/watch?v=xsRXGFBHBDg](https://www.youtube.com/watch?v=xsRXGFBHBDg)
+[Watch the seven-song demo on YouTube](https://www.youtube.com/watch?v=xsRXGFBHBDg)
 
 Hope domestic AI gets better in 2025. Zhipu is my Top 4 domestic AI—top three are Alibaba's Qwen, DeepSeek, and ByteDance's Doubao.
+A later [Doubao real-time voice test](/en/2025/01/doubao-real-time-on-pitch-songs/) shows how quickly the singing experience advanced beyond this seven-song limit.

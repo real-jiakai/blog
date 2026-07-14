@@ -1,10 +1,11 @@
 ---
 title: "Google One VPN停用的替代方案"
 date: 2024-04-19T18:08:18+08:00
+lastmod: 2025-01-06
 tags: ["google one vpn"]
 slug: "alternatives-to-google-one-vpn-shutdown"
 translationKey: "alternatives-to-google-one-vpn-shutdown"
-summary: 介绍Google One VPN停用的替代方案。
+summary: "聚焦Google One VPN停用的替代方案，结合实际使用说明关键体验与结论。"
 showtoc: true
 ---
 
@@ -73,7 +74,7 @@ showtoc: true
 
 ## 更新(2024.06.17)
 
-今天趁下午有空，将本篇博文中提及的解决方案以及一些未提及补充的解决方案整理到了Google Sheet上。欢迎阅读本博文的同时，搭配该表格查看。[link](https://docs.google.com/spreadsheets/d/1G3zJ6BPfYlom30NFIH0wgnpj01JCl56SgAFW9zFdspU/edit?usp=sharing)
+今天趁下午有空，将本篇博文中提及的方案和一些补充方案整理成了[Google One VPN 替代方案表格](https://docs.google.com/spreadsheets/d/1G3zJ6BPfYlom30NFIH0wgnpj01JCl56SgAFW9zFdspU/edit?usp=sharing)，可搭配本文查看。
 
 ## 更新(2024.06.16)
 
@@ -268,3 +269,4 @@ via: [The Google One VPN service is heading to the Google graveyard](https://www
 在这个AIGC盛行的时代，Google为Google One添加了AI Premium套餐，而Google One VPN则因为所谓的用户稀少为由，即将被终止。
 
 在Google One VPN存活的四年时间里面，我享受了1年左右的时间(2023.5~2024.6)的服务，最后对Google One VPN道一声感谢，感谢Google One VPN，帮助我流畅地访问各大AI服务。
+一个具体案例，是用它的出口解决 [ChatGPT 安卓端 “Disallowed ISP” 报错](/2023/10/chatgpt-android-error-disallowed-isp-solution/)。

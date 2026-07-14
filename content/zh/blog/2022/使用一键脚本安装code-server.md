@@ -1,6 +1,7 @@
 ---
 title: "使用一键脚本安装code-server"
 date: 2022-08-17T15:40:02+08:00
+lastmod: 2022-08-17
 draft: false
 tags: ['github']
 slug: use-script-to-install-code-server

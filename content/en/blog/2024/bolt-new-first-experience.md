@@ -1,12 +1,15 @@
 ---
 title: "bolt.new First Experience"
 date: 2024-10-10T16:11:35+08:00
+lastmod: 2024-10-10
 tags: ["ai", "frontend"]
 slug: "bolt-new-first-experience"
 translationKey: "bolt-new-first-experience"
-summary: Introducing my first experience using bolt.new to complete a simple project.
+summary: "Builds a live Markdown tree generator with bolt.new, then evaluates its package support, token use, Netlify deployment, and backend limitations."
 showtoc: false
 ---
+
+## Building a Demo with bolt.new
 
 In the morning I reviewed some Traefik knowledge. At noon when preparing to take notes, I remembered the "Tree Directory Visualization Generator" in developer tools—using this tool to show project structure is really intuitive.
 
@@ -30,7 +33,7 @@ Completing this project used 100k+ tokens. Daily free quota is 150k tokens.
 
 ![Project token usage](https://cdn.sa.net/2024/10/10/br5JK7zPIL1lk8n.webp)
 
-The Tree Directory Visualization Generator I forgot: [https://devtool.tech/tree](https://devtool.tech/tree), developed by Shanyue.
+The tool I had forgotten was Shanyue's [Tree Directory Visualization Generator](https://devtool.tech/tree).
 
 ![Project inspiration—Tree Directory Visualization Generator](https://cdn.sa.net/2024/10/10/TaMOjkWphvCGr8V.webp)
 

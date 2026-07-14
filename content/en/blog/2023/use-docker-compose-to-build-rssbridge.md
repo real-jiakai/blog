@@ -1,14 +1,17 @@
 ---
 title: "RSS-Bridge Setup Guide"
 date: 2023-02-20T10:27:14+08:00
+lastmod: 2023-02-20
 tags: ['rss','rssbridge']
 slug: "use-docker-compose-to-build-rssbridge"
 translationKey: "use-docker-compose-to-build-rssbridge"
-summary: Introducing how to set up RSS-Bridge.
+summary: "Deploy RSS-Bridge with Docker, enable the Picuki Instagram bridge, set the timezone, and publish it behind Caddy."
 showtoc: true
 ---
 
 > Note: Self-hosting RSS-Bridge is purely for using its Picuki bridge to track celebrity Instagram. Public instances' Picuki bridge gets blocked by Picuki due to too many users.
+>
+> The [broader comparison of Instagram RSS methods](/en/2023/01/use-rss-to-subscribe-instagram/) tracks this bridge and the alternatives that later appeared.
 
 ![Picuki 403 forbidden](https://vip2.loli.net/2023/02/20/XvYH4i3h7SN5tWr.webp)
 

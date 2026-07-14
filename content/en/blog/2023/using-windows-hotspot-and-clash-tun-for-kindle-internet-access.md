@@ -1,10 +1,11 @@
 ---
-title: "Using Windows Hotspot and Clash TUN Mode for Kindle Internet Access"
+title: "Use Windows Hotspot and Clash TUN with Kindle"
 date: 2023-09-22T12:18:22+08:00
+lastmod: 2023-09-22
 tags: ['kindle','proxy']
 slug: "using-windows-hotspot-and-clash-tun-for-kindle-internet-access"
 translationKey: "using-windows-hotspot-and-clash-tun-for-kindle-internet-access"
-summary: Introducing how to use Windows hotspot and Clash TUN mode to enable proxy access on Kindle.
+summary: "Configure a Windows hotspot and Clash TUN mode so a Kindle can route its traffic through the computer's proxy."
 showtoc: true
 ---
 

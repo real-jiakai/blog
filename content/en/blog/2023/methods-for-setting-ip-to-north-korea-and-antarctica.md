@@ -1,10 +1,11 @@
 ---
-title: "Methods for Setting IP Location to North Korea and Antarctica"
+title: "Set IP Geolocation to North Korea or Antarctica"
 date: 2023-08-17T14:02:16+08:00
+lastmod: 2025-11-01
 tags: ["ip"]
 slug: "methods-for-setting-ip-to-north-korea-and-antarctica"
 translationKey: "methods-for-setting-ip-to-north-korea-and-antarctica"
-summary: Sharing methods for setting IP location to North Korea and Antarctica.
+summary: "How custom geofeed data and BGP announcements can make an IP prefix appear in North Korea or Antarctica in geolocation databases."
 showtoc: true
 ---
 
@@ -56,7 +57,7 @@ via:
 
 [North Korea IPs Officially Become History](https://hostloc.com/thread-1375126-1-1.html)
 
-[What Methods Are There Now to Get IPv4 North Korea IP](https://www.nodeseek.com/post-220760-1)
+NodeSeek discussion “What Methods Are There Now to Get an IPv4 North Korea IP” (no longer available)
 
 [North Korea Home Broadband](https://www.nodeseek.com/post-180748-1)
 
@@ -153,4 +154,4 @@ After setup, select North Korea or Antarctica nodes, enable global mode, and you
 
 VPN services are not recommended - not secure.
 
-If you have strong hands-on abilities and are willing to tinker, check out this tutorial—[Tutorial: How to Get an Antarctica IP](https://www.nodeseek.com/post-16500-1).
+If you have strong hands-on abilities and are willing to tinker, the now-unavailable NodeSeek tutorial “How to Get an Antarctica IP” documented a more involved approach.

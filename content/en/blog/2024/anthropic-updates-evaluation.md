@@ -1,10 +1,11 @@
 ---
 title: "Anthropic Updates Evaluation"
 date: 2024-10-23T15:11:43+08:00
+lastmod: 2024-12-26
 tags: ['claude', 'anthropic']
 slug: "anthropic-updates-evaluation"
 translationKey: "anthropic-updates-evaluation"
-summary: Recording my evaluation of Anthropic's updates on October 22, 2024.
+summary: "Tests Claude's October 2024 Computer Use and revised 3.5 Sonnet, noting stronger coding and reasoning alongside prompt-sensitive Chinese output."
 showtoc: true
 draft: false
 ---

@@ -1,11 +1,14 @@
 ---
 title: "Read Later = Never Read"
 date: 2023-01-11T12:08:02+08:00
+lastmod: 2023-01-11
 tags: ['productivity']
 slug: "read-later-equals-to-not-read"
 translationKey: "read-later-equals-to-not-read"
-summary: Sharing my insights on using read-later apps.
+summary: "Why a 2,500-item Pocket backlog turned read-later into information hoarding, and the rules adopted after clearing it."
 ---
+
+## Why My Read-Later Queue Failed
 
 Today is my third day after clearing my Pocket account, and I want to share my thoughts on read-later software.
 

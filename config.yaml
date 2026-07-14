@@ -36,8 +36,22 @@ permalinks:
 # 分页器
 pagination:
   pagerSize: 5
+# 文章相关推荐优先按标签匹配，并用同年文章兜底；允许推荐较新的文章，让旧文也能形成有效的站内链接。
+related:
+  includeNewer: true
+  threshold: 10
+  toLower: true
+  indices:
+    - name: tags
+      weight: 100
+    - name: date
+      pattern: "2006"
+      weight: 10
 # 开启robots.txt
 enableRobotsTXT: true
+# 不生成内容前置数据声明的别名页；Hugo 固有的语言/分页别名由 layouts/alias.html 标记 noindex，
+# 并在 Netlify 上通过 force 规则返回真正的 301。
+disableAliases: true
 # 只使用 tags 分类；不声明的话 Hugo 默认还会生成空的 categories
 # 页面（/categories/ 与 /en/categories/）及其 RSS
 taxonomies:

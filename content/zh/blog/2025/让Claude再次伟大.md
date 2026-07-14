@@ -1,12 +1,15 @@
 ---
 title: "让Claude再次伟大!"
 date: 2025-08-06T18:28:21+08:00
+lastmod: 2025-08-06
 tags: ['claude']
 slug: "make-claude-great-again"
 translationKey: "make-claude-great-again"
-summary: 分享近期有关Claude产品的使用心得。
+summary: "围绕近期有关Claude产品的使用心得，整理个人实践、结果与体会。"
 showtoc: false
 ---
+
+## Claude 为什么重新赢得我的信任
 
 ![Make Claude Great Again!](https://cdn.sa.net/2025/08/06/76IRckCSMdUpXFt.webp)
 

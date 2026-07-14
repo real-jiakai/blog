@@ -1,12 +1,15 @@
 ---
-title: "机缘巧合：我与Bero Host优惠VPS的不期而遇"
+title: "我与 Bero Host 优惠 VPS 的意外相遇"
 date: 2024-08-30T15:36:25+08:00
+lastmod: 2024-08-30
 tags: ['vps']
 slug: "unexpected-bero-host-vps-bargain"
 translationKey: "unexpected-bero-host-vps-bargain"
-summary: 记录自己朝思暮想的VPS从天而降的经历。
+summary: "一次偶然机会让我入手 Bero Host 优惠 VPS，文章整理其配置、网络、价格与初步性能。"
 showtoc: false
 ---
+
+## 如何遇到这台 Bero Host
 
 今年9月底搬瓦工家的The Plan v2快到期了，我也不准备续费。所以我一直在探索一台高配鸡来全面接管我的一些自建服务，以优化我的vps方案。
 

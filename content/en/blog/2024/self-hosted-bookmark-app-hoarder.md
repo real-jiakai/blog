@@ -1,10 +1,11 @@
 ---
 title: "Self-Hosted Bookmark App—Karakeep (formerly Hoarder)"
 date: 2024-10-05T15:53:21+08:00
+lastmod: 2025-04-07
 tags: ["bookmark"]
 slug: "self-hosted-bookmark-app-hoarder"
 translationKey: "self-hosted-bookmark-app-hoarder"
-summary: Sharing my experience self-hosting the bookmark app Karakeep (formerly Hoarder).
+summary: "Migrates from an expired Raindrop subscription to self-hosted Karakeep, covering Docker deployment, AI tagging, mobile access, and the rename from Hoarder."
 showtoc: true
 ---
 
@@ -14,11 +15,11 @@ Hoarder app renamed to Karakeep. Due to trademark disputes, the developer was fo
 
 Related links:
 
-- https://www.reddit.com/r/selfhosted/comments/1i29pi1/hoarder_the_name_is_being_stolen_from_me/
+- [Reddit discussion about Hoarder's name change](https://www.reddit.com/r/selfhosted/comments/1i29pi1/hoarder_the_name_is_being_stolen_from_me/)
 
-- https://lemmy.world/post/27844912
+- [Lemmy discussion about the Hoarder name dispute](https://lemmy.world/post/27844912)
 
-- https://github.com/karakeep-app/karakeep
+- [Karakeep GitHub repository](https://github.com/karakeep-app/karakeep)
 
 ## Background Story
 
@@ -38,9 +39,9 @@ After expiration, I started looking for bookmark app alternatives. Just saw YouT
 
 ## Self-Hosting Process
 
-Project: [https://github.com/hoarder-app/hoarder](https://github.com/hoarder-app/hoarder)
+Project: [Hoarder GitHub repository](https://github.com/hoarder-app/hoarder)
 
-Docs: [https://docs.hoarder.app/](https://docs.hoarder.app/)
+Docs: [Hoarder documentation](https://docs.hoarder.app/)
 
 ```bash
 # Go to home directory, create hoarder folder, enter new folder
@@ -191,6 +192,7 @@ Open-source projects aren't unusable—just can't beat Raindrop. App is OK too�
 ![Hoarder app is also OK](https://cdn.sa.net/2024/10/05/Y9JF8Sg6yIULi3v.webp)
 
 That's it. Future SaaS services like Readwise, Inoreader will continue being replaced by open-source projects.
+This project also refined the rule from my earlier [reflection on unused self-hosted services](/en/2024/04/fake-selfhost-lover/): keep only tools that solve a recurring need.
 
 I've tried my best to utilize Bero Host machine, but this machine's specs are too high—enough for me to keep tinkering.
 

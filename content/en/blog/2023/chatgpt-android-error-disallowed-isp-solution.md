@@ -1,10 +1,11 @@
 ---
-title: "Solution for ChatGPT Android Error: Disallowed ISP / There is a problem with your request"
+title: "Fix ChatGPT Android 'Disallowed ISP' Errors"
 date: 2023-10-16T18:06:02+08:00
+lastmod: 2023-12-13
 tags: ['chatgpt']
 slug: "chatgpt-android-error-disallowed-isp-solution"
 translationKey: "chatgpt-android-error-disallowed-isp-solution"
-summary: Solutions for ChatGPT Android error "disallowed ISP" or "There is a problem with your request".
+summary: "Diagnose ChatGPT Android's 'Disallowed ISP' and 'There is a problem with your request' errors with endpoint checks and a secondary proxy exit."
 showtoc: true
 ---
 
@@ -12,7 +13,7 @@ showtoc: true
 
 Shadowrocket's Telegram channel provided a method to check if a node can access GPT.
 
-Visit: [https://ios.chat.openai.com/public-api/mobile/server_status/v1](https://ios.chat.openai.com/public-api/mobile/server_status/v1)
+Check the [ChatGPT iOS mobile server-status endpoint](https://ios.chat.openai.com/public-api/mobile/server_status/v1).
 
 ![Shadowrocket TG channel's method to check GPT node accessibility](https://cdn.sa.net/2023/12/13/biMkcv4CgDs3Nzd.webp)
 
@@ -28,7 +29,7 @@ The error message on the server side of proxy nodes that don't unlock GPT mobile
 
 ## Update (2023.11.21)
 
-Recently saw a great post on NodeSeek forum - [ChatGPT Android/iOS Unlock Methods](https://www.nodeseek.com/post-31717-1). It mentions the criteria for unlocking mobile ChatGPT.
+A now-deleted NodeSeek forum post titled “ChatGPT Android/iOS Unlock Methods” documented the criteria for unlocking mobile ChatGPT.
 
 ![NodeSeek post - ChatGPT Android/iOS unlock methods](https://vip2.loli.net/2023/11/21/pXqiZfDxhkmQSab.webp)
 
@@ -68,7 +69,7 @@ My solution: Route OpenAI-related domain requests through Google One VPN exit ma
 
 References:
 
-- [ChatGPT Android/iOS Unlock Methods](https://www.nodeseek.com/post-31717-1)
+- NodeSeek forum post “ChatGPT Android/iOS Unlock Methods” (no longer available; the key screenshot is preserved above)
 
 ## Background
 
@@ -93,6 +94,7 @@ Using my Google One VPN as ChatGPT traffic exit allowed the ChatGPT Android app 
 For specific steps, see Buliang Lin's secondary proxy videos. Configure the Xray settings in the Linux VPS's X-UI panel.
 
 For setting up Google One VPN on Windows and making it into a node, you can search online - I won't elaborate here.
+Google later discontinued the service; see the [current Google One VPN alternatives](/en/2024/04/alternatives-to-google-one-vpn-shutdown/) for replacement exits.
 
 ## Epilogue
 

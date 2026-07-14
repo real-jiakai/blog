@@ -1,10 +1,11 @@
 ---
 title: "A Young Person's First ASN"
 date: 2024-06-04T15:36:56+08:00
+lastmod: 2024-12-24
 tags: ["asn"]
 slug: "the-first-asn-of-young-people"
 translationKey: "the-first-asn-of-young-people"
-summary: Introducing my experience of obtaining an ASN and configuring its corresponding IPv6 address.
+summary: "Obtains AS214948 and an IPv6 /48, configures a BGP session with bird2, then documents rising costs and the eventual return of the resources."
 showtoc: true
 ---
 

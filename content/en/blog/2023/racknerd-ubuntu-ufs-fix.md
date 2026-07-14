@@ -1,12 +1,15 @@
 ---
-title: "Solution for RackNerd Ubuntu Error 'UFS: unable to mount root fs on unknown-block'"
+title: "Fix Ubuntu 'Unable to Mount Root FS' on RackNerd"
 date: 2023-11-14T14:48:57+08:00
+lastmod: 2023-11-14
 tags: ['vps','linux']
 slug: "racknerd-ubuntu-ufs-fix"
 translationKey: "racknerd-ubuntu-ufs-fix"
-summary: "Introducing the solution for RackNerd Ubuntu machine error 'UFS: unable to mount root fs on unknown-block.'"
+summary: "Recover a RackNerd Ubuntu VPS from 'UFS: unable to mount root fs on unknown-block' by booting an older kernel and restoring networking."
 showtoc: false
 ---
+
+## What Triggered the Failure
 
 RackNerd's 2023 Black Friday event kicked off in the early morning hours of today (Beijing time). This time I purchased the most expensive Linux VPS. [Same VPS Black Friday package purchase link](https://my.racknerd.com/aff.php?aff=9721&a=add&pid=796)
 
@@ -44,6 +47,8 @@ echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
 # Apply new system control parameters immediately
 sysctl -p
 ```
+
+## Recovering with an Older Kernel
 
 But when I tried to SSH connect the second time, I couldn't connect at all, even with proxy configured.
 
@@ -88,6 +93,8 @@ update-grub
 # Reboot system
 reboot
 ```
+
+## Restoring Network Access
 
 After these operations, I could enter the new kernel 5.15.0-88-generic system, but found the network wasn't connecting.
 

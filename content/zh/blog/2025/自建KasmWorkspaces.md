@@ -1,10 +1,11 @@
 ---
 title: "自建Kasm Workspaces"
-date: 2025-03-31T8:40:02+08:00
+date: 2025-03-31T08:40:02+08:00
+lastmod: 2025-04-15
 tags: ['kasmworkspaces']
 slug: "self-hosted-kasm-workspaces"
 translationKey: "self-hosted-kasm-workspaces"
-summary: 分享自建Kasm Workspaces的经历。
+summary: "围绕自建Kasm Workspaces的经历，整理个人实践、结果与体会。"
 showtoc: true
 ---
 
@@ -307,6 +308,7 @@ OpenAI是真小人，骂归骂，用归用。
 通过Kasm Workspaces尽可能消除一些明显的代理特征，以及定期清空自己的聊天记录，销毁证据，OpenAI优先注意的肯定不是这类账号。
 
 推荐有高配机器且为了能稳定访问ChatGPT、Claude服务的小伙伴搭建。
+如果其他自托管服务更适合使用图形化反向代理，也可以参考单独的 [Zoraxy 部署记录](/2024/05/selfhost-zoraxy-an-alternative-to-nginx-proxy-manager/)。
 
 [^1]: https://kasmweb.com/docs/latest/install/system_requirements.html#resource-requirements
 

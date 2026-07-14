@@ -1,0 +1,20 @@
+{{- $image := "" -}}
+{{- $isFallback := false -}}
+{{- with .Params.image -}}
+  {{- $image = . -}}
+{{- else -}}
+  {{/* 从 Markdown 源文提取稳定的原图 URL，避免把渲染后的代理 URL 或 &amp; 写入元数据。 */}}
+  {{- $matches := findRESubmatch `!\[[^\]]*\]\(<?(https?://[^\s)>]+)>?(?:\s+["'][^"']*["'])?\)` .RawContent 1 -}}
+  {{- if gt (len $matches) 0 -}}
+    {{- $image = index (index $matches 0) 1 -}}
+  {{- end -}}
+{{- end -}}
+{{- if not $image -}}
+  {{/* Netlify Image CDN 把品牌 SVG 转成社交平台广泛支持的 1200px PNG。 */}}
+  {{- $image = "/.netlify/images?url=/images/social-card.svg&fm=png&w=1200" -}}
+  {{- $isFallback = true -}}
+{{- end -}}
+{{- if not (or (hasPrefix $image "https://") (hasPrefix $image "http://")) -}}
+  {{- $image = absURL $image -}}
+{{- end -}}
+{{- return (dict "url" $image "isFallback" $isFallback) -}}

@@ -1,11 +1,14 @@
 ---
 title: "Are Docker Container Services Not Limited by Firewall?"
 date: 2023-03-07T11:15:46+08:00
+lastmod: 2023-03-07
 slug: "will-docker-container-be-limited-by-firewall"
 translationKey: "will-docker-container-be-limited-by-firewall"
 tags: ["docker","linux"]
 summary: Solutions for Docker container services bypassing firewall restrictions.
 ---
+
+## Why Docker Bypasses UFW
 
 Recently when running Docker services on a GreenCloud VPS, I noticed a strange phenomenon. When running a Memos container, UFW didn't allow the corresponding port, but I could still access the Memos container service via IP address:5230.
 

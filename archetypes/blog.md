@@ -1,6 +1,7 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
+lastmod: {{ .Date }}
 tags: []
 slug: ""
 # translationKey 用于关联中英互译文章：必须与 slug 相同，且中英两篇的值一致。

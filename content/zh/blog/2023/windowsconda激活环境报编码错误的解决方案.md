@@ -1,10 +1,11 @@
 ---
-title: "windows git bash conda激活环境报错UnicodeDecodeError: 'gbk' codec can't decode byte 0xaf in position 271: illegal multibyte sequence的解决方案"
+title: "Windows Conda UnicodeDecodeError 修复"
 date: 2023-09-30T15:50:09+08:00
+lastmod: 2023-09-30
 tags: ['python','conda']
 slug: "conda-activation-error-unicode-decode-gbk"
 translationKey: "conda-activation-error-unicode-decode-gbk"
-summary: "介绍windows git bash conda激活环境报错UnicodeDecodeError: 'gbk' codec can't decode byte 0xaf in position 271: illegal multibyte sequence的解决方案。"
+summary: "针对 Conda 激活时出现的 'gbk codec can't decode byte' 报错，说明 Windows Git Bash 中的编码修复方法。"
 showtoc: true
 ---
 

@@ -1,10 +1,11 @@
 ---
-title: "Solution for 'Failed to parse PID from file /usr/local/nginx/logs/nginx.pid: Invalid argument'"
+title: "Fix Nginx 'Failed to Parse PID' After Installation"
 date: 2023-01-14T19:29:39+08:00
+lastmod: 2023-01-14
 tags: ['nginx']
 slug: "a-solution-about-nginx-problem"
 translationKey: "a-solution-about-nginx-problem"
-summary: Introducing the solution for a bug encountered during nginx installation.
+summary: "How to resolve the 'Failed to parse PID from file /usr/local/nginx/logs/nginx.pid: Invalid argument' service error after installing Nginx."
 showtoc: true
 ---
 

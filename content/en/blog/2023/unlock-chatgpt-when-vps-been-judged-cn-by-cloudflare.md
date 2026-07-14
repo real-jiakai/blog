@@ -1,12 +1,15 @@
 ---
 title: "Unlocking ChatGPT for VPS in Non-OpenAI Service Regions"
 date: 2023-06-01T11:15:46+08:00
+lastmod: 2023-06-01
 tags: ['vps','chatgpt','openai']
 slug: "unlock-chatgpt-when-vps-been-judged-cn-by-cloudflare"
 translationKey: "unlock-chatgpt-when-vps-been-judged-cn-by-cloudflare"
-summary: Sharing how to use secondary proxy to unlock ChatGPT for VPS in non-OpenAI service regions.
+summary: "Route ChatGPT traffic through a secondary proxy when WARP leaves a Hong Kong VPS—or another misclassified IP—outside supported regions."
 showtoc: false
 ---
+
+## Why WARP Was Not Enough
 
 A while ago, I was busy with my graduation project and reading daily tech news, so blog updates were less frequent. I've been wanting to write this article for a while. I own VPS with CMI and CN2 routes in Hong Kong.
 

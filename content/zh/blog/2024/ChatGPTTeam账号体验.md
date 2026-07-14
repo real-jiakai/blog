@@ -1,12 +1,15 @@
 ---
 title: "ChatGPT Team账号体验"
 date: 2024-01-12T10:29:48+08:00
+lastmod: 2024-01-12
 tags: ["openai","chatgpt"]
 slug: "chatgpt-team-experience"
 translationKey: "chatgpt-team-experience"
-summary: 记录自己使用ChatGPT Team账号体验感受。
+summary: "回顾自己使用ChatGPT Team账号体验感受，梳理完整过程、结果与可复用经验。"
 showtoc: false
 ---
+
+## Team 套餐提供了什么
 
 OpenAI在昨天正式推出GPT Store。
 

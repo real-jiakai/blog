@@ -1,13 +1,16 @@
 ---
 title: "Claude 3.5 Haiku测评"
 date: 2024-11-05T10:11:43+08:00
+lastmod: 2024-11-05
 tags: ['claude', 'anthropic']
 slug: "claude-3-5-haiku-review"
 translationKey: "claude-3-5-haiku-review"
-summary: 记录Claude 3.5 Haiku测评。
+summary: "回顾Claude 3.5 Haiku测评，梳理完整过程、结果与可复用经验。"
 showtoc: false
 draft: false
 ---
+
+## 实测 Claude 3.5 Haiku
 
 1、aider代码排行榜排名第四。
 

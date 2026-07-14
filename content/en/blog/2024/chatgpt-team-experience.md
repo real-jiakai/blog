@@ -1,12 +1,15 @@
 ---
 title: "ChatGPT Team Account Experience"
 date: 2024-01-12T10:29:48+08:00
+lastmod: 2024-01-12
 tags: ["openai","chatgpt"]
 slug: "chatgpt-team-experience"
 translationKey: "chatgpt-team-experience"
-summary: Recording my experience using a ChatGPT Team account.
+summary: "Explains the early ChatGPT Team workspace, its higher message limits and privacy controls, while warning about an invitation loophole used to join."
 showtoc: false
 ---
+
+## What the Team Plan Included
 
 OpenAI officially launched the GPT Store yesterday.
 

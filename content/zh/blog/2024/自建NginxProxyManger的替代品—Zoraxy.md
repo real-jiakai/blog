@@ -1,14 +1,15 @@
 ---
-title: "自建Nginx Proxy Manger的替代品—Zoraxy"
+title: "自建 Zoraxy：Nginx Proxy Manager 的替代方案"
 date: 2024-05-12T19:36:34+08:00
+lastmod: 2024-05-12
 tags: ["反向代理", "zoraxy"]
 slug: "selfhost-zoraxy-an-alternative-to-nginx-proxy-manager"
 translationKey: "selfhost-zoraxy-an-alternative-to-nginx-proxy-manager"
-summary: 自建Nginx Proxy Manger的替代品—Zoraxy。
+summary: "回顾 Zoraxy 的 Docker 部署、反向代理、证书、访问控制和容器网络配置，梳理完整过程、结果与可复用经验。"
 showtoc: true
 ---
 
-前一阵子，看到了一个新的反向代理项目—[Zoraxy](https://github.com/tobychui/zoraxy/)。当时简单试用了一下，给我的感觉是这个反向代理类似Nginx Proxy Manger。
+前一阵子，看到了一个新的反向代理项目—[Zoraxy](https://github.com/tobychui/zoraxy/)。当时简单试用了一下，给我的感觉是这个反向代理类似 Nginx Proxy Manager。
 
 这个项目也支持docker部署，添加反向代理规则也在一个后台管理界面中可视化完成。
 

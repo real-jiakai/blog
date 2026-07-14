@@ -1,10 +1,11 @@
 ---
 title: "Claude Sonnet 4.5短评"
 date: 2025-09-30T08:12:17+08:00
+lastmod: 2025-10-09
 tags: ['claude', 'anthropic']
 slug: "claude-sonnet-4-5-review"
 translationKey: "claude-sonnet-4-5-review"
-summary: 分享Claude Sonnet 4.5体验。
+summary: "围绕Claude Sonnet 4.5体验，整理个人实践、结果与体会。"
 showtoc: true
 ---
 

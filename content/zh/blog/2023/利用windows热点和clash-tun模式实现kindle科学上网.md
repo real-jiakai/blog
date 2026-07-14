@@ -1,10 +1,11 @@
 ---
-title: "利用windows热点和clash-tun模式实现kindle科学上网"
+title: "用 Windows 热点和 Clash TUN 让 Kindle 联网"
 date: 2023-09-22T12:18:22+08:00
+lastmod: 2023-09-22
 tags: ['kindle','科学上网']
 slug: "using-windows-hotspot-and-clash-tun-for-kindle-internet-access"
 translationKey: "using-windows-hotspot-and-clash-tun-for-kindle-internet-access"
-summary: 介绍利用windows热点和clash-tun模式实现kindle科学上网的方法。
+summary: "配置 Windows 热点和 Clash TUN 模式，让 Kindle 的网络流量通过电脑代理转发。"
 showtoc: true
 ---
 

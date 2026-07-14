@@ -1,10 +1,11 @@
 ---
 title: "Grok 4 Real Experience"
 date: 2025-07-12T08:28:46+08:00
+lastmod: 2025-07-12
 tags: ["grok"]
 slug: "grok-4-real-experience"
 translationKey: "grok-4-real-experience"
-summary: Sharing my Grok 4 real experience.
+summary: "Tests Grok 4's X-native search, agent workflow, low censorship, image recognition, Deep Research, and weaker Chinese-language performance."
 showtoc: true
 ---
 

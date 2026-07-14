@@ -1,10 +1,11 @@
 ---
 title: "hxservers搭建google one vpn节点教程"
 date: 2023-10-04T18:54:34+08:00
+lastmod: 2023-11-27
 tags: ['vps','google one vpn']
 slug: "hxservers-google-one-node-setup-guide"
 translationKey: "hxservers-google-one-node-setup-guide"
-summary: 介绍hxservers服务器搭建google one vpn节点的方法。
+summary: "梳理hxservers服务器搭建google one vpn节点的方法，重点说明操作步骤、注意事项与结果。"
 showtoc: true
 ---
 

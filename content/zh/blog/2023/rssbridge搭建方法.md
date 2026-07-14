@@ -1,15 +1,18 @@
 ---
 title: "rssbridge搭建方法"
 date: 2023-02-20T10:27:14+08:00
+lastmod: 2023-02-20
 tags: ['rss','rssbridge']
 slug: "use-docker-compose-to-build-rssbridge"
 translationKey: "use-docker-compose-to-build-rssbridge"
-summary: 介绍rssbridge搭建方法。
+summary: "梳理rssbridge搭建方法，重点说明操作步骤、注意事项与结果。"
 showtoc: true
 ---
 
 
 > 注：自建rssbridge纯粹是为了使用其里面picuki bridge，以追踪名人ins。公开实例中的picuki bridge，会因为使用人数太多，被picuki屏蔽。
+>
+> [Instagram 的 RSS 订阅方式对比](/2023/01/use-rss-to-subscribe-instagram/) 持续记录了这套方案以及后来出现的替代方法。
 
 ![picuki 403 forbidden](https://vip2.loli.net/2023/02/20/XvYH4i3h7SN5tWr.webp)
 

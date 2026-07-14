@@ -1,12 +1,15 @@
 ---
 title: "Solution for apt Install Error 'Operation not permitted'"
 date: 2024-01-17T17:06:29+08:00
+lastmod: 2024-01-17
 tags: ["linux"]
 slug: "fix-apt-install-operation-not-permitted-error"
 translationKey: "fix-apt-install-operation-not-permitted-error"
-summary: Introducing the solution for apt install error 'Operation not permitted'.
+summary: "Traces apt's 'Operation not permitted' error to BaoTa System Hardening making /usr/bin read-only, then restores writes by disabling the rule."
 showtoc: false
 ---
+
+## Diagnosing the Permission Error
 
 After finishing final exams, I can tinker with VPS anytime, anywhere. This afternoon I was originally writing a VPS review article, but one of the VPS showed the following error when I ran network trace scripts and AI platform unlock detection scripts:
 

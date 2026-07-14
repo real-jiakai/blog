@@ -1,10 +1,11 @@
 ---
 title: "OpenAI December Release Notes"
 date: 2024-12-21T09:15:03+08:00
+lastmod: 2025-01-05
 tags: ['openai']
 slug: "notes-about-openai-december-updates"
 translationKey: "notes-about-openai-december-updates"
-summary: Recording OpenAI December release updates.
+summary: "A day-by-day assessment of OpenAI's 12 Days releases, from o1 Pro and Sora to Canvas, Projects, Advanced Voice, and o3."
 showtoc: true
 draft: false
 ---
@@ -215,4 +216,4 @@ Attaching a recent tweet:
 
 OpenAI VS Google: The Tide is Turning:
 
-https://x.com/kimmonismus/status/1869111765700853779
+[Kimmonismus's OpenAI announcement thread](https://x.com/kimmonismus/status/1869111765700853779)

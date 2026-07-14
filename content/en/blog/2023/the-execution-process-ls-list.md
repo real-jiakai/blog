@@ -1,12 +1,13 @@
 ---
 title: "The Execution Process of 'ls > list' Command"
 date: 2023-01-13T20:01:31+08:00
+lastmod: 2023-01-13
 tags: ["linux"]
 slug: "the-execution-process-ls-list"
 translationKey: "the-execution-process-ls-list"
 aliases:
   - "/en/2023/01/the-execution-process-ls--list/index.html"
-summary: Introducing the execution process of the 'ls > list' command.
+summary: "Explains why the shell creates or truncates the output file before running ls, causing the new list file to appear in its own redirected output."
 showtoc: true
 ---
 

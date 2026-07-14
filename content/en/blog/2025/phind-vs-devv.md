@@ -1,10 +1,11 @@
 ---
 title: "Phind VS Devv"
 date: 2025-03-25T14:21:17+08:00
+lastmod: 2025-03-25
 tags: ['ai', 'programming', 'search','phind','devv']
 slug: "phind-vs-devv"
 translationKey: "phind-vs-devv"
-summary: Sharing my experience with AI programming search tools Phind and Devv.
+summary: "Compares Phind and Devv after a month of paid use, covering price, model access, search quality, limits, and why only Devv was worth renewing."
 showtoc: true
 ---
 

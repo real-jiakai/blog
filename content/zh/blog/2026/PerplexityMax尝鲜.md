@@ -1,10 +1,11 @@
 ---
 title: "Perplexity Max尝鲜"
 date: 2026-06-08T18:05:58+08:00
+lastmod: 2026-06-08
 tags: ['perplexity']
 slug: "trying-perplexity-max"
 translationKey: "trying-perplexity-max"
-summary: 介绍 Perplexity Max 会员的尝鲜体验。
+summary: 回顾一个月的 Perplexity Max 实测，涵盖 Model Council、Computer、研究工具和移动端体验。
 showtoc: true
 ---
 

@@ -1,12 +1,15 @@
 ---
 title: "非open ai服务地区的VPS解锁ChatGPT的方法"
 date: 2023-06-01T11:15:46+08:00
+lastmod: 2023-06-01
 tags: ['vps','chatgpt','openai']
 slug: "unlock-chatgpt-when-vps-been-judged-cn-by-cloudflare"
 translationKey: "unlock-chatgpt-when-vps-been-judged-cn-by-cloudflare"
-summary: 分享使用二级代理来实现非open ai服务地区的VPS解锁ChatGPT的方法。
+summary: "围绕使用二级代理来实现非open ai服务地区的VPS解锁ChatGPT的方法，整理个人实践、结果与体会。"
 showtoc: false
 ---
+
+## 为什么 WARP 不够用
 
 前一阵子，忙毕设以及每天都要刷一堆科技新闻，博客更新频次较少，这篇文章我老早就想写了。本人持有香港地区的CMI和CN2线路的VPS。
 

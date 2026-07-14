@@ -1,10 +1,11 @@
 ---
 title: "Proton Family Plan First Taste"
 date: 2024-08-06T08:23:41+08:00
+lastmod: 2024-08-06
 tags: ["proton"]
 slug: "proton-family-plan-first-taste"
 translationKey: "proton-family-plan-first-taste"
-summary: Introducing my first taste of the Proton Family Plan subscription.
+summary: "Reviews a $48-per-year Proton Family seat across VPN, Mail, Pass, Drive, Calendar, and Wallet, including connectivity and feature limitations."
 showtoc: true
 ---
 

@@ -1,11 +1,14 @@
 ---
 title: "Google voice正在连接的解决方案"
 date: 2023-03-14T09:08:15+08:00
+lastmod: 2023-03-14
 tags: ["google"]
 slug: "the-solution-of-google-voice-is-connecting"
 translationKey: "the-solution-of-google-voice-is-connecting"
-summary: 介绍Google voice正在连接的解决方案。
+summary: "梳理Google voice正在连接的解决方案，重点说明操作步骤、注意事项与结果。"
 ---
+
+## 排查“正在连接”循环
 
 近期Google voice IFTTT的保号方法开始收费。[via（存档）](https://web.archive.org/web/20230330041934/https://www.zaihua.net/512.html)，原页面已下线。
 

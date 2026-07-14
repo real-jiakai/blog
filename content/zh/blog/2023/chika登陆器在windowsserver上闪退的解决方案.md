@@ -1,12 +1,15 @@
 ---
 title: "chika登陆器在windows server上闪退的解决方案"
 date: 2023-06-17T15:24:10+08:00
+lastmod: 2023-06-17
 tags: ['游戏']
 slug: "fix-chika-crash-on-windows-server"
 translationKey: "fix-chika-crash-on-windows-server"
-summary: 分享chika登陆器在windows server上闪退的解决方案。
+summary: "围绕chika登陆器在windows server上闪退的解决方案，整理个人实践、结果与体会。"
 showtoc: false
 ---
+
+## 从云电脑迁移到 Windows VPS
 
 从今年开始，赛尔号一些繁琐的日常挂机、巅峰刷币等任务，我都放到了云端执行。本地电脑只会做每周更新的任务和剧情，或者有空时偶尔打几把巅峰。
 
@@ -28,11 +31,15 @@ showtoc: false
 
 ![腾讯云轻量](https://image.gujiakai.top/i/2023/06/17/rbts2c-0.webp)
 
+## 闪退现象与 DEP 修复
+
 但是我在上面折腾时，发现chika登陆器打不开。具体的情况就是双击登陆器的.exe文件后，应用在任务栏一闪而过。
 
 跟chatgpt4聊了几个回合后，按照chatgpt4的指引，我在windows server中禁用数据执行保护(DEP)对于赛尔号登陆器exe文件的影响，最终成功打开了chika登录器和其他的登陆器。
 
 ![腾讯云轻量成功打开chika登陆器](https://image.gujiakai.top/i/2023/06/17/rea0vd-0.webp)
+
+## 相关记录
 
 聊天记录地址：https://chat.openai.com/share/152c4d9a-e7bb-4514-88c4-5b5a3a9185d
 

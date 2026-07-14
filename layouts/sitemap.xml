@@ -1,0 +1,39 @@
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  {{- range where .Pages "Sitemap.Disable" "ne" true }}
+    {{- $excludeThinTerm := and (eq .Kind "term") (lt (len .Pages) 2) -}}
+    {{- if and .Permalink (not $excludeThinTerm) }}
+  <url>
+    <loc>{{ .Permalink | transform.XMLEscape | safeHTML }}</loc>
+      {{- $sitemapLastmod := .Lastmod -}}
+      {{- if and .IsPage (.Lastmod.Before .Date) -}}{{- $sitemapLastmod = .Date -}}{{- end -}}
+      {{- if not $sitemapLastmod.IsZero }}
+    <lastmod>{{ $sitemapLastmod.Format "2006-01-02T15:04:05-07:00" }}</lastmod>
+      {{- end }}
+      {{- with .Sitemap.ChangeFreq }}
+    <changefreq>{{ . }}</changefreq>
+      {{- end }}
+      {{- if ge .Sitemap.Priority 0.0 }}
+    <priority>{{ .Sitemap.Priority }}</priority>
+      {{- end }}
+      {{- $translatedPagesIndexable := true -}}
+      {{- if eq .Kind "term" -}}
+        {{- range .AllTranslations -}}
+          {{- if lt (len .Pages) 2 -}}{{- $translatedPagesIndexable = false -}}{{- end -}}
+        {{- end -}}
+      {{- end -}}
+      {{- if and .IsTranslated $translatedPagesIndexable -}}
+        {{- range .AllTranslations }}
+    <xhtml:link rel="alternate" hreflang="{{ .Language.LanguageCode }}" href="{{ .Permalink | transform.XMLEscape | safeHTML }}" />
+        {{- end -}}
+      {{- else -}}
+        {{- $tagAlternates := partial "tag-alternates.html" . -}}
+        {{- range $tagAlternates }}
+    <xhtml:link rel="alternate" hreflang="{{ .languageCode }}" href="{{ .url | transform.XMLEscape | safeHTML }}" />
+        {{- end -}}
+      {{- end }}
+  </url>
+    {{- end }}
+  {{- end }}
+</urlset>

@@ -1,10 +1,11 @@
 ---
 title: "Gemini Advanced October 2024 Review"
 date: 2024-11-02T10:04:48+08:00
+lastmod: 2025-04-12
 tags: ["gemini","google"]
 slug: "Gemini-advanced-2024-october-review"
 translationKey: "Gemini-advanced-2024-october-review"
-summary: Recording my experience using Gemini Advanced.
+summary: "A multi-month Gemini Advanced review covering YouTube summaries, API limits, image generation, Gems, Deep Research, and the later 2.5 Pro upgrade."
 showtoc: true
 ---
 
@@ -120,7 +121,7 @@ Free API will be used to improve products.
 
 ![Free API used to improve products](https://cdn.sa.net/2024/11/02/exoFBiUuD2Vh3Cp.webp)
 
-via: [https://ai.google.dev/gemini-api/terms](https://ai.google.dev/gemini-api/terms)
+Source: [Gemini API Additional Terms of Service](https://ai.google.dev/gemini-api/terms)
 
 See Simonwillison's [tweet](https://x.com/simonw/status/1846749984504664341) on Gemini privacy issues.
 
@@ -312,7 +313,7 @@ Changed question phrasing—responded normally again.
 
 ## Other
 
-Saw an interesting discussion on Reddit: [https://www.reddit.com/r/Bard/comments/1g8ktp7/Gemini_is_the_worst_ai_product_in_the_market/](https://www.reddit.com/r/Bard/comments/1g8ktp7/Gemini_is_the_worst_ai_product_in_the_market/)
+Saw an interesting discussion on Reddit: [“Gemini is the worst AI product in the market” on r/Bard](https://www.reddit.com/r/Bard/comments/1g8ktp7/Gemini_is_the_worst_ai_product_in_the_market/)
 
 ## Outlook
 
@@ -322,6 +323,6 @@ Cancelled subscription. Cancelled both Gemini and ChatGPT [Note: After Search re
 
 ![Year end surprises](https://cdn.sa.net/2024/11/02/PsMnrkwVg8lOYJU.webp)
 
-via: [https://www.theverge.com/2024/10/25/24279600/Google-next-Gemini-ai-model-openai-december](https://www.theverge.com/2024/10/25/24279600/Google-next-Gemini-ai-model-openai-december)
+Source: [The Verge report on Google's next Gemini model](https://www.theverge.com/2024/10/25/24279600/Google-next-Gemini-ai-model-openai-december)
 
 As year end approaches, increasingly looking forward to OpenAI, Gemini, even Elon Musk's Grok bringing more surprises.

@@ -1,10 +1,11 @@
 ---
 title: "OpenAI 12月份发布会更新笔记"
 date: 2024-12-21T09:15:03+08:00
+lastmod: 2025-01-05
 tags: ['openai']
 slug: "notes-about-openai-december-updates"
 translationKey: "notes-about-openai-december-updates"
-summary: 记录OpenAI 12月份发布会更新。
+summary: "回顾OpenAI 12月份发布会更新，梳理完整过程、结果与可复用经验。"
 showtoc: true
 draft: false
 ---
@@ -215,4 +216,4 @@ via: https://arcprize.org/blog/oai-o3-pub-breakthrough
 
 OpenAI VS Google：潮流正在转变：
 
-https://x.com/kimmonismus/status/1869111765700853779
+[Kimmonismus 的 OpenAI 发布会帖文](https://x.com/kimmonismus/status/1869111765700853779)

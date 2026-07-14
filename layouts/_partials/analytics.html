@@ -4,8 +4,9 @@
     GA 与 Clarity 的初始化放在本地外部脚本中，使 script-src 不需要 unsafe-inline。
 */ -}}
 {{- if .Site.Params.enableanalytics }}
-<script async src="https://umami.gujiakai.top/script.js" data-website-id="d7f3de25-017d-4f73-8bd0-81e9484ef61f"></script>
 <script id="site-analytics" defer src="{{ partial "asset-url.html" "/js/analytics.js" }}"
         data-google-id="{{ .Site.Config.Services.GoogleAnalytics.ID }}"
-        data-clarity-id="juat43yeul"></script>
+        data-clarity-id="juat43yeul"
+        data-umami-src="https://umami.gujiakai.top/script.js"
+        data-umami-id="d7f3de25-017d-4f73-8bd0-81e9484ef61f"></script>
 {{- end }}

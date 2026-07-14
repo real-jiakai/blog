@@ -1,10 +1,11 @@
 ---
-title: "修改ip归属地为朝鲜、南极洲的方法"
+title: "将 IP 归属地设为朝鲜或南极洲"
 date: 2023-08-17T14:02:16+08:00
+lastmod: 2025-11-01
 tags: ["ip"]
 slug: "methods-for-setting-ip-to-north-korea-and-antarctica"
 translationKey: "methods-for-setting-ip-to-north-korea-and-antarctica"
-summary: 分享修改ip归属地为朝鲜、南极洲的方法。
+summary: "说明如何通过自定义 geofeed 数据和 BGP 广播，让 IP 段在地理位置数据库中显示为朝鲜或南极洲。"
 showtoc: true
 ---
 
@@ -56,7 +57,7 @@ via:
 
 [朝鲜IP正式成为历史](https://hostloc.com/thread-1375126-1-1.html)
 
-[现在还有什么方法获取v4朝鲜IP](https://www.nodeseek.com/post-220760-1)
+NodeSeek 讨论“现在还有什么方法获取 v4 朝鲜 IP”（原帖已失效）
 
 [朝鲜家宽](https://www.nodeseek.com/post-180748-1)
 
@@ -153,4 +154,4 @@ TAG机场的tg频道的公告显示该家机场存在朝鲜和南极洲的节点
 
 不推荐vpn服务，不安全。
 
-如果你动手能力极强，并且愿意折腾，可以看看这篇帖子的教程—[【干货】教你如何获得一个南极ip](https://www.nodeseek.com/post-16500-1)。
+如果你动手能力极强并且愿意折腾，NodeSeek 上现已失效的“教你如何获得一个南极 IP”教程曾记录过一种更复杂的方案。

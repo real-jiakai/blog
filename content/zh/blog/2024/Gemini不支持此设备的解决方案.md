@@ -1,10 +1,11 @@
 ---
 title: "Gemini安卓 App不支持此设备的解决方案"
 date: 2024-02-11T08:43:21+08:00
+lastmod: 2024-02-11
 tags: ["gemini"]
 slug: "solving-gemini-device-compatibility-issues"
 translationKey: "solving-gemini-device-compatibility-issues"
-summary: 介绍Gemini安卓App不支持此设备的解决方案。
+summary: "梳理Gemini安卓App不支持此设备的解决方案，重点说明操作步骤、注意事项与结果。"
 showtoc: true
 ---
 

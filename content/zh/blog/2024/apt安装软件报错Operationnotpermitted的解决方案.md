@@ -1,12 +1,15 @@
 ---
 title: "apt安装软件报错Operation not permitted的解决方案"
 date: 2024-01-17T17:06:29+08:00
+lastmod: 2024-01-17
 tags: ["linux"]
 slug: "fix-apt-install-operation-not-permitted-error"
 translationKey: "fix-apt-install-operation-not-permitted-error"
-summary: 介绍apt安装软件报错Operation not permitted的解决方案。
+summary: "梳理apt安装软件报错Operation not permitted的解决方案，重点说明操作步骤、注意事项与结果。"
 showtoc: false
 ---
+
+## 定位权限错误
 
 期末考试考完后，就可以随时随地折腾vps了。下午原本在写vps的测评文章，但其中一台vps在我运行三网回程测试脚本以及AI平台解锁检测脚本时，报了如下错误：
 

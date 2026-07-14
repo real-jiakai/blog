@@ -1,10 +1,11 @@
 ---
 title: "hxservers网络问题的解决方案"
 date: 2023-10-13T12:20:19+08:00
+lastmod: 2023-11-27
 tags: ['vps','google one vpn']
 slug: "solving-hxservers-network-issues"
 translationKey: "solving-hxservers-network-issues"
-summary: 介绍hxservers网络问题的解决方案。
+summary: "梳理hxservers网络问题的解决方案，重点说明操作步骤、注意事项与结果。"
 showtoc: true
 ---
 

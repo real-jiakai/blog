@@ -72,6 +72,20 @@
   translation: "第 {{ .Number }} 页"
 - id: currentPageNumber
   translation: "当前第 {{ .Number }} 页"
+- id: homeDescription
+  translation: "阅读{{ .Site }}最新的技术笔记、实用教程与个人经历。"
+- id: homePageDescription
+  translation: "继续浏览{{ .Site }}第 {{ .Number }} 页的技术笔记、实用教程与个人经历。"
+- id: archiveDescription
+  translation: "按年份浏览{{ .Site }}收录的全部 {{ .Count }} 篇文章，内容涵盖技术、学习与个人经历。"
+- id: taxonomyDescription
+  translation: "浏览{{ .Site }}的全部 {{ .Count }} 个主题标签，查找技术、学习与生活相关文章。"
+- id: termDescription
+  translation: "浏览{{ .Site }}中标记为“{{ .Term }}”的 {{ .Count }} 篇文章及相关笔记、教程与经验。"
+- id: termDescriptionOne
+  translation: "浏览{{ .Site }}中标记为“{{ .Term }}”的文章及相关笔记、教程与经验。"
+- id: relatedPosts
+  translation: "相关文章"
 - id: labelSeparator
   translation: "："
 - id: postNavigation

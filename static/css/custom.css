@@ -489,13 +489,19 @@ pre.chroma {
 }
 
 .container-md p img {
+    display: block;
+    height: auto;        /* preserve the intrinsic ratio while responsive width rules apply */
     max-height: 600px;   /* 固定显示高度上限，竖图也不会过大 */
-    width: auto;         /* 宽度自适应，保持原始比例 */
     max-width: 100%;     /* 宽图不超出正文栏 */
     object-fit: contain;
     cursor: zoom-in;     /* 提示可点击放大 */
     border-radius: 6px;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
+}
+
+/* Long source URLs must not widen articles beyond the mobile viewport. */
+.post-article .content a {
+    overflow-wrap: anywhere;
 }
 
 /* ===========================================

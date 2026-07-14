@@ -1,10 +1,11 @@
 ---
 title: "小红书RSS的解决方案"
 date: 2024-09-21T19:23:52+08:00
+lastmod: 2025-07-07
 tags: ["小红书","rss"]
 slug: "xiaohongshu-rss-tips"
 translationKey: "xiaohongshu-rss-tips"
-summary: 介绍小红书rss的解决方案。
+summary: "梳理小红书rss的解决方案，重点说明操作步骤、注意事项与结果。"
 showtoc: true
 ---
 

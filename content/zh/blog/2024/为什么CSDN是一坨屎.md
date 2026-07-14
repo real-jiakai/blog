@@ -1,10 +1,11 @@
 ---
 title: "为什么CSDN是一坨屎"
 date: 2024-09-11T15:17:46+08:00
+lastmod: 2024-09-16
 tags: ['csdn']
 slug: "why-is-csdn-a-pile-of-shit"
 translationKey: "why-is-csdn-a-pile-of-shit"
-summary: 介绍为什么CSDN是一坨屎，针对官方不针对使用该平台的创作者。
+summary: "聚焦为什么CSDN是一坨屎，针对官方不针对使用该平台的创作者，结合实际使用说明关键体验与结论。"
 showtoc: true
 ---
 

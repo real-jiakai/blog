@@ -1,10 +1,11 @@
 ---
 title: "Claude 4 Experience"
 date: 2025-05-23T07:56:34+08:00
+lastmod: 2025-07-23
 tags: ["claude","anthropic"]
 slug: "claude-4-experience"
 translationKey: "claude-4-experience"
-summary: Sharing my Claude 4 usage experience.
+summary: "Evaluates Claude 4 Opus and Sonnet across coding, writing, API access, and Claude Code, then revisits the product after Max-plan use."
 showtoc: true
 ---
 
@@ -128,9 +129,9 @@ Professional programmers can try using Claude Code GitHub Actions for various ta
 
 via:
 
-https://github.com/anthropics/claude-code-action
+[anthropics/claude-code-action repository](https://github.com/anthropics/claude-code-action)
 
-https://docs.anthropic.com/en/docs/claude-code/github-actions#quick-start
+[Claude Code GitHub Actions quick start](https://docs.anthropic.com/en/docs/claude-code/github-actions#quick-start)
 
 `/vibe` command contains a vibe coding Easter egg.
 
@@ -222,9 +223,9 @@ d. Claude model comparison: https://simonwillison.net/2025/May/22/updated-anthro
 
 e. Tweets from Claude official X accounts:
 
-https://x.com/alexalbert__/status/1925591741924876781
+[Alex Albert's Claude 4 announcement](https://x.com/alexalbert__/status/1925591741924876781)
 
-https://x.com/AnthropicAI/status/1925591505332576377
+[Anthropic's Claude 4 announcement](https://x.com/AnthropicAI/status/1925591505332576377)
 
 f. Tibor Blaho's Anthropic launch summary tweet: https://x.com/btibor91/status/1925641897369797038
 

@@ -1,16 +1,17 @@
 ---
 title: "Claude 3.7 Sonnet Experience"
 date: 2025-02-25T07:55:29+08:00
+lastmod: 2025-07-23
 tags: ['claude','anthropic']
 slug: "claude-3-7-sonnet-experience"
 translationKey: "claude-3-7-sonnet-experience"
-summary: Sharing my Claude 3.7 Sonnet usage experience.
+summary: "Tracks Claude 3.7 Sonnet from its hybrid-reasoning launch to Claude Code's rise, with tests of coding, web search, Chinese writing, and quota limits."
 showtoc: true
 ---
 
 ## Update (2025.7.23)
 
-Claude Code is no longer a toy. With Claude 4 series models online, Max membership paired with Opus 4 model is just too good. Those who know, know—the strongest AI programming tool!!! In just 1-2 months, successfully turned Cursor from sweetheart to has-been. Only Anthropic entering the arena could do this.
+Claude Code is no longer a toy. With the [Claude 4 series models online](/en/2025/05/claude-4-experience/), Max membership paired with Opus 4 model is just too good. Those who know, know—the strongest AI programming tool!!! In just 1-2 months, successfully turned Cursor from sweetheart to has-been. Only Anthropic entering the arena could do this.
 
 ## Update (2025.4.29)
 
@@ -225,7 +226,7 @@ Experience the following tweet yourself—Claude series models absolutely far ah
 
 ![Claude leads by a tier in SWE-Bench](https://cdn.sa.net/2025/02/25/HeFjnhGbIzKwogQ.webp)
 
-via: https://x.com/cline/status/1894108194693419450
+Source: @cline on X (the original post is no longer available; its screenshot is preserved above).
 
 Now look at Phind's Claude 3.7 Sonnet analysis of [aider leaderboard](https://aider.chat/docs/leaderboards/). Simply terrifying—too strong!
 

@@ -1,16 +1,17 @@
 ---
 title: "Gemini 2.0 Experience"
 date: 2025-02-07T09:01:24+08:00
+lastmod: 2025-03-26
 tags: ['gemini']
 slug: "gemini-2-0-experience"
 translationKey: "gemini-2-0-experience"
-summary: Sharing my Gemini 2.0 experience.
+summary: "Follows Gemini 2.0 across the app and API, testing Deep Research, Canvas, Audio Overview, Flash and Pro models, and its uneven product rollout."
 showtoc: true
 ---
 
 ## Update (2025.3.26)
 
-Gemini 2.5 Pro is out. After watching some blogger reviews, impressed that Gemini OCR ability has improved even more.
+[Gemini 2.5 Pro is out](/en/2025/03/gemini-2-5-pro-experience/). After watching some blogger reviews, impressed that Gemini OCR ability has improved even more.
 
 ## Update (2025.3.19)
 

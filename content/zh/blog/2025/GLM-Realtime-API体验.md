@@ -1,10 +1,11 @@
 ---
 title: "GLM Realtime API体验"
 date: 2025-01-18T15:05:49+08:00
+lastmod: 2025-03-01
 tags: ["glm"]
 slug: "glm-realtime-api-experience"
 translationKey: "glm-realtime-api-experience"
-summary: 分享GLM Realtime API体验感受。
+summary: "围绕GLM Realtime API体验感受，整理个人实践、结果与体会。"
 showtoc: true
 ---
 
@@ -60,8 +61,9 @@ GLM Realtime API目前只能唱7首歌，总好过没有，但还是那句话音
 
 7首歌曲演示视频：
 
-BiliBili: [https://www.bilibili.com/video/BV1DywAe4EfC/](https://www.bilibili.com/video/BV1DywAe4EfC/)
+[在哔哩哔哩观看七首歌曲演示](https://www.bilibili.com/video/BV1DywAe4EfC/)
 
-Youtube: [https://www.youtube.com/watch?v=xsRXGFBHBDg](https://www.youtube.com/watch?v=xsRXGFBHBDg)
+[在 YouTube 观看七首歌曲演示](https://www.youtube.com/watch?v=xsRXGFBHBDg)
 
 希望2025年国产AI越来越好，智谱在我心目中是国产AI的Top4，前三甲为阿里的Qwen、DeepSeek、字节跳动的豆包。
+后续的 [豆包实时语音实测](/2025/01/doubao-real-time-on-pitch-songs/) 展示了唱歌体验如何迅速超越这七首歌的限制。

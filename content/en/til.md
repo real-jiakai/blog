@@ -9,7 +9,7 @@ The Today I Learned page shares what I learned today. I firmly believe that Lear
 
 This section is inspired by [Josh Branchaud](https://github.com/jbranchaud/til), [Simon Willison](https://til.simonwillison.net/), [Kevin Schaul](https://www.kschaul.com/til/), and [Now Page](https://nownownow.com/).
 
-My TIL site publishes notes from two blogs, one decentralized social app, and three forums. TIL site: [https://til.gujiakai.top](https://til.gujiakai.top)
+My [Today I Learned notes](https://til.gujiakai.top) collect material from two blogs, one decentralized social app, and three forums.
 
 Two blogs: "Weekly Insights" updates occasionally, "Web Journal" aims for at least one post per month.
 

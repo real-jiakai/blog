@@ -1,12 +1,15 @@
 ---
 title: "Make Claude Great Again!"
 date: 2025-08-06T18:28:21+08:00
+lastmod: 2025-08-06
 tags: ['claude']
 slug: "make-claude-great-again"
 translationKey: "make-claude-great-again"
-summary: Sharing recent Claude product usage insights.
+summary: "Explains how Opus 4.1 and Claude Code restored confidence in Claude for writing and coding after disappointing Opus 4 outputs."
 showtoc: false
 ---
+
+## Why Claude Won Me Back
 
 ![Make Claude Great Again!](https://cdn.sa.net/2025/08/06/76IRckCSMdUpXFt.webp)
 

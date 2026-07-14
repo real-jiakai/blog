@@ -1,10 +1,11 @@
 ---
 title: "Gemini 2.5 Pro体验"
 date: 2025-03-30T14:29:10+08:00
+lastmod: 2025-05-07
 tags: ['gemini']
 slug: "gemini-2-5-pro-experience"
 translationKey: "gemini-2-5-pro-experience"
-summary: 分享Gemini 2.5 Pro体验的一些感受。
+summary: "围绕Gemini 2.5 Pro体验的一些感受，整理个人实践、结果与体会。"
 showtoc: true
 ---
 

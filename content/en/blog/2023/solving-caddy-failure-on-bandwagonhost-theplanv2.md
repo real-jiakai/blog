@@ -1,12 +1,15 @@
 ---
-title: "Solution for Caddy Startup Failure on BandwagonHost The Plan V2"
+title: "Fix Caddy Startup on BandwagonHost The Plan V2"
 date: 2023-06-29T15:38:29+08:00
+lastmod: 2023-06-29
 tags: ["vps"]
 slug: "solving-caddy-failure-on-bandwagonhost-theplanv2"
 translationKey: "solving-caddy-failure-on-bandwagonhost-theplanv2"
-summary: Introducing the solution for Caddy startup failure on BandwagonHost's newly released The Plan V2 package.
+summary: "How to correct Caddy's startup failure on BandwagonHost The Plan V2 by adjusting its service configuration."
 showtoc: false
 ---
+
+## The Plan V2 Caddy Failure
 
 BandwagonHost launched The Plan V2 package on June 27, 2023, with expensive pricing. The non-affiliate purchase page is [available in the Internet Archive](https://web.archive.org/web/20230628053759/https://bandwagonhost.com/the-plan-v2); the original page is offline.
 

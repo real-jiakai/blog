@@ -1,12 +1,15 @@
 ---
 title: "2023 Black Friday Server Shopping Summary"
 date: 2023-11-30T19:26:07+08:00
+lastmod: 2023-11-30
 tags: ['black-friday']
 slug: "summary-of-server-shop-of-2023-bf"
 translationKey: "summary-of-server-shop-of-2023-bf"
-summary: Summary of my 2023 Black Friday server shopping details.
+summary: "Details 2023 Black Friday server purchases from ColoCrossing, RackNerd, CloudCone, and others, including prices, routes, and which deals were kept."
 showtoc: false
 ---
+
+## What I Bought
 
 Summary of my 2023 Black Friday server shopping details.
 

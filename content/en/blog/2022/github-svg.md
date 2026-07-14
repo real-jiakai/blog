@@ -2,14 +2,17 @@
 title: "Creating Animated SVG Effects on Your GitHub Profile"
 tags: ["github"]
 date: 2022-03-03T10:26:09+08:00
+lastmod: 2022-03-03
 slug: github-svg
 translationKey: "github-svg"
-summary: This article explains how to create animated SVG effects on your GitHub profile page.
+summary: Generate a handwritten SVG animation with Calligrapher.ai and embed it in a GitHub profile README.
 ---
+
+## Reproducing the Animated Profile Effect
 
 As we all know, if you create a repository on GitHub with the same name as your username, the README.md file in that repository will be displayed on your GitHub profile page.
 
-For details, please [click here.](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)
+For details, see GitHub's guide to [managing your profile README](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme).
 
 However, I happened to notice a cool animated greeting effect on the GitHub profile of a user named [MayanDev](https://github.com/Mayandev).
 
@@ -17,13 +20,15 @@ See the following animated GIF below.
 
 ![MayanDev's GitHub profile](https://vip2.loli.net/2023/01/09/J1fmwEMhozGXOdj.gif)
 
-Very cool! Clicking on the animated greeting effect takes you to a [website](https://www.calligrapher.ai/) specifically designed to generate handwritten text.
+Very cool! Clicking on the animated greeting effect takes you to the [Calligrapher.ai handwriting generator](https://www.calligrapher.ai/).
 
 ![Website for generating handwritten text](https://vip2.loli.net/2022/12/26/cCaFrwgIUlJbN1T.webp)
 
 You can click the download icon in the top left corner to download the handwritten text you just created.
 
 The downloaded file has an svg extension.
+
+## Why the Downloaded SVG Is Static
 
 > What is an SVG file?
 
@@ -35,9 +40,11 @@ When you double-click the downloaded SVG file and open it in a browser, you'll f
 
 > How to make an SVG file animated?
 
+## Making the SVG Animate
+
 Regarding this question, I specifically reached out to [MayanDev](https://github.com/Mayandev).
 
-Here's my email exchange with him. [click here](https://storage.gujiakai.top/documents/github-email.pdf)
+Read my [email exchange with MayanDev](https://storage.gujiakai.top/documents/github-email.pdf).
 
 > Summary:
 
@@ -48,4 +55,4 @@ Here's my email exchange with him. [click here](https://storage.gujiakai.top/doc
 
 > See the difference between the SVG file before and after editing with a code editor via the following link.
 
-[click here](https://github.com/real-jiakai/real-jiakai/commit/bc3ff7305807b7e4e064e9207e3775ace5ad80d8?diff=split#diff-baeb116eb5809d84b276b8dd622be650874cd7800065415625e2ef2e0eb0fca9)
+[Compare the SVG changes in the GitHub commit](https://github.com/real-jiakai/real-jiakai/commit/bc3ff7305807b7e4e064e9207e3775ace5ad80d8?diff=split#diff-baeb116eb5809d84b276b8dd622be650874cd7800065415625e2ef2e0eb0fca9)

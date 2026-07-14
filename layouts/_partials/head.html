@@ -13,9 +13,15 @@
         {{- $canonical = $homePaginator.URL | absURL -}}
     {{- end -}}
     {{- $is404 := eq .Kind "404" -}}
-    {{/* 页面名在前、站点名在后（Page | Site），搜索结果里页面主题更醒目 */}}
-    {{ $title := print .Title " | " .Site.Title }}
-    {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+    {{- $isThinTerm := and (eq .Kind "term") (lt (len .Pages) 2) -}}
+    {{- $pageTitle := .Title -}}
+    {{- if and (eq .Kind "taxonomy") (eq .Type "tags") -}}
+        {{- $pageTitle = i18n "tagsTitle" -}}
+    {{- end -}}
+    {{/* 博文标题不再重复附加站点名；工具页和列表页保留 Page | Site 的语境。 */}}
+    {{- $title := print $pageTitle " | " .Site.Title -}}
+    {{- if and .IsPage (eq .Type "blog") -}}{{- $title = $pageTitle -}}{{- end -}}
+    {{- if .IsHome -}}{{- $title = .Site.Title -}}{{- end -}}
     {{- if and .IsHome (gt $pageNumber 1) -}}
         {{- if eq .Site.Language.Lang "zh" -}}
             {{- $title = printf "%s | 第 %d 页" .Site.Title $pageNumber -}}
@@ -29,6 +35,22 @@
         {{- $description = .Params.description -}}
     {{- else if .Params.summary -}}
         {{- $description = .Params.summary -}}
+    {{- else if .IsHome -}}
+        {{- if gt $pageNumber 1 -}}
+            {{- $description = i18n "homePageDescription" (dict "Site" .Site.Title "Number" $pageNumber) -}}
+        {{- else -}}
+            {{- $description = i18n "homeDescription" (dict "Site" .Site.Title) -}}
+        {{- end -}}
+    {{- else if eq .Layout "archive" -}}
+        {{- $description = i18n "archiveDescription" (dict "Site" .Site.Title "Count" (len (where .Site.RegularPages "Type" "==" "blog"))) -}}
+    {{- else if eq .Kind "taxonomy" -}}
+        {{- $description = i18n "taxonomyDescription" (dict "Site" .Site.Title "Count" (len .Data.Terms)) -}}
+    {{- else if eq .Kind "term" -}}
+        {{- if eq (len .Pages) 1 -}}
+            {{- $description = i18n "termDescriptionOne" (dict "Site" .Site.Title "Term" .Title) -}}
+        {{- else -}}
+            {{- $description = i18n "termDescription" (dict "Site" .Site.Title "Term" .Title "Count" (len .Pages)) -}}
+        {{- end -}}
     {{- else if and .IsPage .Summary -}}
         {{- $description = .Summary | plainify | truncate 160 -}}
     {{- end -}}
@@ -38,10 +60,20 @@
     {{- if $is404 }}
     <meta name="robots" content="noindex, nofollow, noarchive">
     {{- else }}
+    {{- if $isThinTerm }}
+    <meta name="robots" content="noindex, follow">
+    {{- end }}
     <link rel="canonical" href="{{ $canonical }}" />
     {{/* hreflang：博文通过 translationKey 与译文关联，告知搜索引擎双语版本互为翻译。
-         x-default 指向默认语言（中文）版本 */}}
-    {{- if .IsTranslated }}
+         标签名不同的双语标签通过 data/tag_translations.yaml 关联；x-default 指向中文版本。
+         noindex 的单篇标签页不输出 hreflang，避免 alternate 指向不可索引页面。 */}}
+    {{- $translatedPagesIndexable := true -}}
+    {{- if eq .Kind "term" -}}
+        {{- range .AllTranslations -}}
+            {{- if lt (len .Pages) 2 -}}{{- $translatedPagesIndexable = false -}}{{- end -}}
+        {{- end -}}
+    {{- end -}}
+    {{- if and .IsTranslated $translatedPagesIndexable }}
     {{- range .AllTranslations }}
     {{- $alternateURL := .Permalink -}}
     {{- if and $.IsHome (gt $pageNumber 1) -}}
@@ -56,27 +88,98 @@
     {{- end }}
     <link rel="alternate" hreflang="x-default" href="{{ $defaultURL }}" />
     {{- end }}
+    {{- else if not $isThinTerm -}}
+    {{- $tagAlternates := partial "tag-alternates.html" . -}}
+    {{- range $tagAlternates }}
+    <link rel="alternate" hreflang="{{ .languageCode }}" href="{{ .url }}" />
+    {{- end }}
+    {{- range first 1 (where $tagAlternates "lang" "zh") }}
+    <link rel="alternate" hreflang="x-default" href="{{ .url }}" />
+    {{- end -}}
     {{- end }}
     {{- end }}
     {{/* 公开的 Markdown 是面向 AI/文本客户端的替代表示；HTTP 响应另带 noindex。 */}}
     {{- with .OutputFormats.Get "MarkdownRaw" }}
     <link rel="alternate" type="text/markdown" href="{{ .Permalink }}" title="{{ $.Title }} (Markdown)" />
     {{- end }}
-    {{/* 社交分享卡片（Open Graph / Twitter Card），Hugo 内置模板 */}}
+    {{/* 社交分享卡片优先使用正文首图；无图页面使用本站品牌卡片。 */}}
     {{- if not $is404 }}
-        {{- if and .IsHome (gt $pageNumber 1) }}
+    {{- $socialImage := partial "social-image.html" . -}}
+    {{- $openGraphType := cond (and .IsPage (eq .Type "blog")) "article" "website" -}}
+    {{- $modifiedDate := .Lastmod -}}
+    {{- if and .IsPage (eq .Type "blog") (.Lastmod.Before .Date) -}}
+        {{- $modifiedDate = .Date -}}
+    {{- end -}}
     <meta property="og:title" content="{{ $title }}">
     <meta property="og:description" content="{{ $description }}">
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="{{ $openGraphType }}">
     <meta property="og:url" content="{{ $canonical }}">
     <meta property="og:site_name" content="{{ .Site.Title }}">
-    <meta name="twitter:card" content="summary">
+    <meta property="og:locale" content="{{ replace .Site.Language.LanguageCode "-" "_" }}">
+    <meta property="og:image" content="{{ $socialImage.url }}">
+    <meta property="og:image:alt" content="{{ $pageTitle }}">
+    {{- if $socialImage.isFallback }}
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    {{- end }}
+    {{- if eq $openGraphType "article" }}
+    <meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">
+    <meta property="article:modified_time" content="{{ $modifiedDate.Format "2006-01-02T15:04:05-07:00" }}">
+    {{- range .Params.tags }}
+    <meta property="article:tag" content="{{ . }}">
+    {{- end }}
+    {{- end }}
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ $title }}">
     <meta name="twitter:description" content="{{ $description }}">
-        {{- else }}
-    {{ template "_internal/opengraph.html" . }}
-    {{ template "_internal/twitter_cards.html" . }}
-        {{- end }}
+    <meta name="twitter:image" content="{{ $socialImage.url }}">
+    <meta name="twitter:image:alt" content="{{ $pageTitle }}">
+    {{/* JSON-LD 直接传递字典给 html/template，由脚本上下文安全序列化为 JSON。 */}}
+    {{- if and .IsHome (eq $pageNumber 1) }}
+    {{- $websiteSchema := dict
+        "@context" "https://schema.org"
+        "@type" "WebSite"
+        "name" .Site.Title
+        "url" .Site.Home.Permalink
+        "description" $description
+        "inLanguage" .Site.Language.LanguageCode
+        "publisher" (dict "@type" "Person" "name" .Site.Params.author "url" .Site.Home.Permalink)
+    -}}
+    <script type="application/ld+json">{{ $websiteSchema }}</script>
+    {{- else if and .IsPage (eq .Type "blog") }}
+    {{- $articleSchema := dict
+        "@context" "https://schema.org"
+        "@type" "BlogPosting"
+        "headline" .Title
+        "description" $description
+        "image" (slice $socialImage.url)
+        "datePublished" (.Date.Format "2006-01-02T15:04:05-07:00")
+        "dateModified" ($modifiedDate.Format "2006-01-02T15:04:05-07:00")
+        "inLanguage" .Site.Language.LanguageCode
+        "keywords" .Params.tags
+        "url" $canonical
+        "mainEntityOfPage" (dict "@type" "WebPage" "@id" $canonical)
+        "author" (dict "@type" "Person" "name" .Site.Params.author)
+        "publisher" (dict "@type" "Person" "name" .Site.Params.author "url" .Site.Home.Permalink)
+    -}}
+    <script type="application/ld+json">{{ $articleSchema }}</script>
+    {{- else if not $isThinTerm }}
+    {{- $genericSchemaType := "WebPage" -}}
+    {{- if or .IsHome (eq .Layout "archive") (in (slice "section" "taxonomy" "term") .Kind) -}}
+        {{- $genericSchemaType = "CollectionPage" -}}
+    {{- end -}}
+    {{- $genericSchema := dict
+        "@context" "https://schema.org"
+        "@type" $genericSchemaType
+        "name" $pageTitle
+        "description" $description
+        "url" $canonical
+        "inLanguage" .Site.Language.LanguageCode
+        "isPartOf" (dict "@type" "WebSite" "name" .Site.Title "url" .Site.Home.Permalink)
+    -}}
+    <script type="application/ld+json">{{ $genericSchema }}</script>
+    {{- end }}
     {{- end }}
     {{/* RSS 自动发现：指向当前语言站点的主 feed（/index.xml 或 /en/index.xml） */}}
     {{ with .Site.Home.OutputFormats.Get "RSS" }}

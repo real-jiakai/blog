@@ -1,10 +1,11 @@
 ---
 title: "ChatGPT o3, o4 mini Experience"
 date: 2025-04-17T09:06:26+08:00
+lastmod: 2025-04-29
 tags: ['chatgpt']
 slug: "chatgpt-o3-o4-mini-experience"
 translationKey: "chatgpt-o3-o4-mini-experience"
-summary: Sharing my ChatGPT o3, o4 mini experience.
+summary: "Compares ChatGPT o3 and o4-mini through coding, search, image understanding, hallucination, limits, and everyday use after launch."
 showtoc: true
 ---
 
@@ -87,9 +88,9 @@ ChatGPT Plus users: o3 limit 50/week; o4-mini limit 150/day; o4-mini-high 50/day
 
 via:
 
-https://help.openai.com/en/articles/9824962-openai-o3-o4-mini-and-o3-mini-usage-limits-on-chatgpt-and-the-api
+[OpenAI o3 and o4-mini usage limits](https://help.openai.com/en/articles/9824962-openai-o3-o4-mini-and-o3-mini-usage-limits-on-chatgpt-and-the-api)
 
-https://openai.com/chatgpt/pricing/
+[ChatGPT plans and pricing](https://openai.com/chatgpt/pricing/)
 
 Don't recommend free users use ChatGPT. Without paying, experience is definitely terrible—only 8K context window, and only lower-tier models available.
 

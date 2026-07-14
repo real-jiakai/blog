@@ -1,12 +1,15 @@
 ---
-title: "Racknerd的ubuntu机器报错'UFS: unable to mount root fs on unknown-block.'的解决方案"
+title: "RackNerd 'Unable to Mount Root FS' 修复"
 date: 2023-11-14T14:48:57+08:00
+lastmod: 2023-11-14
 tags: ['vps','linux']
 slug: "racknerd-ubuntu-ufs-fix"
 translationKey: "racknerd-ubuntu-ufs-fix"
-summary: "介绍Racknerd的ubuntu机器报错'UFS: unable to mount root fs on unknown-block.'的解决方案。"
+summary: "通过启动旧内核并恢复网络，处理 RackNerd Ubuntu VPS 的 'UFS: unable to mount root fs on unknown-block' 报错。"
 showtoc: false
 ---
+
+## 故障是如何出现的
 
 Racknerd 2023年的黑五活动在北京时间的今天凌晨拉开了帷幕。这次活动我采购了linux vps中价格最贵的一台。[同款vps黑五套餐购买链接](https://my.racknerd.com/aff.php?aff=9721&a=add&pid=796)
 
@@ -44,6 +47,8 @@ echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
 # 立即应用新的系统控制参数
 sysctl -p
 ```
+
+## 使用旧内核恢复系统
 
 但是当我第二次ssh连接时，发现死活连不上，就算是配置了代理，也连不上。
 
@@ -88,6 +93,8 @@ update-grub
 # 重启系统
 reboot
 ```
+
+## 恢复网络连接
 
 进行完这通操作后，可以进入新内核5.15.0-88-generic的系统，但是发现网络连接不上。
 

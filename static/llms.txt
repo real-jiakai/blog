@@ -12,82 +12,82 @@
 
 ## Content
 
-- [Perplexity Max尝鲜](https://blog.gujiakai.top/2026/06/trying-perplexity-max/): 介绍 Perplexity Max 会员的尝鲜体验。
+- [Perplexity Max尝鲜](https://blog.gujiakai.top/2026/06/trying-perplexity-max/): 回顾一个月的 Perplexity Max 实测，涵盖 Model Council、Computer、研究工具和移动端体验。
 - [六月未央，执笔归来](https://blog.gujiakai.top/2026/06/june-back-to-writing/): 停更许久后重新执笔，记录求职大专教师、事业单位面试、国考面试等经历与感悟。
-- [Claude Max回味](https://blog.gujiakai.top/2026/01/claude-max-aftertaste/): 分享第二次购买Claude Max会员的使用心得。
-- [当大模型开始画答案](https://blog.gujiakai.top/2025/12/when-llms-start-drawing-answers/): 介绍LLM可视化回复的现状。
-- [“体验券”转正实录](https://blog.gujiakai.top/2025/11/from-trial-to-official/): 记录体验券转正实录。
-- [Claude Sonnet 4.5短评](https://blog.gujiakai.top/2025/09/claude-sonnet-4-5-review/): 分享Claude Sonnet 4.5体验。
-- [Claude Max尝鲜](https://blog.gujiakai.top/2025/09/claude-max-preview/): 介绍Claude Max会员体验。
-- [让Claude再次伟大](https://blog.gujiakai.top/2025/08/make-claude-great-again/): 分享近期有关Claude产品的使用心得。
-- [Manus体验](https://blog.gujiakai.top/2025/07/manus-experience/): 吐槽Manus的体验感受。
-- [Grok 4真实体验](https://blog.gujiakai.top/2025/07/grok-4-real-experience/): 分享Grok 4真实体验。
-- [Claude 4体验](https://blog.gujiakai.top/2025/05/claude-4-experience/): 分享Claude 4的使用体验。
-- [Google I/O 2025记录](https://blog.gujiakai.top/2025/05/google-io-2025-notes/): 记录Google I/O 2025发布的内容。
-- [ChatGPT o3、o4 mini体验](https://blog.gujiakai.top/2025/04/chatgpt-o3-o4-mini-experience/): 分享ChatGPT o3、o4 mini体验感受。
-- [自建Kasm Workspaces](https://blog.gujiakai.top/2025/03/self-hosted-kasm-workspaces/): 分享自建Kasm Workspaces的经历。
-- [Gemini 2.5 Pro体验](https://blog.gujiakai.top/2025/03/gemini-2-5-pro-experience/): 分享Gemini 2.5 Pro体验的一些感受。
-- [Phind VS Devv](https://blog.gujiakai.top/2025/03/phind-vs-devv/): 分享AI编程搜索Phind和Devv的体验。
-- [Claude 3.7 Sonnet体验](https://blog.gujiakai.top/2025/02/claude-3-7-sonnet-experience/): 分享Claude 3.7 Sonnet使用体验。
-- [Gemini 2.0 体验](https://blog.gujiakai.top/2025/02/gemini-2-0-experience/): 分享Gemini 2.0体验的一些感受。
-- [豆包实时语音能唱的不跑调歌曲](https://blog.gujiakai.top/2025/01/doubao-real-time-on-pitch-songs/): 分享豆包实时语音能唱的不跑调歌曲。
-- [GLM Realtime API体验](https://blog.gujiakai.top/2025/01/glm-realtime-api-experience/): 分享GLM Realtime API体验感受。
-- [OpenAI 12月份发布会更新笔记](https://blog.gujiakai.top/2024/12/notes-about-openai-december-updates/): 记录OpenAI 12月份发布会更新。
-- [Claude封号的解决方案](https://blog.gujiakai.top/2024/11/claude-account-suspension-resolution/): 记录一次个人claude账号被封的经历及解决方案。
-- [Claude 3.5 Haiku测评](https://blog.gujiakai.top/2024/11/claude-3-5-haiku-review/): 记录Claude 3.5 Haiku测评。
-- [Gemini Advanced 2024年10月测评](https://blog.gujiakai.top/2024/11/gemini-advanced-2024-october-review/): 记录自己使用Gemini Advanced的体验感受。
-- [Anthropic更新内容测评](https://blog.gujiakai.top/2024/10/anthropic-updates-evaluation/): 记录2024年10月22日Anthropic更新内容测评。
-- [远离绿云,灵魂上坡](https://blog.gujiakai.top/2024/10/stay-away-from-greencloud/): 记录一次VPS丢失数据的经历。
-- [bolt.new初体验](https://blog.gujiakai.top/2024/10/bolt-new-first-experience/): 介绍自己初次体验bolt.new完成一个简单项目的经历。
-- [自建书签应用Hoarder](https://blog.gujiakai.top/2024/10/self-hosted-bookmark-app-hoarder/): 分享自建书签应用Hoarder的经验。
-- [ChatGPT 4o with canvas测评](https://blog.gujiakai.top/2024/10/chatgpt-4o-canvas-review/): 记录自己使用ChatGPT 4o with canvas的体验感受。
-- [小红书RSS的解决方案](https://blog.gujiakai.top/2024/09/xiaohongshu-rss-tips/): 介绍小红书rss的解决方案。
-- [为什么CSDN是一坨屎](https://blog.gujiakai.top/2024/09/why-is-csdn-a-pile-of-shit/): 介绍为什么CSDN是一坨屎，针对官方不针对使用该平台的创作者。
-- [机缘巧合：我与Bero Host优惠VPS的不期而遇](https://blog.gujiakai.top/2024/08/unexpected-bero-host-vps-bargain/): 记录自己朝思暮想的VPS从天而降的经历。
-- [Meta.AI美国IP区域不受支持的解决方案](https://blog.gujiakai.top/2024/08/meta-ai-us-ip-restriction-solutions/): 介绍Meta.AI美国IP区域不受支持的解决方案。
-- [Proton Family Plan尝鲜](https://blog.gujiakai.top/2024/08/proton-family-plan-first-taste/): 介绍自己尝鲜的Proton Family Plan套餐。
-- [自建小红书和Instagram的替代品—Pixelfed](https://blog.gujiakai.top/2024/07/build-your-own-xiaohongshu-instagram-alternative-pixelfed/): 介绍自建Pixelfed的过程。
-- [年轻人的第一个ASN](https://blog.gujiakai.top/2024/06/the-first-asn-of-young-people/): 介绍自己获取ASN并配置该ASN对应的ipv6地址的经历。
-- [自建Nginx Proxy Manger的替代品—Zoraxy](https://blog.gujiakai.top/2024/05/selfhost-zoraxy-an-alternative-to-nginx-proxy-manager/): 自建Nginx Proxy Manger的替代品—Zoraxy。
-- [Google One VPN停用的替代方案](https://blog.gujiakai.top/2024/04/alternatives-to-google-one-vpn-shutdown/): 介绍Google One VPN停用的替代方案。
-- [虚假的自托管爱好者](https://blog.gujiakai.top/2024/04/fake-selfhost-lover/): 介绍造成自托管项目吃灰的常见原因。
-- [关于Ikihost换ip风波的经验分享](https://blog.gujiakai.top/2024/03/experience-sharing-on-ikihost-ip-change-ordeal/): 分享自己从Ikihost换ip风波中获取的经验。
-- [Gemini安卓 App不支持此设备的解决方案](https://blog.gujiakai.top/2024/02/solving-gemini-device-compatibility-issues/): 介绍Gemini安卓App不支持此设备的解决方案。
-- [Lightsail迁移至ipv6 only实例过程记录](https://blog.gujiakai.top/2024/01/migrating-to-ipv6-only-instance-on-lightsail/): 记录Lightsail迁移至ipv6 only实例过程。
-- [apt安装软件报错Operation not permitted的解决方案](https://blog.gujiakai.top/2024/01/fix-apt-install-operation-not-permitted-error/): 介绍apt安装软件报错Operation not permitted的解决方案。
-- [ChatGPT Team账号体验](https://blog.gujiakai.top/2024/01/chatgpt-team-experience/): 记录自己使用ChatGPT Team账号体验感受。
-- [2023黑五服务器购物总结](https://blog.gujiakai.top/2023/11/summary-of-server-shop-of-2023-bf/): 总结2023年黑五服务器购物详情。
-- [My App Defaults 2023](https://blog.gujiakai.top/2023/11/my-app-defaults-2023/): 介绍2023年我日常使用的App。
-- [Racknerd的ubuntu机器报错'UFS: unable to mount root fs on unknown-block.'的解决方案](https://blog.gujiakai.top/2023/11/racknerd-ubuntu-ufs-fix/): 介绍Racknerd的ubuntu机器报错’UFS: unable to mount root fs on unknown-block.‘的解决方案。
-- [chatgpt安卓报错disallowed ISP/There is a problem with your request的解决方案](https://blog.gujiakai.top/2023/10/chatgpt-android-error-disallowed-isp-solution/): 介绍chatgpt安卓报错disallowed ISP/There is a problem with your request的解决方案。
-- [使用docker自建proxigram](https://blog.gujiakai.top/2023/10/use-docker-compose-to-build-proxigram/): 介绍使用docker自建proxigram的方法。
-- [hxservers网络问题的解决方案](https://blog.gujiakai.top/2023/10/solving-hxservers-network-issues/): 介绍hxservers网络问题的解决方案。
-- [体验icloud+ private relay](https://blog.gujiakai.top/2023/10/experience-icloud-plus-private-relay/): 介绍自己使用icloud+ private relay的体验。
-- [hxservers搭建google one vpn节点教程](https://blog.gujiakai.top/2023/10/hxservers-google-one-node-setup-guide/): 介绍hxservers服务器搭建google one vpn节点的方法。
-- [windows git bash conda激活环境报错UnicodeDecodeError: 'gbk' codec can't decode byte 0xaf in position 271: illegal multibyte sequence的解决方案](https://blog.gujiakai.top/2023/09/conda-activation-error-unicode-decode-gbk/): 介绍windows git bash conda激活环境报错UnicodeDecodeError: ‘gbk’ codec can’t decode byte 0xaf in position 271: illegal multibyte sequence的解决方案。
-- [从一台搬瓦工机器迁移到另一台搬瓦工机器笔记](https://blog.gujiakai.top/2023/09/notes-about-migrating-from-one-bandwagon-host-to-another/): 记录自己迁移搬瓦工机器的流程
-- [利用windows热点和clash-tun模式实现kindle科学上网](https://blog.gujiakai.top/2023/09/using-windows-hotspot-and-clash-tun-for-kindle-internet-access/): 介绍利用windows热点和clash-tun模式实现kindle科学上网的方法。
-- [git push报错'remote: fatal: did not receive expected object'的解决方案](https://blog.gujiakai.top/2023/09/fix-git-push-fatal-error-did-not-receive-expected-object/): 介绍git push报错’remote: fatal: did not receive expected object’的解决方案
-- [修改ip归属地为朝鲜、南极洲的方法](https://blog.gujiakai.top/2023/08/methods-for-setting-ip-to-north-korea-and-antarctica/): 分享修改ip归属地为朝鲜、南极洲的方法。
-- [chatgpt安卓报错date and time的解决方案](https://blog.gujiakai.top/2023/08/solving-date-and-time-error-in-chatgpt-android-app/): 分享chatgpt安卓报错date and time的解决方案。
-- [搬瓦工theplanv2安装caddy启动失败的解决方案](https://blog.gujiakai.top/2023/06/solving-caddy-failure-on-bandwagonhost-theplanv2/): 介绍搬瓦工新推出套餐the plan v2上安装caddy启动失败的解决方案。
-- [chika登陆器在windows server上闪退的解决方案](https://blog.gujiakai.top/2023/06/fix-chika-crash-on-windows-server/): 分享chika登陆器在windows server上闪退的解决方案。
-- [ChatGPT插件列表整理](https://blog.gujiakai.top/2023/06/chatgpt-plugins-list/): 分享自己整理的chatgpt插件列表。
-- [非open ai服务地区的VPS解锁ChatGPT的方法](https://blog.gujiakai.top/2023/06/unlock-chatgpt-when-vps-been-judged-cn-by-cloudflare/): 分享使用二级代理来实现非open ai服务地区的VPS解锁ChatGPT的方法。
-- [关于openai清退plus用户事件的思考](https://blog.gujiakai.top/2023/05/thinking-of-openai-ban-plus-customers-in-527/): 分享个人关于openai清退plus用户事件的思考。
-- [Feed43的继承者—Rsseverything制作RSS源教学](https://blog.gujiakai.top/2023/03/create-rss-feed-with-rsseverything-tutorial/): 介绍Rsseverything制作RSS源教学。
-- [Sorry, looks like your network settings are preventing access to this feature—new bing网络问题的解决对策](https://blog.gujiakai.top/2023/03/solutions-for-network-error-of-new-bing/): 介绍解决new bing网络问题的解决对策。
-- [Hugo主题开发日记](https://blog.gujiakai.top/2023/03/hugo-theme-development-diary/): 记录Hugo主题的开发经过。
-- [Google voice正在连接的解决方案](https://blog.gujiakai.top/2023/03/the-solution-of-google-voice-is-connecting/): 介绍Google voice正在连接的解决方案。
-- [Docker容器服务不受防火墙限制？](https://blog.gujiakai.top/2023/03/will-docker-container-be-limited-by-firewall/): 介绍Docker容器服务不受防火墙限制的解决方案。
-- [rssbridge搭建方法](https://blog.gujiakai.top/2023/02/use-docker-compose-to-build-rssbridge/): 介绍rssbridge搭建方法。
-- [使用RSS订阅Ins的方式](https://blog.gujiakai.top/2023/01/use-rss-to-subscribe-instagram/): 介绍使用RSS订阅Ins的方式。
-- [Failed to parse PID from file /usr/local/nginx/logs/nginx.pid: Invalid argument的解决方案](https://blog.gujiakai.top/2023/01/a-solution-about-nginx-problem/): 介绍nginx安装过程中遇到bug的解决方案。
-- [ls > list命令的执行流程](https://blog.gujiakai.top/2023/01/the-execution-process-ls--list/): 介绍ls > list命令的执行流程。
-- [稍后阅读=稍后不读](https://blog.gujiakai.top/2023/01/read-later-equals-to-not-read/): 介绍自己使用稍后阅读软件的感悟。
-- [Hugo博客url删除末尾斜杠](https://blog.gujiakai.top/2022/11/hugo-remove-trailing-slash/): 介绍Hugo博客去除url尾部斜杠的方法。
-- [SSH通过代理连接远程服务器报错Connection_closed_by_foreign_host的解决对策.](https://blog.gujiakai.top/2022/10/ssh-connect-by-proxy-error-connection-closed-by-foreign-host-solution/): ssh设置代理连接远程服务器报错，经过两小时的摸索，我找到了解决对策。
-- [js语句结束时，应该加分号;](https://blog.gujiakai.top/2022/09/you-should-add-a-semicolon-when-a-statement-end-in-js/): 深究newsletter里面js代码的细节，让我知道了js中添加;的重要性。
+- [Claude Max回味](https://blog.gujiakai.top/2026/01/claude-max-aftertaste/): 围绕第二次购买Claude Max会员的使用心得，整理个人实践、结果与体会。
+- [当大模型开始画答案](https://blog.gujiakai.top/2025/12/when-llms-start-drawing-answers/): 聚焦LLM可视化回复的现状，结合实际使用说明关键体验与结论。
+- [“体验券”转正实录](https://blog.gujiakai.top/2025/11/from-trial-to-official/): 回顾体验券转正实录，梳理完整过程、结果与可复用经验。
+- [Claude Sonnet 4.5短评](https://blog.gujiakai.top/2025/09/claude-sonnet-4-5-review/): 围绕Claude Sonnet 4.5体验，整理个人实践、结果与体会。
+- [Claude Max尝鲜](https://blog.gujiakai.top/2025/09/claude-max-preview/): 聚焦Claude Max会员体验，结合实际使用说明关键体验与结论。
+- [让Claude再次伟大!](https://blog.gujiakai.top/2025/08/make-claude-great-again/): 围绕近期有关Claude产品的使用心得，整理个人实践、结果与体会。
+- [Manus体验](https://blog.gujiakai.top/2025/07/manus-experience/): 对比 Manus 免费版与 Basic 会员：付费后投入程度和 PPT 效果提升，但资料判断、模型透明度和验证码处理仍不可靠。
+- [Grok 4真实体验](https://blog.gujiakai.top/2025/07/grok-4-real-experience/): 围绕Grok 4真实体验，整理个人实践、结果与体会。
+- [Claude 4体验](https://blog.gujiakai.top/2025/05/claude-4-experience/): 围绕Claude 4的使用体验，整理个人实践、结果与体会。
+- [Google I/O 2025记录](https://blog.gujiakai.top/2025/05/google-io-2025-notes/): 回顾Google I/O 2025发布的内容，梳理完整过程、结果与可复用经验。
+- [ChatGPT o3、o4 mini体验](https://blog.gujiakai.top/2025/04/chatgpt-o3-o4-mini-experience/): 围绕ChatGPT o3、o4 mini体验感受，整理个人实践、结果与体会。
+- [自建Kasm Workspaces](https://blog.gujiakai.top/2025/03/self-hosted-kasm-workspaces/): 围绕自建Kasm Workspaces的经历，整理个人实践、结果与体会。
+- [Gemini 2.5 Pro体验](https://blog.gujiakai.top/2025/03/gemini-2-5-pro-experience/): 围绕Gemini 2.5 Pro体验的一些感受，整理个人实践、结果与体会。
+- [Phind VS Devv](https://blog.gujiakai.top/2025/03/phind-vs-devv/): 围绕AI编程搜索Phind和Devv的体验，整理个人实践、结果与体会。
+- [Claude 3.7 Sonnet体验](https://blog.gujiakai.top/2025/02/claude-3-7-sonnet-experience/): 围绕Claude 3.7 Sonnet使用体验，整理个人实践、结果与体会。
+- [Gemini 2.0 体验](https://blog.gujiakai.top/2025/02/gemini-2-0-experience/): 围绕Gemini 2.0体验的一些感受，整理个人实践、结果与体会。
+- [豆包实时语音能唱的不跑调歌曲](https://blog.gujiakai.top/2025/01/doubao-real-time-on-pitch-songs/): 围绕豆包实时语音能唱的不跑调歌曲，整理个人实践、结果与体会。
+- [GLM Realtime API体验](https://blog.gujiakai.top/2025/01/glm-realtime-api-experience/): 围绕GLM Realtime API体验感受，整理个人实践、结果与体会。
+- [OpenAI 12月份发布会更新笔记](https://blog.gujiakai.top/2024/12/notes-about-openai-december-updates/): 回顾OpenAI 12月份发布会更新，梳理完整过程、结果与可复用经验。
+- [Claude封号的解决方案](https://blog.gujiakai.top/2024/11/claude-account-suspension-resolution/): 回顾一次个人claude账号被封的经历及解决方案，梳理完整过程、结果与可复用经验。
+- [Claude 3.5 Haiku测评](https://blog.gujiakai.top/2024/11/claude-3-5-haiku-review/): 回顾Claude 3.5 Haiku测评，梳理完整过程、结果与可复用经验。
+- [Gemini Advanced 2024年10月测评](https://blog.gujiakai.top/2024/11/gemini-advanced-2024-october-review/): 回顾自己使用Gemini Advanced的体验感受，梳理完整过程、结果与可复用经验。
+- [Anthropic更新内容测评](https://blog.gujiakai.top/2024/10/anthropic-updates-evaluation/): 回顾2024年10月22日Anthropic更新内容测评，梳理完整过程、结果与可复用经验。
+- [远离绿云,灵魂上坡](https://blog.gujiakai.top/2024/10/stay-away-from-greencloud/): 回顾一次VPS丢失数据的经历，梳理完整过程、结果与可复用经验。
+- [bolt.new初体验](https://blog.gujiakai.top/2024/10/bolt-new-first-experience/): 聚焦自己初次体验bolt.new完成一个简单项目的经历，结合实际使用说明关键体验与结论。
+- [自建书签应用—Karakeep(原Hoarder)](https://blog.gujiakai.top/2024/10/self-hosted-bookmark-app-hoarder/): 围绕自建书签应用Karakeep(原Hoarder)的经验，整理个人实践、结果与体会。
+- [ChatGPT 4o with canvas测评](https://blog.gujiakai.top/2024/10/chatgpt-4o-canvas-review/): 回顾自己使用ChatGPT 4o with canvas的体验感受，梳理完整过程、结果与可复用经验。
+- [小红书RSS的解决方案](https://blog.gujiakai.top/2024/09/xiaohongshu-rss-tips/): 梳理小红书rss的解决方案，重点说明操作步骤、注意事项与结果。
+- [为什么CSDN是一坨屎](https://blog.gujiakai.top/2024/09/why-is-csdn-a-pile-of-shit/): 聚焦为什么CSDN是一坨屎，针对官方不针对使用该平台的创作者，结合实际使用说明关键体验与结论。
+- [我与 Bero Host 优惠 VPS 的意外相遇](https://blog.gujiakai.top/2024/08/unexpected-bero-host-vps-bargain/): 一次偶然机会让我入手 Bero Host 优惠 VPS，文章整理其配置、网络、价格与初步性能。
+- [Meta.AI美国IP区域不受支持的解决方案](https://blog.gujiakai.top/2024/08/meta-ai-us-ip-restriction-solutions/): 梳理Meta.AI美国IP区域不受支持的解决方案，重点说明操作步骤、注意事项与结果。
+- [Proton Family Plan尝鲜](https://blog.gujiakai.top/2024/08/proton-family-plan-first-taste/): 聚焦自己尝鲜的Proton Family Plan套餐，结合实际使用说明关键体验与结论。
+- [自建 Instagram 替代品 Pixelfed](https://blog.gujiakai.top/2024/07/build-your-own-xiaohongshu-instagram-alternative-pixelfed/): 使用 Docker Compose 部署 Pixelfed，配置域名和邮件服务，搭建支持联邦宇宙的图片分享站点。
+- [年轻人的第一个ASN](https://blog.gujiakai.top/2024/06/the-first-asn-of-young-people/): 聚焦自己获取ASN并配置该ASN对应的ipv6地址的经历，结合实际使用说明关键体验与结论。
+- [自建 Zoraxy：Nginx Proxy Manager 的替代方案](https://blog.gujiakai.top/2024/05/selfhost-zoraxy-an-alternative-to-nginx-proxy-manager/): 回顾 Zoraxy 的 Docker 部署、反向代理、证书、访问控制和容器网络配置，梳理完整过程、结果与可复用经验。
+- [Google One VPN停用的替代方案](https://blog.gujiakai.top/2024/04/alternatives-to-google-one-vpn-shutdown/): 聚焦Google One VPN停用的替代方案，结合实际使用说明关键体验与结论。
+- [虚假的自托管爱好者](https://blog.gujiakai.top/2024/04/fake-selfhost-lover/): 聚焦造成自托管项目吃灰的常见原因，结合实际使用说明关键体验与结论。
+- [关于Ikihost换ip风波的经验分享](https://blog.gujiakai.top/2024/03/experience-sharing-on-ikihost-ip-change-ordeal/): 围绕自己从Ikihost换ip风波中获取的经验，整理个人实践、结果与体会。
+- [Gemini安卓 App不支持此设备的解决方案](https://blog.gujiakai.top/2024/02/solving-gemini-device-compatibility-issues/): 梳理Gemini安卓App不支持此设备的解决方案，重点说明操作步骤、注意事项与结果。
+- [Lightsail迁移至ipv6 only实例过程记录](https://blog.gujiakai.top/2024/01/migrating-to-ipv6-only-instance-on-lightsail/): 回顾Lightsail迁移至ipv6 only实例过程，梳理完整过程、结果与可复用经验。
+- [apt安装软件报错Operation not permitted的解决方案](https://blog.gujiakai.top/2024/01/fix-apt-install-operation-not-permitted-error/): 梳理apt安装软件报错Operation not permitted的解决方案，重点说明操作步骤、注意事项与结果。
+- [ChatGPT Team账号体验](https://blog.gujiakai.top/2024/01/chatgpt-team-experience/): 回顾自己使用ChatGPT Team账号体验感受，梳理完整过程、结果与可复用经验。
+- [2023黑五服务器购物总结](https://blog.gujiakai.top/2023/11/summary-of-server-shop-of-2023-bf/): 梳理2023年黑五服务器购物详情，说明最终取舍与经验。
+- [My App Defaults 2023](https://blog.gujiakai.top/2023/11/my-app-defaults-2023/): 聚焦2023年我日常使用的App，结合实际使用说明关键体验与结论。
+- [RackNerd 'Unable to Mount Root FS' 修复](https://blog.gujiakai.top/2023/11/racknerd-ubuntu-ufs-fix/): 通过启动旧内核并恢复网络，处理 RackNerd Ubuntu VPS 的 'UFS: unable to mount root fs on unknown-block' 报错。
+- [解决 ChatGPT 安卓端 'Disallowed ISP' 报错](https://blog.gujiakai.top/2023/10/chatgpt-android-error-disallowed-isp-solution/): 通过移动端接口检测和二级代理出口，排查 ChatGPT 安卓端的 'Disallowed ISP' 与 'There is a problem with your request' 报错。
+- [使用docker自建proxigram](https://blog.gujiakai.top/2023/10/use-docker-compose-to-build-proxigram/): 梳理使用docker自建proxigram的方法，重点说明操作步骤、注意事项与结果。
+- [hxservers网络问题的解决方案](https://blog.gujiakai.top/2023/10/solving-hxservers-network-issues/): 梳理hxservers网络问题的解决方案，重点说明操作步骤、注意事项与结果。
+- [体验icloud+ private relay](https://blog.gujiakai.top/2023/10/experience-icloud-plus-private-relay/): 聚焦自己使用icloud+ private relay的体验，结合实际使用说明关键体验与结论。
+- [hxservers搭建google one vpn节点教程](https://blog.gujiakai.top/2023/10/hxservers-google-one-node-setup-guide/): 梳理hxservers服务器搭建google one vpn节点的方法，重点说明操作步骤、注意事项与结果。
+- [Windows Conda UnicodeDecodeError 修复](https://blog.gujiakai.top/2023/09/conda-activation-error-unicode-decode-gbk/): 针对 Conda 激活时出现的 'gbk codec can't decode byte' 报错，说明 Windows Git Bash 中的编码修复方法。
+- [从一台搬瓦工机器迁移到另一台搬瓦工机器笔记](https://blog.gujiakai.top/2023/09/notes-about-migrating-from-one-bandwagon-host-to-another/): 回顾自己迁移搬瓦工机器的流程，梳理完整过程、结果与可复用经验。
+- [用 Windows 热点和 Clash TUN 让 Kindle 联网](https://blog.gujiakai.top/2023/09/using-windows-hotspot-and-clash-tun-for-kindle-internet-access/): 配置 Windows 热点和 Clash TUN 模式，让 Kindle 的网络流量通过电脑代理转发。
+- [Git Push 'Expected Object' 报错修复](https://blog.gujiakai.top/2023/09/fix-git-push-fatal-error-did-not-receive-expected-object/): 说明仓库对象异常后，如何处理 git push 的 'remote: fatal: did not receive expected object' 报错。
+- [将 IP 归属地设为朝鲜或南极洲](https://blog.gujiakai.top/2023/08/methods-for-setting-ip-to-north-korea-and-antarctica/): 说明如何通过自定义 geofeed 数据和 BGP 广播，让 IP 段在地理位置数据库中显示为朝鲜或南极洲。
+- [chatgpt安卓报错date and time的解决方案](https://blog.gujiakai.top/2023/08/solving-date-and-time-error-in-chatgpt-android-app/): 围绕chatgpt安卓报错date and time的解决方案，整理个人实践、结果与体会。
+- [解决搬瓦工 The Plan V2 的 Caddy 启动失败](https://blog.gujiakai.top/2023/06/solving-caddy-failure-on-bandwagonhost-theplanv2/): 说明如何调整服务配置，解决搬瓦工 The Plan V2 套餐上的 Caddy 启动失败。
+- [chika登陆器在windows server上闪退的解决方案](https://blog.gujiakai.top/2023/06/fix-chika-crash-on-windows-server/): 围绕chika登陆器在windows server上闪退的解决方案，整理个人实践、结果与体会。
+- [ChatGPT插件列表整理](https://blog.gujiakai.top/2023/06/chatgpt-plugins-list/): 围绕自己整理的chatgpt插件列表，整理个人实践、结果与体会。
+- [非open ai服务地区的VPS解锁ChatGPT的方法](https://blog.gujiakai.top/2023/06/unlock-chatgpt-when-vps-been-judged-cn-by-cloudflare/): 围绕使用二级代理来实现非open ai服务地区的VPS解锁ChatGPT的方法，整理个人实践、结果与体会。
+- [关于openai清退plus用户事件的思考](https://blog.gujiakai.top/2023/05/thinking-of-openai-ban-plus-customers-in-527/): 围绕个人关于openai清退plus用户事件的思考，整理个人实践、结果与体会。
+- [Feed43的继承者—Rsseverything制作RSS源教学](https://blog.gujiakai.top/2023/03/create-rss-feed-with-rsseverything-tutorial/): 聚焦Rsseverything制作RSS源教学，结合实际使用说明关键体验与结论。
+- [用 WARP 解决 New Bing 网络错误](https://blog.gujiakai.top/2023/03/solutions-for-network-error-of-new-bing/): New Bing 提示网络设置阻止访问时，可用 WARP 更换网络出口并恢复功能。
+- [Hugo主题开发日记](https://blog.gujiakai.top/2023/03/hugo-theme-development-diary/): 回顾Hugo主题的开发经过，梳理完整过程、结果与可复用经验。
+- [Google voice正在连接的解决方案](https://blog.gujiakai.top/2023/03/the-solution-of-google-voice-is-connecting/): 梳理Google voice正在连接的解决方案，重点说明操作步骤、注意事项与结果。
+- [Docker容器服务不受防火墙限制？](https://blog.gujiakai.top/2023/03/will-docker-container-be-limited-by-firewall/): 梳理Docker容器服务不受防火墙限制的解决方案，重点说明操作步骤、注意事项与结果。
+- [rssbridge搭建方法](https://blog.gujiakai.top/2023/02/use-docker-compose-to-build-rssbridge/): 梳理rssbridge搭建方法，重点说明操作步骤、注意事项与结果。
+- [使用RSS订阅Ins的方式](https://blog.gujiakai.top/2023/01/use-rss-to-subscribe-instagram/): 聚焦使用RSS订阅Ins的方式，结合实际使用说明关键体验与结论。
+- [修复 Nginx 安装后的 'Failed to parse PID' 错误](https://blog.gujiakai.top/2023/01/a-solution-about-nginx-problem/): Nginx 安装后若服务报 'Failed to parse PID'，可通过调整 PID 文件与服务配置恢复启动。
+- [ls > list命令的执行流程](https://blog.gujiakai.top/2023/01/the-execution-process-ls-list/): 聚焦ls > list命令的执行流程，结合实际使用说明关键体验与结论。
+- [稍后阅读=稍后不读](https://blog.gujiakai.top/2023/01/read-later-equals-to-not-read/): 聚焦自己使用稍后阅读软件的感悟，结合实际使用说明关键体验与结论。
+- [Hugo博客url删除末尾斜杠](https://blog.gujiakai.top/2022/11/hugo-remove-trailing-slash/): 梳理Hugo博客去除url尾部斜杠的方法，重点说明操作步骤、注意事项与结果。
+- [解决 SSH 代理连接被远程主机关闭](https://blog.gujiakai.top/2022/10/ssh-connect-by-proxy-error-connection-closed-by-foreign-host-solution/): 经过两小时排查，定位 SSH 代理连接时 'Connection closed by foreign host' 报错的原因与修复方法。
+- [JavaScript 语句为什么需要分号](https://blog.gujiakai.top/2022/09/you-should-add-a-semicolon-when-a-statement-end-in-js/): 从 newsletter 的 JavaScript 代码细节出发，说明显式分号如何让语句边界更安全、更清晰。
 - [使用一键脚本安装code-server](https://blog.gujiakai.top/2022/08/use-script-to-install-code-server/): 使用一键脚本安装code-server，更改b站视频粗糙的安装部署操作。
 - [GitHub学生包申请之旅](https://blog.gujiakai.top/2022/06/github-education-developer-kit-application-journey/): 被GitHub自检程序秒拒49次后，第50次我成功了。
 - [324事件-码云的苦衷](https://blog.gujiakai.top/2022/03/324-gitee-affair/): 2022年3月24日下午，Gitee封禁了所有的图床仓库，分享个人对此的看法。

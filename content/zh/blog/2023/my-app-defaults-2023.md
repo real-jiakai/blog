@@ -1,18 +1,23 @@
 ---
 title: "My App Defaults 2023"
 date: 2023-11-21T08:44:59+08:00
+lastmod: 2023-11-21
 tags: ['app']
 slug: "my-app-defaults-2023"
 translationKey: "my-app-defaults-2023"
-summary: 介绍2023年我日常使用的App。
+summary: "聚焦2023年我日常使用的App，结合实际使用说明关键体验与结论。"
 showtoc: false
 ---
+
+## 这份清单的由来
 
 最近看到小胡同学的一篇博客—[My App Defaults 2023](https://yinji.org/5179.html)。
 
 灵感源自GitHub的一个项目—[App Defaults](https://github.com/rknightuk/app-defaults)，项目介绍页面—[App Defaults](https://defaults.rknight.me/)。
 
 快到年底了，我也分享一些自己喜欢的工具们吧。
+
+## 效率与存储
 
 📨 邮件客户端: Thunderbird
 
@@ -62,6 +67,8 @@ RSS使用的是功能强大的Inoreader。它的创建RSS Feed、邮件提醒等
 
 虽然我也自建了诸如Fresh RSS、Miniflux等应用，但使用的较少。
 
+## 浏览与沟通
+
 🌐 Browser: Chrome、Edge、Firfox、Safari and etc.
 
 浏览器方面，主力还是Chrome浏览器，Edge浏览器主要用于ChatGPT和Microsoft Copilot/New Bing，其他的浏览器用得较少。
@@ -77,6 +84,8 @@ RSS使用的是功能强大的Inoreader。它的创建RSS Feed、邮件提醒等
 我和我一个打交道较好的舍友之间一般使用的是我自建的Rocket Chat，他也自建了一个Matrix聊天，有时也使用Matrix的前端Element来进行交流。
 
 我和我的国际友人一般通过TG交流。
+
+## 媒体与个人工具
 
 🔖 Bookmarks: Raindrop
 
@@ -103,6 +112,8 @@ Spotify主要用于学习时，放送轻音乐。Youtube music用于听流行歌
 自建Bitwarden服务，浏览器密码填充、移动端密码填充的小能手。
 
 ![Bitwarden保存密码](https://vip2.loli.net/2023/11/21/Tj1v8nshympiSB6.webp)
+
+## 开发与 AI
 
 🧑‍💻 Code Editor: VSCode
 

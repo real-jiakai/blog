@@ -1,10 +1,11 @@
 ---
 title: "ChatGPT Plugins List"
 date: 2023-06-03T09:48:25+08:00
+lastmod: 2023-06-03
 tags: ['chatgpt','plugins']
 slug: "chatgpt-plugins-list"
 translationKey: "chatgpt-plugins-list"
-summary: Sharing my curated list of ChatGPT plugins.
+summary: "A curated snapshot of roughly 250 ChatGPT plugins available in June 2023, organized to help Plus users find useful tools."
 showtoc: false
 ---
 

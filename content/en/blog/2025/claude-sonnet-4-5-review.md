@@ -1,10 +1,11 @@
 ---
 title: "Claude Sonnet 4.5 Review"
 date: 2025-09-30T08:12:17+08:00
+lastmod: 2025-10-09
 tags: ['claude', 'anthropic']
 slug: "claude-sonnet-4-5-review"
 translationKey: "claude-sonnet-4-5-review"
-summary: Sharing Claude Sonnet 4.5 experience.
+summary: "Reviews Sonnet 4.5 for vibe coding, writing, Imagine with Claude, and Pro quotas, while weighing capability gains against Anthropic's tighter limits."
 showtoc: true
 ---
 

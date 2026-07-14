@@ -1,10 +1,11 @@
 ---
 title: "Alternatives to Google One VPN Shutdown"
 date: 2024-04-19T18:08:18+08:00
+lastmod: 2025-01-06
 tags: ["google one vpn"]
 slug: "alternatives-to-google-one-vpn-shutdown"
 translationKey: "alternatives-to-google-one-vpn-shutdown"
-summary: Introducing alternatives to the Google One VPN shutdown.
+summary: "Tracks post-shutdown alternatives to Google One VPN—from WARP and dual-ISP VPS routes to residential IPs—and the tradeoffs in cost and reliability."
 showtoc: true
 ---
 
@@ -73,7 +74,7 @@ Goodbye Google One VPN For Windows.
 
 ## Update (2024.06.17)
 
-Today afternoon I organized solutions mentioned in this blog post plus some unmentioned supplements into a Google Sheet. Welcome to check the spreadsheet alongside this blog post. [link](https://docs.google.com/spreadsheets/d/1G3zJ6BPfYlom30NFIH0wgnpj01JCl56SgAFW9zFdspU/edit?usp=sharing)
+Today afternoon I organized solutions mentioned in this blog post plus some unmentioned supplements into a [Google One VPN alternatives spreadsheet](https://docs.google.com/spreadsheets/d/1G3zJ6BPfYlom30NFIH0wgnpj01JCl56SgAFW9zFdspU/edit?usp=sharing) to use alongside this post.
 
 ## Update (2024.06.16)
 
@@ -268,3 +269,4 @@ via: [The Google One VPN service is heading to the Google graveyard](https://www
 In this AIGC era, Google added AI Premium plan to Google One, while Google One VPN is being terminated due to supposedly low usage.
 
 In Google One VPN's four years of existence, I enjoyed about 1 year of service (2023.5~2024.6). Finally, a thank you to Google One VPN—thanks for helping me smoothly access various AI services.
+One concrete example was using its exit to resolve a [ChatGPT Android “Disallowed ISP” error](/en/2023/10/chatgpt-android-error-disallowed-isp-solution/).

@@ -31,7 +31,7 @@
     <!-- 按计数降序排序并显示标签 -->
     <div class="mb-4">
         {{ range sort $tagCounts "count" "desc" }}
-            <a href="{{ "/tags/" | relLangURL }}{{ .name | urlize }}" class="badge bg-secondary text-decoration-none me-2">
+            <a href="{{ printf "%stags/%s/" ("/" | relLangURL) (.name | urlize) }}" class="badge bg-secondary text-decoration-none me-2">
                 #{{ .name }} ({{ .count }})
             </a>
         {{ end }}

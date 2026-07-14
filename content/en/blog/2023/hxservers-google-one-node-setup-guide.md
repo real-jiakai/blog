@@ -1,10 +1,11 @@
 ---
 title: "HXServers Google One VPN Node Setup Guide"
 date: 2023-10-04T18:54:34+08:00
+lastmod: 2023-11-27
 tags: ['vps','google one vpn']
 slug: "hxservers-google-one-node-setup-guide"
 translationKey: "hxservers-google-one-node-setup-guide"
-summary: Introducing how to set up Google One VPN nodes on HXServers.
+summary: "Configure an HXServers Windows VPS as a Google One VPN node, including the VirtFusion networking workaround and later provider shutdown."
 showtoc: true
 ---
 

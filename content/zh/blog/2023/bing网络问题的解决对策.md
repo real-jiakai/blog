@@ -1,10 +1,11 @@
 ---
-title: "Sorry, looks like your network settings are preventing access to this feature—new bing网络问题的解决对策"
+title: "用 WARP 解决 New Bing 网络错误"
 date: 2023-03-26T16:29:47+08:00
+lastmod: 2023-06-01
 tags: ['bing']
 slug: "solutions-for-network-error-of-new-bing"
 translationKey: "solutions-for-network-error-of-new-bing"
-summary: 介绍解决new bing网络问题的解决对策。
+summary: "New Bing 提示网络设置阻止访问时，可用 WARP 更换网络出口并恢复功能。"
 ---
 
 ## 更新

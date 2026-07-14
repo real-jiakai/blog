@@ -1,14 +1,19 @@
 ---
 title: "Notes on Migrating from One BandwagonHost Machine to Another"
 date: 2023-09-24T11:06:36+08:00
+lastmod: 2023-09-24
 tags: ['vps','bandwagonhost']
 slug: "notes-about-migrating-from-one-bandwagon-host-to-another"
 translationKey: "notes-about-migrating-from-one-bandwagon-host-to-another"
-summary: Recording my process of migrating BandwagonHost machines
+summary: "Migrate a BandwagonHost VPS with snapshots, then update SSH, Cloudflare DNS, monitoring agents, and other machine-specific settings."
 showtoc: false
 ---
 
+## Migration Method
+
 The migration process mainly references this article - [BandwagonHost VPS Data Migration Tutorial Using Snapshots (Snapshot Creation, Export, Import, Restore)](https://www.bandwagonhost.net/3003.html)
+
+## Post-Migration Checklist
 
 Assuming the original server is A, I exported a snapshot of server A and imported it on server B. The following changes need to be made on server B:
 
@@ -35,6 +40,8 @@ For Linux VPS, directly restart the client; for Windows VPS, directly restart th
 - Proxy software X-UI panel
 
 Mainly modifying the exit node machine's IP.
+
+## What I Kept
 
 I'll add any other missed points after using it for a while. Overall, although BandwagonHost machines are expensive, their backup and snapshot features are quite useful.
 

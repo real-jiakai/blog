@@ -1,10 +1,11 @@
 ---
 title: "Google I/O 2025 Notes"
 date: 2025-05-21T08:01:38+08:00
+lastmod: 2025-05-21
 tags: ["google", "gemini"]
 slug: "google-io-2025-notes"
 translationKey: "google-io-2025-notes"
-summary: Recording Google I/O 2025 announcements.
+summary: "Organizes Google I/O 2025's AI announcements across Gemini, AI Mode, Flow, Veo, Stitch, Chrome, Project Astra, Android XR, and live translation."
 showtoc: true
 ---
 
@@ -84,7 +85,7 @@ Ultra subscription suits wealthy folks or extreme Gemini AI enthusiasts/Google d
 
 via:
 
-https://blog.google/products/google-one/google-ai-ultra/
+[Google AI Ultra announcement](https://blog.google/products/google-one/google-ai-ultra/)
 
 3. Agent Mode
 
@@ -124,9 +125,9 @@ Grok leads by far in low censorship—this is unique. Few days ago had Doubao ge
 
 ![ChatGPT o3's explanation of Veo3, Imagen4 user types](https://cdn.sa.net/2025/05/21/MPXntjYD786VzBg.webp)
 
-https://x.com/GeminiApp/status/1924893675529900467
+[Gemini App media-generation announcement on X](https://x.com/GeminiApp/status/1924893675529900467)
 
-https://x.com/GeminiApp/status/1924973242768642433
+[Gemini App media-generation follow-up on X](https://x.com/GeminiApp/status/1924973242768642433)
 
 7. Deep Research creating apps/Canvas updates
 
@@ -164,9 +165,9 @@ Many are already Google AI Pro users. Friends who haven't claimed the deal—can
 
 via:
 
-https://x.com/GeminiApp/status/1924891940598014359
+[Gemini App feature announcement on X](https://x.com/GeminiApp/status/1924891940598014359)
 
-https://x.com/NewsFromGoogle/status/1924887278008307728
+[Google feature announcement on X](https://x.com/NewsFromGoogle/status/1924887278008307728)
 
 ## Gemini API
 
@@ -180,7 +181,7 @@ Improved Gemini 2.5 Flash model with better performance.
 
 Google models' inherent release rhythm: Experimental—Preview—GA.
 
-https://x.com/OfficialLoganK/status/1924878626312618323
+[Logan Kilpatrick's Gemini API announcement on X](https://x.com/OfficialLoganK/status/1924878626312618323)
 
 3. Gemma 3n E4B
 
@@ -190,13 +191,13 @@ Mobile-centric open-source model—good for open source. Regular users have bett
 
 via:
 
-https://developers.googleblog.com/en/introducing-gemma-3n/
+[Gemma 3n developer announcement](https://developers.googleblog.com/en/introducing-gemma-3n/)
 
-https://huggingface.co/collections/google/gemma-3n-preview-682ca41097a31e5ac804d57b
+[Gemma 3n preview models on Hugging Face](https://huggingface.co/collections/google/gemma-3n-preview-682ca41097a31e5ac804d57b)
 
-https://ai.google.dev/gemma/docs/gemma-3n
+[Gemma 3n documentation](https://ai.google.dev/gemma/docs/gemma-3n)
 
-https://news.ycombinator.com/item?id=44044199
+[Gemma 3n discussion on Hacker News](https://news.ycombinator.com/item?id=44044199)
 
 4. Native audio output and Live API improvements
 
@@ -224,7 +225,7 @@ AI Mode for political figure searches only provides links, no generation.
 
 New AI Mode features shown at I/O including Deep Search will roll out to AI Mode Labs users over coming weeks and months.
 
-https://blog.google/products/search/google-search-ai-mode-update/
+[Google Search AI Mode update](https://blog.google/products/search/google-search-ai-mode-update/)
 
 ## Gemini Diffusion
 
@@ -234,13 +235,13 @@ Related Waitlist: https://docs.google.com/forms/u/0/d/e/1FAIpQLSdsxa-YU25JIPJGmu
 
 via:
 
-https://blog.google/technology/google-deepmind/gemini-diffusion/
+[Gemini Diffusion announcement](https://blog.google/technology/google-deepmind/gemini-diffusion/)
 
-https://x.com/GoogleDeepMind/status/1924888095448825893
+[Gemini Diffusion demo on X](https://x.com/GoogleDeepMind/status/1924888095448825893)
 
-https://news.ycombinator.com/item?id=44044080
+[Gemini Diffusion discussion on Hacker News](https://news.ycombinator.com/item?id=44044080)
 
-https://deepmind.google/models/gemini-diffusion/
+[Gemini Diffusion model page](https://deepmind.google/models/gemini-diffusion/)
 
 ## Flow
 
@@ -254,7 +255,7 @@ Played around and generated a US kitty captain in space.
 
 via:
 
-https://labs.google/fx/tools/flow/
+[Google Flow](https://labs.google/fx/tools/flow/)
 
 ## SynthID Detector
 
@@ -268,7 +269,7 @@ Related Waitlist: https://docs.google.com/forms/d/e/1FAIpQLSfAYrauHmY-PpUNxL4Fs6
 
 via:
 
-https://blog.google/technology/ai/google-synthid-ai-content-detector/
+[Google SynthID Detector announcement](https://blog.google/technology/ai/google-synthid-ai-content-detector/)
 
 ## Stitch
 
@@ -290,7 +291,7 @@ Remember to disable Stitch conversation data training in settings—though Googl
 
 Similar to Copilot in Edge. Summarizing webpages is a nice option, though it's a bit sticky.
 
-https://x.com/Google/status/1924892719739973640
+[Google Chrome Gemini announcement on X](https://x.com/Google/status/1924892719739973640)
 
 ## Project Astra
 
@@ -318,7 +319,7 @@ Virtual try-on:
 
 ![Virtual try-on](https://cdn.sa.net/2025/05/21/A2uGVQREItkhf1S.webp)
 
-https://blog.google/products/shopping/how-to-use-google-shopping-try-it-on/
+[Google Shopping virtual try-on guide](https://blog.google/products/shopping/how-to-use-google-shopping-try-it-on/)
 
 ## Android XR
 
@@ -326,9 +327,9 @@ Not familiar with this area. See ChatGPT o3's introduction.
 
 ![ChatGPT o3's introduction to Android XR](https://cdn.sa.net/2025/05/21/siZy56f9brXgYMn.webp)
 
-https://blog.google/products/android/android-xr/
+[Android XR announcement](https://blog.google/products/android/android-xr/)
 
-https://blog.google/products/android/android-xr-gemini-glasses-headsets/
+[Android XR with Gemini announcement](https://blog.google/products/android/android-xr-gemini-glasses-headsets/)
 
 ## Google Meet Real-time Translation
 
@@ -346,17 +347,17 @@ As for Jules [Google's AI code Agent], I tried it yesterday—felt average. Stil
 
 Other links:
 
-https://workspace.google.com/blog/product-announcements/new-ways-to-do-your-best-work
+[Google Workspace product announcements](https://workspace.google.com/blog/product-announcements/new-ways-to-do-your-best-work)
 
-https://cloud.google.com/blog/products/ai-machine-learning/expanding-gemini-2-5-flash-and-pro-capabilities
+[Gemini 2.5 Flash and Pro capability update](https://cloud.google.com/blog/products/ai-machine-learning/expanding-gemini-2-5-flash-and-pro-capabilities)
 
-https://blog.google/technology/developers/google-ai-developer-updates-io-2025/
+[Google AI developer updates from I/O 2025](https://blog.google/technology/developers/google-ai-developer-updates-io-2025/)
 
-https://blog.google/technology/ai/generative-media-models-io-2025/
+[Google generative-media updates from I/O 2025](https://blog.google/technology/ai/generative-media-models-io-2025/)
 
-https://starline.google/
+[Google Starline](https://starline.google/)
 
-https://blog.google/outreach-initiatives/education/google-gemini-learnlm-update/
+[Gemini and LearnLM education update](https://blog.google/outreach-initiatives/education/google-gemini-learnlm-update/)
 
 ## Summary
 
@@ -365,6 +366,7 @@ Day 1 Google I/O 2025 announcements roughly these. Day 2 usually no major announ
 ![Day 2 Google I/O 2025 usually no major announcements](https://cdn.sa.net/2025/05/21/8ShLTFs1wvWkxUa.webp)
 
 Google launching Ultra plan shows following OpenAI's path. High pricing means destroying AI democratization. But Google already laid groundwork letting users freebie 15 months Gemini membership—won't criticize high pricing too much.
+The model baseline leading into these announcements is covered in my earlier [Gemini 2.5 Pro experience](/en/2025/03/gemini-2-5-pro-experience/).
 
 My most-used AI app has switched to ChatGPT. Though I haven't abandoned Gemini, Claude, etc., overall ChatGPT feels best in all aspects. From earlier text, you saw for new knowledge points, I basically use ChatGPT o3 model for research. This Agent LLM is just too convenient—excellent UX. Unless replies are unsatisfying, generally too lazy to open search engines.
 

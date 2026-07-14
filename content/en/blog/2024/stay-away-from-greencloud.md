@@ -1,10 +1,11 @@
 ---
 title: "Stay Away from GreenCloud, Soul Ascending"
 date: 2024-10-22T18:11:18+08:00
+lastmod: 2024-10-22
 tags: ["vps"]
 slug: "stay-away-from-greencloud"
 translationKey: "stay-away-from-greencloud"
-summary: Recording an experience of VPS data loss.
+summary: "Details the GreenCloud San Jose ransomware outage, unrecoverable VPS data loss, rescue attempts, and a successful $100 PayPal refund."
 showtoc: true
 ---
 

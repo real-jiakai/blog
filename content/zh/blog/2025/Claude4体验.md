@@ -1,10 +1,11 @@
 ---
 title: "Claude 4体验"
 date: 2025-05-23T07:56:34+08:00
+lastmod: 2025-07-23
 tags: ["claude","anthropic"]
 slug: "claude-4-experience"
 translationKey: "claude-4-experience"
-summary: 分享Claude 4的使用体验。
+summary: "围绕Claude 4的使用体验，整理个人实践、结果与体会。"
 showtoc: true
 ---
 
@@ -128,9 +129,9 @@ gh auth login
 
 via:
 
-https://github.com/anthropics/claude-code-action
+[Claude Code Action GitHub 仓库](https://github.com/anthropics/claude-code-action)
 
-https://docs.anthropic.com/en/docs/claude-code/github-actions#quick-start
+[Claude Code GitHub Actions 快速入门](https://docs.anthropic.com/en/docs/claude-code/github-actions#quick-start)
 
 `/vibe`命令里面是一个vibe coding(氛围编码)的彩蛋。
 
@@ -223,9 +224,9 @@ d. Claude模型对比: https://simonwillison.net/2025/May/22/updated-anthropic-m
 
 e. Claude相关X官方账户的推文:
 
-https://x.com/alexalbert__/status/1925591741924876781
+[Alex Albert 的 Claude 4 发布帖](https://x.com/alexalbert__/status/1925591741924876781)
 
-https://x.com/AnthropicAI/status/1925591505332576377
+[Anthropic 的 Claude 4 发布帖](https://x.com/AnthropicAI/status/1925591505332576377)
 
 f. Tibor Blaho有关Anthropic发布会的总结推文: https://x.com/btibor91/status/1925641897369797038
 

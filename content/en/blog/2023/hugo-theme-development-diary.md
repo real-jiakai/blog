@@ -1,10 +1,11 @@
 ---
 title: "Hugo Theme Development Diary"
 date: 2023-03-16T13:31:46+08:00
+lastmod: 2025-01-05
 tags: ["hugo"]
 slug: "hugo-theme-development-diary"
 translationKey: "hugo-theme-development-diary"
-summary: Recording the process of Hugo theme development.
+summary: "A template-by-template diary of building this blog's Hugo theme, covering base layouts, sidebars, single pages, taxonomies, lists, and RSS."
 showtoc: true
 ---
 

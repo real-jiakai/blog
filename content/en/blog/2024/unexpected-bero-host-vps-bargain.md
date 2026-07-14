@@ -1,12 +1,15 @@
 ---
-title: "Serendipity: My Unexpected Encounter with Bero Host Discounted VPS"
+title: "How I Found a Bargain Bero Host VPS"
 date: 2024-08-30T15:36:25+08:00
+lastmod: 2024-08-30
 tags: ['vps']
 slug: "unexpected-bero-host-vps-bargain"
 translationKey: "unexpected-bero-host-vps-bargain"
-summary: Recording my experience of a dream VPS falling from the sky.
+summary: "How a chance encounter led to a discounted Bero Host VPS, including its configuration, network, price, and early performance."
 showtoc: false
 ---
+
+## How I Found the Bero Host Deal
 
 My BandwagonHost The Plan v2 is expiring at the end of this September, and I don't plan to renew. So I've been exploring a high-spec machine to fully take over my self-hosted services and optimize my VPS plan.
 

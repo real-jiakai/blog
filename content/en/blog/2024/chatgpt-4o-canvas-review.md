@@ -1,10 +1,11 @@
 ---
 title: "ChatGPT 4o with Canvas Review"
 date: 2024-10-04T10:04:48+08:00
+lastmod: 2024-10-04
 tags: ["openai","chatgpt"]
 slug: "chatgpt-4o-canvas-review"
 translationKey: "chatgpt-4o-canvas-review"
-summary: Recording my experience using ChatGPT 4o with canvas.
+summary: "Tests ChatGPT 4o Canvas shortcuts for drafting and code, including inline edits, reading-level changes, emoji passes, and rendered previews."
 showtoc: true
 ---
 

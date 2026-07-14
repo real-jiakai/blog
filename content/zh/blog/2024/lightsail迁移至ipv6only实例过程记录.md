@@ -1,10 +1,11 @@
 ---
 title: "Lightsail迁移至ipv6 only实例过程记录"
 date: 2024-01-28T18:29:40+08:00
+lastmod: 2024-01-28
 tags: ["vps","lightsail"]
 slug: "migrating-to-ipv6-only-instance-on-lightsail"
 translationKey: "migrating-to-ipv6-only-instance-on-lightsail"
-summary: 记录Lightsail迁移至ipv6 only实例过程。
+summary: "回顾Lightsail迁移至ipv6 only实例过程，梳理完整过程、结果与可复用经验。"
 showtoc: true
 ---
 

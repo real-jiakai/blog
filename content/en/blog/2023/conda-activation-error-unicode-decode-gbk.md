@@ -1,10 +1,11 @@
 ---
-title: "Solution for Windows Git Bash Conda Activation Error 'UnicodeDecodeError: gbk codec can't decode byte'"
+title: "Fix Conda UnicodeDecodeError in Windows Git Bash"
 date: 2023-09-30T15:50:09+08:00
+lastmod: 2023-09-30
 tags: ['python','conda']
 slug: "conda-activation-error-unicode-decode-gbk"
 translationKey: "conda-activation-error-unicode-decode-gbk"
-summary: "Introducing the solution for Windows git bash conda activation error 'UnicodeDecodeError: gbk codec can't decode byte 0xaf in position 271: illegal multibyte sequence'."
+summary: "How to resolve the 'gbk codec can't decode byte' activation failure by correcting Conda's encoding behavior in Windows Git Bash."
 showtoc: true
 ---
 

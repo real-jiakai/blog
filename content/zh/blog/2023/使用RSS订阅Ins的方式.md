@@ -1,10 +1,11 @@
 ---
 title: "使用RSS订阅Ins的方式"
 date: 2023-01-19T16:40:18+08:00
+lastmod: 2023-01-19
 tags: ["rss"]
 slug: "use-rss-to-subscribe-instagram"
 translationKey: "use-rss-to-subscribe-instagram"
-summary: 介绍使用RSS订阅Ins的方式。
+summary: "聚焦使用RSS订阅Ins的方式，结合实际使用说明关键体验与结论。"
 showtoc: true
 ---
 

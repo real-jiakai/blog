@@ -1,10 +1,11 @@
 ---
 title: "Self-Host Zoraxy: An Alternative to Nginx Proxy Manager"
 date: 2024-05-12T19:36:34+08:00
+lastmod: 2024-05-12
 tags: ["reverse-proxy", "zoraxy"]
 slug: "selfhost-zoraxy-an-alternative-to-nginx-proxy-manager"
 translationKey: "selfhost-zoraxy-an-alternative-to-nginx-proxy-manager"
-summary: Self-hosting Zoraxy as an alternative to Nginx Proxy Manager.
+summary: A practical Docker guide to Zoraxy reverse proxies, TLS certificates, access control, and container networking.
 showtoc: true
 ---
 

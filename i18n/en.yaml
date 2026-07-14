@@ -72,6 +72,20 @@
   translation: "Page {{ .Number }}"
 - id: currentPageNumber
   translation: "Current page, {{ .Number }}"
+- id: homeDescription
+  translation: "Read the latest technology notes, practical guides, and personal reflections from {{ .Site }}."
+- id: homePageDescription
+  translation: "Continue browsing technology notes, practical guides, and personal reflections from {{ .Site }} on page {{ .Number }}."
+- id: archiveDescription
+  translation: "Browse all {{ .Count }} posts from {{ .Site }} by year, covering technology, learning, and personal experiences."
+- id: taxonomyDescription
+  translation: "Explore all {{ .Count }} topic tags on {{ .Site }} and find posts about technology, learning, and life."
+- id: termDescription
+  translation: "Browse {{ .Count }} posts tagged “{{ .Term }}” on {{ .Site }}, with related notes, guides, and experiences."
+- id: termDescriptionOne
+  translation: "Browse the post tagged “{{ .Term }}” on {{ .Site }}, with related notes, guides, and experiences."
+- id: relatedPosts
+  translation: "Related posts"
 - id: labelSeparator
   translation: ": "
 - id: postNavigation

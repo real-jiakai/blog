@@ -1,10 +1,11 @@
 ---
-title: "chatgpt安卓报错disallowed ISP/There is a problem with your request的解决方案"
+title: "解决 ChatGPT 安卓端 'Disallowed ISP' 报错"
 date: 2023-10-16T18:06:02+08:00
+lastmod: 2023-12-13
 tags: ['chatgpt']
 slug: "chatgpt-android-error-disallowed-isp-solution"
 translationKey: "chatgpt-android-error-disallowed-isp-solution"
-summary: 介绍chatgpt安卓报错disallowed ISP/There is a problem with your request的解决方案。
+summary: "通过移动端接口检测和二级代理出口，排查 ChatGPT 安卓端的 'Disallowed ISP' 与 'There is a problem with your request' 报错。"
 showtoc: true
 ---
 
@@ -12,7 +13,7 @@ showtoc: true
 
 shadowrocket tg频道给出的判断节点能否访问GPT的方法。
 
-访问网址：[https://ios.chat.openai.com/public-api/mobile/server_status/v1](https://ios.chat.openai.com/public-api/mobile/server_status/v1)
+访问 [ChatGPT iOS 移动端服务器状态接口](https://ios.chat.openai.com/public-api/mobile/server_status/v1) 进行检查。
 
 ![shadowrocket tg频道给出的判断节点能否访问GPT的方法](https://cdn.sa.net/2023/12/13/biMkcv4CgDs3Nzd.webp)
 
@@ -28,7 +29,7 @@ shadowrocket tg频道给出的判断节点能否访问GPT的方法。
 
 ## 更新(2023.11.21)
 
-最近看到nodeseek论坛上一篇好帖—[chatgpt安卓苹果解锁方法](https://www.nodeseek.com/post-31717-1)。里面提及了移动端chatgpt解锁的判定。
+此前 NodeSeek 论坛一篇现已删除的“ChatGPT 安卓、苹果解锁方法”帖子，提及了移动端 ChatGPT 解锁的判定标准。
 
 ![nodeseek帖子-chatgpt安卓苹果解锁方法](https://vip2.loli.net/2023/11/21/pXqiZfDxhkmQSab.webp)
 
@@ -68,7 +69,7 @@ bash <(curl -L -s https://netflix.dad/detect-script)
 
 参考资料：
 
-- [chatgpt安卓苹果解锁方法](https://www.nodeseek.com/post-31717-1)
+- NodeSeek 论坛帖子“ChatGPT 安卓、苹果解锁方法”（原帖已失效，关键信息截图保留在上文）
 
 
 
@@ -95,6 +96,7 @@ bash <(curl -L -s https://netflix.dad/detect-script)
 具体操作可以见不良林的二级代理相关的视频，给linux vps的xui面板配置一下xray设置即可。
 
 关于google one vpn在windows上的搭建，以及使其变为节点的相关操作，可以自行上网搜索，我就不赘述了。
+Google 后来停用了这项服务，可参考 [Google One VPN 的现行替代方案](/2024/04/alternatives-to-google-one-vpn-shutdown/) 选择新的出口。
 
 ## 尾声
 

@@ -1,10 +1,11 @@
 ---
 title: "Grok 4真实体验"
 date: 2025-07-12T08:28:46+08:00
+lastmod: 2025-07-12
 tags: ["grok"]
 slug: "grok-4-real-experience"
 translationKey: "grok-4-real-experience"
-summary: 分享Grok 4真实体验。
+summary: "围绕Grok 4真实体验，整理个人实践、结果与体会。"
 showtoc: true
 ---
 

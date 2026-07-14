@@ -1,10 +1,11 @@
 ---
-title: "Solution for Git Push Error 'remote: fatal: did not receive expected object'"
+title: "Fix Git Push 'Did Not Receive Expected Object'"
 date: 2023-09-16T09:56:21+08:00
+lastmod: 2023-09-16
 tags: ['git','github']
 slug: "fix-git-push-fatal-error-did-not-receive-expected-object"
 translationKey: "fix-git-push-fatal-error-did-not-receive-expected-object"
-summary: "Introducing the solution for git push error 'remote: fatal: did not receive expected object'"
+summary: "How to recover when git push fails with 'remote: fatal: did not receive expected object' after repository object corruption."
 showtoc: true
 ---
 

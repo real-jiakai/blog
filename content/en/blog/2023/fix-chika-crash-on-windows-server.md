@@ -1,12 +1,15 @@
 ---
 title: "Solution for Chika Launcher Crashing on Windows Server"
 date: 2023-06-17T15:24:10+08:00
+lastmod: 2023-06-17
 tags: ['gaming']
 slug: "fix-chika-crash-on-windows-server"
 translationKey: "fix-chika-crash-on-windows-server"
-summary: Sharing the solution for Chika launcher crashing on Windows Server.
+summary: "Stop Chika Launcher from crashing on Windows Server by changing Data Execution Prevention settings after moving game automation to a VPS."
 showtoc: false
 ---
+
+## From Cloud Gaming to a Windows VPS
 
 Since the beginning of this year, I've moved some tedious daily tasks for Seer (a Chinese game) like AFK grinding and peak battle coin farming to the cloud. My local computer only handles weekly update tasks and storylines, or occasionally plays a few peak battles when I have time.
 
@@ -28,11 +31,15 @@ Eventually I got a 3-year lightweight server from Tencent Cloud (2-core CPU, 2GB
 
 ![Tencent Cloud Lightweight](https://image.gujiakai.top/i/2023/06/17/rbts2c-0.webp)
 
+## Symptom and DEP Fix
+
 But when tinkering with it, I found the Chika launcher couldn't open. Specifically, after double-clicking the launcher's .exe file, the application would flash in the taskbar and disappear.
 
 After chatting with ChatGPT-4 for a few rounds, following its guidance, I disabled Data Execution Prevention (DEP) for the Seer launcher exe file in Windows Server, and finally successfully opened the Chika launcher and other launchers.
 
 ![Tencent Cloud Lightweight successfully opens Chika launcher](https://image.gujiakai.top/i/2023/06/17/rea0vd-0.webp)
+
+## Related Notes
 
 Chat history: https://chat.openai.com/share/152c4d9a-e7bb-4514-88c4-5b5a3a9185d
 

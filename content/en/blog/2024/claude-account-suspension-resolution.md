@@ -1,10 +1,11 @@
 ---
 title: "Claude Account Suspension Resolution"
 date: 2024-11-21T10:19:03+08:00
+lastmod: 2025-03-13
 tags: ["claude"]
 slug: "claude-account-suspension-resolution"
 translationKey: "claude-account-suspension-resolution"
-summary: Recording my Claude account suspension experience and solution.
+summary: "Recounts a Claude account suspension and the eventual workaround: using a clean remote Windows environment and cautious network routing."
 showtoc: true
 ---
 

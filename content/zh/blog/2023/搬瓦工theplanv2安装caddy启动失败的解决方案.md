@@ -1,12 +1,15 @@
 ---
-title: "搬瓦工theplanv2安装caddy启动失败的解决方案"
+title: "解决搬瓦工 The Plan V2 的 Caddy 启动失败"
 date: 2023-06-29T15:38:29+08:00
+lastmod: 2023-06-29
 tags: ["vps"]
 slug: "solving-caddy-failure-on-bandwagonhost-theplanv2"
 translationKey: "solving-caddy-failure-on-bandwagonhost-theplanv2"
-summary: 介绍搬瓦工新推出套餐the plan v2上安装caddy启动失败的解决方案。
+summary: "说明如何调整服务配置，解决搬瓦工 The Plan V2 套餐上的 Caddy 启动失败。"
 showtoc: false
 ---
+
+## The Plan V2 上的 Caddy 启动故障
 
 搬瓦工在2023年的6月27日推出了the plan v2套餐，价格死贵。the plan v2套餐的无aff购买页可查看[互联网档案馆存档](https://web.archive.org/web/20230628053759/https://bandwagonhost.com/the-plan-v2)，原页面已下线。
 

@@ -1,10 +1,11 @@
 ---
-title: "Failed to parse PID from file /usr/local/nginx/logs/nginx.pid: Invalid argument的解决方案"
+title: "修复 Nginx 安装后的 'Failed to parse PID' 错误"
 date: 2023-01-14T19:29:39+08:00
+lastmod: 2023-01-14
 tags: ['nginx']
 slug: "a-solution-about-nginx-problem"
 translationKey: "a-solution-about-nginx-problem"
-summary: 介绍nginx安装过程中遇到bug的解决方案。
+summary: "Nginx 安装后若服务报 'Failed to parse PID'，可通过调整 PID 文件与服务配置恢复启动。"
 showtoc: true
 ---
 

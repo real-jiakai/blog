@@ -1,10 +1,11 @@
 ---
 title: "Solution for HXServers Network Issues"
 date: 2023-10-13T12:20:19+08:00
+lastmod: 2023-11-27
 tags: ['vps','google one vpn']
 slug: "solving-hxservers-network-issues"
 translationKey: "solving-hxservers-network-issues"
-summary: Introducing solutions for HXServers network issues.
+summary: "Restore networking after converting an HXServers VPS to Windows by entering its IP, subnet mask, and gateway through VNC."
 showtoc: true
 ---
 

@@ -1,10 +1,11 @@
 ---
-title: "自建小红书和Instagram的替代品—Pixelfed"
+title: "自建 Instagram 替代品 Pixelfed"
 date: 2024-07-20T09:39:08+08:00
+lastmod: 2024-07-20
 tags: ["pixelfed", "自托管"]
 slug: "build-your-own-xiaohongshu-instagram-alternative-pixelfed"
 translationKey: "build-your-own-xiaohongshu-instagram-alternative-pixelfed"
-summary: 介绍自建Pixelfed的过程。
+summary: "使用 Docker Compose 部署 Pixelfed，配置域名和邮件服务，搭建支持联邦宇宙的图片分享站点。"
 showtoc: true
 ---
 

@@ -71,7 +71,7 @@
   {{ range $n := $show }}
     {{ if and (gt $prev 0) (gt (sub $n $prev) 1) }}<span class="pager-ellipsis" aria-hidden="true">…</span>{{ end }}
     {{ if eq $n $cur }}
-    <span class="pager-link active" aria-current="page" aria-label="{{ i18n "currentPageNumber" (dict "Number" $n) }}">{{ $n }}</span>
+    <span class="pager-link active" aria-current="page"><span class="visually-hidden">{{ i18n "currentPageNumber" (dict "Number" $n) }}</span><span aria-hidden="true">{{ $n }}</span></span>
     {{ else }}
     <a class="pager-link" href="{{ (index $paginator.Pagers (sub $n 1)).URL }}" aria-label="{{ i18n "pageNumber" (dict "Number" $n) }}">{{ $n }}</a>
     {{ end }}

@@ -1,10 +1,11 @@
 ---
 title: "Trying Out Perplexity Max"
 date: 2026-06-08T18:05:58+08:00
+lastmod: 2026-06-08
 tags: ['perplexity']
 slug: "trying-perplexity-max"
 translationKey: "trying-perplexity-max"
-summary: A hands-on review of my one-month Perplexity Max membership experience.
+summary: A one-month hands-on review of Perplexity Max, including Model Council, Computer, research tools, and mobile use.
 showtoc: true
 ---
 

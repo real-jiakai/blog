@@ -1,10 +1,11 @@
 ---
 title: "Solution for Gemini Android App 'Device Not Supported'"
 date: 2024-02-11T08:43:21+08:00
+lastmod: 2024-02-11
 tags: ["gemini"]
 slug: "solving-gemini-device-compatibility-issues"
 translationKey: "solving-gemini-device-compatibility-issues"
-summary: Introducing the solution for Gemini Android App "Device Not Supported" error.
+summary: "Gets the Gemini Android app working on an unsupported Xiaomi phone by installing and initializing Google Assistant and the Google app."
 showtoc: true
 ---
 

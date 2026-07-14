@@ -1,10 +1,11 @@
 ---
-title: "Solution for SSH Proxy Connection Error: Connection Closed by Foreign Host"
+title: "Fix SSH Proxy 'Connection Closed by Foreign Host'"
 date: 2022-10-06T19:27:33+08:00
+lastmod: 2022-10-06
 tags: ['linux']
 slug: ssh-connect-by-proxy-error-connection-closed-by-foreign-host-solution
 translationKey: "ssh-connect-by-proxy-error-connection-closed-by-foreign-host-solution"
-summary: After two hours of troubleshooting, I found the solution to the SSH proxy connection error when connecting to a remote server.
+summary: "A two-hour troubleshooting account of fixing SSH proxy sessions that ended with 'Connection closed by foreign host.'"
 showtoc: true
 ---
 

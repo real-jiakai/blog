@@ -2,10 +2,13 @@
 title: "The March 24th Incident - Gitee's Predicament"
 tags: ["open-source"]
 date: 2022-03-24T10:26:09+08:00
+lastmod: 2022-03-24
 slug: 324-gitee-affair
 translationKey: "324-gitee-affair"
 summary: On the afternoon of March 24, 2022, Gitee banned all image hosting repositories. Here are my thoughts on this matter.
 ---
+
+## When the Image Host Disappeared
 
 Today has been exhausting. Yesterday, Gitee banned all image hosting repositories on its platform, and unfortunately, I was affected too.
 
@@ -21,6 +24,8 @@ I was happy about the image hosting being unblocked, but I was too lazy to chang
 
 ![Gitee admin reply screenshot 2](https://vip2.loli.net/2022/12/26/3uwtsAvX5CHWRUz.webp)
 
+## Why Gitee Restricted Image Hosting
+
 The main issue is that Gitee doesn't have much money. Unlike GitHub, which has Microsoft - a global tech giant - as its backer.
 
 Gitee was created by OSChina (Open Source China), which certainly doesn't have the financial resources that Microsoft has. Being strapped for cash is understandable.
@@ -32,5 +37,7 @@ After hearing this story from the Gitee technical exchange group admin, you'll u
 Gitee's positioning is as a DevOps platform - a development and operations integration platform. The definition of DevOps is shown in the image below:
 
 ![Definition of DevOps](https://vip2.loli.net/2022/12/26/kQNHMemgSh5aftz.webp)
+
+## Takeaway
 
 I can understand their predicament, so I won't criticize Gitee too much for this.

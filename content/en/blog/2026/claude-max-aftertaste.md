@@ -1,10 +1,11 @@
 ---
 title: "Reflections on Claude Max"
 date: 2026-01-08T16:46:40-08:00
+lastmod: 2026-01-08
 tags: ["claude", "anthropic"]
 slug: "claude-max-aftertaste"
 translationKey: "claude-max-aftertaste"
-summary: Sharing my experience with my second Claude Max subscription.
+summary: "Reassesses Claude Max 5x during a thesis deadline, focusing on Opus 4.5 in Claude Code, quota economics, and the work it enabled."
 showtoc: true
 ---
 

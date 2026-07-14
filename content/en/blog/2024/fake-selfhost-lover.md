@@ -1,10 +1,11 @@
 ---
 title: "The Fake Self-Hosting Enthusiast"
 date: 2024-04-08T16:18:17+08:00
+lastmod: 2024-04-08
 tags: ["self-hosting"]
 slug: "fake-selfhost-lover"
 translationKey: "fake-selfhost-lover"
-summary: Introducing common reasons why self-hosted projects end up gathering dust.
+summary: "Why more than 50 self-hosted services gathered dust: weak personal need, ongoing maintenance, and SaaS products that worked better."
 showtoc: true
 ---
 
@@ -85,3 +86,4 @@ Being a true self-hosting enthusiast doesn't mean setting up a pile of projects 
 The charm of tinkering isn't just the satisfaction at the moment of completion, but that the thing you tinkered benefits yourself.
 
 Self-hosting enthusiasts can set up projects they don't need, but after setup and getting that sense of achievement, why not destroy it? Subtract from projects, keep only the commonly used ones.
+A later example of a service that did earn a place in daily use is my [self-hosted Karakeep bookmark setup](/en/2024/10/self-hosted-bookmark-app-hoarder/).

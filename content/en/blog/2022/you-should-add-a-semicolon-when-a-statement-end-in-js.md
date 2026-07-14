@@ -1,10 +1,11 @@
 ---
-title: "You Should Add a Semicolon at the End of JavaScript Statements"
+title: "Why JavaScript Statements Need Semicolons"
 date: 2022-09-28T19:27:33+08:00
+lastmod: 2022-09-28
 tags: ['js']
 slug: you-should-add-a-semicolon-when-a-statement-end-in-js
 translationKey: "you-should-add-a-semicolon-when-a-statement-end-in-js"
-summary: Digging into the details of JS code in a newsletter taught me the importance of adding semicolons in JavaScript.
+summary: "What a newsletter's JavaScript snippets revealed about safer statement endings and the value of explicit semicolons."
 showtoc: true
 ---
 

@@ -1,18 +1,23 @@
 ---
 title: "My App Defaults 2023"
 date: 2023-11-21T08:44:59+08:00
+lastmod: 2023-11-21
 tags: ['app']
 slug: "my-app-defaults-2023"
 translationKey: "my-app-defaults-2023"
-summary: Introducing the apps I use daily in 2023.
+summary: "The author's 2023 daily stack for email, notes, cloud storage, browsers, communication, media, development, and AI."
 showtoc: false
 ---
+
+## How I Chose This List
 
 Recently I saw a blog post by Xiaohu - [My App Defaults 2023](https://yinji.org/5179.html).
 
 Inspired by a GitHub project - [App Defaults](https://github.com/rknightuk/app-defaults), project intro page - [App Defaults](https://defaults.rknight.me/).
 
 It's almost year-end, so let me share some of my favorite tools.
+
+## Productivity and Storage
 
 📨 Email Client: Thunderbird
 
@@ -62,6 +67,8 @@ For RSS, I use the powerful Inoreader. Its RSS Feed creation and email notificat
 
 Although I've self-hosted Fresh RSS, Miniflux, etc., I use them less often.
 
+## Browsing and Communication
+
 🌐 Browser: Chrome, Edge, Firefox, Safari, and etc.
 
 For browsers, my main is still Chrome. Edge is mainly for ChatGPT and Microsoft Copilot/New Bing. Other browsers are used less.
@@ -77,6 +84,8 @@ For chat apps, I can't escape domestic QQ and WeChat.
 Between me and a close roommate, we generally use my self-hosted Rocket Chat. He also self-hosted a Matrix chat, and sometimes we use Element (Matrix frontend) to communicate.
 
 I communicate with international friends via Telegram.
+
+## Media and Personal Tools
 
 🔖 Bookmarks: Raindrop
 
@@ -103,6 +112,8 @@ Spotify mainly for light music while studying. YouTube Music for pop songs.
 Self-hosted Bitwarden service - great for browser password fill and mobile password fill.
 
 ![Bitwarden saving passwords](https://vip2.loli.net/2023/11/21/Tj1v8nshympiSB6.webp)
+
+## Development and AI
 
 🧑‍💻 Code Editor: VSCode
 

@@ -1,6 +1,7 @@
 ---
 title: "My GitHub Student Developer Pack Application Journey"
 date: 2022-06-25T14:01:11+08:00
+lastmod: 2022-06-25
 tags: ['github']
 slug: github-education-developer-kit-application-journey
 translationKey: "github-education-developer-kit-application-journey"

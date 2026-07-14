@@ -1,16 +1,17 @@
 ---
 title: "Gemini 2.0 体验"
 date: 2025-02-07T09:01:24+08:00
+lastmod: 2025-03-26
 tags: ['gemini']
 slug: "gemini-2-0-experience"
 translationKey: "gemini-2-0-experience"
-summary: 分享Gemini 2.0体验的一些感受。
+summary: "围绕Gemini 2.0体验的一些感受，整理个人实践、结果与体会。"
 showtoc: true
 ---
 
 ## 更新(2025.3.26)
 
-Gemini 2.5 Pro都出来了，看了一些博主测评后，感叹Gemini OCR能力更上一层楼了。
+[Gemini 2.5 Pro 已经推出](/2025/03/gemini-2-5-pro-experience/)，看了一些博主测评后，感叹 Gemini OCR 能力更上一层楼了。
 
 ## 更新(2025.3.19)
 

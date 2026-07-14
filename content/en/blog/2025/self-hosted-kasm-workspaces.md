@@ -1,10 +1,11 @@
 ---
 title: "Self-Hosted Kasm Workspaces"
-date: 2025-03-31T8:40:02+08:00
+date: 2025-03-31T08:40:02+08:00
+lastmod: 2025-04-15
 tags: ['kasmworkspaces']
 slug: "self-hosted-kasm-workspaces"
 translationKey: "self-hosted-kasm-workspaces"
-summary: Sharing my experience self-hosting Kasm Workspaces.
+summary: "Deploys Kasm Workspaces for isolated browser sessions, covering persistent profiles, clipboard behavior, resource cleanup, and use with datacenter IPs."
 showtoc: true
 ---
 
@@ -306,6 +307,7 @@ OpenAI is truly a villain—curse them, still use them.
 Eliminate obvious proxy characteristics via Kasm Workspaces, regularly clear chat history, destroy evidence—OpenAI definitely doesn't prioritize these accounts.
 
 Recommend friends with high-spec machines wanting stable ChatGPT, Claude access to set this up.
+If a graphical reverse-proxy manager fits the rest of your self-hosted stack, see the separate [Zoraxy deployment](/en/2024/05/selfhost-zoraxy-an-alternative-to-nginx-proxy-manager/).
 
 [^1]: https://kasmweb.com/docs/latest/install/system_requirements.html#resource-requirements
 

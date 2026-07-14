@@ -1,10 +1,11 @@
 ---
 title: "Xiaohongshu RSS Solutions"
 date: 2024-09-21T19:23:52+08:00
+lastmod: 2025-07-07
 tags: ["xiaohongshu","rss"]
 slug: "xiaohongshu-rss-tips"
 translationKey: "xiaohongshu-rss-tips"
-summary: Introducing Xiaohongshu RSS solutions.
+summary: "Maintains a Xiaohongshu RSS setup with cookies, cache limits, and anti-crawl safeguards, while warning that full-text scraping triggers captchas."
 showtoc: true
 ---
 

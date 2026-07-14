@@ -1,10 +1,11 @@
 ---
 title: "Manus体验"
 date: 2025-07-17T14:33:10+08:00
+lastmod: 2025-07-19
 tags: ["manus"]
 slug: "manus-experience"
 translationKey: "manus-experience"
-summary: 吐槽Manus的体验感受。
+summary: "对比 Manus 免费版与 Basic 会员：付费后投入程度和 PPT 效果提升，但资料判断、模型透明度和验证码处理仍不可靠。"
 showtoc: true
 draft: false
 ---

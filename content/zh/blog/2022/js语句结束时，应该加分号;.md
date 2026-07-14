@@ -1,10 +1,11 @@
 ---
-title: "js语句结束时，应该加分号;"
+title: "JavaScript 语句为什么需要分号"
 date: 2022-09-28T19:27:33+08:00
+lastmod: 2022-09-28
 tags: ['js']
 slug: you-should-add-a-semicolon-when-a-statement-end-in-js
 translationKey: "you-should-add-a-semicolon-when-a-statement-end-in-js"
-summary: 深究newsletter里面js代码的细节，让我知道了js中添加`;`的重要性。
+summary: "从 newsletter 的 JavaScript 代码细节出发，说明显式分号如何让语句边界更安全、更清晰。"
 showtoc: true
 ---
 

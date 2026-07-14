@@ -1,10 +1,11 @@
 ---
 title: "Claude Max回味"
 date: 2026-01-08T16:46:40-08:00
+lastmod: 2026-01-08
 tags: ["claude", "anthropic"]
 slug: "claude-max-aftertaste"
 translationKey: "claude-max-aftertaste"
-summary: 分享第二次购买Claude Max会员的使用心得。
+summary: "围绕第二次购买Claude Max会员的使用心得，整理个人实践、结果与体会。"
 showtoc: true
 ---
 

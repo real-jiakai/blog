@@ -1,10 +1,11 @@
 ---
 title: "Claude Max Preview"
 date: 2025-09-28T10:41:55+08:00
+lastmod: 2025-10-09
 tags: ['claude', 'anthropic']
 slug: "claude-max-preview"
 translationKey: "claude-max-preview"
-summary: Introducing Claude Max membership experience.
+summary: "Tests a Claude Max subscription and Claude for Chrome on live browsing and research tasks, including its automation strengths, limits, and account risk."
 showtoc: true
 ---
 
@@ -363,7 +364,7 @@ I see on some leaderboards Claude Opus 4.1 is currently still the strongest. The
 
 Finally attaching Claude Code #1 user Liu Xiaopai's related article resources:
 
-https://mp.weixin.qq.com/s/yURoK3mAAgYwoTYyf32s4A
+[Liu Xiaopai's Claude Code article on WeChat](https://mp.weixin.qq.com/s/yURoK3mAAgYwoTYyf32s4A)
 
 Can follow his WeChat public account to track his shares.
 

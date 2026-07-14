@@ -1,10 +1,11 @@
 ---
 title: "关于openai清退plus用户事件的思考"
 date: 2023-05-28T12:47:41+08:00
+lastmod: 2023-06-01
 tags: ["openai","chatgpt"]
 slug: "thinking-of-openai-ban-plus-customers-in-527"
 translationKey: "thinking-of-openai-ban-plus-customers-in-527"
-summary: 分享个人关于openai清退plus用户事件的思考。
+summary: "围绕个人关于openai清退plus用户事件的思考，整理个人实践、结果与体会。"
 showtoc: true
 ---
 
@@ -167,4 +168,3 @@ DOMAIN,o33249.ingest.sentry.io,REJECT
 在科技快速发展的今天，保持开放的视野和敏锐的洞察力尤为重要。否则，我们就可能会像他们一样，滞留在旧的思维模式和陈旧的框架中，无法突破和前进。
 
 
- 

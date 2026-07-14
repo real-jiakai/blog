@@ -1,16 +1,17 @@
 ---
 title: "使用docker自建proxigram"
 date: 2023-10-13T16:36:49+08:00
+lastmod: 2023-10-13
 tags: ['rss']
 slug: "use-docker-compose-to-build-proxigram"
 translationKey: "use-docker-compose-to-build-proxigram"
-summary: 介绍使用docker自建proxigram的方法。
+summary: "梳理使用docker自建proxigram的方法，重点说明操作步骤、注意事项与结果。"
 showtoc: true
 ---
 
 ## 故事背景
 
-今天下午清理邮箱时，发现了all about rss github项目issue有了新的动态。all about rss项目作者指出有人发现了一个instagram to rss的解决方案—proxigram。
+今天下午清理邮箱时，发现了 all about rss GitHub 项目 issue 有了新的动态。项目作者指出 [Instagram 转 RSS 的方案汇总](/2023/01/use-rss-to-subscribe-instagram/) 又出现了一个新选择——Proxigram。
 
 ![all about rss项目issue邮件提醒](https://vip2.loli.net/2023/10/13/9CYO6NZjUg4nm8k.webp)
 

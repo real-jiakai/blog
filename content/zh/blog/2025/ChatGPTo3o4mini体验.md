@@ -1,10 +1,11 @@
 ---
 title: "ChatGPT o3、o4 mini体验"
 date: 2025-04-17T09:06:26+08:00
+lastmod: 2025-04-29
 tags: ['chatgpt']
 slug: "chatgpt-o3-o4-mini-experience"
 translationKey: "chatgpt-o3-o4-mini-experience"
-summary: 分享ChatGPT o3、o4 mini体验感受。
+summary: "围绕ChatGPT o3、o4 mini体验感受，整理个人实践、结果与体会。"
 showtoc: true
 ---
 
@@ -88,9 +89,9 @@ ChatGPT Plus用户，o3限制: 50次/周；o4-mini限制: 150次/天；o4-mini-h
 
 via:
 
-https://help.openai.com/en/articles/9824962-openai-o3-o4-mini-and-o3-mini-usage-limits-on-chatgpt-and-the-api
+[OpenAI o3 与 o4-mini 使用限额说明](https://help.openai.com/en/articles/9824962-openai-o3-o4-mini-and-o3-mini-usage-limits-on-chatgpt-and-the-api)
 
-https://openai.com/chatgpt/pricing/
+[ChatGPT 套餐与价格](https://openai.com/chatgpt/pricing/)
 
 不建议免费用户用ChatGPT，ChatGPT不付费，体验绝对糟糕，上下文窗口就只有8K，而且开放的也全是低一等的模型。
 
