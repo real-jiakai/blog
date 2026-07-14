@@ -1083,6 +1083,8 @@ emoji-reaction .reaction-got {
     display: flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
+    min-height: 2rem;
     padding: 0 0.25rem;
     border: 1px solid;
     border-radius: 108px;
