@@ -84,8 +84,6 @@
   translation: "浏览{{ .Site }}中标记为“{{ .Term }}”的 {{ .Count }} 篇文章及相关笔记、教程与经验。"
 - id: termDescriptionOne
   translation: "浏览{{ .Site }}中标记为“{{ .Term }}”的文章及相关笔记、教程与经验。"
-- id: relatedPosts
-  translation: "相关文章"
 - id: labelSeparator
   translation: "："
 - id: postNavigation

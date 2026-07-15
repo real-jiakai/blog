@@ -1,6 +1,6 @@
 {{/* mt-auto：body 是 min-vh-100 的纵向 flex 布局，剩余空间会被这里的 auto 外边距吸收，
      内容不足一屏时把页脚钉在视口底部；内容超过一屏时与原来完全一致（紧贴正文） */}}
-<footer class="site-footer container mx-auto text-center {{ if .IsHome }}mb-3{{ else }}mb-4{{ end }} mt-auto">
+<footer class="site-footer container mx-auto text-center mb-4 mt-auto">
     {{ with .Site.Params.footer }}
     {{ $year := printf `<span id="footer-current-year">%d</span>` now.Year }}
     {{ $text := replace . "{Year}" $year }}

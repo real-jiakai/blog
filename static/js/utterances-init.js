@@ -64,16 +64,16 @@
         );
     }
 
-    var readyThemeSynced = false;
-    frame.addEventListener('load', syncTheme, { once: true });
     window.addEventListener('message', function (event) {
         if (event.origin !== 'https://utteranc.es' || event.source !== frame.contentWindow) return;
+        // 收到首条消息才说明 utterances 真正加载完成。懒加载的 iframe 在此之前仍是
+        // about:blank（同源于本站），过早 postMessage 会报 target origin 不匹配。
+        if (frame.dataset.utterancesReady !== 'true') {
+            frame.dataset.utterancesReady = 'true';
+            syncTheme();
+        }
         var data = event.data;
         if (!data || data.type !== 'resize' || !data.height) return;
         container.style.height = data.height + 'px';
-        if (!readyThemeSynced) {
-            readyThemeSynced = true;
-            syncTheme();
-        }
     });
 }());

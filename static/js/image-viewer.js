@@ -42,7 +42,8 @@
         function showImage(index) {
             current = (index + links.length) % links.length;
             var link = links[current];
-            var alt = link.dataset.alt || link.querySelector('img')?.alt || '';
+            var innerImage = link.querySelector('img');
+            var alt = link.dataset.alt || (innerImage ? innerImage.alt : '') || '';
             var title = link.dataset.title || '';
             image.src = link.href;
             image.alt = alt;

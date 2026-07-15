@@ -50,23 +50,6 @@
     {{ if eq .Type "blog" }}
       {{- partial "copyright.html" . -}}
 
-      {{/* 同语言、同标签的相关推荐，最多三篇；没有可靠匹配时不渲染空区块。 */}}
-      {{- $blogPages := where .Site.RegularPages "Type" "==" "blog" -}}
-      {{- $related := $blogPages.Related . | first 3 -}}
-      {{- with $related }}
-      <section class="related-posts mt-4" aria-labelledby="related-posts-title">
-        <h2 id="related-posts-title" class="h4">{{ i18n "relatedPosts" }}</h2>
-        <ul class="list-unstyled mb-4">
-          {{- range . }}
-          <li class="mb-2">
-            <a href="{{ .RelPermalink }}" class="text-decoration-none">{{ .Title }}</a>
-            <time class="text-muted small ms-2" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
-          </li>
-          {{- end }}
-        </ul>
-      </section>
-      {{- end }}
-
       <!-- 上下篇导航 -->
       <nav class="post-navigation" aria-label="{{ i18n "postNavigation" }}">
         {{ with .PrevInSection }}

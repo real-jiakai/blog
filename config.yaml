@@ -2,9 +2,11 @@
 baseURL: https://blog.gujiakai.top
 # 网站使用的主题
 # 通过 module.imports（而非 theme: 键）挂载主题，以便用 excludeFiles 排除
-# 主题 static/ 里两个从未被引用、却会被整体复制进 public/ 的文件：
+# 主题 static/ 里本站已覆盖或从未引用、却会被整体复制进 public/ 的文件：
 # - images/hugo_step2_step3.gif（8.5MB，仅主题 README 用图）
 # - js/lightbox-plus-jquery.min.js（98KB，站点使用轻量的原生 dialog 图片查看器）
+# - js/bootstrap.bundle.min.js、js/copy-code.js、js/custom.js、css/lightbox.min.css
+#   （本站自带对应实现，主题版本不再需要）
 module:
   imports:
     - path: hugo-theme-simple
@@ -36,17 +38,6 @@ permalinks:
 # 分页器
 pagination:
   pagerSize: 5
-# 文章相关推荐优先按标签匹配，并用同年文章兜底；允许推荐较新的文章，让旧文也能形成有效的站内链接。
-related:
-  includeNewer: true
-  threshold: 10
-  toLower: true
-  indices:
-    - name: tags
-      weight: 100
-    - name: date
-      pattern: "2006"
-      weight: 10
 # 开启robots.txt
 enableRobotsTXT: true
 # 不生成内容前置数据声明的别名页；Hugo 固有的语言/分页别名由 layouts/alias.html 标记 noindex，

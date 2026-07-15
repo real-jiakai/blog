@@ -25,13 +25,16 @@ vendored), heavily overridden by repo-level layouts/.
   root, partials in layouts/_partials/), single.markdownraw.md renders
   the raw-.md output format
 - i18n/zh.yaml, i18n/en.yaml — UI strings
-- static/ — css/custom.css, js/ (jquery, lightbox, theme-toggle,
-  back-to-top), llms.txt + en/llms.txt, xslt/ (styled RSS)
+- static/ — css/ (self-hosted bootstrap.min.css + custom.css), js/
+  (self-hosted vanilla scripts, no jQuery/lightbox2: theme-init +
+  theme-toggle, site-controls, sidebar-toc, back-to-top, copy-code,
+  image-viewer = native <dialog> lightbox, utterances-init, emaction
+  reactions, analytics, footer-year), data/image_dimensions.json +
+  tag_translations.yaml, llms.txt + en/llms.txt, xslt/ (styled RSS)
 - tools/ — one-off Python scraper (blog_scraper.py) that produced
   blog_posts.md; not part of the build
-- .github/workflows/netlify-yearly-redeploy.yml — cron hits a Netlify
-  build hook (repo secret NETLIFY_BUILD_HOOK_URL) every Jan 1 so the
-  footer copyright year stays current
+- .github/workflows/hugo-ci.yml — CI build check (checks out the theme
+  submodule and runs the production Hugo build on push / PR)
 
 ## Commands
 
@@ -67,23 +70,31 @@ No package.json or Makefile; Hugo CLI only (Netlify uses 0.154.2):
 - `hugo --gc --minify` must finish with zero WARN/ERROR output.
 - `hugo server`: check both / (zh) and /en/, plus /archive/ and a post
   page in each language; verify the "View as Markdown" .md URL works.
-- CSP in netlify.toml whitelists every third party in use (utterances,
-  Clarity, GA, umami, jsdelivr/emaction, asciinema). Any new external
+- CSP in netlify.toml whitelists every third party in use. The
+  utterances loader and the emaction reactions bundle are self-hosted
+  under static/js/, so script-src no longer lists any CDN; external
+  origins are Clarity, GA (googletagmanager), umami, and asciinema in
+  script-src, with utteranc.es (frame) and api-emaction.gujiakai.top
+  (connect) for the self-hosted widgets. Any new external
   script/iframe/connect target must be added to the matching directive
   or browsers will block it.
 
 ## Gotchas
 
 - The theme is mounted through `module.imports` in config.yaml instead
-  of the `theme:` key, specifically so `excludeFiles` can drop two
-  unused theme static files (an 8.5MB README gif and a duplicate
-  lightbox+jquery bundle). Do not "simplify" back to `theme:`.
+  of the `theme:` key, specifically so `excludeFiles` can drop theme
+  static files the site overrides or never uses (an 8.5MB README gif,
+  the lightbox+jquery bundle, the theme's bootstrap bundle JS, and the
+  theme copy-code.js / custom.js / lightbox.min.css). Do not "simplify"
+  back to `theme:`.
 - A fresh clone has an empty themes/hugo-theme-simple until you run
   `git submodule update --init`; builds fail without it.
 - content/*/blog/_index.md needs its own `outputs: [HTML]` next to the
   cascade — removing it makes Hugo warn about a missing MarkdownRaw
   template for the archive page.
-- The footer's `{Year}` placeholder is rendered at build time; the
-  yearly GitHub Action redeploy is what keeps it current. Don't replace
-  it with client-side JS.
+- The footer's `{Year}` placeholder is rendered at build time (see
+  _partials/footer.html) and then corrected client-side by
+  static/js/footer-year.js on every page load, so the copyright year
+  stays current without a scheduled redeploy. The build-time value is
+  the no-JS fallback; keep both in sync if you touch either.
 - public/ is gitignored build output; never edit or commit it.

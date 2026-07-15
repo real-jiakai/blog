@@ -40,6 +40,16 @@
   {{- $displaySource = printf "/.netlify/images?url=%s&w=%d&q=75" $encodedDestination $fallbackWidth -}}
 {{- end -}}
 {{- $isPriorityImage := eq .Ordinal 0 -}}
+{{- /* width/height 属性按展示尺寸（高度上限 600px，与 custom.css 的 max-height 一致）
+       等比缩放：既为懒加载图片预留正确占位（避免 CLS），又让竖图的盒子贴合可见
+       图像、保持左对齐，而不是在整栏宽的盒子里居中留白。 */ -}}
+{{- $maxDisplayHeight := 600 -}}
+{{- $displayWidth := $intrinsicWidth -}}
+{{- $displayHeight := $intrinsicHeight -}}
+{{- if gt $intrinsicHeight $maxDisplayHeight -}}
+  {{- $displayWidth = div (mul $intrinsicWidth $maxDisplayHeight) $intrinsicHeight -}}
+  {{- $displayHeight = $maxDisplayHeight -}}
+{{- end -}}
 <a href="{{ $destination | safeURL }}" data-lightbox="article" data-title="{{ $title }}" data-alt="{{ .Text }}">
   <img src="{{ $displaySource | safeURL }}"
        alt="{{ .Text }}"
@@ -49,5 +59,5 @@
        {{- if $isPriorityImage }} fetchpriority="high"{{ end }}
        {{- with $sourceSet }} srcset="{{ delimit . ", " }}" sizes="(max-width: 767px) calc(100vw - 3rem), (max-width: 1920px) calc(50vw - 3rem), 936px"{{ end }}
        {{- with .Title }} title="{{ . }}"{{ end }}
-       {{- if and (gt $intrinsicWidth 0) (gt $intrinsicHeight 0) }} width="{{ $intrinsicWidth }}" height="{{ $intrinsicHeight }}"{{ end }}>
+       {{- if and (gt $displayWidth 0) (gt $displayHeight 0) }} width="{{ $displayWidth }}" height="{{ $displayHeight }}"{{ end }}>
 </a>

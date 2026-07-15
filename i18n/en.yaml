@@ -84,8 +84,6 @@
   translation: "Browse {{ .Count }} posts tagged “{{ .Term }}” on {{ .Site }}, with related notes, guides, and experiences."
 - id: termDescriptionOne
   translation: "Browse the post tagged “{{ .Term }}” on {{ .Site }}, with related notes, guides, and experiences."
-- id: relatedPosts
-  translation: "Related posts"
 - id: labelSeparator
   translation: ": "
 - id: postNavigation

@@ -297,7 +297,7 @@ blockquote p {
 
 /* 正文与页眉之间留出呼吸空间（首篇文章/标题不再紧贴导航栏） */
 .site-main {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 .site-footer {
@@ -314,7 +314,7 @@ blockquote p {
 }
 
 .card-title {
-    margin-bottom: 0.7rem;
+    margin-bottom: 0.5rem;
     overflow-wrap: anywhere;
     hyphens: auto;
     font-size: clamp(1.15rem, 2.2vw, 1.35rem);
@@ -322,11 +322,31 @@ blockquote p {
 }
 
 .card-text {
-    line-height: 1.65;
+    line-height: 1.55;
 }
 
 .card-text > :last-child {
     margin-bottom: 0;
+}
+
+/* 摘要最多两行：首页 5 张卡片 + 分页 + 页脚需控制在一屏内，长摘要（供搜索
+   引擎的 summary）在卡片上截断显示即可 */
+.post-list .card-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+}
+
+/* 压缩卡片纵向空间，同样为了首页整屏放下（Bootstrap 默认 padding 偏大） */
+.post-list .card-body {
+    padding: 0.75rem 1rem;
+}
+
+.post-list .card-footer {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .post-title {
@@ -490,10 +510,9 @@ pre.chroma {
 
 .container-md p img {
     display: block;
-    height: auto;        /* preserve the intrinsic ratio while responsive width rules apply */
-    max-height: 600px;   /* 固定显示高度上限，竖图也不会过大 */
+    height: auto;        /* max-width 收窄时按 width/height 属性的宽高比等比缩放 */
+    max-height: 600px;   /* 兜底：没有尺寸数据的图片也不至于过大（render hook 已按此值缩放属性） */
     max-width: 100%;     /* 宽图不超出正文栏 */
-    object-fit: contain;
     cursor: zoom-in;     /* 提示可点击放大 */
     border-radius: 6px;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
@@ -655,8 +674,9 @@ html {
     justify-content: center;
     align-items: center;
     gap: 0.35rem;
-    /* 上下外边距相等，使「列表↔分页」与「分页↔页脚」两处间距一致 */
-    margin: 2rem 0;
+    /* 上下外边距相等，使「列表↔分页」与「分页↔页脚」两处间距一致；
+       取值偏紧是为了让首页在常见桌面视口内不出现滚动条 */
+    margin: 0.75rem 0;
 }
 
 .post-pager .pager-link {
@@ -698,13 +718,6 @@ html {
     color: var(--body-color);
     opacity: 0.5;
     user-select: none;
-}
-
-/* ===========================================
-   Post list — even card spacing
-   =========================================== */
-.card-deck .card {
-    margin-bottom: 1.25rem;
 }
 
 /* ===========================================
@@ -1054,15 +1067,23 @@ emoji-reaction .reaction-available-popup::before {
     background: transparent;
 }
 
+/* 弹层里的候选表情统一为 2rem 见方的方块，尺寸不再随各表情字形宽度浮动 */
 emoji-reaction .reaction-available-emoji {
     z-index: var(--reaction-available-emoji-z-index, var(--reaction-available-emoji-z-index-default));
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
     margin: 0.25rem 0.125rem;
-    padding: 0.25rem;
+    padding: 0;
     border-radius: 0.375rem;
     border: 0;
     background: transparent;
     color: inherit;
-    font: inherit;
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1;
     cursor: pointer;
 }
 
@@ -1079,17 +1100,19 @@ emoji-reaction .reactions-got {
     gap: 0.375rem;
 }
 
+/* 计数胶囊与左侧笑脸按钮同高（2rem），左右留白对称 */
 emoji-reaction .reaction-got {
     display: flex;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    min-height: 2rem;
-    padding: 0 0.25rem;
+    height: 2rem;
+    padding: 0 0.55rem;
     border: 1px solid;
-    border-radius: 108px;
+    border-radius: 999px;
     font-family: inherit;
     font-size: 0.75rem;
+    line-height: 1;
     cursor: pointer;
     user-select: none;
 }
@@ -1123,8 +1146,14 @@ emoji-reaction .reaction-got-count {
     pointer-events: none;
 }
 
+/* 表情字号与笑脸图标（1rem）一致，避免胶囊里的 emoji 明显偏小 */
+emoji-reaction .reaction-got-emoji {
+    font-size: 1rem;
+    line-height: 1;
+}
+
 emoji-reaction .reaction-got-count {
-    padding: 0 0.375rem;
+    padding-left: 0.375rem;
 }
 
 emoji-reaction button:focus-visible {

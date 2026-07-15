@@ -15,8 +15,11 @@
     }
 
     function syncUtterances(effective) {
+        // utterances-init.js 在收到 iframe 首条消息后标记 ready；懒加载的 iframe
+        // 就绪前仍是 about:blank，向它 postMessage 会报 target origin 不匹配。
+        // 就绪时 utterances-init 会按当前 data-bs-theme 补发一次主题。
         var frame = document.querySelector('.utterances-frame');
-        if (frame) {
+        if (frame && frame.dataset.utterancesReady === 'true') {
             frame.contentWindow.postMessage(
                 { type: 'set-theme', theme: effective === 'dark' ? 'github-dark' : 'github-light' },
                 'https://utteranc.es'
