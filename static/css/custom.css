@@ -300,6 +300,24 @@ blockquote p {
     margin-top: 1rem;
 }
 
+/* 首页：内容不足一屏时（高分屏常见），让 main 撑满剩余空间，再由分页的
+   auto 外边距把这段空隙上下均分，使分页居于文章列表与页脚之间，而不是在
+   页脚上方留出一大块空洞。其余页面仍由页脚的 mt-auto 把页脚钉到视口底部。 */
+.site-main--home {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+}
+
+.site-main--home > .row {
+    flex: 1 0 auto;
+}
+
+.site-main--home > .row > [class*="col-"] {
+    display: flex;
+    flex-direction: column;
+}
+
 .site-footer {
     color: var(--muted-text-color);
 }
@@ -677,6 +695,15 @@ html {
     /* 上下外边距相等，使「列表↔分页」与「分页↔页脚」两处间距一致；
        取值偏紧是为了让首页在常见桌面视口内不出现滚动条 */
     margin: 0.75rem 0;
+}
+
+/* 首页分页：auto 外边距吸收 main 的剩余空间并上下均分（内容满一屏时 auto
+   归零）；padding 保证任何情况下都有最小间距，不会贴住列表或页脚。 */
+.site-main--home .post-pager {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
 }
 
 .post-pager .pager-link {

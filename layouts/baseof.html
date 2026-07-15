@@ -18,7 +18,7 @@
   {{/* html main */}}
   {{/* 主体不设 flex-fill；短页面（如标签页）的页脚由 footer.html 的 mt-auto 钉到视口底部，
        长页面页脚仍紧贴正文 */}}
-  <main id="main-content" class="container-fluid site-main" tabindex="-1">
+  <main id="main-content" class="container-fluid site-main{{ if .IsHome }} site-main--home{{ end }}" tabindex="-1">
     <div class="row justify-content-center">
       {{ if .IsHome }}
       <div class="col-md-6">
