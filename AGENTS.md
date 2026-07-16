@@ -32,8 +32,9 @@ vendored), heavily overridden by repo-level layouts/.
   reactions, analytics, footer-year), xslt/ (styled RSS)
 - data/ — image_dimensions.json (remote image sizes for render-image)
   and tag_translations.yaml (zh/en tag pairs for hreflang/switcher)
-- tools/ — one-off Python scraper (blog_scraper.py) that produced
-  blog_posts.md; not part of the build
+- scripts/ — Node maintenance scripts: check-image-dimensions.mjs
+  (validates data/image_dimensions.json in CI) and
+  update-image-dimensions.mjs (fetches and records missing entries)
 - .github/workflows/hugo-ci.yml — CI build check (checks out the theme
   submodule and runs the production Hugo build on push / PR)
 
