@@ -55,6 +55,12 @@ No package.json or Makefile; Hugo CLI only (Netlify uses 0.154.2):
 - New posts go in content/<lang>/blog/<year>/; archetypes/blog.md
   pre-fills translationKey from the filename (correct for en; for zh
   posts set it manually to the English slug).
+- New-post checklist: create the zh/en pair with matching
+  slug/translationKey; if the post hot-links new remote images, run
+  `node scripts/update-image-dimensions.mjs` and commit the updated
+  data/image_dimensions.json (CI's check-image-dimensions.mjs fails
+  the build otherwise); if a zh/en tag pair uses different names, add
+  it to data/tag_translations.yaml. llms.txt updates itself.
 - MarkdownRaw output: blog posts also emit their raw Markdown at
   /:year/:month/:slug.md (global `uglyURLs: true` + `noUgly` on
   HTML/RSS + cascade in content/*/blog/_index.md). Only blog posts get
