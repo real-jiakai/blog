@@ -25,7 +25,7 @@
       {{- end -}}
       {{- if and .IsTranslated $translatedPagesIndexable -}}
         {{- range .AllTranslations }}
-    <xhtml:link rel="alternate" hreflang="{{ .Language.LanguageCode }}" href="{{ .Permalink | transform.XMLEscape | safeHTML }}" />
+    <xhtml:link rel="alternate" hreflang="{{ .Language.Locale }}" href="{{ .Permalink | transform.XMLEscape | safeHTML }}" />
         {{- end -}}
       {{- else -}}
         {{- $tagAlternates := partial "tag-alternates.html" . -}}

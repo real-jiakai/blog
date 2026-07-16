@@ -89,7 +89,7 @@
     {{- if and $.IsHome (gt $pageNumber 1) -}}
         {{- $alternateURL = printf "%spage/%d/" .Permalink $pageNumber -}}
     {{- end }}
-    <link rel="alternate" hreflang="{{ .Language.LanguageCode }}" href="{{ $alternateURL }}" />
+    <link rel="alternate" hreflang="{{ .Language.Locale }}" href="{{ $alternateURL }}" />
     {{- end }}
     {{- with index (where .AllTranslations "Language.Lang" "zh") 0 }}
     {{- $defaultURL := .Permalink -}}
@@ -125,7 +125,7 @@
     <meta property="og:type" content="{{ $openGraphType }}">
     <meta property="og:url" content="{{ $canonical }}">
     <meta property="og:site_name" content="{{ .Site.Title }}">
-    <meta property="og:locale" content="{{ replace .Site.Language.LanguageCode "-" "_" }}">
+    <meta property="og:locale" content="{{ replace .Site.Language.Locale "-" "_" }}">
     <meta property="og:image" content="{{ $socialImage.url }}">
     <meta property="og:image:alt" content="{{ $pageTitle }}">
     {{- if $socialImage.isFallback }}
@@ -153,7 +153,7 @@
         "name" .Site.Title
         "url" .Site.Home.Permalink
         "description" $description
-        "inLanguage" .Site.Language.LanguageCode
+        "inLanguage" .Site.Language.Locale
         "publisher" (dict "@type" "Person" "name" .Site.Params.author "url" .Site.Home.Permalink)
     -}}
     <script type="application/ld+json">{{ $websiteSchema }}</script>
@@ -166,7 +166,7 @@
         "image" (slice $socialImage.url)
         "datePublished" (.Date.Format "2006-01-02T15:04:05-07:00")
         "dateModified" ($modifiedDate.Format "2006-01-02T15:04:05-07:00")
-        "inLanguage" .Site.Language.LanguageCode
+        "inLanguage" .Site.Language.Locale
         "keywords" .Params.tags
         "url" $canonical
         "mainEntityOfPage" (dict "@type" "WebPage" "@id" $canonical)
@@ -185,7 +185,7 @@
         "name" $pageTitle
         "description" $description
         "url" $canonical
-        "inLanguage" .Site.Language.LanguageCode
+        "inLanguage" .Site.Language.Locale
         "isPartOf" (dict "@type" "WebSite" "name" .Site.Title "url" .Site.Home.Permalink)
     -}}
     <script type="application/ld+json">{{ $genericSchema }}</script>

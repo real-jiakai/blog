@@ -2,21 +2,21 @@
 {{- if eq .Kind "term" -}}
   {{- $currentTerm := lower .Data.Term -}}
   {{- $pair := dict -}}
-  {{- range .Site.Data.tag_translations -}}
+  {{- range hugo.Data.tag_translations -}}
     {{- if or (eq (lower .zh) $currentTerm) (eq (lower .en) $currentTerm) -}}
       {{- $pair = . -}}
       {{- break -}}
     {{- end -}}
   {{- end -}}
   {{- if $pair -}}
-    {{- range .Site.Sites -}}
+    {{- range hugo.Sites -}}
       {{- $language := .Language.Lang -}}
       {{- $term := index $pair $language -}}
       {{- with .GetPage (printf "/tags/%s" $term) -}}
         {{- if ge (len .Pages) 2 -}}
           {{- $alternates = $alternates | append (dict
             "lang" .Language.Lang
-            "languageCode" .Language.LanguageCode
+            "languageCode" .Language.Locale
             "url" .Permalink
           ) -}}
         {{- end -}}

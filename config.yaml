@@ -101,8 +101,8 @@ defaultContentLanguageInSubdir: false
 # 语言配置
 languages:
   zh:
-    languageName: "中文"
-    languageCode: "zh-CN"
+    label: "中文"
+    locale: "zh-CN"
     weight: 1
     title: "顾佳凯的网络日志"
     contentDir: "content/zh"
@@ -131,8 +131,8 @@ languages:
           url: "/about/"
           weight: 5
   en:
-    languageName: "English"
-    languageCode: "en-US"
+    label: "English"
+    locale: "en-US"
     weight: 2
     title: "Jiakai's Blog"
     contentDir: "content/en"

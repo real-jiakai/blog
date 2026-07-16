@@ -22,7 +22,7 @@
                  （如 开源/open-source）借助 data/tag_translations.yaml 互指，查不到的
                  标签术语回退到目标语言的标签索引；其余无译文页面回退到目标语言首页，
                  而不是拼一个可能 404 的 URL。 */}}
-            {{ if gt (len .Site.Sites) 1 }}
+            {{ if gt (len hugo.Sites) 1 }}
                 {{ $otherLang := cond (eq .Site.Language.Lang "zh") "en" "zh" }}
                 {{ $targetHome := cond (eq $otherLang "en") "/en/" "/" }}
                 {{ $href := "" }}

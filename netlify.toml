@@ -3,7 +3,7 @@
   publish = "public"
 
 [build.environment]
-  HUGO_VERSION = "0.154.2"
+  HUGO_VERSION = "0.164.0"
 
 # Netlify Image CDN 仅允许代理本站文章实际使用的远程图床。
 [images]

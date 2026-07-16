@@ -8,7 +8,7 @@ Personal blog of 顾佳凯 (Jiakai), served at https://blog.gujiakai.top.
 Plain Hugo static site — no package.json, no Node toolchain. Bilingual:
 Chinese is the default language at the site root, English lives under
 /en/. Built and hosted on Netlify (`hugo --gc --minify`, publish dir
-`public/`, Hugo pinned to 0.154.2 in netlify.toml). The theme is
+`public/`, Hugo pinned to 0.164.0 in netlify.toml). The theme is
 Hugo-Theme-Simple, a git submodule at themes/hugo-theme-simple (not
 vendored), heavily overridden by repo-level layouts/.
 
@@ -39,7 +39,7 @@ vendored), heavily overridden by repo-level layouts/.
 
 ## Commands
 
-No package.json or Makefile; Hugo CLI only (Netlify uses 0.154.2):
+No package.json or Makefile; Hugo CLI only (Netlify uses 0.164.0):
 
 - `git submodule update --init` — fetch the theme (required once)
 - `hugo server` — local dev at http://localhost:1313
@@ -93,11 +93,14 @@ No package.json or Makefile; Hugo CLI only (Netlify uses 0.154.2):
 ## Gotchas
 
 - The theme is mounted through `module.imports` in config.yaml instead
-  of the `theme:` key, specifically so `excludeFiles` can drop theme
-  static files the site overrides or never uses (an 8.5MB README gif,
-  the lightbox+jquery bundle, the theme's bootstrap bundle JS, and the
-  theme copy-code.js / custom.js / lightbox.min.css). Do not "simplify"
-  back to `theme:`.
+  of the `theme:` key, so the mounts' `files` setting can drop theme
+  static files the site replaces or never uses (jquery + lightbox2,
+  bootstrap bundle JS, theme copy-code.js/custom.js, lightbox chrome
+  images). Negated globs need the `! ` prefix — the space is required.
+  Declaring mounts disables the theme's default mounts, which is why
+  i18n is mounted explicitly; css/style.css and images/favicon.ico
+  intentionally come from the theme. Do not "simplify" back to
+  `theme:`.
 - A fresh clone has an empty themes/hugo-theme-simple until you run
   `git submodule update --init`; builds fail without it.
 - content/*/blog/_index.md needs its own `outputs: [HTML]` next to the

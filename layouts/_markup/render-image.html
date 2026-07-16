@@ -11,7 +11,7 @@
   {{- $intrinsicWidth = .Width -}}
   {{- $intrinsicHeight = .Height -}}
 {{- else -}}
-  {{- with index $.Page.Site.Data.image_dimensions $destination -}}
+  {{- with index hugo.Data.image_dimensions $destination -}}
     {{- $intrinsicWidth = int .width -}}
     {{- $intrinsicHeight = int .height -}}
   {{- end -}}

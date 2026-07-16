@@ -25,7 +25,7 @@
     <title>{{ $channelTitle | plainify | htmlUnescape | transform.XMLEscape | safeHTML }}</title>
     <link>{{ .Permalink | transform.XMLEscape | safeHTML }}</link>
     <description>{{ $channelDescription | plainify | htmlUnescape | transform.XMLEscape | safeHTML }}</description>
-    <generator>Hugo -- gohugo.io</generator>{{ with .Site.LanguageCode }}
+    <generator>Hugo -- gohugo.io</generator>{{ with .Site.Language.Locale }}
     <language>{{.}}</language>{{end}}{{ with .Site.Copyright }}
     <copyright>{{.}}</copyright>{{end}}{{ if not .Date.IsZero }}
     <lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}

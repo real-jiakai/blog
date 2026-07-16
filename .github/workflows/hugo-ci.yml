@@ -16,8 +16,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     env:
-      HUGO_VERSION: "0.154.2"
-      HUGO_ARCHIVE_SHA256: "a064c1da02dc20d7d7758c966f4f2afe9384924b70d8a1d4925acba528cbfe14"
+      HUGO_VERSION: "0.164.0"
+      HUGO_ARCHIVE_SHA256: "fea17b8c076f950bb2e9f9486667bdaa29422883888d509d63931c73e8a9b3a4"
       HUGO_ENV: production
       HUGO_PARAMS_ENABLEANALYTICS: "true"
     steps:
