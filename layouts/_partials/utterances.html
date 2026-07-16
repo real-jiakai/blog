@@ -3,7 +3,7 @@
   <h2 id="emoji-reaction-title" class="h4">{{ i18n "emojiReaction" }}</h2>
   <emoji-reaction endpoint="https://api-emaction.gujiakai.top" data-add-label="{{ i18n "addReaction" }}"></emoji-reaction>
   {{/* emaction 组件仅在文章页加载；固定、自托管的补丁版移除了运行时内联样式。 */}}
-  <script type="module" src="{{ partial "asset-url.html" "/js/emaction-1.0.11.js" }}"></script>
+  <script type="module" src="{{ partialCached "asset-url.html" "/js/emaction-1.0.11.js" "/js/emaction-1.0.11.js" }}"></script>
 </section>
 
 <hr>
@@ -11,4 +11,4 @@
   <h2 id="comments-title" class="h4">{{ i18n "comments" }}</h2>
   <div id="utterances-comments"></div>
 </section>
-<script src="{{ partial "asset-url.html" "/js/utterances-init.js" }}" defer data-target="utterances-comments" data-repo="real-jiakai/blog" data-issue-term="pathname" data-label="comment"></script>
+<script src="{{ partialCached "asset-url.html" "/js/utterances-init.js" "/js/utterances-init.js" }}" defer data-target="utterances-comments" data-repo="real-jiakai/blog" data-issue-term="pathname" data-label="comment"></script>

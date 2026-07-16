@@ -3,7 +3,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {{/* 外部同步脚本在 CSS 前设置主题，既避免闪烁，也无需 CSP unsafe-inline。 */}}
-    <script src="{{ partial "asset-url.html" "/js/theme-init.js" }}"></script>
+    <script src="{{ partialCached "asset-url.html" "/js/theme-init.js" "/js/theme-init.js" }}"></script>
     {{- $pageNumber := 1 -}}
     {{- $canonical := .Permalink -}}
     {{- if .IsHome -}}
@@ -195,9 +195,9 @@
     {{ with .Site.Home.OutputFormats.Get "RSS" }}
     <link rel="alternate" type="application/rss+xml" href="{{ .RelPermalink }}" title="{{ $.Site.Title }}" />
     {{ end }}
-    <link rel="shortcut icon" href="{{ partial "asset-url.html" "/images/favicon.ico" }}" type="image/x-icon">
-    <link rel="stylesheet" href="{{ partial "asset-url.html" "/css/bootstrap.min.css" }}">
-    <link rel="stylesheet" href="{{ partial "asset-url.html" "/css/style.css" }}">
-    <link rel="stylesheet" href="{{ partial "asset-url.html" "/css/custom.css" }}">
-    <link rel="stylesheet" href="{{ partial "asset-url.html" "/css/syntax.css" }}">
+    <link rel="shortcut icon" href="{{ partialCached "asset-url.html" "/images/favicon.ico" "/images/favicon.ico" }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ partialCached "asset-url.html" "/css/bootstrap.min.css" "/css/bootstrap.min.css" }}">
+    <link rel="stylesheet" href="{{ partialCached "asset-url.html" "/css/style.css" "/css/style.css" }}">
+    <link rel="stylesheet" href="{{ partialCached "asset-url.html" "/css/custom.css" "/css/custom.css" }}">
+    <link rel="stylesheet" href="{{ partialCached "asset-url.html" "/css/syntax.css" "/css/syntax.css" }}">
 </head>

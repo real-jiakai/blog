@@ -6,14 +6,14 @@
     {{- $hasCode = strings.Contains $renderedContent "<pre" -}}
 {{- end }}
 {{- if $hasImages }}
-<script defer src="{{ partial "asset-url.html" "/js/image-viewer.js" }}"></script>
+<script defer src="{{ partialCached "asset-url.html" "/js/image-viewer.js" "/js/image-viewer.js" }}"></script>
 {{- end }}
 {{- if $hasCode }}
-<script defer src="{{ partial "asset-url.html" "/js/copy-code.js" }}"></script>
+<script defer src="{{ partialCached "asset-url.html" "/js/copy-code.js" "/js/copy-code.js" }}"></script>
 {{- end }}
-<script defer src="{{ partial "asset-url.html" "/js/site-controls.js" }}"></script>
+<script defer src="{{ partialCached "asset-url.html" "/js/site-controls.js" "/js/site-controls.js" }}"></script>
 {{- if and .IsPage (eq .Type "blog") }}
-<script defer src="{{ partial "asset-url.html" "/js/back-to-top.js" }}"></script>
+<script defer src="{{ partialCached "asset-url.html" "/js/back-to-top.js" "/js/back-to-top.js" }}"></script>
 {{- end }}
-<script defer src="{{ partial "asset-url.html" "/js/theme-toggle.js" }}"></script>
-<script defer src="{{ partial "asset-url.html" "/js/footer-year.js" }}"></script>
+<script defer src="{{ partialCached "asset-url.html" "/js/theme-toggle.js" "/js/theme-toggle.js" }}"></script>
+<script defer src="{{ partialCached "asset-url.html" "/js/footer-year.js" "/js/footer-year.js" }}"></script>
