@@ -18,8 +18,10 @@
 
         {{/* 右侧控件：语言切换 + 主题切换（始终可见）+ 移动端汉堡按钮 */}}
         <div class="d-flex align-items-center gap-2 ms-auto site-controls">
-            {{/* 优先使用 Hugo 解析出的实际译文。分页首页保留页码；没有译文的标签术语回退到
-                 目标语言的标签索引，而不是丢失上下文地回到首页。 */}}
+            {{/* 优先使用 Hugo 解析出的实际译文。分页首页保留页码；名称不同的双语标签
+                 （如 开源/open-source）借助 data/tag_translations.yaml 互指，查不到的
+                 标签术语回退到目标语言的标签索引；其余无译文页面回退到目标语言首页，
+                 而不是拼一个可能 404 的 URL。 */}}
             {{ if gt (len .Site.Sites) 1 }}
                 {{ $otherLang := cond (eq .Site.Language.Lang "zh") "en" "zh" }}
                 {{ $targetHome := cond (eq $otherLang "en") "/en/" "/" }}
@@ -37,13 +39,14 @@
                         {{ $href = printf "%spage/%d/" $targetHome $paginator.PageNumber }}
                     {{ end }}
                 {{ else if and (not $href) (or (eq .Kind "term") (eq .Kind "taxonomy")) }}
-                    {{ $href = printf "%stags/" $targetHome }}
-                {{ else if not $href }}
-                    {{ if eq $otherLang "en" }}
-                        {{ $href = printf "/en%s" .RelPermalink }}
-                    {{ else }}
-                        {{ $href = replaceRE "^/en/" "/" .RelPermalink }}
+                    {{ range where (partial "tag-alternates.html" .) "lang" $otherLang }}
+                        {{ $href = .url }}
                     {{ end }}
+                    {{ if not $href }}
+                        {{ $href = printf "%stags/" $targetHome }}
+                    {{ end }}
+                {{ else if not $href }}
+                    {{ $href = $targetHome }}
                 {{ end }}
 
                 <a class="site-lang" href="{{ $href }}" hreflang="{{ $otherLang }}" lang="{{ $otherLang }}" aria-label="{{ if eq $otherLang "en" }}{{ i18n "switchToEnglish" }}{{ else }}{{ i18n "switchToChinese" }}{{ end }}">{{ cond (eq $otherLang "en") "EN" "中" }}</a>
