@@ -8,30 +8,24 @@
 <div id="{{ .Key }}" class="mb-5">
     <h2 class="h3 mb-4">{{ .Key }}</h2>
     
-    <!-- 该年份的标签统计 -->
-    {{ $yearTags := slice }}
+    <!-- 该年份的标签统计（哈希计数，避免逐标签重扫全部标签的双重循环） -->
+    {{ $counts := dict }}
     {{ range .Pages }}
         {{ range .Params.tags }}
-            {{ $yearTags = $yearTags | append . }}
+            {{ $counts = merge $counts (dict . (add (index $counts . | default 0) 1)) }}
         {{ end }}
     {{ end }}
-
-    <!-- 创建带计数的标签切片 -->
     {{ $tagCounts := slice }}
-    {{ range $tag := $yearTags | uniq }}
-        {{ $count := 0 }}
-        {{ range $yearTags }}
-            {{ if eq . $tag }}
-                {{ $count = add $count 1 }}
-            {{ end }}
-        {{ end }}
-        {{ $tagCounts = $tagCounts | append (dict "name" $tag "count" $count) }}
+    {{ range $name, $count := $counts }}
+        {{ $tagCounts = $tagCounts | append (dict "name" $name "count" $count) }}
     {{ end }}
 
-    <!-- 按计数降序排序并显示标签 -->
+    <!-- 按计数降序排序并显示标签；链接优先经 GetPage 解析，与真实标签页 URL 保持一致 -->
     <div class="mb-4">
         {{ range sort $tagCounts "count" "desc" }}
-            <a href="{{ printf "%stags/%s/" ("/" | relLangURL) (.name | urlize) }}" class="badge bg-secondary text-decoration-none me-2">
+            {{ $termURL := printf "%stags/%s/" ("/" | relLangURL) (.name | urlize) }}
+            {{ with site.GetPage (printf "/tags/%s" .name) }}{{ $termURL = .RelPermalink }}{{ end }}
+            <a href="{{ $termURL }}" class="badge bg-secondary text-decoration-none me-2">
                 #{{ .name }} ({{ .count }})
             </a>
         {{ end }}
@@ -45,7 +39,7 @@
         <ul class="list-unstyled ps-3">
             {{ range .Pages.ByDate.Reverse }}
             <li class="mb-2 d-flex justify-content-between align-items-baseline">
-                <a href="{{ .Permalink }}" class="text-decoration-none">{{ .Title }}</a>
+                <a href="{{ .RelPermalink }}" class="text-decoration-none">{{ .Title }}</a>
                 <span class="text-muted archive-date">{{ .Date.Format "01-02" }}</span>
             </li>
             {{ end }}
