@@ -11,6 +11,12 @@
         {{- $homePaginator := .Paginate (where .Site.RegularPages "Type" "==" "blog") -}}
         {{- $pageNumber = $homePaginator.PageNumber -}}
         {{- $canonical = $homePaginator.URL | absURL -}}
+    {{- else if eq .Kind "term" -}}
+        {{/* 标签页由主题 list.html 分页；此处用完全相同的集合取回 paginator，
+             让每个分页子页的 canonical 指向自身而非第一页。 */}}
+        {{- $termPaginator := .Paginate .Pages -}}
+        {{- $pageNumber = $termPaginator.PageNumber -}}
+        {{- $canonical = $termPaginator.URL | absURL -}}
     {{- end -}}
     {{- $is404 := eq .Kind "404" -}}
     {{- $isThinTerm := and (eq .Kind "term") (lt (len .Pages) 2) -}}
@@ -22,12 +28,9 @@
     {{- $title := print $pageTitle " | " .Site.Title -}}
     {{- if and .IsPage (eq .Type "blog") -}}{{- $title = $pageTitle -}}{{- end -}}
     {{- if .IsHome -}}{{- $title = .Site.Title -}}{{- end -}}
-    {{- if and .IsHome (gt $pageNumber 1) -}}
-        {{- if eq .Site.Language.Lang "zh" -}}
-            {{- $title = printf "%s | 第 %d 页" .Site.Title $pageNumber -}}
-        {{- else -}}
-            {{- $title = printf "%s | Page %d" .Site.Title $pageNumber -}}
-        {{- end -}}
+    {{- if gt $pageNumber 1 -}}
+        {{- $pageLabel := i18n "pageNumber" (dict "Number" $pageNumber) -}}
+        {{- $title = printf "%s | %s" (cond .IsHome .Site.Title $title) $pageLabel -}}
     {{- end -}}
     <title>{{ $title }}</title>
     {{- $description := .Site.Params.description -}}
@@ -54,6 +57,10 @@
     {{- else if and .IsPage .Summary -}}
         {{- $description = .Summary | plainify | truncate 160 -}}
     {{- end -}}
+    {{- if and (eq .Kind "term") (gt $pageNumber 1) -}}
+        {{/* 标签分页子页附带页码，避免各子页 description 完全重复 */}}
+        {{- $description = printf "%s (%s)" $description (i18n "pageNumber" (dict "Number" $pageNumber)) -}}
+    {{- end -}}
     <meta name="description" content="{{ $description }}">
     <meta name="keywords" content="{{ with .Params.tags }}{{ delimit . "," }}{{ else }}{{ .Site.Params.keywords }}{{ end }}">
     <meta name="author" content="{{ .Site.Params.author }}">
@@ -73,7 +80,10 @@
             {{- if lt (len .Pages) 2 -}}{{- $translatedPagesIndexable = false -}}{{- end -}}
         {{- end -}}
     {{- end -}}
-    {{- if and .IsTranslated $translatedPagesIndexable }}
+    {{/* 标签分页子页（第 2 页起）不输出 hreflang：两种语言的子页数量不保证对齐，
+         alternate 只在第一页之间互指。 */}}
+    {{- $isTermPagerSubPage := and (eq .Kind "term") (gt $pageNumber 1) -}}
+    {{- if and .IsTranslated $translatedPagesIndexable (not $isTermPagerSubPage) }}
     {{- range .AllTranslations }}
     {{- $alternateURL := .Permalink -}}
     {{- if and $.IsHome (gt $pageNumber 1) -}}
@@ -88,7 +98,7 @@
     {{- end }}
     <link rel="alternate" hreflang="x-default" href="{{ $defaultURL }}" />
     {{- end }}
-    {{- else if not $isThinTerm -}}
+    {{- else if not (or $isThinTerm $isTermPagerSubPage) -}}
     {{- $tagAlternates := partial "tag-alternates.html" . -}}
     {{- range $tagAlternates }}
     <link rel="alternate" hreflang="{{ .languageCode }}" href="{{ .url }}" />
