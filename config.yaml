@@ -1,12 +1,14 @@
 # 网站的基本url地址
 baseURL: https://blog.gujiakai.top
 # 网站使用的主题
-# 通过 module.imports（而非 theme: 键）挂载主题，以便用 excludeFiles 排除
-# 主题 static/ 里本站已覆盖或从未引用、却会被整体复制进 public/ 的文件：
-# - images/hugo_step2_step3.gif（8.5MB，仅主题 README 用图）
-# - js/lightbox-plus-jquery.min.js（98KB，站点使用轻量的原生 dialog 图片查看器）
-# - js/bootstrap.bundle.min.js、js/copy-code.js、js/custom.js、css/lightbox.min.css
-#   （本站自带对应实现，主题版本不再需要）
+# 通过 module.imports（而非 theme: 键）挂载主题，以便用 files 排除主题 static/ 里
+# 本站已用原生实现替代（jQuery/lightbox2/bootstrap JS）、从未引用、却会被整体复制进
+# public/ 的文件。注意：不能排除 images/favicon.ico 和 css/style.css —— 站点没有
+# 自己的副本，正是从主题取用这两个文件。
+# files 取反语法是「! 」（叹号后必须带空格）；只写取反模式时其余文件默认全部挂载。
+# 写成 "!xxx"（无空格）会被当作普通 glob，结果是整个挂载点什么都不包含。
+# 声明 mounts 会关闭主题的默认挂载，因此 i18n 必须显式挂载：主题模板（如标签页的
+# 分页 partial）依赖主题 i18n 键，缺失时会静默渲染成空字符串。
 module:
   imports:
     - path: hugo-theme-simple
@@ -15,15 +17,21 @@ module:
           target: layouts
         - source: archetypes
           target: archetypes
+        - source: i18n
+          target: i18n
         - source: static
           target: static
-          excludeFiles:
-            - images/hugo_step2_step3.gif
-            - js/lightbox-plus-jquery.min.js
-            - js/bootstrap.bundle.min.js
-            - js/copy-code.js
-            - js/custom.js
-            - css/lightbox.min.css
+          files:
+            - "! js/jquery-4.0.0.min.js"
+            - "! js/lightbox.min.js"
+            - "! js/bootstrap.bundle.min.js"
+            - "! js/copy-code.js"
+            - "! js/custom.js"
+            - "! css/lightbox.min.css"
+            - "! images/close.png"
+            - "! images/loading.gif"
+            - "! images/next.png"
+            - "! images/prev.png"
 # 第三方服务
 services:
   # google分析
