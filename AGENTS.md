@@ -29,8 +29,9 @@ vendored), heavily overridden by repo-level layouts/.
   (self-hosted vanilla scripts, no jQuery/lightbox2: theme-init +
   theme-toggle, site-controls, sidebar-toc, back-to-top, copy-code,
   image-viewer = native <dialog> lightbox, utterances-init, emaction
-  reactions, analytics, footer-year), data/image_dimensions.json +
-  tag_translations.yaml, llms.txt + en/llms.txt, xslt/ (styled RSS)
+  reactions, analytics, footer-year), xslt/ (styled RSS)
+- data/ — image_dimensions.json (remote image sizes for render-image)
+  and tag_translations.yaml (zh/en tag pairs for hreflang/switcher)
 - tools/ — one-off Python scraper (blog_scraper.py) that produced
   blog_posts.md; not part of the build
 - .github/workflows/hugo-ci.yml — CI build check (checks out the theme
@@ -60,6 +61,10 @@ No package.json or Makefile; Hugo CLI only (Netlify uses 0.154.2):
   this — about/til stay HTML-only.
 - Taxonomies: tags only; categories are deliberately disabled.
 - RSS: latest 20 posts only, styled via static/xslt.
+- llms.txt: generated at build time per language from
+  layouts/home.llms.txt (→ /llms.txt and /en/llms.txt, LLMS output
+  format on home). It lists every post with its front-matter summary —
+  never hand-edit a static copy.
 - Commit messages: Conventional Commits in English (repo README carries
   the commitizen badge), e.g. `feat(security): ...`, `fix(a11y): ...`.
 - Config comments are in Chinese and explain non-obvious decisions —

@@ -1,0 +1,14 @@
+# {{ .Site.Title }}
+
+> `{{ .Site.Title }}` is a personal technology blog focusing on sharing tech and personal experiences.
+
+## Main Sections
+
+{{ range .Site.Menus.main -}}
+- [{{ .Name }}]({{ .URL | absLangURL }})
+{{ end }}
+## Content
+
+{{ range where .Site.RegularPages "Type" "==" "blog" -}}
+- [{{ .Title }}]({{ .Permalink }}): {{ replace (.Summary | plainify | chomp) "\n" " " }}
+{{ end -}}

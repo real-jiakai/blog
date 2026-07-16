@@ -70,12 +70,20 @@ outputFormats:
     mediaType: text/markdown
     isPlainText: true
     isHTML: false
+  # llms.txt（https://llmstxt.org）：由 layouts/home.llms.txt 按语言在构建时生成
+  # （/llms.txt 与 /en/llms.txt），取代过去手工维护、容易过期的 static/ 副本
+  LLMS:
+    baseName: llms
+    mediaType: text/plain
+    isPlainText: true
+    isHTML: false
 
 # RSS输出配置 - 为每种语言生成RSS
 outputs:
   home:
     - HTML
     - RSS
+    - LLMS
   section:
     - HTML
     - RSS
