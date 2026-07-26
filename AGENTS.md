@@ -30,11 +30,7 @@ vendored), heavily overridden by repo-level layouts/.
   theme-toggle, site-controls, sidebar-toc, back-to-top, copy-code,
   image-viewer = native <dialog> lightbox, utterances-init, emaction
   reactions, analytics, footer-year), xslt/ (styled RSS)
-- data/ — image_dimensions.json (remote image sizes for render-image)
-  and tag_translations.yaml (zh/en tag pairs for hreflang/switcher)
-- scripts/ — Node maintenance scripts: check-image-dimensions.mjs
-  (validates data/image_dimensions.json in CI) and
-  update-image-dimensions.mjs (fetches and records missing entries)
+- data/ — tag_translations.yaml (zh/en tag pairs for hreflang/switcher)
 - .github/workflows/hugo-ci.yml — CI build check (checks out the theme
   submodule and runs the production Hugo build on push / PR)
 
@@ -57,10 +53,7 @@ No package.json or Makefile; Hugo CLI only (Netlify uses 0.164.0):
   pre-fills translationKey from the filename (correct for en; for zh
   posts set it manually to the English slug).
 - New-post checklist: create the zh/en pair with matching
-  slug/translationKey; if the post hot-links new remote images, run
-  `node scripts/update-image-dimensions.mjs` and commit the updated
-  data/image_dimensions.json (CI's check-image-dimensions.mjs fails
-  the build otherwise); if a zh/en tag pair uses different names, add
+  slug/translationKey; if a zh/en tag pair uses different names, add
   it to data/tag_translations.yaml. llms.txt updates itself.
 - MarkdownRaw output: blog posts also emit their raw Markdown at
   /:year/:month/:slug.md (global `uglyURLs: true` + `noUgly` on

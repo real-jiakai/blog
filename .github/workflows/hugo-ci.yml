@@ -39,8 +39,5 @@ jobs:
           sudo install --mode 0755 /tmp/hugo /usr/local/bin/hugo
           hugo version
 
-      - name: Validate remote image dimensions
-        run: node scripts/check-image-dimensions.mjs
-
       - name: Build production site with zero warnings
         run: hugo --gc --minify --panicOnWarning

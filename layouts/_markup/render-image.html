@@ -10,11 +10,6 @@
 {{- with $resource -}}
   {{- $intrinsicWidth = .Width -}}
   {{- $intrinsicHeight = .Height -}}
-{{- else -}}
-  {{- with index hugo.Data.image_dimensions $destination -}}
-    {{- $intrinsicWidth = int .width -}}
-    {{- $intrinsicHeight = int .height -}}
-  {{- end -}}
 {{- end -}}
 {{- $displaySource := $destination -}}
 {{- $sourceSet := slice -}}
