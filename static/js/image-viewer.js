@@ -14,24 +14,41 @@
         var image = document.createElement('img');
         image.className = 'article-lightbox-image';
         image.decoding = 'async';
-        var caption = document.createElement('figcaption');
-        caption.className = 'article-lightbox-caption';
         stage.appendChild(image);
-        stage.appendChild(caption);
 
-        function makeButton(className, label, text) {
+        // SVG paths are drawn centered in the 24x24 viewBox; text glyphs
+        // (‹, ›, ×) sit off-center in their em box, so they cannot be used
+        // if the icon is to land on the exact middle of the round button.
+        function makeButton(className, label, iconPath) {
             var button = document.createElement('button');
             button.type = 'button';
             button.className = className;
             button.setAttribute('aria-label', label);
-            button.textContent = text;
+            button.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">'
+                + '<path d="' + iconPath + '" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>'
+                + '</svg>';
             return button;
         }
 
-        var closeButton = makeButton('article-lightbox-close', labels.lightboxCloseLabel || 'Close image viewer', '×');
-        var previousButton = makeButton('article-lightbox-previous', labels.lightboxPreviousLabel || 'Previous image', '‹');
-        var nextButton = makeButton('article-lightbox-next', labels.lightboxNextLabel || 'Next image', '›');
-        dialog.appendChild(closeButton);
+        var previousButton = makeButton('article-lightbox-previous', labels.lightboxPreviousLabel || 'Previous image', 'M15.25 5.5 8.75 12l6.5 6.5');
+        var nextButton = makeButton('article-lightbox-next', labels.lightboxNextLabel || 'Next image', 'M8.75 5.5 15.25 12l-6.5 6.5');
+
+        // Toolbar: counter · title · close. The close control is a real
+        // icon button — the blog's screenshots are mostly of application
+        // windows, so the viewer must not imitate window chrome
+        // (traffic-light dots) that blends into the image below it.
+        var titleBar = document.createElement('div');
+        titleBar.className = 'article-lightbox-titlebar';
+        var counter = document.createElement('div');
+        counter.className = 'article-lightbox-counter';
+        var titleText = document.createElement('div');
+        titleText.className = 'article-lightbox-title';
+        var closeButton = makeButton('article-lightbox-close', labels.lightboxCloseLabel || 'Close image viewer', 'M7 7l10 10M17 7 7 17');
+        titleBar.appendChild(counter);
+        titleBar.appendChild(titleText);
+        titleBar.appendChild(closeButton);
+
+        dialog.appendChild(titleBar);
         dialog.appendChild(previousButton);
         dialog.appendChild(stage);
         dialog.appendChild(nextButton);
@@ -47,8 +64,9 @@
             var title = link.dataset.title || '';
             image.src = link.href;
             image.alt = alt;
-            caption.textContent = title;
-            caption.hidden = !title;
+            titleText.textContent = title || alt;
+            counter.textContent = (current + 1) + ' / ' + links.length;
+            counter.hidden = links.length < 2;
             dialog.setAttribute('aria-label', alt || title || (labels.lightboxCloseLabel || 'Image viewer'));
             previousButton.hidden = links.length < 2;
             nextButton.hidden = links.length < 2;

@@ -867,21 +867,21 @@ body.lightbox-open {
     overflow: hidden;
 }
 
+/* The enlarged view is an opaque window-style card hugging the image:
+   a toolbar (counter · title · close) on top, the image below. Being
+   opaque, it guarantees contrast for transparent images and the text. */
 .article-lightbox {
-    width: min(96vw, 75rem);
-    max-width: none;
+    width: fit-content;
+    /* 100vw minus the side gutter the viewport-fixed nav arrows float
+       in, so they never cover the image (see .article-lightbox-previous). */
+    max-width: min(calc(100vw - 9rem), 75rem);
     max-height: 94vh;
-    padding: 2.75rem 3.5rem 1.25rem;
+    padding: 0;
     border: 0;
     border-radius: 0.75rem;
-    color: #212529;
-    background: rgba(248, 249, 250, 0.98);
-    box-shadow: 0 1rem 4rem rgba(15, 23, 42, 0.22);
-}
-
-.article-lightbox[open] {
-    display: grid;
-    align-items: center;
+    background: var(--card-bg);
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.35);
+    overflow: hidden;
 }
 
 .article-lightbox::backdrop {
@@ -889,10 +889,60 @@ body.lightbox-open {
     backdrop-filter: blur(3px);
 }
 
-.article-lightbox-stage {
+.article-lightbox-titlebar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.4rem;
+    /* Side padding clears the counter (left) and close button (right)
+       so a long title cannot run underneath them. */
+    padding: 0 4.25rem;
+    border-bottom: 1px solid var(--card-border-color);
+}
+
+.article-lightbox-counter {
+    position: absolute;
+    left: 0.8rem;
+    color: var(--muted-text-color);
+    font-size: 0.8rem;
+    font-variant-numeric: tabular-nums;
+}
+
+.article-lightbox-close {
+    position: absolute;
+    right: 0.4rem;
     display: grid;
-    gap: 0.8rem;
-    justify-items: center;
+    place-items: center;
+    width: 1.8rem;
+    height: 1.8rem;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    color: var(--muted-text-color);
+    background: transparent;
+    cursor: pointer;
+}
+
+.article-lightbox-close:hover {
+    background: var(--card-border-color);
+}
+
+.article-lightbox-close svg {
+    width: 1.05rem;
+    height: 1.05rem;
+}
+
+.article-lightbox-title {
+    min-width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: var(--muted-text-color);
+    font-size: 0.85rem;
+}
+
+.article-lightbox-stage {
     margin: 0;
 }
 
@@ -900,63 +950,55 @@ body.lightbox-open {
     display: block;
     max-width: 100%;
     max-height: 78vh;
-    border-radius: 0.35rem;
     object-fit: contain;
 }
 
-.article-lightbox-caption {
-    max-width: 62rem;
-    color: #495057;
-    font-size: 0.95rem;
-    line-height: 1.55;
-    text-align: center;
-}
-
-.article-lightbox-close,
+/* The nav arrows must stay inside the <dialog> to remain clickable
+   (everything outside an open modal dialog is inert), but they are
+   fixed to the viewport so they float over the backdrop, clear of the
+   image; the dialog's max-width reserves that side gutter. */
 .article-lightbox-previous,
 .article-lightbox-next {
-    position: absolute;
+    position: fixed;
+    top: 50%;
     z-index: 1;
     display: grid;
     place-items: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    transform: translateY(-50%);
     border: 1px solid #ced4da;
     border-radius: 999px;
     color: #212529;
     background: rgba(255, 255, 255, 0.94);
-    font-family: inherit;
-    line-height: 1;
+    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.25);
     cursor: pointer;
 }
 
-.article-lightbox-close:hover,
 .article-lightbox-previous:hover,
 .article-lightbox-next:hover {
     background: #e9ecef;
 }
 
-.article-lightbox-close {
-    top: 0.75rem;
-    right: 0.75rem;
-    width: 2.25rem;
-    height: 2.25rem;
-    font-size: 1.8rem;
-}
-
-.article-lightbox-previous,
-.article-lightbox-next {
-    top: 50%;
-    width: 2.75rem;
-    height: 2.75rem;
-    transform: translateY(-50%);
-    font-size: 2.2rem;
+.article-lightbox-previous svg,
+.article-lightbox-next svg {
+    width: 1.3rem;
+    height: 1.3rem;
 }
 
 .article-lightbox-previous {
-    left: 0.5rem;
+    left: 1.25rem;
 }
 
 .article-lightbox-next {
-    right: 0.5rem;
+    right: 1.25rem;
+}
+
+.article-lightbox-close:focus-visible,
+.article-lightbox-previous:focus-visible,
+.article-lightbox-next:focus-visible {
+    outline: 2px solid var(--focus-ring-color);
+    outline-offset: 2px;
 }
 
 /* Self-hosted emaction component. It renders into the light DOM so these
@@ -1193,13 +1235,30 @@ emoji-reaction button:focus-visible {
    =========================================== */
 @media (max-width: 767.98px) {
     .article-lightbox {
-        width: 98vw;
-        padding: 3rem 2.75rem 1rem;
-        border-radius: 0.4rem;
+        max-width: 98vw;
     }
 
+    /* Capped so the centered card always leaves room below it for the
+       relocated nav arrows. */
     .article-lightbox-image {
-        max-height: 76vh;
+        max-height: 74vh;
+    }
+
+    /* No side gutters on small screens: the arrows become a floating
+       pair under the card, still over the backdrop. */
+    .article-lightbox-previous,
+    .article-lightbox-next {
+        top: auto;
+        bottom: max(1.1rem, env(safe-area-inset-bottom, 0px));
+        transform: none;
+    }
+
+    .article-lightbox-previous {
+        left: calc(50% - 3.4rem);
+    }
+
+    .article-lightbox-next {
+        right: calc(50% - 3.4rem);
     }
 
     /* Keep all always-visible header controls comfortable without crowding
