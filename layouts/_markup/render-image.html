@@ -14,7 +14,9 @@
 {{- $displaySource := $destination -}}
 {{- $sourceSet := slice -}}
 {{- $imageCDNHosts := slice "cdn.sa.net" "vip2.loli.net" "i.see.you" "cdn.jiakai.page" "image.gujiakai.top" -}}
-{{- $useImageCDN := and $parsedDestination.IsAbs (in $imageCDNHosts (lower $parsedDestination.Host)) -}}
+{{- /* /.netlify/images 端点只存在于 Netlify 边缘节点；本地 hugo server 下跳过改写，
+       直接引用原图，否则本地预览全部图片 404。 */ -}}
+{{- $useImageCDN := and (not hugo.IsServer) $parsedDestination.IsAbs (in $imageCDNHosts (lower $parsedDestination.Host)) -}}
 {{- if $useImageCDN -}}
   {{- $encodedDestination := $destination | urlquery -}}
   {{- $candidateWidths := slice 320 480 640 768 960 1280 1600 1920 -}}
