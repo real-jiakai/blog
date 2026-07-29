@@ -25,6 +25,9 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
+          # PR 触发的构建会执行来自该 checkout 的 Hugo 模板（layouts/ 属于可执行
+          # 代码），不落盘凭证以免恶意 PR 模板读取 job token
+          persist-credentials: false
 
       - name: Install pinned Hugo Extended
         shell: bash
