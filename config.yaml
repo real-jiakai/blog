@@ -1,10 +1,11 @@
 # 网站的基本url地址
 baseURL: https://blog.gujiakai.top
 # 网站使用的主题
-# 通过 module.imports（而非 theme: 键）挂载主题，以便用 files 排除主题 static/ 里
-# 本站已用原生实现替代（jQuery/lightbox2/bootstrap JS）、从未引用、却会被整体复制进
-# public/ 的文件。注意：不能排除 images/favicon.ico 和 css/style.css —— 站点没有
-# 自己的副本，正是从主题取用这两个文件。
+# 通过 module.imports（而非 theme: 键）挂载主题，以便用 files 整体排除主题的
+# static/js/：本站脚本是 assets/ts/ 里的 TypeScript（由 _partials/script-url.html
+# 用 js.Build 编译），emaction 用的是本站 static/js/ 里的补丁版；若不排除，主题的
+# 同名 JS 会在本站副本删除后「顶上来」被复制进 public/。注意：不能排除
+# images/favicon.ico 和 css/style.css —— 站点没有自己的副本，正是从主题取用这两个文件。
 # files 取反语法是「! 」（叹号后必须带空格）；只写取反模式时其余文件默认全部挂载。
 # 写成 "!xxx"（无空格）会被当作普通 glob，结果是整个挂载点什么都不包含。
 # 声明 mounts 会关闭主题的默认挂载，因此 i18n 必须显式挂载：主题模板（如标签页的
@@ -22,16 +23,7 @@ module:
         - source: static
           target: static
           files:
-            - "! js/jquery-4.0.0.min.js"
-            - "! js/lightbox.min.js"
-            - "! js/bootstrap.bundle.min.js"
-            - "! js/copy-code.js"
-            - "! js/custom.js"
-            - "! css/lightbox.min.css"
-            - "! images/close.png"
-            - "! images/loading.gif"
-            - "! images/next.png"
-            - "! images/prev.png"
+            - "! js/**"
 # 第三方服务
 services:
   # google分析

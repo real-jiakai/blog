@@ -3,7 +3,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {{/* 外部同步脚本在 CSS 前设置主题，既避免闪烁，也无需 CSP unsafe-inline。 */}}
-    <script src="{{ partialCached "asset-url.html" "/js/theme-init.js" "/js/theme-init.js" }}"></script>
+    <script src="{{ partialCached "script-url.html" "theme-init" "theme-init" }}"></script>
     {{- $pageNumber := 1 -}}
     {{- $canonical := .Permalink -}}
     {{- if .IsHome -}}

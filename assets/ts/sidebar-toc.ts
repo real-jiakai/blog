@@ -1,15 +1,15 @@
 (function () {
     'use strict';
 
-    function initializeTableOfContents() {
-        var toggle = document.getElementById('tocHeader');
-        var content = document.getElementById('tocContent');
-        var expandedIcon = document.getElementById('arrow-down');
-        var collapsedIcon = document.getElementById('arrow-right');
+    function initializeTableOfContents(): void {
+        const toggle = document.getElementById('tocHeader');
+        const content = document.getElementById('tocContent');
+        const expandedIcon = document.getElementById('arrow-down');
+        const collapsedIcon = document.getElementById('arrow-right');
         if (!toggle || !content) return;
 
-        function setExpanded(expanded) {
-            toggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+        function setExpanded(expanded: boolean): void {
+            toggle!.setAttribute('aria-expanded', expanded ? 'true' : 'false');
             if (expandedIcon) expandedIcon.classList.toggle('d-none', !expanded);
             if (collapsedIcon) collapsedIcon.classList.toggle('d-none', expanded);
         }
@@ -21,12 +21,12 @@
         });
         setExpanded(content.classList.contains('show'));
 
-        var links = Array.prototype.slice.call(content.querySelectorAll('a[href^="#"]'));
-        var items = [];
+        const links = Array.prototype.slice.call(content.querySelectorAll<HTMLAnchorElement>('a[href^="#"]')) as HTMLAnchorElement[];
+        const items: { link: HTMLAnchorElement; heading: HTMLElement }[] = [];
 
         links.forEach(function (link) {
-            var raw = link.getAttribute('href').slice(1);
-            var id;
+            var raw = link.getAttribute('href')!.slice(1);
+            var id: string;
             try {
                 id = decodeURIComponent(raw);
             } catch (error) {
@@ -38,7 +38,7 @@
         if (!items.length) return;
 
         var ticking = false;
-        function updateActiveLink() {
+        function updateActiveLink(): void {
             ticking = false;
             if (items[0].heading.offsetParent === null) return;
 
@@ -68,7 +68,7 @@
             });
         }
 
-        function scheduleUpdate() {
+        function scheduleUpdate(): void {
             if (ticking) return;
             ticking = true;
             window.requestAnimationFrame(updateActiveLink);

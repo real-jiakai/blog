@@ -1,0 +1,15 @@
+{
+  // 仅供编辑器与手动类型检查（npx tsc --noEmit）使用。站点构建由 Hugo 内置的
+  // esbuild（layouts/_partials/script-url.html 里的 js.Build）完成：esbuild 只做
+  // 类型擦除、不读取本文件，因此仓库依旧不需要 package.json / Node 工具链。
+  // target/lib 与 script-url.html 中 js.Build 的 target: es2018 保持一致。
+  "compilerOptions": {
+    "target": "ES2018",
+    "lib": ["DOM", "ES2018"],
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "types": []
+  },
+  "include": ["assets/ts/**/*.ts"]
+}

@@ -1,3 +1,14 @@
+interface ClarityFunction {
+  (...args: unknown[]): void;
+  q?: IArguments[];
+}
+
+interface Window {
+  dataLayer?: IArguments[];
+  gtag?: (...args: unknown[]) => void;
+  clarity?: ClarityFunction;
+}
+
 (function () {
   "use strict";
 
@@ -14,12 +25,12 @@
   var hardFallbackTimer = window.setTimeout(loadAnalytics, 15000);
   var interactionEvents = ["pointerdown", "keydown", "touchstart"];
 
-  function appendScript(source, attributes) {
+  function appendScript(source: string, attributes?: { [name: string]: string }) {
     var script = document.createElement("script");
     script.async = true;
     script.src = source;
     Object.keys(attributes || {}).forEach(function (name) {
-      script.setAttribute(name, attributes[name]);
+      script.setAttribute(name, attributes![name]);
     });
     document.head.appendChild(script);
   }
@@ -47,33 +58,33 @@
     started = true;
     removeTriggers();
 
-    var googleId = config.dataset.googleId;
+    var googleId = config!.dataset.googleId;
     if (googleId) {
       window.dataLayer = window.dataLayer || [];
       window.gtag = function () {
-        window.dataLayer.push(arguments);
+        window.dataLayer!.push(arguments);
       };
       window.gtag("js", new Date());
       window.gtag("config", googleId);
       appendScript("https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(googleId));
     }
 
-    var clarityId = config.dataset.clarityId;
+    var clarityId = config!.dataset.clarityId;
     if (clarityId) {
       window.clarity = window.clarity || function () {
-        (window.clarity.q = window.clarity.q || []).push(arguments);
+        (window.clarity!.q = window.clarity!.q || []).push(arguments);
       };
       appendScript("https://www.clarity.ms/tag/" + encodeURIComponent(clarityId));
     }
 
-    var umamiSource = config.dataset.umamiSrc;
-    var umamiId = config.dataset.umamiId;
+    var umamiSource = config!.dataset.umamiSrc;
+    var umamiId = config!.dataset.umamiId;
     if (umamiSource && umamiId) {
       appendScript(umamiSource, { "data-website-id": umamiId });
     }
   }
 
-  function scheduleIdleLoad(timeout) {
+  function scheduleIdleLoad(timeout: number) {
     if (started || idleCallback || idleFallbackTimer) {
       return;
     }
@@ -81,7 +92,7 @@
     if ("requestIdleCallback" in window) {
       idleCallback = window.requestIdleCallback(loadAnalytics, { timeout: timeout });
     } else {
-      idleFallbackTimer = window.setTimeout(loadAnalytics, 250);
+      idleFallbackTimer = (window as Window).setTimeout(loadAnalytics, 250);
     }
   }
 

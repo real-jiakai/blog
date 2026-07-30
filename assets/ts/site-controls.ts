@@ -2,10 +2,10 @@
     'use strict';
 
     function initializeSiteControls() {
-        var navToggle = document.querySelector('.navbar-toggler');
-        var nav = document.getElementById('navbarNav');
+        const navToggle = document.querySelector<HTMLElement>('.navbar-toggler');
+        const nav = document.getElementById('navbarNav');
 
-        function setNavigationOpen(open) {
+        function setNavigationOpen(open: boolean) {
             if (!navToggle || !nav) return;
             nav.classList.toggle('show', open);
             navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
@@ -17,11 +17,11 @@
             });
         }
 
-        var themeButton = document.getElementById('theme-menu-btn');
-        var themeMenu = document.getElementById('theme-menu');
-        var themeItems = themeMenu ? Array.prototype.slice.call(themeMenu.querySelectorAll('[role="menuitemradio"]')) : [];
+        const themeButton = document.getElementById('theme-menu-btn');
+        const themeMenu = document.getElementById('theme-menu');
+        const themeItems: HTMLElement[] = themeMenu ? Array.prototype.slice.call(themeMenu.querySelectorAll<HTMLElement>('[role="menuitemradio"]')) : [];
 
-        function focusThemeItem(index) {
+        function focusThemeItem(index: number) {
             if (!themeItems.length) return;
             var normalized = (index + themeItems.length) % themeItems.length;
             themeItems.forEach(function (item, itemIndex) {
@@ -30,18 +30,18 @@
             themeItems[normalized].focus();
         }
 
-        function focusOutsideThemeMenu(backward) {
+        function focusOutsideThemeMenu(backward: boolean) {
             var selector = 'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
-            var focusable = Array.prototype.slice.call(document.querySelectorAll(selector)).filter(function (element) {
-                return !themeMenu.contains(element) && element.getClientRects().length > 0;
+            var focusable: HTMLElement[] = Array.prototype.slice.call(document.querySelectorAll<HTMLElement>(selector)).filter(function (element: HTMLElement) {
+                return !themeMenu!.contains(element) && element.getClientRects().length > 0;
             });
-            var triggerIndex = focusable.indexOf(themeButton);
+            var triggerIndex = focusable.indexOf(themeButton!);
             var target = focusable[triggerIndex + (backward ? -1 : 1)];
             if (target) target.focus();
-            else themeButton.focus();
+            else themeButton!.focus();
         }
 
-        function setThemeMenuOpen(open, focusIndex) {
+        function setThemeMenuOpen(open: boolean, focusIndex?: number) {
             if (!themeButton || !themeMenu) return;
             themeMenu.classList.toggle('show', open);
             themeButton.setAttribute('aria-expanded', open ? 'true' : 'false');
@@ -72,13 +72,13 @@
                 }
             });
             themeMenu.addEventListener('click', function (event) {
-                if (event.target.closest('[role="menuitemradio"]')) {
+                if ((event.target as Element).closest('[role="menuitemradio"]')) {
                     setThemeMenuOpen(false);
                     themeButton.focus();
                 }
             });
             themeMenu.addEventListener('keydown', function (event) {
-                var current = themeItems.indexOf(document.activeElement);
+                var current = themeItems.indexOf(document.activeElement as HTMLElement);
                 if (current < 0) return;
                 if (event.key === 'ArrowDown') {
                     event.preventDefault();
@@ -110,7 +110,7 @@
                 }, 0);
             });
             document.addEventListener('click', function (event) {
-                if (!themeButton.contains(event.target) && !themeMenu.contains(event.target)) {
+                if (!themeButton.contains(event.target as Element) && !themeMenu.contains(event.target as Element)) {
                     setThemeMenuOpen(false);
                 }
             });

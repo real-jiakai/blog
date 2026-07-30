@@ -1,0 +1,21 @@
+{{- /*
+    将 assets/ts/<name>.ts 用 Hugo 内置 esbuild（js.Build）编译为 /js/<name>.<hash>.js。
+    fingerprint 取代旧的 ?v= 查询串方案：文件名随内容变化，天然命中 netlify.toml 中
+    /js/* 的 immutable 缓存策略；产物仍在本域名下，CSP 的 script-src 'self' 无需改动。
+    仅本地 hugo server（development）内联 sourcemap 便于对照 TS 源码调试；其余环境
+    （production 与 Netlify 的 preview/branch-deploy）一律 minify —— preview 若走
+    sourcemap 分支会把完整 TS 源码嵌进产物，体积约为压缩版的六倍。
+*/ -}}
+{{- $name := . -}}
+{{- $source := resources.Get (printf "ts/%s.ts" $name) -}}
+{{- if not $source -}}
+  {{- errorf "script-url: cannot find assets/ts/%s.ts" $name -}}
+{{- end -}}
+{{- $opts := dict "targetPath" (printf "js/%s.js" $name) "target" "es2018" -}}
+{{- if hugo.IsDevelopment -}}
+  {{- $opts = merge $opts (dict "sourceMap" "inline") -}}
+{{- else -}}
+  {{- $opts = merge $opts (dict "minify" true) -}}
+{{- end -}}
+{{- $built := $source | js.Build $opts | fingerprint "sha256" -}}
+{{- return $built.RelPermalink -}}

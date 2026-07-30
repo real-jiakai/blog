@@ -1,9 +1,9 @@
 (function () {
     'use strict';
 
-    function legacyCopy(text) {
-        return new Promise(function (resolve, reject) {
-            var textarea = document.createElement('textarea');
+    function legacyCopy(text: string): Promise<void> {
+        return new Promise<void>(function (resolve, reject) {
+            const textarea = document.createElement('textarea');
             textarea.value = text;
             textarea.className = 'visually-hidden';
             textarea.setAttribute('aria-hidden', 'true');
@@ -21,10 +21,10 @@
         });
     }
 
-    function copyWithFallback(text) {
+    function copyWithFallback(text: string): Promise<void> {
         if (navigator.clipboard && window.isSecureContext) {
             try {
-                var timeout = new Promise(function (resolve, reject) {
+                const timeout = new Promise<never>(function (resolve, reject) {
                     window.setTimeout(function () { reject(new Error('Clipboard request timed out')); }, 750);
                 });
                 return Promise.race([Promise.resolve(navigator.clipboard.writeText(text)), timeout]).catch(function () {
@@ -38,24 +38,24 @@
         return legacyCopy(text);
     }
 
-    function initializeCopyButtons() {
-        var labels = document.body.dataset;
-        var copyLabel = labels.copyLabel || 'Copy';
-        var copiedLabel = labels.copiedLabel || 'Copied!';
-        var errorLabel = labels.copyErrorLabel || 'Copy failed';
+    function initializeCopyButtons(): void {
+        const labels = document.body.dataset;
+        const copyLabel = labels.copyLabel || 'Copy';
+        const copiedLabel = labels.copiedLabel || 'Copied!';
+        const errorLabel = labels.copyErrorLabel || 'Copy failed';
 
         document.querySelectorAll('.highlight').forEach(function (highlight) {
             if (highlight.querySelector('.copy-code-button')) return;
 
-            var button = document.createElement('button');
+            const button = document.createElement('button');
             button.className = 'copy-code-button';
             button.type = 'button';
             button.textContent = copyLabel;
             button.setAttribute('aria-label', copyLabel);
 
             button.addEventListener('click', function () {
-                var code = highlight.querySelector('table td:last-child code') || highlight.querySelector('code');
-                var text = code ? code.textContent : '';
+                const code = highlight.querySelector('table td:last-child code') || highlight.querySelector('code');
+                const text = code ? code.textContent! : '';
 
                 copyWithFallback(text).then(function () {
                     button.textContent = copiedLabel;

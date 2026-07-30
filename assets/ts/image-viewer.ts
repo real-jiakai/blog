@@ -1,8 +1,8 @@
 (function () {
     'use strict';
 
-    function initializeImageViewer() {
-        var links = Array.prototype.slice.call(document.querySelectorAll('a[data-lightbox="article"]'));
+    function initializeImageViewer(): void {
+        var links: HTMLAnchorElement[] = Array.prototype.slice.call(document.querySelectorAll<HTMLAnchorElement>('a[data-lightbox="article"]'));
         if (!links.length) return;
 
         var labels = document.body.dataset;
@@ -19,7 +19,7 @@
         // SVG paths are drawn centered in the 24x24 viewBox; text glyphs
         // (‹, ›, ×) sit off-center in their em box, so they cannot be used
         // if the icon is to land on the exact middle of the round button.
-        function makeButton(className, label, iconPath) {
+        function makeButton(className: string, label: string, iconPath: string): HTMLButtonElement {
             var button = document.createElement('button');
             button.type = 'button';
             button.className = className;
@@ -55,8 +55,8 @@
         document.body.appendChild(dialog);
 
         var current = 0;
-        var opener = null;
-        function showImage(index) {
+        var opener: HTMLAnchorElement | null = null;
+        function showImage(index: number): void {
             current = (index + links.length) % links.length;
             var link = links[current];
             var innerImage = link.querySelector('img');
@@ -72,7 +72,7 @@
             nextButton.hidden = links.length < 2;
         }
 
-        function openViewer(index) {
+        function openViewer(index: number): void {
             opener = links[index];
             showImage(index);
             document.body.classList.add('lightbox-open');
@@ -81,7 +81,7 @@
             closeButton.focus();
         }
 
-        function closeViewer() {
+        function closeViewer(): void {
             if (typeof dialog.close === 'function' && dialog.open) {
                 dialog.close();
                 return;
@@ -90,7 +90,7 @@
             finishClose();
         }
 
-        function finishClose() {
+        function finishClose(): void {
             document.body.classList.remove('lightbox-open');
             image.removeAttribute('src');
             if (opener) opener.focus();

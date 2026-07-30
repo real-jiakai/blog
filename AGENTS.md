@@ -5,7 +5,8 @@ Guidance for AI coding agents working in this repository.
 ## What this repo is
 
 Personal blog of 顾佳凯 (Jiakai), served at https://blog.gujiakai.top.
-Plain Hugo static site — no package.json, no Node toolchain. Bilingual:
+Plain Hugo static site — no package.json, no Node toolchain; first-party
+scripts are TypeScript compiled by Hugo's embedded esbuild. Bilingual:
 Chinese is the default language at the site root, English lives under
 /en/. Built and hosted on Netlify (`hugo --gc --minify`, publish dir
 `public/`, Hugo pinned to 0.164.0 in netlify.toml). The theme is
@@ -25,14 +26,19 @@ vendored), heavily overridden by repo-level layouts/.
   root, partials in layouts/_partials/), single.markdownraw.md renders
   the raw-.md output format
 - i18n/zh.yaml, i18n/en.yaml — UI strings
+- assets/ts/ — first-party TypeScript (no jQuery/lightbox2: theme-init
+  + theme-toggle, site-controls, sidebar-toc, back-to-top, copy-code,
+  image-viewer = native <dialog> lightbox, utterances-init, analytics,
+  footer-year), compiled per-entry to /js/<name>.<hash>.js by
+  layouts/_partials/script-url.html (js.Build + fingerprint)
+- tsconfig.json — editor/type-check config only; the build ignores it
 - static/ — css/ (self-hosted bootstrap.min.css + custom.css), js/
-  (self-hosted vanilla scripts, no jQuery/lightbox2: theme-init +
-  theme-toggle, site-controls, sidebar-toc, back-to-top, copy-code,
-  image-viewer = native <dialog> lightbox, utterances-init, emaction
-  reactions, analytics, footer-year), xslt/ (styled RSS)
+  (only the vendored, patched emaction reactions bundle), xslt/
+  (styled RSS)
 - data/ — tag_translations.yaml (zh/en tag pairs for hreflang/switcher)
-- .github/workflows/hugo-ci.yml — CI build check (checks out the theme
-  submodule and runs the production Hugo build on push / PR)
+- .github/workflows/hugo-ci.yml — CI check (checks out the theme
+  submodule, type-checks assets/ts/ with pinned TypeScript, and runs
+  the production Hugo build on push / PR)
 
 ## Commands
 
@@ -41,6 +47,9 @@ No package.json or Makefile; Hugo CLI only (Netlify uses 0.164.0):
 - `git submodule update --init` — fetch the theme (required once)
 - `hugo server` — local dev at http://localhost:1313
 - `hugo --gc --minify` — production build (what Netlify runs)
+- `npx --yes --package typescript@5.9.3 tsc -p tsconfig.json` — TS type
+  check (CI runs this same pinned command; a bare `npx tsc` would fetch
+  npm's unrelated `tsc` squatter package, not TypeScript)
 
 ## Architecture & conventions
 
@@ -76,8 +85,9 @@ No package.json or Makefile; Hugo CLI only (Netlify uses 0.164.0):
 - `hugo server`: check both / (zh) and /en/, plus /archive/ and a post
   page in each language; verify the "View as Markdown" .md URL works.
 - CSP in netlify.toml whitelists every third party in use. The
-  utterances loader and the emaction reactions bundle are self-hosted
-  under static/js/, so script-src no longer lists any CDN; external
+  utterances loader (compiled from assets/ts/) and the emaction
+  reactions bundle (vendored in static/js/) are both served
+  first-party, so script-src no longer lists any CDN; external
   origins are Clarity, GA (googletagmanager), umami, and asciinema in
   script-src, with utteranc.es (frame) and api-emaction.gujiakai.top
   (connect) for the self-hosted widgets. Any new external
@@ -102,7 +112,15 @@ No package.json or Makefile; Hugo CLI only (Netlify uses 0.164.0):
   template for the archive page.
 - The footer's `{Year}` placeholder is rendered at build time (see
   _partials/footer.html) and then corrected client-side by
-  static/js/footer-year.js on every page load, so the copyright year
+  assets/ts/footer-year.ts on every page load, so the copyright year
   stays current without a scheduled redeploy. The build-time value is
   the no-JS fallback; keep both in sync if you touch either.
+- Each assets/ts/ entry compiles standalone as a global script (IIFE,
+  target es2018, no imports/exports); Hugo's esbuild does strip types
+  but performs no type checking, so the pinned tsc command in CI is
+  the only type gate. Scripts are minified in every environment except
+  development (Netlify previews must not ship sourcemap debug bundles).
+  The fingerprinted /js/<name>.<hash>.js URL replaces the old ?v=
+  query-string cache busting for scripts (asset-url.html still handles
+  css/images/the emaction vendor file).
 - public/ is gitignored build output; never edit or commit it.

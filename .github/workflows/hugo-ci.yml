@@ -29,6 +29,12 @@ jobs:
           # 代码），不落盘凭证以免恶意 PR 模板读取 job token
           persist-credentials: false
 
+      - name: Type-check first-party TypeScript
+        # esbuild（js.Build）只做类型擦除，不做类型检查；这里是唯一的类型闸门。
+        # 必须显式 --package typescript：裸的 `npx tsc` 会解析到 npm 上无关的
+        # 抢注包 `tsc`。版本与 AGENTS.md 中的命令保持一致。
+        run: npx --yes --package typescript@5.9.3 tsc -p tsconfig.json
+
       - name: Install pinned Hugo Extended
         shell: bash
         run: |
