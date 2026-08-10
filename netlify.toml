@@ -82,19 +82,6 @@
     Netlify-CDN-Cache-Control = "public, s-maxage=31536000, must-revalidate"
     X-Robots-Tag = "noindex, follow"
 
-# 搜索页：HTML 里已有 noindex meta（head.html 的 .Params.noindex 分支），
-# HTTP 层再兜一次。注意不要在 robots.txt 里 Disallow /search/ —— 被 Disallow
-# 的 URL 不会被抓取，noindex 因此永远读不到，反而可能长期留存为纯 URL 条目。
-[[headers]]
-  for = "/search/*"
-  [headers.values]
-    X-Robots-Tag = "noindex, follow"
-
-[[headers]]
-  for = "/en/search/*"
-  [headers.values]
-    X-Robots-Tag = "noindex, follow"
-
 # 404 文件本身可能被直接请求并以 200 返回；HTTP 与 HTML 两层都明确禁止索引。
 [[headers]]
   for = "/404.html"

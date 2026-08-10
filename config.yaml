@@ -136,9 +136,6 @@ languages:
         - name: "关于"
           url: "/about/"
           weight: 5
-        - name: "搜索"
-          url: "/search/"
-          weight: 6
   en:
     label: "English"
     locale: "en-US"
@@ -167,9 +164,6 @@ languages:
         - name: "About"
           url: "/about/"
           weight: 5
-        - name: "Search"
-          url: "/search/"
-          weight: 6
 
 # 全局参数（作为默认值）
 params:

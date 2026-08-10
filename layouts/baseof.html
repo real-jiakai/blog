@@ -35,6 +35,9 @@
     </div>
   </main>
 
+  {{/* 搜索浮层：全站可用，放在 main 之后、footer 之前；未配置后端时不渲染 */}}
+  {{- partial "search.html" . -}}
+
   {{/* html footer */}}
   {{- partial "footer.html" . -}}
   {{/* Long-form blog articles benefit from a back-to-top shortcut; keep it

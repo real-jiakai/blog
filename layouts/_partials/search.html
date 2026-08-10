@@ -1,0 +1,47 @@
+{{- /*
+    搜索浮层（命令面板）。用原生 <dialog> + showModal()，与 image-viewer 同一套路：
+    焦点陷阱、Esc 关闭、::backdrop 全部由浏览器提供，不必手写，也就没有自造焦点
+    管理出错的机会。
+    未配置 params.search.endpoint / apiKey 时整块不渲染——连同 header 里的触发按钮，
+    避免出现点了没反应的死控件。
+*/ -}}
+{{- $search := site.Params.search | default dict -}}
+{{- $endpoint := $search.endpoint | default "" -}}
+{{- $apiKey := $search.apiKey | default "" -}}
+{{- $index := printf "%s%s" ($search.indexPrefix | default "blog_") site.Language.Lang -}}
+{{- if and $endpoint $apiKey -}}
+<dialog id="search-dialog" class="search-dialog" aria-label="{{ i18n "searchLabel" }}"
+        data-endpoint="{{ $endpoint }}"
+        data-key="{{ $apiKey }}"
+        data-index="{{ $index }}"
+        data-label-count="{{ i18n "searchResultCount" }}"
+        data-label-empty="{{ i18n "searchNoResults" }}"
+        data-label-error="{{ i18n "searchError" }}"
+        data-label-searching="{{ i18n "searchSearching" }}"
+        data-label-prompt="{{ i18n "searchPrompt" }}">
+  <div class="search-panel">
+    <div class="search-field">
+      {{ partial "icon.html" "search" }}
+      <label class="visually-hidden" for="search-input">{{ i18n "searchLabel" }}</label>
+      <input type="search" id="search-input" class="search-input"
+             placeholder="{{ i18n "searchPlaceholder" }}"
+             autocomplete="off" autocapitalize="off" autocorrect="off"
+             spellcheck="false" enterkeyhint="search">
+      <button type="button" class="search-esc" data-search-close
+              aria-label="{{ i18n "searchKeyClose" }}"><kbd>esc</kbd></button>
+    </div>
+
+    {{/* role="status" 隐含 aria-live="polite"，是 W3C ARIA22 公布结果数量的标准做法 */}}
+    <p id="search-status" class="search-status" role="status"></p>
+
+    <ol id="search-results" class="search-results"></ol>
+
+    <div class="search-footer">
+      <span class="search-hint"><kbd>&crarr;</kbd>{{ i18n "searchKeySelect" }}</span>
+      <span class="search-hint"><kbd>&uarr;</kbd><kbd>&darr;</kbd>{{ i18n "searchKeyNavigate" }}</span>
+      <span class="search-hint"><kbd>esc</kbd>{{ i18n "searchKeyClose" }}</span>
+      <span class="search-powered">Meilisearch</span>
+    </div>
+  </div>
+</dialog>
+{{- end -}}

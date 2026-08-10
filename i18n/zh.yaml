@@ -109,16 +109,20 @@
 - id: searchLabel
   translation: "搜索文章"
 - id: searchPlaceholder
-  translation: "输入关键词搜索文章…"
+  translation: "搜索文章…"
+- id: searchPrompt
+  translation: "输入关键词开始搜索"
 - id: searchResultCount
   translation: "找到 %d 篇文章"
 - id: searchNoResults
-  translation: "没有找到匹配的文章，换个关键词试试。"
+  translation: "没有找到匹配的文章"
 - id: searchSearching
   translation: "搜索中…"
 - id: searchError
-  translation: "搜索服务暂时无法访问，请稍后再试。"
-- id: searchUnavailable
-  translation: "搜索功能尚未启用。"
-- id: searchNoScript
-  translation: "站内搜索需要 JavaScript。你也可以按年份浏览全部文章："
+  translation: "搜索服务暂时无法访问"
+- id: searchKeySelect
+  translation: "选择"
+- id: searchKeyNavigate
+  translation: "切换"
+- id: searchKeyClose
+  translation: "关闭"

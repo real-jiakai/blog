@@ -18,6 +18,12 @@
     --document-info-bg: #d9f0f5;
     --document-info-border: #5e7d84;
     --document-info-link: #004e70;
+    --search-backdrop: rgba(33, 37, 41, 0.45);
+    --search-hit-active: #e7efff;
+    --search-hit-border: rgba(13, 110, 253, 0.35);
+    --search-kbd-bg: #eceef1;
+    --search-kbd-border: rgba(0, 0, 0, 0.18);
+    --search-field-border: rgba(0, 0, 0, 0.1);
 }
 
 [data-bs-theme="dark"] {
@@ -36,6 +42,12 @@
     --document-info-bg: #202d4d;
     --document-info-border: #6f7e9b;
     --document-info-link: #9ec5fe;
+    --search-backdrop: rgba(8, 10, 20, 0.62);
+    --search-hit-active: #24304f;
+    --search-hit-border: rgba(110, 168, 254, 0.45);
+    --search-kbd-bg: #232f4d;
+    --search-kbd-border: rgba(255, 255, 255, 0.16);
+    --search-field-border: rgba(255, 255, 255, 0.12);
 }
 
 /* Body */
@@ -1371,57 +1383,265 @@ emoji-reaction button:focus-visible {
 }
 
 /* ---------------------------------------------------------------------------
-   站内搜索（/search/ 与 /en/search/）
-   结果由 assets/ts/search.ts 用 createElement + textContent 构建，
-   高亮片段是真正的 <mark> 元素，因此这里只需要排版，不涉及任何注入面。
+   站内搜索浮层（命令面板）
+   原生 <dialog> + showModal()：焦点陷阱、Esc、::backdrop、背景 inert 全由浏览器
+   负责，与 .article-lightbox 同一套路。结果之间移动的是真实焦点，所以 :focus-visible
+   必须和 hover 一样醒目——它就是「当前选中项」的唯一视觉提示。
 --------------------------------------------------------------------------- */
 
-.site-search-page input[type="search"] {
-    border-radius: 0.5rem;
+/* 顶栏触发器 */
+.btn-search {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.3rem 0.5rem;
+    border: 1px solid var(--search-field-border);
+    border-radius: 6px;
+    background: transparent;
+    /* 与 .btn-theme / .site-lang 共用 .site-controls 上的控件配色 */
+    color: var(--control-color);
+    line-height: 1;
+    cursor: pointer;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
 }
 
-.search-results {
+.btn-search:hover,
+.btn-search:focus-visible {
+    color: var(--control-color-hover);
+    background-color: var(--card-border-color);
+    border-color: var(--search-hit-border);
+}
+
+.btn-search:focus:not(:focus-visible) {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-search .meta-icon {
+    width: 1.05rem;
+    height: 1.05rem;
+}
+
+.search-kbd {
+    font-size: 0.7rem;
+    padding: 0.1rem 0.3rem;
+    border-radius: 0.25rem;
+    background: var(--search-kbd-bg);
+    border: 1px solid var(--search-kbd-border);
+    color: var(--muted-text-color);
+}
+
+/* 窄屏只留放大镜，快捷键提示对没有物理键盘的设备毫无意义 */
+@media (max-width: 767.98px) {
+    .search-kbd {
+        display: none;
+    }
+}
+
+/* 浮层本体 */
+.search-dialog {
+    width: min(37rem, calc(100vw - 1.5rem));
+    max-width: none;
+    max-height: calc(100vh - 4rem);
+    margin: 8vh auto auto;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: var(--body-color);
+    overflow: visible;
+}
+
+.search-dialog::backdrop {
+    background: var(--search-backdrop);
+    backdrop-filter: blur(3px);
+}
+
+.search-panel {
     display: flex;
     flex-direction: column;
-    gap: 1.75rem;
-    margin-top: 1.5rem;
+    max-height: calc(100vh - 8rem);
+    border: 1px solid var(--card-border-color);
+    border-radius: 0.85rem;
+    background: var(--card-bg);
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.35);
+    overflow: hidden;
 }
 
-.search-result-title {
-    margin-bottom: 0.35rem;
+/* 输入行 */
+.search-field {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.85rem 1rem;
+    border-bottom: 1px solid var(--search-field-border);
 }
 
-.search-result-title a {
+.search-field .meta-icon {
+    flex: none;
+    width: 1.15rem;
+    height: 1.15rem;
+    color: var(--muted-text-color);
+}
+
+.search-input {
+    flex: 1 1 auto;
+    min-width: 0;
+    border: 0;
+    background: transparent;
+    color: var(--body-color);
+    font-size: 1.05rem;
+    line-height: 1.5;
+    padding: 0.1rem 0;
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+/* 去掉 WebKit 自带的清除按钮：它和右侧的 esc 键挤在一起 */
+.search-input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.search-esc {
+    flex: none;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.search-esc kbd {
+    font-size: 0.7rem;
+    padding: 0.15rem 0.4rem;
+    border-radius: 0.25rem;
+    background: var(--search-kbd-bg);
+    border: 1px solid var(--search-kbd-border);
+    color: var(--muted-text-color);
+}
+
+/* 状态行：结果数 / 搜索中 / 无结果 / 错误 */
+.search-status {
+    margin: 0;
+    padding: 0.55rem 1rem 0;
+    font-size: 0.8rem;
+    color: var(--muted-text-color);
+}
+
+.search-status:empty {
+    display: none;
+}
+
+/* 结果列表 */
+.search-results {
+    flex: 1 1 auto;
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
+
+.search-results:empty {
+    display: none;
+}
+
+.search-hit {
+    display: block;
+    padding: 0.6rem 0.7rem;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    color: inherit;
     text-decoration: none;
 }
 
-.search-result-title a:hover,
-.search-result-title a:focus-visible {
-    text-decoration: underline;
+/* hover 与键盘焦点用同一套高亮：焦点即「当前选中项」 */
+.search-hit:hover,
+.search-hit:focus-visible,
+.search-hit:focus {
+    background: var(--search-hit-active);
+    border-color: var(--search-hit-border);
+    outline: none;
 }
 
-.search-result-meta {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    gap: 0.5rem;
-    margin-bottom: 0.4rem;
+.search-hit-title {
+    display: block;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.search-hit-snippet {
+    display: block;
+    margin-top: 0.15rem;
     font-size: 0.85rem;
-}
-
-.search-result-tag {
-    font-weight: 400;
-}
-
-.search-result-snippet {
-    margin-bottom: 0;
-    /* Meilisearch 返回的是裁剪过的片段，长度可控，但中文长串仍需强制换行 */
+    color: var(--muted-text-color);
+    /* 片段已由 Meilisearch 裁剪过，但中文长串仍需强制换行 */
     overflow-wrap: anywhere;
 }
 
-/* 命中高亮沿用 Bootstrap 的 <mark>，但去掉默认内边距，
-   避免在中文正文里把行高撑开。 */
+.search-hit-meta {
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 0.75rem;
+    color: var(--muted-text-color);
+    opacity: 0.85;
+}
+
+/* 命中高亮：去掉 <mark> 默认内边距，避免撑开中文行高 */
 .search-results mark {
-    padding: 0.05em 0.1em;
-    border-radius: 0.15em;
+    padding: 0;
+    background: transparent;
+    color: var(--link-color);
+    font-weight: 700;
+}
+
+/* 底部快捷键提示 */
+.search-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem 1rem;
+    padding: 0.55rem 1rem;
+    border-top: 1px solid var(--search-field-border);
+    font-size: 0.72rem;
+    color: var(--muted-text-color);
+}
+
+.search-hint {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.search-hint kbd {
+    font-size: 0.7rem;
+    min-width: 1.35rem;
+    text-align: center;
+    padding: 0.1rem 0.3rem;
+    border-radius: 0.25rem;
+    background: var(--search-kbd-bg);
+    border: 1px solid var(--search-kbd-border);
+    color: var(--muted-text-color);
+}
+
+.search-powered {
+    margin-left: auto;
+    opacity: 0.7;
+}
+
+@media (max-width: 575.98px) {
+    /* 手机上没有物理键盘，快捷键提示只是噪音；保留 Meilisearch 署名 */
+    .search-hint {
+        display: none;
+    }
+
+    .search-dialog {
+        margin-top: 3vh;
+    }
+}
+
+/* 浮层打开时锁住背景滚动。用 class 而非内联 style —— CSP 的 style-src-attr 是 'none' */
+body.search-open {
+    overflow: hidden;
 }

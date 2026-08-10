@@ -11,7 +11,10 @@
 {{- if $hasCode }}
 <script defer src="{{ partialCached "script-url.html" "copy-code" "copy-code" }}"></script>
 {{- end }}
-{{- if eq .Layout "search" }}
+{{/* 搜索浮层是全站控件（header 触发器 + ⌘K），因此每页都要加载；
+     未配置后端时浮层与触发器都不渲染，脚本也就不必下载。 */}}
+{{- $search := site.Params.search | default dict -}}
+{{- if and ($search.endpoint | default "") ($search.apiKey | default "") }}
 <script defer src="{{ partialCached "script-url.html" "search" "search" }}"></script>
 {{- end }}
 <script defer src="{{ partialCached "script-url.html" "site-controls" "site-controls" }}"></script>

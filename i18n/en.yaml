@@ -109,16 +109,20 @@
 - id: searchLabel
   translation: "Search posts"
 - id: searchPlaceholder
-  translation: "Search posts by keyword…"
+  translation: "Search posts…"
+- id: searchPrompt
+  translation: "Type a keyword to start searching"
 - id: searchResultCount
   translation: "%d posts found"
 - id: searchNoResults
-  translation: "No matching posts. Try a different keyword."
+  translation: "No matching posts"
 - id: searchSearching
   translation: "Searching…"
 - id: searchError
-  translation: "Search is temporarily unavailable. Please try again later."
-- id: searchUnavailable
-  translation: "Search is not enabled yet."
-- id: searchNoScript
-  translation: "Site search needs JavaScript. You can also browse every post by year:"
+  translation: "Search is temporarily unavailable"
+- id: searchKeySelect
+  translation: "to select"
+- id: searchKeyNavigate
+  translation: "to navigate"
+- id: searchKeyClose
+  translation: "to close"

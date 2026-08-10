@@ -18,6 +18,16 @@
 
         {{/* 右侧控件：语言切换 + 主题切换（始终可见）+ 移动端汉堡按钮 */}}
         <div class="d-flex align-items-center gap-2 ms-auto site-controls">
+            {{/* 搜索触发器：与浮层同条件渲染，未配置后端时整个控件不存在。
+                 快捷键提示默认显示 ⌘K，非 macOS 由 search.ts 换成 Ctrl K。 */}}
+            {{- $search := site.Params.search | default dict -}}
+            {{- if and ($search.endpoint | default "") ($search.apiKey | default "") }}
+            <button class="btn-search" id="search-trigger" type="button"
+                    aria-haspopup="dialog" aria-label="{{ i18n "searchLabel" }}">
+                {{ partial "icon.html" "search" }}
+                <kbd class="search-kbd" id="search-kbd-hint">&#8984;K</kbd>
+            </button>
+            {{- end }}
             {{/* 优先使用 Hugo 解析出的实际译文。分页首页保留页码；名称不同的双语标签
                  （如 开源/open-source）借助 data/tag_translations.yaml 互指，查不到的
                  标签术语回退到目标语言的标签索引；其余无译文页面回退到目标语言首页，
