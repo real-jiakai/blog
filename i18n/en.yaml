@@ -126,3 +126,5 @@
   translation: "to navigate"
 - id: searchKeyClose
   translation: "to close"
+- id: searchTrigger
+  translation: "Search"

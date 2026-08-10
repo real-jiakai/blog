@@ -126,3 +126,5 @@
   translation: "切换"
 - id: searchKeyClose
   translation: "关闭"
+- id: searchTrigger
+  translation: "搜索"

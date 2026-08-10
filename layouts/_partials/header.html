@@ -25,6 +25,9 @@
             <button class="btn-search" id="search-trigger" type="button"
                     aria-haspopup="dialog" aria-label="{{ i18n "searchLabel" }}">
                 {{ partial "icon.html" "search" }}
+                {{/* 可见文案比 aria-label 短，且是它的前缀，满足 WCAG 2.5.3
+                     Label in Name；窄屏隐藏文案后，无障碍名称仍由 aria-label 提供。 */}}
+                <span class="search-trigger-label">{{ i18n "searchTrigger" }}</span>
                 <kbd class="search-kbd" id="search-kbd-hint">&#8984;K</kbd>
             </button>
             {{- end }}

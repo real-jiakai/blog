@@ -150,6 +150,9 @@ blockquote p {
 }
 
 .site-navbar .nav-link {
+    /* 中文菜单项必须整体换行而不是逐字断开：没有这一行，宽度一紧张
+       「主页」就会裂成「主/页」两行。 */
+    white-space: nowrap;
     padding: 0.35rem 0.6rem;
     border-radius: 6px;
     color: var(--body-color);
@@ -1393,8 +1396,8 @@ emoji-reaction button:focus-visible {
 .btn-search {
     display: inline-flex;
     align-items: center;
-    gap: 0.4rem;
-    padding: 0.3rem 0.5rem;
+    gap: 0.45rem;
+    padding: 0.35rem 0.5rem;
     border: 1px solid var(--search-field-border);
     border-radius: 6px;
     background: transparent;
@@ -1403,6 +1406,37 @@ emoji-reaction button:focus-visible {
     line-height: 1;
     cursor: pointer;
     transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
+}
+
+/* 桌面端做成「搜索框」的样子而不是一个图标按钮：图标 + 文案在左，
+   快捷键徽标被 margin-auto 推到最右，整体给一个最小宽度。
+   注意 header 内容在 col-md-6 里，可用宽度只有视口的一半左右，所以最小宽度
+   分档给：md 只显示文案不撑宽，lg 以上才真的做成搜索框。一次性在 md 就撑到
+   11.5rem 会把导航挤到换行。 */
+.search-trigger-label {
+    display: none;
+    font-size: 0.85rem;
+    white-space: nowrap;
+}
+
+/* 文案和最小宽度都从 lg 起才生效。md（768–991）区间导航刚好铺满，实测在
+   768/800px 加上文案会把页面撑出横向滚动条，所以那一档保持纯图标。 */
+@media (min-width: 992px) {
+    .btn-search {
+        min-width: 9.5rem;
+        padding-left: 0.6rem;
+    }
+
+    .search-trigger-label {
+        display: inline;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1400px) {
+    .btn-search {
+        min-width: 12rem;
+    }
 }
 
 .btn-search:hover,
