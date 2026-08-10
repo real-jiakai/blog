@@ -181,8 +181,12 @@ params:
   # - 索引名按语言拼成 blog_zh / blog_en，两个索引分开：81 篇中英是一一对应的
   #   译文，合并后任何命中共享词（docker、claude）的查询都会把同一篇返回两次。
   search:
-    endpoint: ""
-    apiKey: ""
+    endpoint: "https://search.gujiakai.top"
+    # search-only key（uid fa9c43f9…，actions ["search"]，仅限 blog_zh / blog_en）。
+    # 出现在页面源码里是设计如此：已实测除这两个索引的搜索外，建索引 / 写文档 /
+    # 删索引 / 列 key 全部 403。绝不可换成 master key，也不要用 Meilisearch
+    # 自动生成的那个 `*` 范围的 "Default Search API Key"。
+    apiKey: "752323ffef493b6d4bbf6b21fce2e62ffd62be19126bed5eeb95f11e42754e50"
     indexPrefix: "blog_"
 
 # markup设置
