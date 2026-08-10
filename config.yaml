@@ -62,6 +62,18 @@ outputFormats:
     mediaType: text/markdown
     isPlainText: true
     isHTML: false
+  # 搜索索引：由 layouts/home.searchindex.json 按语言在构建时生成
+  # （/search-index.json 与 /en/search-index.json）。VPS 上的 Meilisearch 直接
+  # clone 本仓库、跑 hugo，再把这两个文件推进 blog_zh / blog_en —— 写入用的
+  # admin key 因此始终留在那台机器上，不必进 GitHub Secrets。
+  # 不需要 noUgly：uglyURLs 不影响 home kind 的输出路径（baseName 决定文件名）。
+  # notAlternative 让它不进入 head.html 的 <link rel=alternate>。
+  SearchIndex:
+    baseName: search-index
+    mediaType: application/json
+    isPlainText: true
+    isHTML: false
+    notAlternative: true
   # llms.txt（https://llmstxt.org）：由 layouts/home.llms.txt 按语言在构建时生成
   # （/llms.txt 与 /en/llms.txt），取代过去手工维护、容易过期的 static/ 副本
   LLMS:
@@ -76,6 +88,8 @@ outputs:
     - HTML
     - RSS
     - LLMS
+    # 对 zh/en 同时生效，无需 languages.*.outputs 覆盖（覆盖是整体替换而非合并）
+    - SearchIndex
   section:
     - HTML
     - RSS
@@ -122,6 +136,9 @@ languages:
         - name: "关于"
           url: "/about/"
           weight: 5
+        - name: "搜索"
+          url: "/search/"
+          weight: 6
   en:
     label: "English"
     locale: "en-US"
@@ -150,6 +167,9 @@ languages:
         - name: "About"
           url: "/about/"
           weight: 5
+        - name: "Search"
+          url: "/search/"
+          weight: 6
 
 # 全局参数（作为默认值）
 params:
@@ -159,6 +179,17 @@ params:
   footer: "&copy; 2022-{Year} Made with ❤️ By Jiakai"
   # 本地、分支部署和 Deploy Preview 默认为 false；Netlify 仅在 production context 覆盖为 true。
   enableAnalytics: false
+  # 站内搜索：前端直接打自建 Meilisearch 的 REST API（不引 SDK）。
+  # - endpoint 留空时 /search/ 显示「暂不可用」，构建与部署照常，不会报错；
+  #   接好 VPS 后填上即可，无需改模板。
+  # - apiKey 必须是只读的 search-only key（Meilisearch /keys 里 actions 仅
+  #   ["search"]），它会出现在页面源码里，这是设计如此；绝不可填 master key。
+  # - 索引名按语言拼成 blog_zh / blog_en，两个索引分开：81 篇中英是一一对应的
+  #   译文，合并后任何命中共享词（docker、claude）的查询都会把同一篇返回两次。
+  search:
+    endpoint: ""
+    apiKey: ""
+    indexPrefix: "blog_"
 
 # markup设置
 markup:

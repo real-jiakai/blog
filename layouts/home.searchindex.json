@@ -1,0 +1,38 @@
+{{- /* 每种语言各生成一份：/search-index.json 与 /en/search-index.json。
+       site.RegularPages 已按当前语言过滤，不必手动区分 zh/en。
+       消费方是 VPS 上的 Meilisearch —— 它 clone 本仓库、跑 hugo，再把这里
+       生成的数组推进 blog_zh / blog_en 两个索引。 */ -}}
+{{- $docs := slice -}}
+{{- /* where "Section" "blog" 天然只选中 81 篇正文：归档页是 branch bundle
+       （_index.md），不算 RegularPage；about.md / til.md 的 Section 为空。
+       不需要维护黑名单。 */ -}}
+{{- range where site.RegularPages "Section" "blog" -}}
+  {{- /* Meilisearch 的文档主键只接受 [a-zA-Z0-9_-]，RelPermalink 里的斜杠
+         不合法，因此把非法字符统一替换；结果在单语言索引内天然唯一。 */ -}}
+  {{- $id := .RelPermalink | replaceRE `[^a-zA-Z0-9_-]` "-" -}}
+  {{- /* .Content 是 shortcode 渲染后的 HTML。先剥代码块再 plainify，否则
+         每篇文章都会命中 func / const / sudo 这类语法噪声。本站
+         markup.highlight.lineNumbersInTable 为 true，高亮块是嵌套 table，
+         要三条 replaceRE 才清得干净。用 .Content 而非 .RawContent：后者仍
+         含未展开的短代码字面量。 */ -}}
+  {{- $body := .Content
+        | replaceRE `(?s)<div class="highlight">.*?</div>\s*</div>` " "
+        | replaceRE `(?s)<pre[^>]*>.*?</pre>` " "
+        | replaceRE `(?s)<code[^>]*>.*?</code>` " "
+        | plainify | htmlUnescape | replaceRE `\s+` " " | chomp -}}
+  {{- $docs = $docs | append (dict
+      "id" $id
+      "u" .RelPermalink
+      "t" .Title
+      "s" (.Summary | plainify | htmlUnescape | replaceRE `\s+` " " | chomp)
+      "g" (.Params.tags | default slice)
+      "d" (.Date.Format "2006-01-02")
+      "b" $body
+  ) -}}
+{{- end -}}
+{{- /* noHTMLEscape：否则 & < > 会被转成实体，既撑大索引，也会让 Meilisearch
+       返回的高亮偏移与原文对不上。
+       正文不截断 —— 消费方是服务端引擎，全文检索正是自建 Meilisearch 的意义。
+       若日后要加浏览器端兜底索引，把 $body 换成 (substr $body 0 1200) 即可，
+       中文索引会从约 490 KB 降到约 220 KB。 */ -}}
+{{- $docs | jsonify (dict "noHTMLEscape" true) -}}

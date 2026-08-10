@@ -1369,3 +1369,59 @@ emoji-reaction button:focus-visible {
         animation-iteration-count: 1 !important;
     }
 }
+
+/* ---------------------------------------------------------------------------
+   站内搜索（/search/ 与 /en/search/）
+   结果由 assets/ts/search.ts 用 createElement + textContent 构建，
+   高亮片段是真正的 <mark> 元素，因此这里只需要排版，不涉及任何注入面。
+--------------------------------------------------------------------------- */
+
+.site-search-page input[type="search"] {
+    border-radius: 0.5rem;
+}
+
+.search-results {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    margin-top: 1.5rem;
+}
+
+.search-result-title {
+    margin-bottom: 0.35rem;
+}
+
+.search-result-title a {
+    text-decoration: none;
+}
+
+.search-result-title a:hover,
+.search-result-title a:focus-visible {
+    text-decoration: underline;
+}
+
+.search-result-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin-bottom: 0.4rem;
+    font-size: 0.85rem;
+}
+
+.search-result-tag {
+    font-weight: 400;
+}
+
+.search-result-snippet {
+    margin-bottom: 0;
+    /* Meilisearch 返回的是裁剪过的片段，长度可控，但中文长串仍需强制换行 */
+    overflow-wrap: anywhere;
+}
+
+/* 命中高亮沿用 Bootstrap 的 <mark>，但去掉默认内边距，
+   避免在中文正文里把行高撑开。 */
+.search-results mark {
+    padding: 0.05em 0.1em;
+    border-radius: 0.15em;
+}

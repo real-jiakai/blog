@@ -106,3 +106,19 @@
   translation: "Close image viewer"
 - id: addReaction
   translation: "Add reaction"
+- id: searchLabel
+  translation: "Search posts"
+- id: searchPlaceholder
+  translation: "Search posts by keyword…"
+- id: searchResultCount
+  translation: "%d posts found"
+- id: searchNoResults
+  translation: "No matching posts. Try a different keyword."
+- id: searchSearching
+  translation: "Searching…"
+- id: searchError
+  translation: "Search is temporarily unavailable. Please try again later."
+- id: searchUnavailable
+  translation: "Search is not enabled yet."
+- id: searchNoScript
+  translation: "Site search needs JavaScript. You can also browse every post by year:"

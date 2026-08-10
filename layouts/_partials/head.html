@@ -67,7 +67,9 @@
     {{- if $is404 }}
     <meta name="robots" content="noindex, nofollow, noarchive">
     {{- else }}
-    {{- if $isThinTerm }}
+    {{/* .Params.noindex 供 /search/ 这类工具页使用：搜索结果页对搜索引擎是
+         低价值近重复内容，且会凭 ?q= 生成无穷可抓取 URL。 */}}
+    {{- if or $isThinTerm .Params.noindex }}
     <meta name="robots" content="noindex, follow">
     {{- end }}
     <link rel="canonical" href="{{ $canonical }}" />

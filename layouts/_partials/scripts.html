@@ -11,6 +11,9 @@
 {{- if $hasCode }}
 <script defer src="{{ partialCached "script-url.html" "copy-code" "copy-code" }}"></script>
 {{- end }}
+{{- if eq .Layout "search" }}
+<script defer src="{{ partialCached "script-url.html" "search" "search" }}"></script>
+{{- end }}
 <script defer src="{{ partialCached "script-url.html" "site-controls" "site-controls" }}"></script>
 {{- if and .IsPage (eq .Type "blog") }}
 <script defer src="{{ partialCached "script-url.html" "back-to-top" "back-to-top" }}"></script>

@@ -29,7 +29,7 @@ vendored), heavily overridden by repo-level layouts/.
 - assets/ts/ — first-party TypeScript (no jQuery/lightbox2: theme-init
   + theme-toggle, site-controls, sidebar-toc, back-to-top, copy-code,
   image-viewer = native <dialog> lightbox, utterances-init, analytics,
-  footer-year), compiled per-entry to /js/<name>.<hash>.js by
+  footer-year, search), compiled per-entry to /js/<name>.<hash>.js by
   layouts/_partials/script-url.html (js.Build + fingerprint)
 - tsconfig.json — editor/type-check config only; the build ignores it
 - static/ — css/ (self-hosted bootstrap.min.css + custom.css), js/
@@ -64,6 +64,22 @@ No package.json or Makefile; Hugo CLI only (Netlify uses 0.164.0):
 - New-post checklist: create the zh/en pair with matching
   slug/translationKey; if a zh/en tag pair uses different names, add
   it to data/tag_translations.yaml. llms.txt updates itself.
+- Site search: `/search/` + `/en/search/` query a self-hosted
+  Meilisearch (search.gujiakai.top) straight over its REST API — no
+  SDK. The searchable corpus is built by Hugo: the `SearchIndex`
+  output format on `home` renders layouts/home.searchindex.json to
+  /search-index.json and /en/search-index.json (81 docs each, full
+  body, code blocks stripped). The VPS clones this repo, runs the
+  pinned Hugo, and pushes those files into the `blog_zh` / `blog_en`
+  indexes, so the Meilisearch admin key never leaves that box and
+  never enters GitHub Secrets. Two indexes, never merged: the zh/en
+  posts are 1:1 translations, so a merged index returns every post
+  twice for shared tokens like `docker`. Meilisearch document ids only
+  accept [a-zA-Z0-9_-], which is why the template emits a sanitized
+  `id` field instead of using RelPermalink. Endpoint and the public
+  search-only key live in `params.search` in config.yaml; leaving
+  either blank degrades /search/ to a disabled "not enabled" state
+  rather than breaking the build.
 - MarkdownRaw output: blog posts also emit their raw Markdown at
   /:year/:month/:slug.md (global `uglyURLs: true` + `noUgly` on
   HTML/RSS + cascade in content/*/blog/_index.md). Only blog posts get
@@ -88,11 +104,22 @@ No package.json or Makefile; Hugo CLI only (Netlify uses 0.164.0):
   utterances loader (compiled from assets/ts/) and the emaction
   reactions bundle (vendored in static/js/) are both served
   first-party, so script-src no longer lists any CDN; external
-  origins are Clarity, GA (googletagmanager), umami, and asciinema in
+  origins are Clarity, GA (googletagmanager), umami, asciinema in
   script-src, with utteranc.es (frame) and api-emaction.gujiakai.top
-  (connect) for the self-hosted widgets. Any new external
-  script/iframe/connect target must be added to the matching directive
-  or browsers will block it.
+  plus search.gujiakai.top (connect) for the self-hosted widgets and
+  Meilisearch. Any new external script/iframe/connect target must be
+  added to the matching directive or browsers will block it.
+- `hugo server` fast render does NOT rebuild the home-kind
+  /search-index.json when you edit a post — it keeps serving the old
+  one. Use `hugo server --disableFastRender` for any search work, or
+  you will chase a phantom "search can't find the post I just wrote".
+- The production build command adds `--panicOnWarning`, so a custom
+  output format without its template is a failed deploy, not a
+  warning. `--printPathWarnings` and `--printI18nWarnings` are worth
+  passing locally: the first turns a silent same-path collision (two
+  outputs clobbering each other) into a WARN, the second catches
+  missing i18n keys, which otherwise render as empty strings with no
+  build signal at all.
 
 ## Gotchas
 
