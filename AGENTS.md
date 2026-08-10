@@ -64,22 +64,40 @@ No package.json or Makefile; Hugo CLI only (Netlify uses 0.164.0):
 - New-post checklist: create the zh/en pair with matching
   slug/translationKey; if a zh/en tag pair uses different names, add
   it to data/tag_translations.yaml. llms.txt updates itself.
-- Site search: `/search/` + `/en/search/` query a self-hosted
+- Site search is a ⌘K command palette, not a page. There is no
+  /search/ route. _partials/search.html renders a native `<dialog>`
+  into every page via baseof.html, opened by the header trigger,
+  Cmd/Ctrl-K, or `/`; assets/ts/search.ts queries a self-hosted
   Meilisearch (search.gujiakai.top) straight over its REST API — no
-  SDK. The searchable corpus is built by Hugo: the `SearchIndex`
-  output format on `home` renders layouts/home.searchindex.json to
-  /search-index.json and /en/search-index.json (81 docs each, full
-  body, code blocks stripped). The VPS clones this repo, runs the
-  pinned Hugo, and pushes those files into the `blog_zh` / `blog_en`
-  indexes, so the Meilisearch admin key never leaves that box and
-  never enters GitHub Secrets. Two indexes, never merged: the zh/en
-  posts are 1:1 translations, so a merged index returns every post
-  twice for shared tokens like `docker`. Meilisearch document ids only
-  accept [a-zA-Z0-9_-], which is why the template emits a sanitized
-  `id` field instead of using RelPermalink. Endpoint and the public
-  search-only key live in `params.search` in config.yaml; leaving
-  either blank degrades /search/ to a disabled "not enabled" state
-  rather than breaking the build.
+  SDK, since a search is one POST. `<dialog>` + showModal() is chosen
+  deliberately: focus trap, Esc, ::backdrop and background inerting all
+  come from the browser (same as the lightbox). Results are navigated
+  by moving real DOM focus between `<a>` elements, NOT the ARIA
+  combobox pattern — aria-activedescendant is unreliable in macOS
+  VoiceOver and ignored by VoiceOver-iOS/TalkBack.
+- Search corpus: the `SearchIndex` output format on `home` renders
+  layouts/home.searchindex.json to /search-index.json and
+  /en/search-index.json (81 docs each, full body, code blocks
+  stripped). The VPS clones this repo, runs the pinned Hugo, and
+  pushes those files into the `blog_zh` / `blog_en` indexes on a
+  15-minute cron guarded by commit hash, so the Meilisearch admin key
+  never leaves that box and never enters GitHub Secrets. Two indexes,
+  never merged: the zh/en posts are 1:1 translations, so a merged
+  index returns every post twice for shared tokens like `docker`.
+  Meilisearch document ids only accept [a-zA-Z0-9_-], which is why the
+  template emits a sanitized `id` field instead of using RelPermalink.
+- Search config lives in `params.search` in config.yaml. Leaving
+  `endpoint` or `apiKey` blank renders no dialog, no header trigger and
+  no script tag at all — the site builds and deploys fine, just without
+  search. `apiKey` must be the search-only key scoped to the two blog
+  indexes; it ships in page source by design. Never put the master key
+  or Meilisearch's auto-created `*`-scoped "Default Search API Key"
+  there.
+- Query the index with `hitsPerPage`/`page`, never `limit`/`offset`.
+  The latter only returns `estimatedTotalHits`, which inflates badly on
+  multi-token CJK queries — 大模型 has 5 literal matches in this corpus
+  but reports 43, because 大 and 模型 are counted separately. Ranking is
+  correct either way, but the displayed count is not.
 - MarkdownRaw output: blog posts also emit their raw Markdown at
   /:year/:month/:slug.md (global `uglyURLs: true` + `noUgly` on
   HTML/RSS + cascade in content/*/blog/_index.md). Only blog posts get
