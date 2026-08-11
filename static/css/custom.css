@@ -1293,6 +1293,7 @@ emoji-reaction button:focus-visible {
 
     .site-lang,
     .btn-theme,
+    .btn-search,
     .site-navbar .navbar-toggler {
         display: inline-flex;
         align-items: center;
@@ -1392,13 +1393,17 @@ emoji-reaction button:focus-visible {
    必须和 hover 一样醒目——它就是「当前选中项」的唯一视觉提示。
 --------------------------------------------------------------------------- */
 
-/* 顶栏触发器 */
+/* 顶栏触发器。
+   窄屏下它只是一个图标，和 EN / 主题 / 汉堡三个无边框控件并排；描边会让它在
+   四个控件里明显更「重」，看起来比实际更挤。所以移动端只留透明描边——盒子
+   尺寸不变、不产生任何位移——到 lg 才真正画出边框，那时它已经是一个搜索框
+   而不是图标了。 */
 .btn-search {
     display: inline-flex;
     align-items: center;
     gap: 0.45rem;
-    padding: 0.35rem 0.5rem;
-    border: 1px solid var(--search-field-border);
+    padding: 0.35rem;
+    border: 1px solid transparent;
     border-radius: 6px;
     background: transparent;
     /* 与 .btn-theme / .site-lang 共用 .site-controls 上的控件配色 */
@@ -1424,7 +1429,13 @@ emoji-reaction button:focus-visible {
 @media (min-width: 992px) {
     .btn-search {
         min-width: 9.5rem;
-        padding-left: 0.6rem;
+        padding: 0.35rem 0.5rem 0.35rem 0.6rem;
+        border-color: var(--search-field-border);
+    }
+
+    .btn-search:hover,
+    .btn-search:focus-visible {
+        border-color: var(--search-hit-border);
     }
 
     .search-trigger-label {
@@ -1439,11 +1450,12 @@ emoji-reaction button:focus-visible {
     }
 }
 
+/* 悬停/聚焦只换底色，与 .btn-theme 一致；边框色的变化只在 lg 以上生效，
+   否则移动端聚焦时会凭空冒出一圈边框。键盘焦点另有全局 outline 环。 */
 .btn-search:hover,
 .btn-search:focus-visible {
     color: var(--control-color-hover);
     background-color: var(--card-border-color);
-    border-color: var(--search-hit-border);
 }
 
 .btn-search:focus:not(:focus-visible) {
