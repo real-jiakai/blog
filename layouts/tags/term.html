@@ -1,0 +1,19 @@
+{{ define "main" }}
+{{/* 标签详情页（term）：取代主题的 list.html。
+     - 顶部间距与标签索引页一致（.tag-index），修掉主题模板 mt-5 造成的大空隙；
+     - 标题保留 front matter 的原始写法（配合 config 的 capitalizeListTitles: false，
+       csdn 不再被显示成 Csdn）；
+     - 不分页：单个标签最多约十篇，一页列完比翻页好找；_partials/head.html 的
+       canonical/hreflang 逻辑假定只有首页会调用 .Paginate，若要恢复分页需同步调整。 */}}
+<div class="container tag-index">
+    <h1 class="tag-index-title">📌 {{ .Title }}</h1>
+    <ul class="list-group">
+        {{ range .Pages }}
+        <li class="list-group-item">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <time datetime="{{ .Date.Format "2006-01-02" }}" class="badge bg-primary rounded-pill">{{ .Date.Format "2006-01-02" }}</time>
+        </li>
+        {{ end }}
+    </ul>
+</div>
+{{ end }}

@@ -47,6 +47,10 @@ disableAliases: true
 # 页面（/categories/ 与 /en/categories/）及其 RSS
 taxonomies:
   tag: tags
+# 标签页标题保留 front matter 的原始写法（本站标签全部小写：csdn、vps…）。
+# Hugo 默认把自动生成的列表标题首字母大写，csdn 会变成 "Csdn"，与站内
+# 其他位置（标签云、归档徽章、文章元信息）的小写展示不一致
+capitalizeListTitles: false
 
 # 输出格式配置
 # - 为每篇文章额外生成 .md 原始文件（如 /2026/06/slug.md）

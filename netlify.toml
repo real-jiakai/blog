@@ -153,6 +153,18 @@
   to = "/en/tags/android/"
   status = 301
 
+# 标签页已不再分页（layouts/tags/term.html 一页列出全部文章），
+# 曾被收录的 /tags/<tag>/page/N/ 地址 301 回标签首页而不是 404。
+[[redirects]]
+  from = "/tags/:tag/page/:n"
+  to = "/tags/:tag/"
+  status = 301
+
+[[redirects]]
+  from = "/en/tags/:tag/page/:n"
+  to = "/en/tags/:tag/"
+  status = 301
+
 [[redirects]]
   from = "/2023/01/the-execution-process-ls--list/"
   to = "/2023/01/the-execution-process-ls-list/"

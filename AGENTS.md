@@ -103,6 +103,13 @@ No package.json or Makefile; Hugo CLI only (Netlify uses 0.164.0):
   HTML/RSS + cascade in content/*/blog/_index.md). Only blog posts get
   this — about/til stay HTML-only.
 - Taxonomies: tags only; categories are deliberately disabled.
+- Tag term pages (layouts/tags/term.html) list every post without
+ pagination (largest tag ≈ 10 posts). Only the home page calls
+ .Paginate, and _partials/head.html's canonical/hreflang logic relies
+ on that — re-adding term pagination means updating head.html too.
+ `capitalizeListTitles: false` keeps tag titles exactly as written in
+ front matter (all lowercase here), so "csdn" no longer renders "Csdn";
+ netlify.toml 301s the old /tags/<tag>/page/N/ URLs.
 - RSS: latest 20 posts only, styled via static/xslt.
 - llms.txt: generated at build time per language from
   layouts/home.llms.txt (→ /llms.txt and /en/llms.txt, LLMS output
