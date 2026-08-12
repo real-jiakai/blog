@@ -1486,7 +1486,7 @@ emoji-reaction button:focus-visible {
 
 /* 浮层本体 */
 .search-dialog {
-    width: min(37rem, calc(100vw - 1.5rem));
+    width: min(44rem, calc(100vw - 1.5rem));
     max-width: none;
     max-height: calc(100vh - 4rem);
     margin: 8vh auto auto;
@@ -1505,6 +1505,9 @@ emoji-reaction button:focus-visible {
 .search-panel {
     display: flex;
     flex-direction: column;
+    /* min-height 让面板始终保有一块像样的建议区，输入前后高度也不会随
+       结果数量跳变得太厉害；min() 防止在矮视口里超出屏幕 */
+    min-height: min(21rem, calc(100vh - 8rem));
     max-height: calc(100vh - 8rem);
     border: 1px solid var(--card-border-color);
     border-radius: 0.85rem;
@@ -1589,8 +1592,10 @@ emoji-reaction button:focus-visible {
     overscroll-behavior: contain;
 }
 
+/* 列表为空（提示/无结果状态）时不隐藏，而是充当弹性占位：
+   把 min-height 撑出来的空间留在中间，页脚始终钉在面板底部 */
 .search-results:empty {
-    display: none;
+    padding: 0;
 }
 
 .search-hit {
