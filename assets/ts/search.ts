@@ -47,9 +47,13 @@
         track: (event: string, data?: Record<string, unknown>) => void;
     }
 
-    const dialog = document.getElementById('search-dialog') as HTMLDialogElement | null;
+    /* 判空后的收窄不会跨进下方的函数声明（声明会提升，TS 视其为「可能在
+       收窄前被调用」），所以统一用重新赋值的非空别名，而不是在每个用点
+       写 ! 断言。 */
+    const dialogEl = document.getElementById('search-dialog') as HTMLDialogElement | null;
     const trigger = document.getElementById('search-trigger');
-    if (!dialog) return;
+    if (!dialogEl) return;
+    const dialog: HTMLDialogElement = dialogEl;
 
     const endpoint = (dialog.dataset.endpoint || '').replace(/\/+$/, '');
     const apiKey = dialog.dataset.key || '';
@@ -163,7 +167,7 @@
         const controller = new AbortController();
         inflight = controller;
 
-        setStatus(dialog!.dataset.labelSearching || '');
+        setStatus(dialog.dataset.labelSearching || '');
 
         window.fetch(endpoint + '/indexes/' + encodeURIComponent(index) + '/search', {
             method: 'POST',
@@ -193,19 +197,19 @@
                 const hits = data.hits || [];
                 renderHits(hits);
                 if (!hits.length) {
-                    setStatus(dialog!.dataset.labelEmpty || '');
+                    setStatus(dialog.dataset.labelEmpty || '');
                     return;
                 }
                 const total = typeof data.totalHits === 'number'
                     ? data.totalHits
                     : hits.length;
-                setStatus((dialog!.dataset.labelCount || '%d').replace('%d', String(total)));
+                setStatus((dialog.dataset.labelCount || '%d').replace('%d', String(total)));
             })
             .catch(function (err: unknown) {
                 // 被下一次输入取消，不是错误
                 if (err instanceof Error && err.name === 'AbortError') return;
                 results.replaceChildren();
-                setStatus(dialog!.dataset.labelError || '');
+                setStatus(dialog.dataset.labelError || '');
             });
     }
 
@@ -215,7 +219,7 @@
         if (!q) {
             if (inflight) inflight.abort();
             results.replaceChildren();
-            setStatus(dialog!.dataset.labelPrompt || '');
+            setStatus(dialog.dataset.labelPrompt || '');
             return;
         }
         searchTimer = window.setTimeout(function () { run(q); }, SEARCH_DEBOUNCE);
@@ -225,20 +229,20 @@
     /* --------------------------------------------------------- 开关浮层 */
 
     function openSearch(): void {
-        if (dialog!.open) return;
-        if (typeof dialog!.showModal === 'function') dialog!.showModal();
-        else dialog!.setAttribute('open', '');
+        if (dialog.open) return;
+        if (typeof dialog.showModal === 'function') dialog.showModal();
+        else dialog.setAttribute('open', '');
         // classList 而非内联 style —— style-src-attr 是 'none'
         document.body.classList.add('search-open');
         field.focus();
         field.select();
         if (field.value.trim()) schedule(field.value.trim());
-        else setStatus(dialog!.dataset.labelPrompt || '');
+        else setStatus(dialog.dataset.labelPrompt || '');
     }
 
     function closeSearch(): void {
-        if (typeof dialog!.close === 'function' && dialog!.open) dialog!.close();
-        else dialog!.removeAttribute('open');
+        if (typeof dialog.close === 'function' && dialog.open) dialog.close();
+        else dialog.removeAttribute('open');
     }
 
     dialog.addEventListener('close', function () {
@@ -301,11 +305,11 @@
     document.addEventListener('keydown', function (e: KeyboardEvent) {
         if (e.key === 'k' && (e.metaKey || e.ctrlKey) && !e.altKey) {
             e.preventDefault();
-            if (dialog!.open) closeSearch();
+            if (dialog.open) closeSearch();
             else openSearch();
             return;
         }
-        if (e.key === '/' && !e.metaKey && !e.ctrlKey && !e.altKey && !dialog!.open) {
+        if (e.key === '/' && !e.metaKey && !e.ctrlKey && !e.altKey && !dialog.open) {
             const el = e.target;
             if (el instanceof Element && el.closest('input, textarea, select, [contenteditable]')) return;
             e.preventDefault();   // 否则触发 Firefox 的快速查找
