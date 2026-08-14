@@ -15,25 +15,5 @@
         {{ end }}
     </div>
 </aside>
-{{ else if .Params.showtoc }}
-<!-- 文章页显示目录 -->
-<aside class="d-none d-md-block sticky-top py-5" aria-label="{{ i18n "tableOfContents" }}">
-    <div class="sidebar-toc" id="sidebarToc">
-        <div class="row">
-            <div class="col-8">
-                <button type="button" class="toc-header d-flex align-items-center bg-dark-subtle" id="tocHeader"
-                    aria-expanded="true"
-                    aria-controls="tocContent">
-                    <span class="toc-chevron d-inline-flex" id="arrow-down" aria-hidden="true">{{ partial "icon.html" "chevron-down" }}</span>
-                    <span class="toc-chevron d-none" id="arrow-right" aria-hidden="true">{{ partial "icon.html" "chevron-right" }}</span>
-                    <span class="ms-2">{{ i18n "tableOfContents" | default "Table of Contents" }}</span>
-                </button>
-                <div id="tocContent" class="collapse show bg-dark-subtle">
-                    {{ .TableOfContents }}
-                </div>
-            </div>
-        </div>
-    </div>
-</aside>
-<script src="{{ partialCached "script-url.html" "sidebar-toc" "sidebar-toc" }}" defer></script>
 {{ end }}
+{{/* 文章目录由同一右栏的 _partials/toc.html 渲染，与本归档导航互斥。 */}}

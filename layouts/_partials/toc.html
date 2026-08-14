@@ -1,0 +1,11 @@
+{{- /* 文章目录：右栏 sticky 树形节导航（cursor.com/grok 的 section nav 样式：
+     根节点是文章标题，树形连接线挂条目，当前章节提亮并带 accent 圆点）。
+     仅 front matter 开启 showtoc 的文章渲染；滚动跟踪由 assets/ts/toc.ts 负责。
+     根节点对读屏隐藏——它与正文 h1 重复，无障碍名称由 aside 的 aria-label 提供。 */ -}}
+{{ if and .IsPage .Params.showtoc }}
+<aside class="toc-rail d-none d-md-block" aria-label="{{ i18n "tableOfContents" }}">
+    <span class="toc-rail-title" aria-hidden="true">{{ .Title }}</span>
+    {{ .TableOfContents }}
+</aside>
+<script src="{{ partialCached "script-url.html" "toc" "toc" }}" defer></script>
+{{ end }}

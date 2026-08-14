@@ -1,53 +1,102 @@
 /* ===========================================
    Light / Dark Mode CSS Variables
+
+   两套主题同一个色相体系（Astro Docs / Starlight 的冷灰 + 靛蓝 accent），
+   浅色求「柔」：页面底是柔灰 #f6f7f9（不用刺眼纯白），正文是柔和的
+   石板灰 #353841 而非近黑，卡片才是白色；链接/强调 = Astro 浅色
+   accent #3d50f5。
+   深色直接取 docs.astro.build 的深色版：蓝黑 #17181c 页面 + #23262f
+   面板，正文 #c1c3c8（Astro 正文本来就不是纯白），标题才提亮到
+   #edeef3，链接 = Astro 的长春花蓝 #b3c7ff。
+   所有配对均已核算 WCAG AA（正文/链接/徽标 ≥ 4.5:1）。
+
+   同时桥接一批 --bs-* 变量：badge（标签数、日期胶囊）、边框、次要文字等
+   Bootstrap 组件不再各自停留在默认蓝/灰，而是跟随两套主题。custom.css 在
+   bootstrap.min.css 之后加载，同选择器后到者胜，无需 !important。
    =========================================== */
 :root,
 [data-bs-theme="light"] {
-    --body-bg: #f3f3ec;
-    --body-color: #212529;
-    --link-color: #0d6efd;
-    --link-hover-color: #0a58ca;
-    --table-border-color: #000;
-    --blockquote-bg: rgba(193, 23, 23, 0.201);
-    --card-bg: #fff;
-    --card-border-color: rgba(0, 0, 0, 0.125);
-    --navbar-border-color: rgba(0, 0, 0, 0.1);
-    --back-to-top-shadow: rgba(0, 0, 0, 0.15);
-    --muted-text-color: #535b62;
-    --focus-ring-color: #075fc7;
-    --document-info-bg: #d9f0f5;
-    --document-info-border: #5e7d84;
-    --document-info-link: #004e70;
-    --search-backdrop: rgba(33, 37, 41, 0.45);
-    --search-hit-active: #e7efff;
-    --search-hit-border: rgba(13, 110, 253, 0.35);
-    --search-kbd-bg: #eceef1;
-    --search-kbd-border: rgba(0, 0, 0, 0.18);
-    --search-field-border: rgba(0, 0, 0, 0.1);
+    --body-bg: #f6f7f9;
+    --body-color: #353841;
+    --heading-color: #23262f;
+    --link-color: #3d50f5;
+    --link-hover-color: #2a3cd8;
+    --table-border-color: rgba(35, 38, 47, 0.16);
+    --blockquote-bg: rgba(53, 56, 65, 0.04);
+    --blockquote-border: #c3c9e2;
+    --card-bg: #ffffff;
+    --card-border-color: rgba(35, 38, 47, 0.1);
+    --navbar-border-color: rgba(35, 38, 47, 0.12);
+    --back-to-top-shadow: rgba(35, 38, 47, 0.12);
+    --muted-text-color: #555962;
+    --focus-ring-color: #2a3cd8;
+    --document-info-bg: #edeef3;
+    --document-info-border: rgba(35, 38, 47, 0.14);
+    --document-info-link: #2a3cd8;
+    --search-backdrop: rgba(84, 88, 100, 0.55);
+    --search-hit-active: #edeef3;
+    --search-hit-border: rgba(61, 80, 245, 0.3);
+    --search-kbd-bg: #edeef3;
+    --search-kbd-border: rgba(35, 38, 47, 0.14);
+    --search-field-border: rgba(35, 38, 47, 0.12);
+    --toc-line-color: #d8dbe5;
+    /* Bootstrap 桥接 */
+    --bs-body-bg: #f6f7f9;
+    --bs-body-color: #353841;
+    --bs-border-color: rgba(35, 38, 47, 0.12);
+    --bs-secondary-color: #555962;
+    --bs-tertiary-bg: #edeef3;
+    --bs-secondary-bg: #e4e7ee;
+    --bs-primary: #3d50f5;
+    --bs-primary-rgb: 61, 80, 245;
+    --bs-secondary-rgb: 85, 89, 98;
+    --bs-code-color: #30343d;
 }
 
 [data-bs-theme="dark"] {
-    --body-bg: #1a1a2e;
-    --body-color: #e0e0e0;
-    --link-color: #6ea8fe;
-    --link-hover-color: #9ec5fe;
-    --table-border-color: #495057;
-    --blockquote-bg: rgba(220, 53, 69, 0.2);
-    --card-bg: #16213e;
-    --card-border-color: rgba(255, 255, 255, 0.1);
-    --navbar-border-color: rgba(255, 255, 255, 0.1);
+    --body-bg: #17181c;
+    --body-color: #c1c3c8;
+    --heading-color: #edeef3;
+    --link-color: #b3c7ff;
+    --link-hover-color: #d4deff;
+    --table-border-color: rgba(237, 238, 243, 0.16);
+    --blockquote-bg: rgba(237, 238, 243, 0.04);
+    --blockquote-border: #4a4f5e;
+    --card-bg: #23262f;
+    --card-border-color: rgba(237, 238, 243, 0.1);
+    --navbar-border-color: rgba(237, 238, 243, 0.1);
     --back-to-top-shadow: rgba(0, 0, 0, 0.4);
-    --muted-text-color: #bec5cc;
-    --focus-ring-color: #9ec5fe;
-    --document-info-bg: #202d4d;
-    --document-info-border: #6f7e9b;
-    --document-info-link: #9ec5fe;
-    --search-backdrop: rgba(8, 10, 20, 0.62);
-    --search-hit-active: #24304f;
-    --search-hit-border: rgba(110, 168, 254, 0.45);
-    --search-kbd-bg: #232f4d;
-    --search-kbd-border: rgba(255, 255, 255, 0.16);
-    --search-field-border: rgba(255, 255, 255, 0.12);
+    --muted-text-color: #949aa5;
+    --focus-ring-color: #b3c7ff;
+    --document-info-bg: #23262f;
+    --document-info-border: rgba(237, 238, 243, 0.14);
+    --document-info-link: #b3c7ff;
+    /* Astro 的深色遮罩色 #16181da8 */
+    --search-backdrop: rgba(22, 24, 29, 0.66);
+    --search-hit-active: #2b2f39;
+    --search-hit-border: rgba(179, 199, 255, 0.3);
+    --search-kbd-bg: #2b2f39;
+    --search-kbd-border: rgba(237, 238, 243, 0.16);
+    --search-field-border: rgba(237, 238, 243, 0.1);
+    --toc-line-color: #353841;
+    /* Bootstrap 桥接。--bs-primary 在深色下是石板灰：Astro 深色里胶囊、
+       计数这类次要元素都是中性冷灰，不抢正文的视觉层级 */
+    --bs-body-bg: #17181c;
+    --bs-body-color: #c1c3c8;
+    --bs-border-color: rgba(237, 238, 243, 0.12);
+    --bs-secondary-color: #949aa5;
+    --bs-tertiary-bg: #23262f;
+    --bs-secondary-bg: #2b2f39;
+    --bs-primary: #353841;
+    --bs-primary-rgb: 53, 56, 65;
+    --bs-secondary-rgb: 74, 79, 94;
+    --bs-code-color: #dfe2ea;
+}
+
+/* 标题比正文亮/深一档（Astro 的做法：深色正文 #c1c3c8、标题 #edeef3），
+   长文的层级感靠这一档对比，而不是靠加大字重 */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-color);
 }
 
 /* Body */
@@ -99,9 +148,42 @@ table td {
     border-color: var(--table-border-color);
 }
 
-/* Blockquotes */
-blockquote p {
+/* Blockquotes：左侧强调线 + 极浅底色（浅色暖陶土、深色中性白）。
+   主题 style.css 给 blockquote 里的每个 <p> 涂红底加内边距，这里必须
+   同选择器清零，否则新样式会叠在红底上。 */
+blockquote {
+    margin: 1.25rem 0;
+    padding: 0.4rem 1.1rem;
+    border-left: 3px solid var(--blockquote-border);
+    border-radius: 0 6px 6px 0;
     background-color: var(--blockquote-bg);
+}
+
+blockquote p {
+    padding-left: 0;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+blockquote > :last-child {
+    margin-bottom: 0;
+}
+
+/* 选区颜色跟随主题 accent：浅色靛蓝，深色长春花蓝 */
+::selection {
+    background: rgba(61, 80, 245, 0.18);
+}
+
+[data-bs-theme="dark"] ::selection {
+    background: rgba(179, 199, 255, 0.25);
+}
+
+/* 行内代码：中性小色块（ChatGPT/Claude 的行内码样式），文字色由
+   --bs-code-color 桥接（浅色深陶土 / 深色浅陶土）；代码块内不受影响 */
+:not(pre) > code {
+    padding: 0.1em 0.35em;
+    border-radius: 4px;
+    background-color: var(--search-kbd-bg);
 }
 
 /* Navbar border */
@@ -168,13 +250,13 @@ blockquote p {
 
 /* Right-side controls share one muted color treatment */
 .site-controls {
-    --control-color: rgba(0, 0, 0, 0.68);
-    --control-color-hover: rgba(0, 0, 0, 0.9);
+    --control-color: rgba(35, 38, 47, 0.66);
+    --control-color-hover: rgba(35, 38, 47, 0.92);
 }
 
 [data-bs-theme="dark"] .site-controls {
-    --control-color: rgba(255, 255, 255, 0.72);
-    --control-color-hover: rgba(255, 255, 255, 0.94);
+    --control-color: rgba(237, 238, 243, 0.72);
+    --control-color-hover: rgba(237, 238, 243, 0.95);
 }
 
 /* Language switcher: minimal text toggle */
@@ -377,9 +459,12 @@ blockquote p {
     padding: 0.75rem 1rem;
 }
 
+/* 卡片页脚不再用 Bootstrap 默认的半透明黑灰条，改成干净的 hairline 分隔 */
 .post-list .card-footer {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    background-color: transparent;
+    border-top-color: var(--card-border-color);
 }
 
 .post-title {
@@ -483,14 +568,15 @@ pre.chroma {
     z-index: 1040;
 }
 
-/* Sidebar sticky elements - lower than dropdown */
-.sidebar-toc,
+/* Sidebar sticky elements (archive year nav) - lower than dropdown */
 .col-md-3 .sticky-top {
     z-index: 1010;
 }
 
 /* ===========================================
    Back to Top Button
+   悬浮的中性圆钮（面板底色 + hairline 边框），同一套样式在两种主题下
+   都成立——不再是 Bootstrap 的灰色 btn-secondary。
    =========================================== */
 #back-to-top {
     position: fixed;
@@ -504,9 +590,18 @@ pre.chroma {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--body-color);
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border-color);
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.2s ease;
+}
+
+#back-to-top:hover {
+    color: var(--body-color);
+    background-color: var(--search-hit-active);
+    border-color: var(--card-border-color);
 }
 
 #back-to-top.show {
@@ -517,6 +612,35 @@ pre.chroma {
 #back-to-top:hover {
     opacity: 1;
     transform: translateY(-3px);
+}
+
+/* 404 页的「返回首页」按钮：浅色 = 靛蓝实底白字；深色照抄 Starlight 的
+   主按钮配对（bg-accent = accent-high 长春花蓝，文字 = accent-low 深海军蓝）。
+   Bootstrap 5.3 的按钮读取 --bs-btn-*，覆盖变量即可，不必重写规则。 */
+.btn-primary {
+    --bs-btn-bg: #3d50f5;
+    --bs-btn-border-color: #3d50f5;
+    --bs-btn-hover-bg: #2a3cd8;
+    --bs-btn-hover-border-color: #2a3cd8;
+    --bs-btn-active-bg: #2a3cd8;
+    --bs-btn-active-border-color: #2a3cd8;
+    --bs-btn-disabled-bg: #3d50f5;
+    --bs-btn-disabled-border-color: #3d50f5;
+}
+
+[data-bs-theme="dark"] .btn-primary {
+    --bs-btn-color: #17264f;
+    --bs-btn-bg: #b3c7ff;
+    --bs-btn-border-color: #b3c7ff;
+    --bs-btn-hover-color: #17264f;
+    --bs-btn-hover-bg: #d4deff;
+    --bs-btn-hover-border-color: #d4deff;
+    --bs-btn-active-color: #17264f;
+    --bs-btn-active-bg: #d4deff;
+    --bs-btn-active-border-color: #d4deff;
+    --bs-btn-disabled-color: #17264f;
+    --bs-btn-disabled-bg: #b3c7ff;
+    --bs-btn-disabled-border-color: #b3c7ff;
 }
 
 /* Mobile: thumb-friendly button with safe-area spacing. */
@@ -599,103 +723,99 @@ pre.chroma {
 }
 
 /* ===========================================
-   Table of Contents — tree style + active tracking
+   Table of Contents — Cursor 产品页左侧节导航（cursor.com/grok 同款）
+   文章左栏的 sticky 树形目录：顶部是文章标题作根节点，下面一条细竖干，
+   每个条目用一小段横线接到竖干上（文件树样式）；条目默认次要色，悬停
+   提亮，当前章节提亮并在文字后缀一枚 accent 圆点。滚动跟踪由
+   assets/ts/toc.ts 维护（toc-active + aria-current）。
    =========================================== */
 html {
     scroll-behavior: smooth;
 }
 
-.toc-header {
-    width: 100%;
-    padding: 0.45rem 0.7rem;
-    border: 0;
-    border-radius: 6px 6px 0 0;
+.toc-rail {
+    position: sticky;
+    top: 2.5rem;
+    z-index: 1010;
+    max-height: calc(100vh - 5rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: 0.25rem 0.5rem 0.5rem 0;
+    font-size: 0.8rem;
+    line-height: 1.45;
+}
+
+/* 根节点：文章标题（与 Cursor 用页面名作根一致） */
+.toc-rail-title {
+    display: block;
+    margin: 0 0 0.4rem;
     color: var(--body-color);
-    text-align: left;
-    cursor: pointer;
     font-weight: 600;
-}
-
-.toc-header:hover {
-    filter: brightness(0.97);
-}
-
-.toc-chevron {
-    display: inline-flex;   /* 展开/收起两种状态下箭头都保持居中对齐 */
-    align-items: center;
-}
-
-.toc-chevron .meta-icon {
-    width: 0.85em;
-    height: 0.85em;
-    opacity: 0.7;
-}
-
-#tocContent {
-    padding: 0.5rem 0.75rem 0.65rem;
-    border-radius: 0 0 6px 6px;
-}
-
-#TableOfContents {
-    font-size: 0.85rem;
+    overflow-wrap: anywhere;
 }
 
 #TableOfContents ul {
+    position: relative;
     list-style: none;
     margin: 0;
-    padding-left: 0;
+    padding-left: 0.95rem;
 }
 
-/* Nested levels get a vertical guide line — the tree trunk */
-#TableOfContents ul ul {
-    margin-left: 0.5rem;
-    padding-left: 0.85rem;
-    border-left: 1px solid var(--card-border-color);
+/* 竖干：从根节点下方垂到最后一个条目的连接线高度 */
+#TableOfContents ul::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0.62em;
+    width: 1px;
+    background-color: var(--toc-line-color);
 }
 
 #TableOfContents li {
     position: relative;
-    margin: 0.1rem 0;
 }
 
-/* Horizontal connector from the trunk to each nested item */
-#TableOfContents ul ul li::before {
+/* 每个条目的横向连接线（├─），接在行首文字的视觉中线上 */
+#TableOfContents li::before {
     content: "";
     position: absolute;
-    left: -0.85rem;
-    top: 0.75em;
-    width: 0.85rem;       /* 连接线贯穿整个缩进，与条目左缘相接 */
+    left: -0.95rem;
+    top: 0.78em;
+    width: 0.6rem;
     height: 1px;
-    background-color: var(--card-border-color);
+    background-color: var(--toc-line-color);
 }
 
 #TableOfContents a {
-    display: block;
-    padding: 0.2rem 0.45rem;
-    border-left: 2px solid transparent;
-    border-radius: 4px;
-    color: var(--body-color);
-    opacity: 0.7;
+    display: inline-block;
+    max-width: 100%;
+    padding: 0.16rem 0;
+    color: var(--muted-text-color);
     text-decoration: none;
-    transition: color 0.15s ease, background-color 0.15s ease, opacity 0.15s ease;
+    overflow-wrap: anywhere;
+    transition: color 0.15s ease;
 }
 
-#TableOfContents a:hover {
-    opacity: 1;
-    background-color: var(--card-border-color);
+#TableOfContents a:hover,
+#TableOfContents a:focus-visible {
+    color: var(--body-color);
 }
 
-/* Current section highlight (set by scrollspy) */
+/* 当前章节：文字提亮 + 尾缀一枚 accent 圆点（Cursor 的橙点，这里用主题色） */
 #TableOfContents a.toc-active {
-    opacity: 1;
-    color: var(--link-color);
-    font-weight: 600;
-    border-left-color: var(--link-color);
-    background-color: rgba(13, 110, 253, 0.08);
+    color: var(--body-color);
 }
 
-[data-bs-theme="dark"] #TableOfContents a.toc-active {
-    background-color: rgba(110, 168, 254, 0.12);
+#TableOfContents a.toc-active::after {
+    content: "";
+    display: inline-block;
+    width: 0.3rem;
+    height: 0.3rem;
+    margin-left: 0.4rem;
+    border-radius: 50%;
+    background-color: var(--link-color);
+    vertical-align: 0.12em;
 }
 
 /* ===========================================
@@ -1468,7 +1588,10 @@ emoji-reaction button:focus-visible {
     height: 1.05rem;
 }
 
-.search-kbd {
+/* 快捷键徽标（顶栏 ⌘K / 浮层 esc / 页脚提示键）共用一套底色与描边 */
+.search-kbd,
+.search-esc kbd,
+.search-hint kbd {
     font-size: 0.7rem;
     padding: 0.1rem 0.3rem;
     border-radius: 0.25rem;
@@ -1562,12 +1685,7 @@ emoji-reaction button:focus-visible {
 }
 
 .search-esc kbd {
-    font-size: 0.7rem;
     padding: 0.15rem 0.4rem;
-    border-radius: 0.25rem;
-    background: var(--search-kbd-bg);
-    border: 1px solid var(--search-kbd-border);
-    color: var(--muted-text-color);
 }
 
 /* 状态行：结果数 / 搜索中 / 无结果 / 错误 */
@@ -1678,14 +1796,8 @@ emoji-reaction button:focus-visible {
 }
 
 .search-hint kbd {
-    font-size: 0.7rem;
     min-width: 1.35rem;
     text-align: center;
-    padding: 0.1rem 0.3rem;
-    border-radius: 0.25rem;
-    background: var(--search-kbd-bg);
-    border: 1px solid var(--search-kbd-border);
-    color: var(--muted-text-color);
 }
 
 .search-powered {

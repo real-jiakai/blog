@@ -27,14 +27,17 @@ vendored), heavily overridden by repo-level layouts/.
   the raw-.md output format
 - i18n/zh.yaml, i18n/en.yaml — UI strings
 - assets/ts/ — first-party TypeScript (no jQuery/lightbox2: theme-init
-  + theme-toggle, site-controls, sidebar-toc, back-to-top, copy-code,
-  image-viewer = native <dialog> lightbox, utterances-init, analytics,
-  footer-year, search), compiled per-entry to /js/<name>.<hash>.js by
-  layouts/_partials/script-url.html (js.Build + fingerprint)
+ + theme-toggle, site-controls, toc = TOC scrollspy, back-to-top,
+ copy-code, image-viewer = native <dialog> lightbox, utterances-init,
+ analytics, footer-year, search), compiled per-entry to
+ /js/<name>.<hash>.js by layouts/_partials/script-url.html
+ (js.Build + fingerprint)
 - tsconfig.json — editor/type-check config only; the build ignores it
-- static/ — css/ (self-hosted bootstrap.min.css + custom.css), js/
-  (only the vendored, patched emaction reactions bundle), xslt/
-  (styled RSS)
+- static/ — css/ (self-hosted bootstrap.min.css + custom.css +
+ syntax.css, the latter shadowing the theme's copy — regenerate via
+ `hugo gen chromastyles --style=github-dark`, never hand-edit), js/
+ (only the vendored, patched emaction reactions bundle), xslt/
+ (styled RSS)
 - data/ — tag_translations.yaml (zh/en tag pairs for hreflang/switcher)
 - .github/workflows/hugo-ci.yml — CI check (checks out the theme
   submodule, type-checks assets/ts/ with pinned TypeScript, and runs
@@ -102,6 +105,23 @@ No package.json or Makefile; Hugo CLI only (Netlify uses 0.164.0):
   /:year/:month/:slug.md (global `uglyURLs: true` + `noUgly` on
   HTML/RSS + cascade in content/*/blog/_index.md). Only blog posts get
   this — about/til stay HTML-only.
+- Color themes: both modes share the Astro-Docs/Starlight hue system.
+ Light is deliberately soft (page #f6f7f9, white cards, slate #353841
+ body text, #23262f headings, indigo #3d50f5 links); dark copies
+ docs.astro.build (blue-black #17181c bg, #23262f panels, #c1c3c8
+ body text with headings raised to #edeef3, periwinkle #b3c7ff
+ links). Everything hangs off the CSS variables at the top of
+ custom.css, which also bridge --bs-* variables so Bootstrap
+ badges/buttons/borders follow the palettes; all pairings were
+ checked against WCAG AA (≥ 4.5:1). Code blocks stay dark in BOTH
+ modes on purpose (github-dark chroma theme).
+- Article TOC (front matter `showtoc: true`) is a sticky tree-style
+ section nav in the RIGHT column (baseof.html → _partials/toc.html,
+ sharing the col-md-3 with the archive year nav — mutually exclusive
+ by page type), modeled on the section rail of cursor.com/grok: post
+ title as root node, hairline trunk + tick connectors, muted items,
+ active section brightened with a trailing accent dot. assets/ts/toc.ts
+ is the scrollspy (toc-active + aria-current); hidden below md.
 - Taxonomies: tags only; categories are deliberately disabled.
 - Tag term pages (layouts/tags/term.html) list every post without
  pagination (largest tag ≈ 10 posts). Only the home page calls

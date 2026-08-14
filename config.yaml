@@ -204,7 +204,10 @@ markup:
     lineNos: true
     lineNumbersInTable: true
     noClasses: false
-    style: rose-pine-moon
+    # noClasses:false 时渲染只产 class，配色由 static/css/syntax.css 决定
+    # （站点级文件遮蔽主题同名文件）；此处 style 仅作意图记录，与
+    # `hugo gen chromastyles --style=github-dark` 保持一致。
+    style: github-dark
     tabWidth: 4
     wrapperClass: highlight
   goldmark:

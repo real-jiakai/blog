@@ -25,10 +25,13 @@
         {{- block "main" . -}} {{ end }}
       </div>
       {{ else }}
+      {{/* 正文居中，右栏承载文章目录（cursor.com/grok 式节导航，仅 showtoc
+           文章渲染）或归档页年份导航——二者互斥，按页面类型只有一个出现。 */}}
       <div class="col-md-6 offset-md-3">
         {{- block "main" . -}}{{ end }}
       </div>
       <div class="col-md-3">
+        {{- partial "toc.html" . -}}
         {{- partial "sidebar.html" . -}}
       </div>
       {{ end }}
