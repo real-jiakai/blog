@@ -49,4 +49,7 @@ jobs:
           hugo version
 
       - name: Build production site with zero warnings
-        run: hugo --gc --minify --panicOnWarning
+        run: hugo --gc --minify --panicOnWarning --printPathWarnings --printI18nWarnings
+
+      - name: Validate historical URL redirects
+        run: python3 scripts/check_legacy_redirects.py

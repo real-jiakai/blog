@@ -5,7 +5,7 @@ lastmod: 2023-03-14
 tags: ["google"]
 slug: "the-solution-of-google-voice-is-connecting"
 translationKey: "the-solution-of-google-voice-is-connecting"
-summary: "梳理Google voice正在连接的解决方案，重点说明操作步骤、注意事项与结果。"
+summary: "Google Voice 在 Chrome 中拨号一直显示“正在连接”，而手机和 Edge 正常；逐步排查后发现是 WebRTC Control 扩展阻断，禁用后通话恢复。"
 ---
 
 ## 排查“正在连接”循环

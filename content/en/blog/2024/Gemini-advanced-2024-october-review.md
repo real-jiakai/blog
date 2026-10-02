@@ -5,7 +5,7 @@ lastmod: 2025-04-12
 tags: ["gemini","google"]
 slug: "Gemini-advanced-2024-october-review"
 translationKey: "Gemini-advanced-2024-october-review"
-summary: "A multi-month Gemini Advanced review covering YouTube summaries, API limits, image generation, Gems, Deep Research, and the later 2.5 Pro upgrade."
+summary: "A Gemini Advanced diary from October 2024 onward: YouTube summaries, code comments, uploads, AI Studio comparisons, and corrections about subtitle reliance."
 showtoc: true
 ---
 

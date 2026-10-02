@@ -7,7 +7,7 @@ slug: "the-execution-process-ls-list"
 translationKey: "the-execution-process-ls-list"
 aliases:
   - "/2023/01/the-execution-process-ls--list/index.html"
-summary: "聚焦ls > list命令的执行流程，结合实际使用说明关键体验与结论。"
+summary: "解释为什么执行 ls > list 后，输出文件中会出现 list 自身：shell 先创建或截断文件，再运行 ls；也说明 sort txt > txt 为什么会清空原文件。"
 showtoc: true
 ---
 

@@ -5,7 +5,7 @@ lastmod: 2024-03-17
 tags: ["vps"]
 slug: "experience-sharing-on-ikihost-ip-change-ordeal"
 translationKey: "experience-sharing-on-ikihost-ip-change-ordeal"
-summary: "Reconstructs an Ikihost VPS after an IP-change maintenance failure, using rescue mode to recover files before rebuilding the server."
+summary: "After Ikihost's IP-change outage, a Debian ISO and VirtFusion rescue mode provided access to recover four sites with rsync and move them to another VPS."
 showtoc: true
 ---
 

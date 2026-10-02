@@ -37,7 +37,12 @@ vendored), heavily overridden by repo-level layouts/.
  syntax.css, the latter shadowing the theme's copy — regenerate via
  `hugo gen chromastyles --style=github-dark`, never hand-edit), js/
  (only the vendored, patched emaction reactions bundle), xslt/
- (styled RSS)
+  (styled RSS)
+- static/_redirects — exact permanent redirects for pre-March-2025
+  `.html` URLs. Netlify reads these before netlify.toml; preserve this
+  historical map and never replace it with a blanket `*.html` redirect.
+- scripts/check_legacy_redirects.py — standard-library Python check
+  that built redirect targets exist and match their canonical URLs.
 - data/ — tag_translations.yaml (zh/en tag pairs for hreflang/switcher)
 - .github/workflows/hugo-ci.yml — CI check (checks out the theme
   submodule, type-checks assets/ts/ with pinned TypeScript, and runs
@@ -50,6 +55,8 @@ No package.json or Makefile; Hugo CLI only (Netlify uses 0.164.0):
 - `git submodule update --init` — fetch the theme (required once)
 - `hugo server` — local dev at http://localhost:1313
 - `hugo --gc --minify` — production build (what Netlify runs)
+- `python3 scripts/check_legacy_redirects.py` — validate legacy
+  redirects after building (also required by CI)
 - `npx --yes --package typescript@5.9.3 tsc -p tsconfig.json` — TS type
   check (CI runs this same pinned command; a bare `npx tsc` would fetch
   npm's unrelated `tsc` squatter package, not TypeScript)

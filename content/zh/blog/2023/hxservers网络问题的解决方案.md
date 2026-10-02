@@ -5,7 +5,7 @@ lastmod: 2023-11-27
 tags: ['vps','google one vpn']
 slug: "solving-hxservers-network-issues"
 translationKey: "solving-hxservers-network-issues"
-summary: "梳理hxservers网络问题的解决方案，重点说明操作步骤、注意事项与结果。"
+summary: "HXServers 维护后 Windows VPS 断网，通过 VNC 手动设置 IP、子网掩码、网关和 DNS，恢复 RDP 与 Google One VPN 连接。"
 showtoc: true
 ---
 

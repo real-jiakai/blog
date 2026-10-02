@@ -5,7 +5,7 @@ lastmod: 2023-06-01
 tags: ['vps','chatgpt','openai']
 slug: "unlock-chatgpt-when-vps-been-judged-cn-by-cloudflare"
 translationKey: "unlock-chatgpt-when-vps-been-judged-cn-by-cloudflare"
-summary: "围绕使用二级代理来实现非open ai服务地区的VPS解锁ChatGPT的方法，整理个人实践、结果与体会。"
+summary: "结合 2023 年香港 VPS 和被 Cloudflare 误识别地区的美国 VPS，讨论 WARP 未能解决 ChatGPT 访问问题的情形与二级代理思路。"
 showtoc: false
 ---
 

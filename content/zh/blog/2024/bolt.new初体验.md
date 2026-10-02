@@ -5,7 +5,7 @@ lastmod: 2024-10-10
 tags: ["ai", "前端"]
 slug: "bolt-new-first-experience"
 translationKey: "bolt-new-first-experience"
-summary: "聚焦自己初次体验bolt.new完成一个简单项目的经历，结合实际使用说明关键体验与结论。"
+summary: "用 bolt.new 多轮对话制作 Markdown 树形目录生成器，记录十万多 tokens 的消耗、Netlify 重复部署的体验，以及它与 Claude Artifacts 的差别。"
 showtoc: false
 ---
 

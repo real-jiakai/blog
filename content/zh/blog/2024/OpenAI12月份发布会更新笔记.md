@@ -5,7 +5,7 @@ lastmod: 2025-01-05
 tags: ['openai']
 slug: "notes-about-openai-december-updates"
 translationKey: "notes-about-openai-december-updates"
-summary: "回顾OpenAI 12月份发布会更新，梳理完整过程、结果与可复用经验。"
+summary: "按天记录 OpenAI 2024 年 12 天发布会，对 o1 Pro、Sora、Canvas、Projects、高级语音和 o3 发表短评，并附个人试用与社区讨论。"
 showtoc: true
 draft: false
 ---

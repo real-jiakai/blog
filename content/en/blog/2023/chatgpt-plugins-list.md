@@ -5,7 +5,7 @@ lastmod: 2023-06-03
 tags: ['chatgpt','plugins']
 slug: "chatgpt-plugins-list"
 translationKey: "chatgpt-plugins-list"
-summary: "A curated snapshot of roughly 250 ChatGPT plugins available in June 2023, organized to help Plus users find useful tools."
+summary: "A June 2023 ChatGPT plugin list, with Bohita's clothing design workflow as an example of plugin capabilities. Updates to the list are paused."
 showtoc: false
 ---
 

@@ -5,7 +5,7 @@ lastmod: 2025-01-06
 tags: ["google one vpn"]
 slug: "alternatives-to-google-one-vpn-shutdown"
 translationKey: "alternatives-to-google-one-vpn-shutdown"
-summary: "聚焦Google One VPN停用的替代方案，结合实际使用说明关键体验与结论。"
+summary: "记录 Google One VPN 停用前后寻找替代出口的过程，对比 WARP、双 ISP VPS、住宅 IP 的成本与稳定性，并补充 Pixel VPN 的使用经历。"
 showtoc: true
 ---
 

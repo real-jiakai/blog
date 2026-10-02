@@ -5,7 +5,7 @@ lastmod: 2025-03-25
 tags: ['ai', '编程', '搜索','phind','devv']
 slug: "phind-vs-devv"
 translationKey: "phind-vs-devv"
-summary: "围绕AI编程搜索Phind和Devv的体验，整理个人实践、结果与体会。"
+summary: "付费使用近一个月后，对比Phind与Devv的搜索质量、模型选择、图片上传、上下文限制和价格，说明取消Phind订阅、考虑续费Devv的原因。"
 showtoc: true
 ---
 

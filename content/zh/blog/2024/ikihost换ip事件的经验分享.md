@@ -5,7 +5,7 @@ lastmod: 2024-03-17
 tags: ["vps"]
 slug: "experience-sharing-on-ikihost-ip-change-ordeal"
 translationKey: "experience-sharing-on-ikihost-ip-change-ordeal"
-summary: "围绕自己从Ikihost换ip风波中获取的经验，整理个人实践、结果与体会。"
+summary: "Ikihost 更换 IP 后网站和 SSH 均无法连接，通过 VirtFusion 挂载 Debian ISO、进入救援模式，再用 rsync 取回四个站点并迁移到其他服务器。"
 showtoc: true
 ---
 

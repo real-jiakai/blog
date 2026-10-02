@@ -5,7 +5,7 @@ lastmod: 2025-10-09
 tags: ['claude', 'anthropic']
 slug: "claude-sonnet-4-5-review"
 translationKey: "claude-sonnet-4-5-review"
-summary: "Reviews Sonnet 4.5 for vibe coding, writing, Imagine with Claude, and Pro quotas, while weighing capability gains against Anthropic's tighter limits."
+summary: "Tests Claude for Chrome, the updated Claude Code extension, and Imagine with Claude after Sonnet 4.5's launch, alongside code execution and tighter plan limits."
 showtoc: true
 ---
 

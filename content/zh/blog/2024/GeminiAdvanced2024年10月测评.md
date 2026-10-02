@@ -5,7 +5,7 @@ lastmod: 2025-04-12
 tags: ["gemini","google"]
 slug: "Gemini-advanced-2024-october-review"
 translationKey: "Gemini-advanced-2024-october-review"
-summary: "回顾自己使用Gemini Advanced的体验感受，梳理完整过程、结果与可复用经验。"
+summary: "记录 2024 年 10 月起的 Gemini Advanced 使用体验，对比 YouTube 摘要、代码注释、文件上传与 AI Studio，并补充视频字幕依赖和后续模型更新。"
 showtoc: true
 ---
 

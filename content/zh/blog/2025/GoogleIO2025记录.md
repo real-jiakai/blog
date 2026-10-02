@@ -5,7 +5,7 @@ lastmod: 2025-05-21
 tags: ["google", "gemini"]
 slug: "google-io-2025-notes"
 translationKey: "google-io-2025-notes"
-summary: "回顾Google I/O 2025发布的内容，梳理完整过程、结果与可复用经验。"
+summary: "按产品梳理Google I/O 2025的AI发布，涵盖Gemini套餐、Veo 3、Flow、AI Mode、Stitch与Project Astra，并穿插新功能的实测与取舍。"
 showtoc: true
 ---
 

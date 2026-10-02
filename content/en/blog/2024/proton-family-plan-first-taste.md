@@ -5,7 +5,7 @@ lastmod: 2024-08-06
 tags: ["proton"]
 slug: "proton-family-plan-first-taste"
 translationKey: "proton-family-plan-first-taste"
-summary: "Reviews a $48-per-year Proton Family seat across VPN, Mail, Pass, Drive, Calendar, and Wallet, including connectivity and feature limitations."
+summary: "A 2024 Proton Family trial covering VPN connections, Mail Bridge with Thunderbird, and whether Pass and Drive fit an existing set of tools."
 showtoc: true
 ---
 

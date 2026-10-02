@@ -5,7 +5,7 @@ lastmod: 2024-06-21
 tags: ['chatgpt','android']
 slug: "solving-date-and-time-error-in-chatgpt-android-app"
 translationKey: "solving-date-and-time-error-in-chatgpt-android-app"
-summary: "Fix ChatGPT Android's date-and-time warning by checking the proxy, Google Play components, automatic time settings, or clearing app data."
+summary: "Troubleshooting ChatGPT Android's date-and-time error in 2023–2024: proxy support, Play Store updates, Play Services phone permission, and clearing cache."
 showtoc: true
 ---
 

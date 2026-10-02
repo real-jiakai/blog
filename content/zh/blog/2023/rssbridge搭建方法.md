@@ -5,7 +5,7 @@ lastmod: 2023-02-20
 tags: ['rss','rssbridge']
 slug: "use-docker-compose-to-build-rssbridge"
 translationKey: "use-docker-compose-to-build-rssbridge"
-summary: "梳理rssbridge搭建方法，重点说明操作步骤、注意事项与结果。"
+summary: "在 Debian 上用 Docker 部署 RSS-Bridge，启用 Picuki 白名单、配置时区和 Caddy 域名访问，并记录 Instagram 抓取失败与后续改用公共实例的经历。"
 showtoc: true
 ---
 

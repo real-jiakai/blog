@@ -5,7 +5,7 @@ lastmod: 2025-03-04
 tags: ['hugo']
 slug: "hugo-remove-trailing-slash"
 translationKey: "hugo-remove-trailing-slash"
-summary: "梳理Hugo博客去除url尾部斜杠的方法，重点说明操作步骤、注意事项与结果。"
+summary: "记录在 Windows 和 Netlify 中通过 HUGO_UGLYURLS 调整 Hugo 链接的尝试，以及 2025 年排查重复 URL、恢复 Pretty URL 并添加 canonical 的经过。"
 showtoc: true
 ---
 

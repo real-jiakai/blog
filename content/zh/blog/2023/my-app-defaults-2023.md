@@ -5,7 +5,7 @@ lastmod: 2023-11-21
 tags: ['app']
 slug: "my-app-defaults-2023"
 translationKey: "my-app-defaults-2023"
-summary: "聚焦2023年我日常使用的App，结合实际使用说明关键体验与结论。"
+summary: "我的 2023 年日常工具清单：Thunderbird 收邮件、mdBook 与 VSCode 写笔记、Inoreader 读 RSS，以及云存储、密码管理、开发和 AI 工具的使用分工。"
 showtoc: false
 ---
 

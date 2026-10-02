@@ -5,7 +5,7 @@ lastmod: 2026-01-08
 tags: ["claude", "anthropic"]
 slug: "claude-max-aftertaste"
 translationKey: "claude-max-aftertaste"
-summary: "Reassesses Claude Max 5x during a thesis deadline, focusing on Opus 4.5 in Claude Code, quota economics, and the work it enabled."
+summary: "Reassesses Claude Max 5x through thesis work, RAG debugging, diagram creation, data cleanup, VPS migration, and adding English to a Hugo blog."
 showtoc: true
 ---
 

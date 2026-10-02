@@ -5,7 +5,7 @@ lastmod: 2023-06-03
 tags: ['chatgpt','plugins']
 slug: "chatgpt-plugins-list"
 translationKey: "chatgpt-plugins-list"
-summary: "围绕自己整理的chatgpt插件列表，整理个人实践、结果与体会。"
+summary: "分享 2023 年 6 月整理的 ChatGPT 插件列表，以 Bohita 服饰设计为例介绍插件用途；文中的插件清单已暂停更新。"
 showtoc: false
 ---
 

@@ -5,7 +5,7 @@ lastmod: 2024-11-05
 tags: ['claude', 'anthropic']
 slug: "claude-3-5-haiku-review"
 translationKey: "claude-3-5-haiku-review"
-summary: "Benchmarks Claude 3.5 Haiku's speed, pricing, July 2024 knowledge cutoff, coding ability, and lack of image input against Sonnet."
+summary: "First impressions of Claude 3.5 Haiku through its API: knowledge and reasoning questions, comparisons with Sonnet and Grok, and launch pricing."
 showtoc: false
 draft: false
 ---

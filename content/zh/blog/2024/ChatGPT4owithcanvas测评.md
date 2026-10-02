@@ -5,7 +5,7 @@ lastmod: 2024-10-04
 tags: ["openai","chatgpt"]
 slug: "chatgpt-4o-canvas-review"
 translationKey: "chatgpt-4o-canvas-review"
-summary: "回顾自己使用ChatGPT 4o with canvas的体验感受，梳理完整过程、结果与可复用经验。"
+summary: "尝试 ChatGPT 4o Canvas 的段落改写、表情润色与代码编辑，并用三角形图案居中任务，对比它与 o1-preview、Claude 3.5 Sonnet 的修正表现。"
 showtoc: true
 ---
 

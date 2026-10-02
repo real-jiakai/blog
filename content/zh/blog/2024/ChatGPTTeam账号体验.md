@@ -5,7 +5,7 @@ lastmod: 2024-01-12
 tags: ["openai","chatgpt"]
 slug: "chatgpt-team-experience"
 translationKey: "chatgpt-team-experience"
-summary: "回顾自己使用ChatGPT Team账号体验感受，梳理完整过程、结果与可复用经验。"
+summary: "记录 2024 年 1 月加入 ChatGPT Team 的体验，比较工作空间与个人账户的对话额度、数据训练设置，以及邀请方式和空间停用的情况。"
 showtoc: false
 ---
 

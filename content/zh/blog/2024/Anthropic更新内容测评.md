@@ -5,7 +5,7 @@ lastmod: 2024-12-26
 tags: ['claude', 'anthropic']
 slug: "anthropic-updates-evaluation"
 translationKey: "anthropic-updates-evaluation"
-summary: "回顾2024年10月22日Anthropic更新内容测评，梳理完整过程、结果与可复用经验。"
+summary: "实测 2024 年 10 月新版 Claude 3.5 Sonnet 与 Computer Use：操作计算器、绘图、下载论文、玩五子棋，并比较代码修正和中文注释表现。"
 showtoc: true
 draft: false
 ---

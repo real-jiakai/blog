@@ -5,7 +5,7 @@ lastmod: 2025-10-09
 tags: ['claude', 'anthropic']
 slug: "claude-sonnet-4-5-review"
 translationKey: "claude-sonnet-4-5-review"
-summary: "围绕Claude Sonnet 4.5体验，整理个人实践、结果与体会。"
+summary: "实测Claude for Chrome、新版Claude Code扩展和Imagine with Claude，记录Sonnet 4.5发布后的工具体验、代码执行功能及套餐限额。"
 showtoc: true
 ---
 

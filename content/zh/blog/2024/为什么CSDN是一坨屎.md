@@ -5,7 +5,7 @@ lastmod: 2024-09-16
 tags: ['csdn']
 slug: "why-is-csdn-a-pile-of-shit"
 translationKey: "why-is-csdn-a-pile-of-shit"
-summary: "聚焦为什么CSDN是一坨屎，针对官方不针对使用该平台的创作者，结合实际使用说明关键体验与结论。"
+summary: "注销 CSDN 账号后，旧学习笔记仍被保留且部分变成“VIP 可看”；记录联系客服取消收费限制的经过，并反思平台写作与内容自主权。"
 showtoc: true
 ---
 

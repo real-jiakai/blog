@@ -5,7 +5,7 @@ lastmod: 2024-01-28
 tags: ["vps","lightsail"]
 slug: "migrating-to-ipv6-only-instance-on-lightsail"
 translationKey: "migrating-to-ipv6-only-instance-on-lightsail"
-summary: "回顾Lightsail迁移至ipv6 only实例过程，梳理完整过程、结果与可复用经验。"
+summary: "通过快照迁移 Lightsail 至 IPv6-only，排查系统禁用 IPv6 和 Nginx 未监听 IPv6 导致的故障，并配置 AAAA 记录与 WARP IPv4 出站。"
 showtoc: true
 ---
 

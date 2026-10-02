@@ -5,7 +5,7 @@ lastmod: 2025-03-04
 tags: ['hugo']
 slug: "hugo-remove-trailing-slash"
 translationKey: "hugo-remove-trailing-slash"
-summary: "Uses HUGO_UGLYURLS on Windows and Netlify when uglyURLs alone fails, then revisits canonical duplication that hurt Google indexing."
+summary: "Experiments with HUGO_UGLYURLS on Windows and Netlify, followed by a 2025 investigation of duplicate URLs and a return to Pretty URLs with canonical links."
 showtoc: true
 ---
 

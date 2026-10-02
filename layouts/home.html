@@ -24,13 +24,13 @@
           {{ .Date.Format "2006-01-02" }}
         </time>
 
-        {{ with .Params.tags }}
+        {{ with .GetTerms "tags" }}
         <span class="post-meta-item">
           {{ partial "icon.html" "tag" }}
           <span>
             {{- range $index, $tag := . -}}
               {{- if gt $index 0 }}, {{ end -}}
-              #{{ $tag }}
+              <a href="{{ $tag.RelPermalink }}">#{{ $tag.LinkTitle }}</a>
             {{- end -}}
           </span>
         </span>

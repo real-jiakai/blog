@@ -5,7 +5,7 @@ lastmod: 2025-03-26
 tags: ['gemini']
 slug: "gemini-2-0-experience"
 translationKey: "gemini-2-0-experience"
-summary: "围绕Gemini 2.0体验的一些感受，整理个人实践、结果与体会。"
+summary: "比较Gemini 2.0在App、AI Studio和API中的体验，记录YouTube视频摘要、Flash低成本网页总结，以及Deep Research、Canvas和原生图片输出的更新。"
 showtoc: true
 ---
 

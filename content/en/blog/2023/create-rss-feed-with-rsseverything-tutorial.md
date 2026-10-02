@@ -5,7 +5,7 @@ lastmod: 2023-03-31
 tags: ["rss"]
 slug: "create-rss-feed-with-rsseverything-tutorial"
 translationKey: "create-rss-feed-with-rsseverything-tutorial"
-summary: "Build a custom RSS feed with RSSEverything by defining CSS selectors, previewing extracted items, and publishing the generated feed URL."
+summary: "Create an RSS feed with RSSEverything's {%} capture groups and {*} wildcards, extracting article titles and links for reading in Inoreader."
 showtoc: true
 ---
 

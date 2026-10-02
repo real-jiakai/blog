@@ -5,7 +5,7 @@ lastmod: 2024-05-12
 tags: ["反向代理", "zoraxy"]
 slug: "selfhost-zoraxy-an-alternative-to-nginx-proxy-manager"
 translationKey: "selfhost-zoraxy-an-alternative-to-nginx-proxy-manager"
-summary: "回顾 Zoraxy 的 Docker 部署、反向代理、证书、访问控制和容器网络配置，梳理完整过程、结果与可复用经验。"
+summary: "用 Docker Compose 部署 Zoraxy，在管理界面配置域名代理、ACME 证书与 Basic Auth，并以 Glance 为例演示共享 Docker 网络的反向代理。"
 showtoc: true
 ---
 

@@ -5,7 +5,7 @@ lastmod: 2025-04-07
 tags: ["bookmark"]
 slug: "self-hosted-bookmark-app-hoarder"
 translationKey: "self-hosted-bookmark-app-hoarder"
-summary: "Migrates from an expired Raindrop subscription to self-hosted Karakeep, covering Docker deployment, AI tagging, mobile access, and the rename from Hoarder."
+summary: "Moving 5,000-plus Raindrop bookmarks to self-hosted Hoarder, setting up mobile and browser access, disabling registration, and noting its rename to Karakeep."
 showtoc: true
 ---
 

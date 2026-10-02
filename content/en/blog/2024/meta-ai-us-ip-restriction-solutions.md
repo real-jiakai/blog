@@ -5,7 +5,7 @@ lastmod: 2025-04-29
 tags: ["meta"]
 slug: "meta-ai-us-ip-restriction-solutions"
 translationKey: "meta-ai-us-ip-restriction-solutions"
-summary: "Shows why a US IP alone did not bypass Meta.AI's region check and how a newly registered Facebook account on a native US connection restored access."
+summary: "A US IP alone did not restore Meta.AI access: a new Facebook account worked in 2024, followed by further account restrictions in 2025."
 showtoc: true
 ---
 

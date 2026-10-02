@@ -5,7 +5,7 @@ lastmod: 2025-10-09
 tags: ['claude', 'anthropic']
 slug: "claude-max-preview"
 translationKey: "claude-max-preview"
-summary: "聚焦Claude Max会员体验，结合实际使用说明关键体验与结论。"
+summary: "记录首次订阅Claude Max 5x及参与Claude for Chrome内测的经历，以邮件整理、社交网站调研和跨标签操作展示浏览器自动化的能力、限额与失败案例。"
 showtoc: true
 ---
 

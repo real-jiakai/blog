@@ -5,7 +5,7 @@ lastmod: 2024-10-22
 tags: ["vps"]
 slug: "stay-away-from-greencloud"
 translationKey: "stay-away-from-greencloud"
-summary: "Details the GreenCloud San Jose ransomware outage, unrecoverable VPS data loss, rescue attempts, and a successful $100 PayPal refund."
+summary: "A GreenCloud San Jose outage wiped VPS data, including a Flarum forum; persistent support requests secured a $100 refund and reinforced the need for backups."
 showtoc: true
 ---
 

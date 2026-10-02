@@ -5,7 +5,7 @@ lastmod: 2023-06-01
 tags: ["openai","chatgpt"]
 slug: "thinking-of-openai-ban-plus-customers-in-527"
 translationKey: "thinking-of-openai-ban-plus-customers-in-527"
-summary: "围绕个人关于openai清退plus用户事件的思考，整理个人实践、结果与体会。"
+summary: "记录 2023 年 5 月两个 ChatGPT Plus 账号被封及退款的经历，讨论 Depay 支付等可能原因，并反思聊天记录备份与对 GPT-4 的依赖。"
 showtoc: true
 ---
 

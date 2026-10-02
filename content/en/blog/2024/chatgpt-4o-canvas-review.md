@@ -5,7 +5,7 @@ lastmod: 2024-10-04
 tags: ["openai","chatgpt"]
 slug: "chatgpt-4o-canvas-review"
 translationKey: "chatgpt-4o-canvas-review"
-summary: "Tests ChatGPT 4o Canvas shortcuts for drafting and code, including inline edits, reading-level changes, emoji passes, and rendered previews."
+summary: "Tests ChatGPT 4o Canvas for writing and code editing, comparing its triangle-centering fixes with o1-preview and Claude 3.5 Sonnet."
 showtoc: true
 ---
 

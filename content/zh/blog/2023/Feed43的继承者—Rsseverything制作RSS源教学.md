@@ -5,7 +5,7 @@ lastmod: 2023-03-31
 tags: ["rss"]
 slug: "create-rss-feed-with-rsseverything-tutorial"
 translationKey: "create-rss-feed-with-rsseverything-tutorial"
-summary: "聚焦Rsseverything制作RSS源教学，结合实际使用说明关键体验与结论。"
+summary: "以个人网站为例，用 RSSEverything 的 {%} 捕获组和 {*} 通配符提取文章标题、链接，配置 RSS 输出并导入 Inoreader 阅读。"
 showtoc: true
 ---
 

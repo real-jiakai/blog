@@ -5,7 +5,7 @@ lastmod: 2023-03-07
 slug: "will-docker-container-be-limited-by-firewall"
 translationKey: "will-docker-container-be-limited-by-firewall"
 tags: ["docker","linux"]
-summary: "梳理Docker容器服务不受防火墙限制的解决方案，重点说明操作步骤、注意事项与结果。"
+summary: "从 Memos 的 5230 端口未获 UFW 放行却仍可访问说起，用 nmap 验证 Docker 端口暴露，再改为绑定 127.0.0.1 并通过 Caddy 提供访问。"
 ---
 
 ## Docker 为什么绕过 UFW

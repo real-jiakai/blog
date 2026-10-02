@@ -5,7 +5,7 @@ lastmod: 2025-07-12
 tags: ["grok"]
 slug: "grok-4-real-experience"
 translationKey: "grok-4-real-experience"
-summary: "围绕Grok 4真实体验，整理个人实践、结果与体会。"
+summary: "从发布后的实际使用出发，评估Grok 4的X平台搜索、工具调用和事实核查，记录中文识图、Deep Research接入与中英文体验上的不足。"
 showtoc: true
 ---
 

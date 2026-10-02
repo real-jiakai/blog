@@ -5,7 +5,7 @@ lastmod: 2025-04-07
 tags: ["bookmark"]
 slug: "self-hosted-bookmark-app-hoarder"
 translationKey: "self-hosted-bookmark-app-hoarder"
-summary: "围绕自建书签应用Karakeep(原Hoarder)的经验，整理个人实践、结果与体会。"
+summary: "Raindrop 会员到期后自建 Hoarder，将 5000 多条书签导入，配置手机端、浏览器扩展并关闭注册；附 Hoarder 更名 Karakeep 的更新。"
 showtoc: true
 ---
 

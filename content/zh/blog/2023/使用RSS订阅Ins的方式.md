@@ -5,7 +5,7 @@ lastmod: 2023-01-19
 tags: ["rss"]
 slug: "use-rss-to-subscribe-instagram"
 translationKey: "use-rss-to-subscribe-instagram"
-summary: "聚焦使用RSS订阅Ins的方式，结合实际使用说明关键体验与结论。"
+summary: "比较 RSS-Bridge、Feedbro、Telegram 机器人和 Proxigram 订阅 Instagram 的方式，记录账号验证、IP 屏蔽与接口失效，以及后来放弃订阅的原因。"
 showtoc: true
 ---
 

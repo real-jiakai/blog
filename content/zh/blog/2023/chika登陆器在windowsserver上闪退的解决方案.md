@@ -5,7 +5,7 @@ lastmod: 2023-06-17
 tags: ['游戏']
 slug: "fix-chika-crash-on-windows-server"
 translationKey: "fix-chika-crash-on-windows-server"
-summary: "围绕chika登陆器在windows server上闪退的解决方案，整理个人实践、结果与体会。"
+summary: "将赛尔号挂机任务迁到腾讯云 Windows Server 2022 后，Chika 登录器启动即闪退；调整该程序的 DEP 设置后恢复运行。"
 showtoc: false
 ---
 

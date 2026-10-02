@@ -5,7 +5,7 @@ lastmod: 2026-01-08
 tags: ["claude", "anthropic"]
 slug: "claude-max-aftertaste"
 translationKey: "claude-max-aftertaste"
-summary: "围绕第二次购买Claude Max会员的使用心得，整理个人实践、结果与体会。"
+summary: "为硕士论文预答辩再次订阅Claude Max 5x，记录Opus 4.5辅助RAG系统排错、论文配图、数据整理、VPS迁移和Hugo双语改造的案例及额度取舍。"
 showtoc: true
 ---
 

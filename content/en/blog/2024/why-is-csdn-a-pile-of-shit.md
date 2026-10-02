@@ -5,7 +5,7 @@ lastmod: 2024-09-16
 tags: ['csdn']
 slug: "why-is-csdn-a-pile-of-shit"
 translationKey: "why-is-csdn-a-pile-of-shit"
-summary: Explaining why CSDN is a pile of shit, targeting the platform, not creators using it.
+summary: "After closing a CSDN account, old study notes remained and some became VIP-only. Contacting support removed the restrictions, prompting a rethink of platform control."
 showtoc: true
 ---
 

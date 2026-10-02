@@ -1,0 +1,125 @@
+# 2025-03-04 从 HUGO_UGLYURLS=true 迁移后，保留真实旧 .html 地址的永久入口。
+# 来源：47dd20f^ 的 64 篇已发布博文及 about/til；dad7b90 引入的
+# static/llm.txt、static/llm-full.txt 抓取清单补齐当时公开的标签地址。
+# 仅收录能对应到当前 HTML 页的明确旧路径；不要添加通用 *.html 或首页兜底。
+# /archive/ 当时已由 front matter 固定，英文站在迁移后才建立，故不臆造其旧 .html。
+# Hugo 将本文件复制到 public/_redirects。Netlify 先处理它，再处理 netlify.toml，
+# 这些精确规则因此先于 TOML 中的 404 兜底；301! 也会覆盖可能残留的旧静态文件。
+# 路径中的中文按 Netlify 要求使用 URL 编码。新规则应直接指向最终 canonical，避免跳转链。
+# https://docs.netlify.com/manage/routing/redirects/overview/#rule-processing-order
+# https://docs.netlify.com/manage/routing/redirects/redirect-options/#force-redirects
+
+# 旧博文：保留迁移时的日期路径；ls--list 直接跳到修正后的 ls-list。
+/2022/03/324-gitee-affair.html /2022/03/324-gitee-affair/ 301!
+/2022/03/github-svg.html /2022/03/github-svg/ 301!
+/2022/06/github-education-developer-kit-application-journey.html /2022/06/github-education-developer-kit-application-journey/ 301!
+/2022/08/use-script-to-install-code-server.html /2022/08/use-script-to-install-code-server/ 301!
+/2022/09/you-should-add-a-semicolon-when-a-statement-end-in-js.html /2022/09/you-should-add-a-semicolon-when-a-statement-end-in-js/ 301!
+/2022/10/ssh-connect-by-proxy-error-connection-closed-by-foreign-host-solution.html /2022/10/ssh-connect-by-proxy-error-connection-closed-by-foreign-host-solution/ 301!
+/2022/11/hugo-remove-trailing-slash.html /2022/11/hugo-remove-trailing-slash/ 301!
+/2023/01/a-solution-about-nginx-problem.html /2023/01/a-solution-about-nginx-problem/ 301!
+/2023/01/read-later-equals-to-not-read.html /2023/01/read-later-equals-to-not-read/ 301!
+/2023/01/the-execution-process-ls--list.html /2023/01/the-execution-process-ls-list/ 301!
+/2023/01/use-rss-to-subscribe-instagram.html /2023/01/use-rss-to-subscribe-instagram/ 301!
+/2023/02/use-docker-compose-to-build-rssbridge.html /2023/02/use-docker-compose-to-build-rssbridge/ 301!
+/2023/03/create-rss-feed-with-rsseverything-tutorial.html /2023/03/create-rss-feed-with-rsseverything-tutorial/ 301!
+/2023/03/hugo-theme-development-diary.html /2023/03/hugo-theme-development-diary/ 301!
+/2023/03/solutions-for-network-error-of-new-bing.html /2023/03/solutions-for-network-error-of-new-bing/ 301!
+/2023/03/the-solution-of-google-voice-is-connecting.html /2023/03/the-solution-of-google-voice-is-connecting/ 301!
+/2023/03/will-docker-container-be-limited-by-firewall.html /2023/03/will-docker-container-be-limited-by-firewall/ 301!
+/2023/05/thinking-of-openai-ban-plus-customers-in-527.html /2023/05/thinking-of-openai-ban-plus-customers-in-527/ 301!
+/2023/06/chatgpt-plugins-list.html /2023/06/chatgpt-plugins-list/ 301!
+/2023/06/fix-chika-crash-on-windows-server.html /2023/06/fix-chika-crash-on-windows-server/ 301!
+/2023/06/solving-caddy-failure-on-bandwagonhost-theplanv2.html /2023/06/solving-caddy-failure-on-bandwagonhost-theplanv2/ 301!
+/2023/06/unlock-chatgpt-when-vps-been-judged-cn-by-cloudflare.html /2023/06/unlock-chatgpt-when-vps-been-judged-cn-by-cloudflare/ 301!
+/2023/08/methods-for-setting-ip-to-north-korea-and-antarctica.html /2023/08/methods-for-setting-ip-to-north-korea-and-antarctica/ 301!
+/2023/08/solving-date-and-time-error-in-chatgpt-android-app.html /2023/08/solving-date-and-time-error-in-chatgpt-android-app/ 301!
+/2023/09/conda-activation-error-unicode-decode-gbk.html /2023/09/conda-activation-error-unicode-decode-gbk/ 301!
+/2023/09/fix-git-push-fatal-error-did-not-receive-expected-object.html /2023/09/fix-git-push-fatal-error-did-not-receive-expected-object/ 301!
+/2023/09/notes-about-migrating-from-one-bandwagon-host-to-another.html /2023/09/notes-about-migrating-from-one-bandwagon-host-to-another/ 301!
+/2023/09/using-windows-hotspot-and-clash-tun-for-kindle-internet-access.html /2023/09/using-windows-hotspot-and-clash-tun-for-kindle-internet-access/ 301!
+/2023/10/chatgpt-android-error-disallowed-isp-solution.html /2023/10/chatgpt-android-error-disallowed-isp-solution/ 301!
+/2023/10/experience-icloud-plus-private-relay.html /2023/10/experience-icloud-plus-private-relay/ 301!
+/2023/10/hxservers-google-one-node-setup-guide.html /2023/10/hxservers-google-one-node-setup-guide/ 301!
+/2023/10/solving-hxservers-network-issues.html /2023/10/solving-hxservers-network-issues/ 301!
+/2023/10/use-docker-compose-to-build-proxigram.html /2023/10/use-docker-compose-to-build-proxigram/ 301!
+/2023/11/my-app-defaults-2023.html /2023/11/my-app-defaults-2023/ 301!
+/2023/11/racknerd-ubuntu-ufs-fix.html /2023/11/racknerd-ubuntu-ufs-fix/ 301!
+/2023/11/summary-of-server-shop-of-2023-bf.html /2023/11/summary-of-server-shop-of-2023-bf/ 301!
+/2024/01/chatgpt-team-experience.html /2024/01/chatgpt-team-experience/ 301!
+/2024/01/fix-apt-install-operation-not-permitted-error.html /2024/01/fix-apt-install-operation-not-permitted-error/ 301!
+/2024/01/migrating-to-ipv6-only-instance-on-lightsail.html /2024/01/migrating-to-ipv6-only-instance-on-lightsail/ 301!
+/2024/02/solving-gemini-device-compatibility-issues.html /2024/02/solving-gemini-device-compatibility-issues/ 301!
+/2024/03/experience-sharing-on-ikihost-ip-change-ordeal.html /2024/03/experience-sharing-on-ikihost-ip-change-ordeal/ 301!
+/2024/04/alternatives-to-google-one-vpn-shutdown.html /2024/04/alternatives-to-google-one-vpn-shutdown/ 301!
+/2024/04/fake-selfhost-lover.html /2024/04/fake-selfhost-lover/ 301!
+/2024/05/selfhost-zoraxy-an-alternative-to-nginx-proxy-manager.html /2024/05/selfhost-zoraxy-an-alternative-to-nginx-proxy-manager/ 301!
+/2024/06/the-first-asn-of-young-people.html /2024/06/the-first-asn-of-young-people/ 301!
+/2024/07/build-your-own-xiaohongshu-instagram-alternative-pixelfed.html /2024/07/build-your-own-xiaohongshu-instagram-alternative-pixelfed/ 301!
+/2024/08/meta-ai-us-ip-restriction-solutions.html /2024/08/meta-ai-us-ip-restriction-solutions/ 301!
+/2024/08/proton-family-plan-first-taste.html /2024/08/proton-family-plan-first-taste/ 301!
+/2024/08/unexpected-bero-host-vps-bargain.html /2024/08/unexpected-bero-host-vps-bargain/ 301!
+/2024/09/why-is-csdn-a-pile-of-shit.html /2024/09/why-is-csdn-a-pile-of-shit/ 301!
+/2024/09/xiaohongshu-rss-tips.html /2024/09/xiaohongshu-rss-tips/ 301!
+/2024/10/anthropic-updates-evaluation.html /2024/10/anthropic-updates-evaluation/ 301!
+/2024/10/bolt-new-first-experience.html /2024/10/bolt-new-first-experience/ 301!
+/2024/10/chatgpt-4o-canvas-review.html /2024/10/chatgpt-4o-canvas-review/ 301!
+/2024/10/self-hosted-bookmark-app-hoarder.html /2024/10/self-hosted-bookmark-app-hoarder/ 301!
+/2024/10/stay-away-from-greencloud.html /2024/10/stay-away-from-greencloud/ 301!
+/2024/11/claude-3-5-haiku-review.html /2024/11/claude-3-5-haiku-review/ 301!
+/2024/11/claude-account-suspension-resolution.html /2024/11/claude-account-suspension-resolution/ 301!
+/2024/11/gemini-advanced-2024-october-review.html /2024/11/gemini-advanced-2024-october-review/ 301!
+/2024/12/notes-about-openai-december-updates.html /2024/12/notes-about-openai-december-updates/ 301!
+/2025/01/doubao-real-time-on-pitch-songs.html /2025/01/doubao-real-time-on-pitch-songs/ 301!
+/2025/01/glm-realtime-api-experience.html /2025/01/glm-realtime-api-experience/ 301!
+/2025/02/claude-3-7-sonnet-experience.html /2025/02/claude-3-7-sonnet-experience/ 301!
+/2025/02/gemini-2-0-experience.html /2025/02/gemini-2-0-experience/ 301!
+
+# 普通页面及历史标签；andriod 直接跳到更正后的 android。
+/about.html /about/ 301!
+/tags.html /tags/ 301!
+/tags/%E5%89%8D%E7%AB%AF.html /tags/%E5%89%8D%E7%AB%AF/ 301!
+/tags/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86.html /tags/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/ 301!
+/tags/%E5%B0%8F%E7%BA%A2%E4%B9%A6.html /tags/%E5%B0%8F%E7%BA%A2%E4%B9%A6/ 301!
+/tags/%E5%BC%80%E6%BA%90.html /tags/%E5%BC%80%E6%BA%90/ 301!
+/tags/%E6%90%AC%E7%93%A6%E5%B7%A5.html /tags/%E6%90%AC%E7%93%A6%E5%B7%A5/ 301!
+/tags/%E6%95%88%E7%8E%87.html /tags/%E6%95%88%E7%8E%87/ 301!
+/tags/%E6%B8%B8%E6%88%8F.html /tags/%E6%B8%B8%E6%88%8F/ 301!
+/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91.html /tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/ 301!
+/tags/%E8%87%AA%E6%89%98%E7%AE%A1.html /tags/%E8%87%AA%E6%89%98%E7%AE%A1/ 301!
+/tags/%E9%BB%91%E4%BA%94.html /tags/%E9%BB%91%E4%BA%94/ 301!
+/tags/ai.html /tags/ai/ 301!
+/tags/andriod.html /tags/android/ 301!
+/tags/anthropic.html /tags/anthropic/ 301!
+/tags/app.html /tags/app/ 301!
+/tags/apple.html /tags/apple/ 301!
+/tags/asn.html /tags/asn/ 301!
+/tags/bing.html /tags/bing/ 301!
+/tags/bookmark.html /tags/bookmark/ 301!
+/tags/chatgpt.html /tags/chatgpt/ 301!
+/tags/claude.html /tags/claude/ 301!
+/tags/conda.html /tags/conda/ 301!
+/tags/csdn.html /tags/csdn/ 301!
+/tags/docker.html /tags/docker/ 301!
+/tags/gemini.html /tags/gemini/ 301!
+/tags/git.html /tags/git/ 301!
+/tags/github.html /tags/github/ 301!
+/tags/google-one-vpn.html /tags/google-one-vpn/ 301!
+/tags/google.html /tags/google/ 301!
+/tags/hugo.html /tags/hugo/ 301!
+/tags/ip.html /tags/ip/ 301!
+/tags/kindle.html /tags/kindle/ 301!
+/tags/lightsail.html /tags/lightsail/ 301!
+/tags/linux.html /tags/linux/ 301!
+/tags/meta.html /tags/meta/ 301!
+/tags/nginx.html /tags/nginx/ 301!
+/tags/openai.html /tags/openai/ 301!
+/tags/pixelfed.html /tags/pixelfed/ 301!
+/tags/plugins.html /tags/plugins/ 301!
+/tags/proton.html /tags/proton/ 301!
+/tags/python.html /tags/python/ 301!
+/tags/rss.html /tags/rss/ 301!
+/tags/rssbridge.html /tags/rssbridge/ 301!
+/tags/vps.html /tags/vps/ 301!
+/tags/zoraxy.html /tags/zoraxy/ 301!
+/til.html /til/ 301!

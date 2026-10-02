@@ -5,7 +5,7 @@ lastmod: 2025-08-06
 tags: ['claude']
 slug: "make-claude-great-again"
 translationKey: "make-claude-great-again"
-summary: "围绕近期有关Claude产品的使用心得，整理个人实践、结果与体会。"
+summary: "借Opus 4.1发布回顾Claude的论文写作与编程体验，记录Claude Code操作Jupyter Notebook、远程排错的案例，以及模型选择和严格额度带来的取舍。"
 showtoc: false
 ---
 

@@ -5,7 +5,7 @@ lastmod: 2023-03-07
 slug: "will-docker-container-be-limited-by-firewall"
 translationKey: "will-docker-container-be-limited-by-firewall"
 tags: ["docker","linux"]
-summary: Solutions for Docker container services bypassing firewall restrictions.
+summary: "An nmap check reveals Docker ports accessible despite UFW rules; binding them to 127.0.0.1 and using Caddy limits direct external access."
 ---
 
 ## Why Docker Bypasses UFW

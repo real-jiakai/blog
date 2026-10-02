@@ -5,7 +5,7 @@ lastmod: 2024-12-24
 tags: ["asn"]
 slug: "the-first-asn-of-young-people"
 translationKey: "the-first-asn-of-young-people"
-summary: "聚焦自己获取ASN并配置该ASN对应的ipv6地址的经历，结合实际使用说明关键体验与结论。"
+summary: "记录申请 AS214948 与 IPv6 /48、用 bird2 建立 BGP 会话，以及 dummy0 接口访问互联网的排查，最后因费用变化放弃 ASN 资源。"
 showtoc: true
 ---
 

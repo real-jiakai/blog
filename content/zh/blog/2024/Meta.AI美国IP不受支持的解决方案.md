@@ -5,7 +5,7 @@ lastmod: 2025-04-29
 tags: ["meta"]
 slug: "meta-ai-us-ip-restriction-solutions"
 translationKey: "meta-ai-us-ip-restriction-solutions"
-summary: "梳理Meta.AI美国IP区域不受支持的解决方案，重点说明操作步骤、注意事项与结果。"
+summary: "使用美国 IP 仍遇到 Meta.AI 区域限制，换用新 Facebook 账号后曾恢复访问；记录对账号地区的排查，以及 2025 年再次遭遇风控的经历。"
 showtoc: true
 ---
 

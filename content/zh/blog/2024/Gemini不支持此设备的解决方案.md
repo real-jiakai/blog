@@ -5,7 +5,7 @@ lastmod: 2024-02-11
 tags: ["gemini"]
 slug: "solving-gemini-device-compatibility-issues"
 translationKey: "solving-gemini-device-compatibility-issues"
-summary: "梳理Gemini安卓App不支持此设备的解决方案，重点说明操作步骤、注意事项与结果。"
+summary: "排查 Gemini 安卓 App 首发时的“设备不支持”：在小米手机初始化 Google Assistant 和 Google App，在 Pixel 7 切换助手语言，并检查系统版本要求。"
 showtoc: true
 ---
 

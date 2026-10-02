@@ -118,6 +118,8 @@
     Cache-Control = "public, max-age=0, must-revalidate"
     Netlify-CDN-Cache-Control = "public, s-maxage=31536000, must-revalidate"
 
+# 2025 年迁移前的旧 .html 地址由 static/_redirects 的精确白名单永久跳转，
+# Netlify 会先处理该文件，再处理以下规则；不要用 *.html 通配规则覆盖合法文件。
 # 按语言返回对应的 404 页面：/en/ 下的未知路径用英文 404，其余用中文 404。
 # 无 force 标记时规则只在路径没有真实文件时生效，顺序从上到下匹配。
 [[redirects]]

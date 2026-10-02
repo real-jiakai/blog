@@ -5,7 +5,7 @@ lastmod: 2024-01-17
 tags: ["linux"]
 slug: "fix-apt-install-operation-not-permitted-error"
 translationKey: "fix-apt-install-operation-not-permitted-error"
-summary: "梳理apt安装软件报错Operation not permitted的解决方案，重点说明操作步骤、注意事项与结果。"
+summary: "三台 VPS 安装 jq 时都报 Operation not permitted，最终定位到宝塔系统加固将 /usr/bin 设为只读，关闭对应目录加固后恢复正常。"
 showtoc: false
 ---
 

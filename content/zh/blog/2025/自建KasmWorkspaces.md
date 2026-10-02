@@ -5,7 +5,7 @@ lastmod: 2025-04-15
 tags: ['kasmworkspaces']
 slug: "self-hosted-kasm-workspaces"
 translationKey: "self-hosted-kasm-workspaces"
-summary: "围绕自建Kasm Workspaces的经历，整理个人实践、结果与体会。"
+summary: "用Docker Compose部署Kasm Workspaces，配置浏览器持久化、用户时区和Caddy反向代理，并记录剪贴板、文件上传及远程使用ChatGPT和Claude的体验。"
 showtoc: true
 ---
 

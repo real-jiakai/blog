@@ -5,7 +5,7 @@ lastmod: 2024-11-05
 tags: ['claude', 'anthropic']
 slug: "claude-3-5-haiku-review"
 translationKey: "claude-3-5-haiku-review"
-summary: "回顾Claude 3.5 Haiku测评，梳理完整过程、结果与可复用经验。"
+summary: "通过 API 尝试 Claude 3.5 Haiku，用知识日期和推理问题对比 Sonnet、Grok，并结合当时的价格与榜单，讨论自己是否有使用 Haiku 的需求。"
 showtoc: false
 draft: false
 ---

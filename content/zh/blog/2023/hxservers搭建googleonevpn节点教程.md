@@ -5,7 +5,7 @@ lastmod: 2023-11-27
 tags: ['vps','google one vpn']
 slug: "hxservers-google-one-node-setup-guide"
 translationKey: "hxservers-google-one-node-setup-guide"
-summary: "梳理hxservers服务器搭建google one vpn节点的方法，重点说明操作步骤、注意事项与结果。"
+summary: "记录 2023 年 HXServers Windows VPS 连接 Google One VPN 失败后，重装 Windows 镜像、配置 Xray 和网卡优先级的过程，以及商家停运后的退款。"
 showtoc: true
 ---
 

@@ -5,7 +5,7 @@ lastmod: 2025-05-07
 tags: ['gemini']
 slug: "gemini-2-5-pro-experience"
 translationKey: "gemini-2-5-pro-experience"
-summary: "围绕Gemini 2.5 Pro体验的一些感受，整理个人实践、结果与体会。"
+summary: "记录Gemini 2.5 Pro在2025年春季的迭代，对比App、AI Studio与Vertex AI的代码注释和工具调用体验，讨论长上下文、中文搜索及学生优惠。"
 showtoc: true
 ---
 

@@ -5,7 +5,7 @@ lastmod: 2025-03-01
 tags: ["glm"]
 slug: "glm-realtime-api-experience"
 translationKey: "glm-realtime-api-experience"
-summary: "围绕GLM Realtime API体验感受，整理个人实践、结果与体会。"
+summary: "借助Claude编写GLM Realtime API演示，记录实时语音接入与调试过程，展示当时支持清唱的七首歌曲，并反思零基础AI编程的局限。"
 showtoc: true
 ---
 

@@ -5,7 +5,7 @@ lastmod: 2025-04-29
 tags: ['chatgpt']
 slug: "chatgpt-o3-o4-mini-experience"
 translationKey: "chatgpt-o3-o4-mini-experience"
-summary: "围绕ChatGPT o3、o4 mini体验感受，整理个人实践、结果与体会。"
+summary: "通过联网排错、图片定位和代码注释案例，比较ChatGPT o3与o4-mini的工具调用、推理表现及使用限额，记录新模型发布后的日常选择。"
 showtoc: true
 ---
 

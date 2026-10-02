@@ -5,7 +5,7 @@ lastmod: 2025-07-07
 tags: ["小红书","rss"]
 slug: "xiaohongshu-rss-tips"
 translationKey: "xiaohongshu-rss-tips"
-summary: "梳理小红书rss的解决方案，重点说明操作步骤、注意事项与结果。"
+summary: "从 RSSWorker 不更新排查到 Distill 网页监控，再转向 RSSHub 小红书订阅；记录 Cookie、缓存间隔与全文抓取反复触发验证码的问题。"
 showtoc: true
 ---
 

@@ -5,7 +5,7 @@ lastmod: 2024-08-06
 tags: ["proton"]
 slug: "proton-family-plan-first-taste"
 translationKey: "proton-family-plan-first-taste"
-summary: "聚焦自己尝鲜的Proton Family Plan套餐，结合实际使用说明关键体验与结论。"
+summary: "2024 年合租 Proton Family 后的使用记录：VPN 连接与出口测试、Mail Bridge 接入 Thunderbird，以及 Pass、Drive 与已有工具的取舍。"
 showtoc: true
 ---
 

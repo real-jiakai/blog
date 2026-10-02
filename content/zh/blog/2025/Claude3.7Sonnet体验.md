@@ -5,7 +5,7 @@ lastmod: 2025-07-23
 tags: ['claude','anthropic']
 slug: "claude-3-7-sonnet-experience"
 translationKey: "claude-3-7-sonnet-experience"
-summary: "围绕Claude 3.7 Sonnet使用体验，整理个人实践、结果与体会。"
+summary: "对比Claude 3.7 Sonnet的Normal与Extended模式，实测代码注释、小游戏生成和GitHub集成，并记录Claude Code与网页搜索的后续变化。"
 showtoc: true
 ---
 

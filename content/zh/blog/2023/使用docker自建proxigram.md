@@ -5,7 +5,7 @@ lastmod: 2023-10-13
 tags: ['rss']
 slug: "use-docker-compose-to-build-proxigram"
 translationKey: "use-docker-compose-to-build-proxigram"
-summary: "梳理使用docker自建proxigram的方法，重点说明操作步骤、注意事项与结果。"
+summary: "用 Docker Compose 部署 Proxigram，配置 .env、仅本机可访问的端口映射与 Caddy 反向代理，再将 Instagram 用户的 Atom 地址导入 RSS 阅读器。"
 showtoc: true
 ---
 

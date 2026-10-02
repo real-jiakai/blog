@@ -5,7 +5,7 @@ lastmod: 2025-03-13
 tags: ["claude"]
 slug: "claude-account-suspension-resolution"
 translationKey: "claude-account-suspension-resolution"
-summary: "回顾一次个人claude账号被封的经历及解决方案，梳理完整过程、结果与可复用经验。"
+summary: "记录 Claude 账号被封、API 退款和申诉经历，排查虚拟卡与网络等可能原因，并尝试苹果客服解决内购失败、转用 Windows 远程桌面。"
 showtoc: true
 ---
 

@@ -5,7 +5,7 @@ lastmod: 2025-08-06
 tags: ['claude']
 slug: "make-claude-great-again"
 translationKey: "make-claude-great-again"
-summary: "Explains how Opus 4.1 and Claude Code restored confidence in Claude for writing and coding after disappointing Opus 4 outputs."
+summary: "Revisits Claude's writing and coding at the Opus 4.1 launch, with Claude Code examples involving Jupyter notebooks, remote debugging, and strict usage limits."
 showtoc: false
 ---
 
