@@ -53,3 +53,6 @@ jobs:
 
       - name: Validate historical URL redirects
         run: python3 scripts/check_legacy_redirects.py
+
+      - name: Validate indexing metadata and sitemaps
+        run: python3 scripts/check_seo.py

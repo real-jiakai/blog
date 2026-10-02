@@ -1,5 +1,5 @@
 ---
-title: "自建Kasm Workspaces"
+title: "Docker 部署 Kasm Workspaces：持久化与域名访问"
 date: 2025-03-31T08:40:02+08:00
 lastmod: 2025-04-15
 tags: ['kasmworkspaces']

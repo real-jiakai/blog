@@ -5,7 +5,7 @@ lastmod: 2022-10-06
 tags: ['linux']
 slug: ssh-connect-by-proxy-error-connection-closed-by-foreign-host-solution
 translationKey: "ssh-connect-by-proxy-error-connection-closed-by-foreign-host-solution"
-summary: "经过两小时排查，定位 SSH 代理连接时 'Connection closed by foreign host' 报错的原因与修复方法。"
+summary: "SSH 经商业代理连接 VPS 时提示 Connection closed by foreign host，而自建节点正常；记录换用跳板机，以及将 SSH 从 22 改为其他端口后恢复连接的经过。"
 showtoc: true
 ---
 

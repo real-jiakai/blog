@@ -1,5 +1,5 @@
 ---
-title: "Claude Max Preview"
+title: "Claude Max 5x Review: Claude for Chrome Automation"
 date: 2025-09-28T10:41:55+08:00
 lastmod: 2025-10-09
 tags: ['claude', 'anthropic']

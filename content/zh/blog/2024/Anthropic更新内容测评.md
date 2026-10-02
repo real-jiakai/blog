@@ -1,5 +1,5 @@
 ---
-title: "Anthropic更新内容测评"
+title: "Claude 3.5 Sonnet 与 Computer Use 实测（2024 年 10 月）"
 date: 2024-10-23T15:11:43+08:00
 lastmod: 2024-12-26
 tags: ['claude', 'anthropic']

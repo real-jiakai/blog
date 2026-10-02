@@ -1,5 +1,5 @@
 ---
-title: "rssbridge搭建方法"
+title: "Docker 部署 RSS-Bridge：Picuki 与 Caddy 配置"
 date: 2023-02-20T10:27:14+08:00
 lastmod: 2023-02-20
 tags: ['rss','rssbridge']

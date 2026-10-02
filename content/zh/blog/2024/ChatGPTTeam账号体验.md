@@ -1,5 +1,5 @@
 ---
-title: "ChatGPT Team账号体验"
+title: "ChatGPT Team 初体验：工作空间与对话额度"
 date: 2024-01-12T10:29:48+08:00
 lastmod: 2024-01-12
 tags: ["openai","chatgpt"]

@@ -5,7 +5,7 @@ lastmod: 2023-09-16
 tags: ['git','github']
 slug: "fix-git-push-fatal-error-did-not-receive-expected-object"
 translationKey: "fix-git-push-fatal-error-did-not-receive-expected-object"
-summary: "How to recover when git push fails with 'remote: fatal: did not receive expected object' after repository object corruption."
+summary: "Pushing a shallow clone of running_page to a new repository failed with an expected-object error; this case records starting fresh Git history while keeping the original repository."
 showtoc: true
 ---
 

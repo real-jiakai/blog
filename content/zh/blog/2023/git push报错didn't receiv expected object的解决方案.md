@@ -5,7 +5,7 @@ lastmod: 2023-09-16
 tags: ['git','github']
 slug: "fix-git-push-fatal-error-did-not-receive-expected-object"
 translationKey: "fix-git-push-fatal-error-did-not-receive-expected-object"
-summary: "说明仓库对象异常后，如何处理 git push 的 'remote: fatal: did not receive expected object' 报错。"
+summary: "浅克隆 running_page 后向新仓库推送，遇到 did not receive expected object 报错；记录保留原仓库、重新初始化 Git 历史并完成推送的处理过程。"
 showtoc: true
 ---
 

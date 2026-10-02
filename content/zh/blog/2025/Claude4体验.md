@@ -1,5 +1,5 @@
 ---
-title: "Claude 4体验"
+title: "Claude 4 体验：Opus、Sonnet 与 Claude Code"
 date: 2025-05-23T07:56:34+08:00
 lastmod: 2025-07-23
 tags: ["claude","anthropic"]

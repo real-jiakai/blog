@@ -1,5 +1,5 @@
 ---
-title: "Claude 3.7 Sonnet体验"
+title: "Claude 3.7 Sonnet 实测：思考模式、编程与搜索"
 date: 2025-02-25T07:55:29+08:00
 lastmod: 2025-07-23
 tags: ['claude','anthropic']

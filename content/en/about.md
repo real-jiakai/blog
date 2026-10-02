@@ -1,6 +1,7 @@
 ---
-title: About
+title: "About Jiakai Gu"
 date: '2022-12-26'
+summary: "Meet Jiakai Gu, an internet explorer and self-hosting enthusiast. Learn about this blog's programming, RSS, productivity, and life topics, plus ways to get in touch."
 ---
 
 ## About Me

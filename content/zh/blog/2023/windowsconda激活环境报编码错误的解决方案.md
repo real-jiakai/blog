@@ -5,7 +5,7 @@ lastmod: 2023-09-30
 tags: ['python','conda']
 slug: "conda-activation-error-unicode-decode-gbk"
 translationKey: "conda-activation-error-unicode-decode-gbk"
-summary: "针对 Conda 激活时出现的 'gbk codec can't decode byte' 报错，说明 Windows Git Bash 中的编码修复方法。"
+summary: "Windows Git Bash 激活 Conda 环境时报 GBK 解码错误，设置 PYTHONUTF8=1 后成功激活；另记录更改系统非 Unicode 语言引发 PicGo 黑屏的副作用。"
 showtoc: true
 ---
 

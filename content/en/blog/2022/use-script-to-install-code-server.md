@@ -6,7 +6,7 @@ draft: false
 tags: ['github']
 slug: use-script-to-install-code-server
 translationKey: "use-script-to-install-code-server"
-summary: Install code-server using a one-click script, improving upon the rough installation process shown in my Bilibili video.
+summary: "Install code-server with its official script, inspect a dry run, and configure systemd, the listen address, and Nginx for browser access through a domain."
 showtoc: true
 ---
 

@@ -6,7 +6,7 @@ draft: false
 tags: ['github']
 slug: use-script-to-install-code-server
 translationKey: "use-script-to-install-code-server"
-summary: 使用一键脚本安装code-server，更改b站视频粗糙的安装部署操作。
+summary: "演示用官方脚本安装 code-server，预览 dry-run 安装步骤，再配置 systemd 后台运行、监听地址和 Nginx 反向代理，以浏览器和域名访问远程编辑器。"
 showtoc: true
 ---
 

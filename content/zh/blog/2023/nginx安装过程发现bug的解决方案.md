@@ -5,7 +5,7 @@ lastmod: 2023-01-14
 tags: ['nginx']
 slug: "a-solution-about-nginx-problem"
 translationKey: "a-solution-about-nginx-problem"
-summary: "Nginx 安装后若服务报 'Failed to parse PID'，可通过调整 PID 文件与服务配置恢复启动。"
+summary: "源码安装 Nginx 并注册 systemd 服务后出现 Failed to parse PID 警告；记录在服务配置中加入 ExecStartPost 短暂延迟的处理过程，并解释各项配置。"
 showtoc: true
 ---
 

@@ -5,7 +5,7 @@ lastmod: 2023-06-29
 tags: ["vps"]
 slug: "solving-caddy-failure-on-bandwagonhost-theplanv2"
 translationKey: "solving-caddy-failure-on-bandwagonhost-theplanv2"
-summary: "How to correct Caddy's startup failure on BandwagonHost The Plan V2 by adjusting its service configuration."
+summary: "Caddy failed to bind its admin port on BandwagonHost The Plan V2; removing an incorrect localhost IP mapping in /etc/hosts restored startup."
 showtoc: false
 ---
 

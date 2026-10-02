@@ -1,5 +1,5 @@
 ---
-title: "Grok 4真实体验"
+title: "Grok 4 实测：X 平台搜索、工具调用与中文识图"
 date: 2025-07-12T08:28:46+08:00
 lastmod: 2025-07-12
 tags: ["grok"]

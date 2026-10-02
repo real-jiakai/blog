@@ -1,5 +1,5 @@
 ---
-title: "GLM Realtime API体验"
+title: "GLM Realtime API 实测：实时语音与歌曲演唱"
 date: 2025-01-18T15:05:49+08:00
 lastmod: 2025-03-01
 tags: ["glm"]

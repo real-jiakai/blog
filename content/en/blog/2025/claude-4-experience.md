@@ -1,5 +1,5 @@
 ---
-title: "Claude 4 Experience"
+title: "Claude 4 Review: Opus, Sonnet, and Claude Code"
 date: 2025-05-23T07:56:34+08:00
 lastmod: 2025-07-23
 tags: ["claude","anthropic"]

@@ -1,5 +1,5 @@
 ---
-title: "Claude Max回味"
+title: "Claude Max 回味：Opus 4.5 辅助论文与开发"
 date: 2026-01-08T16:46:40-08:00
 lastmod: 2026-01-08
 tags: ["claude", "anthropic"]

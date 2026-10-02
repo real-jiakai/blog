@@ -1,5 +1,5 @@
 ---
-title: "Gemini 2.0 体验"
+title: "Gemini 2.0 体验：App、AI Studio 与 API 对比"
 date: 2025-02-07T09:01:24+08:00
 lastmod: 2025-03-26
 tags: ['gemini']

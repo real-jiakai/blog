@@ -1,6 +1,7 @@
 ---
 title: Today I Learned
 date: 2023-02-28
+summary: "An introduction to Jiakai's Today I Learned notes: learning in public through two blogs, a decentralized social app, and personal forums, with a link to the notes collection."
 ---
 
 ## Introduction

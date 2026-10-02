@@ -72,14 +72,22 @@
   translation: "第 {{ .Number }} 页"
 - id: currentPageNumber
   translation: "当前第 {{ .Number }} 页"
+- id: homeMetaTitle
+  translation: "{{ .Site }} | AI 工具、VPS 与自托管实践"
+- id: homePageMetaTitle
+  translation: "技术笔记与随笔：第 {{ .Number }} 页 | {{ .Site }}"
+- id: archiveMetaTitle
+  translation: "文章归档：全部 {{ .Count }} 篇技术笔记与随笔 | {{ .Site }}"
+- id: tagsMetaTitle
+  translation: "主题标签：按话题浏览技术文章 | {{ .Site }}"
 - id: homeDescription
-  translation: "阅读{{ .Site }}最新的技术笔记、实用教程与个人经历。"
+  translation: "{{ .Site }}分享 AI 工具实测、VPS 运维、Linux 排错、RSS 与自托管应用的使用记录，包含部署步骤、遇到的问题和解决过程，也记录个人学习与生活经历。"
 - id: homePageDescription
-  translation: "继续浏览{{ .Site }}第 {{ .Number }} 页的技术笔记、实用教程与个人经历。"
+  translation: "{{ .Site }}文章列表第 {{ .Number }} 页，收录 {{ .From }} 至 {{ .To }} 发布的 {{ .Count }} 篇笔记与随笔。可阅读各篇摘要、按主题标签寻找相关文章，或通过年份归档继续浏览。"
 - id: archiveDescription
-  translation: "按年份浏览{{ .Site }}收录的全部 {{ .Count }} 篇文章，内容涵盖技术、学习与个人经历。"
+  translation: "按年份浏览{{ .Site }}的全部 {{ .Count }} 篇文章，查找 AI 工具体验、VPS 运维、Linux 排错、RSS 与自托管教程，以及个人学习和生活随笔；每年附有主题标签，便于回顾相关记录。"
 - id: taxonomyDescription
-  translation: "浏览{{ .Site }}的全部 {{ .Count }} 个主题标签，查找技术、学习与生活相关文章。"
+  translation: "通过{{ .Site }}的 {{ .Count }} 个主题标签浏览文章，按 AI 工具、VPS、Linux、RSS 和自托管等话题查找实践记录。每个标签列出文章数量，点击后可查看对应文章及发布时间。"
 - id: termDescription
   translation: "浏览{{ .Site }}中标记为“{{ .Term }}”的 {{ .Count }} 篇文章及相关笔记、教程与经验。"
 - id: termDescriptionOne

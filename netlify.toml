@@ -1,5 +1,5 @@
 [build]
-  command = "hugo --gc --minify --panicOnWarning"
+  command = "hugo --gc --minify --panicOnWarning --printPathWarnings --printI18nWarnings && python3 scripts/check_legacy_redirects.py && python3 scripts/check_seo.py"
   publish = "public"
 
 [build.environment]

@@ -1,5 +1,5 @@
 ---
-title: "Claude 3.5 Haiku测评"
+title: "Claude 3.5 Haiku 实测：知识问答与推理表现"
 date: 2024-11-05T10:11:43+08:00
 lastmod: 2024-11-05
 tags: ['claude', 'anthropic']

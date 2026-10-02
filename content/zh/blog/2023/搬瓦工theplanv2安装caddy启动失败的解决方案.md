@@ -5,7 +5,7 @@ lastmod: 2023-06-29
 tags: ["vps"]
 slug: "solving-caddy-failure-on-bandwagonhost-theplanv2"
 translationKey: "solving-caddy-failure-on-bandwagonhost-theplanv2"
-summary: "说明如何调整服务配置，解决搬瓦工 The Plan V2 套餐上的 Caddy 启动失败。"
+summary: "搬瓦工 The Plan V2 上的 Caddy 因 localhost 被解析为错误 IP 而无法绑定管理端口；删除 /etc/hosts 中的错误映射后，服务成功启动。"
 showtoc: false
 ---
 

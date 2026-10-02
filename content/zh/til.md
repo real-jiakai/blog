@@ -1,6 +1,7 @@
 ---
 title: Today I Learned
 date: 2023-02-28
+summary: "顾佳凯的 Today I Learned 学习笔记入口，介绍公开记录知识的方式，连接博客、去中心化社交应用与个人论坛中的学习内容和日常发现。"
 ---
 
 ## 介绍

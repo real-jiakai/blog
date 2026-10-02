@@ -1,5 +1,5 @@
 ---
-title: "Manus体验"
+title: "Manus Basic 会员体验：PPT 生成与智能体可靠性"
 date: 2025-07-17T14:33:10+08:00
 lastmod: 2025-07-19
 tags: ["manus"]

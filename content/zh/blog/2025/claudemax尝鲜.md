@@ -1,5 +1,5 @@
 ---
-title: "Claude Max尝鲜"
+title: "Claude Max 5x 尝鲜：Claude for Chrome 浏览器自动化"
 date: 2025-09-28T10:41:55+08:00
 lastmod: 2025-10-09
 tags: ['claude', 'anthropic']

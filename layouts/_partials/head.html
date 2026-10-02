@@ -5,11 +5,13 @@
     {{/* 外部同步脚本在 CSS 前设置主题，既避免闪烁，也无需 CSP unsafe-inline。 */}}
     <script src="{{ partialCached "script-url.html" "theme-init" "theme-init" }}"></script>
     {{- $pageNumber := 1 -}}
+    {{- $homePagePosts := slice -}}
     {{- $canonical := .Permalink -}}
     {{- if .IsHome -}}
         {{/* 必须与 home.html 使用完全相同的集合，避免 Hugo 创建冲突的 paginator。 */}}
         {{- $homePaginator := .Paginate (where .Site.RegularPages "Type" "==" "blog") -}}
         {{- $pageNumber = $homePaginator.PageNumber -}}
+        {{- $homePagePosts = $homePaginator.Pages -}}
         {{- $canonical = $homePaginator.URL | absURL -}}
     {{- end -}}
     {{/* 标签页（layouts/tags/term.html）不分页，canonical 即 .Permalink；
@@ -23,10 +25,15 @@
     {{/* 博文标题不再重复附加站点名；工具页和列表页保留 Page | Site 的语境。 */}}
     {{- $title := print $pageTitle " | " .Site.Title -}}
     {{- if and .IsPage (eq .Type "blog") -}}{{- $title = $pageTitle -}}{{- end -}}
-    {{- if .IsHome -}}{{- $title = .Site.Title -}}{{- end -}}
+    {{- if .IsHome -}}
+        {{- $title = i18n "homeMetaTitle" (dict "Site" .Site.Title) -}}
+    {{- else if eq .Layout "archive" -}}
+        {{- $title = i18n "archiveMetaTitle" (dict "Site" .Site.Title "Count" (len (where .Site.RegularPages "Type" "==" "blog"))) -}}
+    {{- else if and (eq .Kind "taxonomy") (eq .Type "tags") -}}
+        {{- $title = i18n "tagsMetaTitle" (dict "Site" .Site.Title) -}}
+    {{- end -}}
     {{- if gt $pageNumber 1 -}}
-        {{- $pageLabel := i18n "pageNumber" (dict "Number" $pageNumber) -}}
-        {{- $title = printf "%s | %s" (cond .IsHome .Site.Title $title) $pageLabel -}}
+        {{- $title = i18n "homePageMetaTitle" (dict "Site" .Site.Title "Number" $pageNumber) -}}
     {{- end -}}
     <title>{{ $title }}</title>
     {{- $description := .Site.Params.description -}}
@@ -36,7 +43,10 @@
         {{- $description = .Params.summary -}}
     {{- else if .IsHome -}}
         {{- if gt $pageNumber 1 -}}
-            {{- $description = i18n "homePageDescription" (dict "Site" .Site.Title "Number" $pageNumber) -}}
+            {{/* 分页摘要说明该页实际文章的日期范围，避免每页只有页码不同的空泛文案。 */}}
+            {{- $newest := index $homePagePosts 0 -}}
+            {{- $oldest := index $homePagePosts (sub (len $homePagePosts) 1) -}}
+            {{- $description = i18n "homePageDescription" (dict "Site" .Site.Title "Number" $pageNumber "Count" (len $homePagePosts) "From" ($oldest.Date.Format "2006-01-02") "To" ($newest.Date.Format "2006-01-02")) -}}
         {{- else -}}
             {{- $description = i18n "homeDescription" (dict "Site" .Site.Title) -}}
         {{- end -}}

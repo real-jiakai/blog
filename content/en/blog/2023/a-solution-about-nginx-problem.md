@@ -5,7 +5,7 @@ lastmod: 2023-01-14
 tags: ['nginx']
 slug: "a-solution-about-nginx-problem"
 translationKey: "a-solution-about-nginx-problem"
-summary: "How to resolve the 'Failed to parse PID from file /usr/local/nginx/logs/nginx.pid: Invalid argument' service error after installing Nginx."
+summary: "A source-built Nginx service logged a PID parsing warning. Adding a short ExecStartPost delay resolved this case; the post also explains the systemd unit settings."
 showtoc: true
 ---
 
