@@ -16,8 +16,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     env:
-      HUGO_VERSION: "0.164.0"
-      HUGO_ARCHIVE_SHA256: "fea17b8c076f950bb2e9f9486667bdaa29422883888d509d63931c73e8a9b3a4"
+      HUGO_VERSION: "0.167.0"
+      HUGO_ARCHIVE_SHA256: "0163f5c3deddac1f494a1629ddc40c65d18de9d5794facd98f7f96ac2c7d8957"
       HUGO_ENV: production
       HUGO_PARAMS_ENABLEANALYTICS: "true"
     steps:
@@ -28,6 +28,13 @@ jobs:
           # PR 触发的构建会执行来自该 checkout 的 Hugo 模板（layouts/ 属于可执行
           # 代码），不落盘凭证以免恶意 PR 模板读取 job token
           persist-credentials: false
+
+      - name: Set up the same Node.js LTS as Netlify
+        uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          # 无 package.json/lockfile；这里只固定类型检查器的运行时。
+          package-manager-cache: false
 
       - name: Type-check first-party TypeScript
         # esbuild（js.Build）只做类型擦除，不做类型检查；这里是唯一的类型闸门。

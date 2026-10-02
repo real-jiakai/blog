@@ -9,7 +9,8 @@ Plain Hugo static site — no package.json, no Node toolchain; first-party
 scripts are TypeScript compiled by Hugo's embedded esbuild. Bilingual:
 Chinese is the default language at the site root, English lives under
 /en/. Built and hosted on Netlify (`hugo --gc --minify`, publish dir
-`public/`, Hugo pinned to 0.164.0 in netlify.toml). The theme is
+`public/`, Hugo pinned to 0.167.0 in netlify.toml). Node.js LTS is pinned
+to 24.21.0 in .nvmrc for Netlify and CI. The theme is
 Hugo-Theme-Simple, a git submodule at themes/hugo-theme-simple (not
 vendored), heavily overridden by repo-level layouts/.
 
@@ -19,6 +20,8 @@ vendored), heavily overridden by repo-level layouts/.
   formats, markup; theme is mounted via `module.imports` (see Gotchas)
 - netlify.toml — build command, HUGO_VERSION, security headers (CSP),
   per-language 404 redirects
+- .nvmrc — shared Node.js LTS version for Netlify and CI; update it
+  when upgrading Node, without introducing a package.json for the Hugo site
 - content/zh/, content/en/ — mirrored trees: blog/<year>/*.md posts,
   blog/_index.md (archive page + cascade), about.md, til.md
 - archetypes/blog.md — front matter template for new posts
@@ -53,7 +56,7 @@ vendored), heavily overridden by repo-level layouts/.
 
 ## Commands
 
-No package.json or Makefile; Hugo CLI only (Netlify uses 0.164.0):
+No package.json or Makefile; Hugo CLI builds the site (Netlify uses 0.167.0):
 
 - `git submodule update --init` — fetch the theme (required once)
 - `hugo server` — local dev at http://localhost:1313

@@ -3,7 +3,8 @@
   publish = "public"
 
 [build.environment]
-  HUGO_VERSION = "0.164.0"
+  # Node.js LTS 由根目录 .nvmrc 固定；Netlify 与 CI 读取同一个版本。
+  HUGO_VERSION = "0.167.0"
 
 # Netlify Image CDN 仅允许代理本站文章实际使用的远程图床。
 [images]
