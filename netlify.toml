@@ -155,6 +155,50 @@
   to = "/en/tags/android/"
   status = 301
 
+# Search Console 仍在抓取旧语言切换器产生的标签路径。
+# 按 data/tag_translations.yaml 保留请求语言，直接跳到当前对应标签；中文路径需 URL 编码。
+[[redirects]]
+  from = "/en/tags/%E6%95%88%E7%8E%87/"
+  to = "/en/tags/productivity/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/tags/%E6%B8%B8%E6%88%8F/"
+  to = "/en/tags/gaming/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/tags/%E8%87%AA%E6%89%98%E7%AE%A1/"
+  to = "/en/tags/self-hosting/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/tags/productivity/"
+  to = "/tags/%E6%95%88%E7%8E%87/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/tags/doubao/"
+  to = "/tags/%E8%B1%86%E5%8C%85/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/tags/%E5%89%8D%E7%AB%AF/"
+  to = "/en/tags/frontend/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/tags/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/"
+  to = "/en/tags/reverse-proxy/"
+  status = 301
+  force = true
+
 # 标签页已不再分页（layouts/tags/term.html 一页列出全部文章），
 # 曾被收录的 /tags/<tag>/page/N/ 地址 301 回标签首页而不是 404。
 [[redirects]]
@@ -200,6 +244,25 @@
 [[redirects]]
   from = "/en/2023/01/the-execution-process-ls--list.md"
   to = "/en/2023/01/the-execution-process-ls-list.md"
+  status = 301
+  force = true
+
+# 2026-07-01（fb36c9c）迁到公开文件服务器的附件；保留原文档链接，不重定向到博客首页。
+[[redirects]]
+  from = "/document/github-email.pdf"
+  to = "https://storage.gujiakai.top/documents/github-email.pdf"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/document/2022-09-27-newsletter.html"
+  to = "https://storage.gujiakai.top/documents/2022-09-27-newsletter.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/document/2025-04-17-chatgpt-o3-image-thinking-demo.html"
+  to = "https://storage.gujiakai.top/documents/2025-04-17-chatgpt-o3-image-thinking-demo.html"
   status = 301
   force = true
 
