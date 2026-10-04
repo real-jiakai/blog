@@ -2,8 +2,12 @@
   command = "hugo --gc --minify --panicOnWarning --printPathWarnings --printI18nWarnings && python3 scripts/check_legacy_redirects.py && python3 scripts/check_seo.py"
   publish = "public"
 
+# Netlify 的构建并不调用 Node（TypeScript 由 Hugo 内置的 esbuild 编译）；根目录 .nvmrc
+# 固定的 Node.js LTS 只是让 Netlify 与 CI（tsc 类型检查）读取同一个版本。
 [build.environment]
-  # Node.js LTS 由根目录 .nvmrc 固定；Netlify 与 CI 读取同一个版本。
+  # 升级 Hugo 时要同步改：这里；.github/workflows/hugo-ci.yml 的 HUGO_VERSION 和
+  # HUGO_ARCHIVE_SHA256；README.md 的徽章；AGENTS.md 里的两处版本号；以及仓库之外、
+  # VPS 上生成搜索索引用的那份 Hugo。
   HUGO_VERSION = "0.167.0"
 
 # Netlify Image CDN 仅允许代理本站文章实际使用的远程图床。
@@ -150,49 +154,50 @@
   to = "/en/tags/android/"
   status = 301
 
-# Search Console 仍在抓取旧语言切换器产生的标签路径。
+# 旧语言切换器（2026-01 至 2026-06）直接改路径前缀，给中英文名称不同的 16 对标签造出过
+# 32 个从未真实存在的地址。这里只处理 Search Console 报出的那几个，以及目标标签页可索引的
+# /tags/self-hosting/；其余返回 404 即可（对应的目标都是 noindex 的单篇标签页）。
 # 按 data/tag_translations.yaml 保留请求语言，直接跳到当前对应标签；中文路径需 URL 编码。
+# 不加 force：源路径没有真实文件时规则照样生效，将来若真的有了同名标签页则自动让位。
 [[redirects]]
   from = "/en/tags/%E6%95%88%E7%8E%87/"
   to = "/en/tags/productivity/"
   status = 301
-  force = true
 
 [[redirects]]
   from = "/en/tags/%E6%B8%B8%E6%88%8F/"
   to = "/en/tags/gaming/"
   status = 301
-  force = true
 
 [[redirects]]
   from = "/en/tags/%E8%87%AA%E6%89%98%E7%AE%A1/"
   to = "/en/tags/self-hosting/"
   status = 301
-  force = true
 
 [[redirects]]
   from = "/tags/productivity/"
   to = "/tags/%E6%95%88%E7%8E%87/"
   status = 301
-  force = true
 
 [[redirects]]
   from = "/tags/doubao/"
   to = "/tags/%E8%B1%86%E5%8C%85/"
   status = 301
-  force = true
+
+[[redirects]]
+  from = "/tags/self-hosting/"
+  to = "/tags/%E8%87%AA%E6%89%98%E7%AE%A1/"
+  status = 301
 
 [[redirects]]
   from = "/en/tags/%E5%89%8D%E7%AB%AF/"
   to = "/en/tags/frontend/"
   status = 301
-  force = true
 
 [[redirects]]
   from = "/en/tags/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/"
   to = "/en/tags/reverse-proxy/"
   status = 301
-  force = true
 
 # 标签页已不再分页（layouts/tags/term.html 一页列出全部文章），
 # 曾被收录的 /tags/<tag>/page/N/ 地址 301 回标签首页而不是 404。

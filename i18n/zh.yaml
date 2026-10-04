@@ -84,6 +84,10 @@
   translation: "{{ .Site }}分享 AI 工具实测、VPS 运维、Linux 排错、RSS 与自托管应用的使用记录，包含部署步骤、遇到的问题和解决过程，也记录个人学习与生活经历。"
 - id: homePageDescription
   translation: "{{ .Site }}文章列表第 {{ .Number }} 页，收录 {{ .From }} 至 {{ .To }} 发布的 {{ .Count }} 篇笔记与随笔。可阅读各篇摘要、按主题标签寻找相关文章，或通过年份归档继续浏览。"
+- id: homePageDescriptionOne
+  translation: "{{ .Site }}文章列表第 {{ .Number }} 页，收录 {{ .Date }} 发布的 1 篇笔记。可阅读摘要、按主题标签寻找相关文章，或通过年份归档继续浏览。"
+- id: homePageDescriptionSameDay
+  translation: "{{ .Site }}文章列表第 {{ .Number }} 页，收录 {{ .Date }} 发布的 {{ .Count }} 篇笔记与随笔。可阅读各篇摘要、按主题标签寻找相关文章，或通过年份归档继续浏览。"
 - id: archiveDescription
   translation: "按年份浏览{{ .Site }}的全部 {{ .Count }} 篇文章，查找 AI 工具体验、VPS 运维、Linux 排错、RSS 与自托管教程，以及个人学习和生活随笔；每年附有主题标签，便于回顾相关记录。"
 - id: taxonomyDescription

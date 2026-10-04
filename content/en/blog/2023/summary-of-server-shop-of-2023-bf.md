@@ -5,7 +5,7 @@ lastmod: 2023-11-30
 tags: ['black-friday']
 slug: "summary-of-server-shop-of-2023-bf"
 translationKey: "summary-of-server-shop-of-2023-bf"
-summary: "Details 2023 Black Friday server purchases from ColoCrossing, RackNerd, CloudCone, and others, including prices, routes, and which deals were kept."
+summary: "2023 Black Friday VPS and dedicated-server buys from ColoCrossing, InterServer, DMIT and others: prices, disk IO, and a refund dispute with Servarica."
 showtoc: false
 ---
 

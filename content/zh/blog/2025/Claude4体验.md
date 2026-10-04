@@ -5,7 +5,7 @@ lastmod: 2025-07-23
 tags: ["claude","anthropic"]
 slug: "claude-4-experience"
 translationKey: "claude-4-experience"
-summary: "梳理Claude Opus 4与Sonnet 4的工具调用、API和套餐变化，实测Claude Code改进贪吃熊游戏，并补充Max会员搭配Opus的使用感受。"
+summary: "梳理Claude Opus 4与Sonnet 4的工具调用、新API、定价与开放层级，实测Claude Code改进贪吃熊游戏，并补充Max会员搭配Opus的使用感受。"
 showtoc: true
 ---
 

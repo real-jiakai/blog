@@ -5,12 +5,14 @@
     {{/* 外部同步脚本在 CSS 前设置主题，既避免闪烁，也无需 CSP unsafe-inline。 */}}
     <script src="{{ partialCached "script-url.html" "theme-init" "theme-init" }}"></script>
     {{- $pageNumber := 1 -}}
+    {{- $homePagerSize := 0 -}}
     {{- $homePagePosts := slice -}}
     {{- $canonical := .Permalink -}}
     {{- if .IsHome -}}
         {{/* 必须与 home.html 使用完全相同的集合，避免 Hugo 创建冲突的 paginator。 */}}
         {{- $homePaginator := .Paginate (where .Site.RegularPages "Type" "==" "blog") -}}
         {{- $pageNumber = $homePaginator.PageNumber -}}
+        {{- $homePagerSize = $homePaginator.PagerSize -}}
         {{- $homePagePosts = $homePaginator.Pages -}}
         {{- $canonical = $homePaginator.URL | absURL -}}
     {{- end -}}
@@ -46,7 +48,15 @@
             {{/* 分页摘要说明该页实际文章的日期范围，避免每页只有页码不同的空泛文案。 */}}
             {{- $newest := index $homePagePosts 0 -}}
             {{- $oldest := index $homePagePosts (sub (len $homePagePosts) 1) -}}
-            {{- $description = i18n "homePageDescription" (dict "Site" .Site.Title "Number" $pageNumber "Count" (len $homePagePosts) "From" ($oldest.Date.Format "2006-01-02") "To" ($newest.Date.Format "2006-01-02")) -}}
+            {{- $from := $oldest.Date.Format "2006-01-02" -}}
+            {{- $to := $newest.Date.Format "2006-01-02" -}}
+            {{- if eq (len $homePagePosts) 1 -}}
+                {{- $description = i18n "homePageDescriptionOne" (dict "Site" .Site.Title "Number" $pageNumber "Date" $to) -}}
+            {{- else if eq $from $to -}}
+                {{- $description = i18n "homePageDescriptionSameDay" (dict "Site" .Site.Title "Number" $pageNumber "Count" (len $homePagePosts) "Date" $to) -}}
+            {{- else -}}
+                {{- $description = i18n "homePageDescription" (dict "Site" .Site.Title "Number" $pageNumber "Count" (len $homePagePosts) "From" $from "To" $to) -}}
+            {{- end -}}
         {{- else -}}
             {{- $description = i18n "homeDescription" (dict "Site" .Site.Title) -}}
         {{- end -}}
@@ -77,11 +87,17 @@
     <link rel="canonical" href="{{ $canonical }}" />
     {{/* hreflang：博文通过 translationKey 与译文关联，告知搜索引擎双语版本互为翻译。
          标签名不同的双语标签通过 data/tag_translations.yaml 关联；x-default 指向中文版本。
-         noindex 的单篇标签页不输出 hreflang，避免 alternate 指向不可索引页面。 */}}
+         alternate 不能指向不可索引或不存在的页面，以下情况整组都不输出：
+         任一语言版本是 noindex（单篇标签页、front matter 的 noindex）；首页分页在另一
+         语言里没有同页码（两种语言的文章数落在不同的页数上，例如先发了中文、译文未补）。 */}}
     {{- $translatedPagesIndexable := true -}}
-    {{- if eq .Kind "term" -}}
-        {{- range .AllTranslations -}}
-            {{- if lt (len .Pages) 2 -}}{{- $translatedPagesIndexable = false -}}{{- end -}}
+    {{- range .AllTranslations -}}
+        {{- if .Params.noindex -}}{{- $translatedPagesIndexable = false -}}{{- end -}}
+        {{- if and (eq .Kind "term") (lt (len .Pages) 2) -}}{{- $translatedPagesIndexable = false -}}{{- end -}}
+        {{- if and $.IsHome (gt $pageNumber 1) -}}
+            {{- $translatedPosts := len (where .Site.RegularPages "Type" "==" "blog") -}}
+            {{- $translatedLastPage := div (add $translatedPosts (sub $homePagerSize 1)) $homePagerSize -}}
+            {{- if lt $translatedLastPage $pageNumber -}}{{- $translatedPagesIndexable = false -}}{{- end -}}
         {{- end -}}
     {{- end -}}
     {{- if and .IsTranslated $translatedPagesIndexable }}
@@ -99,7 +115,7 @@
     {{- end }}
     <link rel="alternate" hreflang="x-default" href="{{ $defaultURL }}" />
     {{- end }}
-    {{- else if not $isThinTerm -}}
+    {{- else if and (not $isThinTerm) (not .Params.noindex) -}}
     {{- $tagAlternates := partial "tag-alternates.html" . -}}
     {{- range $tagAlternates }}
     <link rel="alternate" hreflang="{{ .languageCode }}" href="{{ .url }}" />

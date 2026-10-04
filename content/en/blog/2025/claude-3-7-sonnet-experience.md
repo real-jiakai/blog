@@ -5,7 +5,7 @@ lastmod: 2025-07-23
 tags: ['claude','anthropic']
 slug: "claude-3-7-sonnet-experience"
 translationKey: "claude-3-7-sonnet-experience"
-summary: "Tracks Claude 3.7 Sonnet from its hybrid-reasoning launch to Claude Code's rise, with tests of coding, web search, Chinese writing, and quota limits."
+summary: "Claude 3.7 Sonnet hands-on: Normal vs Extended modes, code comments, mini-games and the GitHub integration, plus later notes on Claude Code and web search."
 showtoc: true
 ---
 

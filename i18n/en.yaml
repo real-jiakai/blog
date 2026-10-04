@@ -84,10 +84,14 @@
   translation: "Hands-on notes from {{ .Site }} on AI tools, VPS hosting, Linux troubleshooting, RSS and self-hosted apps, with practical fixes and personal reflections."
 - id: homePageDescription
   translation: "Page {{ .Number }} of {{ .Site }}: {{ .Count }} posts published from {{ .From }} to {{ .To }}. Read summaries, follow topic tags, or explore the archive by year."
+- id: homePageDescriptionOne
+  translation: "Page {{ .Number }} of {{ .Site }}: 1 post published on {{ .Date }}. Read the summary, follow topic tags, or explore the archive by year."
+- id: homePageDescriptionSameDay
+  translation: "Page {{ .Number }} of {{ .Site }}: {{ .Count }} posts published on {{ .Date }}. Read summaries, follow topic tags, or explore the archive by year."
 - id: archiveDescription
   translation: "Browse all {{ .Count }} posts from {{ .Site }} by year, covering AI tools, VPS hosting, Linux fixes, RSS, self-hosting and personal reflections, with topic tags."
 - id: taxonomyDescription
-  translation: "Explore {{ .Count }} topic tags on {{ .Site }}, from AI tools and VPS hosting to Linux, RSS and self-hosting. Each tag shows its post count and links to related articles."
+  translation: "Explore {{ .Count }} topic tags on {{ .Site }}, from AI tools and VPS hosting to Linux, RSS and self-hosting, each with its post count and related articles."
 - id: termDescription
   translation: "Browse {{ .Count }} posts tagged “{{ .Term }}” on {{ .Site }}, with related notes, guides, and experiences."
 - id: termDescriptionOne

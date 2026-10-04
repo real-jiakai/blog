@@ -5,7 +5,7 @@ lastmod: 2023-09-16
 tags: ['git','github']
 slug: "fix-git-push-fatal-error-did-not-receive-expected-object"
 translationKey: "fix-git-push-fatal-error-did-not-receive-expected-object"
-summary: "Pushing a shallow clone of running_page to a new repository failed with an expected-object error; this case records starting fresh Git history while keeping the original repository."
+summary: "Pushing a shallow clone of running_page to a new repo failed with 'did not receive expected object'; deleting .git and starting a fresh history fixed it."
 showtoc: true
 ---
 

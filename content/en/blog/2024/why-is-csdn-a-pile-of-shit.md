@@ -5,7 +5,7 @@ lastmod: 2024-09-16
 tags: ['csdn']
 slug: "why-is-csdn-a-pile-of-shit"
 translationKey: "why-is-csdn-a-pile-of-shit"
-summary: "After closing a CSDN account, old study notes remained and some became VIP-only. Contacting support removed the restrictions, prompting a rethink of platform control."
+summary: "After I deactivated my CSDN account, my old study notes stayed online and some went VIP-only; customer service lifted the paywall. Who controls your writing?"
 showtoc: true
 ---
 

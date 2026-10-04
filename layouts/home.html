@@ -1,11 +1,8 @@
 {{ define "main" }}
 {{ $paginator := .Paginate (where .Site.RegularPages "Type" "==" "blog") }}
 <h1 class="visually-hidden">
-  {{- if gt $paginator.PageNumber 1 -}}
-    {{- i18n "homePageMetaTitle" (dict "Site" .Site.Title "Number" $paginator.PageNumber) -}}
-  {{- else -}}
-    {{- i18n "homeMetaTitle" (dict "Site" .Site.Title) -}}
-  {{- end -}}
+  {{- .Site.Title -}}
+  {{- if gt $paginator.PageNumber 1 }} — {{ i18n "pageNumber" (dict "Number" $paginator.PageNumber) }}{{ end -}}
 </h1>
 
 <section class="card-deck post-list" aria-label="{{ i18n "recentPosts" }}">
@@ -31,9 +28,14 @@
         <span class="post-meta-item">
           {{ partial "icon.html" "tag" }}
           <span>
+            {{- /* 只有一篇文章的标签页是 noindex，上面也只列这一篇：不值得链接过去 */ -}}
             {{- range $index, $tag := . -}}
               {{- if gt $index 0 }}, {{ end -}}
+              {{- if ge (len $tag.Pages) 2 -}}
               <a href="{{ $tag.RelPermalink }}">#{{ $tag.LinkTitle }}</a>
+              {{- else -}}
+              #{{ $tag.LinkTitle }}
+              {{- end -}}
             {{- end -}}
           </span>
         </span>

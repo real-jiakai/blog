@@ -1,5 +1,5 @@
 ---
-title: "Perplexity Max 一月体验：模型委员会与 Computer"
+title: "Perplexity Max 尝鲜：Model Council 与 Computer"
 date: 2026-06-08T18:05:58+08:00
 lastmod: 2026-06-08
 tags: ['perplexity']

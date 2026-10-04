@@ -5,7 +5,7 @@ lastmod: 2023-10-05
 tags: ['apple']
 slug: "experience-icloud-plus-private-relay"
 translationKey: "experience-icloud-plus-private-relay"
-summary: "用 Clash for Windows 的 TUN 模式共享 Windows 热点，让 Mac 开启 iCloud+ Private Relay，并对比 Safari 与其他浏览器的出口表现。"
+summary: "用 Clash for Windows 的 TUN 模式共享 Windows 热点，让 Mac 开启 iCloud+ Private Relay，并记录其出口为动态 Cloudflare 节点的实际体验。"
 showtoc: true
 ---
 
