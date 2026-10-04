@@ -16,8 +16,38 @@
   {{- $channelTitle = printf "%s%s%s" .Title (i18n "rssTitleSeparator") .Site.Title -}}
   {{- $channelDescription = i18n "rssFeedDescriptionSection" (dict "Section" .Title "Site" .Site.Title) -}}
 {{- end -}}
+{{- /* 浏览器直接打开 feed 时的预览页分两层，都不依赖 XSLT（Chrome 158 起移除，
+       2026-11-17 进稳定版，届时 text/xsl 处理指令只会换来一条警告横幅）：
+       1. text/css 处理指令直接给 RSS 元素上样式 —— 无 JS 时的兜底，只有标题和摘要；
+       2. <channel> 末尾的 XHTML <script> 把文档重建成正式页面，每篇文章可展开全文。
+       两个 XHTML 扩展元素（<meta>、<script>）的位置都有讲究，不要挪动：
+       - 必须在 <channel> 内。.NET 的 SyndicationFeed 要求 <rss> 下只有 <channel> 一个子元素，
+         放到 <channel> 前面或后面，它会拒绝整个 feed；<channel> 内的未知扩展元素则被容忍。
+       - <script> 必须排在最后一个 <item> 之后。按 HTML 规则读 feed 的消费者不认 XML 的自闭合，
+         会把 <script> 之后的内容全部当成脚本文本吞掉。
+       - <meta name="viewport"> 要排在 <item> 之前：脚本接管前，手机上的兜底视图靠它才不会
+         按 980px 桌面宽度缩小显示；<meta> 在 HTML 里是空元素，放前面没有上述吞内容的问题。 */ -}}
+{{- $isTermList := eq .Kind "taxonomy" -}}
+{{- $previewLabels := dict
+    "intro" (i18n "feedPreviewIntro")
+    "intro-full" (i18n "feedPreviewIntroFull")
+    "what-is" (i18n "feedPreviewWhatIs")
+    "readers" (i18n "feedPreviewReaders")
+    "visit-site" (i18n "feedPreviewVisitSite")
+    "url-label" (i18n "feedPreviewURLLabel")
+    "read-full" (i18n "feedPreviewReadFull")
+    "expand-all" (i18n "feedPreviewExpandAll")
+    "collapse-all" (i18n "feedPreviewCollapseAll")
+    "count" (i18n (cond $isTermList "feedPreviewCountTerms" "feedPreviewCount") (dict "Count" (len $pages)))
+-}}
+{{- $previewAttributes := "" -}}
+{{- range $name, $label := $previewLabels -}}
+  {{- $previewAttributes = printf "%s data-%s=\"%s\"" $previewAttributes $name ($label | transform.XMLEscape) -}}
+{{- end -}}
 {{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
-{{ printf "<?xml-stylesheet type=\"text/xsl\" href=\"/xslt/simple-rss.%s.xslt\" ?>" .Site.Language.Lang | safeHTML }}
+{{ range slice "/css/water.min.css" "/css/syntax.css" "/css/feed.css" -}}
+{{ printf "<?xml-stylesheet type=\"text/css\" href=\"%s\"?>" (partialCached "asset-url.html" . .) | safeHTML }}
+{{ end -}}
 <rss version="2.0"
      xmlns:atom="http://www.w3.org/2005/Atom"
      xmlns:blog="https://blog.gujiakai.top/ns/rss">
@@ -31,18 +61,20 @@
     <lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
     {{- with .OutputFormats.Get "RSS" -}}
     {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
-    {{- end -}}
+    {{- end }}
+    {{ printf "<meta xmlns=\"http://www.w3.org/1999/xhtml\" name=\"viewport\" content=\"width=device-width, initial-scale=1\" />" | safeHTML }}
     {{ range $pages }}
     <item>
       <title>{{ .Title | plainify | htmlUnescape | transform.XMLEscape | safeHTML }}</title>
       <link>{{ .Permalink | transform.XMLEscape | safeHTML }}</link>
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
       <guid>{{ .Permalink | transform.XMLEscape | safeHTML }}</guid>
-      {{/* 浏览器 XSLT 只渲染纯文本摘要，避免折叠条目仍实例化全文中的数百张图片。 */}}
+      {{/* 预览页在条目下先显示这段纯文本摘要。 */}}
       <blog:summary>{{ .Summary | plainify | htmlUnescape | truncate 320 | transform.XMLEscape | safeHTML }}</blog:summary>
-      {{/* RSS 阅读器仍可获得完整正文。 */}}
+      {{/* 完整正文：RSS 阅读器直接使用，预览页在读者展开条目时才把它解析成 DOM。 */}}
       <description>{{- .Content | html -}}</description>
     </item>
     {{ end }}
+    {{ printf "<script xmlns=\"http://www.w3.org/1999/xhtml\" src=\"%s\"%s></script>" (partialCached "script-url.html" "feed-view" "feed-view") $previewAttributes | safeHTML }}
   </channel>
 </rss>

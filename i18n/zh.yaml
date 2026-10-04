@@ -136,3 +136,25 @@
   translation: "关闭"
 - id: searchTrigger
   translation: "搜索"
+- id: feedPreviewIntro
+  translation: "这是本站的 RSS 订阅源，把下面的地址复制到 RSS 阅读器即可订阅。"
+- id: feedPreviewIntroFull
+  translation: "也可以直接在这里展开文章，阅读全文。"
+- id: feedPreviewWhatIs
+  translation: "什么是 RSS 订阅源？"
+- id: feedPreviewReaders
+  translation: "有哪些 RSS 阅读器？"
+- id: feedPreviewVisitSite
+  translation: "访问网站"
+- id: feedPreviewURLLabel
+  translation: "订阅源网址"
+- id: feedPreviewReadFull
+  translation: "展开全文"
+- id: feedPreviewExpandAll
+  translation: "全部展开"
+- id: feedPreviewCollapseAll
+  translation: "全部折叠"
+- id: feedPreviewCount
+  translation: "本订阅源收录最新的 {{ .Count }} 篇文章。"
+- id: feedPreviewCountTerms
+  translation: "本订阅源列出最近更新的 {{ .Count }} 个标签。"

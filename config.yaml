@@ -10,6 +10,8 @@ baseURL: https://blog.gujiakai.top
 # 写成 "!xxx"（无空格）会被当作普通 glob，结果是整个挂载点什么都不包含。
 # 声明 mounts 会关闭主题的默认挂载，因此 i18n 必须显式挂载：主题模板（如标签页的
 # 分页 partial）依赖主题 i18n 键，缺失时会静默渲染成空字符串。
+# xslt/** 同理要排除：feed 的浏览器预览已改用 CSS + assets/ts/feed-view.ts（见 layouts/rss.xml），
+# 本站不再有同名文件遮蔽，主题自带的两份 simple-rss.*.xslt 不排除就会被原样发布到 /xslt/。
 module:
   imports:
     - path: hugo-theme-simple
@@ -24,12 +26,14 @@ module:
           target: static
           files:
             - "! js/**"
+            - "! xslt/**"
 # 第三方服务
 services:
   # google分析
   googleAnalytics:
     ID: "G-2N2G7YVYD1"
-  # RSS 仅保留最新 20 篇（此前全量 ~80 篇全文，单个 feed 超 1MB）
+  # RSS 仅保留最新 20 篇全文：单个 feed 约 1.3 MB（brotli 后约 113 KB），其中一半以上
+  # 是文章图片的 srcset；全量 ~80 篇会再大四倍。
   rss:
     limit: 20
 # 永久链接
@@ -192,6 +196,13 @@ params:
     # 自动生成的那个 `*` 范围的 "Default Search API Key"。
     apiKey: "752323ffef493b6d4bbf6b21fce2e62ffd62be19126bed5eeb95f11e42754e50"
     indexPrefix: "blog_"
+
+# 不压缩 XML 输出（feed 与 sitemap）：tdewolff 的 XML minifier 会无条件合并文本节点里的
+# 连续空白，feed <description> 中代码块的行首缩进全被压成一个空格（YAML、docker-compose
+# 示例因此在所有 RSS 阅读器里失去层级），它的 keepWhitespace 选项对此无效。
+# 代价可以忽略：首页 feed 压缩传输后只多约 250 字节。
+minify:
+  disableXML: true
 
 # markup设置
 markup:

@@ -136,3 +136,25 @@
   translation: "to close"
 - id: searchTrigger
   translation: "Search"
+- id: feedPreviewIntro
+  translation: "This is an RSS feed of this site. Copy the address below into an RSS reader to subscribe."
+- id: feedPreviewIntroFull
+  translation: "You can also expand any post right here to read it in full."
+- id: feedPreviewWhatIs
+  translation: "What is an RSS feed?"
+- id: feedPreviewReaders
+  translation: "Which RSS readers are there?"
+- id: feedPreviewVisitSite
+  translation: "Visit the website"
+- id: feedPreviewURLLabel
+  translation: "Feed URL"
+- id: feedPreviewReadFull
+  translation: "Read the full post"
+- id: feedPreviewExpandAll
+  translation: "Expand all"
+- id: feedPreviewCollapseAll
+  translation: "Collapse all"
+- id: feedPreviewCount
+  translation: "Most recent posts in this feed: {{ .Count }}"
+- id: feedPreviewCountTerms
+  translation: "Most recently updated tags in this feed: {{ .Count }}"

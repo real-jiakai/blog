@@ -32,15 +32,16 @@ vendored), heavily overridden by repo-level layouts/.
 - assets/ts/ — first-party TypeScript (no jQuery/lightbox2: theme-init
  + theme-toggle, site-controls, toc = TOC scrollspy, back-to-top,
  copy-code, image-viewer = native <dialog> lightbox, utterances-init,
- analytics, footer-year, search), compiled per-entry to
+ analytics, footer-year, search, feed-view = browser preview of the
+ RSS feeds), compiled per-entry to
  /js/<name>.<hash>.js by layouts/_partials/script-url.html
  (js.Build + fingerprint)
 - tsconfig.json — editor/type-check config only; the build ignores it
 - static/ — css/ (self-hosted bootstrap.min.css + custom.css +
  syntax.css, the latter shadowing the theme's copy — regenerate via
- `hugo gen chromastyles --style=github-dark`, never hand-edit), js/
- (only the vendored, patched emaction reactions bundle), xslt/
-  (styled RSS)
+ `hugo gen chromastyles --style=github-dark`, never hand-edit; plus
+ water.min.css + feed.css, used only by the RSS browser preview), js/
+ (only the vendored, patched emaction reactions bundle)
 - static/_redirects — exact permanent redirects for pre-March-2025
   `.html` URLs. Netlify reads these before netlify.toml; preserve this
   historical map and never replace it with a blanket `*.html` redirect.
@@ -145,7 +146,22 @@ No package.json or Makefile; Hugo CLI builds the site (Netlify uses 0.167.0):
  `capitalizeListTitles: false` keeps tag titles exactly as written in
  front matter (all lowercase here), so "csdn" no longer renders "Csdn";
  netlify.toml 301s the old /tags/<tag>/page/N/ URLs.
-- RSS: latest 20 posts only, styled via static/xslt.
+- RSS: latest 20 posts only, full text in `<description>`; XML output
+  is deliberately not minified (`minify.disableXML`), because the XML
+  minifier collapses code-block indentation inside the escaped HTML.
+  Opening a feed in a browser shows a preview page built without XSLT
+  (Chrome removes XSLT in 158, stable 2026-11-17): layouts/rss.xml
+  emits `text/css` xml-stylesheet instructions (water.min.css,
+  syntax.css, feed.css) that style the raw RSS elements as the no-JS
+  fallback, plus two XHTML-namespace elements inside `<channel>` — a
+  viewport `<meta>` before the items and, after the last `<item>`, a
+  `<script>` loading assets/ts/feed-view.ts, which rebuilds the
+  document with a collapsible full-text block per post (parsed only
+  when expanded). Do not move them: .NET SyndicationFeed rejects any
+  child of `<rss>` other than `<channel>`, and consumers that read
+  feeds with an HTML parser swallow everything after a `<script>`.
+  The feed is an XML document, so preview code must create elements
+  with createElementNS in the XHTML namespace.
 - llms.txt: generated at build time per language from
   layouts/home.llms.txt (→ /llms.txt and /en/llms.txt, LLMS output
   format on home). It lists every post with its front-matter summary —
@@ -187,7 +203,8 @@ No package.json or Makefile; Hugo CLI builds the site (Netlify uses 0.167.0):
   of the `theme:` key, so the mounts' `files` setting can drop theme
   static files the site replaces or never uses (jquery + lightbox2,
   bootstrap bundle JS, theme copy-code.js/custom.js, lightbox chrome
-  images). Negated globs need the `! ` prefix — the space is required.
+  images, the theme XSLT feed stylesheets). Negated globs need the
+  `! ` prefix — the space is required.
   Declaring mounts disables the theme's default mounts, which is why
   i18n is mounted explicitly; css/style.css and images/favicon.ico
   intentionally come from the theme. Do not "simplify" back to
