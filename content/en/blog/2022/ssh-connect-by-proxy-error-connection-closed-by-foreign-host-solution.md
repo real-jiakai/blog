@@ -5,7 +5,7 @@ lastmod: 2022-10-06
 tags: ['linux']
 slug: ssh-connect-by-proxy-error-connection-closed-by-foreign-host-solution
 translationKey: "ssh-connect-by-proxy-error-connection-closed-by-foreign-host-solution"
-summary: "SSH over a commercial proxy failed while a self-hosted node worked. This case compares a jump server with changing the VPS SSH port from 22 to restore access."
+summary: "SSH via a commercial proxy failed with 'Connection closed by foreign host' while a self-hosted node worked; moving sshd off port 22 restored access."
 showtoc: true
 ---
 

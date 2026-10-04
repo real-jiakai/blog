@@ -5,7 +5,7 @@ lastmod: 2024-04-08
 tags: ["self-hosting"]
 slug: "fake-selfhost-lover"
 translationKey: "fake-selfhost-lover"
-summary: "Of more than 50 self-hosted services, fewer than 20 saw regular use. A reflection on unmet needs and why some SaaS tools still fit daily habits better."
+summary: "Of 50+ self-hosted services, fewer than 20 saw regular use: on deploying things I never really needed, and why some SaaS tools fit daily habits better."
 showtoc: true
 ---
 

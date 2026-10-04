@@ -5,7 +5,7 @@ lastmod: 2023-01-14
 tags: ['nginx']
 slug: "a-solution-about-nginx-problem"
 translationKey: "a-solution-about-nginx-problem"
-summary: "A source-built Nginx service logged a PID parsing warning. Adding a short ExecStartPost delay resolved this case; the post also explains the systemd unit settings."
+summary: "Source-built Nginx logged 'Failed to parse PID from file' under systemd; adding ExecStartPost=/bin/sleep 0.1 fixed it. Every unit setting is explained."
 showtoc: true
 ---
 

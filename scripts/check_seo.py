@@ -18,7 +18,8 @@ XHTML = "{http://www.w3.org/1999/xhtml}"
 
 def production_base_url():
     # Read this repository's single top-level YAML scalar without a YAML package.
-    values = re.findall(r"^baseURL:[ \t]*(.+)$", (ROOT / "config.yaml").read_text(), re.M)
+    values = re.findall(
+        r"^baseURL:[ \t]*(.+)$", (ROOT / "config.yaml").read_text(encoding="utf-8"), re.M)
     tokens = shlex.split(values[0], comments=True) if len(values) == 1 else []
     if len(tokens) != 1:
         raise ValueError("config.yaml must contain one top-level baseURL URL")
@@ -129,6 +130,10 @@ def check_seo(public_dir):
     pages = {}
     for file in sorted(public_dir.rglob("*.html")):
         relative = file.relative_to(public_dir).as_posix()
+        # HTML copied verbatim from static/ (a search engine verification file,
+        # a standalone demo) is not a Hugo page and carries no page metadata.
+        if (ROOT / "static" / relative).is_file():
+            continue
         path = relative[:-len("index.html")] if relative.endswith("/index.html") or relative == "index.html" else relative
         url = base_url + quote(path, safe="/-._~")
         page = Page(file, url)

@@ -5,7 +5,7 @@ lastmod: 2024-08-06
 tags: ["proton"]
 slug: "proton-family-plan-first-taste"
 translationKey: "proton-family-plan-first-taste"
-summary: "A 2024 Proton Family trial covering VPN connections, Mail Bridge with Thunderbird, and whether Pass and Drive fit an existing set of tools."
+summary: "A shared $48-a-year Proton Family seat in 2024: VPN connectivity, Mail Bridge with Thunderbird, and whether Pass and Drive fit my existing tools."
 showtoc: true
 ---
 

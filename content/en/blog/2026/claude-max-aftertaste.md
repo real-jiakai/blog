@@ -5,7 +5,7 @@ lastmod: 2026-01-08
 tags: ["claude", "anthropic"]
 slug: "claude-max-aftertaste"
 translationKey: "claude-max-aftertaste"
-summary: "Reassesses Claude Max 5x through thesis work, RAG debugging, diagram creation, data cleanup, VPS migration, and adding English to a Hugo blog."
+summary: "Back on Claude Max 5x for my thesis: Claude Code and Opus 4.5 for RAG debugging, diagrams, data cleanup, a VPS migration and a bilingual blog; quota trade-offs."
 showtoc: true
 ---
 

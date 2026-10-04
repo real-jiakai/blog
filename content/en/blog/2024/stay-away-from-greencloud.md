@@ -5,7 +5,7 @@ lastmod: 2024-10-22
 tags: ["vps"]
 slug: "stay-away-from-greencloud"
 translationKey: "stay-away-from-greencloud"
-summary: "A GreenCloud San Jose outage wiped VPS data, including a Flarum forum; persistent support requests secured a $100 refund and reinforced the need for backups."
+summary: "GreenCloud's San Jose node was hacked and my VPS data, including a Flarum forum, was lost; pestering support won a $100 PayPal refund. Keep backups."
 showtoc: true
 ---
 

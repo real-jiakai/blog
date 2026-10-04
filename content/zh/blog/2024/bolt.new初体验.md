@@ -1,5 +1,5 @@
 ---
-title: "用 bolt.new 制作 Markdown 树形目录生成器"
+title: "bolt.new 初体验：做一个 Markdown 树形目录生成器"
 date: 2024-10-10T16:11:35+08:00
 lastmod: 2024-10-10
 tags: ["ai", "前端"]

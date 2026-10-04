@@ -84,6 +84,10 @@
   translation: "{{ .Site }}分享 AI 工具实测、VPS 运维、Linux 排错、RSS 与自托管应用的使用记录，包含部署步骤、遇到的问题和解决过程，也记录个人学习与生活经历。"
 - id: homePageDescription
   translation: "{{ .Site }}文章列表第 {{ .Number }} 页，收录 {{ .From }} 至 {{ .To }} 发布的 {{ .Count }} 篇笔记与随笔。可阅读各篇摘要、按主题标签寻找相关文章，或通过年份归档继续浏览。"
+- id: homePageDescriptionOne
+  translation: "{{ .Site }}文章列表第 {{ .Number }} 页，收录 {{ .Date }} 发布的 1 篇笔记。可阅读摘要、按主题标签寻找相关文章，或通过年份归档继续浏览。"
+- id: homePageDescriptionSameDay
+  translation: "{{ .Site }}文章列表第 {{ .Number }} 页，收录 {{ .Date }} 发布的 {{ .Count }} 篇笔记与随笔。可阅读各篇摘要、按主题标签寻找相关文章，或通过年份归档继续浏览。"
 - id: archiveDescription
   translation: "按年份浏览{{ .Site }}的全部 {{ .Count }} 篇文章，查找 AI 工具体验、VPS 运维、Linux 排错、RSS 与自托管教程，以及个人学习和生活随笔；每年附有主题标签，便于回顾相关记录。"
 - id: taxonomyDescription
@@ -136,3 +140,25 @@
   translation: "关闭"
 - id: searchTrigger
   translation: "搜索"
+- id: feedPreviewIntro
+  translation: "这是本站的 RSS 订阅源，把下面的地址复制到 RSS 阅读器即可订阅。"
+- id: feedPreviewIntroFull
+  translation: "也可以直接在这里展开文章，阅读全文。"
+- id: feedPreviewWhatIs
+  translation: "什么是 RSS 订阅源？"
+- id: feedPreviewReaders
+  translation: "有哪些 RSS 阅读器？"
+- id: feedPreviewVisitSite
+  translation: "访问网站"
+- id: feedPreviewURLLabel
+  translation: "订阅源网址"
+- id: feedPreviewReadFull
+  translation: "展开全文"
+- id: feedPreviewExpandAll
+  translation: "全部展开"
+- id: feedPreviewCollapseAll
+  translation: "全部折叠"
+- id: feedPreviewCount
+  translation: "本订阅源收录最新的 {{ .Count }} 篇文章。"
+- id: feedPreviewCountTerms
+  translation: "本订阅源列出最近更新的 {{ .Count }} 个标签。"

@@ -5,7 +5,7 @@ lastmod: 2023-09-30
 tags: ['python','conda']
 slug: "conda-activation-error-unicode-decode-gbk"
 translationKey: "conda-activation-error-unicode-decode-gbk"
-summary: "Setting PYTHONUTF8=1 resolved a GBK decoding error during Conda activation in Windows Git Bash; changing the system locale instead caused a PicGo display problem."
+summary: "Conda activation in Windows Git Bash failed with 'gbk' codec can't decode byte; setting PYTHONUTF8=1 fixed it, while changing the system locale broke PicGo."
 showtoc: true
 ---
 

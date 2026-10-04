@@ -722,6 +722,22 @@ pre.chroma {
     color: var(--link-color);
 }
 
+/* Tag links in the meta row: muted like the date and reading time beside them.
+   Single-post tags are printed as plain text in the same row, so linked tags
+   keep a thin underline: without it nothing tells the two apart until hover. */
+.post-meta-item a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+    transition: color 0.15s ease-in-out;
+}
+
+.post-meta-item a:hover,
+.post-meta-item a:focus-visible {
+    color: var(--link-color);
+}
+
 /* ===========================================
    Table of Contents — Cursor 产品页左侧节导航（cursor.com/grok 同款）
    文章左栏的 sticky 树形目录：顶部是文章标题作根节点，下面一条细竖干，

@@ -26,7 +26,8 @@ class CanonicalParser(HTMLParser):
 def production_base_url():
     # The repository keeps baseURL as one top-level YAML scalar. Read that scalar
     # without adding a YAML dependency or duplicating the production domain in CI.
-    values = re.findall(r"^baseURL:[ \t]*(.+)$", (ROOT / "config.yaml").read_text(), re.M)
+    values = re.findall(
+        r"^baseURL:[ \t]*(.+)$", (ROOT / "config.yaml").read_text(encoding="utf-8"), re.M)
     if len(values) != 1:
         raise ValueError("config.yaml must contain one top-level baseURL scalar")
     tokens = shlex.split(values[0], comments=True)
@@ -66,7 +67,7 @@ def check_redirects(public_dir):
         raise ValueError(f"{published}: does not match static/_redirects; rebuild the site")
     base_url = production_base_url()
     rules = {}
-    for line_number, line in enumerate(source.read_text().splitlines(), 1):
+    for line_number, line in enumerate(source.read_text(encoding="utf-8").splitlines(), 1):
         line = line.split("#", 1)[0].strip()
         if not line:
             continue

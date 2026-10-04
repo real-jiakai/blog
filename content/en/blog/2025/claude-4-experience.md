@@ -5,7 +5,7 @@ lastmod: 2025-07-23
 tags: ["claude","anthropic"]
 slug: "claude-4-experience"
 translationKey: "claude-4-experience"
-summary: "Evaluates Claude 4 Opus and Sonnet across coding, writing, API access, and Claude Code, then revisits the product after Max-plan use."
+summary: "Reviews Claude Opus 4 and Sonnet 4: extended thinking with tool use, new API features, pricing and access tiers, hands-on Claude Code, and later Max-plan use."
 showtoc: true
 ---
 

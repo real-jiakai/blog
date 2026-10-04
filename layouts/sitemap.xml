@@ -3,13 +3,14 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   {{- range where .Pages "Sitemap.Disable" "ne" true }}
     {{- $excludeThinTerm := and (eq .Kind "term") (lt (len .Pages) 2) -}}
-    {{- if and .Permalink (not $excludeThinTerm) }}
+    {{- /* head.html 给 front matter 带 noindex 的页面输出 robots noindex，sitemap 必须同步排除 */ -}}
+    {{- if and .Permalink (not $excludeThinTerm) (not .Params.noindex) }}
   <url>
     <loc>{{ .Permalink | transform.XMLEscape | safeHTML }}</loc>
       {{- $sitemapLastmod := .Lastmod -}}
       {{- if and .IsPage (.Lastmod.Before .Date) -}}{{- $sitemapLastmod = .Date -}}{{- end -}}
       {{- if not $sitemapLastmod.IsZero }}
-    <lastmod>{{ $sitemapLastmod.Format "2006-01-02T15:04:05-07:00" }}</lastmod>
+    <lastmod>{{ $sitemapLastmod.Format "2006-01-02T15:04:05-07:00" | safeHTML }}</lastmod>
       {{- end }}
       {{- with .Sitemap.ChangeFreq }}
     <changefreq>{{ . }}</changefreq>
@@ -18,10 +19,8 @@
     <priority>{{ .Sitemap.Priority }}</priority>
       {{- end }}
       {{- $translatedPagesIndexable := true -}}
-      {{- if eq .Kind "term" -}}
-        {{- range .AllTranslations -}}
-          {{- if lt (len .Pages) 2 -}}{{- $translatedPagesIndexable = false -}}{{- end -}}
-        {{- end -}}
+      {{- range .AllTranslations -}}
+        {{- if or .Params.noindex (and (eq .Kind "term") (lt (len .Pages) 2)) -}}{{- $translatedPagesIndexable = false -}}{{- end -}}
       {{- end -}}
       {{- if and .IsTranslated $translatedPagesIndexable -}}
         {{- range .AllTranslations }}

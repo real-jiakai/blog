@@ -8,9 +8,11 @@ Personal blog of 顾佳凯 (Jiakai), served at https://blog.gujiakai.top.
 Plain Hugo static site — no package.json, no Node toolchain; first-party
 scripts are TypeScript compiled by Hugo's embedded esbuild. Bilingual:
 Chinese is the default language at the site root, English lives under
-/en/. Built and hosted on Netlify (`hugo --gc --minify`, publish dir
-`public/`, Hugo pinned to 0.167.0 in netlify.toml). Node.js LTS is pinned
-to 24.21.0 in .nvmrc for Netlify and CI. The theme is
+/en/. Built and hosted on Netlify (publish dir `public/`, Hugo pinned
+to 0.167.0 in netlify.toml; the build command there runs Hugo with
+`--panicOnWarning` and then two Python checks, see Commands). Node.js
+LTS is pinned to 24.21.0 in .nvmrc; only CI's type check uses it, the
+Netlify build never calls Node. The theme is
 Hugo-Theme-Simple, a git submodule at themes/hugo-theme-simple (not
 vendored), heavily overridden by repo-level layouts/.
 
@@ -32,27 +34,40 @@ vendored), heavily overridden by repo-level layouts/.
 - assets/ts/ — first-party TypeScript (no jQuery/lightbox2: theme-init
  + theme-toggle, site-controls, toc = TOC scrollspy, back-to-top,
  copy-code, image-viewer = native <dialog> lightbox, utterances-init,
- analytics, footer-year, search), compiled per-entry to
+ analytics, footer-year, search, feed-view = browser preview of the
+ RSS feeds), compiled per-entry to
  /js/<name>.<hash>.js by layouts/_partials/script-url.html
  (js.Build + fingerprint)
 - tsconfig.json — editor/type-check config only; the build ignores it
 - static/ — css/ (self-hosted bootstrap.min.css + custom.css +
  syntax.css, the latter shadowing the theme's copy — regenerate via
- `hugo gen chromastyles --style=github-dark`, never hand-edit), js/
- (only the vendored, patched emaction reactions bundle), xslt/
-  (styled RSS)
+ `hugo gen chromastyles --style=github-dark`, never hand-edit; plus
+ water.min.css + feed.css, used only by the RSS browser preview), js/
+ (only the vendored, patched emaction reactions bundle)
 - static/_redirects — exact permanent redirects for pre-March-2025
   `.html` URLs. Netlify reads these before netlify.toml; preserve this
   historical map and never replace it with a blanket `*.html` redirect.
 - scripts/check_legacy_redirects.py — standard-library Python check
-  that built redirect targets exist and match their canonical URLs.
-- scripts/check_seo.py — standard-library Python check for indexable
-  HTML metadata, one H1, canonical URLs, sitemaps, and reciprocal hreflang.
-  Both checks run in CI and in Netlify's production build before publishing.
+  that every static/_redirects target was built and is self-canonical.
+  It does not read netlify.toml: the `[[redirects]]` there are
+  unchecked, and nothing verifies that a rule points at the right page.
+- scripts/check_seo.py — standard-library Python check of the built
+  HTML (anything copied verbatim from static/, e.g. a search-engine
+  verification file, is ignored). For every indexable page: lang,
+  exactly one title / description / H1, title and description unique
+  within a language, self-referential canonical. Noindex pages and
+  alias stubs are not checked themselves; they only matter as targets:
+  every sitemap URL and every declared hreflang must point at an
+  existing, indexable page, with a return link and a matching
+  `<html lang>`. It does not notice a missing hreflang (mismatched
+  translationKey), pages absent from the sitemap, or robots.txt.
+  Both checks run in CI and in Netlify's production build before
+  publishing, so a failure is a failed deploy.
 - data/ — tag_translations.yaml (zh/en tag pairs for hreflang/switcher)
 - .github/workflows/hugo-ci.yml — CI check (checks out the theme
-  submodule, type-checks assets/ts/ with pinned TypeScript, and runs
-  the production Hugo build on push / PR)
+  submodule, installs the .nvmrc Node, type-checks assets/ts/ with
+  pinned TypeScript, runs the production Hugo build and then both
+  Python checks, on push / PR)
 
 ## Commands
 
@@ -60,11 +75,21 @@ No package.json or Makefile; Hugo CLI builds the site (Netlify uses 0.167.0):
 
 - `git submodule update --init` — fetch the theme (required once)
 - `hugo server` — local dev at http://localhost:1313
-- `hugo --gc --minify` — production build (what Netlify runs)
+- `hugo --gc --minify --panicOnWarning --printPathWarnings
+  --printI18nWarnings` — production build. Netlify and CI run exactly
+  this, followed by the two Python checks below (`[build].command` in
+  netlify.toml)
 - `python3 scripts/check_legacy_redirects.py` — validate legacy
   redirects after building (also required by CI)
 - `python3 scripts/check_seo.py` — validate the production HTML and
   sitemap indexing contracts; title/description lengths are not hard gates
+- Run both checks against a fresh build: delete public/ first. Hugo
+  never removes stale output, so a renamed page shows up as a duplicate
+  title/description, a page deleted in one language as a missing
+  hreflang return link, and a page or tag deleted in both languages
+  keeps passing locally even when static/_redirects still points at
+  it, which then fails only in the clean Netlify/CI build. On Windows
+  the interpreter is `python` or `py -3`.
 - `npx --yes --package typescript@5.9.3 tsc -p tsconfig.json` — TS type
   check (CI runs this same pinned command; a bare `npx tsc` would fetch
   npm's unrelated `tsc` squatter package, not TypeScript)
@@ -82,6 +107,25 @@ No package.json or Makefile; Hugo CLI builds the site (Netlify uses 0.167.0):
 - New-post checklist: create the zh/en pair with matching
   slug/translationKey; if a zh/en tag pair uses different names, add
   it to data/tag_translations.yaml. llms.txt updates itself.
+  The deploy gate (scripts/check_seo.py) adds three hard rules: body
+  headings start at `##` (a second H1 fails the build); title and
+  summary must not repeat another page in the same language; and the
+  description must not be empty, so write a `summary` (an image-only
+  post has no automatic one).
+- static/_redirects has a line for every post, and every Chinese tag,
+  that existed before March 2025. Renaming or removing one of those
+  tags, or changing one of those slugs, fails the deploy until that
+  line is pointed at the page's new address
+  (scripts/check_legacy_redirects.py requires every target to exist;
+  sources must end in `.html`, with uppercase percent-encoding and a
+  301 or 301! status). Also grep netlify.toml and
+  data/tag_translations.yaml for the old name: no gate checks those.
+- Front matter `noindex: true` emits robots noindex, drops the page
+  from the sitemap and suppresses hreflang for its whole translation
+  group. Paginated home pages emit hreflang only when the other
+  language has the same page number, so publishing one language first
+  is safe. Post meta rows link a tag only when its term page lists at
+  least two posts; single-post term pages are noindex.
 - Site search is a ⌘K command palette, not a page. There is no
   /search/ route. _partials/search.html renders a native `<dialog>`
   into every page via baseof.html, opened by the header trigger,
@@ -145,7 +189,22 @@ No package.json or Makefile; Hugo CLI builds the site (Netlify uses 0.167.0):
  `capitalizeListTitles: false` keeps tag titles exactly as written in
  front matter (all lowercase here), so "csdn" no longer renders "Csdn";
  netlify.toml 301s the old /tags/<tag>/page/N/ URLs.
-- RSS: latest 20 posts only, styled via static/xslt.
+- RSS: latest 20 posts only, full text in `<description>`; XML output
+  is deliberately not minified (`minify.disableXML`), because the XML
+  minifier collapses code-block indentation inside the escaped HTML.
+  Opening a feed in a browser shows a preview page built without XSLT
+  (Chrome removes XSLT in 158, stable 2026-11-17): layouts/rss.xml
+  emits `text/css` xml-stylesheet instructions (water.min.css,
+  syntax.css, feed.css) that style the raw RSS elements as the no-JS
+  fallback, plus two XHTML-namespace elements inside `<channel>` — a
+  viewport `<meta>` before the items and, after the last `<item>`, a
+  `<script>` loading assets/ts/feed-view.ts, which rebuilds the
+  document with a collapsible full-text block per post (parsed only
+  when expanded). Do not move them: .NET SyndicationFeed rejects any
+  child of `<rss>` other than `<channel>`, and consumers that read
+  feeds with an HTML parser swallow everything after a `<script>`.
+  The feed is an XML document, so preview code must create elements
+  with createElementNS in the XHTML namespace.
 - llms.txt: generated at build time per language from
   layouts/home.llms.txt (→ /llms.txt and /en/llms.txt, LLMS output
   format on home). It lists every post with its front-matter summary —
@@ -157,7 +216,8 @@ No package.json or Makefile; Hugo CLI builds the site (Netlify uses 0.167.0):
 
 ## Validation
 
-- `hugo --gc --minify` must finish with zero WARN/ERROR output.
+- The production build (see Commands) must finish with zero WARN/ERROR
+  output; under `--panicOnWarning` any warning is a failed deploy.
 - `hugo server`: check both / (zh) and /en/, plus /archive/ and a post
   page in each language; verify the "View as Markdown" .md URL works.
 - CSP in netlify.toml whitelists every third party in use. The
@@ -175,11 +235,12 @@ No package.json or Makefile; Hugo CLI builds the site (Netlify uses 0.167.0):
   you will chase a phantom "search can't find the post I just wrote".
 - The production build command adds `--panicOnWarning`, so a custom
   output format without its template is a failed deploy, not a
-  warning. `--printPathWarnings` and `--printI18nWarnings` are worth
-  passing locally: the first turns a silent same-path collision (two
-  outputs clobbering each other) into a WARN, the second catches
-  missing i18n keys, which otherwise render as empty strings with no
-  build signal at all.
+  warning. It also passes `--printPathWarnings` and
+  `--printI18nWarnings`, so pass them locally too: the first turns a
+  silent same-path collision (two outputs clobbering each other) into
+  a WARN, the second catches missing i18n keys, which otherwise render
+  as empty strings with no build signal at all. Either one now fails
+  the deploy.
 
 ## Gotchas
 
@@ -187,7 +248,8 @@ No package.json or Makefile; Hugo CLI builds the site (Netlify uses 0.167.0):
   of the `theme:` key, so the mounts' `files` setting can drop theme
   static files the site replaces or never uses (jquery + lightbox2,
   bootstrap bundle JS, theme copy-code.js/custom.js, lightbox chrome
-  images). Negated globs need the `! ` prefix — the space is required.
+  images, the theme XSLT feed stylesheets). Negated globs need the
+  `! ` prefix — the space is required.
   Declaring mounts disables the theme's default mounts, which is why
   i18n is mounted explicitly; css/style.css and images/favicon.ico
   intentionally come from the theme. Do not "simplify" back to

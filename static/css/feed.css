@@ -1,0 +1,237 @@
+/* 浏览器直接打开 feed（/index.xml 等）时的预览页，由 layouts/rss.xml 的 xml-stylesheet
+   处理指令加载，叠在 water.min.css（无 class 的基础排版 + 明暗配色变量）与 syntax.css 之上。
+   同一份样式服务两层：
+   1. RSS 元素本身 —— 脚本接管前、或 JS 不可用时的兜底视图；
+   2. assets/ts/feed-view.ts 重建出的 XHTML 页面（.feed-* 与 .feed-content 内的正文）。
+   feed 是 XML 文档，类型选择器区分大小写，且不带 @namespace 时按本地名匹配任意命名空间
+   （blog:summary 会被 water 的 summary 规则命中，下面有对应的还原）。 */
+
+/* ---------- 1. 兜底视图：直接排版 RSS 元素 ---------- */
+
+rss {
+  display: block;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  line-height: 1.4;
+  overflow-wrap: break-word;
+  color: var(--text-main);
+  background: var(--background-body);
+}
+
+/* 脚本通常在首帧前后就接管页面；这 1 秒内先不显示兜底视图，免得「原始列表 → 正式页面」
+   闪一下。JS 被禁用或脚本加载失败时，兜底视图在延迟结束后照常出现。 */
+rss > channel {
+  display: block;
+  animation: feed-fallback 0s 1s backwards;
+}
+
+@keyframes feed-fallback {
+  from { visibility: hidden; }
+}
+
+channel > title,
+channel > description,
+channel > item,
+item > title,
+item > pubDate,
+item > link,
+item > summary {
+  display: block;
+}
+
+/* 完整正文是转义后的 HTML 源码，兜底视图里只能当文本显示，故隐藏。 */
+channel > link,
+channel > generator,
+channel > language,
+channel > copyright,
+channel > lastBuildDate,
+item > guid,
+item > description {
+  display: none;
+}
+
+channel::before {
+  content: "RSS";
+}
+
+channel > title {
+  margin: 0 0 12px;
+  color: var(--text-bright);
+  font-size: 2.2em;
+  font-weight: 600;
+}
+
+item > title {
+  margin-bottom: 0.25rem;
+  color: var(--text-bright);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+item > pubDate,
+item > link {
+  opacity: 0.72;
+  font-size: 0.9rem;
+}
+
+item > summary,
+item > summary:hover {
+  margin: 0.75rem 0 0;
+  padding: 0;
+  background: none;
+  cursor: auto;
+  text-decoration: none;
+}
+
+/* ---------- 两层共用 ---------- */
+
+channel::before,
+.feed-badge {
+  display: inline-block;
+  margin-bottom: 0;
+  border-radius: 0.35rem;
+  padding: 0.2rem 0.45rem;
+  background: #f26522;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+channel > item,
+.feed-item {
+  margin: 1.5rem 0;
+  border-top: 1px solid currentcolor;
+  padding-top: 1rem;
+}
+
+/* ---------- 2. 脚本重建的页面 ---------- */
+
+#feedurl {
+  box-sizing: border-box;
+  width: 100%;
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+}
+
+.feed-hint,
+.feed-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 1.25rem;
+}
+
+.feed-expander {
+  margin: 0;
+  padding: 6px 14px;
+}
+
+.feed-item h2 {
+  margin-bottom: 0.25rem;
+  font-size: 1.25rem;
+}
+
+.feed-date {
+  margin-top: 0;
+  opacity: 0.72;
+  font-size: 0.9rem;
+}
+
+/* water 把 time 画成和行内代码一样的色块 */
+.feed-date time {
+  padding: 0;
+  background: none;
+  color: inherit;
+}
+
+/* water 的 details 是 align-items: flex-start 的弹性容器，正文会缩成内容宽度；它的浅灰底
+   还会让正文链接在浅色模式下掉到 4.34:1（AA 要 4.5:1），所以改成描边、正文落回页面底色。 */
+.feed-full {
+  display: block;
+  border: 1px solid var(--border);
+  background: none;
+}
+
+/* water 去掉了 summary 的焦点轮廓，只留一条下划线 */
+.feed-full > summary:focus-visible {
+  outline: 2px solid var(--links);
+  outline-offset: -2px;
+}
+
+.feed-count {
+  color: var(--text-muted);
+}
+
+/* 正文沿用文章页的结构（Hugo 渲染的 HTML），这里只处理与 water 冲突的部分。 */
+.feed-content h2 {
+  font-size: 1.15rem;
+}
+
+.feed-content h3,
+.feed-content h4 {
+  font-size: 1rem;
+}
+
+/* 与文章页一致：竖图限高 600px（custom.css 的 .container-md p img） */
+.feed-content img {
+  display: block;
+  width: auto;
+  max-height: 600px;
+  margin: 0.5rem 0;
+}
+
+/* water 把引用块设成斜体，中文只能合成倾斜，文章页也不这么排 */
+.feed-content blockquote {
+  font-style: normal;
+}
+
+.feed-content pre,
+.feed-content code,
+.feed-content kbd,
+.feed-content samp {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+}
+
+.feed-content .highlight {
+  margin: 1rem 0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.feed-content .highlight > .chroma {
+  overflow-x: auto;
+}
+
+/* 行号表：water 的 table 是 100% 宽 + fixed 布局，行号列会占掉一半宽度 */
+.feed-content .lntable {
+  width: auto;
+  min-width: 100%;
+  table-layout: auto;
+}
+
+.feed-content .lntd:first-child {
+  width: 1%;
+  user-select: none;
+}
+
+.feed-content .chroma pre {
+  margin: 0;
+}
+
+.feed-content .chroma code {
+  border-radius: 0;
+  background: none;
+  color: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}

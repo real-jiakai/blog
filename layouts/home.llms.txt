@@ -10,5 +10,5 @@
 ## Content
 
 {{ range where .Site.RegularPages "Type" "==" "blog" -}}
-- [{{ .Title }}]({{ .Permalink }}): {{ replace (.Summary | plainify | chomp) "\n" " " }}
+- [{{ .Title }}]({{ .Permalink }}): {{ replace (.Summary | plainify | htmlUnescape | chomp) "\n" " " }}
 {{ end -}}
